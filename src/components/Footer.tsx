@@ -36,13 +36,10 @@ export default function Footer() {
         <div className="container-sv grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Col 1: Brand */}
           <div className="lg:col-span-1">
-            <Image
-              src="https://www.schulmanveincenter.com/wp-content/uploads/2017/01/header-logo-new.png"
-              alt="Schulman Vein and Laser Center"
-              width={130}
-              height={56}
-              className="h-12 w-auto object-contain brightness-0 invert mb-4"
-            />
+            <div className="mb-4">
+              <p className="font-heading font-bold text-white text-xl leading-tight">Schulman Vein</p>
+              <p className="font-heading text-[#C8973A] text-sm font-medium">and Laser Center</p>
+            </div>
             <p className="text-white/70 text-sm leading-relaxed">
               Manhattan and Long Island's vein specialists. Exclusively dedicated to the diagnosis and treatment of vein disease for over 55 years.
             </p>
