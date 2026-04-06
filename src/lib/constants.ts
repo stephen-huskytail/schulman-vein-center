@@ -350,6 +350,12 @@ export const TESTIMONIALS = [
     text: "The free consultation was a great experience. No pressure, just honest advice from an expert doctor. I ended up having treatment and the results are remarkable.",
     stars: 5,
   },
+  {
+    name: "James R.",
+    location: "Manhattan, NY",
+    text: "My leg pain and swelling were affecting my daily life for years. Dr. Schulman identified the problem immediately and within a few sessions I felt like a completely different person. Absolutely life-changing.",
+    stars: 5,
+  },
 ];
 
 export const TRUST_STATS = [
