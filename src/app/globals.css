@@ -1,0 +1,171 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─────────────────────────────────────────────
+   CSS CUSTOM PROPERTIES — Schulman Brand
+   ───────────────────────────────────────────── */
+:root {
+  --sv-navy:       #0B2545;
+  --sv-navy-light: #1A3A6E;
+  --sv-teal:       #0D7F9B;
+  --sv-teal-light: #17A8C6;
+  --sv-gold:       #C8973A;
+  --sv-gold-light: #E8B96A;
+  --sv-cream:      #F8F7F4;
+  --sv-gray:       #F1F3F6;
+}
+
+/* ─────────────────────────────────────────────
+   BASE RESETS
+   ───────────────────────────────────────────── */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply antialiased font-body text-gray-800;
+  }
+  h1, h2, h3, h4 {
+    @apply font-heading leading-tight;
+  }
+}
+
+/* ─────────────────────────────────────────────
+   COMPONENT CLASSES
+   ───────────────────────────────────────────── */
+@layer components {
+  /* ── Containers ── */
+  .container-sv {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  .container-narrow {
+    @apply max-w-4xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* ── Section wrappers ── */
+  .section-light {
+    @apply bg-white py-16 md:py-24;
+  }
+  .section-cream {
+    @apply bg-[var(--sv-cream)] py-16 md:py-24;
+  }
+  .section-gray {
+    @apply bg-[var(--sv-gray)] py-16 md:py-24;
+  }
+  .section-navy {
+    @apply bg-[var(--sv-navy)] text-white py-16 md:py-24;
+  }
+  .section-teal {
+    @apply bg-[var(--sv-teal)] text-white py-16 md:py-24;
+  }
+
+  /* ── Buttons ── */
+  .btn-primary {
+    @apply inline-flex items-center gap-2 rounded-lg bg-[var(--sv-teal)] text-white font-semibold px-6 py-3 
+           hover:bg-[var(--sv-teal-light)] transition-all duration-200 shadow-md hover:shadow-lg
+           focus:outline-none focus:ring-2 focus:ring-[var(--sv-teal)] focus:ring-offset-2;
+  }
+  .btn-primary-lg {
+    @apply btn-primary text-lg px-8 py-4;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center gap-2 rounded-lg border-2 border-white text-white font-semibold px-6 py-3
+           hover:bg-white hover:text-[var(--sv-navy)] transition-all duration-200
+           focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2;
+  }
+  .btn-secondary-lg {
+    @apply btn-secondary text-lg px-8 py-4;
+  }
+  .btn-gold {
+    @apply inline-flex items-center gap-2 rounded-lg bg-[var(--sv-gold)] text-white font-semibold px-6 py-3
+           hover:bg-[var(--sv-gold-light)] transition-all duration-200 shadow-md hover:shadow-lg
+           focus:outline-none focus:ring-2 focus:ring-[var(--sv-gold)] focus:ring-offset-2;
+  }
+  .btn-outline-navy {
+    @apply inline-flex items-center gap-2 rounded-lg border-2 border-[var(--sv-navy)] text-[var(--sv-navy)] font-semibold px-6 py-3
+           hover:bg-[var(--sv-navy)] hover:text-white transition-all duration-200
+           focus:outline-none focus:ring-2 focus:ring-[var(--sv-navy)] focus:ring-offset-2;
+  }
+
+  /* ── Cards ── */
+  .card-service {
+    @apply bg-white rounded-2xl shadow-card hover:shadow-card-hover border border-gray-100 
+           transition-all duration-300 hover:-translate-y-1 overflow-hidden;
+  }
+  .card-doctor {
+    @apply bg-white rounded-2xl shadow-card border border-gray-100 overflow-hidden;
+  }
+  .card-testimonial {
+    @apply bg-white rounded-2xl shadow-card border border-gray-100 p-6 md:p-8;
+  }
+
+  /* ── Section headings ── */
+  .section-eyebrow {
+    @apply text-sm font-semibold tracking-widest uppercase text-[var(--sv-teal)] mb-2;
+  }
+  .section-title {
+    @apply text-3xl md:text-4xl font-heading font-bold text-[var(--sv-navy)] leading-tight;
+  }
+  .section-title-light {
+    @apply text-3xl md:text-4xl font-heading font-bold text-white leading-tight;
+  }
+  .section-subtitle {
+    @apply text-lg text-gray-600 mt-4 leading-relaxed;
+  }
+  .section-subtitle-light {
+    @apply text-lg text-white/80 mt-4 leading-relaxed;
+  }
+
+  /* ── Hero overlay ── */
+  .hero-overlay {
+    @apply absolute inset-0 bg-gradient-to-r from-[var(--sv-navy)]/90 via-[var(--sv-navy)]/70 to-[var(--sv-navy)]/30;
+  }
+
+  /* ── Trust badge ── */
+  .trust-badge {
+    @apply flex items-center gap-2 text-sm font-medium text-gray-600;
+  }
+
+  /* ── Gold accent line ── */
+  .gold-line {
+    @apply w-16 h-1 bg-[var(--sv-gold)] rounded-full;
+  }
+  .gold-line-sm {
+    @apply w-10 h-0.5 bg-[var(--sv-gold)] rounded-full;
+  }
+
+  /* ── Form inputs ── */
+  .form-input {
+    @apply w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-gray-900 text-sm
+           placeholder-gray-400 focus:border-[var(--sv-teal)] focus:outline-none focus:ring-2 
+           focus:ring-[var(--sv-teal)]/20 transition-colors;
+  }
+  .form-select {
+    @apply form-input appearance-none;
+  }
+  .form-label {
+    @apply block text-sm font-semibold text-gray-700 mb-1.5;
+  }
+  .form-error {
+    @apply text-red-500 text-xs mt-1;
+  }
+
+  /* ── Icon circle ── */
+  .icon-circle {
+    @apply w-12 h-12 rounded-full bg-[var(--sv-teal)]/10 flex items-center justify-center flex-shrink-0;
+  }
+  .icon-circle-navy {
+    @apply w-12 h-12 rounded-full bg-[var(--sv-navy)]/10 flex items-center justify-center flex-shrink-0;
+  }
+  .icon-circle-gold {
+    @apply w-12 h-12 rounded-full bg-[var(--sv-gold)]/10 flex items-center justify-center flex-shrink-0;
+  }
+}
+
+/* ─────────────────────────────────────────────
+   UTILITY / SCROLL
+   ───────────────────────────────────────────── */
+:target {
+  scroll-margin-top: 120px;
+}
