@@ -153,7 +153,8 @@ export default function Footer() {
               HuskyTail Digital Marketing
             </a>
           </p>
-          <div className="flex items-center gap-4">
+          <div className="flex flex-wrap items-center gap-4">
+            <Link href="/sitemap-page" className="hover:text-white/80 transition-colors">Sitemap</Link>
             <Link href="/privacy" className="hover:text-white/80 transition-colors">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-white/80 transition-colors">Terms of Use</Link>
             <a href="#contact" className="hover:text-white/80 transition-colors">Contact Us</a>
