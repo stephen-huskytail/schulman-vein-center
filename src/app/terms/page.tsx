@@ -14,9 +14,9 @@ export default function TermsPage() {
   return (
     <div className="bg-white min-h-screen">
       {/* Header bar */}
-      <div style={{ backgroundColor: "#0B2545" }} className="py-10 md:py-14">
+      <div className="bg-[var(--sv-navy)] py-10 md:py-14">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="text-sm font-semibold tracking-widest uppercase mb-2" style={{ color: "#0D7F9B" }}>
+          <p className="text-sm font-semibold tracking-widest uppercase mb-2 text-[var(--sv-teal)]">
             Legal
           </p>
           <h1 className="font-heading text-3xl md:text-4xl font-bold text-white mb-2">
@@ -28,7 +28,7 @@ export default function TermsPage() {
 
       {/* Body */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
-        <div className="prose prose-gray max-w-none prose-headings:font-heading prose-headings:text-[#0B2545] prose-a:text-[#0D7F9B]">
+        <div className="prose prose-gray max-w-none prose-headings:font-heading prose-headings:text-[var(--sv-navy)] prose-a:text-[var(--sv-teal)]">
 
           <p>
             Welcome to the website of Schulman Vein and Laser Center ("we," "us," or "our"). By accessing or using{" "}
@@ -117,15 +117,13 @@ export default function TermsPage() {
         <div className="mt-12 pt-8 border-t border-gray-200 flex flex-wrap gap-4">
           <Link
             href="/"
-            className="inline-flex items-center gap-2 text-sm font-semibold rounded-lg px-5 py-2.5 text-white transition-colors"
-            style={{ backgroundColor: "#0B2545" }}
+            className="inline-flex items-center gap-2 text-sm font-semibold rounded-lg px-5 py-2.5 text-white transition-colors bg-[var(--sv-navy)] hover:bg-[var(--sv-teal)]"
           >
             ← Back to Home
           </Link>
           <Link
             href="/privacy"
-            className="inline-flex items-center gap-2 text-sm font-semibold rounded-lg border-2 px-5 py-2.5 transition-colors"
-            style={{ borderColor: "#0B2545", color: "#0B2545" }}
+            className="inline-flex items-center gap-2 text-sm font-semibold rounded-lg border-2 border-[var(--sv-navy)] px-5 py-2.5 transition-colors text-[var(--sv-navy)] hover:border-[var(--sv-teal)] hover:text-[var(--sv-teal)]"
           >
             Privacy Policy →
           </Link>

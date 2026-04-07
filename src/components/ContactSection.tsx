@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import { Phone, Mail, Send, CheckCircle2 } from "lucide-react";
+import { Phone, Mail, Send, CheckCircle2, MapPin, Clock } from "lucide-react";
 import { toast } from "sonner";
 import { BUSINESS, LOCATIONS } from "@/lib/constants";
 
@@ -104,23 +104,32 @@ export default function ContactSection() {
 
               <div className="mt-6 pt-6 border-t border-white/10">
                 <p className="text-[var(--sv-gold)] text-xs font-bold uppercase tracking-widest mb-4">
-                  Call Our Locations Directly
+                  Our 3 Locations
                 </p>
                 <div className="space-y-3">
                   {LOCATIONS.map((loc) => (
-                    <div key={loc.id} className="flex items-center gap-3">
-                      <div className="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center shrink-0">
-                        <Phone className="w-4 h-4 text-[var(--sv-teal-light)]" />
-                      </div>
-                      <div>
-                        <p className="text-white/60 text-xs">{loc.shortName}</p>
-                        <a
-                          href={loc.phoneHref}
-                          className="font-bold text-white hover:text-[var(--sv-teal-light)] transition-colors text-base"
-                        >
-                          {loc.phone}
-                        </a>
-                      </div>
+                    <div key={loc.id} id={loc.id} className="rounded-xl bg-white/5 p-4">
+                      <p className="text-white font-semibold text-sm mb-2">{loc.name}</p>
+                      <a
+                        href={loc.mapUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-start gap-2 text-white/70 text-xs mb-2 hover:text-white transition-colors"
+                      >
+                        <MapPin className="w-3.5 h-3.5 mt-0.5 shrink-0 text-[var(--sv-teal-light)]" />
+                        <span>{loc.fullAddress}</span>
+                      </a>
+                      <a
+                        href={loc.phoneHref}
+                        className="flex items-center gap-2 font-bold text-white hover:text-[var(--sv-teal-light)] transition-colors text-sm mb-1.5"
+                      >
+                        <Phone className="w-3.5 h-3.5 text-[var(--sv-teal-light)]" />
+                        {loc.phone}
+                      </a>
+                      <p className="flex items-center gap-2 text-white/60 text-xs">
+                        <Clock className="w-3.5 h-3.5 text-[var(--sv-teal-light)]" />
+                        {loc.hoursDisplay}
+                      </p>
                     </div>
                   ))}
                 </div>

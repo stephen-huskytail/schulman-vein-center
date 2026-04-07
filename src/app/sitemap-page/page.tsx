@@ -9,45 +9,35 @@ export const metadata: Metadata = {
 
 const sections = [
   {
-    title: "Main Page Sections",
+    title: "Core Pages",
     links: [
       { label: "Home", href: "/" },
-      { label: "About Us", href: "/#about" },
-      { label: "Our Services", href: "/#services" },
-      { label: "Why Choose Us", href: "/#why-us" },
-      { label: "Meet the Doctors", href: "/#doctors" },
-      { label: "Your First Visit", href: "/#first-visit" },
-      { label: "Before & After Gallery", href: "/#gallery" },
-      { label: "Patient Testimonials", href: "/#testimonials" },
-      { label: "FAQ – About Veins", href: "/#faq" },
-      { label: "Insurance Coverage", href: "/#insurance" },
-      { label: "Contact & Locations", href: "/#contact" },
+      { label: "About", href: "/about" },
+      { label: "Services", href: "/services" },
+      { label: "Results", href: "/results" },
+      { label: "Reviews", href: "/reviews" },
+      { label: "FAQ", href: "/faq" },
+      { label: "Contact", href: "/contact" },
+      { label: "Locations", href: "/locations" },
     ],
   },
   {
-    title: "Services",
+    title: "Service Pages",
     links: [
-      { label: "Varicose Vein Treatment", href: "/#services" },
-      { label: "Spider Vein Treatment (Sclerotherapy)", href: "/#services" },
-      { label: "Endovenous Laser Therapy (EVLT)", href: "/#services" },
-      { label: "Hand & Body Vein Treatment", href: "/#services" },
-      { label: "Phlebitis Treatment", href: "/#services" },
-      { label: "Venous Leg Ulcer Treatment", href: "/#services" },
+      { label: "Varicose Vein Treatment", href: "/services/varicose-vein-treatment" },
+      { label: "Spider Vein Treatment", href: "/services/spider-vein-treatment" },
+      { label: "Laser Vein Therapy (EVLT)", href: "/services/laser-vein-therapy" },
+      { label: "Hand, Face & Body Veins", href: "/services/body-vein-treatment" },
+      { label: "Vein Disorders & Conditions", href: "/services/vein-disorders" },
+      { label: "Free Vein Screening", href: "/services/free-vein-screening" },
     ],
   },
   {
-    title: "Our Doctors",
+    title: "Location Pages",
     links: [
-      { label: "Dr. Martin L. Schulman, M.D.", href: "/#doctors" },
-      { label: "Dr. Lee G. Schulman, M.D.", href: "/#doctors" },
-    ],
-  },
-  {
-    title: "Locations",
-    links: [
-      { label: "Manhattan — 1165 Park Ave, New York, NY 10128", href: "/#contact" },
-      { label: "Manhasset — 800 Community Dr #211, Manhasset, NY 11030", href: "/#contact" },
-      { label: "Commack — 353 Veterans Memorial Hwy #206, Commack, NY 11725", href: "/#contact" },
+      { label: "Manhattan", href: "/locations/manhattan" },
+      { label: "Manhasset", href: "/locations/manhasset" },
+      { label: "Commack", href: "/locations/commack" },
     ],
   },
   {
@@ -55,6 +45,7 @@ const sections = [
     links: [
       { label: "Privacy Policy", href: "/privacy" },
       { label: "Terms of Use", href: "/terms" },
+      { label: "HTML Sitemap", href: "/sitemap-page" },
       { label: "XML Sitemap (for search engines)", href: "/sitemap.xml", external: true },
       { label: "LLMs.txt (for AI crawlers)", href: "/llms.txt", external: true },
     ],
@@ -65,9 +56,9 @@ export default function SitemapPage() {
   return (
     <div className="bg-white min-h-screen">
       {/* Header */}
-      <div style={{ backgroundColor: "#0B2545" }} className="py-10 md:py-14">
+      <div className="bg-[var(--sv-navy)] py-10 md:py-14">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="text-sm font-semibold tracking-widest uppercase mb-2" style={{ color: "#0D7F9B" }}>
+          <p className="text-sm font-semibold tracking-widest uppercase mb-2 text-[var(--sv-teal)]">
             Navigation
           </p>
           <h1 className="font-heading text-3xl md:text-4xl font-bold text-white mb-2">
@@ -85,32 +76,27 @@ export default function SitemapPage() {
           {sections.map((section) => (
             <div key={section.title}>
               <h2
-                className="text-xs font-bold uppercase tracking-widest mb-4 pb-2 border-b"
-                style={{ color: "#0B2545", borderColor: "#C8973A" }}
+                className="text-xs font-bold uppercase tracking-widest mb-4 pb-2 border-b text-[var(--sv-navy)] border-[var(--sv-gold)]"
               >
                 {section.title}
               </h2>
               <ul className="space-y-2.5">
                 {section.links.map((link) => (
                   <li key={link.label} className="flex items-start gap-2">
-                    <span
-                      className="w-1.5 h-1.5 rounded-full mt-1.5 shrink-0"
-                      style={{ backgroundColor: "#0D7F9B" }}
-                    />
+                    <span className="w-1.5 h-1.5 rounded-full mt-1.5 shrink-0 bg-[var(--sv-teal)]" />
                     {"external" in link && link.external ? (
                       <a
                         href={link.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-sm hover:underline transition-colors"
-                        style={{ color: "#0D7F9B" }}
+                        className="text-sm hover:underline transition-colors text-[var(--sv-teal)]"
                       >
                         {link.label}
                       </a>
                     ) : (
                       <Link
                         href={link.href}
-                        className="text-sm text-gray-600 hover:text-[#0D7F9B] transition-colors"
+                        className="text-sm text-gray-600 hover:text-[var(--sv-teal)] transition-colors"
                       >
                         {link.label}
                       </Link>
@@ -125,8 +111,7 @@ export default function SitemapPage() {
         <div className="mt-12 pt-8 border-t border-gray-200 flex flex-wrap gap-4">
           <Link
             href="/"
-            className="inline-flex items-center gap-2 text-sm font-semibold rounded-lg px-5 py-2.5 text-white transition-colors"
-            style={{ backgroundColor: "#0B2545" }}
+            className="inline-flex items-center gap-2 text-sm font-semibold rounded-lg px-5 py-2.5 text-white transition-colors bg-[var(--sv-navy)] hover:bg-[var(--sv-teal)]"
           >
             ← Back to Home
           </Link>

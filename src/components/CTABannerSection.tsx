@@ -44,7 +44,7 @@ export default function CTABannerSection({
               {BUSINESS.phone}
             </a>
             <a
-              href="#contact"
+              href="/contact"
               className="flex items-center gap-2 px-6 py-3 rounded-lg bg-[var(--sv-navy)] text-white font-bold hover:bg-[var(--sv-navy-light)] transition-colors shadow-md text-sm"
             >
               <Calendar className="w-4 h-4" />

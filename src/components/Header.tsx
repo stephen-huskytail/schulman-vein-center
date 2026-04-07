@@ -40,11 +40,12 @@ const NAV_ITEMS: NavItem[] = [
   { label: "FAQ", href: "/faq" },
   {
     label: "Locations",
-    href: "/contact",
+    href: "/locations",
     children: [
-      { label: "Manhattan", href: "/contact#manhattan" },
-      { label: "Manhasset", href: "/contact#manhasset" },
-      { label: "Commack", href: "/contact#commack" },
+      { label: "All Locations", href: "/locations" },
+      { label: "Manhattan", href: "/locations/manhattan" },
+      { label: "Manhasset", href: "/locations/manhasset" },
+      { label: "Commack", href: "/locations/commack" },
     ],
   },
   { label: "Contact", href: "/contact" },

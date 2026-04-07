@@ -24,9 +24,9 @@ export default function Footer() {
               <Phone className="w-4 h-4" />
               Call Now
             </a>
-            <a href="#contact" className="btn-gold text-sm">
+            <Link href="/contact" className="btn-gold text-sm">
               Schedule Consultation
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -60,22 +60,22 @@ export default function Footer() {
             <h3 className="text-sm font-bold uppercase tracking-widest text-white/50 mb-4">Services</h3>
             <ul className="space-y-2.5">
               {[
-                "Varicose Vein Treatment",
-                "Spider Vein Treatment",
-                "Laser Vein Therapy (EVLT)",
-                "Hand & Body Vein Treatment",
-                "Phlebitis Treatment",
-                "Venous Leg Ulcers",
-                "Free Vein Screening",
+                { label: "Varicose Vein Treatment", href: "/services/varicose-vein-treatment" },
+                { label: "Spider Vein Treatment", href: "/services/spider-vein-treatment" },
+                { label: "Laser Vein Therapy (EVLT)", href: "/services/laser-vein-therapy" },
+                { label: "Hand & Body Vein Treatment", href: "/services/body-vein-treatment" },
+                { label: "Phlebitis Treatment", href: "/services/vein-disorders" },
+                { label: "Venous Leg Ulcers", href: "/services/vein-disorders" },
+                { label: "Free Vein Screening", href: "/services/free-vein-screening" },
               ].map((s) => (
-                <li key={s}>
-                  <a
-                    href="#services"
+                <li key={s.label}>
+                  <Link
+                    href={s.href}
                     className="text-sm text-white/70 hover:text-white transition-colors flex items-center gap-2 group"
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-[var(--sv-teal)] group-hover:bg-[var(--sv-gold)] transition-colors shrink-0" />
-                    {s}
-                  </a>
+                    {s.label}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -86,22 +86,22 @@ export default function Footer() {
             <h3 className="text-sm font-bold uppercase tracking-widest text-white/50 mb-4">Quick Links</h3>
             <ul className="space-y-2.5">
               {[
-                { label: "About Our Doctors", href: "#doctors" },
-                { label: "Why Choose Us", href: "#why-us" },
-                { label: "Before & After Gallery", href: "#gallery" },
-                { label: "Patient Reviews", href: "#testimonials" },
-                { label: "FAQ – About Veins", href: "#faq" },
-                { label: "Insurance Coverage", href: "#insurance" },
-                { label: "Contact & Locations", href: "#contact" },
+                { label: "About Our Doctors", href: "/about#doctors" },
+                { label: "Why Choose Us", href: "/about#why-us" },
+                { label: "Before & After Gallery", href: "/results" },
+                { label: "Patient Reviews", href: "/reviews" },
+                { label: "FAQ – About Veins", href: "/faq" },
+                { label: "Insurance Coverage", href: "/" },
+                { label: "Contact & Locations", href: "/contact" },
               ].map((l) => (
                 <li key={l.label}>
-                  <a
+                  <Link
                     href={l.href}
                     className="text-sm text-white/70 hover:text-white transition-colors flex items-center gap-2 group"
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-[var(--sv-teal)] group-hover:bg-[var(--sv-gold)] transition-colors shrink-0" />
                     {l.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -157,7 +157,7 @@ export default function Footer() {
             <Link href="/sitemap-page" className="hover:text-white/80 transition-colors">Sitemap</Link>
             <Link href="/privacy" className="hover:text-white/80 transition-colors">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-white/80 transition-colors">Terms of Use</Link>
-            <a href="#contact" className="hover:text-white/80 transition-colors">Contact Us</a>
+            <Link href="/contact" className="hover:text-white/80 transition-colors">Contact Us</Link>
           </div>
         </div>
       </div>

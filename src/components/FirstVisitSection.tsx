@@ -61,7 +61,7 @@ export default function FirstVisitSection() {
             <p className="text-gray-600 leading-relaxed mb-8">
               You're welcome to bring a family member or friend with you. We encourage it.
             </p>
-            <a href="#contact" className="btn-primary">
+            <a href="/contact" className="btn-primary">
               Schedule My Free Consultation
             </a>
           </motion.div>
