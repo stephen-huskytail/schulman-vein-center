@@ -32,28 +32,30 @@ export default function ContactSection() {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors, isSubmitting },
   } = useForm<FormData>({
     resolver: zodResolver(schema),
   });
 
   const onSubmit = async (data: FormData) => {
-    const selectedLocation = LOCATIONS.find((loc) => loc.id === data.location);
-    const subject = `New Consultation Request - ${data.name}`;
-    const body = [
-      `Name: ${data.name}`,
-      `Phone: ${data.phone}`,
-      `Email: ${data.email}`,
-      `Preferred Location: ${selectedLocation?.shortName ?? data.location}`,
-      `Area of Concern: ${data.service || "Not specified"}`,
-      "",
-      "Patient Notes:",
-      data.message,
-    ].join("\n");
+    const response = await fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    });
 
-    const mailtoHref = `${BUSINESS.emailHref}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    window.location.href = mailtoHref;
-    toast.success("Opening your email app to send this consultation request.");
+    if (!response.ok) {
+      const body = await response.json().catch(() => null);
+      const message = body?.error ?? "Something went wrong while sending your request.";
+      toast.error(message);
+      return;
+    }
+
+    toast.success("Your consultation request was sent. Our team will contact you shortly.");
+    reset();
   };
 
   return (
@@ -253,7 +255,7 @@ export default function ContactSection() {
               </button>
 
               <p className="text-xs text-gray-400 text-center mt-3">
-                By submitting this form, your request opens in your default email app and is addressed to our care team.
+                By submitting this form, your request is securely sent to our care team.
               </p>
             </form>
           </motion.div>

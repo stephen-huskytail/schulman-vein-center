@@ -39,9 +39,12 @@ Open [http://localhost:3000](http://localhost:3000)
 
 ## Contact Form
 
-The contact form currently uses a simulated submission. To connect a real email service:
-- Replace the `onSubmit` logic in `src/components/ContactSection.tsx`
-- Recommended: Resend, SendGrid, or a Next.js API route
+The contact form submits through `src/app/api/contact/route.ts` and sends via Resend.
+
+Required environment variables:
+
+- `SCHULMAN_RESEND` — Resend API key
+- `RESEND_FROM_EMAIL` (optional) — sender address, defaults to `Schulman Vein Center <onboarding@resend.dev>`
 
 ## Structure
 
