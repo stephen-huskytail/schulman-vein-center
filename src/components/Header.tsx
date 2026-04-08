@@ -36,6 +36,7 @@ const NAV_ITEMS: NavItem[] = [
     ],
   },
   { label: "Results", href: "/results" },
+  { label: "Blog", href: "/blog" },
   { label: "Reviews", href: "/reviews" },
   { label: "FAQ", href: "/faq" },
   {
@@ -46,6 +47,7 @@ const NAV_ITEMS: NavItem[] = [
       { label: "Manhattan", href: "/locations/manhattan" },
       { label: "Manhasset", href: "/locations/manhasset" },
       { label: "Commack", href: "/locations/commack" },
+      { label: "Las Vegas", href: "/locations/las-vegas" },
     ],
   },
   { label: "Contact", href: "/contact" },

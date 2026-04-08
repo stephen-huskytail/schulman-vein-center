@@ -5,16 +5,16 @@ import PageHero from "@/components/PageHero";
 import { BUSINESS, LOCATIONS } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Vein Treatment Locations in NYC & Long Island",
+  title: "Vein Treatment Locations in New York & Las Vegas",
   description:
-    "Find Schulman Vein Center in Manhattan, Manhasset, and Commack. Get directions, office hours, and contact details for each location.",
+    "Find Schulman Vein Center in Manhattan, Manhasset, and Commack, plus our Las Vegas service area page.",
   alternates: {
     canonical: `${BUSINESS.siteUrl}/locations`,
   },
   openGraph: {
-    title: "Vein Treatment Locations in NYC & Long Island | Schulman Vein Center",
+    title: "Vein Treatment Locations in New York & Las Vegas | Schulman Vein Center",
     description:
-      "Three convenient New York locations with the same vein-only specialists: Manhattan, Manhasset, and Commack.",
+      "Visit our New York offices and explore our Las Vegas service area page for localized vein treatment coverage.",
     url: `${BUSINESS.siteUrl}/locations`,
   },
 };
@@ -24,8 +24,8 @@ export default function LocationsPage() {
     <>
       <PageHero
         eyebrow="Locations"
-        title="Three Convenient Locations for Vein Treatment"
-        description="Visit our Manhattan, Manhasset, or Commack office for expert, non-surgical vein care. Every location is staffed by the same experienced specialists."
+        title="Our New York Locations + Las Vegas Service Area"
+        description="Visit our Manhattan, Manhasset, or Commack offices, or explore our Las Vegas page for local treatment coverage."
       />
 
       <section className="section-light">
@@ -85,6 +85,23 @@ export default function LocationsPage() {
               </article>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="section-cream py-12 md:py-16">
+        <div className="container-sv">
+          <article className="bg-white rounded-2xl shadow-card border border-gray-100 p-6 md:p-8">
+            <p className="section-eyebrow">Las Vegas</p>
+            <h2 className="section-title text-2xl mb-3">Now Serving the Las Vegas Valley</h2>
+            <p className="text-gray-600 mb-5 max-w-3xl">
+              Looking for vein treatment in Las Vegas, Henderson, Summerlin, Paradise, Spring
+              Valley, or North Las Vegas? Visit our Las Vegas location page for local service-area
+              details and scheduling options.
+            </p>
+            <Link href="/locations/las-vegas" className="btn-primary w-fit">
+              View Las Vegas Location Page
+            </Link>
+          </article>
         </div>
       </section>
 

@@ -4,12 +4,25 @@ import { motion } from "framer-motion";
 import { Star, Quote } from "lucide-react";
 import { TESTIMONIALS } from "@/lib/constants";
 
-export default function TestimonialsSection() {
+interface TestimonialsSectionProps {
+  variant?: "navy" | "light";
+}
+
+export default function TestimonialsSection({ variant = "navy" }: TestimonialsSectionProps) {
+  const isLight = variant === "light";
+
   return (
-    <section id="testimonials" className="section-navy relative overflow-hidden">
+    <section
+      id="testimonials"
+      className={`${isLight ? "section-light" : "section-navy"} relative overflow-hidden`}
+    >
       {/* Decorative */}
-      <div className="absolute inset-0 bg-[url('/images/testimonials-bg.png')] bg-cover bg-center opacity-5" />
-      <div className="absolute inset-0 bg-[var(--sv-navy)]/95" />
+      {!isLight && (
+        <>
+          <div className="absolute inset-0 bg-[url('/images/testimonials-bg.png')] bg-cover bg-center opacity-5" />
+          <div className="absolute inset-0 bg-[var(--sv-navy)]/95" />
+        </>
+      )}
 
       <div className="container-sv relative z-10">
         {/* Header */}
@@ -17,12 +30,14 @@ export default function TestimonialsSection() {
           <p className="text-sm font-bold tracking-[0.2em] uppercase text-[var(--sv-gold)] mb-2">
             Patient Reviews
           </p>
-          <h2 className="section-title-light mb-3">
+          <h2 className={`${isLight ? "section-title" : "section-title-light"} mb-3`}>
             What Our{" "}
-            <span className="text-[var(--sv-teal-light)]">Patients Say</span>
+            <span className={isLight ? "text-[var(--sv-teal)]" : "text-[var(--sv-teal-light)]"}>
+              Patients Say
+            </span>
           </h2>
           <div className="w-16 h-1 bg-[var(--sv-gold)] rounded-full mx-auto mb-5" />
-          <p className="section-subtitle-light">
+          <p className={isLight ? "section-subtitle" : "section-subtitle-light"}>
             5-star rated across all three locations on Google, Yelp, Healthgrades, Vitals, and more.
           </p>
 
@@ -31,7 +46,9 @@ export default function TestimonialsSection() {
             {[...Array(5)].map((_, i) => (
               <Star key={i} className="w-6 h-6 text-[var(--sv-gold)] fill-[var(--sv-gold)]" />
             ))}
-            <span className="ml-2 text-white/70 text-sm">5.0 average · All locations</span>
+            <span className={`ml-2 text-sm ${isLight ? "text-[var(--sv-navy)]/70" : "text-white/70"}`}>
+              5.0 average · All locations
+            </span>
           </div>
         </div>
 
@@ -44,7 +61,11 @@ export default function TestimonialsSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="bg-white/5 border border-white/10 hover:border-[var(--sv-teal)]/30 rounded-2xl p-6 md:p-7 transition-all"
+              className={`rounded-2xl p-6 md:p-7 transition-all ${
+                isLight
+                  ? "bg-white border border-[var(--sv-border)] shadow-sm hover:border-[var(--sv-teal)]/40"
+                  : "bg-white/5 border border-white/10 hover:border-[var(--sv-teal)]/30"
+              }`}
             >
               {/* Stars */}
               <div className="flex items-center gap-1 mb-4">
@@ -56,19 +77,27 @@ export default function TestimonialsSection() {
               {/* Quote */}
               <div className="relative mb-4">
                 <Quote className="w-8 h-8 text-[var(--sv-teal)]/20 absolute -top-1 -left-1" />
-                <p className="text-white/80 text-sm leading-relaxed pl-4 italic">
+                <p className={`text-sm leading-relaxed pl-4 italic ${isLight ? "text-[var(--sv-navy)]/80" : "text-white/80"}`}>
                   "{t.text}"
                 </p>
               </div>
 
               {/* Author */}
-              <div className="flex items-center gap-3 mt-auto pt-4 border-t border-white/10">
-                <div className="w-9 h-9 rounded-full bg-[var(--sv-teal)]/20 flex items-center justify-center text-[var(--sv-teal-light)] font-bold text-sm">
+              <div className={`flex items-center gap-3 mt-auto pt-4 ${isLight ? "border-t border-[var(--sv-border)]" : "border-t border-white/10"}`}>
+                <div className={`w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm ${
+                  isLight
+                    ? "bg-[var(--sv-teal)]/15 text-[var(--sv-teal)]"
+                    : "bg-[var(--sv-teal)]/20 text-[var(--sv-teal-light)]"
+                }`}>
                   {t.name[0]}
                 </div>
                 <div>
-                  <p className="text-white text-sm font-semibold">{t.name}</p>
-                  <p className="text-white/50 text-xs">{t.location}</p>
+                  <p className={`text-sm font-semibold ${isLight ? "text-[var(--sv-navy)]" : "text-white"}`}>
+                    {t.name}
+                  </p>
+                  <p className={`text-xs ${isLight ? "text-[var(--sv-navy)]/55" : "text-white/50"}`}>
+                    {t.location}
+                  </p>
                 </div>
               </div>
             </motion.div>
@@ -83,14 +112,18 @@ export default function TestimonialsSection() {
           transition={{ duration: 0.5, delay: 0.3 }}
           className="mt-12 text-center"
         >
-          <p className="text-white/50 text-sm mb-4">
+          <p className={`text-sm mb-4 ${isLight ? "text-[var(--sv-navy)]/60" : "text-white/50"}`}>
             Rated 5 stars on all major review platforms:
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
             {["Google", "Yelp", "Healthgrades", "Vitals", "Yellow Pages", "TrustPilot"].map((p) => (
               <span
                 key={p}
-                className="px-4 py-2 rounded-full border border-white/20 text-white/60 text-xs font-semibold"
+                className={`px-4 py-2 rounded-full text-xs font-semibold ${
+                  isLight
+                    ? "border border-[var(--sv-border)] text-[var(--sv-navy)]/65 bg-white"
+                    : "border border-white/20 text-white/60"
+                }`}
               >
                 {p}
               </span>

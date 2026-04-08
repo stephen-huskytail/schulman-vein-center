@@ -198,7 +198,7 @@ export default function ContactSection() {
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-                <div className="mb-6">
+                <div>
                   <label className="form-label">Preferred Location *</label>
                   <select {...register("location")} className="form-select">
                     <option value="">Select location…</option>
@@ -210,7 +210,7 @@ export default function ContactSection() {
                   </select>
                   {errors.location && <p className="form-error">{errors.location.message}</p>}
                 </div>
-                <div className="mb-6">
+                <div>
                   <label className="form-label">Area of Concern</label>
                   <select {...register("service")} className="form-select">
                     <option value="">Select service…</option>

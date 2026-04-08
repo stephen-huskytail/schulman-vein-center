@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import FAQSection from "@/components/FAQSection";
 import PageHero from "@/components/PageHero";
-import { BUSINESS } from "@/lib/constants";
+import { BUSINESS, FAQ_SCHEMA } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Frequently Asked Questions",
@@ -15,6 +15,10 @@ export const metadata: Metadata = {
 export default function FaqPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }}
+      />
       <PageHero
         eyebrow="FAQ"
         title="Frequently Asked Questions About Vein Care"

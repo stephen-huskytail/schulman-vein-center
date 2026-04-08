@@ -81,7 +81,7 @@ export default function HeroSection() {
               </a>
               <a
                 href="/contact"
-                className="inline-flex items-center justify-center gap-2 rounded-lg border-2 border-white text-white font-bold text-lg px-8 py-4 transition-colors hover:bg-white"
+                className="inline-flex items-center justify-center gap-2 rounded-lg border-2 border-white text-white font-bold text-lg px-8 py-4 transition-colors hover:bg-white hover:text-[#0B2545]"
                 style={{ "--hover-color": "#0B2545" } as React.CSSProperties}
               >
                 <Calendar className="w-5 h-5 shrink-0" />

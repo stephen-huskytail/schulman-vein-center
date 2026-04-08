@@ -319,6 +319,28 @@ export const FAQS = [
   },
 ];
 
+export const FAQ_SCHEMA = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: FAQS.map((faq) => ({
+    "@type": "Question",
+    name: faq.q,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.a,
+    },
+  })),
+};
+
+export const LAS_VEGAS_AREAS = [
+  "Las Vegas",
+  "Henderson",
+  "Summerlin",
+  "Paradise",
+  "Spring Valley",
+  "North Las Vegas",
+];
+
 export const TESTIMONIALS = [
   {
     name: "Patricia M.",

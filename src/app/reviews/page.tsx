@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
 import TestimonialsSection from "@/components/TestimonialsSection";
+import CTABannerSection from "@/components/CTABannerSection";
 import { BUSINESS, TESTIMONIALS } from "@/lib/constants";
 
 export const metadata: Metadata = {
@@ -48,7 +49,8 @@ export default function ReviewsPage() {
         title="What Patients Say About Their Vein Treatment"
         description="Our patients consistently share five-star feedback about clinical outcomes, personal attention, and same-day recovery."
       />
-      <TestimonialsSection />
+      <TestimonialsSection variant="light" />
+      <CTABannerSection />
     </>
   );
 }

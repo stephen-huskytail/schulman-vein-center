@@ -91,7 +91,7 @@ export default function Footer() {
                 { label: "Before & After Gallery", href: "/results" },
                 { label: "Patient Reviews", href: "/reviews" },
                 { label: "FAQ – About Veins", href: "/faq" },
-                { label: "Insurance Coverage", href: "/" },
+                { label: "Insurance Coverage", href: "/#insurance" },
                 { label: "Contact & Locations", href: "/contact" },
               ].map((l) => (
                 <li key={l.label}>

@@ -14,6 +14,7 @@ const sections = [
       { label: "Home", href: "/" },
       { label: "About", href: "/about" },
       { label: "Services", href: "/services" },
+      { label: "Blog", href: "/blog" },
       { label: "Results", href: "/results" },
       { label: "Reviews", href: "/reviews" },
       { label: "FAQ", href: "/faq" },
@@ -38,6 +39,7 @@ const sections = [
       { label: "Manhattan", href: "/locations/manhattan" },
       { label: "Manhasset", href: "/locations/manhasset" },
       { label: "Commack", href: "/locations/commack" },
+      { label: "Las Vegas", href: "/locations/las-vegas" },
     ],
   },
   {
