@@ -37,7 +37,7 @@ export default function HeroSection() {
               transition={{ duration: 0.5 }}
               className="flex items-center gap-2 mb-5"
             >
-              <span className="text-xs font-bold tracking-[0.2em] uppercase text-[#C8973A] border border-[#C8973A]/40 rounded-full px-3 py-1">
+              <span className="text-sm font-bold tracking-[0.2em] uppercase text-[#C8973A] border border-[#C8973A]/40 rounded-full px-3 py-1">
                 All We Do Is Veins™
               </span>
             </motion.div>

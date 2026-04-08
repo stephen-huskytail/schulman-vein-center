@@ -107,7 +107,7 @@ export default function DoctorsSection() {
                     </span>
                   ))}
                   {doc.memberships.length > 5 && (
-                    <span className="inline-block text-xs text-[var(--sv-teal)] px-2 py-1">
+                    <span className="inline-flex items-center justify-center min-h-[36px] text-sm font-semibold text-[var(--sv-teal)] border border-[var(--sv-teal)]/30 bg-[var(--sv-teal)]/5 rounded-full px-3 py-1.5">
                       +{doc.memberships.length - 5} more
                     </span>
                   )}
