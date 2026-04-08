@@ -42,7 +42,7 @@ export async function generateMetadata({ params }: ServicePageProps): Promise<Me
       description,
       url: canonical,
       siteName: BUSINESS.name,
-      type: "article",
+      type: "website",
     },
   };
 }
@@ -55,12 +55,35 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
     notFound();
   }
 
+  const medicalProcedureSchema = {
+    "@context": "https://schema.org",
+    "@type": "MedicalProcedure",
+    "@id": `${BUSINESS.siteUrl}/services/${service.slug}#medical-procedure`,
+    name: service.name,
+    url: `${BUSINESS.siteUrl}/services/${service.slug}`,
+    description: service.description,
+    bodyLocation: service.bodySite,
+    procedureType: "https://schema.org/NoninvasiveProcedure",
+    provider: {
+      "@id": `${BUSINESS.siteUrl}/#organization`,
+    },
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(medicalProcedureSchema) }}
+      />
       <PageHero
         eyebrow="Service Detail"
         title={service.name}
         description={service.description}
+        breadcrumbs={[
+          { name: "Home", url: `${BUSINESS.siteUrl}/` },
+          { name: "Services", url: `${BUSINESS.siteUrl}/services` },
+          { name: service.name, url: `${BUSINESS.siteUrl}/services/${service.slug}` },
+        ]}
       />
 
       <section className="section-light">

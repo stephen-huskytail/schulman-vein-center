@@ -26,6 +26,10 @@ export default function LocationsPage() {
         eyebrow="Locations"
         title="Our New York Locations"
         description="Visit our Manhattan, Manhasset, or Commack offices for expert vein care across the New York metro area."
+        breadcrumbs={[
+          { name: "Home", url: `${BUSINESS.siteUrl}/` },
+          { name: "Locations", url: `${BUSINESS.siteUrl}/locations` },
+        ]}
       />
 
       <section className="section-light">

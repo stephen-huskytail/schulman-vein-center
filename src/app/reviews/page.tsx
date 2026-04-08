@@ -5,7 +5,7 @@ import CTABannerSection from "@/components/CTABannerSection";
 import { BUSINESS, TESTIMONIALS } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Patient Reviews",
+  title: "Patient Reviews | Manhattan & Long Island",
   description:
     "Read real patient testimonials for Schulman Vein and Laser Center from Manhattan, Manhasset, and Commack.",
   alternates: {
@@ -48,6 +48,10 @@ export default function ReviewsPage() {
         eyebrow="Reviews"
         title="What Patients Say About Their Vein Treatment"
         description="Our patients consistently share five-star feedback about clinical outcomes, personal attention, and same-day recovery."
+        breadcrumbs={[
+          { name: "Home", url: `${BUSINESS.siteUrl}/` },
+          { name: "Reviews", url: `${BUSINESS.siteUrl}/reviews` },
+        ]}
       />
       <TestimonialsSection variant="light" />
       <CTABannerSection />

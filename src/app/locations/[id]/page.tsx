@@ -92,6 +92,15 @@ export default async function LocationDetailPage({ params }: LocationPageProps) 
       postalCode: location.zip,
       addressCountry: "US",
     },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: location.coordinates.latitude,
+      longitude: location.coordinates.longitude,
+    },
+    priceRange: BUSINESS.priceRange,
+    parentOrganization: {
+      "@id": `${BUSINESS.siteUrl}/#organization`,
+    },
     openingHoursSpecification: Object.entries(location.hours)
       .filter(([, hours]) => hours !== "Closed")
       .map(([day, hours]) => {
@@ -117,6 +126,11 @@ export default async function LocationDetailPage({ params }: LocationPageProps) 
         eyebrow={`Location: ${location.shortName}`}
         title={`Vein Treatment in ${location.shortName}, NY`}
         description={`Visit Schulman Vein Center at ${location.fullAddress}. Call ${location.phone} to schedule your consultation.`}
+        breadcrumbs={[
+          { name: "Home", url: `${BUSINESS.siteUrl}/` },
+          { name: "Locations", url: `${BUSINESS.siteUrl}/locations` },
+          { name: location.shortName, url: `${BUSINESS.siteUrl}/locations/${location.id}` },
+        ]}
       />
 
       <section className="section-light">

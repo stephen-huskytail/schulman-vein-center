@@ -4,7 +4,7 @@ import PageHero from "@/components/PageHero";
 import { BUSINESS, FAQ_SCHEMA } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Frequently Asked Questions",
+  title: "Frequently Asked Vein Questions | Manhattan & Long Island",
   description:
     "Find answers about varicose veins, spider veins, insurance, treatment timelines, and what to expect at Schulman Vein.",
   alternates: {
@@ -23,6 +23,10 @@ export default function FaqPage() {
         eyebrow="FAQ"
         title="Frequently Asked Questions About Vein Care"
         description="Get clear answers about symptoms, treatment options, insurance, recovery, and your first appointment."
+        breadcrumbs={[
+          { name: "Home", url: `${BUSINESS.siteUrl}/` },
+          { name: "FAQ", url: `${BUSINESS.siteUrl}/faq` },
+        ]}
       />
       <FAQSection />
     </>

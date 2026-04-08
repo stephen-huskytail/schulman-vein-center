@@ -4,7 +4,7 @@ import PageHero from "@/components/PageHero";
 import { BUSINESS } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Contact and Locations",
+  title: "Contact Us — Manhattan, Manhasset & Commack",
   description:
     "Schedule your free consultation and find complete contact details for our Manhattan, Manhasset, and Commack locations.",
   alternates: {
@@ -19,6 +19,10 @@ export default function ContactPage() {
         eyebrow="Contact"
         title="Schedule a Free Vein Consultation"
         description="Choose the location most convenient for you, call directly, or send a consultation request to our care team."
+        breadcrumbs={[
+          { name: "Home", url: `${BUSINESS.siteUrl}/` },
+          { name: "Contact", url: `${BUSINESS.siteUrl}/contact` },
+        ]}
       />
       <ContactSection />
     </>

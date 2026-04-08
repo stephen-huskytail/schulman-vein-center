@@ -48,6 +48,10 @@ export const LOCATIONS = [
     },
     hoursDisplay: "Mon, Tue, Thu: 9am–7pm · Wed, Fri: 9am–4pm",
     mapUrl: "https://maps.google.com/?q=1165+Park+Ave+New+York+NY+10128",
+    coordinates: {
+      latitude: 40.7836,
+      longitude: -73.9567,
+    },
   },
   {
     id: "manhasset",
@@ -72,6 +76,10 @@ export const LOCATIONS = [
     },
     hoursDisplay: "Mon, Tue, Thu: 9am–7pm · Wed, Fri: 9am–4pm",
     mapUrl: "https://maps.google.com/?q=800+Community+Dr+211+Manhasset+NY+11030",
+    coordinates: {
+      latitude: 40.706,
+      longitude: -73.7008,
+    },
   },
   {
     id: "commack",
@@ -96,6 +104,10 @@ export const LOCATIONS = [
     },
     hoursDisplay: "Mon, Tue, Thu: 9am–7pm · Wed, Fri: 9am–4pm",
     mapUrl: "https://maps.google.com/?q=353+Veterans+Memorial+Hwy+Commack+NY+11725",
+    coordinates: {
+      latitude: 40.8426,
+      longitude: -73.2888,
+    },
   },
 ];
 
@@ -127,6 +139,17 @@ export const DOCTORS = [
       "Pioneered vein techniques now used worldwide",
       "Among America's first certified vascular surgeons",
     ],
+    award: [
+      "Lectured at 79+ international medical conferences",
+      "Pioneered vein techniques now used worldwide",
+      "Among America's first certified vascular surgeons",
+    ],
+    specialty: [
+      "Varicose vein treatment",
+      "Spider vein treatment",
+      "Endovenous laser therapy (EVLT)",
+      "Vascular surgery",
+    ],
   },
   {
     id: "lee-schulman",
@@ -149,6 +172,17 @@ export const DOCTORS = [
       "First to lecture on cosmetic hand vein treatment",
       "Volunteer care with Hackett Hemwall Foundation in Mexico",
     ],
+    award: [
+      "Diplomate in Phlebology Certificate #00045",
+      "First to lecture on cosmetic hand vein treatment",
+      "Volunteer care with Hackett Hemwall Foundation in Mexico",
+    ],
+    specialty: [
+      "Phlebology",
+      "Hand vein treatment",
+      "Cosmetic vein treatment",
+      "Sclerotherapy",
+    ],
   },
 ];
 
@@ -160,6 +194,7 @@ export const SERVICES = [
     icon: "Zap",
     shortDesc: "Advanced laser ablation (EVLT), micro-surgery, and sclerotherapy to eliminate bulging varicose veins — no hospital stay required.",
     description: "Our board-certified specialists use endovenous laser therapy (EVLT), micro ambulatory phlebectomy, sclerotherapy, and foam sclerotherapy to treat varicose veins. All procedures are minimally invasive, performed in-office under local anesthesia. Patients walk and drive home the same day.",
+    bodySite: ["Leg veins"],
     treatments: [
       "Endovenous Laser Therapy (EVLT / Laser Ablation)",
       "Micro Ambulatory Phlebectomy",
@@ -175,6 +210,7 @@ export const SERVICES = [
     icon: "Sparkles",
     shortDesc: "The gold standard in sclerotherapy and laser treatments for spider veins and broken blood vessels on legs, face, and body.",
     description: "Spider vein injection therapy (sclerotherapy) is the globally recognized gold standard for treating spider veins. Our doctors use FDA-approved solutions injected with the smallest needles available — virtually painless, no anesthesia required. Each treatment is fully customized based on vein size, location, and skin tone.",
+    bodySite: ["Legs", "Face", "Body"],
     treatments: [
       "Injection Compression Sclerotherapy (Gold Standard)",
       "Foam Sclerotherapy",
@@ -189,6 +225,7 @@ export const SERVICES = [
     icon: "Crosshair",
     shortDesc: "Modern endovenous laser treatment replaces vein stripping surgery — in-office, ~30 minutes, drive home the same day.",
     description: "EVLT (Endovenous Laser Therapy) is a modern replacement for outdated vein-stripping surgery. Performed in-office under local anesthesia, a thin laser fiber is guided by ultrasound to close faulty veins. The procedure takes about 30 minutes and patients can walk and drive home immediately afterward.",
+    bodySite: ["Leg veins"],
     treatments: [
       "In-Office Under Local Anesthesia",
       "Guided by Doppler Ultrasound",
@@ -203,6 +240,7 @@ export const SERVICES = [
     icon: "Hand",
     shortDesc: "World-renowned for pioneering hand vein treatment — also treating face, temples, chest, breast, arms, and more.",
     description: "While most of our work involves leg veins, Schulman Vein and Laser Center is internationally recognized for pioneering hand vein removal. We also treat veins on the face, temples, chest, breast, arms, feet, and abdomen using injection therapy and minimally invasive techniques.",
+    bodySite: ["Hands", "Face", "Temples", "Chest", "Breast", "Arms", "Feet", "Abdomen"],
     treatments: [
       "Hand Vein Removal (Pioneered by Dr. Schulman)",
       "Temple & Facial Vein Therapy",
@@ -218,6 +256,7 @@ export const SERVICES = [
     icon: "HeartPulse",
     shortDesc: "Diagnosis and treatment of phlebitis, venous leg ulcers, pregnancy-related varicose veins, and venous insufficiency.",
     description: "We diagnose and treat the full spectrum of venous disorders including phlebitis (blood clots), venous leg ulcers, pregnancy-related varicose veins, and chronic venous insufficiency. All diagnoses include a non-invasive Doppler ultrasound when indicated.",
+    bodySite: ["Leg veins", "Deep veins", "Venous system"],
     treatments: [
       "Phlebitis / DVT Management",
       "Venous Leg Ulcer Treatment",
@@ -233,6 +272,7 @@ export const SERVICES = [
     icon: "Search",
     shortDesc: "Schedule a no-cost, no-obligation consultation with a Schulman doctor — not a nurse or assistant — personally.",
     description: "All new patients receive a comprehensive evaluation including a detailed medical history, physical examination of the veins, and Doppler ultrasound when indicated. The consultation is done personally by one of the Dr. Schulmans — never by a student, intern, nurse, or assistant.",
+    bodySite: ["Leg veins", "Hands", "Face", "Body veins"],
     treatments: [
       "Personal Consultation by Dr. Schulman",
       "Full Medical History Review",
@@ -390,7 +430,21 @@ export const SCHEMA = {
   "medicalSpecialty": "Phlebology",
   "telephone": "+12129870500",
   "email": "info@schulmanveinandlasercenter.com",
-  "areaServed": ["Manhattan, NY", "Nassau County, NY", "Suffolk County, NY"],
+  "areaServed": [
+    "Manhattan, NY",
+    "Nassau County, NY",
+    "Suffolk County, NY",
+    "Upper East Side, Manhattan, NY",
+    "Carnegie Hill, Manhattan, NY",
+    "Yorkville, Manhattan, NY",
+    "Midtown, Manhattan, NY",
+    "Great Neck, NY",
+    "Port Washington, NY",
+    "Huntington, NY",
+    "Smithtown, NY",
+    "Commack, NY",
+  ],
+  "sameAs": [],
   "priceRange": "$$",
   "openingHoursSpecification": [
     {

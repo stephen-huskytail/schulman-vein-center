@@ -37,6 +37,10 @@ export default function ServicesPage() {
         eyebrow="Services"
         title="Comprehensive Non-Surgical Vein Treatments"
         description="Each treatment plan is personalized by a Schulman doctor and performed in-office with minimally invasive, FDA-approved techniques."
+        breadcrumbs={[
+          { name: "Home", url: `${BUSINESS.siteUrl}/` },
+          { name: "Services", url: `${BUSINESS.siteUrl}/services` },
+        ]}
       />
 
       <section className="section-light">

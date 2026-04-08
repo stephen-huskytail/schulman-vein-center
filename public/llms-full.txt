@@ -1,0 +1,69 @@
+# Schulman Vein and Laser Center — Full LLM Index
+
+Canonical Site: https://www.schulmanveincenter.com
+Primary Service Area: Manhattan, Nassau County, Suffolk County (New York)
+
+## Core Pages
+- https://www.schulmanveincenter.com/
+- https://www.schulmanveincenter.com/about
+- https://www.schulmanveincenter.com/services
+- https://www.schulmanveincenter.com/locations
+- https://www.schulmanveincenter.com/contact
+- https://www.schulmanveincenter.com/faq
+- https://www.schulmanveincenter.com/results
+- https://www.schulmanveincenter.com/reviews
+
+## Service Pages
+- https://www.schulmanveincenter.com/services/varicose-vein-treatment
+- https://www.schulmanveincenter.com/services/spider-vein-treatment
+- https://www.schulmanveincenter.com/services/laser-vein-therapy
+- https://www.schulmanveincenter.com/services/body-vein-treatment
+- https://www.schulmanveincenter.com/services/vein-disorders
+- https://www.schulmanveincenter.com/services/free-vein-screening
+
+## Location Pages
+- https://www.schulmanveincenter.com/locations/manhattan
+- https://www.schulmanveincenter.com/locations/manhasset
+- https://www.schulmanveincenter.com/locations/commack
+
+## FAQ (Expanded)
+Q: What are varicose veins?
+A: Varicose veins are enlarged surface veins where one-way valves fail, allowing blood to pool. They can cause pain, swelling, and complications if untreated.
+
+Q: Will I be seen personally by one of the Schulman doctors?
+A: Yes. Every patient is seen and treated by Dr. Martin L. Schulman or Dr. Lee G. Schulman.
+
+Q: Does insurance cover vein treatment?
+A: Coverage depends on plan and diagnosis. EVLT for medical varicose disease is often covered. Cosmetic treatments are typically not covered.
+
+Q: Am I awake during vein treatments?
+A: Yes. Treatments are performed under local anesthesia, and patients typically walk and drive home the same day.
+
+Q: How many treatments will I need?
+A: Many patients improve in one or two visits, but exact treatment count depends on severity and vein distribution.
+
+Q: Is vein stripping surgery still done?
+A: Modern EVLT and related minimally invasive techniques have largely replaced vein stripping.
+
+Q: Can varicose veins come back after treatment?
+A: Treated veins stay closed, but new veins can develop over time because vein disease is often hereditary.
+
+Q: Do you treat veins outside the legs?
+A: Yes. Treatments include hand, facial, temple, chest, breast, arm, and other body veins.
+
+Q: What is the difference between spider veins and varicose veins?
+A: Varicose veins are larger bulging veins with medical symptoms; spider veins are smaller superficial vessels, often cosmetic.
+
+Q: What can I expect on my first visit?
+A: First visits include history, exam, and Doppler ultrasound when indicated, followed by a clear treatment plan.
+
+## Insurance & Payment
+- The center works with patient insurance plans and submits clinical documentation when medical treatment is indicated.
+- EVLT for medically necessary varicose vein treatment is often eligible for coverage.
+- Cosmetic vein treatments are commonly self-pay.
+- For patients without coverage, fee reductions and payment plans may be available.
+
+## Technical Discovery URLs
+- https://www.schulmanveincenter.com/llms.txt
+- https://www.schulmanveincenter.com/llms-full.txt
+- https://www.schulmanveincenter.com/sitemap.xml
