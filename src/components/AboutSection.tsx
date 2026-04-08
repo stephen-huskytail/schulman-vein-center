@@ -77,7 +77,7 @@ export default function AboutSection() {
                 <Phone className="w-4 h-4" />
                 Call {BUSINESS.phone}
               </a>
-              <a href="#contact" className="btn-outline-navy">
+              <a href="/contact" className="btn-outline-navy">
                 Schedule Free Screening
               </a>
             </div>

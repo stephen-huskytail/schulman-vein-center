@@ -53,7 +53,7 @@ export default function FAQSection() {
               </p>
             </div>
 
-            <a href="#contact" className="btn-primary">
+            <a href="/contact" className="btn-primary">
               Ask Us a Question
             </a>
           </div>

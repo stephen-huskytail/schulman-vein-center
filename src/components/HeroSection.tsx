@@ -80,7 +80,7 @@ export default function HeroSection() {
                 {BUSINESS.phone}
               </a>
               <a
-                href="#contact"
+                href="/contact"
                 className="inline-flex items-center justify-center gap-2 rounded-lg border-2 border-white text-white font-bold text-lg px-8 py-4 transition-colors hover:bg-white"
                 style={{ "--hover-color": "#0B2545" } as React.CSSProperties}
               >

@@ -1,11 +1,10 @@
 "use client";
 
-import { useState } from "react";
 import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import { Phone, Mail, MapPin, Send, CheckCircle2 } from "lucide-react";
+import { Phone, Mail, Send, CheckCircle2, MapPin, Clock } from "lucide-react";
 import { toast } from "sonner";
 import { BUSINESS, LOCATIONS } from "@/lib/constants";
 
@@ -30,24 +29,31 @@ const SERVICES_LIST = [
 ];
 
 export default function ContactSection() {
-  const [submitted, setSubmitted] = useState(false);
-
   const {
     register,
     handleSubmit,
     formState: { errors, isSubmitting },
-    reset,
   } = useForm<FormData>({
     resolver: zodResolver(schema),
   });
 
   const onSubmit = async (data: FormData) => {
-    // Simulate form submission (replace with actual API call / email service)
-    await new Promise((r) => setTimeout(r, 1200));
-    console.log("Form data:", data);
-    setSubmitted(true);
-    toast.success("Appointment request received! We'll contact you within 1 business day.");
-    reset();
+    const selectedLocation = LOCATIONS.find((loc) => loc.id === data.location);
+    const subject = `New Consultation Request - ${data.name}`;
+    const body = [
+      `Name: ${data.name}`,
+      `Phone: ${data.phone}`,
+      `Email: ${data.email}`,
+      `Preferred Location: ${selectedLocation?.shortName ?? data.location}`,
+      `Area of Concern: ${data.service || "Not specified"}`,
+      "",
+      "Patient Notes:",
+      data.message,
+    ].join("\n");
+
+    const mailtoHref = `${BUSINESS.emailHref}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailtoHref;
+    toast.success("Opening your email app to send this consultation request.");
   };
 
   return (
@@ -98,23 +104,32 @@ export default function ContactSection() {
 
               <div className="mt-6 pt-6 border-t border-white/10">
                 <p className="text-[var(--sv-gold)] text-xs font-bold uppercase tracking-widest mb-4">
-                  Call Our Locations Directly
+                  Our 3 Locations
                 </p>
                 <div className="space-y-3">
                   {LOCATIONS.map((loc) => (
-                    <div key={loc.id} className="flex items-center gap-3">
-                      <div className="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center shrink-0">
-                        <Phone className="w-4 h-4 text-[var(--sv-teal-light)]" />
-                      </div>
-                      <div>
-                        <p className="text-white/60 text-xs">{loc.shortName}</p>
-                        <a
-                          href={loc.phoneHref}
-                          className="font-bold text-white hover:text-[var(--sv-teal-light)] transition-colors text-base"
-                        >
-                          {loc.phone}
-                        </a>
-                      </div>
+                    <div key={loc.id} id={loc.id} className="rounded-xl bg-white/5 p-4">
+                      <p className="text-white font-semibold text-sm mb-2">{loc.name}</p>
+                      <a
+                        href={loc.mapUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-start gap-2 text-white/70 text-xs mb-2 hover:text-white transition-colors"
+                      >
+                        <MapPin className="w-3.5 h-3.5 mt-0.5 shrink-0 text-[var(--sv-teal-light)]" />
+                        <span>{loc.fullAddress}</span>
+                      </a>
+                      <a
+                        href={loc.phoneHref}
+                        className="flex items-center gap-2 font-bold text-white hover:text-[var(--sv-teal-light)] transition-colors text-sm mb-1.5"
+                      >
+                        <Phone className="w-3.5 h-3.5 text-[var(--sv-teal-light)]" />
+                        {loc.phone}
+                      </a>
+                      <p className="flex items-center gap-2 text-white/60 text-xs">
+                        <Clock className="w-3.5 h-3.5 text-[var(--sv-teal-light)]" />
+                        {loc.hoursDisplay}
+                      </p>
                     </div>
                   ))}
                 </div>
@@ -141,126 +156,106 @@ export default function ContactSection() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="lg:col-span-3"
           >
-            {submitted ? (
-              <div className="bg-white rounded-2xl shadow-card p-8 md:p-10 text-center border border-green-100">
-                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <CheckCircle2 className="w-8 h-8 text-green-500" />
-                </div>
-                <h3 className="font-heading font-bold text-[var(--sv-navy)] text-2xl mb-2">
-                  Request Received!
-                </h3>
-                <p className="text-gray-600 mb-6">
-                  Thank you for reaching out to Schulman Vein and Laser Center. We'll contact you within 1 business day to confirm your appointment.
-                </p>
-                <button
-                  onClick={() => setSubmitted(false)}
-                  className="btn-outline-navy"
-                >
-                  Submit Another Request
-                </button>
-              </div>
-            ) : (
-              <form
-                onSubmit={handleSubmit(onSubmit)}
-                className="bg-white rounded-2xl shadow-card p-6 md:p-8 border border-gray-100"
-              >
-                <h3 className="font-heading font-bold text-[var(--sv-navy)] text-xl mb-6">
-                  Request Your Free Consultation
-                </h3>
+            <form
+              onSubmit={handleSubmit(onSubmit)}
+              className="bg-white rounded-2xl shadow-card p-6 md:p-8 border border-gray-100"
+            >
+              <h3 className="font-heading font-bold text-[var(--sv-navy)] text-xl mb-6">
+                Request Your Free Consultation
+              </h3>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-                  <div>
-                    <label className="form-label">Full Name *</label>
-                    <input
-                      {...register("name")}
-                      placeholder="Jane Smith"
-                      className="form-input"
-                    />
-                    {errors.name && <p className="form-error">{errors.name.message}</p>}
-                  </div>
-                  <div>
-                    <label className="form-label">Phone Number *</label>
-                    <input
-                      {...register("phone")}
-                      placeholder="(555) 555-5555"
-                      type="tel"
-                      className="form-input"
-                    />
-                    {errors.phone && <p className="form-error">{errors.phone.message}</p>}
-                  </div>
-                </div>
-
-                <div className="mb-4">
-                  <label className="form-label">Email Address *</label>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+                <div>
+                  <label className="form-label">Full Name *</label>
                   <input
-                    {...register("email")}
-                    placeholder="jane@email.com"
-                    type="email"
+                    {...register("name")}
+                    placeholder="Jane Smith"
                     className="form-input"
                   />
-                  {errors.email && <p className="form-error">{errors.email.message}</p>}
+                  {errors.name && <p className="form-error">{errors.name.message}</p>}
                 </div>
-
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-                  <div>
-                    <label className="form-label">Preferred Location *</label>
-                    <select {...register("location")} className="form-select">
-                      <option value="">Select location…</option>
-                      {LOCATIONS.map((loc) => (
-                        <option key={loc.id} value={loc.id}>
-                          {loc.shortName}
-                        </option>
-                      ))}
-                    </select>
-                    {errors.location && <p className="form-error">{errors.location.message}</p>}
-                  </div>
-                  <div>
-                    <label className="form-label">Area of Concern</label>
-                    <select {...register("service")} className="form-select">
-                      <option value="">Select service…</option>
-                      {SERVICES_LIST.map((s) => (
-                        <option key={s} value={s}>
-                          {s}
-                        </option>
-                      ))}
-                    </select>
-                  </div>
-                </div>
-
-                <div className="mb-6">
-                  <label className="form-label">Tell Us About Your Concerns *</label>
-                  <textarea
-                    {...register("message")}
-                    rows={4}
-                    placeholder="Describe your vein concerns, how long you've had them, and any questions you'd like answered…"
-                    className="form-input resize-none"
+                <div>
+                  <label className="form-label">Phone Number *</label>
+                  <input
+                    {...register("phone")}
+                    placeholder="(555) 555-5555"
+                    type="tel"
+                    className="form-input"
                   />
-                  {errors.message && <p className="form-error">{errors.message.message}</p>}
+                  {errors.phone && <p className="form-error">{errors.phone.message}</p>}
                 </div>
+              </div>
 
-                <button
-                  type="submit"
-                  disabled={isSubmitting}
-                  className="btn-primary w-full justify-center text-base py-3.5 disabled:opacity-70 disabled:cursor-not-allowed"
-                >
-                  {isSubmitting ? (
-                    <>
-                      <div className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
-                      Sending…
-                    </>
-                  ) : (
-                    <>
-                      <Send className="w-4 h-4" />
-                      Request Free Consultation
-                    </>
-                  )}
-                </button>
+              <div className="mb-4">
+                <label className="form-label">Email Address *</label>
+                <input
+                  {...register("email")}
+                  placeholder="jane@email.com"
+                  type="email"
+                  className="form-input"
+                />
+                {errors.email && <p className="form-error">{errors.email.message}</p>}
+              </div>
 
-                <p className="text-xs text-gray-400 text-center mt-3">
-                  By submitting this form, you consent to being contacted by Schulman Vein and Laser Center. We never share your information.
-                </p>
-              </form>
-            )}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+                <div className="mb-6">
+                  <label className="form-label">Preferred Location *</label>
+                  <select {...register("location")} className="form-select">
+                    <option value="">Select location…</option>
+                    {LOCATIONS.map((loc) => (
+                      <option key={loc.id} value={loc.id}>
+                        {loc.shortName}
+                      </option>
+                    ))}
+                  </select>
+                  {errors.location && <p className="form-error">{errors.location.message}</p>}
+                </div>
+                <div className="mb-6">
+                  <label className="form-label">Area of Concern</label>
+                  <select {...register("service")} className="form-select">
+                    <option value="">Select service…</option>
+                    {SERVICES_LIST.map((s) => (
+                      <option key={s} value={s}>
+                        {s}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+              </div>
+
+              <div className="mb-6">
+                <label className="form-label">Tell Us About Your Concerns *</label>
+                <textarea
+                  {...register("message")}
+                  rows={4}
+                  placeholder="Describe your vein concerns, how long you've had them, and any questions you'd like answered…"
+                  className="form-input resize-none"
+                />
+                {errors.message && <p className="form-error">{errors.message.message}</p>}
+              </div>
+
+              <button
+                type="submit"
+                disabled={isSubmitting}
+                className="btn-primary w-full justify-center text-base py-3.5 disabled:opacity-70 disabled:cursor-not-allowed"
+              >
+                {isSubmitting ? (
+                  <>
+                    <div className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+                    Sending…
+                  </>
+                ) : (
+                  <>
+                    <Send className="w-4 h-4" />
+                    Request Free Consultation
+                  </>
+                )}
+              </button>
+
+              <p className="text-xs text-gray-400 text-center mt-3">
+                By submitting this form, your request opens in your default email app and is addressed to our care team.
+              </p>
+            </form>
           </motion.div>
         </div>
       </div>

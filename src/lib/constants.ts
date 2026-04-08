@@ -15,8 +15,8 @@ export const BUSINESS = {
   phoneTel: "+12129870500",
   phoneHref: "tel:+12129870500",
 
-  email: "info@SchulmanVeinAndLaserCenter.com",
-  emailHref: "mailto:info@SchulmanVeinAndLaserCenter.com",
+  email: "info@schulmanveinandlasercenter.com",
+  emailHref: "mailto:info@schulmanveinandlasercenter.com",
 
   // SEO / schema
   schemaType: "MedicalOrganization",
@@ -368,13 +368,31 @@ export const TRUST_STATS = [
 export const SCHEMA = {
   "@context": "https://schema.org",
   "@type": "MedicalOrganization",
+  "@id": "https://www.schulmanveincenter.com/#organization",
   "name": "Schulman Vein and Laser Center",
   "url": "https://www.schulmanveincenter.com",
   "logo": "https://www.schulmanveincenter.com/wp-content/uploads/2017/01/header-logo-new.png",
+  "image": "https://www.schulmanveincenter.com/wp-content/uploads/2018/02/legswithoverlay.png",
   "description": "Manhattan and Long Island vein specialists with 55+ years of combined experience. All We Do Is Veins™. Non-surgical varicose vein and spider vein treatment.",
   "medicalSpecialty": "Phlebology",
   "telephone": "+12129870500",
-  "email": "info@SchulmanVeinAndLaserCenter.com",
+  "email": "info@schulmanveinandlasercenter.com",
+  "areaServed": ["Manhattan, NY", "Nassau County, NY", "Suffolk County, NY"],
+  "priceRange": "$$",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Thursday"],
+      "opens": "09:00",
+      "closes": "19:00",
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Wednesday", "Friday"],
+      "opens": "09:00",
+      "closes": "16:00",
+    },
+  ],
   "address": [
     {
       "@type": "PostalAddress",

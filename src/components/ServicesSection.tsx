@@ -79,7 +79,7 @@ export default function ServicesSection() {
                   </ul>
 
                   <a
-                    href="#contact"
+                    href="/contact"
                     className="inline-flex items-center gap-1.5 text-sm font-semibold text-[var(--sv-teal)] hover:gap-2.5 transition-all"
                   >
                     Free Consultation <ArrowRight className="w-4 h-4" />
@@ -101,7 +101,7 @@ export default function ServicesSection() {
           <p className="text-gray-500 text-sm mb-4">
             Not sure which treatment you need? A Dr. Schulman will evaluate your veins personally at your free consultation.
           </p>
-          <a href="#contact" className="btn-primary">
+          <a href="/contact" className="btn-primary">
             Schedule Free Vein Screening
           </a>
         </motion.div>

@@ -15,7 +15,7 @@ export default function StickyMobileCTA() {
           <span className="text-xs font-bold tracking-wide">Call Now</span>
         </a>
         <a
-          href="#contact"
+          href="/contact"
           className="flex flex-col items-center justify-center gap-1 py-3 bg-[var(--sv-teal)] text-white active:bg-[var(--sv-teal-light)] transition-colors"
         >
           <Calendar className="w-5 h-5" />
