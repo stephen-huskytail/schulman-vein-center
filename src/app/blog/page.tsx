@@ -1,12 +1,24 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import { BUSINESS } from "@/lib/constants";
 
+const featuredPost = {
+  title: "Vein Treatment on the Upper East Side - What Manhattan Patients Should Know",
+  slug: "vein-treatment-upper-east-side-manhattan",
+  excerpt:
+    "How Manhattan patients can get physician-led vein care near Carnegie Hill with same-day recovery for most treatments.",
+  published: "April 7, 2026",
+  image: "/images/gallery/varicose-veins.png",
+  imageAlt:
+    "Vein doctor performing ultrasound evaluation at Schulman Vein and Laser Center, Upper East Side Manhattan",
+};
+
 export const metadata: Metadata = {
   title: "Vein Health Blog",
   description:
-    "Read upcoming educational articles from Schulman Vein Center on vein symptoms, treatment options, recovery, and prevention.",
+    "Educational articles from Schulman Vein and Laser Center on vein symptoms, treatment options, recovery, and prevention.",
   alternates: {
     canonical: `${BUSINESS.siteUrl}/blog`,
   },
@@ -24,41 +36,38 @@ export default function BlogPage() {
       <PageHero
         eyebrow="Blog"
         title="Vein Health Resources from Our Specialists"
-        description="Our educational library is launching soon. In the meantime, explore our treatment pages and FAQs for medically reviewed guidance."
+        description="Educational guidance from our physician-led team for patients in Manhattan and Long Island."
       />
 
       <section className="section-light">
         <div className="container-narrow">
           <div className="bg-white rounded-2xl border border-gray-100 shadow-card p-6 md:p-8">
-            <h2 className="section-title text-2xl mb-3">Coming Soon</h2>
-            <p className="text-gray-600 leading-relaxed mb-6">
-              We are preparing expert articles focused on vein symptoms, treatment options, and
-              long-term vein health for patients in the New York area.
-            </p>
+            <h2 className="section-title text-2xl mb-4">Latest Article</h2>
 
-            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
-              <li className="bg-[var(--sv-cream)] rounded-lg px-4 py-3 text-sm text-[var(--sv-navy)]">
-                Understanding the early signs of venous insufficiency
-              </li>
-              <li className="bg-[var(--sv-cream)] rounded-lg px-4 py-3 text-sm text-[var(--sv-navy)]">
-                EVLT vs. sclerotherapy: which treatment is right for you?
-              </li>
-              <li className="bg-[var(--sv-cream)] rounded-lg px-4 py-3 text-sm text-[var(--sv-navy)]">
-                What to expect after minimally invasive vein treatment
-              </li>
-              <li className="bg-[var(--sv-cream)] rounded-lg px-4 py-3 text-sm text-[var(--sv-navy)]">
-                Insurance and payment planning for vein care
-              </li>
-            </ul>
+            <article className="grid md:grid-cols-[320px_1fr] gap-6 items-start">
+              <Link href={`/blog/${featuredPost.slug}`} className="block rounded-xl overflow-hidden border border-gray-200">
+                <Image
+                  src={featuredPost.image}
+                  alt={featuredPost.imageAlt}
+                  width={1200}
+                  height={630}
+                  className="w-full h-auto"
+                />
+              </Link>
 
-            <div className="flex flex-col sm:flex-row gap-3">
-              <Link href="/services" className="btn-primary justify-center">
-                Explore Vein Treatments
-              </Link>
-              <Link href="/faq" className="btn-outline-navy justify-center">
-                Read Patient FAQs
-              </Link>
-            </div>
+              <div>
+                <p className="text-xs uppercase tracking-[0.12em] text-gray-500 mb-2">{featuredPost.published}</p>
+                <h3 className="font-heading text-2xl font-bold text-[var(--sv-navy)] mb-3">
+                  <Link href={`/blog/${featuredPost.slug}`} className="hover:text-[var(--sv-teal)] transition-colors">
+                    {featuredPost.title}
+                  </Link>
+                </h3>
+                <p className="text-gray-600 leading-relaxed mb-5">{featuredPost.excerpt}</p>
+                <Link href={`/blog/${featuredPost.slug}`} className="btn-primary inline-flex">
+                  Read This Article
+                </Link>
+              </div>
+            </article>
           </div>
         </div>
       </section>
