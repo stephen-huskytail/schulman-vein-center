@@ -6,7 +6,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import { X, ZoomIn } from "lucide-react";
 
 const GALLERY_ITEMS = [
-  { category: "Spider Veins", before: "/images/gallery/spider-veins-9.png", label: "Spider Veins – Patient 9" },
   { category: "Spider Veins", before: "/images/gallery/spider-veins-8.png", label: "Spider Veins – Patient 8" },
   { category: "Spider Veins", before: "/images/gallery/spider-veins-7.png", label: "Spider Veins – Patient 7" },
   { category: "Varicose Veins", before: "/images/gallery/varicose-large.png", label: "Enlarged Varicose Veins" },
