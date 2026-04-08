@@ -121,7 +121,7 @@ export default function Footer() {
                     className="flex items-start gap-2 text-sm text-white/70 hover:text-white transition-colors group mb-1.5"
                   >
                     <MapPin className="w-3.5 h-3.5 mt-0.5 shrink-0 text-[var(--sv-teal)]" />
-                    <span>{loc.fullAddress}</span>
+                    <span className="break-words">{loc.fullAddress}</span>
                   </a>
                   <a
                     href={loc.phoneHref}

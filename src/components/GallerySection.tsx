@@ -107,7 +107,7 @@ export default function GallerySection() {
               <X className="w-8 h-8" />
             </button>
             <div
-              className="relative max-w-2xl w-full max-h-[80vh] aspect-[4/3]"
+              className="relative max-w-2xl w-full max-h-[80vh] aspect-auto min-[400px]:aspect-[4/3]"
               onClick={(e) => e.stopPropagation()}
             >
               <Image
