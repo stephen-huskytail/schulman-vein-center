@@ -40,14 +40,14 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
     : `${BUSINESS.siteUrl}${post.featuredImage ?? "/images/gallery/varicose-large.png"}`;
 
   return {
-    title: `${post.title} | Schulman Vein and Laser Center`,
-    description: post.excerpt,
+    title: post.metaTitle ?? `${post.title} | Schulman Vein and Laser Center`,
+    description: post.metaDescription ?? post.excerpt,
     alternates: {
       canonical: canonicalUrl,
     },
     openGraph: {
       title: post.title,
-      description: post.ogDescription ?? post.excerpt,
+      description: post.ogDescription ?? post.metaDescription ?? post.excerpt,
       url: canonicalUrl,
       type: "article",
       siteName: BUSINESS.name,
@@ -78,7 +78,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: post.title,
-    description: post.excerpt,
+    description: post.metaDescription ?? post.excerpt,
     datePublished: `${post.publishedAt}T00:00:00.000Z`,
     dateModified: `${post.publishedAt}T00:00:00.000Z`,
     author: {
@@ -154,6 +154,15 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                   <h2 className="font-heading text-2xl font-bold text-[var(--sv-navy)] mb-4">
                     {section.heading}
                   </h2>
+                  {section.imageSrc ? (
+                    <Image
+                      src={section.imageSrc}
+                      alt={section.imageAlt ?? section.heading}
+                      width={1200}
+                      height={675}
+                      className="w-full h-auto rounded-xl mb-5"
+                    />
+                  ) : null}
                   <div className="space-y-4">
                     {section.paragraphs.map((paragraph) => (
                       <p key={paragraph} className="text-gray-700 leading-relaxed">
@@ -164,6 +173,23 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 </section>
               ))}
             </div>
+
+            {post.relatedLinks?.length ? (
+              <section className="mt-10 bg-white rounded-xl border border-gray-100 p-6 md:p-7">
+                <h2 className="font-heading text-2xl font-bold text-[var(--sv-navy)] mb-3">
+                  Related Treatment Resources
+                </h2>
+                <ul className="space-y-2">
+                  {post.relatedLinks.map((link) => (
+                    <li key={link.href}>
+                      <Link href={link.href} className="text-[var(--sv-teal)] font-medium hover:underline">
+                        {link.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            ) : null}
 
             <section className="mt-10 bg-[var(--sv-cream)] rounded-xl border border-gray-100 p-6 md:p-7">
               <h2 className="font-heading text-2xl font-bold text-[var(--sv-navy)] mb-3">

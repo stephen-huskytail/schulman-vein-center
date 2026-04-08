@@ -5,6 +5,13 @@ export type BlogCategory = (typeof BLOG_CATEGORIES)[number];
 export type BlogPostSection = {
   heading: string;
   paragraphs: string[];
+  imageSrc?: string;
+  imageAlt?: string;
+};
+
+export type BlogPostLink = {
+  label: string;
+  href: string;
 };
 
 export type BlogPost = {
@@ -17,11 +24,102 @@ export type BlogPost = {
   author: string;
   body: BlogPostSection[];
   ogDescription?: string;
+  metaTitle?: string;
+  metaDescription?: string;
   featuredImage?: string;
   featuredImageAlt?: string;
+  relatedLinks?: BlogPostLink[];
 };
 
 export const BLOG_POSTS: BlogPost[] = [
+  {
+    slug: "evlt-vs-sclerotherapy-vein-treatment-new-york",
+    title: "EVLT vs. Sclerotherapy — Which Vein Treatment Is Right for You?",
+    excerpt:
+      "Compare EVLT and sclerotherapy for varicose and spider veins in New York, including coverage, recovery, and when each treatment is recommended.",
+    category: "Treatments",
+    publishedAt: "2026-04-08",
+    readTimeMinutes: 9,
+    author: "Dr. Lee G. Schulman",
+    metaTitle: "EVLT vs. Sclerotherapy: Best Vein Treatment New York | Schulman",
+    metaDescription:
+      "EVLT vs. sclerotherapy - which vein treatment is right for you? Schulman Vein and Laser Center in New York explains. Book a free vein screening today.",
+    ogDescription:
+      "EVLT vs. sclerotherapy - which vein treatment is right for you? Schulman Vein and Laser Center in New York explains. Book a free vein screening today.",
+    featuredImage: "/images/gallery/varicose-veins.png",
+    featuredImageAlt:
+      "EVLT vs sclerotherapy vein treatment comparison - Schulman Vein and Laser Center New York",
+    relatedLinks: [
+      { label: "Laser Vein Therapy (EVLT)", href: "/services/laser-vein-therapy" },
+      { label: "Spider Vein Treatment", href: "/services/spider-vein-treatment" },
+      { label: "Varicose Vein Treatment", href: "/services/varicose-vein-treatment" },
+      { label: "Free Vein Screening", href: "/services/free-vein-screening" },
+    ],
+    body: [
+      {
+        heading: "The Short Answer",
+        paragraphs: [
+          "EVLT is typically used for larger varicose veins and underlying venous insufficiency - the circulatory problem that causes varicose veins to form. Because it addresses a medical condition, it is often covered by insurance.",
+          "Sclerotherapy is typically used for spider veins and smaller surface vessels. It is a quicker procedure, but because it is generally considered cosmetic, it is usually self-pay.",
+          "If you are dealing with bulging, ropy veins with pain, swelling, or heaviness, EVLT may be the right path. If your concern is fine red or purple web-like veins near the skin surface, sclerotherapy is often the better fit.",
+        ],
+      },
+      {
+        heading: "What Is EVLT?",
+        paragraphs: [
+          "EVLT stands for Endovenous Laser Treatment. It treats venous insufficiency, where faulty vein valves allow blood to pool and flow backward instead of returning efficiently to the heart.",
+          "During treatment, a thin laser fiber is inserted into the affected vein through a small puncture. Under ultrasound guidance, heat energy closes the vein from the inside. Blood naturally reroutes through healthier veins as the treated vein is reabsorbed.",
+          "The procedure usually takes 45 to 60 minutes in-office under local anesthesia. Most patients return to normal activity quickly after treatment.",
+        ],
+      },
+      {
+        heading: "What Is Sclerotherapy?",
+        paragraphs: [
+          "Sclerotherapy treats spider veins and smaller superficial vessels by injecting a medical solution directly into the vein. The vein wall collapses and gradually fades as the body clears it.",
+          "Most sessions take 15 to 30 minutes with little to no downtime, and patients usually return to normal daily activities right away.",
+          "Schulman Vein and Laser Center uses traditional and foam techniques based on vein size and treatment goals.",
+        ],
+      },
+      {
+        heading: "Side-by-Side Comparison",
+        paragraphs: [
+          "EVLT is typically best for larger refluxing varicose veins and symptomatic venous insufficiency, while sclerotherapy is best for spider veins and smaller surface vessels.",
+          "EVLT generally involves local anesthesia and a slightly longer recovery window, while sclerotherapy is faster and often same-day return to routine.",
+          "Both are minimally invasive, in-office treatments and can be combined in a staged plan when clinically appropriate.",
+        ],
+      },
+      {
+        heading: "Varicose Veins vs Spider Veins",
+        imageSrc: "/images/gallery/spider-veins-9.png",
+        imageAlt: "Varicose veins vs spider veins diagram - vein treatment New York",
+        paragraphs: [
+          "Varicose veins are usually larger, raised, and associated with venous reflux symptoms. Spider veins are smaller surface vessels and are more commonly cosmetic.",
+        ],
+      },
+      {
+        heading: "Insurance Differences",
+        paragraphs: [
+          "EVLT is frequently covered by insurance when medical necessity is documented through symptoms and ultrasound-confirmed venous insufficiency.",
+          "Sclerotherapy is usually considered cosmetic and is typically self-pay unless unusual medical criteria are met.",
+          "Schulman Vein and Laser Center helps patients understand insurance requirements and documentation before treatment.",
+        ],
+      },
+      {
+        heading: "Which Is Right for You?",
+        paragraphs: [
+          "The right treatment depends on your vein anatomy, symptoms, and ultrasound findings. Many patients benefit from EVLT first to address underlying reflux and then sclerotherapy for residual surface veins.",
+          "Choosing treatment before a proper evaluation can lead to recurrence or incomplete results. A physician-led vein exam is the best first step.",
+        ],
+      },
+      {
+        heading: "See a Specialist at Schulman Vein and Laser Center",
+        paragraphs: [
+          "Patients across Manhattan, the Upper East Side, and Long Island rely on Schulman Vein and Laser Center for physician-led vein diagnosis and treatment planning.",
+          "If you are unsure where to start, schedule an evaluation to confirm whether EVLT, sclerotherapy, or a staged combination is the best fit for your condition.",
+        ],
+      },
+    ],
+  },
   {
     slug: "understanding-varicose-veins-symptoms-when-to-seek-treatment",
     title: "Understanding Varicose Veins: Symptoms and When to Seek Treatment",
@@ -155,45 +253,89 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
   },
   {
-    slug: "insurance-and-payment-planning-for-vein-care",
-    title: "Insurance and Payment Planning for Vein Care",
+    slug: "does-insurance-cover-vein-treatment-new-york",
+    title: "Does Insurance Cover Vein Treatment in New York?",
     excerpt:
-      "Coverage for vein treatment depends on medical necessity. Learn what insurers often require and how to plan your next steps.",
+      "Does insurance cover vein treatment in New York? Learn when varicose vein procedures are medically necessary and how to verify coverage.",
     category: "Insurance",
-    publishedAt: "2026-04-04",
-    readTimeMinutes: 8,
+    publishedAt: "2026-04-08",
+    readTimeMinutes: 10,
     author: "Dr. Lee G. Schulman",
+    metaTitle: "Does Insurance Cover Vein Treatment in New York? | Schulman Vein",
+    metaDescription:
+      "Does insurance cover vein treatment in New York? Learn when varicose vein procedures are medically necessary - and how to find out if you're covered.",
     ogDescription:
-      "Insurance planning guide for vein care, including medical necessity, documentation, and out-of-pocket expectations.",
-    featuredImage: "/images/gallery/varicose-large.png",
-    featuredImageAlt: "Insurance and billing paperwork prepared for a vein treatment consultation",
+      "Plain-language guide to insurance coverage for vein procedures at Schulman Vein and Laser Center. Learn when treatment qualifies as medically necessary.",
+    featuredImage: "/images/blog/insurance-coverage-new-york.svg",
+    featuredImageAlt:
+      "Insurance paperwork at a vein clinic in New York - Schulman Vein and Laser Center",
+    relatedLinks: [
+      { label: "Free Vein Screening", href: "/services/free-vein-screening" },
+      { label: "Varicose Vein Treatment", href: "/services/varicose-vein-treatment" },
+      { label: "Laser Vein Therapy", href: "/services/laser-vein-therapy" },
+      { label: "Contact Our Office", href: "/contact" },
+    ],
     body: [
       {
-        heading: "When insurance may cover treatment",
+        heading: "The Short Answer",
         paragraphs: [
-          "Many plans consider treatment when symptoms and diagnostic findings support medical necessity. Typical criteria include pain, swelling, skin changes, or documented venous reflux on ultrasound.",
-          "Cosmetic concerns alone are usually not covered, even when veins are visible. Coverage decisions vary by insurer and plan rules.",
+          "Vein treatment may be covered when it is medically necessary. Procedures that treat symptomatic venous disease, such as painful or swollen varicose veins, are frequently eligible under many commercial plans and Medicare in New York.",
+          "Cosmetic treatment for spider veins without medical symptoms is usually not covered. The core insurance question is whether treatment addresses a documented medical condition or appearance alone.",
         ],
       },
       {
-        heading: "Documentation insurers often request",
+        heading: "When Vein Treatment Is Medically Necessary",
         paragraphs: [
-          "Insurers may require conservative management documentation, such as a trial of compression stockings, along with physician notes describing persistent symptoms.",
-          "Ultrasound findings and treatment rationale are commonly reviewed before authorizations are approved.",
+          "Most insurers look for documented symptoms, including aching, heaviness, swelling, skin changes, or ulcer risk, along with ultrasound evidence of venous reflux.",
+          "Carriers also commonly require a trial of conservative care, such as compression stockings, before approving procedures like EVLT or ablation.",
+          "If symptoms persist after conservative therapy, physician documentation and duplex ultrasound findings typically form the basis of a medical necessity claim.",
         ],
       },
       {
-        heading: "Planning for costs and timing",
+        heading: "What Insurance Commonly Covers",
         paragraphs: [
-          "Before treatment, ask for a benefits review that outlines expected coverage, deductibles, copays, and any out-of-pocket responsibility. Clear estimates reduce surprises.",
-          "If staged care is recommended, request a timeline so authorizations and appointments can be aligned with your work and family schedule.",
+          "When criteria are met, plans often cover diagnostic venous ultrasound and medically necessary procedures such as EVLT or radiofrequency ablation for refluxing veins.",
+          "In selected cases, follow-up treatment for residual medically significant varicose veins can also be covered when clearly documented.",
+          "Coverage details vary by policy and carrier, so benefits must be verified case-by-case before treatment is scheduled.",
         ],
       },
       {
-        heading: "How your clinic team can help",
+        heading: "What Is Usually Not Covered",
         paragraphs: [
-          "Experienced vein teams can coordinate with your insurer, submit necessary records, and explain each step in plain language before treatment dates are finalized.",
-          "If coverage is denied, your physician may discuss next options, including appeal pathways or alternative treatment sequencing.",
+          "Cosmetic spider vein sclerotherapy is usually self-pay when no qualifying symptoms or venous disease are documented.",
+          "Treatment may also be denied when required conservative therapy has not been completed or when medical necessity records are incomplete.",
+          "Retreatment in the same area generally requires fresh clinical evidence showing persistent or recurrent disease.",
+        ],
+      },
+      {
+        heading: "How to Verify Your Coverage",
+        paragraphs: [
+          "Start with a physician evaluation instead of calling your insurer first. A diagnosis and procedure code are needed for meaningful benefit verification.",
+          "At Schulman Vein and Laser Center, a free screening helps determine whether your condition is cosmetic or medically significant before decisions are made.",
+          "Our team then verifies your deductible, coinsurance, prior authorization needs, and expected out-of-pocket cost before scheduling treatment.",
+        ],
+      },
+      {
+        heading: "How Schulman Vein and Laser Center Helps",
+        paragraphs: [
+          "Our office works with major New York carriers and handles prior authorization submissions with physician-led documentation and ultrasound findings.",
+          "If a denial occurs, we assist with appeal steps using the clinical record required by your plan.",
+          "If treatment is cosmetic, we provide transparent self-pay options so you can choose a plan that fits your goals and budget.",
+        ],
+      },
+      {
+        heading: "Frequently Asked Questions",
+        paragraphs: [
+          "Does Medicare cover vein treatment? Medicare often covers medically necessary varicose vein treatment with documented symptoms and reflux, but not cosmetic procedures.",
+          "How long does authorization take? Many plans respond within five to ten business days, though timing varies by carrier.",
+          "Do I need a referral? A referral is not required for an initial consultation at Schulman Vein and Laser Center.",
+        ],
+      },
+      {
+        heading: "Take the First Step",
+        paragraphs: [
+          "A physician-led free vein screening is the fastest way to understand whether your condition may qualify for insurance coverage in New York.",
+          "If you are ready to get clarity, schedule a screening and discuss your treatment and coverage options with our team.",
         ],
       },
     ],

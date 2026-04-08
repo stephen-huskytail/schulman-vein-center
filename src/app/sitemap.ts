@@ -1,4 +1,5 @@
 import { MetadataRoute } from "next";
+import { getAllBlogPosts } from "@/lib/blog-posts";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = "https://www.schulmanveincenter.com";
@@ -7,6 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const locationDate = new Date("2026-04-08T00:00:00.000Z");
   const contentDate = new Date("2026-04-08T00:00:00.000Z");
   const legalDate = new Date("2026-04-08T00:00:00.000Z");
+  const blogDate = new Date("2026-04-08T00:00:00.000Z");
 
   const routes: MetadataRoute.Sitemap = [
     {
@@ -118,12 +120,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
-      url: `${base}/blog/vein-treatment-upper-east-side-manhattan`,
-      lastModified: contentDate,
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
       url: `${base}/privacy`,
       lastModified: legalDate,
       changeFrequency: "yearly",
@@ -137,5 +133,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
-  return routes;
+  const blogPostRoutes: MetadataRoute.Sitemap = getAllBlogPosts().map((post) => ({
+    url: `${base}/blog/${post.slug}`,
+    lastModified: blogDate,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  }));
+
+  return [...routes, ...blogPostRoutes];
 }
