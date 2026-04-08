@@ -31,7 +31,7 @@ export default function DoctorsSection() {
         >
           <div className="relative w-full max-w-2xl rounded-2xl overflow-hidden shadow-xl aspect-[16/7]">
             <Image
-              src="http://schulmanvein.wpengine.com/wp-content/uploads/2017/01/team-schulman.jpg"
+              src="/images/team.jpg"
               alt="Dr. Martin L. Schulman and Dr. Lee G. Schulman — Schulman Vein and Laser Center"
               fill
               className="object-cover"

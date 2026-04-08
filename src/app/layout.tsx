@@ -56,7 +56,7 @@ export const metadata: Metadata = {
       "Board-certified vein specialists in Manhattan and Long Island. 55+ years experience. All We Do Is Veins™. Free screening. Call today.",
     images: [
       {
-        url: "https://www.schulmanveincenter.com/wp-content/uploads/2018/02/legswithoverlay.png",
+        url: "https://www.schulmanveincenter.com/images/hero-bg.png",
         width: 1200,
         height: 630,
         alt: "Schulman Vein and Laser Center",

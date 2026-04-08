@@ -29,7 +29,7 @@ export default function AboutSection() {
           >
             <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-[4/3]">
               <Image
-                src="https://www.schulmanveincenter.com/wp-content/uploads/2018/10/billionphotos-2668695.jpg"
+                src="/images/about.jpg"
                 alt="Clear, healthy legs after vein treatment at Schulman Vein Center"
                 fill
                 className="object-cover"

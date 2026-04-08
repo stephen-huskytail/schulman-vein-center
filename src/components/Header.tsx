@@ -86,7 +86,7 @@ export default function Header() {
         <div className="flex items-center justify-between h-[72px] lg:h-[80px]">
           <Link href="/" className="flex items-center gap-3 shrink-0" onClick={handleNavClick}>
             <Image
-              src="https://www.schulmanveincenter.com/wp-content/uploads/2017/01/header-logo-new.png"
+              src="/images/logo.png"
               alt="Schulman Vein and Laser Center"
               width={110}
               height={48}

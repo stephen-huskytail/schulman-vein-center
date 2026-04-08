@@ -6,21 +6,14 @@ import { motion, AnimatePresence } from "framer-motion";
 import { X, ZoomIn } from "lucide-react";
 
 const GALLERY_ITEMS = [
-  { category: "Spider Veins", before: "https://www.schulmanveincenter.com/wp-content/uploads/2018/10/SPVOV21IV6S2BA-400x284.png", label: "Spider Veins – Patient 9" },
-  { category: "Spider Veins", before: "https://www.schulmanveincenter.com/wp-content/uploads/2018/10/SPVOE44VO3BA-400x284.png", label: "Spider Veins – Patient 8" },
-  { category: "Spider Veins", before: "https://www.schulmanveincenter.com/wp-content/uploads/2018/10/SPV64EE9E49BA-400x284.png", label: "Spider Veins – Patient 7" },
-  { category: "Spider Veins", before: "https://www.schulmanveincenter.com/wp-content/uploads/2017/01/spider-large-400x284.png", label: "Spider Veins – Patient 2" },
-  { category: "Varicose Veins", before: "https://www.schulmanveincenter.com/wp-content/uploads/2017/01/varicose-large-400x284.png", label: "Enlarged Varicose Veins" },
-  { category: "Varicose Veins", before: "https://www.schulmanveincenter.com/wp-content/uploads/2017/01/varicose-veins-400x284.png", label: "Varicosities in Leg" },
-  { category: "Hand Veins", before: "https://www.schulmanveincenter.com/wp-content/uploads/2017/01/hand-large-400x284.png", label: "Enlarged Hand Veins" },
-  { category: "Hand Veins", before: "https://www.schulmanveincenter.com/wp-content/uploads/2017/01/hand2-large-400x284.png", label: "Hand Veins – Patient 3" },
-  { category: "Facial Veins", before: "https://www.schulmanveincenter.com/wp-content/uploads/2017/01/facial-large-400x284.png", label: "Temple Veins" },
-  { category: "Facial Veins", before: "https://www.schulmanveincenter.com/wp-content/uploads/2017/01/facial2-large-400x284.png", label: "Temple & Facial Veins" },
-  { category: "Breast Veins", before: "https://www.schulmanveincenter.com/wp-content/uploads/2017/01/breast-large-400x284.png", label: "Breast Veins – Patient 2" },
-  { category: "Spider Veins", before: "https://www.schulmanveincenter.com/wp-content/uploads/2017/01/spider2-large-400x284.png", label: "Spider Veins on Thigh" },
+  { category: "Spider Veins", before: "/images/gallery/spider-veins-9.png", label: "Spider Veins – Patient 9" },
+  { category: "Spider Veins", before: "/images/gallery/spider-veins-8.png", label: "Spider Veins – Patient 8" },
+  { category: "Spider Veins", before: "/images/gallery/spider-veins-7.png", label: "Spider Veins – Patient 7" },
+  { category: "Varicose Veins", before: "/images/gallery/varicose-large.png", label: "Enlarged Varicose Veins" },
+  { category: "Varicose Veins", before: "/images/gallery/varicose-veins.png", label: "Varicosities in Leg" },
 ];
 
-const CATEGORIES = ["All", "Spider Veins", "Varicose Veins", "Hand Veins", "Facial Veins", "Breast Veins"];
+const CATEGORIES = ["All", "Spider Veins", "Varicose Veins"];
 
 export default function GallerySection() {
   const [active, setActive] = useState("All");

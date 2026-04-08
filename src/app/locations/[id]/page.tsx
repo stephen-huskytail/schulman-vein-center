@@ -82,7 +82,7 @@ export default async function LocationDetailPage({ params }: LocationPageProps) 
     name: `${BUSINESS.name} - ${location.shortName}`,
     url: `${BUSINESS.siteUrl}/locations/${location.id}`,
     telephone: location.phoneTel,
-    image: "https://www.schulmanveincenter.com/wp-content/uploads/2018/02/legswithoverlay.png",
+    image: "https://www.schulmanveincenter.com/images/hero-bg.png",
     medicalSpecialty: BUSINESS.specialty,
     address: {
       "@type": "PostalAddress",

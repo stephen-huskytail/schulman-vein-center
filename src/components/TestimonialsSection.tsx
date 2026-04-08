@@ -8,7 +8,7 @@ export default function TestimonialsSection() {
   return (
     <section id="testimonials" className="section-navy relative overflow-hidden">
       {/* Decorative */}
-      <div className="absolute inset-0 bg-[url('https://www.schulmanveincenter.com/wp-content/uploads/2018/02/legs2overlay-1.png')] bg-cover bg-center opacity-5" />
+      <div className="absolute inset-0 bg-[url('/images/testimonials-bg.png')] bg-cover bg-center opacity-5" />
       <div className="absolute inset-0 bg-[var(--sv-navy)]/95" />
 
       <div className="container-sv relative z-10">

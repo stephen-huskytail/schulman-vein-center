@@ -13,7 +13,7 @@ export default function HeroSection() {
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage:
-              "url('https://www.schulmanveincenter.com/wp-content/uploads/2018/02/legswithoverlay.png')",
+              "url('/images/hero-bg.png')",
           }}
           aria-hidden="true"
         />
