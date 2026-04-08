@@ -121,7 +121,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${base}/blog/vein-treatment-upper-east-side-manhattan`,
       lastModified: contentDate,
       changeFrequency: "monthly",
-      priority: 0.6,
+      priority: 0.7,
     },
     {
       url: `${base}/privacy`,
