@@ -21,6 +21,7 @@ export default function AboutPage() {
     "@type": "Physician",
     "@id": `${BUSINESS.siteUrl}/about#${doctor.id}`,
     name: doctor.name,
+    hasCredential: doctor.credentials,
     medicalSpecialty: doctor.specialty,
     award: doctor.award,
     alumniOf: "New York Medical College",
