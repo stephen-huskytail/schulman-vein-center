@@ -46,7 +46,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "EVLT vs. sclerotherapy - which vein treatment is right for you? Schulman Vein and Laser Center in New York explains. Book a free vein screening today.",
     ogDescription:
       "EVLT vs. sclerotherapy - which vein treatment is right for you? Schulman Vein and Laser Center in New York explains. Book a free vein screening today.",
-    featuredImage: "/images/gallery/varicose-veins.png",
+    featuredImage: "/images/blog/evlt-vs-sclerotherapy-new-york.svg",
     featuredImageAlt:
       "EVLT vs sclerotherapy vein treatment comparison - Schulman Vein and Laser Center New York",
     relatedLinks: [

@@ -146,7 +146,16 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 className="w-full h-auto rounded-xl mb-8"
                 priority
               />
-            ) : null}
+            ) : (
+              <div className="mb-8 overflow-hidden rounded-xl bg-gradient-to-br from-[var(--sv-teal)] to-[var(--sv-navy)] p-8 md:p-10">
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-white/80">
+                  Featured Article
+                </p>
+                <h2 className="mt-2 font-heading text-2xl font-bold text-white md:text-3xl">
+                  {post.title}
+                </h2>
+              </div>
+            )}
 
             <div className="space-y-10">
               {post.body.map((section) => (

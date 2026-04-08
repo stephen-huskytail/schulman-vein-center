@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { CalendarDays, Clock3, ArrowRight } from "lucide-react";
 import PageHero from "@/components/PageHero";
@@ -50,6 +51,23 @@ export default function BlogPage() {
               key={post.slug}
               className="bg-white rounded-2xl border border-gray-100 shadow-card overflow-hidden flex flex-col"
             >
+              <div className="relative aspect-[16/10] bg-[var(--sv-teal)]/10">
+                {post.featuredImage ? (
+                  <Image
+                    src={post.featuredImage}
+                    alt={post.featuredImageAlt ?? post.title}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                ) : (
+                  <div className="absolute inset-0 bg-gradient-to-br from-[var(--sv-teal)] to-[var(--sv-navy)] flex items-end">
+                    <span className="m-4 inline-flex rounded-full bg-white/20 px-3 py-1 text-xs font-semibold tracking-wide text-white">
+                      Schulman Vein Center
+                    </span>
+                  </div>
+                )}
+              </div>
               <div className="p-6 md:p-7 flex flex-col flex-1">
                 <span className="inline-flex self-start items-center rounded-full bg-[var(--sv-teal)]/10 text-[var(--sv-teal)] text-xs font-semibold tracking-wide px-3 py-1 mb-3">
                   {post.category}
