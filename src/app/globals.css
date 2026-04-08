@@ -45,28 +45,28 @@
 
   /* ── Section wrappers ── */
   .section-light {
-    @apply bg-white py-16 md:py-24;
+    @apply bg-white py-16 sm:py-20 md:py-24;
   }
   .section-cream {
-    @apply py-16 md:py-24;
+    @apply py-16 sm:py-20 md:py-24;
     background-color: var(--sv-cream);
   }
   .section-gray {
-    @apply py-16 md:py-24;
+    @apply py-16 sm:py-20 md:py-24;
     background-color: var(--sv-gray);
   }
   .section-navy {
-    @apply text-white py-16 md:py-24;
+    @apply text-white py-16 sm:py-20 md:py-24;
     background-color: var(--sv-navy);
   }
   .section-teal {
-    @apply text-white py-16 md:py-24;
+    @apply text-white py-16 sm:py-20 md:py-24;
     background-color: var(--sv-teal);
   }
 
   /* ── Buttons ── */
   .btn-primary {
-    @apply inline-flex items-center gap-2 rounded-lg text-white font-semibold px-6 py-3
+    @apply inline-flex items-center gap-2 rounded-lg min-h-[48px] text-white font-semibold px-6 py-3
            transition-all duration-200 shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2;
     background-color: var(--sv-teal);
     --tw-ring-color: var(--sv-teal);
@@ -78,7 +78,7 @@
     @apply btn-primary text-lg px-8 py-4;
   }
   .btn-secondary {
-    @apply inline-flex items-center gap-2 rounded-lg border-2 border-white text-white font-semibold px-6 py-3
+    @apply inline-flex items-center gap-2 rounded-lg min-h-[48px] border-2 border-white text-white font-semibold px-6 py-3
            transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2;
   }
   .btn-secondary:hover {
@@ -89,7 +89,7 @@
     @apply btn-secondary text-lg px-8 py-4;
   }
   .btn-gold {
-    @apply inline-flex items-center gap-2 rounded-lg text-white font-semibold px-6 py-3
+    @apply inline-flex items-center gap-2 rounded-lg min-h-[48px] text-white font-semibold px-6 py-3
            transition-all duration-200 shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2;
     background-color: var(--sv-gold);
     --tw-ring-color: var(--sv-gold);
@@ -98,7 +98,7 @@
     background-color: var(--sv-gold-light);
   }
   .btn-outline-navy {
-    @apply inline-flex items-center gap-2 rounded-lg border-2 font-semibold px-6 py-3
+    @apply inline-flex items-center gap-2 rounded-lg min-h-[48px] border-2 font-semibold px-6 py-3
            transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2;
     border-color: var(--sv-navy);
     color: var(--sv-navy);
@@ -164,7 +164,7 @@
 
   /* ── Form inputs ── */
   .form-input {
-    @apply w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-gray-900 text-sm
+    @apply w-full min-h-[44px] rounded-lg border border-gray-300 bg-white px-4 py-3 text-gray-900 text-sm
            placeholder-gray-400 focus:outline-none transition-colors;
   }
   .form-input:focus {
@@ -175,7 +175,7 @@
     @apply form-input appearance-none;
   }
   .form-label {
-    @apply block text-sm font-semibold text-gray-700 mb-1.5;
+    @apply block text-sm font-semibold text-gray-700 mb-2;
   }
   .form-error {
     @apply text-red-500 text-xs mt-1;

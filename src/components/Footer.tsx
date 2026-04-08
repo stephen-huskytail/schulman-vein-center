@@ -127,7 +127,7 @@ export default function Footer() {
                   </a>
                   <a
                     href={loc.phoneHref}
-                    className="flex items-center gap-2 text-sm text-white/70 hover:text-white transition-colors"
+                    className="flex items-center gap-2 py-1 text-sm text-white/70 hover:text-white transition-colors"
                   >
                     <Phone className="w-3.5 h-3.5 shrink-0 text-[var(--sv-teal)]" />
                     {loc.phone}
@@ -154,10 +154,10 @@ export default function Footer() {
             </a>
           </p>
           <div className="flex flex-wrap items-center gap-4">
-            <Link href="/sitemap-page" className="hover:text-white/80 transition-colors">Sitemap</Link>
-            <Link href="/privacy" className="hover:text-white/80 transition-colors">Privacy Policy</Link>
-            <Link href="/terms" className="hover:text-white/80 transition-colors">Terms of Use</Link>
-            <Link href="/contact" className="hover:text-white/80 transition-colors">Contact Us</Link>
+            <Link href="/sitemap-page" className="py-1 hover:text-white/80 transition-colors">Sitemap</Link>
+            <Link href="/privacy" className="py-1 hover:text-white/80 transition-colors">Privacy Policy</Link>
+            <Link href="/terms" className="py-1 hover:text-white/80 transition-colors">Terms of Use</Link>
+            <Link href="/contact" className="py-1 hover:text-white/80 transition-colors">Contact Us</Link>
           </div>
         </div>
       </div>

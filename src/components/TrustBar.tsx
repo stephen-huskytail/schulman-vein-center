@@ -7,7 +7,7 @@ export default function TrustBar() {
   return (
     <div
       className="fixed top-0 left-0 right-0 z-[60] bg-[var(--sv-navy)] text-white text-xs"
-      style={{ height: "40px" }}
+      style={{ height: "44px" }}
     >
       <div className="container-sv h-full flex items-center justify-between gap-4">
         {/* Left: tagline */}
@@ -36,7 +36,7 @@ export default function TrustBar() {
           {/* Mobile: just one phone */}
           <a
             href={BUSINESS.phoneHref}
-            className="flex lg:hidden items-center gap-1.5 font-semibold hover:text-[var(--sv-gold)] transition-colors"
+            className="flex lg:hidden h-full items-center gap-1.5 px-2 font-semibold hover:text-[var(--sv-gold)] transition-colors"
           >
             <Phone className="w-3 h-3" />
             {BUSINESS.phone}
