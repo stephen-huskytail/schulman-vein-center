@@ -1,8 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Phone, Calendar, ChevronDown, ShieldCheck, Award, Clock } from "lucide-react";
-import { BUSINESS, TRUST_STATS } from "@/lib/constants";
+import { Calendar, ChevronDown, ShieldCheck, Award, Clock } from "lucide-react";
+import { TRUST_STATS } from "@/lib/constants";
+import CallNowButton from "@/components/CallNowButton";
 
 export default function HeroSection() {
   return (
@@ -71,14 +72,11 @@ export default function HeroSection() {
               transition={{ duration: 0.5, delay: 0.24 }}
               className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 mb-10"
             >
-              <a
-                href={BUSINESS.phoneHref}
-                className="inline-flex items-center justify-center gap-2 rounded-lg text-white font-bold text-lg px-8 py-4 shadow-lg transition-colors"
-                style={{ backgroundColor: "#0D7F9B" }}
-              >
-                <Phone className="w-5 h-5 shrink-0" />
-                {BUSINESS.phone}
-              </a>
+              <CallNowButton
+                variant="custom"
+                className="inline-flex items-center justify-center gap-2 rounded-lg text-white font-bold text-lg px-8 py-4 shadow-lg transition-colors bg-[#0D7F9B] hover:bg-[#0a6b83]"
+                iconSize="w-5 h-5 shrink-0"
+              />
               <a
                 href="/contact"
                 className="inline-flex items-center justify-center gap-2 rounded-lg border-2 border-white text-white font-bold text-lg px-8 py-4 transition-colors hover:bg-white hover:text-[#0B2545]"

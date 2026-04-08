@@ -38,7 +38,7 @@ export default function Home() {
 
       <CTABannerSection
         title="See What's Possible for Your Veins"
-        subtitle="Free initial consultation · Non-surgical treatments only · New York and Las Vegas locations"
+        subtitle="Free initial consultation · Non-surgical treatments only · Manhattan, Manhasset & Commack locations"
       />
 
       <TestimonialsSection />

@@ -4,7 +4,8 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Menu, X, ChevronDown, Phone } from "lucide-react";
-import { BUSINESS, LOCATIONS } from "@/lib/constants";
+import { LOCATIONS } from "@/lib/constants";
+import CallNowButton from "@/components/CallNowButton";
 import { cn } from "@/lib/utils";
 
 type NavItem = {
@@ -47,7 +48,6 @@ const NAV_ITEMS: NavItem[] = [
       { label: "Manhattan", href: "/locations/manhattan" },
       { label: "Manhasset", href: "/locations/manhasset" },
       { label: "Commack", href: "/locations/commack" },
-      { label: "Las Vegas", href: "/locations/las-vegas" },
     ],
   },
   { label: "Contact", href: "/contact" },
@@ -138,26 +138,14 @@ export default function Header() {
           </nav>
 
           <div className="hidden xl:flex items-center gap-3">
-            <a
-              href={BUSINESS.phoneHref}
-              className="flex items-center gap-2 text-sm font-semibold text-[var(--sv-navy)] hover:text-[var(--sv-teal)] transition-colors"
-            >
-              <Phone className="w-4 h-4" />
-              {BUSINESS.phone}
-            </a>
+            <CallNowButton variant="compact" />
             <Link href="/contact" className="btn-primary text-sm py-2.5 px-5">
               Free Screening
             </Link>
           </div>
 
           <div className="xl:hidden flex items-center gap-3">
-            <a
-              href={BUSINESS.phoneHref}
-              className="flex items-center gap-1.5 text-sm font-bold text-[var(--sv-teal)]"
-            >
-              <Phone className="w-4 h-4" />
-              <span className="hidden sm:block">{BUSINESS.phone}</span>
-            </a>
+            <CallNowButton variant="compact" className="text-sm font-bold text-[var(--sv-teal)]" />
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
               className="p-2 rounded-lg text-[var(--sv-navy)] hover:bg-gray-100 transition-colors"

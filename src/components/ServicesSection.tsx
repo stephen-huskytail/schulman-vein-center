@@ -57,7 +57,7 @@ export default function ServicesSection() {
                     Most Common Treatment
                   </div>
                 )}
-                <div className="p-6 md:p-7">
+                <div className="p-4 md:p-6 lg:p-7">
                   <div className="icon-circle mb-4 group-hover:bg-[var(--sv-teal)] transition-colors">
                     <Icon className="w-5 h-5 text-[var(--sv-teal)] group-hover:text-white transition-colors" />
                   </div>

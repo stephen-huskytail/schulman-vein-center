@@ -1,7 +1,7 @@
 "use client";
 
 import { Phone, Star } from "lucide-react";
-import { BUSINESS, LOCATIONS } from "@/lib/constants";
+import { LOCATIONS } from "@/lib/constants";
 
 export default function TrustBar() {
   return (
@@ -33,13 +33,13 @@ export default function TrustBar() {
               {loc.phone}
             </a>
           ))}
-          {/* Mobile: just one phone */}
+          {/* Mobile: generic call prompt */}
           <a
-            href={BUSINESS.phoneHref}
+            href="/locations"
             className="flex lg:hidden h-full items-center gap-1.5 px-2 font-semibold hover:text-[var(--sv-gold)] transition-colors"
           >
             <Phone className="w-3 h-3" />
-            {BUSINESS.phone}
+            Call Now
           </a>
           <span className="hidden sm:block text-white/40">|</span>
           <span className="hidden sm:block text-white/70">FREE Vein Screening</span>

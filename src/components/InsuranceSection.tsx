@@ -1,8 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { CheckCircle2, XCircle, Phone } from "lucide-react";
-import { BUSINESS } from "@/lib/constants";
+import { CheckCircle2, XCircle } from "lucide-react";
+import CallNowButton from "@/components/CallNowButton";
 
 const COVERED = [
   "EVLT (Endovenous Laser Therapy) for varicose veins",
@@ -44,10 +44,7 @@ export default function InsuranceSection() {
               <strong>No insurance? No problem.</strong> We offer discounted fees and payment plans to ensure you can access world-class vein care regardless of coverage.
             </p>
 
-            <a href={BUSINESS.phoneHref} className="btn-primary">
-              <Phone className="w-4 h-4" />
-              Discuss Your Coverage: {BUSINESS.phone}
-            </a>
+            <CallNowButton variant="primary" label="Discuss Your Coverage" />
           </motion.div>
 
           {/* Right */}

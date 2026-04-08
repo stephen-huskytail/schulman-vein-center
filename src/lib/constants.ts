@@ -332,15 +332,6 @@ export const FAQ_SCHEMA = {
   })),
 };
 
-export const LAS_VEGAS_AREAS = [
-  "Las Vegas",
-  "Henderson",
-  "Summerlin",
-  "Paradise",
-  "Spring Valley",
-  "North Las Vegas",
-];
-
 export const TESTIMONIALS = [
   {
     name: "Patricia M.",

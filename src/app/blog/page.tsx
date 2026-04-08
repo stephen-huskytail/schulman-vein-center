@@ -33,7 +33,7 @@ export default function BlogPage() {
             <h2 className="section-title text-2xl mb-3">Coming Soon</h2>
             <p className="text-gray-600 leading-relaxed mb-6">
               We are preparing expert articles focused on vein symptoms, treatment options, and
-              long-term vein health for patients in New York and Las Vegas.
+              long-term vein health for patients in the New York area.
             </p>
 
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">

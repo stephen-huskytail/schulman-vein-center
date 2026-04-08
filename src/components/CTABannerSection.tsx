@@ -1,8 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Phone, Calendar } from "lucide-react";
-import { BUSINESS } from "@/lib/constants";
+import { Calendar } from "lucide-react";
+import CallNowButton from "@/components/CallNowButton";
 
 interface CTABannerSectionProps {
   title?: string;
@@ -36,13 +36,10 @@ export default function CTABannerSection({
           </div>
 
           <div className="flex flex-col sm:flex-row items-center gap-3 shrink-0">
-            <a
-              href={BUSINESS.phoneHref}
+            <CallNowButton
+              variant="custom"
               className="flex items-center gap-2 px-6 py-3 rounded-lg bg-white text-[var(--sv-teal)] font-bold hover:bg-[var(--sv-cream)] transition-colors shadow-md text-sm"
-            >
-              <Phone className="w-4 h-4" />
-              {BUSINESS.phone}
-            </a>
+            />
             <a
               href="/contact"
               className="flex items-center gap-2 px-6 py-3 rounded-lg bg-[var(--sv-navy)] text-white font-bold hover:bg-[var(--sv-navy-light)] transition-colors shadow-md text-sm"

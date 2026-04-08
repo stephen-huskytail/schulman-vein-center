@@ -2,8 +2,8 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { CheckCircle2, Phone } from "lucide-react";
-import { BUSINESS } from "@/lib/constants";
+import { CheckCircle2 } from "lucide-react";
+import CallNowButton from "@/components/CallNowButton";
 
 const DIFFERENTIATORS = [
   "100% vein-only practice — no divided attention",
@@ -37,7 +37,7 @@ export default function AboutSection() {
               />
             </div>
             {/* Floating badge */}
-            <div className="absolute -bottom-6 -right-4 md:-right-8 bg-[var(--sv-navy)] text-white rounded-2xl px-5 py-4 shadow-xl max-w-[180px]">
+            <div className="absolute -bottom-6 -right-4 md:-right-8 bg-[var(--sv-navy)] text-white rounded-2xl px-5 py-4 shadow-xl max-w-[140px] md:max-w-[180px]">
               <p className="text-3xl font-bold font-heading text-[var(--sv-gold)]">55+</p>
               <p className="text-xs text-white/80 leading-tight mt-1">Years Combined Vein Experience</p>
             </div>
@@ -73,10 +73,7 @@ export default function AboutSection() {
             </ul>
 
             <div className="flex flex-col sm:flex-row gap-3">
-              <a href={BUSINESS.phoneHref} className="btn-primary">
-                <Phone className="w-4 h-4" />
-                Call {BUSINESS.phone}
-              </a>
+              <CallNowButton variant="primary" />
               <a href="/contact" className="btn-outline-navy">
                 Schedule Free Screening
               </a>

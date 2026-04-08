@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ChevronRight, Phone } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 import PageHero from "@/components/PageHero";
 import { BUSINESS, SERVICES } from "@/lib/constants";
+import CallNowButton from "@/components/CallNowButton";
 
 type ServicePageProps = {
   params: Promise<{ slug: string }>;
@@ -90,10 +91,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
             </ul>
 
             <div className="flex flex-col sm:flex-row gap-3">
-              <a href={BUSINESS.phoneHref} className="btn-primary">
-                <Phone className="w-4 h-4" />
-                Call {BUSINESS.phone}
-              </a>
+              <CallNowButton variant="primary" />
               <Link href="/contact" className="btn-outline-navy">
                 Schedule Free Consultation
               </Link>

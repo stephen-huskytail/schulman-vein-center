@@ -41,7 +41,7 @@ export default function LocationsSection() {
               </div>
 
               {/* Details */}
-              <div className="p-6 space-y-4">
+              <div className="p-4 md:p-6 space-y-4">
                 {/* Address */}
                 <div className="flex items-start gap-3">
                   <div className="icon-circle mt-0.5">
@@ -92,7 +92,7 @@ export default function LocationsSection() {
               </div>
 
               {/* CTA */}
-              <div className="px-6 pb-6">
+              <div className="px-4 md:px-6 pb-4 md:pb-6">
                 <a
                   href={loc.phoneHref}
                   className="btn-primary w-full justify-center text-sm"

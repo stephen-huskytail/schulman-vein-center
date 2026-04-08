@@ -22,7 +22,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/locations/manhattan",
     "/locations/manhasset",
     "/locations/commack",
-    "/locations/las-vegas",
     "/privacy",
     "/terms",
     "/sitemap-page",

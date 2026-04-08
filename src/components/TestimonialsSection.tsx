@@ -115,7 +115,7 @@ export default function TestimonialsSection({ variant = "navy" }: TestimonialsSe
           <p className={`text-sm mb-4 ${isLight ? "text-[var(--sv-navy)]/60" : "text-white/50"}`}>
             Rated 5 stars on all major review platforms:
           </p>
-          <div className="flex flex-wrap items-center justify-center gap-4">
+          <div className="flex flex-wrap items-center justify-center gap-2 md:gap-4">
             {["Google", "Yelp", "Healthgrades", "Vitals", "Yellow Pages", "TrustPilot"].map((p) => (
               <span
                 key={p}

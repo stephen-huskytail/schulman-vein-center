@@ -39,7 +39,6 @@ const sections = [
       { label: "Manhattan", href: "/locations/manhattan" },
       { label: "Manhasset", href: "/locations/manhasset" },
       { label: "Commack", href: "/locations/commack" },
-      { label: "Las Vegas", href: "/locations/las-vegas" },
     ],
   },
   {

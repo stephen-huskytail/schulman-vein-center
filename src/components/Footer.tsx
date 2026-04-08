@@ -1,7 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Phone, Mail, MapPin, Clock, ExternalLink } from "lucide-react";
+import { Phone, Mail, MapPin } from "lucide-react";
 import { BUSINESS, LOCATIONS } from "@/lib/constants";
+import CallNowButton from "@/components/CallNowButton";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -20,10 +21,7 @@ export default function Footer() {
             </p>
           </div>
           <div className="flex flex-col sm:flex-row items-center gap-3 shrink-0">
-            <a href={BUSINESS.phoneHref} className="btn-secondary text-sm">
-              <Phone className="w-4 h-4" />
-              Call Now
-            </a>
+            <CallNowButton variant="secondary" />
             <Link href="/contact" className="btn-gold text-sm">
               Schedule Consultation
             </Link>
