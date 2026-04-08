@@ -204,6 +204,39 @@ export default async function LocationDetailPage({ params }: LocationPageProps) 
 
       <section className="section-cream">
         <div className="container-sv">
+          <div className="bg-white rounded-2xl border border-gray-100 shadow-card p-6 md:p-8 mb-8">
+            <h2 className="section-title text-2xl mb-4">Neighborhood Context</h2>
+            <p className="text-gray-700 leading-relaxed">{location.neighborhoodContext}</p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+            <article className="bg-white rounded-2xl border border-gray-100 shadow-card p-6 md:p-8">
+              <h2 className="section-title text-2xl mb-4">Communities Served</h2>
+              <ul className="space-y-2">
+                {location.communitiesServed.map((community) => (
+                  <li key={community} className="flex gap-3 text-gray-700">
+                    <span className="w-2 h-2 rounded-full bg-[var(--sv-teal)] mt-2 shrink-0" />
+                    <span>{community}</span>
+                  </li>
+                ))}
+              </ul>
+            </article>
+
+            <article className="bg-white rounded-2xl border border-gray-100 shadow-card p-6 md:p-8">
+              <h2 className="section-title text-2xl mb-4">Visit Planning</h2>
+              <div className="space-y-4 text-gray-700">
+                <div>
+                  <h3 className="font-semibold text-[var(--sv-navy)] mb-1">Transportation & Parking</h3>
+                  <p>{location.transportationNote}</p>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-[var(--sv-navy)] mb-1">Doctor Availability</h3>
+                  <p>{location.doctorAvailability}</p>
+                </div>
+              </div>
+            </article>
+          </div>
+
           <div className="max-w-3xl">
             <p className="section-eyebrow">Services Available</p>
             <h2 className="section-title mb-4">Treatments Offered at This Location</h2>
@@ -222,6 +255,18 @@ export default async function LocationDetailPage({ params }: LocationPageProps) 
               </li>
             ))}
           </ul>
+
+          <div className="bg-white rounded-2xl border border-gray-100 shadow-card p-6 md:p-8 mt-8">
+            <h2 className="section-title text-2xl mb-4">Location-Specific FAQs</h2>
+            <div className="space-y-5">
+              {location.locationFaqs.map((faq) => (
+                <article key={faq.q}>
+                  <h3 className="font-semibold text-[var(--sv-navy)] mb-2">{faq.q}</h3>
+                  <p className="text-gray-700 leading-relaxed">{faq.a}</p>
+                </article>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
     </>

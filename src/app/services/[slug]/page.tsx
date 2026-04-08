@@ -5,6 +5,7 @@ import { ChevronRight } from "lucide-react";
 import PageHero from "@/components/PageHero";
 import { BUSINESS, SERVICES } from "@/lib/constants";
 import CallNowButton from "@/components/CallNowButton";
+import { SERVICE_EXPANDED_CONTENT } from "@/lib/service-content";
 
 type ServicePageProps = {
   params: Promise<{ slug: string }>;
@@ -30,7 +31,7 @@ export async function generateMetadata({ params }: ServicePageProps): Promise<Me
   }
 
   const title = `${service.name} in Manhattan & Long Island`;
-  const description = service.shortDesc;
+  const description = service.metaDescription ?? service.shortDesc;
   const canonical = `${BUSINESS.siteUrl}/services/${service.slug}`;
 
   return {
@@ -54,6 +55,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
   if (!service) {
     notFound();
   }
+  const expandedContent = SERVICE_EXPANDED_CONTENT[service.slug];
 
   const medicalProcedureSchema = {
     "@context": "https://schema.org",
@@ -122,6 +124,98 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
           </div>
         </div>
       </section>
+
+      {expandedContent ? (
+        <>
+          <section className="section-cream">
+            <div className="container-narrow">
+              <div className="space-y-10">
+                {expandedContent.sections.map((section) => (
+                  <article key={section.heading} className="bg-white border border-gray-200 rounded-2xl p-6 md:p-8 shadow-card">
+                    <h2 className="font-heading font-bold text-2xl text-[var(--sv-navy)] mb-4">{section.heading}</h2>
+                    {section.paragraphs?.map((paragraph) => (
+                      <p key={paragraph} className="text-gray-700 leading-relaxed mb-4">
+                        {paragraph}
+                      </p>
+                    ))}
+                    {section.bullets ? (
+                      <ul className="space-y-2 mb-4">
+                        {section.bullets.map((bullet) => (
+                          <li key={bullet} className="flex gap-3 text-gray-700">
+                            <span className="w-2 h-2 rounded-full bg-[var(--sv-teal)] mt-2 shrink-0" />
+                            <span>{bullet}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    ) : null}
+                    {section.steps ? (
+                      <ol className="list-decimal pl-5 space-y-2 text-gray-700">
+                        {section.steps.map((step) => (
+                          <li key={step}>{step}</li>
+                        ))}
+                      </ol>
+                    ) : null}
+                  </article>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          <section className="section-light">
+            <div className="container-narrow">
+              <div className="bg-white border border-gray-200 rounded-2xl p-6 md:p-8 shadow-card">
+                <h2 className="font-heading font-bold text-2xl text-[var(--sv-navy)] mb-4">
+                  FAQs: {service.name}
+                </h2>
+                <div className="space-y-5">
+                  {expandedContent.faqs.map((faq) => (
+                    <article key={faq.q}>
+                      <h3 className="font-semibold text-[var(--sv-navy)] mb-2">{faq.q}</h3>
+                      <p className="text-gray-700 leading-relaxed">{faq.a}</p>
+                    </article>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section className="section-cream">
+            <div className="container-narrow">
+              <div className="bg-white border border-gray-200 rounded-2xl p-6 md:p-8 shadow-card">
+                <h2 className="font-heading font-bold text-2xl text-[var(--sv-navy)] mb-4">
+                  {expandedContent.localFaqHeading}
+                </h2>
+                <div className="space-y-5">
+                  {expandedContent.localFaqs.map((faq) => (
+                    <article key={faq.q}>
+                      <h3 className="font-semibold text-[var(--sv-navy)] mb-2">{faq.q}</h3>
+                      <p className="text-gray-700 leading-relaxed">{faq.a}</p>
+                    </article>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section className="section-light">
+            <div className="container-narrow">
+              <div className="bg-white border border-gray-200 rounded-2xl p-6 md:p-8 shadow-card">
+                <h2 className="font-heading font-bold text-2xl text-[var(--sv-navy)] mb-4">Related Services</h2>
+                <ul className="space-y-3">
+                  {expandedContent.relatedLinks.map((related) => (
+                    <li key={related.href} className="text-gray-700">
+                      <Link href={related.href} className="font-semibold text-[var(--sv-teal)] hover:underline">
+                        {related.label}
+                      </Link>{" "}
+                      <span>{related.description}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </section>
+        </>
+      ) : null}
     </>
   );
 }

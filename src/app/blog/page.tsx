@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Image from "next/image";
-import { CalendarDays, ArrowRight } from "lucide-react";
+import { CalendarDays, Clock3, ArrowRight } from "lucide-react";
 import PageHero from "@/components/PageHero";
 import { BUSINESS } from "@/lib/constants";
+import { getAllBlogPosts } from "@/lib/blog-posts";
 
 export const metadata: Metadata = {
   title: "Vein Health Blog",
@@ -20,53 +20,66 @@ export const metadata: Metadata = {
   },
 };
 
+function formatDate(date: string) {
+  return new Date(`${date}T00:00:00`).toLocaleDateString("en-US", {
+    month: "long",
+    day: "numeric",
+    year: "numeric",
+  });
+}
+
 export default function BlogPage() {
+  const posts = getAllBlogPosts();
+
   return (
     <>
       <PageHero
         eyebrow="Blog"
         title="Vein Health Resources from Our Specialists"
         description="Medical guidance for Manhattan and Long Island patients, written to answer common questions before your first visit."
+        breadcrumbs={[
+          { name: "Home", url: `${BUSINESS.siteUrl}/` },
+          { name: "Blog", url: `${BUSINESS.siteUrl}/blog` },
+        ]}
       />
 
       <section className="section-light">
-        <div className="container-narrow">
-          <article className="bg-white rounded-2xl border border-gray-100 shadow-card overflow-hidden">
-            <Image
-              src="/images/gallery/varicose-large.png"
-              alt="Vein doctor performing ultrasound evaluation at Schulman Vein and Laser Center, Upper East Side Manhattan"
-              width={1200}
-              height={675}
-              className="w-full h-auto"
-            />
-            <div className="p-6 md:p-8">
-              <p className="section-eyebrow mb-2">Featured Post</p>
-              <h2 className="section-title text-2xl md:text-3xl mb-3">
-                Vein Treatment on the Upper East Side — What Manhattan Patients Should Know
-              </h2>
-              <div className="inline-flex items-center gap-2 text-sm text-gray-500 mb-4">
-                <CalendarDays className="w-4 h-4" />
-                <span>April 7, 2026</span>
-              </div>
-              <p className="text-gray-600 leading-relaxed mb-6">
-                If you live or work in Manhattan and have been postponing care, this guide covers
-                what causes vein symptoms, what treatment involves, and how appointments are
-                designed for New York schedules.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-3">
+        <div className="container-sv grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+          {posts.map((post) => (
+            <article
+              key={post.slug}
+              className="bg-white rounded-2xl border border-gray-100 shadow-card overflow-hidden flex flex-col"
+            >
+              <div className="p-6 md:p-7 flex flex-col flex-1">
+                <span className="inline-flex self-start items-center rounded-full bg-[var(--sv-teal)]/10 text-[var(--sv-teal)] text-xs font-semibold tracking-wide px-3 py-1 mb-3">
+                  {post.category}
+                </span>
+                <h2 className="font-heading font-bold text-lg text-[var(--sv-navy)] mb-2 leading-snug">
+                  {post.title}
+                </h2>
+                <p className="text-sm text-gray-600 leading-relaxed mb-4 line-clamp-3">
+                  {post.excerpt}
+                </p>
+                <div className="flex items-center gap-4 text-xs text-gray-400 mb-5 mt-auto">
+                  <span className="inline-flex items-center gap-1">
+                    <CalendarDays className="w-3.5 h-3.5" />
+                    {formatDate(post.publishedAt)}
+                  </span>
+                  <span className="inline-flex items-center gap-1">
+                    <Clock3 className="w-3.5 h-3.5" />
+                    {post.readTimeMinutes} min
+                  </span>
+                </div>
                 <Link
-                  href="/blog/vein-treatment-upper-east-side-manhattan"
-                  className="btn-primary justify-center"
+                  href={`/blog/${post.slug}`}
+                  className="btn-primary justify-center text-sm"
                 >
-                  Read Full Article
+                  Read Article
                   <ArrowRight className="w-4 h-4" />
                 </Link>
-                <Link href="/contact" className="btn-outline-navy justify-center">
-                  Schedule A Consultation
-                </Link>
               </div>
-            </div>
-          </article>
+            </article>
+          ))}
         </div>
       </section>
     </>

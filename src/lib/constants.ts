@@ -52,22 +52,32 @@ export const LOCATIONS = [
       latitude: 40.7836,
       longitude: -73.9567,
     },
-    neighborhoodContext: "Schulman Vein and Laser Center's flagship Manhattan location sits at 1165 Park Avenue in Carnegie Hill — one of the most medically distinguished corridors in New York City. Situated between 92nd and 93rd Streets, this Park Avenue address puts world-class vein care within easy reach of patients from across the Upper East Side and beyond. Carnegie Hill residents, Yorkville neighbors, Midtown East professionals, and Upper West Side visitors all find this location central and accessible. The practice has been part of the Manhattan medical community for decades, earning recognition as a premier destination for varicose vein and spider vein treatment on Park Avenue. With extended evening hours on Monday, Tuesday, and Thursday until 7 pm, busy New Yorkers can schedule consultations and treatments without sacrificing a full workday. Whether you step off the subway at 96th Street or commute in from Murray Hill or Midtown East, expert vein care from board-certified specialists is closer than you think.",
-    communitiesServed: ["Carnegie Hill", "Yorkville", "Lenox Hill", "Midtown East", "Upper West Side", "East Harlem", "Murray Hill", "Gramercy", "Tribeca"],
-    transportationNote: "Take the 4, 5, or 6 train to 96th Street (two-block walk west to Park Ave), or the Q train to 96th Street and Second Avenue. Street parking is available on Park Avenue and neighboring side streets. The office is fully ADA-accessible.",
-    doctorAvailability: "Both Dr. Martin L. Schulman and Dr. Lee G. Schulman see patients at this location. Evening hours (until 7 pm) on Monday, Tuesday, and Thursday make scheduling easy for working New Yorkers.",
+    neighborhoodContext:
+      "Nestled in Carnegie Hill at 1165 Park Avenue, Schulman Vein and Laser Center has served Manhattan patients for decades. Our Upper East Side office is steps from the Museum Mile and surrounded by some of New York City's most established residential neighborhoods, making expert vein care accessible without venturing far from home. Whether you're coming from Yorkville, Midtown East, the Upper West Side, or East Harlem, our Park Avenue location is ideally situated for busy New Yorkers who want world-class vein treatment without disrupting their day.",
+    communitiesServed: [
+      "Carnegie Hill, Yorkville, and the Upper East Side",
+      "Midtown East and Lenox Hill",
+      "Upper West Side and Morningside Heights",
+      "East Harlem and East River communities",
+      "Astoria, Long Island City, and Flushing (Queens)",
+      "Bronx and southern Westchester County",
+    ],
+    transportationNote:
+      "Our Manhattan office is easily accessible by public transit. Take the 4, 5, or 6 subway trains to 96th Street, or the Q train to 96th Street and Lexington Avenue, just a short walk to Park Avenue. Street parking is available in the neighborhood, and several nearby garages offer daytime rates. We recommend allowing extra time if you are driving.",
+    doctorAvailability:
+      "Dr. Martin L. Schulman and Dr. Lee G. Schulman see patients at the Manhattan office on a rotating schedule. Both physicians personally evaluate and treat every patient, so you will always see a board-certified doctor, never a technician or PA. Please call to confirm your preferred doctor's availability when scheduling.",
     locationFaqs: [
       {
-        q: "Is the Manhattan vein center accessible by subway?",
-        a: "Yes. The office at 1165 Park Ave is easily reached by the 4, 5, and 6 trains at 96th Street (a two-block walk west), and by the Q train at 96th Street and Second Avenue. Street parking on Park Avenue and side streets is also available.",
+        q: "Can I come in for a free vein screening at the Manhattan location?",
+        a: "Yes. We offer complimentary vein screenings at all three of our locations, including the Upper East Side office. No referral is required. Call us or use our online form to schedule a convenient time.",
       },
       {
-        q: "Do both Drs. Schulman see patients at the Upper East Side location?",
-        a: "Yes. Both Dr. Martin L. Schulman and Dr. Lee G. Schulman see patients personally at our Manhattan office — every appointment, every time. No students, nurses, or assistants perform treatments.",
+        q: "How long does a typical appointment take at your Park Avenue office?",
+        a: "Most consultations and treatment appointments at our Manhattan location are completed in under an hour. Many patients return to work the same day because our approach is minimally invasive and non-surgical.",
       },
       {
-        q: "What vein treatments are available at the Park Avenue office?",
-        a: "Our Manhattan location offers the full range of Schulman Vein services — varicose vein treatment (EVLT, sclerotherapy, micro phlebectomy), spider vein treatment, laser therapy, hand and facial vein treatment, and free initial screenings.",
+        q: "Do you accept insurance at the Manhattan office?",
+        a: "Yes. We accept most major insurance plans. Coverage for treatments like EVLT varies by plan. Medically necessary care is often covered, while cosmetic treatment is generally self-pay. Our team verifies your benefits before your visit.",
       },
     ],
   },
@@ -98,22 +108,32 @@ export const LOCATIONS = [
       latitude: 40.706,
       longitude: -73.7008,
     },
-    neighborhoodContext: "Schulman Vein and Laser Center's Manhasset office serves Nassau County and the North Shore of Long Island from a convenient address inside the Community Drive Medical Center. Located in the village of Manhasset — just minutes from the Northern State Parkway and accessible from Northern Boulevard (Route 25A) — this office brings the same Park Avenue–standard vein care to patients across Nassau County's most established communities. From Great Neck and Port Washington to Roslyn, Lake Success, and New Hyde Park, patients throughout the North Shore choose this location for its combination of medical expertise and easy suburban access. Free parking on site eliminates the stress of the city commute while ensuring you arrive relaxed and ready for a thorough consultation. Both Dr. Schulmans see patients here personally, and the same doctor-led standard that defines the Manhattan practice applies completely at the Manhasset office.",
-    communitiesServed: ["Great Neck", "Port Washington", "Roslyn", "Manhasset Hills", "Lake Success", "New Hyde Park", "Glen Cove", "Mineola", "Garden City", "Bayside", "Little Neck"],
-    transportationNote: "Located inside Community Drive Medical Center with ample free parking on site. Accessible from Northern Boulevard (Route 25A) and the Long Island Expressway (Exit 33). LIRR passengers can take the Port Washington Branch to Manhasset station — a short taxi or rideshare ride from the office.",
-    doctorAvailability: "Both Dr. Martin L. Schulman and Dr. Lee G. Schulman see patients at the Manhasset office. Hours are Monday, Tuesday, and Thursday 9am–7pm; Wednesday and Friday 9am–4pm.",
+    neighborhoodContext:
+      "Conveniently located at 800 Community Drive in Manhasset, our Nassau County office serves patients across the North Shore of Long Island and nearby communities. Positioned near the Lake Success border and just off the Northern State Parkway, this office is easily accessible from throughout Nassau County and eastern Queens. If you have been looking for a Long Island vein specialist without long medical-center wait times, our Manhasset practice offers the same expert and personalized care as our Manhattan location, closer to home.",
+    communitiesServed: [
+      "Manhasset, Great Neck, and Manhasset Hills",
+      "Port Washington and Roslyn",
+      "Lake Success and New Hyde Park",
+      "Mineola, Garden City, and Floral Park",
+      "Bayside and Fresh Meadows (Queens)",
+      "Williston Park, Herricks, and Albertson",
+    ],
+    transportationNote:
+      "The Manhasset office is located off the Northern State Parkway and is easy to reach by car from the LIE (I-495), Northern State, and Cross Island Parkway. The building offers ample free parking. The Manhasset LIRR station (Port Washington Branch) is about one mile away for train commuters.",
+    doctorAvailability:
+      "Both Dr. Martin L. Schulman and Dr. Lee G. Schulman see patients at the Manhasset office. Every patient is evaluated and treated personally by a physician, board-certified in vascular surgery and phlebology respectively. Please call ahead to confirm scheduling for your preferred doctor.",
     locationFaqs: [
       {
-        q: "Is parking available at the Manhasset vein center?",
-        a: "Yes — free parking is available directly on site at Community Drive Medical Center. There is no parking fee or time limit. The office is also accessible from the LIRR Port Washington Branch (Manhasset station).",
+        q: "Do I need a referral to see a vein specialist at your Manhasset office?",
+        a: "No referral is needed to schedule a complimentary free vein screening. If you plan to submit an insurance claim for medically necessary treatment, check whether your specific plan requires a referral from your primary care physician.",
       },
       {
-        q: "Which Nassau County towns do you serve from this location?",
-        a: "Our Manhasset office serves patients from throughout Nassau County's North Shore — Great Neck, Port Washington, Roslyn, Manhasset Hills, Lake Success, New Hyde Park, Glen Cove, Mineola, and Garden City, among others.",
+        q: "Is your Long Island office different from the Manhattan location in any way?",
+        a: "The same doctors, same treatments, and same personalized care are available at both locations. We offer the full treatment range in Manhasset, including varicose vein treatment, sclerotherapy, EVLT, and free vein screenings.",
       },
       {
-        q: "Is this the same practice as the Manhattan location?",
-        a: "Yes. All three Schulman Vein Center offices are owned and operated by Dr. Martin L. Schulman and Dr. Lee G. Schulman. You receive identical doctor-led vein care at every location, and your records are coordinated across offices.",
+        q: "How do I know if my varicose veins require medical treatment versus cosmetic treatment?",
+        a: "Veins causing symptoms such as aching, swelling, heaviness, or cramping are generally medically necessary and often insurance-covered. Purely cosmetic concerns are typically self-pay. A free screening helps determine which applies to you.",
       },
     ],
   },
@@ -144,22 +164,32 @@ export const LOCATIONS = [
       latitude: 40.8426,
       longitude: -73.2888,
     },
-    neighborhoodContext: "Schulman Vein and Laser Center's Suffolk County location on Veterans Memorial Highway in Commack serves the heart of central Long Island. Commack's central position between Huntington and Smithtown — and its easy access from both the Long Island Expressway and Northern State Parkway — makes this office the most convenient option for vein patients from throughout western and central Suffolk County. Patients from Huntington, Kings Park, Hauppauge, Dix Hills, Melville, and as far east as Northport regularly choose this location. Free on-site parking and straightforward access from major roads make every appointment as efficient as possible. The Schulman doctors bring the same credentials, the same techniques, and the same personal approach to every patient seen at this office — no compromises, no substitutions. If you've been putting off vein treatment because driving into Manhattan or Nassau County felt like too much, the Commack office makes excellent vein care genuinely accessible.",
-    communitiesServed: ["Huntington", "Smithtown", "Kings Park", "Hauppauge", "Dix Hills", "Melville", "Deer Park", "Brentwood", "Northport", "East Northport", "Bay Shore"],
-    transportationNote: "Located on Veterans Memorial Highway (Route 454) in Commack, with free parking directly on site. Accessible from the Long Island Expressway (Exit 52) and the Northern State Parkway (Exit 41N). Commack is centrally positioned in western Suffolk County.",
-    doctorAvailability: "Both Dr. Martin L. Schulman and Dr. Lee G. Schulman see patients at the Commack office. Hours are Monday, Tuesday, and Thursday 9am–7pm; Wednesday and Friday 9am–4pm.",
+    neighborhoodContext:
+      "Our Commack location at 353 Veterans Memorial Highway brings Schulman Vein and Laser Center's board-certified expertise to the heart of Suffolk County. Positioned along one of Long Island's most traveled corridors, the office is a natural hub for patients across the mid-Island region who want proven non-surgical vein treatment without traveling to the city. From Huntington to Smithtown, Kings Park to Hauppauge, Suffolk County patients can access the same All We Do Is Veins expertise trusted by Manhattan patients for years.",
+    communitiesServed: [
+      "Commack, Kings Park, and Smithtown",
+      "Huntington, Cold Spring Harbor, and Lloyd Neck",
+      "Hauppauge, Nesconset, and Islandia",
+      "Dix Hills, Melville, and Deer Park",
+      "Brentwood and Central Islip",
+      "East Northport and Elwood",
+    ],
+    transportationNote:
+      "The Commack office is located on Veterans Memorial Highway (Route 454), with easy access from Long Island Expressway Exit 52, Northern State Parkway, and Sunken Meadow Parkway. The building offers ample on-site parking. For LIRR riders, Kings Park station (Port Jefferson Branch) is the closest stop, about three miles away.",
+    doctorAvailability:
+      "Dr. Martin L. Schulman and Dr. Lee G. Schulman rotate across all three locations, including Commack. Every patient is seen by a board-certified doctor at every visit. Call to confirm which physician is scheduled on your preferred date.",
     locationFaqs: [
       {
-        q: "Where exactly is the Commack vein center?",
-        a: "The office is located at 353 Veterans Memorial Highway, Suite 206, Commack, NY 11725. It is on Veterans Memorial Hwy (Route 454) with free on-site parking. Easily accessible from LIE Exit 52 or Northern State Parkway Exit 41N.",
+        q: "What vein treatments are available at the Commack office?",
+        a: "All treatments offered at our Manhattan and Manhasset offices are available in Commack, including varicose vein treatment, spider vein sclerotherapy, EVLT, and complimentary free vein screenings. Same-day recovery is standard for all procedures.",
       },
       {
-        q: "Which Suffolk County towns do you serve from Commack?",
-        a: "Our Commack office serves patients from Huntington, Smithtown, Kings Park, Hauppauge, Dix Hills, Melville, Deer Park, Brentwood, Northport, and surrounding Suffolk County communities.",
+        q: "Are there other vein centers on Long Island, and why choose Schulman?",
+        a: "Schulman Vein and Laser Center is a specialty-only practice. Veins are all we treat, and both physicians have focused exclusively on vein conditions for over 55 combined years. That level of dedicated experience is uncommon in general vascular or dermatology offices.",
       },
       {
-        q: "Do I need a referral to visit the Commack vein center?",
-        a: "No referral is required. Call us directly to schedule a free consultation — a Dr. Schulman will personally evaluate your veins and discuss treatment options at no cost and with no obligation.",
+        q: "Do you offer evening or Saturday appointments at Commack?",
+        a: "Appointment availability varies. Call the Commack office or use our online scheduling tool for current openings. We do our best to accommodate working patients with flexible scheduling.",
       },
     ],
   },
@@ -246,6 +276,8 @@ export const SERVICES = [
     name: "Varicose Vein Treatment",
     slug: "varicose-vein-treatment",
     icon: "Zap",
+    metaDescription:
+      "Expert varicose vein treatment in Manhattan and Long Island. Board-certified vein doctors, non-surgical EVLT and sclerotherapy. Drive home the same day.",
     shortDesc: "Advanced laser ablation (EVLT), micro-surgery, and sclerotherapy to eliminate bulging varicose veins — no hospital stay required.",
     description: "Our board-certified specialists use endovenous laser therapy (EVLT), micro ambulatory phlebectomy, sclerotherapy, and foam sclerotherapy to treat varicose veins. All procedures are minimally invasive, performed in-office under local anesthesia. Patients walk and drive home the same day.",
     bodySite: ["Leg veins"],
@@ -262,6 +294,8 @@ export const SERVICES = [
     name: "Spider Vein Treatment",
     slug: "spider-vein-treatment",
     icon: "Sparkles",
+    metaDescription:
+      "Spider vein removal in Manhattan, Nassau & Suffolk County. Sclerotherapy from vein-only specialists. 55+ years experience. Free screening available.",
     shortDesc: "The gold standard in sclerotherapy and laser treatments for spider veins and broken blood vessels on legs, face, and body.",
     description: "Spider vein injection therapy (sclerotherapy) is the globally recognized gold standard for treating spider veins. Our doctors use FDA-approved solutions injected with the smallest needles available — virtually painless, no anesthesia required. Each treatment is fully customized based on vein size, location, and skin tone.",
     bodySite: ["Legs", "Face", "Body"],
@@ -277,6 +311,8 @@ export const SERVICES = [
     name: "Laser Vein Therapy (EVLT)",
     slug: "laser-vein-therapy",
     icon: "Crosshair",
+    metaDescription:
+      "Endovenous Laser Treatment (EVLT) for varicose veins in Manhattan and Long Island. Often covered by insurance. Non-surgical, walk-in walk-out recovery.",
     shortDesc: "Modern endovenous laser treatment replaces vein stripping surgery — in-office, ~30 minutes, drive home the same day.",
     description: "EVLT (Endovenous Laser Therapy) is a modern replacement for outdated vein-stripping surgery. Performed in-office under local anesthesia, a thin laser fiber is guided by ultrasound to close faulty veins. The procedure takes about 30 minutes and patients can walk and drive home immediately afterward.",
     bodySite: ["Leg veins"],
@@ -292,6 +328,8 @@ export const SERVICES = [
     name: "Hand, Face & Body Veins",
     slug: "body-vein-treatment",
     icon: "Hand",
+    metaDescription:
+      "Treatment for hand, facial, and body veins at Schulman Vein Center — Manhattan, Manhasset & Commack. Expert cosmetic vein removal, personalized care.",
     shortDesc: "World-renowned for pioneering hand vein treatment — also treating face, temples, chest, breast, arms, and more.",
     description: "While most of our work involves leg veins, Schulman Vein and Laser Center is internationally recognized for pioneering hand vein removal. We also treat veins on the face, temples, chest, breast, arms, feet, and abdomen using injection therapy and minimally invasive techniques.",
     bodySite: ["Hands", "Face", "Temples", "Chest", "Breast", "Arms", "Feet", "Abdomen"],
@@ -308,6 +346,8 @@ export const SERVICES = [
     name: "Vein Disorders & Conditions",
     slug: "vein-disorders",
     icon: "HeartPulse",
+    metaDescription:
+      "Learn about varicose veins, spider veins, venous insufficiency and more. Schulman Vein Center treats all vein conditions in Manhattan and Long Island.",
     shortDesc: "Diagnosis and treatment of phlebitis, venous leg ulcers, pregnancy-related varicose veins, and venous insufficiency.",
     description: "We diagnose and treat the full spectrum of venous disorders including phlebitis (blood clots), venous leg ulcers, pregnancy-related varicose veins, and chronic venous insufficiency. All diagnoses include a non-invasive Doppler ultrasound when indicated.",
     bodySite: ["Leg veins", "Deep veins", "Venous system"],
@@ -324,6 +364,8 @@ export const SERVICES = [
     name: "Free Vein Screening",
     slug: "free-vein-screening",
     icon: "Search",
+    metaDescription:
+      "Get a complimentary vein screening at our Manhattan or Long Island offices. Board-certified vein doctors. No referral needed. Same-day appointments available.",
     shortDesc: "Schedule a no-cost, no-obligation consultation with a Schulman doctor — not a nurse or assistant — personally.",
     description: "All new patients receive a comprehensive evaluation including a detailed medical history, physical examination of the veins, and Doppler ultrasound when indicated. The consultation is done personally by one of the Dr. Schulmans — never by a student, intern, nurse, or assistant.",
     bodySite: ["Leg veins", "Hands", "Face", "Body veins"],
