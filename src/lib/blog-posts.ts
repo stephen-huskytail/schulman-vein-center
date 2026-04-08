@@ -131,8 +131,8 @@ export const BLOG_POSTS: BlogPost[] = [
     author: "Dr. Lee G. Schulman",
     ogDescription:
       "Recognize varicose vein warning signs and understand when to seek expert vein treatment in New York.",
-    featuredImage: "/images/gallery/varicose-large.png",
-    featuredImageAlt: "Physician reviewing varicose vein symptoms with a patient in a modern exam room",
+    featuredImage: "/images/blog/varicose-veins-symptoms-when-to-seek-treatment.svg",
+    featuredImageAlt: "Varicose vein symptom checklist with leg illustration - when to seek treatment in New York",
     body: [
       {
         heading: "What varicose veins actually are",
@@ -175,8 +175,8 @@ export const BLOG_POSTS: BlogPost[] = [
     author: "Dr. Lee G. Schulman",
     ogDescription:
       "Compare EVLT and sclerotherapy based on vein size, symptoms, recovery time, and clinical goals.",
-    featuredImage: "/images/gallery/varicose-large.png",
-    featuredImageAlt: "Clinical comparison discussion of EVLT and sclerotherapy treatment plans",
+    featuredImage: "/images/blog/evlt-sclerotherapy-vein-treatment-comparison.svg",
+    featuredImageAlt: "EVLT vs sclerotherapy decision flowchart - choosing the right vein treatment",
     body: [
       {
         heading: "How EVLT works",
@@ -219,8 +219,8 @@ export const BLOG_POSTS: BlogPost[] = [
     author: "Dr. Lee G. Schulman",
     ogDescription:
       "Post-treatment recovery guide for EVLT and sclerotherapy, including walking, compression, and follow-up milestones.",
-    featuredImage: "/images/gallery/varicose-large.png",
-    featuredImageAlt: "Patient walking comfortably after minimally invasive vein treatment",
+    featuredImage: "/images/blog/minimally-invasive-vein-treatment-recovery.svg",
+    featuredImageAlt: "Vein treatment recovery timeline with four milestones from procedure day to full results",
     body: [
       {
         heading: "Immediately after your procedure",
@@ -351,8 +351,8 @@ export const BLOG_POSTS: BlogPost[] = [
     author: "Dr. Lee G. Schulman",
     ogDescription:
       "Learn the difference between spider veins and varicose veins and when each may require medical evaluation.",
-    featuredImage: "/images/gallery/varicose-large.png",
-    featuredImageAlt: "Visual comparison of spider veins and varicose veins on lower legs",
+    featuredImage: "/images/blog/spider-veins-vs-varicose-veins-differences.svg",
+    featuredImageAlt: "Spider veins vs varicose veins side-by-side comparison of size depth and treatment options",
     body: [
       {
         heading: "Appearance and depth",
@@ -395,8 +395,8 @@ export const BLOG_POSTS: BlogPost[] = [
     author: "Dr. Lee G. Schulman",
     ogDescription:
       "Review hand vein treatment options, patient selection, and recovery guidance from a vein-focused physician team.",
-    featuredImage: "/images/gallery/varicose-large.png",
-    featuredImageAlt: "Specialist consultation about cosmetic hand vein treatment options",
+    featuredImage: "/images/blog/hand-vein-treatment-options-new-york.svg",
+    featuredImageAlt: "Hand vein treatment process from consultation to recovery at Schulman Vein Center New York",
     body: [
       {
         heading: "Why hand veins become prominent",

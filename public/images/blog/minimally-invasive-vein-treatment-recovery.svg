@@ -1,0 +1,110 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="675" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F5F7FA"/>
+      <stop offset="1" stop-color="#E6ECF4"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F3F6FB"/>
+    </linearGradient>
+    <linearGradient id="timeline" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#0D4E73"/>
+      <stop offset="1" stop-color="#2BA8A8"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <rect x="80" y="70" width="1040" height="540" rx="24" fill="url(#card)" stroke="#D6DFEA" stroke-width="2"/>
+
+  <!-- Title area -->
+  <text x="600" y="118" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#0D4E73" text-anchor="middle">Your Recovery Timeline</text>
+
+  <!-- Timeline bar -->
+  <rect x="160" y="160" width="880" height="6" rx="3" fill="#E8EEF4"/>
+  <rect x="160" y="160" width="880" height="6" rx="3" fill="url(#timeline)"/>
+
+  <!-- Stage 1: Day of procedure -->
+  <g transform="translate(200, 140)">
+    <circle cx="0" cy="23" r="14" fill="#0D4E73"/>
+    <text x="0" y="28" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+    <rect x="-80" y="55" width="160" height="140" rx="12" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+    <text x="0" y="80" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#0D4E73" text-anchor="middle">Day of Procedure</text>
+    <!-- Walking icon -->
+    <circle cx="-20" cy="115" r="6" fill="#2BA8A8" fill-opacity="0.2"/>
+    <circle cx="-20" cy="109" r="4" fill="#2BA8A8"/>
+    <line x1="-20" y1="113" x2="-20" y2="126" stroke="#2BA8A8" stroke-width="1.5"/>
+    <line x1="-20" y1="126" x2="-25" y2="134" stroke="#2BA8A8" stroke-width="1.5"/>
+    <line x1="-20" y1="126" x2="-15" y2="134" stroke="#2BA8A8" stroke-width="1.5"/>
+    <text x="0" y="115" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#5A6C82">Walk out</text>
+    <text x="0" y="130" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#5A6C82">same day</text>
+    <text x="0" y="158" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#94A3B8" text-anchor="middle">Compression starts</text>
+  </g>
+
+  <!-- Stage 2: First week -->
+  <g transform="translate(430, 140)">
+    <circle cx="0" cy="23" r="14" fill="#1A5C7A"/>
+    <text x="0" y="28" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">2</text>
+    <rect x="-80" y="55" width="160" height="140" rx="12" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+    <text x="0" y="80" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#0D4E73" text-anchor="middle">First Week</text>
+    <text x="0" y="108" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#5A6C82" text-anchor="middle">Mild tightness</text>
+    <text x="0" y="124" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#5A6C82" text-anchor="middle">and bruising</text>
+    <text x="0" y="148" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#5A6C82" text-anchor="middle">Daily walking</text>
+    <text x="0" y="164" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#5A6C82" text-anchor="middle">encouraged</text>
+    <text x="0" y="183" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#94A3B8" text-anchor="middle">Normal activity resumes</text>
+  </g>
+
+  <!-- Stage 3: Follow-up -->
+  <g transform="translate(660, 140)">
+    <circle cx="0" cy="23" r="14" fill="#208D8D"/>
+    <text x="0" y="28" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
+    <rect x="-80" y="55" width="160" height="140" rx="12" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+    <text x="0" y="80" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#0D4E73" text-anchor="middle">Follow-Up Visit</text>
+    <text x="0" y="108" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#5A6C82" text-anchor="middle">Ultrasound check</text>
+    <text x="0" y="124" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#5A6C82" text-anchor="middle">confirms closure</text>
+    <text x="0" y="148" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#5A6C82" text-anchor="middle">Symptoms</text>
+    <text x="0" y="164" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#5A6C82" text-anchor="middle">improving</text>
+    <text x="0" y="183" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#94A3B8" text-anchor="middle">Monitor healing progress</text>
+  </g>
+
+  <!-- Stage 4: Full results -->
+  <g transform="translate(890, 140)">
+    <circle cx="0" cy="23" r="14" fill="#2BA8A8"/>
+    <text x="0" y="28" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">4</text>
+    <rect x="-80" y="55" width="160" height="140" rx="12" fill="#FFFFFF" stroke="#B8E0DC" stroke-width="1.5"/>
+    <text x="0" y="80" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#2BA8A8" text-anchor="middle">Weeks to Months</text>
+    <text x="0" y="108" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#5A6C82" text-anchor="middle">Treated veins</text>
+    <text x="0" y="124" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#5A6C82" text-anchor="middle">fade and reabsorb</text>
+    <text x="0" y="148" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#5A6C82" text-anchor="middle">Full cosmetic</text>
+    <text x="0" y="164" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#5A6C82" text-anchor="middle">improvement</text>
+    <text x="0" y="183" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#2BA8A8" text-anchor="middle">Staged care if needed</text>
+  </g>
+
+  <!-- Tips section -->
+  <rect x="160" y="380" width="880" height="100" rx="14" fill="#F0F6FC" stroke="#CBD5E1" stroke-width="1.5"/>
+  <text x="200" y="412" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#0D4E73">Recovery Tips</text>
+  <g transform="translate(200, 430)">
+    <circle cx="6" cy="6" r="6" fill="#2BA8A8"/>
+    <text x="20" y="10" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#5A6C82">Walk daily</text>
+  </g>
+  <g transform="translate(360, 430)">
+    <circle cx="6" cy="6" r="6" fill="#2BA8A8"/>
+    <text x="20" y="10" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#5A6C82">Wear compression as directed</text>
+  </g>
+  <g transform="translate(640, 430)">
+    <circle cx="6" cy="6" r="6" fill="#2BA8A8"/>
+    <text x="20" y="10" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#5A6C82">Attend follow-up ultrasound</text>
+  </g>
+  <g transform="translate(920, 430)">
+    <circle cx="6" cy="6" r="6" fill="#E84D3D"/>
+    <text x="20" y="10" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#5A6C82">Report severe pain</text>
+  </g>
+
+  <!-- Bottom titles -->
+  <text x="180" y="546" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700" fill="#0D4E73">
+    What to Expect After Vein Treatment
+  </text>
+  <text x="180" y="580" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#5A6C82">
+    Recovery Milestones &#x2014; Schulman Vein and Laser Center
+  </text>
+</svg>
