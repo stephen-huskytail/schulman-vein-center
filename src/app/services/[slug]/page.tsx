@@ -16,6 +16,11 @@ function getServiceBySlug(slug: string) {
   return SERVICES.find((service) => service.slug === slug);
 }
 
+function getServiceByHref(href: string) {
+  const slug = href.replace("/services/", "");
+  return SERVICES.find((service) => service.slug === slug);
+}
+
 export function generateStaticParams() {
   return SERVICES.map((service) => ({ slug: service.slug }));
 }
@@ -72,6 +77,22 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
     notFound();
   }
   const expandedContent = SERVICE_EXPANDED_CONTENT[service.slug];
+  const relatedServiceCards =
+    expandedContent?.relatedLinks
+      .map((related) => {
+        const relatedService = getServiceByHref(related.href);
+        if (!relatedService) {
+          return null;
+        }
+
+        return {
+          ...related,
+          heroImage: relatedService.heroImage,
+          heroImageAlt: relatedService.heroImageAlt,
+        };
+      })
+      .filter((item): item is NonNullable<typeof item> => item !== null)
+      .slice(0, 3) ?? [];
 
   const medicalProcedureSchema = {
     "@context": "https://schema.org",
@@ -193,12 +214,17 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
                 <h2 className="font-heading font-bold text-2xl text-[var(--sv-navy)] mb-4">
                   FAQs: {service.name}
                 </h2>
-                <div className="space-y-5">
+                <div className="space-y-3">
                   {expandedContent.faqs.map((faq) => (
-                    <article key={faq.q}>
-                      <h3 className="font-semibold text-[var(--sv-navy)] mb-2">{faq.q}</h3>
-                      <p className="text-gray-700 leading-relaxed">{faq.a}</p>
-                    </article>
+                    <details key={faq.q} className="group rounded-xl border border-gray-200 bg-[var(--sv-cream)]/30 px-4 py-3">
+                      <summary className="cursor-pointer list-none pr-8 font-semibold text-[var(--sv-navy)] relative">
+                        {faq.q}
+                        <span className="absolute right-0 top-1 text-[var(--sv-teal)] transition-transform group-open:rotate-45 text-xl leading-none">
+                          +
+                        </span>
+                      </summary>
+                      <p className="text-gray-700 leading-relaxed mt-3">{faq.a}</p>
+                    </details>
                   ))}
                 </div>
               </div>
@@ -211,12 +237,17 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
                 <h2 className="font-heading font-bold text-2xl text-[var(--sv-navy)] mb-4">
                   {expandedContent.localFaqHeading}
                 </h2>
-                <div className="space-y-5">
+                <div className="space-y-3">
                   {expandedContent.localFaqs.map((faq) => (
-                    <article key={faq.q}>
-                      <h3 className="font-semibold text-[var(--sv-navy)] mb-2">{faq.q}</h3>
-                      <p className="text-gray-700 leading-relaxed">{faq.a}</p>
-                    </article>
+                    <details key={faq.q} className="group rounded-xl border border-gray-200 bg-[var(--sv-cream)]/30 px-4 py-3">
+                      <summary className="cursor-pointer list-none pr-8 font-semibold text-[var(--sv-navy)] relative">
+                        {faq.q}
+                        <span className="absolute right-0 top-1 text-[var(--sv-teal)] transition-transform group-open:rotate-45 text-xl leading-none">
+                          +
+                        </span>
+                      </summary>
+                      <p className="text-gray-700 leading-relaxed mt-3">{faq.a}</p>
+                    </details>
                   ))}
                 </div>
               </div>
@@ -227,16 +258,28 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
             <div className="container-narrow">
               <div className="bg-white border border-gray-200 rounded-2xl p-6 md:p-8 shadow-card">
                 <h2 className="font-heading font-bold text-2xl text-[var(--sv-navy)] mb-4">Related Services</h2>
-                <ul className="space-y-3">
-                  {expandedContent.relatedLinks.map((related) => (
-                    <li key={related.href} className="text-gray-700">
-                      <Link href={related.href} className="font-semibold text-[var(--sv-teal)] hover:underline">
-                        {related.label}
-                      </Link>{" "}
-                      <span>{related.description}</span>
-                    </li>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+                  {relatedServiceCards.map((related) => (
+                    <article key={related.href} className="rounded-xl border border-gray-200 overflow-hidden bg-white hover:shadow-card transition-shadow">
+                      <div className="relative aspect-[16/9]">
+                        <Image
+                          src={related.heroImage}
+                          alt={related.heroImageAlt}
+                          fill
+                          sizes="(max-width: 768px) 100vw, 33vw"
+                          className="object-cover"
+                        />
+                      </div>
+                      <div className="p-4">
+                        <h3 className="font-semibold text-[var(--sv-navy)] mb-2">{related.label}</h3>
+                        <p className="text-sm text-gray-700 mb-3">{related.description}</p>
+                        <Link href={related.href} className="text-sm font-semibold text-[var(--sv-teal)] hover:underline">
+                          Explore Service
+                        </Link>
+                      </div>
+                    </article>
                   ))}
-                </ul>
+                </div>
               </div>
             </div>
           </section>
