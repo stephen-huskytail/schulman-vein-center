@@ -170,13 +170,14 @@ export default function VaricoseVeinsNewYorkArticlePage() {
             <h2>What Are Varicose Veins?</h2>
             <p>
               Varicose veins are enlarged, twisted veins visible beneath the skin, usually on the legs and
-              feet. They develop when one-way vein valves weaken and allow blood to flow backward and pool.
-              That pressure stretches the vein wall and causes bulging, rope-like veins.
+              feet. They develop when one-way <strong>vein valves</strong> weaken and allow blood to flow
+              backward and pool. That pressure stretches the vein wall and causes bulging, rope-like veins.
             </p>
             <p>
-              Varicose veins are different from spider veins. Spider veins are smaller and more superficial.
-              Varicose veins are usually associated with greater symptom burden and a higher risk of
-              progression.
+              Varicose veins are different from <Link href="/services/spider-vein-treatment">spider veins</Link>.
+              Spider veins are smaller and more superficial. Varicose veins are usually associated with greater
+              symptom burden and a higher risk of progression due to underlying{" "}
+              <strong>venous insufficiency</strong>.
             </p>
 
             <figure className="my-8">
@@ -191,10 +192,17 @@ export default function VaricoseVeinsNewYorkArticlePage() {
 
             <h2>What Causes Varicose Veins?</h2>
             <p>
-              The main cause is venous insufficiency. When vein valves leak, blood refluxes and accumulates
-              in the lower legs. Common risk factors include age, family history, pregnancy, prolonged
-              standing or sitting, excess body weight, and hormonal changes.
+              The main cause is <strong>venous insufficiency</strong>. When vein valves leak, blood refluxes
+              and accumulates in the lower legs, stretching vein walls over time. Common risk factors include:
             </p>
+            <ul>
+              <li>Family history of varicose veins or venous disease</li>
+              <li>Advancing age — valve function naturally weakens over time</li>
+              <li>Pregnancy — increased blood volume and hormonal changes</li>
+              <li>Prolonged standing or sitting — common in many New York professions</li>
+              <li>Excess body weight — adds pressure to the venous system</li>
+              <li>Prior leg injury or blood clot history</li>
+            </ul>
 
             <h2>Who Gets Varicose Veins? A New York Perspective</h2>
             <p>
@@ -234,26 +242,27 @@ export default function VaricoseVeinsNewYorkArticlePage() {
 
             <h2>Treatment Options at Schulman Vein and Laser Center</h2>
             <p>
-              Most varicose veins can be treated with minimally invasive in-office procedures. Patients are
-              evaluated and treated personally by Dr. Martin L. Schulman (board-certified vascular surgeon)
-              or Dr. Lee G. Schulman (Diplomate in Phlebology).
+              Most varicose veins can be treated with <strong>minimally invasive in-office procedures</strong>.
+              Patients are evaluated and treated personally by Dr. Martin L. Schulman (board-certified vascular
+              surgeon) or Dr. Lee G. Schulman (Diplomate in Phlebology).
             </p>
             <ul>
               <li>
-                <strong>EVLT (Endovenous Laser Therapy):</strong> closes refluxing veins from the inside.
+                <strong><Link href="/services/laser-vein-therapy">EVLT (Endovenous Laser Therapy)</Link>:</strong>{" "}
+                closes refluxing veins from the inside using laser energy under ultrasound guidance.
               </li>
               <li>
-                <strong>Sclerotherapy:</strong> injection treatment for smaller varicosities and spider
-                veins.
+                <strong>Sclerotherapy:</strong> injection treatment for smaller varicosities and{" "}
+                <Link href="/services/spider-vein-treatment">spider veins</Link>.
               </li>
               <li>
                 <strong>Ambulatory Phlebectomy:</strong> micro-procedure to remove larger surface varicose
-                veins.
+                veins through tiny skin punctures.
               </li>
             </ul>
             <p>
-              Treatment is based on duplex ultrasound findings and your symptoms. For details, see our{" "}
-              <Link href="/services/varicose-vein-treatment">varicose vein treatment page</Link>.
+              Treatment is based on <strong>duplex ultrasound findings</strong> and your symptoms. For details,
+              see our <Link href="/services/varicose-vein-treatment">varicose vein treatment page</Link>.
             </p>
 
             <h2>When to See a Doctor</h2>
@@ -261,9 +270,16 @@ export default function VaricoseVeinsNewYorkArticlePage() {
             <ul>
               <li>Visible varicose veins, even without pain</li>
               <li>Leg swelling, heaviness, or aching that impacts daily activity</li>
-              <li>Family history of vein disease or DVT</li>
+              <li>Family history of vein disease or <strong>DVT</strong></li>
               <li>Skin changes, discoloration, or ankle ulcers</li>
             </ul>
+            <div className="bg-amber-50 border-l-4 border-amber-400 rounded-lg p-4 my-6">
+              <p className="font-semibold text-amber-900 mb-1">When to seek urgent care</p>
+              <p className="text-amber-800 text-sm">
+                Sudden leg pain, warmth, redness along a vein, or one-sided leg swelling may indicate a{" "}
+                <strong>blood clot</strong>. Do not wait — seek same-day medical evaluation.
+              </p>
+            </div>
             <p>
               You can start by reviewing our <Link href="/locations">location pages</Link> or booking a{" "}
               <Link href="/services/free-vein-screening">free vein screening</Link>.
