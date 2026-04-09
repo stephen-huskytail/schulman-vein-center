@@ -5,6 +5,12 @@ export type BlogCategory = (typeof BLOG_CATEGORIES)[number];
 export type BlogPostSection = {
   heading: string;
   paragraphs: string[];
+  bullets?: string[];
+  callout?: {
+    text: string;
+    type: "tip" | "warning" | "info";
+  };
+  keyTakeaway?: string;
   imageSrc?: string;
   imageAlt?: string;
 };
@@ -133,6 +139,12 @@ export const BLOG_POSTS: BlogPost[] = [
       "Recognize varicose vein warning signs and understand when to seek expert vein treatment in New York.",
     featuredImage: "/images/blog/varicose-veins-symptoms-when-to-seek-treatment.svg",
     featuredImageAlt: "Varicose vein symptom checklist with leg illustration - when to seek treatment in New York",
+    relatedLinks: [
+      { label: "Varicose Vein Treatment", href: "/services/varicose-vein-treatment" },
+      { label: "Free Vein Screening", href: "/services/free-vein-screening" },
+      { label: "Laser Vein Therapy", href: "/services/laser-vein-therapy" },
+      { label: "Spider Vein Treatment", href: "/services/spider-vein-treatment" },
+    ],
     body: [
       {
         heading: "What varicose veins actually are",
@@ -177,6 +189,12 @@ export const BLOG_POSTS: BlogPost[] = [
       "Compare EVLT and sclerotherapy based on vein size, symptoms, recovery time, and clinical goals.",
     featuredImage: "/images/blog/evlt-sclerotherapy-vein-treatment-comparison.svg",
     featuredImageAlt: "EVLT vs sclerotherapy decision flowchart - choosing the right vein treatment",
+    relatedLinks: [
+      { label: "Laser Vein Therapy", href: "/services/laser-vein-therapy" },
+      { label: "Spider Vein Treatment", href: "/services/spider-vein-treatment" },
+      { label: "Varicose Vein Treatment", href: "/services/varicose-vein-treatment" },
+      { label: "Microphlebectomy", href: "/services/microphlebectomy" },
+    ],
     body: [
       {
         heading: "How EVLT works",
@@ -221,6 +239,12 @@ export const BLOG_POSTS: BlogPost[] = [
       "Post-treatment recovery guide for EVLT and sclerotherapy, including walking, compression, and follow-up milestones.",
     featuredImage: "/images/blog/minimally-invasive-vein-treatment-recovery.svg",
     featuredImageAlt: "Vein treatment recovery timeline with four milestones from procedure day to full results",
+    relatedLinks: [
+      { label: "After Vein Treatment Care", href: "/services/after-vein-treatment-care" },
+      { label: "Laser Vein Therapy", href: "/services/laser-vein-therapy" },
+      { label: "Sclerotherapy", href: "/services/sclerotherapy" },
+      { label: "Contact Our Office", href: "/contact" },
+    ],
     body: [
       {
         heading: "Immediately after your procedure",
@@ -353,6 +377,12 @@ export const BLOG_POSTS: BlogPost[] = [
       "Learn the difference between spider veins and varicose veins and when each may require medical evaluation.",
     featuredImage: "/images/blog/spider-veins-vs-varicose-veins-differences.svg",
     featuredImageAlt: "Spider veins vs varicose veins side-by-side comparison of size depth and treatment options",
+    relatedLinks: [
+      { label: "Spider Vein Treatment", href: "/services/spider-vein-treatment" },
+      { label: "Varicose Vein Treatment", href: "/services/varicose-vein-treatment" },
+      { label: "Sclerotherapy", href: "/services/sclerotherapy" },
+      { label: "Free Vein Screening", href: "/services/free-vein-screening" },
+    ],
     body: [
       {
         heading: "Appearance and depth",
@@ -397,6 +427,12 @@ export const BLOG_POSTS: BlogPost[] = [
       "Review hand vein treatment options, patient selection, and recovery guidance from a vein-focused physician team.",
     featuredImage: "/images/blog/hand-vein-treatment-options-new-york.svg",
     featuredImageAlt: "Hand vein treatment process from consultation to recovery at Schulman Vein Center New York",
+    relatedLinks: [
+      { label: "Hand Vein Treatment", href: "/services/hand-vein-treatment" },
+      { label: "Sclerotherapy", href: "/services/sclerotherapy" },
+      { label: "Microphlebectomy", href: "/services/microphlebectomy" },
+      { label: "Free Vein Screening", href: "/services/free-vein-screening" },
+    ],
     body: [
       {
         heading: "Why hand veins become prominent",

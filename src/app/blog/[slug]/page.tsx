@@ -2,13 +2,40 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { CalendarDays, Clock3, UserRound } from "lucide-react";
+import { AlertTriangle, CalendarDays, Clock3, Info, Lightbulb, UserRound } from "lucide-react";
 import PageHero from "@/components/PageHero";
 import { getAllBlogPosts, getBlogPostBySlug } from "@/lib/blog-posts";
 import { BUSINESS } from "@/lib/constants";
 
 type BlogPostPageProps = {
   params: Promise<{ slug: string }>;
+};
+
+const CALLOUT_STYLES: Record<
+  "tip" | "warning" | "info",
+  { border: string; bg: string; text: string; icon: typeof Lightbulb; label: string }
+> = {
+  tip: {
+    border: "border-emerald-300",
+    bg: "bg-emerald-50",
+    text: "text-emerald-900",
+    icon: Lightbulb,
+    label: "Tip",
+  },
+  info: {
+    border: "border-sky-300",
+    bg: "bg-sky-50",
+    text: "text-sky-900",
+    icon: Info,
+    label: "Info",
+  },
+  warning: {
+    border: "border-amber-300",
+    bg: "bg-amber-50",
+    text: "text-amber-900",
+    icon: AlertTriangle,
+    label: "Important",
+  },
 };
 
 function formatDate(date: string) {
@@ -158,8 +185,16 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             )}
 
             <div className="space-y-10">
-              {post.body.map((section) => (
-                <section key={section.heading}>
+              {post.body.map((section, sectionIndex) => (
+                <section key={`${section.heading}-${sectionIndex}`}>
+                  {section.keyTakeaway ? (
+                    <div className="mb-4 rounded-xl border border-[var(--sv-teal)]/30 bg-[var(--sv-teal)]/10 p-4">
+                      <p
+                        className="text-gray-700 leading-relaxed [&_a]:text-[var(--sv-teal)] [&_a]:font-medium [&_a:hover]:underline [&_strong]:text-[var(--sv-navy)] [&_strong]:font-semibold"
+                        dangerouslySetInnerHTML={{ __html: section.keyTakeaway }}
+                      />
+                    </div>
+                  ) : null}
                   <h2 className="font-heading text-2xl font-bold text-[var(--sv-navy)] mb-4">
                     {section.heading}
                   </h2>
@@ -173,12 +208,45 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                     />
                   ) : null}
                   <div className="space-y-4">
-                    {section.paragraphs.map((paragraph) => (
-                      <p key={paragraph} className="text-gray-700 leading-relaxed">
-                        {paragraph}
-                      </p>
+                    {section.paragraphs.map((paragraph, paragraphIndex) => (
+                      <p
+                        key={`${section.heading}-paragraph-${paragraphIndex}`}
+                        className="text-gray-700 leading-relaxed [&_a]:text-[var(--sv-teal)] [&_a]:font-medium [&_a:hover]:underline [&_strong]:text-[var(--sv-navy)] [&_strong]:font-semibold"
+                        dangerouslySetInnerHTML={{ __html: paragraph }}
+                      />
                     ))}
                   </div>
+                  {section.bullets?.length ? (
+                    <ul className="mt-5 list-disc space-y-2 border-l-2 border-[var(--sv-teal)]/30 pl-6 text-gray-700">
+                      {section.bullets.map((bullet, bulletIndex) => (
+                        <li
+                          key={`${section.heading}-bullet-${bulletIndex}`}
+                          className="pl-1 leading-relaxed [&_a]:text-[var(--sv-teal)] [&_a]:font-medium [&_a:hover]:underline [&_strong]:text-[var(--sv-navy)] [&_strong]:font-semibold"
+                          dangerouslySetInnerHTML={{ __html: bullet }}
+                        />
+                      ))}
+                    </ul>
+                  ) : null}
+                  {section.callout ? (
+                    (() => {
+                      const calloutStyle = CALLOUT_STYLES[section.callout.type];
+                      const CalloutIcon = calloutStyle.icon;
+                      return (
+                        <div
+                          className={`mt-5 rounded-xl border-l-4 ${calloutStyle.border} ${calloutStyle.bg} p-4`}
+                        >
+                          <div className={`mb-2 flex items-center gap-2 text-sm font-semibold ${calloutStyle.text}`}>
+                            <CalloutIcon className="h-4 w-4" />
+                            {calloutStyle.label}
+                          </div>
+                          <p
+                            className={`leading-relaxed ${calloutStyle.text} [&_a]:text-[var(--sv-teal)] [&_a]:font-medium [&_a:hover]:underline [&_strong]:text-[var(--sv-navy)] [&_strong]:font-semibold`}
+                            dangerouslySetInnerHTML={{ __html: section.callout.text }}
+                          />
+                        </div>
+                      );
+                    })()
+                  ) : null}
                 </section>
               ))}
             </div>
