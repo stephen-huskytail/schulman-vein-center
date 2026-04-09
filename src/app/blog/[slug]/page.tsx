@@ -50,6 +50,14 @@ export function generateStaticParams() {
   return getAllBlogPosts().map((post) => ({ slug: post.slug }));
 }
 
+function getCanonicalSlug(slug: string) {
+  if (slug === "evlt-vs-sclerotherapy-which-treatment-is-right") {
+    return "evlt-vs-sclerotherapy-vein-treatment-new-york";
+  }
+
+  return slug;
+}
+
 export async function generateMetadata({ params }: BlogPostPageProps): Promise<Metadata> {
   const { slug } = await params;
   const post = getBlogPostBySlug(slug);
@@ -61,7 +69,8 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
     };
   }
 
-  const canonicalUrl = `${BUSINESS.siteUrl}/blog/${post.slug}`;
+  const canonicalSlug = getCanonicalSlug(post.slug);
+  const canonicalUrl = `${BUSINESS.siteUrl}/blog/${canonicalSlug}`;
   const ogImageUrl = post.featuredImage?.startsWith("http")
     ? post.featuredImage
     : `${BUSINESS.siteUrl}${post.featuredImage ?? "/images/gallery/varicose-large.png"}`;
@@ -100,12 +109,17 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     notFound();
   }
 
-  const canonicalUrl = `${BUSINESS.siteUrl}/blog/${post.slug}`;
+  const canonicalSlug = getCanonicalSlug(post.slug);
+  const canonicalUrl = `${BUSINESS.siteUrl}/blog/${canonicalSlug}`;
   const articleSchema = {
     "@context": "https://schema.org",
-    "@type": "Article",
+    "@type": "MedicalWebPage",
     headline: post.title,
     description: post.metaDescription ?? post.excerpt,
+    about: {
+      "@type": "MedicalCondition",
+      name: post.title,
+    },
     datePublished: `${post.publishedAt}T00:00:00.000Z`,
     dateModified: `${post.publishedAt}T00:00:00.000Z`,
     author: {
