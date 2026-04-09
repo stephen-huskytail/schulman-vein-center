@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Spider Vein Treatment Illustration</title>
+  <desc id="desc">Fine vessel web pattern with sclerotherapy targeting points.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3B2142"/>
+      <stop offset="100%" stop-color="#A93F6F"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g stroke="#FBC3D9" stroke-width="5" fill="none" opacity="0.95">
+    <path d="M610 315 L790 190"/>
+    <path d="M610 315 L845 290"/>
+    <path d="M610 315 L845 400"/>
+    <path d="M610 315 L760 470"/>
+    <path d="M610 315 L510 165"/>
+    <path d="M610 315 L430 220"/>
+    <path d="M610 315 L390 335"/>
+    <path d="M610 315 L455 450"/>
+    <path d="M610 315 L560 515"/>
+  </g>
+  <g fill="#FFE9F2" opacity="0.95">
+    <circle cx="610" cy="315" r="22"/>
+    <circle cx="845" cy="290" r="9"/>
+    <circle cx="760" cy="470" r="9"/>
+    <circle cx="455" cy="450" r="9"/>
+    <circle cx="510" cy="165" r="9"/>
+  </g>
+  <g stroke="#FFDD77" stroke-width="6" fill="none" stroke-dasharray="12 10">
+    <path d="M180 520 L515 340"/>
+  </g>
+  <circle cx="515" cy="340" r="14" fill="#FFDD77"/>
+  <text x="80" y="82" fill="#FFFFFF" font-family="Georgia, serif" font-size="50" font-weight="700">Spider Vein Treatment</text>
+  <text x="80" y="122" fill="#F6D7E6" font-family="Arial, sans-serif" font-size="26">Delicate vessel mapping with cosmetic precision care</text>
+</svg>

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ChevronRight } from "lucide-react";
@@ -33,6 +34,7 @@ export async function generateMetadata({ params }: ServicePageProps): Promise<Me
   const title = `${service.name} in Manhattan & Long Island`;
   const description = service.metaDescription ?? service.shortDesc;
   const canonical = `${BUSINESS.siteUrl}/services/${service.slug}`;
+  const ogImage = `${BUSINESS.siteUrl}${service.heroImage}`;
 
   return {
     title,
@@ -44,6 +46,20 @@ export async function generateMetadata({ params }: ServicePageProps): Promise<Me
       url: canonical,
       siteName: BUSINESS.name,
       type: "website",
+      images: [
+        {
+          url: ogImage,
+          width: 1200,
+          height: 630,
+          alt: service.heroImageAlt,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [ogImage],
     },
   };
 }
@@ -98,6 +114,16 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
           </div>
 
           <div className="bg-white border border-gray-200 rounded-2xl p-6 md:p-8 shadow-card">
+            <div className="relative w-full aspect-[1200/630] rounded-xl overflow-hidden border border-gray-100 mb-6">
+              <Image
+                src={service.heroImage}
+                alt={service.heroImageAlt}
+                fill
+                sizes="(max-width: 768px) 100vw, 768px"
+                className="object-cover"
+                priority
+              />
+            </div>
             <h2 className="font-heading font-bold text-2xl text-[var(--sv-navy)] mb-3">
               What This Treatment Includes
             </h2>

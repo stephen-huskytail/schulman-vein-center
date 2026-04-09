@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Hand Face and Body Vein Treatment Illustration</title>
+  <desc id="desc">Silhouette zones highlighting face, hands and body vein care.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2B2D42"/>
+      <stop offset="100%" stop-color="#6D597A"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g fill="#FFFFFF" opacity="0.2">
+    <circle cx="600" cy="165" r="78"/>
+    <rect x="510" y="230" width="180" height="250" rx="90"/>
+    <rect x="395" y="280" width="110" height="180" rx="55"/>
+    <rect x="695" y="280" width="110" height="180" rx="55"/>
+  </g>
+  <g fill="#FFDD77" opacity="0.95">
+    <circle cx="585" cy="170" r="7"/>
+    <circle cx="614" cy="170" r="7"/>
+    <circle cx="440" cy="340" r="7"/>
+    <circle cx="760" cy="340" r="7"/>
+    <circle cx="600" cy="325" r="10"/>
+  </g>
+  <g stroke="#F39AB8" stroke-width="6" fill="none">
+    <path d="M560 180 C585 150,615 155,640 185"/>
+    <path d="M420 360 C445 335,465 335,485 360"/>
+    <path d="M715 360 C740 335,760 335,780 360"/>
+    <path d="M560 320 C590 300,620 300,650 325"/>
+  </g>
+  <text x="80" y="82" fill="#FFFFFF" font-family="Georgia, serif" font-size="50" font-weight="700">Hand, Face &amp; Body Veins</text>
+  <text x="80" y="122" fill="#EEDAF2" font-family="Arial, sans-serif" font-size="26">Aesthetic-focused treatment for visible veins beyond the legs</text>
+</svg>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Vein Disorders and Conditions Illustration</title>
+  <desc id="desc">Diagnostic flow map connecting multiple venous conditions.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#14213D"/>
+      <stop offset="100%" stop-color="#1D7874"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g stroke="#A7E8E2" stroke-width="6" fill="none" opacity="0.9">
+    <path d="M240 315 H470"/>
+    <path d="M470 315 H730"/>
+    <path d="M730 315 H960"/>
+    <path d="M470 315 L560 195"/>
+    <path d="M470 315 L560 435"/>
+    <path d="M730 315 L820 195"/>
+    <path d="M730 315 L820 435"/>
+  </g>
+  <g fill="#FFFFFF" opacity="0.95">
+    <circle cx="240" cy="315" r="38"/>
+    <circle cx="470" cy="315" r="44"/>
+    <circle cx="730" cy="315" r="44"/>
+    <circle cx="960" cy="315" r="38"/>
+    <circle cx="560" cy="195" r="30"/>
+    <circle cx="560" cy="435" r="30"/>
+    <circle cx="820" cy="195" r="30"/>
+    <circle cx="820" cy="435" r="30"/>
+  </g>
+  <g fill="#205B6A" font-family="Arial, sans-serif" font-size="16" text-anchor="middle">
+    <text x="240" y="320">Symptoms</text>
+    <text x="470" y="320">Diagnosis</text>
+    <text x="730" y="320">Condition</text>
+    <text x="960" y="320">Plan</text>
+  </g>
+  <text x="80" y="82" fill="#FFFFFF" font-family="Georgia, serif" font-size="50" font-weight="700">Vein Disorders &amp; Conditions</text>
+  <text x="80" y="122" fill="#D7F3EF" font-family="Arial, sans-serif" font-size="26">Comprehensive mapping from symptom to targeted treatment</text>
+</svg>

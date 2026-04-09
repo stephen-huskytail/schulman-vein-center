@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Varicose Vein Treatment Illustration</title>
+  <desc id="desc">Stylized leg vascular pathway with treatment beam and clinical city context.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0F2C44"/>
+      <stop offset="100%" stop-color="#1C7C8A"/>
+    </linearGradient>
+    <linearGradient id="vein" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FCE7E7"/>
+      <stop offset="100%" stop-color="#C8485D"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g opacity="0.18" fill="#FFFFFF">
+    <rect x="70" y="110" width="90" height="420" rx="12"/>
+    <rect x="180" y="170" width="72" height="360" rx="12"/>
+    <rect x="980" y="95" width="95" height="435" rx="12"/>
+    <rect x="1088" y="145" width="45" height="385" rx="8"/>
+  </g>
+  <path d="M530 130 C510 230,560 260,530 355 C500 445,560 490,520 540" fill="none" stroke="url(#vein)" stroke-width="30" stroke-linecap="round"/>
+  <path d="M620 110 C590 200,640 255,610 340 C585 420,635 470,600 530" fill="none" stroke="#F9C4CC" stroke-width="18" stroke-linecap="round"/>
+  <circle cx="560" cy="300" r="72" fill="#FFFFFF" opacity="0.22"/>
+  <path d="M500 300 L710 300" stroke="#FFDD77" stroke-width="8" stroke-dasharray="14 12"/>
+  <circle cx="500" cy="300" r="14" fill="#FFDD77"/>
+  <text x="80" y="82" fill="#FFFFFF" font-family="Georgia, serif" font-size="50" font-weight="700">Varicose Vein Treatment</text>
+  <text x="80" y="122" fill="#D9F0F5" font-family="Arial, sans-serif" font-size="26">Targeted vein closure with minimally invasive precision</text>
+</svg>

@@ -276,6 +276,8 @@ export const SERVICES = [
     name: "Varicose Vein Treatment",
     slug: "varicose-vein-treatment",
     icon: "Zap",
+    heroImage: "/images/services/varicose-vein-treatment.svg",
+    heroImageAlt: "AI-generated visual showing targeted varicose vein treatment flow",
     metaDescription:
       "Expert varicose vein treatment in Manhattan and Long Island. Board-certified vein doctors, non-surgical EVLT and sclerotherapy. Drive home the same day.",
     shortDesc: "Advanced laser ablation (EVLT), micro-surgery, and sclerotherapy to eliminate bulging varicose veins — no hospital stay required.",
@@ -294,6 +296,8 @@ export const SERVICES = [
     name: "Spider Vein Treatment",
     slug: "spider-vein-treatment",
     icon: "Sparkles",
+    heroImage: "/images/services/spider-vein-treatment.svg",
+    heroImageAlt: "AI-generated visual of spider vein network and precision treatment",
     metaDescription:
       "Spider vein removal in Manhattan, Nassau & Suffolk County. Sclerotherapy from vein-only specialists. 55+ years experience. Free screening available.",
     shortDesc: "The gold standard in sclerotherapy and laser treatments for spider veins and broken blood vessels on legs, face, and body.",
@@ -311,6 +315,8 @@ export const SERVICES = [
     name: "Laser Vein Therapy (EVLT)",
     slug: "laser-vein-therapy",
     icon: "Crosshair",
+    heroImage: "/images/services/laser-vein-therapy.svg",
+    heroImageAlt: "AI-generated visual of EVLT laser targeting an affected vein",
     metaDescription:
       "Endovenous Laser Treatment (EVLT) for varicose veins in Manhattan and Long Island. Often covered by insurance. Non-surgical, walk-in walk-out recovery.",
     shortDesc: "Modern endovenous laser treatment replaces vein stripping surgery — in-office, ~30 minutes, drive home the same day.",
@@ -328,6 +334,8 @@ export const SERVICES = [
     name: "Hand, Face & Body Veins",
     slug: "body-vein-treatment",
     icon: "Hand",
+    heroImage: "/images/services/body-vein-treatment.svg",
+    heroImageAlt: "AI-generated visual of face, hand, and body vein treatment zones",
     metaDescription:
       "Treatment for hand, facial, and body veins at Schulman Vein Center — Manhattan, Manhasset & Commack. Expert cosmetic vein removal, personalized care.",
     shortDesc: "World-renowned for pioneering hand vein treatment — also treating face, temples, chest, breast, arms, and more.",
@@ -346,6 +354,8 @@ export const SERVICES = [
     name: "Vein Disorders & Conditions",
     slug: "vein-disorders",
     icon: "HeartPulse",
+    heroImage: "/images/services/vein-disorders.svg",
+    heroImageAlt: "AI-generated diagnostic map of common vein disorders and treatment flow",
     metaDescription:
       "Learn about varicose veins, spider veins, venous insufficiency and more. Schulman Vein Center treats all vein conditions in Manhattan and Long Island.",
     shortDesc: "Diagnosis and treatment of phlebitis, venous leg ulcers, pregnancy-related varicose veins, and venous insufficiency.",
@@ -364,6 +374,8 @@ export const SERVICES = [
     name: "Free Vein Screening",
     slug: "free-vein-screening",
     icon: "Search",
+    heroImage: "/images/services/free-vein-screening.svg",
+    heroImageAlt: "AI-generated visual of physician-led free vein screening and assessment",
     metaDescription:
       "Get a complimentary vein screening at our Manhattan or Long Island offices. Board-certified vein doctors. No referral needed. Same-day appointments available.",
     shortDesc: "Schedule a no-cost, no-obligation consultation with a Schulman doctor — not a nurse or assistant — personally.",
