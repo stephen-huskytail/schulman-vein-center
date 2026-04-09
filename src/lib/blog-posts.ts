@@ -166,9 +166,9 @@ export const BLOG_POSTS: BlogPost[] = [
     publishedAt: "2026-04-07",
     readTimeMinutes: 8,
     author: "Dr. Lee G. Schulman",
-    metaTitle: "Varicose Vein Symptoms & When to Seek Treatment | Schulman Vein NY",
+    metaTitle: "Varicose Vein Symptoms: When to Seek Treatment | Schulman",
     metaDescription:
-      "Know which varicose vein symptoms signal underlying venous disease and when to schedule an evaluation. Schulman Vein and Laser Center serves Manhattan and Long Island.",
+      "Know which varicose vein symptoms signal underlying venous disease. Schulman Vein Center serves Manhattan and Long Island. Book a free screening today.",
     ogDescription:
       "Recognize varicose vein warning signs and understand when to seek expert vein treatment in New York.",
     featuredImage: "/images/blog/varicose-veins-symptoms-when-to-seek-treatment.svg",
@@ -229,7 +229,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         heading: "How treatment planning usually works",
         paragraphs: [
-          "Treatment is selected based on <strong>ultrasound findings and symptom profile</strong>, not just appearance. Depending on anatomy, options may include <a href=\"/services/laser-vein-therapy\">endovenous laser therapy</a>, sclerotherapy, microphlebectomy, or staged combination care.",
+          "Treatment is selected based on <strong>ultrasound findings and symptom profile</strong>, not just appearance. Depending on anatomy, options may include <a href=\"/services/laser-vein-therapy\">endovenous laser therapy</a>, sclerotherapy, microphlebectomy, or staged combination care. Visit our <a href=\"/services/varicose-vein-treatment\">varicose vein treatment page</a> for a full overview of available approaches.",
           "Most modern procedures are <strong>minimally invasive and performed in-office</strong>. Patients can usually walk immediately afterward and return to normal activity quickly with specific aftercare instructions.",
           "At Schulman Vein and Laser Center, every treatment plan is developed personally by a physician — never a technician or nurse-only team.",
         ],
@@ -264,9 +264,9 @@ export const BLOG_POSTS: BlogPost[] = [
     publishedAt: "2026-04-06",
     readTimeMinutes: 9,
     author: "Dr. Lee G. Schulman",
-    metaTitle: "EVLT vs Sclerotherapy: Clinical Guide to Vein Treatment | Schulman NY",
+    metaTitle: "EVLT vs Sclerotherapy: Clinical Vein Guide | Schulman NY",
     metaDescription:
-      "Compare EVLT and sclerotherapy based on vein anatomy, ultrasound findings, and clinical goals. Schulman Vein and Laser Center in New York explains.",
+      "Compare EVLT and sclerotherapy based on vein anatomy and ultrasound findings. Schulman Vein New York explains. Book a free vein screening today.",
     ogDescription:
       "Compare EVLT and sclerotherapy based on vein size, symptoms, recovery time, and clinical goals.",
     featuredImage: "/images/blog/evlt-sclerotherapy-vein-treatment-comparison.svg",
@@ -357,7 +357,7 @@ export const BLOG_POSTS: BlogPost[] = [
     publishedAt: "2026-04-05",
     readTimeMinutes: 7,
     author: "Dr. Lee G. Schulman",
-    metaTitle: "What to Expect After Vein Treatment | Recovery Guide | Schulman NY",
+    metaTitle: "Vein Treatment Recovery: What to Expect | Schulman NY",
     metaDescription:
       "Post-treatment recovery guide for EVLT and vein procedures at Schulman Vein and Laser Center in New York. Learn what's normal and when to call your doctor.",
     ogDescription:
@@ -411,7 +411,7 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "How to support better outcomes",
         paragraphs: [
           "Walking daily is the single most helpful thing you can do. Many patients are advised to aim for <strong>30 minutes of walking</strong> per day in the week following treatment — a target that fits naturally into a New York commute.",
-          "Wearing <strong>compression stockings as directed</strong>, attending scheduled follow-up ultrasound checks, and avoiding high-impact activity in the early recovery period all improve consistency of results.",
+          "Wearing <strong>compression stockings as directed</strong>, attending scheduled follow-up ultrasound checks, and avoiding high-impact activity in the early recovery period all improve consistency of results. See our <a href=\"/services/varicose-vein-treatment\">varicose vein treatment page</a> for details on what your specific procedure recovery may involve.",
         ],
         bullets: [
           "Walk 20–30 minutes daily starting day one",
@@ -426,7 +426,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         heading: "Timeline for visible improvement",
         paragraphs: [
-          "<strong>Symptom relief</strong> — including reduced heaviness, aching, and swelling — often begins within <strong>days to weeks</strong>. Cosmetic improvement may continue over several months as treated veins are gradually reabsorbed by the body.",
+          "<strong>Symptom relief</strong> — including reduced heaviness, aching, and swelling — often begins within <strong>days to weeks</strong> after <a href=\"/services/laser-vein-therapy\">EVLT or laser vein therapy</a>. Cosmetic improvement may continue over several months as treated veins are gradually reabsorbed by the body.",
           "If additional branch veins remain visible after your primary treatment, your physician may recommend <a href=\"/services/spider-vein-treatment\">staged spider vein treatment</a> for a more complete result.",
           "Most patients at Schulman Vein and Laser Center — across our Manhattan, Upper East Side, Manhasset, and Commack locations — see meaningful cosmetic improvement within six to twelve weeks.",
         ],
@@ -460,7 +460,7 @@ export const BLOG_POSTS: BlogPost[] = [
     publishedAt: "2026-04-08",
     readTimeMinutes: 10,
     author: "Dr. Lee G. Schulman",
-    metaTitle: "Does Insurance Cover Vein Treatment in New York? | Schulman Vein",
+    metaTitle: "Does Insurance Cover Vein Treatment? | Schulman NY",
     metaDescription:
       "Does insurance cover vein treatment in New York? Learn when varicose vein procedures are medically necessary — and how to find out if you're covered.",
     ogDescription:
@@ -478,7 +478,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         heading: "The Short Answer",
         paragraphs: [
-          "Vein treatment <strong>may be covered</strong> when it is medically necessary. Procedures that treat symptomatic venous disease — such as painful or swollen varicose veins — are frequently eligible under many commercial plans and <strong>Medicare</strong> in New York.",
+          "Vein treatment <strong>may be covered</strong> when it is medically necessary. Procedures that treat symptomatic venous disease — such as painful or swollen <a href=\"/services/varicose-vein-treatment\">varicose veins</a> — are frequently eligible under many commercial plans and <strong>Medicare</strong> in New York.",
           "Cosmetic treatment for spider veins without qualifying medical symptoms is usually <strong>not covered</strong>. The core insurance question is whether treatment addresses a documented medical condition or appearance alone.",
         ],
         keyTakeaway:
@@ -581,9 +581,9 @@ export const BLOG_POSTS: BlogPost[] = [
     publishedAt: "2026-04-03",
     readTimeMinutes: 6,
     author: "Dr. Lee G. Schulman",
-    metaTitle: "Spider Veins vs Varicose Veins: Key Differences | Schulman Vein NY",
+    metaTitle: "Spider vs Varicose Veins: Key Differences | Schulman NY",
     metaDescription:
-      "Learn the clinical differences between spider veins and varicose veins — causes, symptoms, and when each requires medical evaluation in New York.",
+      "Learn the differences between spider veins and varicose veins — causes, symptoms, and treatment. Book a free vein screening in New York today.",
     ogDescription:
       "Learn the difference between spider veins and varicose veins and when each may require medical evaluation.",
     featuredImage: "/images/blog/spider-veins-vs-varicose-veins-differences.svg",
@@ -668,9 +668,9 @@ export const BLOG_POSTS: BlogPost[] = [
     publishedAt: "2026-04-02",
     readTimeMinutes: 7,
     author: "Dr. Lee G. Schulman",
-    metaTitle: "Hand Vein Treatment Options in New York | Schulman Vein Center",
+    metaTitle: "Hand Vein Treatment Options New York | Schulman",
     metaDescription:
-      "Learn about hand vein treatment options, candidacy evaluation, and what to expect during recovery at Schulman Vein and Laser Center in New York.",
+      "Learn about hand vein treatment options, candidacy, and recovery at Schulman Vein and Laser Center New York. Book a free consultation today.",
     ogDescription:
       "Review hand vein treatment options, patient selection, and recovery guidance from a vein-focused physician team.",
     featuredImage: "/images/blog/hand-vein-treatment-options-new-york.svg",
@@ -697,7 +697,7 @@ export const BLOG_POSTS: BlogPost[] = [
         paragraphs: [
           "Not every visible hand vein should be treated. Physicians at Schulman Vein and Laser Center assess <strong>circulation patterns, dominant veins needed for normal drainage, skin quality, and medical history</strong> before recommending any procedure.",
           "Patients with a history of peripheral vascular disease, prior surgery to hand veins, or planned IV access needs require more careful evaluation before treatment proceeds.",
-          "The goal is meaningful improvement without compromising healthy blood flow or hand function — this requires an experienced physician, not an aesthetic-only provider.",
+          "The goal is meaningful improvement without compromising healthy blood flow or hand function — this requires an experienced physician, not an aesthetic-only provider. Book a <a href=\"/services/free-vein-screening\">free vein screening</a> to discuss your candidacy with our team.",
         ],
         bullets: [
           "Full circulation assessment before any procedure",
@@ -715,7 +715,7 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Common treatment approaches",
         paragraphs: [
           "Depending on anatomy, options may include <strong>targeted sclerotherapy</strong> for smaller superficial hand veins or <strong>microphlebectomy-style techniques</strong> for selected larger surface vessels. Treatment strategy is individualized to preserve function and optimize appearance.",
-          "Sclerotherapy for hand veins uses very fine needles and careful injection technique. Multiple sessions may be needed for full results, and treated veins fade gradually over several weeks.",
+          "<a href=\"/services/spider-vein-treatment\">Sclerotherapy</a> for hand veins uses very fine needles and careful injection technique. Multiple sessions may be needed for full results, and treated veins fade gradually over several weeks.",
           "Learn more about <a href=\"/services/body-vein-treatment\">body vein treatment options</a> available at Schulman Vein and Laser Center.",
         ],
         bullets: [
