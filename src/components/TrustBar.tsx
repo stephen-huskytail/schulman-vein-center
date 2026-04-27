@@ -11,13 +11,17 @@ export default function TrustBar() {
     >
       <div className="container-sv h-full flex items-center justify-between gap-4">
         {/* Left: tagline */}
-        <span className="hidden md:flex items-center gap-1.5 font-medium tracking-wide">
+        <span className="hidden md:flex items-center gap-2 font-medium tracking-wide">
+          <span className="text-[var(--sv-gold)] font-black tracking-[0.18em] uppercase text-xs">
+            All We Do Is Veins™
+          </span>
+          <span className="text-white/30">·</span>
           <Star className="w-3 h-3 text-[var(--sv-gold)] fill-[var(--sv-gold)]" />
           <Star className="w-3 h-3 text-[var(--sv-gold)] fill-[var(--sv-gold)]" />
           <Star className="w-3 h-3 text-[var(--sv-gold)] fill-[var(--sv-gold)]" />
           <Star className="w-3 h-3 text-[var(--sv-gold)] fill-[var(--sv-gold)]" />
           <Star className="w-3 h-3 text-[var(--sv-gold)] fill-[var(--sv-gold)]" />
-          <span className="ml-1 text-white/80">5-Star Rated Across All Locations</span>
+          <span className="text-white/70">5-Star Rated</span>
         </span>
 
         {/* Center on mobile, right on desktop */}

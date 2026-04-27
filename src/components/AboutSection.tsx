@@ -72,6 +72,15 @@ export default function AboutSection() {
               ))}
             </ul>
 
+            {/* Tagline callout */}
+            <div className="flex items-center gap-3 mb-6 p-4 rounded-xl bg-[var(--sv-navy)] border-l-4 border-[var(--sv-gold)]">
+              <span className="text-[var(--sv-gold)] font-black tracking-[0.15em] uppercase text-sm leading-snug">
+                All We Do Is Veins™
+              </span>
+              <span className="text-white/50 text-sm">—</span>
+              <span className="text-white/70 text-sm italic">100% exclusively dedicated to vein care</span>
+            </div>
+
             <div className="flex flex-col sm:flex-row gap-3">
               <CallNowButton variant="primary" />
               <a href="/contact" className="btn-outline-navy">

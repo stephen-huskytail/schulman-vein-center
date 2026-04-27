@@ -39,10 +39,16 @@ export default function HeroSection() {
               className="mb-5"
             >
               <span
-                className="inline-block text-base sm:text-lg font-black tracking-[0.2em] uppercase"
-                style={{ color: "#FF8A1F", textShadow: "0 2px 8px rgba(0,0,0,0.35)" }}
+                className="inline-flex items-center gap-2.5 rounded-full px-5 py-2 text-sm sm:text-base font-black tracking-[0.18em] uppercase"
+                style={{
+                  background: "linear-gradient(135deg, #C8973A 0%, #E8B84B 100%)",
+                  color: "#0B2545",
+                  boxShadow: "0 4px 16px rgba(200,151,58,0.45), 0 1px 3px rgba(0,0,0,0.3)",
+                }}
               >
+                <span style={{ width: "6px", height: "6px", borderRadius: "50%", background: "rgba(11,37,69,0.4)", flexShrink: 0 }} />
                 All We Do Is Veins™
+                <span style={{ width: "6px", height: "6px", borderRadius: "50%", background: "rgba(11,37,69,0.4)", flexShrink: 0 }} />
               </span>
             </motion.div>
 

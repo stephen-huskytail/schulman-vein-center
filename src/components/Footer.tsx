@@ -41,9 +41,12 @@ export default function Footer() {
             <p className="text-white/70 text-sm leading-relaxed">
               Manhattan and Long Island's vein specialists. Exclusively dedicated to the diagnosis and treatment of vein disease for over 55 years.
             </p>
-            <p className="mt-4 text-[var(--sv-gold)] font-semibold font-heading text-lg italic">
-              "All We Do Is Veins™"
-            </p>
+            <div className="mt-4 inline-flex items-center gap-2 bg-[var(--sv-gold)]/10 border border-[var(--sv-gold)]/30 rounded-full px-4 py-1.5">
+              <span className="w-1.5 h-1.5 rounded-full bg-[var(--sv-gold)] shrink-0" />
+              <span className="text-[var(--sv-gold)] font-black tracking-[0.16em] uppercase text-xs">
+                All We Do Is Veins™
+              </span>
+            </div>
             <a
               href={BUSINESS.emailHref}
               className="mt-4 flex items-center gap-2 text-sm text-white/70 hover:text-white transition-colors"
