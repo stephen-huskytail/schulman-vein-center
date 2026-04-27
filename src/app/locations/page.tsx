@@ -65,9 +65,9 @@ export default function LocationsPage() {
                         {location.phone}
                       </a>
                     </p>
-                    <p className="flex items-center gap-2">
-                      <Clock className="w-4 h-4 text-[var(--sv-teal)]" />
-                      <span>{location.hoursDisplay}</span>
+                    <p className="flex items-start gap-2">
+                      <Clock className="w-4 h-4 mt-0.5 text-[var(--sv-teal)]" />
+                      <span>{location.hoursDisplay.split(" · ")[0]}<span className="block">{location.hoursDisplay.split(" · ")[1]}</span></span>
                     </p>
                   </div>
 

@@ -85,7 +85,7 @@ export default function LocationsSection() {
                   </div>
                   <div>
                     <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-0.5">Hours</p>
-                    <p className="text-sm text-gray-700">{loc.hoursDisplay}</p>
+                    <p className="text-sm text-gray-700">{loc.hoursDisplay.split(" · ")[0]}<span className="block">{loc.hoursDisplay.split(" · ")[1]}</span></p>
                     <p className="text-xs text-gray-400 mt-0.5">Sat–Sun: Closed</p>
                   </div>
                 </div>

@@ -128,9 +128,12 @@ export default function ContactSection() {
                         <Phone className="w-3.5 h-3.5 text-[var(--sv-teal-light)]" />
                         {loc.phone}
                       </a>
-                      <p className="flex items-center gap-2 text-white/60 text-sm">
-                        <Clock className="w-3.5 h-3.5 text-[var(--sv-teal-light)]" />
-                        {loc.hoursDisplay}
+                      <p className="flex items-start gap-2 text-white/60 text-sm">
+                        <Clock className="w-3.5 h-3.5 mt-0.5 text-[var(--sv-teal-light)]" />
+                        <span className="text-left">
+                          {loc.hoursDisplay.split(" · ")[0]}
+                          <span className="block">{loc.hoursDisplay.split(" · ")[1]}</span>
+                        </span>
                       </p>
                     </div>
                   ))}
