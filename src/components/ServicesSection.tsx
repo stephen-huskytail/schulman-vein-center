@@ -71,7 +71,7 @@ export default function ServicesSection() {
                   {/* Mini treatment list */}
                   <ul className="space-y-1.5 mb-5">
                     {service.treatments.slice(0, 3).map((t) => (
-                      <li key={t} className="flex items-center gap-2 text-xs text-gray-500">
+                      <li key={t} className="flex items-center gap-2 text-sm text-gray-600">
                         <span className="w-1.5 h-1.5 rounded-full bg-[var(--sv-teal)] shrink-0" />
                         {t}
                       </li>

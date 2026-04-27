@@ -72,7 +72,7 @@ export default function CallNowButton({
           aria-label="Choose a location to call"
         >
           <div className="flex items-center justify-between px-4 pt-3 pb-2 border-b border-gray-100">
-            <p className="text-xs font-bold uppercase tracking-widest text-gray-400">
+            <p className="text-sm font-bold uppercase tracking-widest text-gray-500">
               Choose Location
             </p>
             <button
@@ -99,7 +99,7 @@ export default function CallNowButton({
                   <p className="text-sm font-semibold text-[var(--sv-navy)]">
                     {loc.shortName}
                   </p>
-                  <p className="text-xs text-gray-500">{loc.phone}</p>
+                  <p className="text-sm text-gray-600">{loc.phone}</p>
                 </div>
               </a>
             ))}

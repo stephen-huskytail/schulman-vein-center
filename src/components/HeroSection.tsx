@@ -36,11 +36,27 @@ export default function HeroSection() {
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="flex items-center gap-2 mb-5"
+              className="mb-5"
             >
-              <span className="text-sm font-bold tracking-[0.2em] uppercase text-[#C8973A] border border-[#C8973A]/40 rounded-full px-3 py-1">
-                All We Do Is Veins™
-              </span>
+              <div className="w-[250px] sm:w-[290px]">
+                <svg viewBox="0 0 320 120" className="w-full h-auto" role="img" aria-label="All We Do Is Veins trademark tagline">
+                  <defs>
+                    <path id="hero-tagline-arc" d="M 24 96 Q 160 18 296 96" />
+                  </defs>
+                  <text
+                    fill="#FF8A1F"
+                    fontSize="29"
+                    fontWeight="900"
+                    letterSpacing="4"
+                    textAnchor="middle"
+                    style={{ filter: "drop-shadow(0 2px 8px rgba(0,0,0,0.35))" }}
+                  >
+                    <textPath href="#hero-tagline-arc" startOffset="50%">
+                      ALL WE DO IS VEINS™
+                    </textPath>
+                  </text>
+                </svg>
+              </div>
             </motion.div>
 
             {/* H1 */}

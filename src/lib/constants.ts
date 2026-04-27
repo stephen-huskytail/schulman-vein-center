@@ -11,9 +11,9 @@ export const BUSINESS = {
   siteUrl: "https://www.schulmanveincenter.com",
 
   // Primary phone (Manhattan — used as the main CTA number)
-  phone: "(212) 987-0500",
+  phone: "212.987.0500",
   phoneTel: "+12129870500",
-  phoneHref: "tel:+12129870500",
+  phoneHref: "tel:2129870500",
 
   email: "info@schulmanveinandlasercenter.com",
   emailHref: "mailto:info@schulmanveinandlasercenter.com",
@@ -34,9 +34,9 @@ export const LOCATIONS = [
     state: "NY",
     zip: "10128",
     fullAddress: "1165 Park Ave, New York, NY 10128",
-    phone: "(212) 987-0500",
+    phone: "212.987.0500",
     phoneTel: "+12129870500",
-    phoneHref: "tel:+12129870500",
+    phoneHref: "tel:2129870500",
     hours: {
       mon: "9:00am – 7:00pm",
       tue: "9:00am – 7:00pm",
@@ -90,9 +90,9 @@ export const LOCATIONS = [
     state: "NY",
     zip: "11030",
     fullAddress: "800 Community Dr #211, Manhasset, NY 11030",
-    phone: "(516) 482-4477",
+    phone: "516.482.4477",
     phoneTel: "+15164824477",
-    phoneHref: "tel:+15164824477",
+    phoneHref: "tel:5164824477",
     hours: {
       mon: "9:00am – 7:00pm",
       tue: "9:00am – 7:00pm",
@@ -146,9 +146,9 @@ export const LOCATIONS = [
     state: "NY",
     zip: "11725",
     fullAddress: "353 Veterans Memorial Hwy #206, Commack, NY 11725",
-    phone: "(631) 543-4599",
+    phone: "631.543.4599",
     phoneTel: "+16315434599",
-    phoneHref: "tel:+16315434599",
+    phoneHref: "tel:6315434599",
     hours: {
       mon: "9:00am – 7:00pm",
       tue: "9:00am – 7:00pm",

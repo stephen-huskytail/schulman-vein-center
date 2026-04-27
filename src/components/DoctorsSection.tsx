@@ -68,7 +68,7 @@ export default function DoctorsSection() {
                     {doc.name}
                   </h3>
                   <p className="text-[var(--sv-teal)] text-sm font-semibold">{doc.title}</p>
-                  <p className="text-gray-500 text-xs mt-0.5">{doc.credentials}</p>
+                  <p className="text-gray-500 text-sm mt-0.5">{doc.credentials}</p>
                 </div>
               </div>
 
@@ -78,13 +78,13 @@ export default function DoctorsSection() {
 
               {/* Highlights */}
               <div className="bg-[var(--sv-cream)] rounded-xl p-4 mb-5">
-                <h4 className="text-xs font-bold uppercase tracking-widest text-[var(--sv-navy)] mb-3 flex items-center gap-2">
+                <h4 className="text-sm font-bold uppercase tracking-widest text-[var(--sv-navy)] mb-3 flex items-center gap-2">
                   <BookOpen className="w-3.5 h-3.5 text-[var(--sv-teal)]" />
                   Notable Achievements
                 </h4>
                 <ul className="space-y-2">
                   {doc.highlights.map((h) => (
-                    <li key={h} className="flex items-start gap-2 text-xs text-gray-600">
+                    <li key={h} className="flex items-start gap-2 text-sm text-gray-700">
                       <span className="w-1.5 h-1.5 rounded-full bg-[var(--sv-gold)] mt-1.5 shrink-0" />
                       {h}
                     </li>
@@ -94,14 +94,14 @@ export default function DoctorsSection() {
 
               {/* Memberships */}
               <div>
-                <h4 className="text-xs font-bold uppercase tracking-widest text-[var(--sv-navy)] mb-3">
+                <h4 className="text-sm font-bold uppercase tracking-widest text-[var(--sv-navy)] mb-3">
                   Professional Memberships
                 </h4>
                 <div className="flex flex-wrap gap-2">
                   {doc.memberships.slice(0, 5).map((m) => (
                     <span
                       key={m}
-                      className="inline-block text-xs bg-gray-50 border border-gray-200 rounded-full px-3 py-1 text-gray-600"
+                      className="inline-block text-sm bg-gray-50 border border-gray-200 rounded-full px-3 py-1 text-gray-700"
                     >
                       {m}
                     </span>

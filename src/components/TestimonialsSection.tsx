@@ -37,17 +37,28 @@ export default function TestimonialsSection({ variant = "navy" }: TestimonialsSe
             </span>
           </h2>
           <div className="w-16 h-1 bg-[var(--sv-gold)] rounded-full mx-auto mb-5" />
-          <p className={isLight ? "section-subtitle" : "section-subtitle-light"}>
+          <p className={`${isLight ? "section-subtitle" : "section-subtitle-light"} font-semibold`}>
             5-star rated across all three locations on Google, Yelp, Healthgrades, Vitals, and more.
           </p>
 
           {/* Star rating display */}
-          <div className="flex items-center justify-center gap-1 mt-4">
-            {[...Array(5)].map((_, i) => (
-              <Star key={i} className="w-6 h-6 text-[var(--sv-gold)] fill-[var(--sv-gold)]" />
-            ))}
-            <span className={`ml-2 text-sm ${isLight ? "text-[var(--sv-navy)]/70" : "text-white/70"}`}>
-              5.0 average · All locations
+          <div
+            className={`mt-5 inline-flex flex-col items-center gap-2 rounded-2xl px-6 py-4 ${
+              isLight
+                ? "bg-white border-2 border-[var(--sv-gold)]/40 shadow-md"
+                : "bg-white/10 border-2 border-[var(--sv-gold)]/50 shadow-lg"
+            }`}
+          >
+            <span className={`${isLight ? "text-[var(--sv-navy)]" : "text-white"} text-3xl font-black leading-none`}>
+              5.0 Average Rating
+            </span>
+            <div className="flex items-center justify-center gap-1">
+              {[...Array(5)].map((_, i) => (
+                <Star key={i} className="w-7 h-7 text-[var(--sv-gold)] fill-[var(--sv-gold)]" />
+              ))}
+            </div>
+            <span className={`text-sm font-semibold ${isLight ? "text-[var(--sv-navy)]/75" : "text-white/80"}`}>
+              Verified five-star patient reviews at every location
             </span>
           </div>
         </div>

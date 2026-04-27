@@ -85,9 +85,6 @@ export default function GallerySection() {
           </AnimatePresence>
         </div>
 
-        <p className="text-center text-xs text-gray-400 mt-6">
-          * Individual results may vary. Photos show before and after vein treatments performed at Schulman Vein and Laser Center.
-        </p>
       </div>
 
       {/* Lightbox */}

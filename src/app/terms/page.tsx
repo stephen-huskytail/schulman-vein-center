@@ -108,9 +108,9 @@ export default function TermsPage() {
           <p>Questions about these Terms? Please contact us:</p>
           <ul>
             <li><strong>Email:</strong> <a href="mailto:info@SchulmanVeinAndLaserCenter.com">info@SchulmanVeinAndLaserCenter.com</a></li>
-            <li><strong>Manhattan:</strong> 1165 Park Avenue, New York, NY 10128 · (212) 987-0500</li>
-            <li><strong>Manhasset:</strong> 800 Community Drive, Suite 211, Manhasset, NY 11030 · (516) 482-4477</li>
-            <li><strong>Commack:</strong> 353 Veterans Memorial Highway, Suite 206, Commack, NY 11725 · (631) 543-4599</li>
+            <li><strong>Manhattan:</strong> 1165 Park Avenue, New York, NY 10128 · <a href="tel:2129870500">212.987.0500</a></li>
+            <li><strong>Manhasset:</strong> 800 Community Drive, Suite 211, Manhasset, NY 11030 · <a href="tel:5164824477">516.482.4477</a></li>
+            <li><strong>Commack:</strong> 353 Veterans Memorial Highway, Suite 206, Commack, NY 11725 · <a href="tel:6315434599">631.543.4599</a></li>
           </ul>
         </div>
 

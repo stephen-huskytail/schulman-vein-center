@@ -93,10 +93,10 @@ export default function ContactSection() {
                     <Mail className="w-5 h-5 text-[var(--sv-teal-light)]" />
                   </div>
                   <div>
-                    <p className="text-white/50 text-xs mb-0.5">Email</p>
+                    <p className="text-white/60 text-sm mb-0.5">Email</p>
                     <a
                       href={BUSINESS.emailHref}
-                      className="text-sm font-medium text-white hover:text-[var(--sv-teal-light)] transition-colors"
+                      className="text-base font-medium text-white hover:text-[var(--sv-teal-light)] transition-colors"
                     >
                       {BUSINESS.email}
                     </a>
@@ -105,30 +105,30 @@ export default function ContactSection() {
               </div>
 
               <div className="mt-6 pt-6 border-t border-white/10">
-                <p className="text-[var(--sv-gold)] text-xs font-bold uppercase tracking-widest mb-4">
+                <p className="text-[var(--sv-gold)] text-sm font-bold uppercase tracking-widest mb-4">
                   Our 3 Locations
                 </p>
                 <div className="space-y-3">
                   {LOCATIONS.map((loc) => (
                     <div key={loc.id} id={loc.id} className="rounded-xl bg-white/5 p-4">
-                      <p className="text-white font-semibold text-sm mb-2">{loc.name}</p>
+                      <p className="text-white font-semibold text-base mb-2">{loc.name}</p>
                       <a
                         href={loc.mapUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-start gap-2 text-white/70 text-xs mb-2 hover:text-white transition-colors"
+                        className="flex items-start gap-2 text-white/70 text-sm mb-2 hover:text-white transition-colors"
                       >
                         <MapPin className="w-3.5 h-3.5 mt-0.5 shrink-0 text-[var(--sv-teal-light)]" />
                         <span>{loc.fullAddress}</span>
                       </a>
                       <a
                         href={loc.phoneHref}
-                        className="flex items-center gap-2 font-bold text-white hover:text-[var(--sv-teal-light)] transition-colors text-sm mb-1.5"
+                        className="flex items-center gap-2 font-bold text-white hover:text-[var(--sv-teal-light)] transition-colors text-base mb-1.5"
                       >
                         <Phone className="w-3.5 h-3.5 text-[var(--sv-teal-light)]" />
                         {loc.phone}
                       </a>
-                      <p className="flex items-center gap-2 text-white/60 text-xs">
+                      <p className="flex items-center gap-2 text-white/60 text-sm">
                         <Clock className="w-3.5 h-3.5 text-[var(--sv-teal-light)]" />
                         {loc.hoursDisplay}
                       </p>
@@ -180,7 +180,7 @@ export default function ContactSection() {
                   <label className="form-label">Phone Number *</label>
                   <input
                     {...register("phone")}
-                    placeholder="(555) 555-5555"
+                    placeholder="555.555.5555"
                     type="tel"
                     className="form-input"
                   />
