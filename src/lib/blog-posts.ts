@@ -52,7 +52,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "EVLT vs. sclerotherapy — which vein treatment is right for you? Schulman Vein and Laser Center in New York explains. Book a free vein screening today.",
     ogDescription:
       "EVLT vs. sclerotherapy — which vein treatment is right for you? Schulman Vein and Laser Center in New York explains. Book a free vein screening today.",
-    featuredImage: "/images/blog/evlt-vs-sclerotherapy-new-york.svg",
+    featuredImage: "/images/blog/evlt-vs-sclerotherapy-new-york.jpg",
     featuredImageAlt:
       "EVLT vs sclerotherapy vein treatment comparison — Schulman Vein and Laser Center New York",
     relatedLinks: [
@@ -171,7 +171,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "Know which varicose vein symptoms signal underlying venous disease. Schulman Vein Center serves Manhattan and Long Island. Book a free screening today.",
     ogDescription:
       "Recognize varicose vein warning signs and understand when to seek expert vein treatment in New York.",
-    featuredImage: "/images/blog/varicose-veins-symptoms-when-to-seek-treatment.svg",
+    featuredImage: "/images/blog/varicose-veins-symptoms-when-to-seek-treatment.jpg",
     featuredImageAlt:
       "Varicose vein symptom checklist with leg illustration — when to seek treatment in New York",
     relatedLinks: [
@@ -269,7 +269,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "Compare EVLT and sclerotherapy based on vein anatomy and ultrasound findings. Schulman Vein New York explains. Book a free vein screening today.",
     ogDescription:
       "Compare EVLT and sclerotherapy based on vein size, symptoms, recovery time, and clinical goals.",
-    featuredImage: "/images/blog/evlt-sclerotherapy-vein-treatment-comparison.svg",
+    featuredImage: "/images/blog/evlt-sclerotherapy-vein-treatment-comparison.jpg",
     featuredImageAlt: "EVLT vs sclerotherapy decision flowchart — choosing the right vein treatment",
     relatedLinks: [
       { label: "Laser Vein Therapy", href: "/services/laser-vein-therapy" },
@@ -362,7 +362,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "Post-treatment recovery guide for EVLT and vein procedures at Schulman Vein and Laser Center in New York. Learn what's normal and when to call your doctor.",
     ogDescription:
       "Post-treatment recovery guide for EVLT and sclerotherapy, including walking, compression, and follow-up milestones.",
-    featuredImage: "/images/blog/minimally-invasive-vein-treatment-recovery.svg",
+    featuredImage: "/images/blog/minimally-invasive-vein-treatment-recovery.jpg",
     featuredImageAlt:
       "Vein treatment recovery timeline with four milestones from procedure day to full results",
     relatedLinks: [
@@ -465,7 +465,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "Does insurance cover vein treatment in New York? Learn when varicose vein procedures are medically necessary — and how to find out if you're covered.",
     ogDescription:
       "Plain-language guide to insurance coverage for vein procedures at Schulman Vein and Laser Center. Learn when treatment qualifies as medically necessary.",
-    featuredImage: "/images/blog/insurance-coverage-new-york.svg",
+    featuredImage: "/images/blog/insurance-coverage-new-york.jpg",
     featuredImageAlt:
       "Insurance paperwork at a vein clinic in New York — Schulman Vein and Laser Center",
     relatedLinks: [
@@ -586,7 +586,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "Learn the differences between spider veins and varicose veins — causes, symptoms, and treatment. Book a free vein screening in New York today.",
     ogDescription:
       "Learn the difference between spider veins and varicose veins and when each may require medical evaluation.",
-    featuredImage: "/images/blog/spider-veins-vs-varicose-veins-differences.svg",
+    featuredImage: "/images/blog/spider-veins-vs-varicose-veins-differences.jpg",
     featuredImageAlt:
       "Spider veins vs varicose veins side-by-side comparison of size depth and treatment options",
     relatedLinks: [
@@ -673,7 +673,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "Learn about hand vein treatment options, candidacy, and recovery at Schulman Vein and Laser Center New York. Book a free consultation today.",
     ogDescription:
       "Review hand vein treatment options, patient selection, and recovery guidance from a vein-focused physician team.",
-    featuredImage: "/images/blog/hand-vein-treatment-options-new-york.svg",
+    featuredImage: "/images/blog/hand-vein-treatment-options-new-york.jpg",
     featuredImageAlt:
       "Hand vein treatment process from consultation to recovery at Schulman Vein Center New York",
     relatedLinks: [
