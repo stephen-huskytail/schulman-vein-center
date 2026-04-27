@@ -14,7 +14,7 @@ const schema = z.object({
   email: z.string().email("Please enter a valid email address"),
   location: z.string().min(1, "Please select a preferred location"),
   service: z.string().optional(),
-  message: z.string().min(5, "Please describe your concern"),
+  message: z.string().optional(),
 });
 
 type FormData = z.infer<typeof schema>;
@@ -229,10 +229,10 @@ export default function ContactSection() {
               </div>
 
               <div className="mb-6">
-                <label className="form-label">Tell Us About Your Concerns *</label>
+                <label className="form-label">Tell Us About Your Concerns</label>
                 <textarea
                   {...register("message")}
-                  rows={4}
+                  rows={8}
                   placeholder="Describe your vein concerns, how long you've had them, and any questions you'd like answered…"
                   className="form-input resize-none"
                 />
