@@ -80,7 +80,7 @@ export default function Header() {
     <header
       className={cn(
         "fixed left-0 right-0 z-50 transition-all duration-300",
-        "top-[40px]",
+        "top-[52px]",
         scrolled ? "bg-white shadow-lg" : "bg-white/95 backdrop-blur-sm shadow-sm"
       )}
     >
@@ -160,7 +160,7 @@ export default function Header() {
       </div>
 
       {mobileOpen && (
-        <div id="mobile-site-nav" className="fixed inset-0 top-[112px] z-50 xl:hidden bg-white overflow-y-auto">
+        <div id="mobile-site-nav" className="fixed inset-0 top-[124px] z-50 xl:hidden bg-white overflow-y-auto">
           <div className="container-sv py-6">
             <nav className="flex flex-col gap-1">
               {NAV_ITEMS.map((item) => (

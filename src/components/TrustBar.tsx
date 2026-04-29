@@ -6,13 +6,13 @@ import { LOCATIONS } from "@/lib/constants";
 export default function TrustBar() {
   return (
     <div
-      className="fixed top-0 left-0 right-0 z-[60] bg-[var(--sv-navy)] text-white text-xs"
-      style={{ height: "44px" }}
+      className="fixed top-0 left-0 right-0 z-[60] bg-[var(--sv-navy)] text-white text-sm"
+      style={{ height: "52px" }}
     >
       <div className="container-sv h-full flex items-center justify-between gap-4">
         {/* Left: tagline */}
         <span className="hidden md:flex items-center gap-2 font-medium tracking-wide">
-          <span className="text-[var(--sv-gold)] font-black tracking-[0.18em] uppercase text-xs">
+          <span className="text-[var(--sv-gold)] font-black tracking-[0.18em] uppercase text-base">
             All We Do Is Veins™
           </span>
           <span className="text-white/30">·</span>
