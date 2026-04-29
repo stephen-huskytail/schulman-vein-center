@@ -39,6 +39,130 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "pregnancy-varicose-veins-new-york",
+    title: "Pregnancy and Varicose Veins: What Expecting Mothers in New York Should Know",
+    excerpt:
+      "Pregnant or postpartum and noticing new leg veins? Learn why varicose veins appear during pregnancy and what New York mothers can do about them.",
+    category: "Vein Health",
+    publishedAt: "2026-04-29",
+    readTimeMinutes: 7,
+    author: "Dr. Lee G. Schulman",
+    metaTitle: "Pregnancy & Varicose Veins New York | Schulman Vein Center",
+    metaDescription:
+      "Pregnant and noticing varicose veins? Schulman Vein Center in Manhattan and Long Island explains causes, safe management, and treatment options. Book a free screening.",
+    ogDescription:
+      "Pregnant and noticing varicose veins? Schulman Vein Center in Manhattan and Long Island explains causes, safe management, and treatment options. Book a free screening.",
+    featuredImage: "/images/blog/pregnancy-varicose-veins-new-york.jpg",
+    featuredImageAlt:
+      "Varicose vein care during pregnancy — Schulman Vein and Laser Center New York",
+    relatedLinks: [
+      { label: "Varicose Vein Treatment", href: "/services/varicose-vein-treatment" },
+      { label: "Spider Vein Treatment", href: "/services/spider-vein-treatment" },
+      { label: "Laser Vein Therapy (EVLT)", href: "/services/laser-vein-therapy" },
+      { label: "Free Vein Screening", href: "/services/free-vein-screening" },
+    ],
+    body: [
+      {
+        heading: "Why Pregnancy Changes Your Veins",
+        paragraphs: [
+          "Pregnancy is one of the most significant triggers for <strong>varicose veins</strong> — and it comes down to three overlapping forces happening simultaneously inside your body. Understanding them can make a real difference in how you manage symptoms and what to expect after delivery.",
+          "First, your blood volume increases by roughly 40 to 50 percent during pregnancy to support the growing placenta and fetus. That additional volume puts pressure on your veins, which must work harder to return blood from your legs to your heart.",
+          "Second, <strong>progesterone</strong> — the hormone that rises dramatically during pregnancy — relaxes the walls of blood vessels. While this is necessary for your body to accommodate increased blood flow, it also makes vein walls less rigid, allowing them to expand and sometimes bulge.",
+          "Third, as your uterus grows, it exerts direct pressure on the <strong>inferior vena cava</strong>, the large vein on the right side of your body that carries blood from the lower extremities back to the heart. That compression slows venous return and increases pressure in the leg veins below it — which is why varicose veins most often appear in the legs, thighs, and even the vulvar area during pregnancy.",
+        ],
+        keyTakeaway:
+          "Varicose veins during pregnancy are caused by a combination of increased blood volume, hormonal changes, and uterine pressure on pelvic veins — not a sign that anything has gone wrong.",
+      },
+      {
+        heading: "When Do Varicose Veins Typically Appear?",
+        paragraphs: [
+          "Many women first notice leg vein changes in the <strong>first trimester</strong>, especially if they have a family history of venous disease or if this is not their first pregnancy. The hormonal shifts begin almost immediately after conception, and progesterone starts relaxing vessel walls well before physical size becomes a factor.",
+          "Symptoms often become more pronounced during the <strong>second and third trimesters</strong> as the uterus grows and exerts increasing pressure on the pelvic veins. By the third trimester, many women experience visible bulging veins, leg heaviness, achiness after standing, mild swelling around the ankles, and an uncomfortable sensation of fullness or pressure in the legs.",
+          "Women who are carrying multiples, who stand for extended periods at work, or who are experiencing their second or third pregnancy tend to develop more significant venous symptoms earlier. If you have existing varicose veins or a family history of venous insufficiency, it is worth discussing your vascular health with a specialist before or early in your pregnancy — our team at Schulman Vein and Laser Center regularly counsels women in Manhattan and across Long Island at this stage.",
+        ],
+      },
+      {
+        heading: "Symptoms to Watch For — and What's Normal",
+        paragraphs: [
+          "Most pregnancy-related vein changes are uncomfortable but not dangerous. That said, knowing the difference between typical venous symptoms and warning signs is important.",
+          "Common symptoms that are generally considered part of normal pregnancy include leg heaviness or fatigue by the end of the day, mild aching or throbbing in the lower legs, visible blue or green veins on the legs or thighs, and minor swelling in the ankles and feet — especially in the third trimester.",
+        ],
+        bullets: [
+          "Sudden, severe leg pain or warmth in one leg — possible deep vein thrombosis (DVT), seek care immediately",
+          "Significant unilateral (one-sided) swelling that appears quickly",
+          "Redness or hardness along a vein — possible superficial thrombophlebitis",
+          "Open sores or skin changes near a vein",
+          "Shortness of breath accompanying leg symptoms — could indicate pulmonary embolism",
+        ],
+        callout: {
+          type: "warning",
+          text: "If you develop sudden pain, warmth, or significant swelling in one leg during pregnancy, do not wait — contact your OB-GYN or go to an emergency room immediately. Deep vein thrombosis is a serious complication that requires prompt evaluation.",
+        },
+      },
+      {
+        heading: "Safe Ways to Manage Vein Symptoms During Pregnancy",
+        paragraphs: [
+          "The good news is that several evidence-based strategies can meaningfully reduce discomfort and slow the progression of varicose veins during pregnancy — without any medical procedures.",
+          "<strong>Graduated compression stockings</strong> are the most effective conservative treatment available during pregnancy. They apply more pressure at the ankle and gradually less pressure up the leg, which helps the venous system return blood toward the heart more efficiently. Your doctor or a vein specialist can advise on the appropriate compression level (typically 20–30 mmHg for most pregnant women).",
+        ],
+        bullets: [
+          "Wear compression stockings from the time you get out of bed in the morning",
+          "Elevate your legs above heart level for 15–20 minutes several times a day",
+          "Avoid standing or sitting for extended periods without movement — take short walks or do calf raises regularly",
+          "Sleep on your left side to reduce pressure on the inferior vena cava",
+          "Stay physically active with low-impact exercise such as swimming, walking, or prenatal yoga — movement keeps blood circulating",
+          "Stay hydrated and maintain a healthy weight gain trajectory per your OB-GYN's guidance",
+        ],
+        callout: {
+          type: "tip",
+          text: "Put your compression stockings on before you get out of bed in the morning — before gravity has a chance to fill the leg veins with blood. This makes them significantly more effective throughout the day.",
+        },
+      },
+      {
+        heading: "When Should You See a Vein Specialist During Pregnancy?",
+        paragraphs: [
+          "In most cases, invasive vein treatment is deferred until after delivery. The reason is straightforward: many varicose veins that develop during pregnancy improve significantly — or resolve entirely — in the weeks following childbirth as blood volume normalizes and pressure on the pelvic veins is relieved.",
+          "However, there are situations where seeing a <strong>board-certified phlebologist</strong> during pregnancy is appropriate. If your symptoms are severe enough to significantly impair your quality of life, if you have a history of <strong>deep vein thrombosis</strong>, if a vein becomes hard or tender (suggesting thrombophlebitis), or if you had significant venous disease prior to pregnancy, a consultation is warranted.",
+          "At Schulman Vein and Laser Center, we offer <strong>free vein screenings</strong> that include a clinical evaluation and, when appropriate, duplex ultrasound imaging. This gives expecting mothers in Manhattan, Manhasset, and Commack a clear picture of their venous health — so they are not navigating symptoms without guidance.",
+        ],
+        keyTakeaway:
+          "Most treatment is appropriately delayed until postpartum, but a specialist evaluation during pregnancy is reasonable if symptoms are severe or if you have a history of vein disease.",
+      },
+      {
+        heading: "What Happens to Varicose Veins After Delivery?",
+        paragraphs: [
+          "This is the question we hear most often from postpartum patients. The short answer: it depends — and it is more nuanced than many expect.",
+          "For many women, visible leg veins do improve noticeably in the first <strong>four to six weeks postpartum</strong>, as blood volume returns to pre-pregnancy levels and uterine pressure on the pelvic veins is relieved. Mild <strong>spider veins</strong> and smaller surface vessels are the most likely to fade on their own.",
+          "However, larger <strong>varicose veins</strong> — particularly those associated with underlying <strong>venous insufficiency</strong> (faulty vein valves) — rarely resolve completely without treatment. If the valves in the saphenous vein were already compromised before pregnancy, the hormonal and mechanical stresses of pregnancy will have exacerbated the condition. In these cases, the veins may shrink modestly but will remain visible and symptomatic.",
+          "Women who have had two or more pregnancies, or who have a strong family history of varicose veins, are less likely to see full spontaneous resolution. Our standard guidance is to wait approximately <strong>three months postpartum</strong> (and after breastfeeding is complete, if applicable) before pursuing treatment — which gives the body adequate time to stabilize.",
+        ],
+      },
+      {
+        heading: "Treatment Options After Pregnancy",
+        paragraphs: [
+          "Once you are postpartum and ready to address persistent varicose or spider veins, the options available at Schulman Vein and Laser Center are highly effective, minimally invasive, and designed around your schedule as a new mother.",
+          "<strong>Endovenous Laser Treatment (EVLT)</strong> is the gold standard for treating the underlying venous insufficiency that drives varicose vein formation. A thin laser fiber is guided into the affected vein under ultrasound, where it delivers targeted heat energy to close the vein permanently. The procedure takes approximately 45 to 60 minutes in-office under local anesthesia, and most patients return to normal activity the same day. Because EVLT addresses a medical condition, it is often covered by insurance when medically necessary. Learn more about our <a href=\"/services/laser-vein-therapy\">Laser Vein Therapy (EVLT)</a> at our Manhattan and Long Island locations.",
+          "<strong>Sclerotherapy</strong> is the preferred treatment for smaller varicose veins and <strong>spider veins</strong>. A physician injects a solution directly into the affected vessel, causing it to collapse and be reabsorbed by the body. Sessions are typically 30 minutes, and multiple treatments may be needed depending on the extent of involvement. Our <a href=\"/services/spider-vein-treatment\">Spider Vein Treatment</a> program is tailored to postpartum women who want to address cosmetic concerns efficiently.",
+          "For women with larger varicose veins that do not require laser intervention, <strong>ambulatory phlebectomy</strong> allows our physicians to remove veins through tiny incisions under local anesthesia — a same-day procedure with minimal downtime. Our comprehensive <a href=\"/services/varicose-vein-treatment\">Varicose Vein Treatment</a> program combines ultrasound evaluation with the appropriate procedure for your anatomy.",
+        ],
+      },
+      {
+        heading: "Convenient Care Across Manhattan and Long Island",
+        paragraphs: [
+          "At Schulman Vein and Laser Center, <strong>all we do is veins</strong>. Dr. Martin Schulman and Dr. Lee G. Schulman have dedicated their careers exclusively to phlebology — with more than 55 years of combined experience and international recognition in the field. That specialization means every patient who walks through our doors receives care from physicians for whom vein treatment is not a side service — it is the entire practice.",
+          "We treat patients at three convenient locations: the <strong>Upper East Side and Midtown in Manhattan</strong>, <strong>Manhasset on Long Island</strong>, and <strong>Commack on Long Island</strong>. For postpartum women managing a newborn's schedule, our same-day procedures and in-office treatment model mean you can address your vein health without lengthy hospital stays or complicated recovery periods.",
+          "If you are currently pregnant, recently postpartum, or planning a future pregnancy and already have varicose veins, we encourage you to take the first step. A <a href=\"/services/free-vein-screening\">Free Vein Screening</a> with our team gives you an honest clinical assessment of your venous health — and a clear path forward, whatever that looks like for you.",
+        ],
+        callout: {
+          type: "info",
+          text: "Our free vein screenings include a clinical evaluation by one of our physicians and, when appropriate, duplex ultrasound imaging. There is no obligation, and most screenings are completed in under 30 minutes. Call or book online at any of our three locations.",
+        },
+        keyTakeaway:
+          "Effective, minimally invasive vein treatment is available at Schulman Vein and Laser Center — and a free screening is the right first step for any expecting or postpartum mother in the New York area.",
+      },
+    ],
+  },
+  {
     slug: "evlt-vs-sclerotherapy-vein-treatment-new-york",
     title: "EVLT vs. Sclerotherapy — Which Vein Treatment Is Right for You?",
     excerpt:

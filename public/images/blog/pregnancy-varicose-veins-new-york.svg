@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0f7f9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ddeef4;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2a7a8c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a5f70;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="vein1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a9db5;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#2a7a8c;stop-opacity:0.4" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)" />
+
+  <!-- Subtle grid lines -->
+  <line x1="0" y1="210" x2="1200" y2="210" stroke="#c8dde5" stroke-width="1" opacity="0.4"/>
+  <line x1="0" y1="420" x2="1200" y2="420" stroke="#c8dde5" stroke-width="1" opacity="0.4"/>
+  <line x1="400" y1="0" x2="400" y2="630" stroke="#c8dde5" stroke-width="1" opacity="0.4"/>
+  <line x1="800" y1="0" x2="800" y2="630" stroke="#c8dde5" stroke-width="1" opacity="0.4"/>
+
+  <!-- Left accent bar -->
+  <rect x="0" y="0" width="8" height="630" fill="url(#accent)" />
+
+  <!-- Decorative anatomical vein illustration (right side) -->
+  <!-- Leg outline -->
+  <ellipse cx="920" cy="315" rx="130" ry="240" fill="#e8f4f8" stroke="#b8d8e4" stroke-width="2" opacity="0.7"/>
+  <!-- Vein paths - stylized -->
+  <path d="M880 120 Q900 200 885 280 Q870 360 890 440 Q910 510 900 540" stroke="#4a9db5" stroke-width="6" fill="none" stroke-linecap="round" opacity="0.5"/>
+  <path d="M920 130 Q930 210 920 290 Q908 370 925 450 Q940 510 930 545" stroke="#2a7a8c" stroke-width="8" fill="none" stroke-linecap="round" opacity="0.45"/>
+  <path d="M955 140 Q960 220 950 300 Q938 380 955 455 Q968 515 958 545" stroke="#4a9db5" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.4"/>
+  <!-- Small branching veins -->
+  <path d="M885 280 Q855 300 840 320" stroke="#4a9db5" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.4"/>
+  <path d="M920 290 Q970 310 985 330" stroke="#2a7a8c" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35"/>
+  <path d="M890 380 Q860 395 848 415" stroke="#4a9db5" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.4"/>
+  <path d="M925 370 Q958 388 968 405" stroke="#2a7a8c" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.35"/>
+  <!-- Varicose bulge highlights -->
+  <ellipse cx="895" cy="310" rx="12" ry="18" fill="#6ab8cc" opacity="0.3"/>
+  <ellipse cx="928" cy="390" rx="10" ry="15" fill="#4a9db5" opacity="0.25"/>
+
+  <!-- Small heart / pregnancy icon -->
+  <path d="M1060 180 C1060 170, 1045 160, 1040 170 C1035 160, 1020 170, 1020 180 C1020 195 1040 210 1040 210 C1040 210 1060 195 1060 180Z" fill="#c9e8f0" stroke="#4a9db5" stroke-width="1.5" opacity="0.7"/>
+
+  <!-- Main content area -->
+  <!-- Category pill -->
+  <rect x="72" y="80" width="140" height="34" rx="17" fill="#2a7a8c" />
+  <text x="142" y="102" font-family="Georgia, serif" font-size="13" fill="white" text-anchor="middle" font-weight="600" letter-spacing="0.5">VEIN HEALTH</text>
+
+  <!-- Main headline -->
+  <text x="72" y="172" font-family="Georgia, serif" font-size="48" fill="#1a3a45" font-weight="700" dominant-baseline="auto">Pregnancy and</text>
+  <text x="72" y="228" font-family="Georgia, serif" font-size="48" fill="#1a3a45" font-weight="700">Varicose Veins</text>
+
+  <!-- Subheadline -->
+  <text x="72" y="280" font-family="Georgia, serif" font-size="24" fill="#2a7a8c" font-style="italic">What Expecting Mothers in New York</text>
+  <text x="72" y="310" font-family="Georgia, serif" font-size="24" fill="#2a7a8c" font-style="italic">Should Know</text>
+
+  <!-- Divider line -->
+  <line x1="72" y1="340" x2="440" y2="340" stroke="#4a9db5" stroke-width="2" opacity="0.6"/>
+
+  <!-- Author and date -->
+  <text x="72" y="375" font-family="Arial, sans-serif" font-size="15" fill="#5a8a96">By Dr. Lee G. Schulman</text>
+  <text x="72" y="398" font-family="Arial, sans-serif" font-size="14" fill="#7aaab6">Schulman Vein and Laser Center</text>
+
+  <!-- Key info block -->
+  <rect x="72" y="430" width="480" height="90" rx="8" fill="white" opacity="0.65"/>
+  <text x="98" y="460" font-family="Arial, sans-serif" font-size="14" fill="#2a7a8c" font-weight="600">Manhattan · Manhasset · Commack</text>
+  <text x="98" y="484" font-family="Arial, sans-serif" font-size="13" fill="#4a6a74">55+ years combined experience</text>
+  <text x="98" y="505" font-family="Arial, sans-serif" font-size="13" fill="#4a6a74">Internationally recognized phlebologists</text>
+
+  <!-- Bottom tagline bar -->
+  <rect x="0" y="580" width="1200" height="50" fill="#1a5f70" opacity="0.9"/>
+  <text x="600" y="611" font-family="Georgia, serif" font-size="16" fill="white" text-anchor="middle" font-style="italic" letter-spacing="1">"All We Do Is Veins™" — schulmanveincenter.com</text>
+</svg>
