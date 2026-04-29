@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { AlertTriangle, CalendarDays, Clock3, Info, Lightbulb, UserRound } from "lucide-react";
+import { AlertTriangle, CalendarDays, CheckCircle2, ChevronRight, Clock3, HelpCircle, Info, Lightbulb, List, UserRound } from "lucide-react";
 import PageHero from "@/components/PageHero";
 import { getAllBlogPosts, getBlogPostBySlug } from "@/lib/blog-posts";
 import { BUSINESS } from "@/lib/constants";
@@ -198,6 +198,40 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               </div>
             )}
 
+            {post.tableOfContents?.length ? (
+              <nav className="mb-8 rounded-xl border border-[var(--sv-teal)]/30 bg-[var(--sv-teal)]/5 p-5">
+                <div className="flex items-center gap-2 mb-3 text-[var(--sv-navy)] font-semibold text-sm uppercase tracking-wide">
+                  <List className="w-4 h-4" />
+                  Table of Contents
+                </div>
+                <ol className="space-y-1.5">
+                  {post.tableOfContents.map((item, i) => (
+                    <li key={i} className="flex items-start gap-2 text-sm text-gray-600">
+                      <ChevronRight className="w-4 h-4 mt-0.5 text-[var(--sv-teal)] flex-shrink-0" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ol>
+              </nav>
+            ) : null}
+
+            {post.quickSummary?.length ? (
+              <div className="mb-8 rounded-xl border-l-4 border-[var(--sv-teal)] bg-[var(--sv-teal)]/8 p-5">
+                <p className="text-[var(--sv-navy)] font-semibold text-sm uppercase tracking-wide mb-3 flex items-center gap-2">
+                  <CheckCircle2 className="w-4 h-4" />
+                  Quick Summary
+                </p>
+                <ul className="space-y-2">
+                  {post.quickSummary.map((point, i) => (
+                    <li key={i} className="flex items-start gap-2 text-gray-700 text-sm leading-relaxed">
+                      <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[var(--sv-teal)] flex-shrink-0" />
+                      {point}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : null}
+
             <div className="space-y-10">
               {post.body.map((section, sectionIndex) => (
                 <section key={`${section.heading}-${sectionIndex}`}>
@@ -264,6 +298,23 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 </section>
               ))}
             </div>
+
+            {post.faqSection?.length ? (
+              <section className="mt-10 rounded-xl border border-gray-100 bg-white p-6 md:p-7">
+                <h2 className="font-heading text-2xl font-bold text-[var(--sv-navy)] mb-6 flex items-center gap-2">
+                  <HelpCircle className="w-6 h-6 text-[var(--sv-teal)]" />
+                  Frequently Asked Questions
+                </h2>
+                <div className="space-y-5">
+                  {post.faqSection.map((faq, i) => (
+                    <div key={i} className="border-b border-gray-100 last:border-0 pb-5 last:pb-0">
+                      <p className="font-semibold text-[var(--sv-navy)] mb-2">{faq.question}</p>
+                      <p className="text-gray-700 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: faq.answer }} />
+                    </div>
+                  ))}
+                </div>
+              </section>
+            ) : null}
 
             {post.relatedLinks?.length ? (
               <section className="mt-10 bg-white rounded-xl border border-gray-100 p-6 md:p-7">

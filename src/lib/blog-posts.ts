@@ -20,6 +20,11 @@ export type BlogPostLink = {
   href: string;
 };
 
+export type BlogPostFaqItem = {
+  question: string;
+  answer: string;
+};
+
 export type BlogPost = {
   slug: string;
   title: string;
@@ -35,6 +40,9 @@ export type BlogPost = {
   featuredImage?: string;
   featuredImageAlt?: string;
   relatedLinks?: BlogPostLink[];
+  quickSummary?: string[];
+  tableOfContents?: string[];
+  faqSection?: BlogPostFaqItem[];
 };
 
 export const BLOG_POSTS: BlogPost[] = [
@@ -55,6 +63,51 @@ export const BLOG_POSTS: BlogPost[] = [
     featuredImage: "/images/blog/pregnancy-varicose-veins-new-york.jpg",
     featuredImageAlt:
       "Varicose vein care during pregnancy — Schulman Vein and Laser Center New York",
+    quickSummary: [
+      "Up to 40% of pregnant women develop varicose veins — driven by increased blood volume, progesterone, and uterine pressure on pelvic veins.",
+      "Most symptoms are manageable with graduated compression stockings, leg elevation, and regular low-impact movement.",
+      "Warning signs like sudden one-sided leg pain, warmth, or swelling require prompt evaluation to rule out DVT.",
+      "Many varicose veins improve postpartum, but larger ones linked to venous insufficiency typically need treatment.",
+      "EVLT, sclerotherapy, and ambulatory phlebectomy are safe, minimally invasive options available at our Manhattan and Long Island offices.",
+    ],
+    tableOfContents: [
+      "Why Pregnancy Changes Your Veins",
+      "When Do Varicose Veins Typically Appear?",
+      "Symptoms to Watch For — and What's Normal",
+      "Safe Ways to Manage Vein Symptoms During Pregnancy",
+      "When Should You See a Vein Specialist During Pregnancy?",
+      "What Happens to Varicose Veins After Delivery?",
+      "Treatment Options After Pregnancy",
+      "Convenient Care Across Manhattan and Long Island",
+      "Frequently Asked Questions",
+    ],
+    faqSection: [
+      {
+        question: "Are varicose veins during pregnancy dangerous?",
+        answer:
+          "In most cases, pregnancy-related varicose veins are uncomfortable but not dangerous. However, sudden pain, warmth, or significant one-sided swelling in a leg can indicate deep vein thrombosis (DVT) — a serious condition requiring immediate evaluation. Contact your OB-GYN or go to an emergency room if you experience these symptoms.",
+      },
+      {
+        question: "Can I treat varicose veins while pregnant?",
+        answer:
+          "Most invasive vein treatments — such as EVLT and sclerotherapy — are deferred until after delivery and breastfeeding are complete. Conservative measures like graduated compression stockings (20–30 mmHg), leg elevation, and regular walking are safe and effective during pregnancy. A vein specialist can help you manage symptoms and plan treatment for after delivery.",
+      },
+      {
+        question: "Will varicose veins go away after I give birth?",
+        answer:
+          "Mild spider veins and smaller surface vessels often improve significantly in the four to six weeks after delivery as blood volume normalizes. Larger varicose veins — especially those associated with underlying venous insufficiency — rarely resolve on their own and typically require treatment. Our standard guidance is to wait approximately three months postpartum before pursuing treatment.",
+      },
+      {
+        question: "What compression level should I wear during pregnancy?",
+        answer:
+          "Most pregnant women benefit from 20–30 mmHg graduated compression stockings, which provide meaningful support without being excessively restrictive. Women with more advanced venous disease or a history of DVT may need higher compression — a vein specialist or your OB-GYN can guide you to the right level for your situation.",
+      },
+      {
+        question: "Does Schulman Vein Center treat postpartum patients?",
+        answer:
+          "Yes. We regularly treat postpartum women at our Manhattan (Upper East Side and Midtown) and Long Island (Manhasset and Commack) locations. A <a href=\"/services/free-vein-screening\">free vein screening</a> is the best first step — it includes a clinical evaluation and, when indicated, duplex ultrasound to assess your venous anatomy and determine the most appropriate treatment.",
+      },
+    ],
     relatedLinks: [
       { label: "Varicose Vein Treatment", href: "/services/varicose-vein-treatment" },
       { label: "Spider Vein Treatment", href: "/services/spider-vein-treatment" },
@@ -83,6 +136,8 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         heading: "Symptoms to Watch For — and What's Normal",
+        imageSrc: "/images/blog/pregnancy-varicose-veins-symptoms.jpg",
+        imageAlt: "Varicose vein symptoms during pregnancy infographic — Schulman Vein Center New York",
         paragraphs: [
           "Most pregnancy-related vein changes are uncomfortable but not dangerous. That said, knowing the difference between typical venous symptoms and warning signs is important.",
           "Common symptoms that are generally considered part of normal pregnancy include leg heaviness or fatigue by the end of the day, mild aching or throbbing in the lower legs, visible blue or green veins on the legs or thighs, and minor swelling in the ankles and feet — especially in the third trimester.",
@@ -130,6 +185,8 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         heading: "What Happens to Varicose Veins After Delivery?",
+        imageSrc: "/images/blog/pregnancy-varicose-veins-treatment.jpg",
+        imageAlt: "Graduated compression stockings for varicose vein management — Schulman Vein Center New York",
         paragraphs: [
           "This is the question we hear most often from postpartum patients. The short answer: it depends — and it is more nuanced than many expect.",
           "For many women, visible leg veins do improve noticeably in the first <strong>four to six weeks postpartum</strong>, as blood volume returns to pre-pregnancy levels and uterine pressure on the pelvic veins is relieved. Mild <strong>spider veins</strong> and smaller surface vessels are the most likely to fade on their own.",
