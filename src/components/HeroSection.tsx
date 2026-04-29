@@ -103,16 +103,16 @@ export default function HeroSection() {
               transition={{ duration: 0.5, delay: 0.35 }}
               className="flex flex-wrap items-center gap-x-5 gap-y-2"
             >
-              <div className="flex items-center gap-2 text-sm text-white/70">
-                <ShieldCheck className="w-4 h-4 text-[#C8973A] shrink-0" />
+              <div className="flex items-center gap-2 text-lg text-white/70">
+                <ShieldCheck className="w-6 h-6 text-[#C8973A] shrink-0" />
                 <span>Board-Certified Doctors</span>
               </div>
-              <div className="flex items-center gap-2 text-sm text-white/70">
-                <Award className="w-4 h-4 text-[#C8973A] shrink-0" />
+              <div className="flex items-center gap-2 text-lg text-white/70">
+                <Award className="w-6 h-6 text-[#C8973A] shrink-0" />
                 <span>FDA-Approved</span>
               </div>
-              <div className="flex items-center gap-2 text-sm text-white/70">
-                <Clock className="w-4 h-4 text-[#C8973A] shrink-0" />
+              <div className="flex items-center gap-2 text-lg text-white/70">
+                <Clock className="w-6 h-6 text-[#C8973A] shrink-0" />
                 <span>Same-Day Recovery</span>
               </div>
             </motion.div>
