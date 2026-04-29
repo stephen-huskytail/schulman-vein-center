@@ -169,6 +169,22 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
               </Link>
             </div>
           </div>
+
+          {service.contentImages && service.contentImages.length > 0 && (
+            <div className={`mt-6 grid gap-4 ${service.contentImages.length === 1 ? "grid-cols-1" : "grid-cols-1 sm:grid-cols-2"}`}>
+              {service.contentImages.map((img) => (
+                <div key={img.src} className="relative aspect-[3/2] rounded-xl overflow-hidden border border-gray-100 shadow-sm">
+                  <Image
+                    src={img.src}
+                    alt={img.alt}
+                    fill
+                    sizes="(max-width: 640px) 100vw, 50vw"
+                    className="object-cover"
+                  />
+                </div>
+              ))}
+            </div>
+          )}
         </div>
       </section>
 

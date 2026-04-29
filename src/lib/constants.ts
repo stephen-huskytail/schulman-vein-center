@@ -278,6 +278,10 @@ export const SERVICES = [
     icon: "Zap",
     heroImage: "/images/services/varicose-vein-treatment.jpg",
     heroImageAlt: "Doctor in gloves examining varicose veins on a patient's lower leg",
+    contentImages: [
+      { src: "/images/services/varicose-vein-treatment-2.jpg", alt: "Vein specialist performing Doppler ultrasound on a patient's lower leg" },
+      { src: "/images/services/varicose-vein-treatment-3.jpg", alt: "Physician performing sclerotherapy injection on varicose veins" },
+    ],
     metaDescription:
       "Expert varicose vein treatment in Manhattan and Long Island. Board-certified vein doctors, non-surgical EVLT and sclerotherapy. Drive home the same day.",
     shortDesc: "Advanced laser ablation (EVLT), micro-surgery, and sclerotherapy to eliminate bulging varicose veins — no hospital stay required.",
@@ -298,6 +302,10 @@ export const SERVICES = [
     icon: "Sparkles",
     heroImage: "/images/services/spider-vein-treatment.jpg",
     heroImageAlt: "Close-up of spider veins on a patient's thigh showing red and purple vein patterns",
+    contentImages: [
+      { src: "/images/services/spider-vein-treatment-2.jpg", alt: "Dermatologist performing sclerotherapy injection on spider veins" },
+      { src: "/images/services/spider-vein-treatment-3.jpg", alt: "Vein specialist consulting with patient about spider vein treatment plan" },
+    ],
     metaDescription:
       "Spider vein removal in Manhattan, Nassau & Suffolk County. Sclerotherapy from vein-only specialists. 55+ years experience. Free screening available.",
     shortDesc: "The gold standard in sclerotherapy and laser treatments for spider veins and broken blood vessels on legs, face, and body.",
@@ -317,6 +325,10 @@ export const SERVICES = [
     icon: "Crosshair",
     heroImage: "/images/services/laser-vein-therapy.jpg",
     heroImageAlt: "Vein specialist performing ultrasound-guided laser vein therapy (EVLT) on a patient's leg",
+    contentImages: [
+      { src: "/images/services/laser-vein-therapy-2.jpg", alt: "Doctor performing EVLT laser vein procedure with ultrasound guidance" },
+      { src: "/images/services/laser-vein-therapy-3.jpg", alt: "Patient walking out of vein clinic comfortably after same-day EVLT procedure" },
+    ],
     metaDescription:
       "Endovenous Laser Treatment (EVLT) for varicose veins in Manhattan and Long Island. Often covered by insurance. Non-surgical, walk-in walk-out recovery.",
     shortDesc: "Modern endovenous laser treatment replaces vein stripping surgery — in-office, ~30 minutes, drive home the same day.",
@@ -336,6 +348,10 @@ export const SERVICES = [
     icon: "Hand",
     heroImage: "/images/services/body-vein-treatment.jpg",
     heroImageAlt: "Split view showing visible veins on a patient's hand and facial spider veins on cheek",
+    contentImages: [
+      { src: "/images/services/body-vein-treatment-2.jpg", alt: "Physician treating prominent hand veins with injection therapy" },
+      { src: "/images/services/body-vein-treatment-3.jpg", alt: "Dermatologist performing laser treatment on facial spider veins" },
+    ],
     metaDescription:
       "Treatment for hand, facial, and body veins at Schulman Vein Center — Manhattan, Manhasset & Commack. Expert cosmetic vein removal, personalized care.",
     shortDesc: "World-renowned for pioneering hand vein treatment — also treating face, temples, chest, breast, arms, and more.",
@@ -356,6 +372,10 @@ export const SERVICES = [
     icon: "HeartPulse",
     heroImage: "/images/services/vein-disorders.jpg",
     heroImageAlt: "Doctor reviewing duplex ultrasound scan of veins alongside a patient's leg with venous insufficiency",
+    contentImages: [
+      { src: "/images/services/vein-disorders-2.jpg", alt: "Vein specialist explaining vein anatomy and conditions to a patient" },
+      { src: "/images/services/vein-disorders-3.jpg", alt: "Close-up of leg showing varicose and reticular vein patterns" },
+    ],
     metaDescription:
       "Learn about varicose veins, spider veins, venous insufficiency and more. Schulman Vein Center treats all vein conditions in Manhattan and Long Island.",
     shortDesc: "Diagnosis and treatment of phlebitis, venous leg ulcers, pregnancy-related varicose veins, and venous insufficiency.",
@@ -376,6 +396,10 @@ export const SERVICES = [
     icon: "Search",
     heroImage: "/images/services/free-vein-screening.jpg",
     heroImageAlt: "Friendly vein specialist conducting a free vein screening on a patient in a welcoming clinic",
+    contentImages: [
+      { src: "/images/services/free-vein-screening-2.jpg", alt: "Friendly vein doctor and patient during a free vein screening consultation" },
+      { src: "/images/services/free-vein-screening-3.jpg", alt: "Color Doppler ultrasound vein mapping during a vein screening" },
+    ],
     metaDescription:
       "Get a complimentary vein screening at our Manhattan or Long Island offices. Board-certified vein doctors. No referral needed. Same-day appointments available.",
     shortDesc: "Schedule a no-cost, no-obligation consultation with a Schulman doctor — not a nurse or assistant — personally.",
