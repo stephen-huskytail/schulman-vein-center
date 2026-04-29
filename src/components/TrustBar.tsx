@@ -45,8 +45,7 @@ export default function TrustBar() {
             <Phone className="w-3 h-3" />
             Call Now
           </a>
-          <span className="hidden sm:block text-white/40">|</span>
-          <span className="hidden sm:block text-white/70">FREE Vein Screening</span>
+
         </div>
       </div>
     </div>
