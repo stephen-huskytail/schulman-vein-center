@@ -39,7 +39,7 @@ export default function HeroSection() {
               className="mb-5"
             >
               <span
-                className="inline-flex items-center gap-2.5 rounded-full px-6 py-2.5 text-base sm:text-xl font-black tracking-[0.18em] uppercase"
+                className="inline-flex items-center gap-2.5 rounded-full px-7 py-3 text-2xl sm:text-3xl font-black tracking-[0.18em] uppercase"
                 style={{
                   background: "linear-gradient(135deg, #C8973A 0%, #E8B84B 100%)",
                   color: "#0B2545",
