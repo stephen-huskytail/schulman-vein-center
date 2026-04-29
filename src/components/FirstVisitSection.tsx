@@ -48,6 +48,20 @@ export default function FirstVisitSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
           >
+            <div className="mb-4">
+              <span
+                className="inline-flex items-center gap-2.5 rounded-full px-7 py-3 text-2xl sm:text-3xl font-black tracking-[0.18em] uppercase"
+                style={{
+                  background: "linear-gradient(135deg, #C8973A 0%, #E8B84B 100%)",
+                  color: "#0B2545",
+                  boxShadow: "0 4px 16px rgba(200,151,58,0.45), 0 1px 3px rgba(0,0,0,0.3)",
+                }}
+              >
+                <span style={{ width: "6px", height: "6px", borderRadius: "50%", background: "rgba(11,37,69,0.4)", flexShrink: 0 }} />
+                All We Do Is Veins™
+                <span style={{ width: "6px", height: "6px", borderRadius: "50%", background: "rgba(11,37,69,0.4)", flexShrink: 0 }} />
+              </span>
+            </div>
             <p className="section-eyebrow">How It Works</p>
             <h2 className="section-title mb-3">
               Your{" "}
