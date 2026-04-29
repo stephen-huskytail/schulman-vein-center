@@ -81,7 +81,7 @@ export default function Header() {
       className={cn(
         "fixed left-0 right-0 z-50 transition-all duration-300",
         "top-[52px]",
-        scrolled ? "bg-white shadow-lg" : "bg-white/95 backdrop-blur-sm shadow-sm"
+        scrolled || mobileOpen ? "bg-white shadow-lg" : "bg-white/95 backdrop-blur-sm shadow-sm"
       )}
     >
       <div className="container-sv">

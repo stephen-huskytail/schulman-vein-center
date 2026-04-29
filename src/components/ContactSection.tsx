@@ -88,7 +88,7 @@ export default function ContactSection() {
                     <p className="text-white/50 text-xs mb-0.5">Email</p>
                     <a
                       href={BUSINESS.emailHref}
-                      className="text-sm font-medium text-white hover:text-[var(--sv-teal-light)] transition-colors"
+                      className="text-sm font-medium text-white hover:text-[var(--sv-teal-light)] transition-colors break-all"
                     >
                       {BUSINESS.email}
                     </a>
