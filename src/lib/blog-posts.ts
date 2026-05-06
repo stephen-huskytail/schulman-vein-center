@@ -113,6 +113,7 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "What Causes Chronic Venous Insufficiency?",
         paragraphs: [
           "CVI develops when the one-way valves inside the leg veins become incompetent — meaning they no longer close properly and allow blood to flow backward (a process called reflux). Several factors increase the risk of this occurring:",
+          "It is worth noting that CVI and varicose veins are closely related but not identical. Many people with CVI have visible varicose veins, but CVI can also be present without obvious surface changes — detectable only through duplex ultrasound imaging.",
         ],
         bullets: [
           "Family history of varicose veins or vein disease",
@@ -123,9 +124,6 @@ export const BLOG_POSTS: BlogPost[] = [
           "Age — valve tissue naturally weakens over time",
           "Female sex — hormonal factors, particularly estrogen and progesterone, influence vein wall elasticity",
         ],
-        paragraphs: [
-          "It is worth noting that CVI and varicose veins are closely related but not identical. Many people with CVI have visible varicose veins, but CVI can also be present without obvious surface changes — detectable only through duplex ultrasound imaging.",
-        ],
         keyTakeaway:
           "CVI is a structural problem with venous valves, not simply a cosmetic concern — and it can be present even when no veins are visible on the skin surface.",
       },
@@ -135,15 +133,13 @@ export const BLOG_POSTS: BlogPost[] = [
           "Accurate diagnosis of CVI begins with a thorough clinical evaluation. At Schulman Vein Center, our physicians start by reviewing your medical history, occupational habits, symptoms, and any prior vein treatments or clot history.",
           "The cornerstone diagnostic tool is duplex ultrasound — a non-invasive imaging technique that maps the venous anatomy of your legs and identifies exactly where reflux is occurring. This study is performed in-office, requires no preparation, and typically takes 30–45 minutes.",
           "Duplex ultrasound allows us to:",
+          "This imaging-guided approach is why a specialist evaluation at Schulman Vein Center yields far more actionable information than a general practitioner visit. Treatment decisions rooted in objective ultrasound findings lead to better, more durable outcomes.",
         ],
         bullets: [
           "Visualize both superficial and deep venous systems",
           "Detect valve reflux and measure its severity",
           "Identify sites of obstruction or prior clot formation",
           "Guide treatment planning with precision",
-        ],
-        paragraphs: [
-          "This imaging-guided approach is why a specialist evaluation at Schulman Vein Center yields far more actionable information than a general practitioner visit. Treatment decisions rooted in objective ultrasound findings lead to better, more durable outcomes.",
         ],
       },
       {
@@ -178,6 +174,7 @@ export const BLOG_POSTS: BlogPost[] = [
         paragraphs: [
           "Many patients wait too long to seek care — either because they assume leg symptoms are a normal part of aging or because they believe visible veins are purely a cosmetic issue. Both assumptions can delay treatment and allow CVI to advance to more serious stages.",
           "Seek a specialist evaluation if you experience:",
+          "At Schulman Vein Center, we offer a complimentary vein screening at all three of our locations — Manhattan, Manhasset, and Commack — so there is no barrier to getting an expert opinion. Our board-certified physicians can typically provide an initial assessment and ultrasound interpretation within a single visit.",
         ],
         bullets: [
           "Leg swelling that is present most days and worsens as the day progresses",
@@ -186,9 +183,6 @@ export const BLOG_POSTS: BlogPost[] = [
           "Skin changes near the ankles — discoloration, thickening, or rash",
           "An open wound or sore on the lower leg or ankle that is slow to heal",
           "A feeling of restless legs, particularly at night",
-        ],
-        paragraphs: [
-          "At Schulman Vein Center, we offer a complimentary vein screening at all three of our locations — Manhattan, Manhasset, and Commack — so there is no barrier to getting an expert opinion. Our board-certified physicians can typically provide an initial assessment and ultrasound interpretation within a single visit.",
         ],
       },
       {
