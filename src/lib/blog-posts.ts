@@ -47,6 +47,210 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "chronic-venous-insufficiency-symptoms-treatment-new-york",
+    title: "Chronic Venous Insufficiency: Symptoms, Causes, and Treatment in New York",
+    excerpt:
+      "Chronic venous insufficiency affects millions of Americans. Learn to recognize the symptoms and explore proven treatments available at Schulman Vein Center in New York.",
+    category: "Vein Health",
+    publishedAt: "2026-05-06",
+    readTimeMinutes: 9,
+    author: "Dr. Lee G. Schulman",
+    metaTitle: "Chronic Venous Insufficiency: Symptoms & Treatment | New York",
+    metaDescription:
+      "Recognize the signs of chronic venous insufficiency and learn about proven treatments at Schulman Vein Center in Manhattan, Manhasset, and Commack, NY.",
+    ogDescription:
+      "Recognize the signs of chronic venous insufficiency and learn about proven treatments at Schulman Vein Center in Manhattan, Manhasset, and Commack, NY.",
+    featuredImage:
+      "/images/blog/chronic-venous-insufficiency-symptoms-treatment-new-york.jpg",
+    featuredImageAlt:
+      "Medical illustration showing venous insufficiency in leg veins, New York vein treatment",
+    relatedLinks: [
+      {
+        label: "Varicose Vein Treatment",
+        href: "/services/varicose-vein-treatment",
+      },
+      { label: "Vein Disorders", href: "/services/vein-disorders" },
+      { label: "Laser Vein Therapy (EVLT)", href: "/services/laser-vein-therapy" },
+      { label: "Free Vein Screening", href: "/services/free-vein-screening" },
+    ],
+    quickSummary: [
+      "Chronic venous insufficiency (CVI) occurs when leg vein valves fail to keep blood moving toward the heart.",
+      "Symptoms include leg swelling, heaviness, aching, skin discoloration, and in advanced cases, venous ulcers.",
+      "Risk factors include prolonged standing or sitting, obesity, pregnancy, family history, and prior DVT.",
+      "CVI is highly treatable — EVLT, sclerotherapy, and compression therapy are all effective options.",
+      "Board-certified vein specialists at Schulman Vein Center serve Manhattan, Manhasset, and Commack, NY.",
+    ],
+    body: [
+      {
+        heading: "What Is Chronic Venous Insufficiency?",
+        paragraphs: [
+          "Chronic venous insufficiency (CVI) is one of the most common yet underdiagnosed vascular conditions in the United States, affecting an estimated 40 percent of Americans at some point in their lives. Despite its prevalence, many people endure symptoms for years — or even decades — before receiving a proper diagnosis.",
+          "At its core, CVI is a problem of circulation. Healthy leg veins contain one-way valves that push blood upward against gravity, back toward the heart. When those valves weaken or become damaged, blood pools in the lower legs instead of moving forward. This pooling creates chronically elevated pressure inside the veins — a state known as venous hypertension — which drives the full spectrum of CVI symptoms.",
+          "As board-certified phlebologists who have specialized exclusively in vein disease for over 55 years combined, Dr. Martin Schulman and Dr. Lee G. Schulman see CVI at every stage of progression. The encouraging news: caught early, CVI is highly manageable. Even in more advanced presentations, today's minimally invasive procedures deliver lasting relief with same-day recovery.",
+        ],
+      },
+      {
+        heading: "Recognizing the Symptoms of CVI",
+        paragraphs: [
+          "The symptoms of chronic venous insufficiency exist on a spectrum. Early-stage CVI may present as little more than tired, heavy legs at the end of the day. As the condition progresses, symptoms become more pronounced and can significantly impact quality of life.",
+          "Common symptoms include:",
+        ],
+        bullets: [
+          "Aching, throbbing, or heaviness in the legs — particularly after prolonged standing or sitting",
+          "Swelling in the ankles and lower legs (edema) that worsens throughout the day",
+          "Leg cramping, especially at night",
+          "Visible varicose veins — enlarged, rope-like veins that bulge beneath the skin",
+          "Itching or a burning sensation along the course of affected veins",
+          "Skin changes including discoloration (reddish-brown patches called hemosiderin staining) and thickening of the skin near the ankles",
+          "In advanced cases: venous ulcers — slow-healing wounds that typically develop around the inner ankle",
+        ],
+        callout: {
+          type: "warning",
+          text: "If you notice skin discoloration, hardening of the skin, or an open wound near your ankle, seek evaluation promptly. These are signs of advanced CVI that benefit from early specialist care.",
+        },
+      },
+      {
+        heading: "What Causes Chronic Venous Insufficiency?",
+        paragraphs: [
+          "CVI develops when the one-way valves inside the leg veins become incompetent — meaning they no longer close properly and allow blood to flow backward (a process called reflux). Several factors increase the risk of this occurring:",
+        ],
+        bullets: [
+          "Family history of varicose veins or vein disease",
+          "Prolonged periods of standing or sitting — occupations such as nursing, teaching, retail, and office work all carry elevated risk",
+          "Pregnancy — hormonal changes and increased blood volume place significant pressure on leg veins",
+          "Obesity — excess weight increases pressure throughout the venous system",
+          "Prior deep vein thrombosis (DVT) — clots can damage valves permanently",
+          "Age — valve tissue naturally weakens over time",
+          "Female sex — hormonal factors, particularly estrogen and progesterone, influence vein wall elasticity",
+        ],
+        paragraphs: [
+          "It is worth noting that CVI and varicose veins are closely related but not identical. Many people with CVI have visible varicose veins, but CVI can also be present without obvious surface changes — detectable only through duplex ultrasound imaging.",
+        ],
+        keyTakeaway:
+          "CVI is a structural problem with venous valves, not simply a cosmetic concern — and it can be present even when no veins are visible on the skin surface.",
+      },
+      {
+        heading: "How CVI Is Diagnosed",
+        paragraphs: [
+          "Accurate diagnosis of CVI begins with a thorough clinical evaluation. At Schulman Vein Center, our physicians start by reviewing your medical history, occupational habits, symptoms, and any prior vein treatments or clot history.",
+          "The cornerstone diagnostic tool is duplex ultrasound — a non-invasive imaging technique that maps the venous anatomy of your legs and identifies exactly where reflux is occurring. This study is performed in-office, requires no preparation, and typically takes 30–45 minutes.",
+          "Duplex ultrasound allows us to:",
+        ],
+        bullets: [
+          "Visualize both superficial and deep venous systems",
+          "Detect valve reflux and measure its severity",
+          "Identify sites of obstruction or prior clot formation",
+          "Guide treatment planning with precision",
+        ],
+        paragraphs: [
+          "This imaging-guided approach is why a specialist evaluation at Schulman Vein Center yields far more actionable information than a general practitioner visit. Treatment decisions rooted in objective ultrasound findings lead to better, more durable outcomes.",
+        ],
+      },
+      {
+        heading: "Treatment Options for Chronic Venous Insufficiency in New York",
+        paragraphs: [
+          "The goal of CVI treatment is to eliminate reflux in the affected veins, restore healthy circulation, and prevent disease progression. At Schulman Vein Center, we offer the full spectrum of FDA-approved, minimally invasive treatments — each selected based on your specific anatomy and disease pattern.",
+        ],
+        bullets: [
+          "Endovenous Laser Treatment (EVLT) — A thin laser fiber is inserted into the diseased vein under ultrasound guidance. Laser energy delivered along the vein wall causes it to seal shut. The body naturally reroutes blood through healthy veins. EVLT requires only local anesthesia and patients walk out the same day.",
+          "Ultrasound-Guided Sclerotherapy — A pharmaceutical solution (sclerosant) is injected directly into affected veins under real-time ultrasound visualization, causing them to collapse and fade. Ideal for medium-sized veins and tributaries not suitable for laser.",
+          "Surface Sclerotherapy — Injections targeting spider veins and small varicosities visible at the skin surface. Often used as a complementary step after treating larger feeding veins.",
+          "Compression Therapy — Medical-grade compression stockings are frequently prescribed as part of a comprehensive CVI management plan — particularly for patients with significant edema or those awaiting procedural treatment.",
+          "Ambulatory Phlebectomy — For large, bulging varicose veins near the surface, tiny micro-incisions allow the veins to be physically removed under local anesthesia. The procedure leaves minimal scarring and patients resume normal activity quickly.",
+        ],
+        callout: {
+          type: "tip",
+          text: "Most CVI treatments are covered by insurance when medically necessary. At Schulman Vein Center, we help patients navigate their coverage and obtain pre-authorization before procedures begin.",
+        },
+      },
+      {
+        heading: "CVI vs. Varicose Veins: Understanding the Relationship",
+        paragraphs: [
+          "Patients often ask whether varicose veins and CVI are the same condition. The short answer: varicose veins are frequently a symptom of CVI, but the two are distinct diagnoses.",
+          "CVI refers to the underlying functional impairment — the failure of venous valves to maintain proper one-way flow. Varicose veins are the visible manifestation that often results from that impairment. However, CVI can exist without prominent surface veins (particularly in deeper venous segments), and varicose veins can appear in patients whose valve function remains largely intact.",
+          "This distinction matters clinically. Treating visible varicose veins without addressing underlying reflux is a common reason treatments fail or symptoms recur. At Schulman Vein Center, duplex ultrasound mapping ensures we treat the root cause — not just the surface presentation.",
+        ],
+        keyTakeaway:
+          "Treating varicose veins without a prior ultrasound to assess for underlying venous reflux is an incomplete approach — and a common reason symptoms return after treatment elsewhere.",
+      },
+      {
+        heading: "When to See a Vein Specialist",
+        paragraphs: [
+          "Many patients wait too long to seek care — either because they assume leg symptoms are a normal part of aging or because they believe visible veins are purely a cosmetic issue. Both assumptions can delay treatment and allow CVI to advance to more serious stages.",
+          "Seek a specialist evaluation if you experience:",
+        ],
+        bullets: [
+          "Leg swelling that is present most days and worsens as the day progresses",
+          "Aching or heaviness that interferes with standing, working, or sleeping",
+          "Visible varicose veins, regardless of whether they are painful",
+          "Skin changes near the ankles — discoloration, thickening, or rash",
+          "An open wound or sore on the lower leg or ankle that is slow to heal",
+          "A feeling of restless legs, particularly at night",
+        ],
+        paragraphs: [
+          "At Schulman Vein Center, we offer a complimentary vein screening at all three of our locations — Manhattan, Manhasset, and Commack — so there is no barrier to getting an expert opinion. Our board-certified physicians can typically provide an initial assessment and ultrasound interpretation within a single visit.",
+        ],
+      },
+      {
+        heading: "Living With CVI: Lifestyle Strategies That Help",
+        paragraphs: [
+          "While minimally invasive procedures address the structural cause of CVI, lifestyle modifications play an important complementary role — particularly in slowing progression and managing symptoms between treatments.",
+        ],
+        bullets: [
+          "Elevate your legs — Raise legs above heart level for 15–20 minutes several times per day to encourage drainage and reduce swelling.",
+          "Stay active — Walking activates the calf muscle pump, the body's primary mechanism for pushing venous blood upward. Aim for at least 30 minutes of walking daily.",
+          "Wear compression stockings — Medical-grade compression (20–30 mmHg or higher, as recommended by your physician) provides meaningful symptom relief and slows disease progression.",
+          "Avoid prolonged sitting or standing — If your job requires extended periods in one position, take regular movement breaks — even short walks to the water fountain make a measurable difference.",
+          "Maintain a healthy weight — Reducing excess body weight decreases the pressure burden on leg veins and can slow the rate of valve degeneration.",
+          "Stay hydrated — Adequate hydration supports blood viscosity and circulation.",
+        ],
+        callout: {
+          type: "info",
+          text: "These lifestyle strategies are supportive — not curative. If reflux is present on ultrasound, procedural treatment addresses the structural problem in a way that lifestyle alone cannot.",
+        },
+      },
+      {
+        heading: "Get Expert Care for CVI in New York — Free Vein Screening Available",
+        paragraphs: [
+          "Chronic venous insufficiency is a progressive condition — early intervention consistently leads to better outcomes than delayed treatment. Whether your symptoms are mild or you have been managing CVI for years, a specialist evaluation at Schulman Vein Center will give you a clear picture of your venous health and a precise, personalized treatment plan.",
+          "Dr. Martin Schulman and Dr. Lee G. Schulman have spent decades dedicated exclusively to vein disease. With more than 200 five-star Google reviews and locations across the New York metro area — Manhattan, Manhasset, and Commack — Schulman Vein Center is one of the most trusted names in vein care in the region.",
+          "We invite you to schedule a complimentary Free Vein Screening at any of our three locations. Our specialists will review your symptoms, perform a physical examination, and determine whether duplex ultrasound is appropriate — all at no cost and no obligation. Relief from heavy, swollen, aching legs may be closer than you think.",
+        ],
+        callout: {
+          type: "tip",
+          text: "Call Manhattan (212.987.0500), Manhasset (516.482.4477), or Commack (631.543.4599) to schedule your Free Vein Screening — or book online at schulmanveincenter.com.",
+        },
+      },
+    ],
+    faqSection: [
+      {
+        question: "Is chronic venous insufficiency dangerous?",
+        answer:
+          "CVI itself is not immediately life-threatening, but it is a progressive condition that worsens without treatment. Advanced CVI can lead to venous ulcers — wounds that are painful, prone to infection, and very slow to heal. Early treatment prevents these complications and preserves quality of life.",
+      },
+      {
+        question: "Can CVI be cured?",
+        answer:
+          "Procedures such as EVLT and sclerotherapy close the specific diseased veins causing reflux — effectively eliminating those sources of CVI. New valve incompetence can develop over time, particularly in patients with strong genetic risk factors, but treated veins do not recur. Ongoing monitoring helps catch any new disease early.",
+      },
+      {
+        question: "Does insurance cover CVI treatment?",
+        answer:
+          "Yes — when CVI is documented as medically necessary (confirmed by duplex ultrasound), most major insurance plans, including Medicare, cover treatment. Schulman Vein Center assists patients with prior authorization and insurance verification before any procedure.",
+      },
+      {
+        question: "How long does CVI treatment take?",
+        answer:
+          "Most in-office procedures take 30–60 minutes under local anesthesia. Patients walk out the same day and return to normal activities within 24–48 hours. A full treatment course may involve multiple sessions depending on the extent of disease — your physician will outline a complete plan at your initial consultation.",
+      },
+      {
+        question: "What is the difference between CVI and deep vein thrombosis (DVT)?",
+        answer:
+          "DVT is a blood clot that forms in a deep vein — it is an acute event that requires urgent treatment. CVI is a chronic condition caused by valve dysfunction, often developing gradually over years. However, prior DVT is a significant risk factor for CVI, because clots can permanently damage venous valves.",
+      },
+    ],
+  },
+  {
     slug: "pregnancy-varicose-veins-new-york",
     title: "Pregnancy and Varicose Veins: What Expecting Mothers in New York Should Know",
     excerpt:
