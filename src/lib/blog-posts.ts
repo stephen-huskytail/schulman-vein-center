@@ -47,6 +47,207 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "varicose-vein-treatment-manhattan-new-york",
+    title: "Varicose Vein Treatment in Manhattan, New York: Your Complete Guide",
+    excerpt:
+      "Looking for expert varicose vein treatment in Manhattan? Schulman Vein Center offers board-certified, minimally invasive care with same-day recovery — and a free vein screening.",
+    category: "Vein Health",
+    publishedAt: "2026-05-12",
+    readTimeMinutes: 8,
+    author: "Dr. Lee G. Schulman",
+    metaTitle: "Varicose Vein Treatment in Manhattan | Schulman Vein Center",
+    metaDescription:
+      "Expert varicose vein treatment in Manhattan, NY. Board-certified phlebologists at Schulman Vein Center. Same-day recovery. Book your free screening today.",
+    ogDescription:
+      "Expert varicose vein treatment in Manhattan, NY. Board-certified phlebologists at Schulman Vein Center. Same-day recovery. Book your free screening today.",
+    featuredImage:
+      "/images/blog/varicose-vein-treatment-manhattan-new-york.jpg",
+    featuredImageAlt:
+      "Vein specialist examining a patient's leg in a Manhattan clinic, varicose vein treatment New York",
+    relatedLinks: [
+      {
+        label: "Varicose Vein Treatment",
+        href: "/services/varicose-vein-treatment",
+      },
+      { label: "Laser Vein Therapy (EVLT)", href: "/services/laser-vein-therapy" },
+      { label: "Spider Vein Treatment", href: "/services/spider-vein-treatment" },
+      { label: "Free Vein Screening", href: "/services/free-vein-screening" },
+    ],
+    quickSummary: [
+      "Varicose veins affect millions of New Yorkers — prolonged standing, commuting, and sedentary desk jobs all contribute.",
+      "Schulman Vein Center has served Manhattan patients for decades with 55+ years of combined phlebology expertise.",
+      "Modern treatments like EVLT and sclerotherapy are performed in-office under local anesthesia with same-day recovery.",
+      "Most treatments are covered by insurance when medically necessary — Schulman Vein Center handles verification for you.",
+      "A complimentary Free Vein Screening is available at our Manhattan, Manhasset, and Commack locations.",
+    ],
+    tableOfContents: [
+      "Why Manhattan Residents Are at Higher Risk for Varicose Veins",
+      "What Are Varicose Veins?",
+      "Recognizing Symptoms That Need Attention",
+      "Varicose Vein Treatments Available in Manhattan",
+      "What to Expect at Your First Visit",
+      "Does Insurance Cover Varicose Vein Treatment?",
+      "Why Choose Schulman Vein Center in Manhattan",
+      "Book Your Free Vein Screening Today",
+    ],
+    body: [
+      {
+        heading: "Why Manhattan Residents Are at Higher Risk for Varicose Veins",
+        paragraphs: [
+          "Life in Manhattan creates a unique set of vascular stressors. Millions of New Yorkers spend hours each day commuting — standing on subway platforms, waiting in packed train cars, walking dozens of city blocks in less-than-ideal footwear. Office workers sit at desks for six, eight, or ten hours at a stretch. Restaurant workers, nurses, retail employees, and teachers spend entire shifts on their feet.",
+          "Each of these lifestyle patterns places sustained pressure on the venous system of the legs. Over time, that pressure weakens the one-way valves inside the veins — the tiny structures responsible for pushing blood back up to the heart against gravity. When those valves fail, blood pools in the lower legs, veins stretch and bulge, and the condition we know as varicose veins takes hold.",
+          "This is not merely a cosmetic inconvenience. For many Manhattanites, varicose veins cause genuine physical discomfort: leg aching and heaviness after long commutes, swollen ankles by the end of a workday, cramps that interrupt sleep. Left untreated, the underlying venous disease can progress to chronic venous insufficiency — a condition that significantly impairs quality of life and, in advanced cases, leads to venous ulcers.",
+        ],
+      },
+      {
+        heading: "What Are Varicose Veins?",
+        paragraphs: [
+          "Varicose veins are enlarged, twisted veins that become visible beneath the skin — typically appearing as blue, purple, or green rope-like cords along the calves, inner thighs, or behind the knees. They develop when the valves within the superficial venous system lose their ability to maintain one-directional blood flow.",
+          "Healthy veins use muscular contractions and a series of valve 'gates' to move blood upward toward the heart. When a valve becomes incompetent — meaning it no longer closes fully — blood flows backward (called reflux) and pools in the segment below. That pooled blood creates elevated venous pressure, causing the vein wall to dilate and eventually become permanently distorted.",
+          "Varicose veins are extremely common — studies estimate that up to 35 percent of Americans are affected. While anyone can develop them, risk is elevated by genetics, prolonged standing or sitting, pregnancy, obesity, prior blood clots, and simply getting older. In Manhattan's high-pressure, high-mobility environment, these risk factors converge for a significant portion of the population.",
+        ],
+        callout: {
+          type: "info",
+          text: "Varicose veins and spider veins are related but distinct. Spider veins are smaller, finer vessels visible at the skin surface — often a sign of underlying venous disease. Both can be treated effectively at Schulman Vein Center.",
+        },
+      },
+      {
+        heading: "Recognizing Symptoms That Need Attention",
+        paragraphs: [
+          "Not all varicose veins cause visible bulging. Many patients experience significant symptoms — aching, swelling, heaviness — before any veins become visible at the surface. Conversely, some patients have prominent varicose veins with relatively mild discomfort.",
+          "The following symptoms warrant a specialist evaluation:",
+        ],
+        bullets: [
+          "Aching, throbbing, or a persistent heavy feeling in the legs — especially after standing or sitting for long periods",
+          "Swelling in the lower legs or ankles that builds through the day and improves overnight",
+          "Visible blue, purple, or green bulging veins on the calves, thighs, or behind the knees",
+          "Leg cramps, particularly at night",
+          "Itching or burning sensations along the course of a vein",
+          "Skin discoloration, thickening, or a brownish patch near the ankle",
+          "A feeling of restlessness in the legs that makes it difficult to sit still or sleep",
+          "A slow-healing sore or wound near the ankle (a sign of advanced disease — seek care promptly)",
+        ],
+        imageSrc: "/images/blog/varicose-vein-treatment-manhattan-diagram.jpg",
+        imageAlt:
+          "Anatomical diagram comparing healthy vein valves and varicose vein valves, New York vein treatment",
+        keyTakeaway:
+          "Symptoms often precede visible veins. If your legs ache at the end of every workday, it is worth a specialist evaluation — not simply 'part of getting older.'",
+      },
+      {
+        heading: "Varicose Vein Treatments Available in Manhattan",
+        paragraphs: [
+          "Schulman Vein Center offers the full spectrum of FDA-approved, minimally invasive vein treatments — all performed in our Manhattan office under local anesthesia. There is no general anesthesia, no hospital visit, and no extended downtime. Most patients return to their normal Manhattan routines the same day.",
+        ],
+        bullets: [
+          "Endovenous Laser Treatment (EVLT) — The gold standard for treating large varicose veins caused by saphenous vein reflux. A slender laser fiber is inserted into the diseased vein under ultrasound guidance; laser energy delivered along the vein wall causes it to seal shut permanently. The body naturally reroutes circulation through healthy neighboring veins. The procedure takes approximately 45 minutes and requires only local anesthesia.",
+          "Ultrasound-Guided Sclerotherapy — A pharmaceutical sclerosant solution is injected into affected veins under real-time ultrasound visualization, causing them to collapse and be reabsorbed by the body. Ideal for medium-sized varicose veins and feeding tributary veins not suitable for laser treatment.",
+          "Surface Sclerotherapy — Targeted injections into small varicose veins and spider veins visible at the skin surface. Typically used as a complementary finishing treatment after larger feeding veins have been addressed.",
+          "Ambulatory Phlebectomy — For bulging surface varicose veins, micro-sized incisions (1–2 mm) allow the veins to be physically removed under local anesthesia. The incisions are so small they typically require no sutures and heal with minimal visible scarring.",
+          "Compression Therapy — Medical-grade compression stockings are an important component of conservative management and are frequently recommended alongside procedural treatment to optimize outcomes.",
+        ],
+        callout: {
+          type: "tip",
+          text: "Each treatment plan at Schulman Vein Center is individualized based on duplex ultrasound mapping of your specific venous anatomy. No two patients receive identical treatment — because no two venous systems are identical.",
+        },
+      },
+      {
+        heading: "What to Expect at Your First Visit",
+        paragraphs: [
+          "Many patients come to us having lived with varicose vein symptoms for years, unsure of what treatment entails or whether their condition is 'serious enough' to warrant a visit. The answer is almost always: come in sooner rather than later. Earlier intervention leads to better outcomes and prevents progression.",
+          "At your initial consultation at our Manhattan office, you will meet with one of our board-certified phlebologists — Dr. Martin Schulman or Dr. Lee G. Schulman — for a thorough evaluation. Here is what to expect:",
+        ],
+        bullets: [
+          "Medical history review — symptoms, duration, family history, medications, prior vein treatments, and occupational habits",
+          "Physical examination — visual assessment of the veins, palpation of the affected areas, and assessment of skin changes",
+          "Duplex ultrasound imaging — a non-invasive scan that maps your venous anatomy, identifies sites of valve reflux, and determines the extent of disease. This is the essential diagnostic step; treating without it is guesswork.",
+          "Personalized treatment discussion — our physicians explain what we found, what treatment options are appropriate for your anatomy, expected outcomes, and the full treatment timeline",
+          "Insurance verification — our team checks your coverage and explains what will be billed before any procedure begins",
+        ],
+        imageSrc: "/images/blog/varicose-vein-treatment-manhattan-clinic.jpg",
+        imageAlt:
+          "Modern vein treatment clinic examination room in Manhattan at Schulman Vein Center",
+        keyTakeaway:
+          "Duplex ultrasound is the cornerstone of accurate diagnosis. Without it, the underlying cause of varicose veins — venous reflux — cannot be identified or precisely treated.",
+      },
+      {
+        heading: "Does Insurance Cover Varicose Vein Treatment?",
+        paragraphs: [
+          "One of the most common questions we hear from Manhattan patients is: 'Will my insurance pay for this?' The answer, in many cases, is yes — provided treatment is deemed medically necessary rather than purely cosmetic.",
+          "Insurance carriers — including most major commercial plans, Medicare, and Medicaid — typically cover varicose vein treatment when the following criteria are met:",
+          "At Schulman Vein Center, we handle insurance verification, prior authorization, and documentation on behalf of our patients. We will tell you clearly — before any procedure — what your out-of-pocket responsibility will be. There are no billing surprises.",
+        ],
+        bullets: [
+          "You have documented symptoms (aching, swelling, heaviness, skin changes, or an ulcer)",
+          "Duplex ultrasound confirms venous reflux",
+          "Conservative treatment (compression stockings) has been tried for the insurer's required trial period (typically 6–12 weeks)",
+          "The treating physician is board-certified in phlebology or vascular medicine",
+        ],
+        callout: {
+          type: "info",
+          text: "Purely cosmetic treatment of spider veins (without underlying venous disease) is typically not covered. However, spider vein treatment performed alongside medically necessary procedures may receive partial coverage. We help you understand exactly what applies to your plan.",
+        },
+      },
+      {
+        heading: "Why Choose Schulman Vein Center in Manhattan",
+        paragraphs: [
+          "New York City has no shortage of vein treatment options — from general vascular surgeons who see veins once a month to med spas offering sclerotherapy as a side service. Schulman Vein Center occupies a fundamentally different category: we are phlebologists who do nothing but veins, every day, for every patient.",
+          "Dr. Martin Schulman and Dr. Lee G. Schulman have dedicated their entire medical careers to the diagnosis and treatment of venous disease. Together they bring more than 55 years of combined phlebology experience — a depth of expertise that simply cannot be replicated by a generalist.",
+        ],
+        bullets: [
+          "Board-certified phlebologists — credentialed specialists, not generalists performing vein procedures on the side",
+          "More than 200 five-star Google reviews — one of the highest-rated vein practices in the New York metro area",
+          "All We Do Is Veins™ — our entire clinical focus, technology investment, and team training centers on vein disease",
+          "Three convenient locations — Manhattan (Midtown), Manhasset (Long Island), and Commack — serving the full NYC metro area",
+          "Same-day recovery — most procedures are completed in under an hour with no general anesthesia; patients return to work and daily life the same day",
+          "Cutting-edge technology — duplex ultrasound-guided procedures, FDA-approved laser systems, and evidence-based protocols",
+          "Transparent billing — insurance verification and prior authorization handled before procedures begin",
+        ],
+        keyTakeaway:
+          "Specialization matters in medicine. A physician who treats only veins, every day, develops a level of diagnostic precision and procedural skill that a generalist simply cannot match.",
+      },
+      {
+        heading: "Book Your Free Vein Screening in Manhattan Today",
+        paragraphs: [
+          "If you have been living with aching, heavy, or swollen legs — or if you have noticed varicose veins that concern you — the most important step you can take is a specialist evaluation. Not a Google search. Not waiting to see if it gets better on its own. A real conversation with a physician who specializes exclusively in vein disease.",
+          "Schulman Vein Center offers a complimentary Free Vein Screening at all three of our locations: Manhattan, Manhasset, and Commack. During your screening, one of our board-certified phlebologists will review your symptoms, examine the affected areas, and determine whether duplex ultrasound is appropriate — all at no cost and no obligation.",
+          "We serve patients from across the New York metro area: Midtown Manhattan, the Upper East Side, Tribeca, Brooklyn, Queens, Long Island, Westchester, and beyond. Whether you work in Midtown and need an appointment that fits around your schedule, or you live in Nassau County and prefer our Manhasset office, we are accessible.",
+          "Varicose vein disease is progressive — it does not resolve on its own and tends to worsen over time without treatment. The right time to address it is now, before symptoms intensify or complications develop.",
+        ],
+        callout: {
+          type: "tip",
+          text: "Call our Manhattan office at 212.987.0500 to schedule your Free Vein Screening. Or reach our Manhasset location at 516.482.4477 and Commack at 631.543.4599. You can also book online at schulmanveincenter.com.",
+        },
+      },
+    ],
+    faqSection: [
+      {
+        question: "How long does varicose vein treatment take in Manhattan?",
+        answer:
+          "Most in-office procedures — EVLT, sclerotherapy, or ambulatory phlebectomy — take between 30 and 60 minutes under local anesthesia. Patients walk out the same day and typically return to work and normal activity within 24–48 hours. A full treatment plan may involve multiple sessions spaced several weeks apart, depending on the extent of disease.",
+      },
+      {
+        question: "Is varicose vein treatment painful?",
+        answer:
+          "Patients commonly describe a mild stinging or pressure sensation during local anesthetic injection, followed by minimal discomfort during the procedure itself. Post-procedure soreness — similar to a mild muscle ache — is common for a few days and managed easily with over-the-counter pain relievers. The vast majority of our Manhattan patients are pleasantly surprised by how comfortable the experience is.",
+      },
+      {
+        question: "Will varicose veins come back after treatment?",
+        answer:
+          "Treated veins do not come back — once a vein is closed by EVLT or collapsed by sclerotherapy, the body reabsorbs it and it is gone permanently. However, new valve incompetence can develop in other veins over time, particularly in patients with a strong genetic predisposition. Regular follow-up monitoring helps catch any new disease early, before it becomes symptomatic.",
+      },
+      {
+        question: "Can I walk to the subway after my appointment?",
+        answer:
+          "Yes — walking is actually encouraged after most vein procedures. Activating the calf muscle pump helps circulation and supports the healing process. We typically advise patients to walk 30 minutes a day in the days following treatment and to wear compression stockings as directed. Strenuous exercise (running, cycling, heavy lifting) is usually restricted for one to two weeks.",
+      },
+      {
+        question: "How do I know if my varicose veins need treatment or are just cosmetic?",
+        answer:
+          "The only reliable way to answer this question is a duplex ultrasound examination performed by a board-certified phlebologist. Veins that look minimal on the surface can have significant underlying reflux; conversely, prominent-looking veins sometimes have intact valve function. A specialist evaluation — including imaging — is the only way to know what is actually happening in your venous system and what, if anything, needs to be treated.",
+      },
+    ],
+  },
+  {
     slug: "chronic-venous-insufficiency-symptoms-treatment-new-york",
     title: "Chronic Venous Insufficiency: Symptoms, Causes, and Treatment in New York",
     excerpt:
