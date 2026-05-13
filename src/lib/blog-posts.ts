@@ -47,6 +47,143 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "ambulatory-phlebectomy-varicose-vein-removal-new-york",
+    title: "Ambulatory Phlebectomy: Minimally Invasive Varicose Vein Removal in New York",
+    excerpt:
+      "Learn how ambulatory phlebectomy removes bulging varicose veins through tiny incisions with same-day recovery — and why New York patients choose Schulman Vein Center.",
+    category: "Treatments",
+    publishedAt: "2026-05-13",
+    readTimeMinutes: 8,
+    author: "Dr. Lee G. Schulman",
+    metaTitle: "Ambulatory Phlebectomy for Varicose Veins | New York",
+    metaDescription:
+      "Ambulatory phlebectomy removes bulging varicose veins through tiny incisions with same-day recovery. See why New York patients trust Schulman Vein Center.",
+    ogDescription:
+      "Ambulatory phlebectomy removes bulging varicose veins through tiny incisions with same-day recovery. See why New York patients trust Schulman Vein Center.",
+    featuredImage: "/images/blog/ambulatory-phlebectomy-varicose-vein-removal-new-york.jpg",
+    featuredImageAlt:
+      "Minimally invasive ambulatory phlebectomy varicose vein removal procedure in New York",
+    relatedLinks: [
+      { label: "Varicose Vein Treatment", href: "/services/varicose-vein-treatment" },
+      { label: "Body Vein Treatment", href: "/services/body-vein-treatment" },
+      { label: "Vein Disorders", href: "/services/vein-disorders" },
+      { label: "Free Vein Screening", href: "/services/free-vein-screening" },
+    ],
+    body: [
+      {
+        heading: "What Is Ambulatory Phlebectomy?",
+        paragraphs: [
+          "Ambulatory phlebectomy is a time-tested, office-based procedure designed to remove large, bulging varicose veins through a series of tiny, pinhole-sized incisions in the skin. Unlike traditional vein stripping — which required general anesthesia and a hospital stay — ambulatory phlebectomy is performed under local anesthesia, takes less than an hour in most cases, and allows patients to walk out of the office and resume light daily activities the same day.",
+          "The word 'ambulatory' is key: it means you walk in and walk out. This procedure has been refined over decades and, in experienced hands, delivers excellent cosmetic results with minimal scarring and a very low complication rate. At Schulman Vein and Laser Center, ambulatory phlebectomy is one of the most frequently requested procedures in our Manhattan, Manhasset, and Commack offices.",
+        ],
+      },
+      {
+        heading: "Who Is a Candidate for Ambulatory Phlebectomy?",
+        paragraphs: [
+          "Ambulatory phlebectomy is best suited for patients with large surface varicose veins — the kind that are visibly bulging, rope-like, or causing symptoms like aching, heaviness, throbbing, or swelling. These veins are typically too large for sclerotherapy injections to be the primary treatment, and they sit close enough to the skin surface to be accessed through micro-incisions.",
+          "Ideal candidates are those who:",
+        ],
+        bullets: [
+          "Have clearly visible, bulging varicose veins on the legs or thighs",
+          "Experience symptoms such as leg heaviness, aching, or swelling that worsen with prolonged standing",
+          "Have already undergone or are concurrently receiving treatment for underlying venous reflux (such as EVLT)",
+          "Are in generally good health and not currently pregnant",
+          "Have realistic expectations about cosmetic outcomes and recovery",
+        ],
+        callout: {
+          type: "info",
+          text: "Not sure if you're a candidate? A free vein screening at Schulman Vein Center includes duplex ultrasound evaluation — no referral needed.",
+        },
+      },
+      {
+        heading: "How the Procedure Works: Step by Step",
+        paragraphs: [
+          "Understanding what to expect helps remove anxiety and allows you to prepare properly. Here is what the ambulatory phlebectomy process looks like from start to finish at Schulman Vein and Laser Center:",
+        ],
+        bullets: [
+          "Mapping: Before the procedure begins, your physician marks the varicose veins with a skin-safe marker while you are standing. Gravity helps the veins fill so they can be identified precisely.",
+          "Anesthesia: Local anesthetic (tumescent anesthesia) is administered along the treatment area. This numbs the tissue, minimizes bleeding, and helps protect surrounding structures. Most patients find this the most uncomfortable part — and it is brief.",
+          "Micro-incisions: Using a fine needle or small scalpel, the physician creates tiny incisions (1–3 mm) at intervals along the marked vein path. These are so small they typically require no sutures.",
+          "Vein removal: A small hook instrument is gently inserted through each incision to grasp and remove the vein segment. The procedure is methodical and precise, removing the diseased vein in sections.",
+          "Dressing and compression: Once complete, the incisions are covered with steri-strips and a compression bandage or stocking is applied. You will be asked to wear compression for several days following the procedure.",
+          "Walking out: You are encouraged to walk immediately after the procedure. Walking activates calf muscle pumps, promotes circulation, and reduces the risk of complications.",
+        ],
+        imageSrc: "/images/blog/ambulatory-phlebectomy-procedure-diagram.jpg",
+        imageAlt: "Diagram illustrating the ambulatory phlebectomy varicose vein removal process",
+      },
+      {
+        heading: "Recovery: What to Expect in the Days and Weeks After",
+        paragraphs: [
+          "One of the most appreciated aspects of ambulatory phlebectomy is how quickly patients return to their normal routines. Same-day recovery is the norm, not the exception. Here is a general recovery timeline:",
+        ],
+        bullets: [
+          "Day 1: Walk for 20–30 minutes. Wear your compression bandage. Avoid strenuous activity, hot baths, and prolonged sitting or standing.",
+          "Days 2–7: Light bruising and mild swelling are normal and expected. Continue wearing compression stockings. Most patients return to desk work within 24–48 hours.",
+          "Week 2–4: Bruising fades. Small incision sites heal and become nearly invisible. The treated area may feel slightly firm as the body absorbs residual tissue — this is normal.",
+          "1–3 months: Full cosmetic results become apparent. Skin smooths out and the bulging vein contour disappears.",
+        ],
+        keyTakeaway: "Most patients return to light daily activities the same day and see full cosmetic results within 1–3 months.",
+      },
+      {
+        heading: "Ambulatory Phlebectomy vs. Other Varicose Vein Treatments",
+        paragraphs: [
+          "Ambulatory phlebectomy is one of several evidence-based options for treating varicose veins. Understanding how it compares helps you and your physician select the right approach — or combination of approaches — for your specific situation.",
+        ],
+        bullets: [
+          "Ambulatory Phlebectomy vs. Sclerotherapy: Sclerotherapy uses injectable solution to close veins from the inside and works best on small-to-medium veins and spider veins. Ambulatory phlebectomy physically removes the vein and is preferred for large, bulging varicosities that are difficult to collapse with injection alone.",
+          "Ambulatory Phlebectomy vs. EVLT: Endovenous Laser Therapy (EVLT) treats the underlying saphenous vein — the trunk vein responsible for reflux. Ambulatory phlebectomy removes the visible branches. Many patients benefit from both: EVLT first to address reflux, followed by ambulatory phlebectomy for surface veins.",
+          "Ambulatory Phlebectomy vs. Vein Stripping: Traditional stripping required general anesthesia, hospitalization, and weeks of recovery. Ambulatory phlebectomy achieves the same goal with local anesthesia, no hospital, and same-day recovery — with superior cosmetic outcomes.",
+        ],
+        imageSrc: "/images/blog/ambulatory-phlebectomy-consultation-new-york.jpg",
+        imageAlt: "Vein specialist consultation for ambulatory phlebectomy at Schulman Vein Center New York",
+      },
+      {
+        heading: "Is Ambulatory Phlebectomy Covered by Insurance?",
+        paragraphs: [
+          "When varicose veins are causing documented symptoms — pain, swelling, skin changes, or venous ulcers — ambulatory phlebectomy is generally considered a medically necessary procedure and may be covered by insurance, including Medicare. Most major commercial insurers cover the procedure when medical necessity criteria are met.",
+          "Coverage typically requires:",
+        ],
+        bullets: [
+          "A confirmed diagnosis of varicose veins with symptomatic documentation",
+          "Evidence of failed conservative therapy (compression stockings worn for a prescribed period)",
+          "Duplex ultrasound imaging confirming venous reflux",
+          "Prior authorization from your insurance plan",
+        ],
+        callout: {
+          type: "tip",
+          text: "Most insurance plans, including Medicare, cover ambulatory phlebectomy when medical necessity is documented. Our team manages the authorization process for you.",
+        },
+      },
+      {
+        heading: "Why Choose Schulman Vein and Laser Center?",
+        paragraphs: [
+          "Schulman Vein and Laser Center was founded on a simple principle: All We Do Is Veins™. Our physicians, Dr. Martin Schulman and Dr. Lee G. Schulman, are internationally recognized phlebologists with more than 55 years of combined experience. This singular focus means that when you come to us with varicose veins, you are being evaluated by specialists who have performed thousands of phlebectomy procedures — not generalists who occasionally treat veins.",
+          "Our patients across Manhattan, Manhasset, and Commack benefit from:",
+        ],
+        bullets: [
+          "Board-certified vein specialists with subspecialty focus in phlebology",
+          "In-office duplex ultrasound for precise vein mapping — no outside imaging center required",
+          "All procedures performed in our own accredited offices — no hospital necessary",
+          "Same-day recovery designed around busy New York schedules",
+          "FDA-approved techniques and a 5.0-star patient satisfaction rating across 200+ reviews",
+          "Free vein screening — a full evaluation with no obligation",
+        ],
+      },
+      {
+        heading: "Schedule Your Free Vein Screening Today",
+        paragraphs: [
+          "If you have bulging varicose veins that ache, feel heavy, or simply make you self-conscious, you don't have to live with them. Ambulatory phlebectomy offers a proven, minimally invasive solution with same-day recovery — and the results speak for themselves.",
+          "Take the first step with a free vein screening at Schulman Vein and Laser Center. Our physicians will evaluate your veins, explain your options, and answer every question — with no pressure and no obligation. We have convenient locations in Manhattan, Manhasset, and Commack to serve patients throughout the New York metropolitan area.",
+          "Call us today or visit our website to book your complimentary screening. Healthier, smoother legs are closer than you think.",
+        ],
+        callout: {
+          type: "tip",
+          text: "Book your Free Vein Screening online or by phone: Manhattan (212) 987-0500 · Manhasset (516) 482-4477 · Commack (631) 543-4599.",
+        },
+      },
+    ],
+  },
+  {
     slug: "varicose-vein-treatment-manhattan-new-york",
     title: "Varicose Vein Treatment in Manhattan, New York: Your Complete Guide",
     excerpt:
