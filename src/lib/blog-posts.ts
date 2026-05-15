@@ -47,6 +47,197 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "preparing-for-vein-treatment-appointment-new-york",
+    title: "Preparing for Your First Vein Treatment Appointment in New York",
+    excerpt:
+      "Not sure what to expect at your first vein appointment in New York? Learn exactly how to prepare, what to bring, and what happens on the day.",
+    category: "Patient Guide",
+    publishedAt: "2026-05-15",
+    readTimeMinutes: 8,
+    author: "Dr. Lee G. Schulman",
+    metaTitle: "Preparing for Your Vein Appointment | New York",
+    metaDescription:
+      "Not sure what to expect at your first vein appointment in New York? Learn exactly how to prepare, what to bring, and what happens on the day.",
+    ogDescription:
+      "Not sure what to expect at your first vein appointment in New York? Learn exactly how to prepare, what to bring, and what happens on the day.",
+    featuredImage: "/images/blog/preparing-for-vein-treatment-appointment-new-york.jpg",
+    featuredImageAlt:
+      "Patient preparing for first vein treatment consultation at Schulman Vein Center New York",
+    relatedLinks: [
+      { label: "Varicose Vein Treatment", href: "/services/varicose-vein-treatment" },
+      { label: "Spider Vein Treatment", href: "/services/spider-vein-treatment" },
+      { label: "Vein Disorders", href: "/services/vein-disorders" },
+      { label: "Free Vein Screening", href: "/services/free-vein-screening" },
+    ],
+    quickSummary: [
+      "Your first vein appointment includes a consultation, physical exam, and duplex ultrasound — no referral needed.",
+      "Wear loose, comfortable clothing you can roll above the knee, and skip lotion on your legs that day.",
+      "Bring your insurance card, a list of current medications, and any prior imaging or vein-related records.",
+      "Most first visits take 45–60 minutes and end with a clear diagnosis and personalized treatment plan.",
+      "Schulman Vein Center offers free vein screenings at three New York locations: Manhattan, Manhasset, and Commack.",
+    ],
+    tableOfContents: [
+      "Why Your First Appointment Matters",
+      "How to Prepare in the Days Before",
+      "What to Bring to Your Appointment",
+      "What Happens During Your First Visit",
+      "Understanding Your Diagnosis",
+      "After Your Appointment: Next Steps",
+      "Questions to Ask Your Vein Doctor",
+      "Why New York Patients Choose Schulman Vein Center",
+    ],
+    body: [
+      {
+        heading: "Why Your First Appointment Matters",
+        paragraphs: [
+          "Many people live with aching, heavy, or visibly enlarged veins for years before seeking care — often because they are unsure what a vein consultation actually involves or whether their symptoms are 'bad enough' to warrant a visit. The reality is that the first appointment is where everything begins: it is the moment a trained phlebologist examines your veins, uses imaging to see what is happening beneath the skin, and gives you a clear, evidence-based picture of your vein health.",
+          "At Schulman Vein and Laser Center, first appointments are designed around one goal: helping you fully understand what is going on with your veins and what, if anything, needs to be done. There is no pressure and no obligation. Whether your veins turn out to be a cosmetic concern or a medical one, you will leave with real answers — and a plan.",
+          "Knowing how to prepare before you walk in helps the appointment run smoothly, makes it more productive, and ensures your physician can gather the most accurate information possible.",
+        ],
+      },
+      {
+        heading: "How to Prepare in the Days Before",
+        paragraphs: [
+          "Preparing for a vein appointment does not require much, but a few simple steps in the days leading up to your visit will help your physician get the clearest possible picture of your veins:",
+        ],
+        bullets: [
+          "Stay well-hydrated. Adequate hydration makes veins more visible during examination — drink water normally in the days before and on the morning of your appointment.",
+          "Avoid tanning or spray tan on your legs. Skin pigmentation changes can affect how veins appear during visual examination.",
+          "Skip leg lotion or creams on appointment day. Clean, dry skin gives the physician a clearer view and allows gel to adhere properly for ultrasound.",
+          "Note your symptoms. Write down when leg heaviness, swelling, aching, or cramping tends to occur — morning vs. evening, after standing vs. after sitting. This helps your physician understand the functional impact on your daily life.",
+          "List your medications. Certain medications (blood thinners, hormonal contraceptives, and anti-inflammatories in particular) affect vein treatment planning. Have a current list ready.",
+          "Pull together any prior imaging. If you have had a venous ultrasound, Doppler study, or any vein-related procedure in the past, bring records or imaging if available. Prior history is relevant even if it was years ago.",
+        ],
+        callout: {
+          type: "tip",
+          text: "If you have been wearing compression stockings, bring them or note the compression class (15–20 mmHg, 20–30 mmHg, etc.). Your physician will want to know if you have tried conservative therapy already.",
+        },
+      },
+      {
+        heading: "What to Bring to Your Appointment",
+        paragraphs: [
+          "A short checklist makes sure your first visit goes as efficiently as possible:",
+        ],
+        bullets: [
+          "Insurance card (and any secondary insurance, if applicable)",
+          "A government-issued photo ID",
+          "A list of all current medications and supplements, including dosages",
+          "Any relevant prior medical records — venous ultrasound reports, prior vein treatment summaries, surgical notes",
+          "A list of your current symptoms and when they began",
+          "Comfortable, loose clothing — ideally shorts or pants you can easily roll above the knee, since the physician will examine your legs",
+          "Flat, comfortable shoes — you may be asked to stand for part of the examination",
+        ],
+        imageSrc: "/images/blog/preparing-for-vein-treatment-appointment-new-york-checklist.jpg",
+        imageAlt:
+          "Checklist and items to bring to a first vein treatment appointment in New York",
+      },
+      {
+        heading: "What Happens During Your First Visit",
+        paragraphs: [
+          "A first appointment at Schulman Vein and Laser Center typically takes 45 to 60 minutes and follows a consistent, thorough process. Here is what to expect:",
+        ],
+        bullets: [
+          "Health history intake: A member of our clinical team will review your medical history, current medications, prior procedures, and symptom timeline before the physician enters the room.",
+          "Visual and physical examination: Your physician will examine your legs while you are standing. Gravity causes veins to fill with blood, which makes reflux and abnormal patterns far easier to see and palpate. You will be asked to stand for at least part of this evaluation.",
+          "Duplex ultrasound: This is the most important diagnostic step. A handheld probe is pressed against the skin of your leg and transmits sound waves that create a real-time image of blood flow inside your veins. The physician looks for reflux (backward blood flow), obstruction, and valve incompetence — none of which are visible on the surface. Duplex ultrasound is non-invasive, painless, and takes 15 to 30 minutes. No referral to an imaging center is needed: we perform all ultrasound in-office.",
+          "Diagnosis and findings discussion: Once the examination and imaging are complete, your physician will walk you through exactly what was found — what is working correctly, what is not, and what the clinical significance is.",
+          "Treatment options: If treatment is indicated, your physician will explain every option that applies to your situation, including the mechanism, expected outcomes, recovery time, and typical costs and insurance coverage.",
+        ],
+        callout: {
+          type: "info",
+          text: "All duplex ultrasound imaging is performed in our offices — no separate imaging appointment, no waiting weeks for results. Your physician reviews the ultrasound findings with you the same day.",
+        },
+      },
+      {
+        heading: "Understanding Your Diagnosis",
+        paragraphs: [
+          "After the examination and ultrasound, your physician will give you a diagnosis. For most patients, this falls into one of a few categories:",
+        ],
+        bullets: [
+          "Venous reflux disease (also called chronic venous insufficiency): The valves inside one or more veins are not closing properly, allowing blood to flow backward and pool. This is the root cause of most varicose veins and many spider veins.",
+          "Superficial varicose veins without underlying reflux: The veins visible at the surface are abnormal, but there is no significant valve incompetence in the deeper trunk veins. Treatment may focus on the surface veins directly.",
+          "Spider veins (telangiectasias): Small, dilated vessels close to the skin surface. Usually cosmetic, but sometimes a marker for underlying reflux.",
+          "Normal venous anatomy: Some patients come in concerned about veins that turn out to be structurally and functionally normal. If that is the case, your physician will tell you directly.",
+        ],
+        keyTakeaway: "A clear diagnosis gives you and your physician the foundation to make the best treatment decision — together.",
+      },
+      {
+        heading: "After Your Appointment: Next Steps",
+        paragraphs: [
+          "Your first appointment ends with a personalized plan — not a vague recommendation to 'come back in a few months.' Depending on your diagnosis, next steps typically look like one of the following:",
+        ],
+        bullets: [
+          "Insurance pre-authorization: If your veins are symptomatic and medically necessary treatment is recommended, our team manages the pre-authorization process with your insurer. We handle the paperwork so you do not have to.",
+          "Compression stocking trial: Many insurance plans require a period of conservative therapy (compression stockings worn consistently for four to six weeks) before authorizing procedural treatment. If this applies to your plan, we will explain exactly what is required and provide guidance on fitting.",
+          "Scheduling your first procedure: If treatment is indicated and insurance authorization is in place, we schedule your procedure at your most convenient location — Manhattan, Manhasset, or Commack.",
+          "Monitoring: If your veins are mild and not yet requiring treatment, your physician may recommend a follow-up visit in six to twelve months to track any progression.",
+        ],
+        imageSrc: "/images/blog/preparing-for-vein-treatment-next-steps-new-york.jpg",
+        imageAlt:
+          "Vein specialist discussing next steps with patient at New York vein treatment center",
+      },
+      {
+        heading: "Questions to Ask Your Vein Doctor",
+        paragraphs: [
+          "A good vein appointment is a two-way conversation. You should feel comfortable asking anything. Here are some of the most useful questions to ask at your first visit — ones that help you understand your situation fully before agreeing to any treatment:",
+        ],
+        bullets: [
+          "\"Are my symptoms caused by a structural problem in my veins, or is something else responsible?\"",
+          "\"Will my insurance cover treatment, and what documentation do you need from me?\"",
+          "\"If I need the compression stocking trial first, how long, and which stockings should I use?\"",
+          "\"What happens if I don't treat this — will it get worse?\"",
+          "\"Will I need more than one procedure? Are treatments typically done in sessions?\"",
+          "\"What is the recovery like, and will I need to take time off work?\"",
+          "\"After treatment, what is the chance veins come back in the same location?\"",
+          "\"Who performs the ultrasound and treatment — the same physician every time?\"",
+        ],
+        callout: {
+          type: "tip",
+          text: "There are no bad questions at a vein consultation. The more information you give — and get — the better your treatment outcome is likely to be. Write your questions down before the appointment so you don't forget in the moment.",
+        },
+      },
+      {
+        heading: "Why New York Patients Choose Schulman Vein Center",
+        paragraphs: [
+          "Schulman Vein and Laser Center was founded on a single specialty: All We Do Is Veins™. Dr. Martin Schulman and Dr. Lee G. Schulman bring more than 55 years of combined experience in phlebology — the medical specialty dedicated entirely to vein disease. This focus means that when you sit across from a Schulman physician, you are talking to someone who has spent their entire career on exactly your problem.",
+          "Our three New York locations — Manhattan, Manhasset, and Commack — are designed for the reality of busy metropolitan schedules. Duplex ultrasound is performed in-office at every location. Most procedures take under an hour and patients walk out same day. And with more than 200 Google reviews and a 5.0-star patient rating, the experience of our patients speaks louder than anything we could say ourselves.",
+          "We also offer a free vein screening — a no-cost, no-obligation evaluation that gives you a real diagnosis, not a sales pitch. If you leave and decide to do nothing, that is completely your prerogative. Most patients tell us they just want to understand what is going on — and that is exactly what the screening is for.",
+        ],
+        callout: {
+          type: "tip",
+          text: "Book your free vein screening online or call: Manhattan (212) 987-0500 · Manhasset (516) 482-4477 · Commack (631) 543-4599.",
+        },
+      },
+    ],
+    faqSection: [
+      {
+        question: "Do I need a referral to see a vein specialist at Schulman Vein Center?",
+        answer:
+          "No referral is needed. You can call or book online directly at any of our three New York locations — Manhattan, Manhasset, or Commack. Our free vein screening is available to any patient who wants an evaluation, with no prior referral required.",
+      },
+      {
+        question: "How long does a first vein appointment take?",
+        answer:
+          "Plan for 45 to 60 minutes for your first visit. This includes the health history intake, physical examination while standing, in-office duplex ultrasound, and a full findings and treatment discussion with your physician.",
+      },
+      {
+        question: "Will the duplex ultrasound hurt?",
+        answer:
+          "No. Duplex ultrasound is entirely non-invasive and painless. A handheld probe is pressed against the skin with ultrasound gel and moved along the leg. There are no needles, no radiation, and no discomfort. The exam takes approximately 15 to 30 minutes.",
+      },
+      {
+        question: "What should I wear to a vein consultation?",
+        answer:
+          "Wear loose, comfortable clothing that you can roll up past the knee. Shorts are ideal. Avoid leggings or tight pants that are difficult to remove or adjust. Flat, comfortable shoes are preferable to heels — you will likely be asked to stand for part of the exam. Skip leg lotion that morning.",
+      },
+      {
+        question: "Can I drive myself home after my first appointment?",
+        answer:
+          "Yes. The first appointment is a consultation and diagnostic visit only — no procedures are performed. There is nothing that would impair your ability to drive. If at a future visit you undergo a procedure under local anesthesia, we will advise you about driving based on the specific procedure.",
+      },
+    ],
+  },,
+  {
     slug: "ambulatory-phlebectomy-varicose-vein-removal-new-york",
     title: "Ambulatory Phlebectomy: Minimally Invasive Varicose Vein Removal in New York",
     excerpt:
