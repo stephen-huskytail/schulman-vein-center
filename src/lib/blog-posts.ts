@@ -236,7 +236,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "Yes. The first appointment is a consultation and diagnostic visit only — no procedures are performed. There is nothing that would impair your ability to drive. If at a future visit you undergo a procedure under local anesthesia, we will advise you about driving based on the specific procedure.",
       },
     ],
-  },,
+  },
   {
     slug: "ambulatory-phlebectomy-varicose-vein-removal-new-york",
     title: "Ambulatory Phlebectomy: Minimally Invasive Varicose Vein Removal in New York",
