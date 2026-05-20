@@ -46,6 +46,176 @@ export type BlogPost = {
 };
 
 export const BLOG_POSTS: BlogPost[] = [
+{
+    slug: "deep-vein-thrombosis-symptoms-treatment-new-york",
+    title: "Deep Vein Thrombosis (DVT): Symptoms, Risk Factors, and When to See a Vein Specialist in New York",
+    excerpt: "Learn how to recognize DVT symptoms, understand your risk factors, and find out when to see a board-certified vein specialist in New York.",
+    category: "Vein Health",
+    publishedAt: "2026-05-20",
+    readTimeMinutes: 9,
+    author: "Dr. Lee G. Schulman",
+    metaTitle: "DVT Symptoms & Treatment | Vein Specialist New York",
+    metaDescription: "Recognize deep vein thrombosis symptoms early. Learn DVT risk factors and when to see a board-certified vein specialist in New York.",
+    ogDescription: "Recognize deep vein thrombosis symptoms early. Learn DVT risk factors and when to see a board-certified vein specialist in New York.",
+    featuredImage: "/images/blog/deep-vein-thrombosis-symptoms-treatment-new-york.jpg",
+    featuredImageAlt: "Medical illustration of deep vein thrombosis in the leg, vein specialist New York",
+    relatedLinks: [
+      { label: "Vein Disorders", href: "/services/vein-disorders" },
+      { label: "Varicose Vein Treatment", href: "/services/varicose-vein-treatment" },
+      { label: "Free Vein Screening", href: "/services/free-vein-screening" },
+      { label: "Contact Our Vein Specialists", href: "/contact" },
+    ],
+    quickSummary: [
+      "DVT is a blood clot in a deep vein, most often in the leg, and can be life-threatening if untreated.",
+      "Common symptoms include leg swelling, warmth, redness, and a dull aching pain — but up to half of DVT cases produce no symptoms at all.",
+      "Risk factors include prolonged sitting or travel, recent surgery, pregnancy, obesity, and a personal or family history of clotting disorders.",
+      "DVT is a medical emergency if the clot travels to the lungs (pulmonary embolism) — seek emergency care immediately if you experience chest pain or shortness of breath.",
+      "Early evaluation by a board-certified vein specialist is the safest path to diagnosis, treatment, and prevention.",
+    ],
+    body: [
+      {
+        heading: "What Is Deep Vein Thrombosis?",
+        paragraphs: [
+          "Deep vein thrombosis — commonly known as DVT — occurs when a blood clot (thrombus) forms in one of the body's deep veins, most often in the calf, thigh, or pelvis. Unlike the superficial veins visible beneath the skin, deep veins carry the majority of blood back to your heart, which makes a blockage in these vessels particularly serious.",
+          "DVT affects up to 900,000 Americans each year, according to the Centers for Disease Control and Prevention. It is not simply a vascular nuisance — an untreated DVT can dislodge and travel to the lungs, causing a pulmonary embolism (PE), a potentially fatal event. Understanding the warning signs and your personal risk level is the first and most important step toward protecting your vascular health.",
+          "At Schulman Vein and Laser Center, our board-certified phlebologists have spent decades diagnosing and treating complex vein conditions at our offices in Manhattan, Manhasset, and Commack, NY. DVT falls squarely within our expertise, and we believe every patient deserves a clear, straightforward explanation of what this condition means for them.",
+        ],
+      },
+      {
+        heading: "Recognizing the Symptoms of DVT",
+        paragraphs: [
+          "One of the challenges of deep vein thrombosis is that its symptoms can be subtle — or, in some cases, entirely absent. Research estimates that as many as 50 percent of DVT cases are asymptomatic, which underscores why regular vein health evaluations are so important, especially for those with known risk factors.",
+          "When symptoms do appear, they typically affect one leg and may develop gradually or come on suddenly. If you notice any of the following, do not wait — contact a vein specialist or seek prompt medical evaluation.",
+        ],
+        bullets: [
+          "Swelling in one leg (or, less commonly, one arm)",
+          "A dull ache, heaviness, or cramping sensation in the calf or thigh",
+          "Skin that feels warm or hot to the touch over the affected area",
+          "Redness or a bluish discoloration of the skin",
+          "Pain that worsens when standing or walking",
+          "Visible veins near the surface of the skin that seem more prominent than usual",
+        ],
+        callout: {
+          type: "warning",
+          text: "If you experience sudden chest pain, shortness of breath, a rapid heart rate, or coughing up blood, call 911 immediately. These are signs that a clot may have reached your lungs — a pulmonary embolism is a medical emergency.",
+        },
+        keyTakeaway: "Never dismiss unexplained one-sided leg swelling or warmth — these are the hallmark early signals of DVT that warrant immediate evaluation.",
+      },
+      {
+        heading: "Who Is at Risk? Key DVT Risk Factors",
+        paragraphs: [
+          "DVT does not discriminate — it can affect people of all ages and fitness levels. However, certain conditions and lifestyle factors significantly increase the likelihood of developing a clot in your deep veins. Understanding your personal risk profile allows you and your physician to take proactive steps.",
+        ],
+        imageSrc: "/images/blog/deep-vein-thrombosis-risk-factors.jpg",
+        imageAlt: "Illustration of deep vein thrombosis risk factors including travel, sedentary lifestyle, and pregnancy",
+        bullets: [
+          "Prolonged immobility — long-haul flights, extended bed rest, or desk jobs with hours of uninterrupted sitting",
+          "Recent surgery, particularly hip or knee replacement, abdominal procedures, or any surgery requiring general anesthesia",
+          "Pregnancy and the postpartum period — increased clotting factors and pressure on pelvic veins elevate risk significantly",
+          "Obesity — excess body weight increases pressure in the leg veins and slows blood return to the heart",
+          "Cancer and cancer treatments (chemotherapy), which can alter clotting pathways",
+          "Oral contraceptives and hormone replacement therapy containing estrogen",
+          "A personal or family history of DVT, pulmonary embolism, or inherited clotting disorders (such as Factor V Leiden)",
+          "Age over 60 — vein walls weaken and blood flow slows with age",
+          "Varicose veins — while not a direct cause of DVT, severely compromised veins can contribute to sluggish circulation",
+          "Smoking, which damages blood vessel walls and promotes clot formation",
+        ],
+        keyTakeaway: "Having even two or three of these risk factors together meaningfully increases your DVT probability — a vein specialist can help you assess your combined risk.",
+      },
+      {
+        heading: "The Connection Between Varicose Veins and DVT",
+        paragraphs: [
+          "Patients who already have varicose veins or chronic venous insufficiency often ask whether these conditions put them at greater risk for DVT. The relationship is real but nuanced.",
+          "Varicose veins develop when venous valves weaken, allowing blood to pool rather than flow efficiently toward the heart. This sluggish, turbulent circulation in damaged veins creates conditions that can, over time, contribute to superficial thrombophlebitis — a clot in a surface vein — which is typically painful but not life-threatening. In a smaller subset of cases, clots in superficial veins can extend into the deep venous system and become a true DVT.",
+          "This is one important reason why untreated varicose veins deserve medical attention beyond the cosmetic concern. If you have been putting off a vein evaluation because your varicose veins 'don't bother you that much,' your risk picture may be more complex than it appears.",
+        ],
+      },
+      {
+        heading: "How DVT Is Diagnosed",
+        paragraphs: [
+          "When a patient presents with symptoms suggestive of DVT, the primary diagnostic tool is duplex ultrasound — a non-invasive imaging technique that visualizes blood flow in real time and can detect the presence, location, and extent of a clot with excellent accuracy. This is a painless, office-based exam that takes approximately 30–60 minutes.",
+          "In some cases, a D-dimer blood test may be ordered. Elevated D-dimer levels indicate that the body is actively breaking down a clot, but the test alone cannot confirm DVT — it must be interpreted alongside clinical findings and ultrasound results.",
+          "At Schulman Vein and Laser Center, our phlebologists are experts in vascular ultrasound interpretation. We take a comprehensive view: not just whether a clot is present today, but what anatomical or lifestyle factors may have contributed — and what steps will reduce your risk going forward.",
+        ],
+        imageSrc: "/images/blog/deep-vein-thrombosis-vein-specialist-consultation.jpg",
+        imageAlt: "Vein specialist performing ultrasound evaluation on patient leg at New York vein clinic",
+      },
+      {
+        heading: "Treatment Options for Deep Vein Thrombosis",
+        paragraphs: [
+          "DVT treatment has evolved considerably, and the right approach depends on the location and severity of the clot, your overall health, and your individual risk factors. Treatment goals are threefold: prevent the clot from growing, stop it from traveling to the lungs, and reduce the risk of recurrence.",
+        ],
+        bullets: [
+          "Anticoagulation (blood thinners) — the cornerstone of DVT treatment. Medications such as heparin, warfarin, or newer direct oral anticoagulants (DOACs like rivaroxaban or apixaban) reduce the blood's ability to clot further and allow the body to gradually dissolve the existing clot.",
+          "Compression therapy — graduated compression stockings are prescribed for most DVT patients to reduce swelling, relieve discomfort, and lower the risk of post-thrombotic syndrome, a long-term complication that causes chronic leg pain and skin changes.",
+          "Catheter-directed thrombolysis — for large or limb-threatening clots, a catheter may be used to deliver clot-dissolving medication directly to the site. This is typically reserved for severe, proximal DVT.",
+          "Inferior vena cava (IVC) filter — in patients who cannot take anticoagulants, a small filter can be placed in the main abdominal vein to catch clots before they reach the lungs.",
+          "Elevation and early mobilization — guided movement is encouraged; prolonged bed rest is no longer standard care for most DVT patients.",
+        ],
+        callout: {
+          type: "info",
+          text: "DVT treatment is typically managed in coordination between your vein specialist and your primary care physician or hematologist. At Schulman Vein and Laser Center, we work collaboratively with your care team to ensure a seamless, evidence-based approach.",
+        },
+      },
+      {
+        heading: "Preventing DVT: Practical Steps You Can Take Today",
+        paragraphs: [
+          "Prevention is far preferable to treatment, and many DVT risk factors are modifiable with the right habits and medical guidance.",
+        ],
+        bullets: [
+          "Move regularly — if your job involves extended sitting, stand up and walk for a few minutes every hour. Even simple calf raises at your desk improve venous return.",
+          "Stay hydrated — dehydration thickens the blood, increasing clot risk, especially during air travel.",
+          "Wear compression stockings on long flights or car journeys of four hours or more, particularly if you have other risk factors.",
+          "Maintain a healthy weight — even modest weight reduction reduces venous pressure significantly.",
+          "Quit smoking — the vascular benefits of cessation begin within weeks.",
+          "Know your family history — if a close relative has had DVT or a clotting disorder, mention this to your physician. Genetic testing for inherited thrombophilias may be appropriate.",
+          "Discuss your medications — if you take estrogen-containing contraceptives or hormone therapy, talk with your doctor about your overall DVT risk and whether alternatives may be appropriate.",
+          "Address varicose veins — don't dismiss them as purely cosmetic. Treating diseased veins reduces venous stasis and long-term clot risk.",
+        ],
+        keyTakeaway: "Small daily habits — regular movement, hydration, and compression on travel days — can meaningfully cut your DVT risk without disrupting your lifestyle.",
+      },
+      {
+        heading: "When to See a Vein Specialist in New York",
+        paragraphs: [
+          "If you have one or more DVT risk factors, or if you've noticed symptoms such as unexplained leg swelling, persistent heaviness, or skin changes on your legs, the right move is a professional evaluation — not a wait-and-see approach.",
+          "A board-certified phlebologist can perform a thorough clinical assessment, order appropriate imaging, and create a personalized prevention or treatment plan. This is not an appointment to delay.",
+          "Schulman Vein and Laser Center's physicians — Dr. Martin Schulman and Dr. Lee G. Schulman — have over 55 combined years of experience in the diagnosis and treatment of vein disorders. With offices in Manhattan, Manhasset, and Commack, expert vein care is accessible across the greater New York area.",
+          "We offer a Free Vein Screening for new patients, which includes a clinical consultation and a preliminary assessment of your vein health. There is no cost, no obligation, and no reason to put it off. Catching a problem early is always better than treating a complication.",
+        ],
+        callout: {
+          type: "tip",
+          text: "Book your Free Vein Screening at any of our three New York locations — Manhattan, Manhasset, or Commack. Call us at 212.987.0500 (Manhattan), 516.482.4477 (Manhasset), or 631.543.4599 (Commack), or request an appointment online.",
+        },
+      },
+      {
+        heading: "Frequently Asked Questions About DVT",
+        paragraphs: [
+          "**Can DVT go away on its own?** Small clots in the calf can occasionally resolve without treatment, but this is not a safe assumption. Without proper anticoagulation, clots can grow, extend into larger veins, or break off and travel to the lungs. Always seek evaluation rather than hoping a clot will resolve on its own.",
+          "**Is DVT the same as a blood clot?** DVT is a specific type of blood clot — one that forms in a deep vein, most commonly in the leg. Not all blood clots are DVTs; clots can also form in surface veins (superficial thrombophlebitis) or arteries (arterial thrombosis), each with different implications.",
+          "**How long does DVT treatment last?** Most patients are treated with anticoagulation for 3–6 months. Those with recurrent DVT, an inherited clotting disorder, or a persistent risk factor (such as active cancer) may require indefinite anticoagulation. Your physician will determine the appropriate duration based on your individual profile.",
+          "**Can I exercise with DVT?** Light walking is generally encouraged and helps promote blood flow. Strenuous exercise is usually restricted during the initial treatment phase. Always follow your physician's specific guidance.",
+        ],
+      },
+    ],
+    faqSection: [
+      {
+        question: "Can DVT go away on its own?",
+        answer: "Small clots may occasionally resolve without treatment, but this is not a safe assumption. Without proper anticoagulation, clots can grow or break off and travel to the lungs. Always seek a physician's evaluation.",
+      },
+      {
+        question: "Is DVT the same as a blood clot?",
+        answer: "DVT is a specific type of blood clot that forms in a deep vein, most often in the leg. Superficial vein clots and arterial clots are different conditions with different management approaches.",
+      },
+      {
+        question: "How long does DVT treatment last?",
+        answer: "Most patients require anticoagulation for 3–6 months. Those with recurrent DVT or persistent risk factors may need longer-term treatment. Your vein specialist will tailor the duration to your situation.",
+      },
+      {
+        question: "Can I exercise with DVT?",
+        answer: "Light walking is generally encouraged. Strenuous activity is usually restricted during initial treatment. Follow your physician's specific guidance based on the location and severity of your clot.",
+      },
+    ],
+  },
   {
     slug: "preparing-for-vein-treatment-appointment-new-york",
     title: "Preparing for Your First Vein Treatment Appointment in New York",
