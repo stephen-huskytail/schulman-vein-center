@@ -8,11 +8,11 @@ const contactSchema = z.object({
   email: z.string().email(),
   location: z.string().min(1),
   service: z.string().optional(),
-  message: z.string().min(5),
+  message: z.string().optional().or(z.literal("")),
 });
 
-const TO_EMAILS = ["veinsonline@icloud.com", "info@schulmanveincenter.com"];
-const CC_EMAILS = ["veinsonline1@yahoo.com"];
+const TO_EMAILS = ["info@schulmanveincenter.com", "info@schulmanveinandlasercenter.com"];
+const CC_EMAILS = ["veinsonline@icloud.com", "veinsonline1@yahoo.com"];
 
 function escapeHtml(value: string) {
   return value
@@ -45,6 +45,8 @@ export async function POST(req: Request) {
   const preferredLocation = selectedLocation?.shortName ?? data.location;
   const subject = `New Consultation Request - ${data.name}`;
 
+  const messageText = data.message || "Not specified";
+
   const text = [
     "New consultation request submitted from schulmanveincenter.com",
     "",
@@ -55,7 +57,7 @@ export async function POST(req: Request) {
     `Area of Concern: ${data.service || "Not specified"}`,
     "",
     "Patient Notes:",
-    data.message,
+    messageText,
   ].join("\n");
 
   const html = `
@@ -66,7 +68,7 @@ export async function POST(req: Request) {
     <p><strong>Preferred Location:</strong> ${escapeHtml(preferredLocation)}</p>
     <p><strong>Area of Concern:</strong> ${escapeHtml(data.service || "Not specified")}</p>
     <p><strong>Patient Notes:</strong></p>
-    <p>${escapeHtml(data.message).replaceAll("\n", "<br />")}</p>
+    <p>${escapeHtml(messageText).replaceAll("\n", "<br />")}</p>
   `;
 
   const resendResponse = await fetch("https://api.resend.com/emails", {

@@ -42,12 +42,28 @@ export default function ContactSection() {
   });
 
   const onSubmit = async (data: FormData) => {
-    // Simulate form submission (replace with actual API call / email service)
-    await new Promise((r) => setTimeout(r, 1200));
-    console.log("Form data:", data);
-    setSubmitted(true);
-    toast.success("Appointment request received! We'll contact you within 1 business day.");
-    reset();
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        throw new Error(result.error || "Something went wrong. Please try again.");
+      }
+
+      setSubmitted(true);
+      toast.success("Appointment request received! We'll contact you within 1 business day.");
+      reset();
+    } catch (err: any) {
+      console.error("Submission error:", err);
+      toast.error(err.message || "Unable to send your request. Please call us directly.");
+    }
   };
 
   return (
