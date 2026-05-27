@@ -105,25 +105,28 @@ export default function LocationsSection() {
           ))}
         </div>
 
-        {/* Map embed placeholder */}
-        <motion.div
-          initial={{ opacity: 0, y: 16 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="rounded-2xl overflow-hidden shadow-card border border-gray-200 aspect-[16/5] bg-gray-100 flex items-center justify-center"
-        >
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.937!2d-73.9577!3d40.7831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258b85d6d3d41%3A0x0!2s1165+Park+Ave%2C+New+York%2C+NY+10128!5e0!3m2!1sen!2sus!4v1"
-            width="100%"
-            height="100%"
-            style={{ border: 0, minHeight: "300px" }}
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            title="Schulman Vein Center Manhattan location"
-          />
-        </motion.div>
+        {/* Three maps, one for each location */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+          {LOCATIONS.map((loc, i) => (
+            <motion.div
+              key={`${loc.id}-map`}
+              initial={{ opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: i * 0.1 }}
+              className="rounded-2xl overflow-hidden shadow-card border border-gray-200 aspect-[4/3] bg-gray-100"
+            >
+              <iframe
+                src={`https://www.google.com/maps?q=${encodeURIComponent(loc.fullAddress)}&output=embed`}
+                className="w-full h-full border-0"
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title={`Schulman Vein Center ${loc.shortName} location map`}
+              />
+            </motion.div>
+          ))}
+        </div>
       </div>
     </section>
   );
