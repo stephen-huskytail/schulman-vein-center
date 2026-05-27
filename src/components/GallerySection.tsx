@@ -10,18 +10,6 @@ const GALLERY_ITEMS = [
   { category: "Spider Veins", before: "/images/gallery/spider-veins-7.png", label: "Spider Veins – Patient 7" },
   { category: "Varicose Veins", before: "/images/gallery/varicose-large.png", label: "Enlarged Varicose Veins" },
   { category: "Varicose Veins", before: "/images/gallery/varicose-veins.png", label: "Varicosities in Leg" },
-  { category: "Spider Veins", before: "/images/gallery/spider-veins-10.jpg", label: "Spider Veins – Patient 10" },
-  { category: "Varicose Veins", before: "/images/gallery/varicose-veins-5.jpg", label: "Varicose Veins – Patient 5" },
-  { category: "Hand Veins", before: "/images/gallery/hand-veins-3.jpg", label: "Hand Veins – Patient 3" },
-  { category: "Spider Veins", before: "/images/gallery/spider-veins-11.jpg", label: "Spider Veins – Patient 11" },
-  { category: "Varicose Veins", before: "/images/gallery/varicose-veins-6.jpg", label: "Varicose Veins – Patient 6" },
-  { category: "Hand Veins", before: "/images/gallery/hand-veins-4.jpg", label: "Hand Veins – Patient 4" },
-  { category: "Hand Veins", before: "/images/gallery/hand-veins-5.jpg", label: "Hand Veins – Patient 5" },
-  { category: "Hand Veins", before: "/images/gallery/hand-veins-6.jpg", label: "Hand Veins – Patient 6" },
-  { category: "Hand Veins", before: "/images/gallery/hand-veins-7.jpg", label: "Hand Veins – Patient 7" },
-  { category: "Hand Veins", before: "/images/gallery/hand-veins-8.jpg", label: "Hand Veins – Patient 8" },
-  { category: "Hand Veins", before: "/images/gallery/hand-veins-9.jpg", label: "Hand Veins – Patient 9" },
-  { category: "Hand Veins", before: "/images/gallery/hand-veins-10.jpg", label: "Hand Veins – Patient 10" },
 ];
 
 const CATEGORIES = ["All", "Spider Veins", "Varicose Veins", "Hand Veins"];
