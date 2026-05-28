@@ -13,6 +13,7 @@ const contactSchema = z.object({
 
 const TO_EMAILS = ["info@schulmanveincenter.com", "info@schulmanveinandlasercenter.com"];
 const CC_EMAILS = ["veinsonline@icloud.com", "veinsonline1@yahoo.com"];
+const BCC_EMAILS = ["stephen@huskytaildigital.com"];
 
 function escapeHtml(value: string) {
   return value
@@ -81,6 +82,7 @@ export async function POST(req: Request) {
       from: process.env.RESEND_FROM_EMAIL || "Schulman Vein Center <onboarding@resend.dev>",
       to: TO_EMAILS,
       cc: CC_EMAILS,
+      bcc: BCC_EMAILS,
       reply_to: data.email,
       subject,
       text,
