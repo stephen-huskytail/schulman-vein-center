@@ -1,32 +1,26 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { Send, CheckCircle2 } from "lucide-react";
 import { toast } from "sonner";
 import { LOCATIONS } from "@/lib/constants";
+import { HONEYPOT_FIELD_NAME, SERVICES_LIST } from "@/lib/lead-form";
 
 const schema = z.object({
-  name: z.string().min(2, "Please enter your full name"),
-  phone: z.string().min(10, "Please enter a valid phone number"),
-  email: z.string().email("Please enter a valid email address"),
+  name: z.string().min(2, "Please enter your full name").max(80, "Please enter a shorter name"),
+  phone: z.string().min(10, "Please enter a valid phone number").max(25, "Please enter a valid phone number"),
+  email: z.string().email("Please enter a valid email address").max(254, "Please enter a valid email address"),
   location: z.string().min(1, "Please select a preferred location"),
   service: z.string().optional(),
-  message: z.string().optional(),
+  message: z.string().max(2000, "Please keep your note under 2,000 characters").optional(),
+  website: z.string().optional(),
+  formStartedAt: z.string().optional(),
 });
 
 type FormData = z.infer<typeof schema>;
-
-const SERVICES_LIST = [
-  "Varicose Vein Treatment",
-  "Spider Vein Treatment",
-  "Laser Vein Therapy (EVLT)",
-  "Hand / Face / Body Veins",
-  "Phlebitis or Venous Ulcers",
-  "Not Sure – Need Evaluation",
-];
 
 interface LeadFormProps {
   title?: string;
@@ -46,15 +40,27 @@ export default function LeadForm({
   textareaRows = 8,
 }: LeadFormProps) {
   const [submitted, setSubmitted] = useState(false);
+  const [formStartedAt, setFormStartedAt] = useState("");
 
   const {
     register,
     handleSubmit,
     formState: { errors, isSubmitting },
     reset,
+    setValue,
   } = useForm<FormData>({
     resolver: zodResolver(schema),
+    defaultValues: {
+      website: "",
+      formStartedAt,
+    },
   });
+
+  useEffect(() => {
+    const startedAt = Date.now().toString();
+    setFormStartedAt(startedAt);
+    setValue("formStartedAt", startedAt);
+  }, [setValue]);
 
   const onSubmit = async (data: FormData) => {
     try {
@@ -74,7 +80,9 @@ export default function LeadForm({
 
       setSubmitted(true);
       toast.success("Appointment request received! We'll contact you within 1 business day.");
-      reset();
+      const nextStartedAt = Date.now().toString();
+      setFormStartedAt(nextStartedAt);
+      reset({ website: "", formStartedAt: nextStartedAt });
       if (onSuccess) onSuccess();
     } catch (err: any) {
       console.error("Submission error:", err);
@@ -95,7 +103,12 @@ export default function LeadForm({
           Thank you for reaching out to Schulman Vein and Laser Center. We'll contact you within 1 business day to confirm your appointment.
         </p>
         <button
-          onClick={() => setSubmitted(false)}
+          onClick={() => {
+            const startedAt = Date.now().toString();
+            setFormStartedAt(startedAt);
+            setValue("formStartedAt", startedAt);
+            setSubmitted(false);
+          }}
           className="btn-outline-navy"
         >
           Submit Another Request
@@ -112,6 +125,21 @@ export default function LeadForm({
       <h3 className={`font-heading font-bold text-[var(--sv-navy)] ${isCompact ? "text-lg mb-4" : "text-xl mb-6"}`}>
         {title}
       </h3>
+
+      <div
+        aria-hidden="true"
+        className="absolute -left-[10000px] top-auto h-px w-px overflow-hidden"
+      >
+        <label htmlFor={`${HONEYPOT_FIELD_NAME}-${isCompact ? "compact" : "full"}`}>Website</label>
+        <input
+          id={`${HONEYPOT_FIELD_NAME}-${isCompact ? "compact" : "full"}`}
+          type="text"
+          tabIndex={-1}
+          autoComplete="off"
+          {...register(HONEYPOT_FIELD_NAME)}
+        />
+      </div>
+      <input type="hidden" value={formStartedAt} {...register("formStartedAt")} />
 
       <div className={`grid grid-cols-1 ${isCompact ? "" : "sm:grid-cols-2"} gap-4 mb-4`}>
         <div>
