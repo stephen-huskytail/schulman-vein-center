@@ -51,6 +51,24 @@ function escapeHtml(value: string) {
     .replaceAll("'", "&#039;");
 }
 
+function formatPhoneForEmail(value: string) {
+  const raw = value.trim();
+  const digits = raw.replace(/\D/g, "");
+  const nationalDigits = digits.length === 11 && digits.startsWith("1") ? digits.slice(1) : digits;
+
+  if (nationalDigits.length === 10) {
+    return {
+      display: `${nationalDigits.slice(0, 3)}.${nationalDigits.slice(3, 6)}.${nationalDigits.slice(6)}`,
+      tel: nationalDigits,
+    };
+  }
+
+  return {
+    display: raw,
+    tel: digits.length >= 10 ? digits : "",
+  };
+}
+
 function containsUrlOrMarkup(value: string) {
   return /(https?:\/\/|www\.|<[^>]+>|\[[^\]]*url=)/i.test(value);
 }
@@ -150,12 +168,16 @@ export async function POST(req: Request) {
   const subject = `New Consultation Request - ${data.name}`;
 
   const messageText = data.message || "Not specified";
+  const formattedPhone = formatPhoneForEmail(data.phone);
+  const phoneText = formattedPhone.tel
+    ? `${formattedPhone.display} (tel:${formattedPhone.tel})`
+    : formattedPhone.display;
 
   const text = [
     "New consultation request submitted from schulmanveincenter.com",
     "",
     `Name: ${data.name}`,
-    `Phone: ${data.phone}`,
+    `Phone: ${phoneText}`,
     `Email: ${data.email}`,
     `Preferred Location: ${preferredLocation}`,
     `Area of Concern: ${data.service || "Not specified"}`,
@@ -164,10 +186,14 @@ export async function POST(req: Request) {
     messageText,
   ].join("\n");
 
+  const phoneHtml = formattedPhone.tel
+    ? `<a href="tel:${formattedPhone.tel}">${escapeHtml(formattedPhone.display)}</a>`
+    : escapeHtml(formattedPhone.display);
+
   const html = `
     <h2>New Consultation Request</h2>
     <p><strong>Name:</strong> ${escapeHtml(data.name)}</p>
-    <p><strong>Phone:</strong> ${escapeHtml(data.phone)}</p>
+    <p><strong>Phone:</strong> ${phoneHtml}</p>
     <p><strong>Email:</strong> ${escapeHtml(data.email)}</p>
     <p><strong>Preferred Location:</strong> ${escapeHtml(preferredLocation)}</p>
     <p><strong>Area of Concern:</strong> ${escapeHtml(data.service || "Not specified")}</p>
