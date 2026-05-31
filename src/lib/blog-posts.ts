@@ -47,6 +47,130 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
 {
+    slug: "vein-treatment-manhasset-long-island-new-york",
+    title: "Vein Treatment in Manhasset and Long Island: What You Need to Know",
+    excerpt: "Discover expert varicose and spider vein treatment on Long Island at Schulman Vein Center's Manhasset office. Board-certified care, same-day recovery, free screening.",
+    category: "Vein Health",
+    publishedAt: "2026-05-31",
+    readTimeMinutes: 8,
+    author: "Dr. Lee G. Schulman",
+    metaTitle: "Vein Treatment Manhasset & Long Island NY | Schulman Vein Center",
+    metaDescription: "Expert varicose and spider vein treatment on Long Island at Schulman Vein Center in Manhasset, NY. Board-certified phlebologists, same-day recovery. Free screening.",
+    ogDescription: "Expert varicose and spider vein treatment on Long Island at Schulman Vein Center in Manhasset, NY. Board-certified phlebologists, same-day recovery. Free screening.",
+    featuredImage: "/images/blog/vein-treatment-manhasset-long-island-new-york.jpg",
+    featuredImageAlt: "Vein treatment consultation at Schulman Vein Center Manhasset Long Island New York",
+    relatedLinks: [
+      { label: "Varicose Vein Treatment", href: "/services/varicose-vein-treatment" },
+      { label: "Spider Vein Treatment", href: "/services/spider-vein-treatment" },
+      { label: "Vein Disorders", href: "/services/vein-disorders" },
+      { label: "Free Vein Screening", href: "/services/free-vein-screening" },
+    ],
+    quickSummary: [
+      "Schulman Vein Center's Manhasset office serves Long Island patients with the same board-certified expertise as our Manhattan location.",
+      "We treat varicose veins, spider veins, chronic venous insufficiency, and more — all with minimally invasive, FDA-approved techniques.",
+      "Same-day recovery means you can return to normal activities right after most procedures.",
+      "Our team has 55+ years of combined phlebology experience and 200+ five-star Google reviews.",
+      "A free vein screening is available to new patients — call 516.482.4477 to schedule.",
+    ],
+    tableOfContents: [
+      "Why Long Island Residents Choose Schulman Vein Center",
+      "Common Vein Conditions We Treat in Manhasset",
+      "Our Minimally Invasive Treatment Options",
+      "What to Expect at Our Manhasset Office",
+      "Serving Long Island's Communities",
+      "Frequently Asked Questions",
+    ],
+    body: [
+      {
+        heading: "Why Long Island Residents Choose Schulman Vein Center",
+        paragraphs: [
+          "If you live on Long Island and have been putting off vein treatment, you're not alone. Many patients assume they need to travel into Manhattan for high-quality vascular care — or that visible veins are simply something they have to live with. Neither is true.",
+          "Schulman Vein and Laser Center has served Long Island patients from our Manhasset location for decades. Our physicians, Dr. Martin Schulman and Dr. Lee G. Schulman, are internationally recognized phlebologists with more than 55 years of combined experience. Every procedure we perform is minimally invasive, FDA-approved, and designed around one goal: getting you back to your normal life the same day.",
+          "Our Manhasset office combines the expertise of a Manhattan specialist practice with the convenience of a Long Island location — close to Great Neck, Port Washington, Roslyn, Garden City, and communities across Nassau County.",
+        ],
+        imageSrc: "/images/blog/vein-treatment-manhasset-long-island-new-york-office.jpg",
+        imageAlt: "Schulman Vein Center Manhasset Long Island office exterior and consultation room",
+        keyTakeaway: "You don't need to travel to Manhattan for world-class vein care — Schulman Vein Center's Manhasset office brings the same board-certified expertise to Long Island.",
+      },
+      {
+        heading: "Common Vein Conditions We Treat in Manhasset",
+        paragraphs: [
+          "Vein disease is more common than most people realize, and it progresses if left untreated. At our Manhasset office, we evaluate and treat the full spectrum of venous conditions:",
+        ],
+        bullets: [
+          "Varicose veins — enlarged, twisted veins that bulge visibly beneath the skin, often causing aching, heaviness, or swelling in the legs",
+          "Spider veins — small clusters of red, blue, or purple veins visible at the skin's surface, commonly appearing on the legs and face",
+          "Chronic venous insufficiency (CVI) — a condition where damaged vein valves allow blood to pool in the lower legs, causing swelling, skin changes, and discomfort",
+          "Deep vein thrombosis (DVT) — blood clots in the deep veins that require prompt medical evaluation and management",
+          "Leg swelling and heaviness — often early signs of underlying venous insufficiency that benefit from early intervention",
+          "Skin discoloration and ulcers — advanced venous disease that responds well to targeted vein treatment",
+        ],
+        callout: {
+          type: "info",
+          text: "Many patients are surprised to learn their leg aching, nighttime cramps, or restless legs are connected to venous insufficiency — not muscle fatigue or aging. A simple ultrasound evaluation at our Manhasset office can identify the cause.",
+        },
+      },
+      {
+        heading: "Our Minimally Invasive Treatment Options",
+        paragraphs: [
+          "All We Do Is Veins\u2122 — and that focus means our Long Island patients benefit from the most advanced, effective treatments available. We do not perform surgery. Every procedure at our Manhasset office is performed in-office, without general anesthesia, with minimal discomfort and same-day recovery.",
+          "Endovenous Laser Treatment (EVLT) uses focused laser energy to collapse and seal diseased varicose veins from the inside. A tiny laser fiber is guided into the vein under ultrasound, the vein is treated in a single session, and blood flow reroutes naturally through healthy veins. Most patients walk out of the office and resume their normal routine the same afternoon.",
+          "Sclerotherapy is the gold standard for spider veins and smaller varicose veins. A specialized solution is injected directly into the affected vein, causing it to collapse and fade over the following weeks. Multiple sessions are often recommended for optimal results, depending on the extent of the vein network.",
+          "Ambulatory Phlebectomy is ideal for large surface varicose veins that are close to the skin. Using tiny, pinhole-sized incisions (no stitches required), the vein is removed in segments while you remain awake and comfortable. This procedure leaves virtually no scarring.",
+          "Ultrasound-Guided Sclerotherapy allows our physicians to treat veins that are not visible at the surface — identified and mapped precisely using real-time duplex ultrasound imaging. This ensures accurate targeting of the source veins driving surface symptoms.",
+        ],
+        imageSrc: "/images/blog/vein-treatment-manhasset-long-island-new-york-evlt.jpg",
+        imageAlt: "Minimally invasive EVLT laser vein treatment procedure at Schulman Vein Center Manhasset",
+        keyTakeaway: "Every procedure at our Manhasset office is performed in-office with no general anesthesia — same-day recovery means you can drive yourself home and return to work that afternoon.",
+      },
+      {
+        heading: "What to Expect at Our Manhasset Office",
+        paragraphs: [
+          "Your first visit at our Manhasset office begins with a thorough consultation and venous duplex ultrasound evaluation. This imaging study maps your venous system in real time, identifying faulty valves, areas of reflux, and the root causes of your visible symptoms. Insurance often covers diagnostic ultrasound when symptoms are present.",
+          "Based on your evaluation, our physicians will recommend a personalized treatment plan. We take the time to explain your diagnosis in plain language, walk you through every treatment option, and answer all your questions before any procedure begins.",
+          "Most procedures at our Manhasset office take 30 to 60 minutes. You'll be awake, comfortable, and able to walk immediately after. We provide compression stockings to wear for a short recovery period, and our team checks in with you during follow-up visits to track your results.",
+          "We accept most major insurance plans, and our staff can verify your coverage before your first appointment. Many varicose vein treatments are covered when symptoms are present and medical necessity is documented — our team handles this process routinely.",
+        ],
+        callout: {
+          type: "tip",
+          text: "Wear or bring loose, comfortable clothing to your appointment — you'll want easy access to your legs during the evaluation and treatment. Avoid applying lotion to your legs on the day of your visit.",
+        },
+        keyTakeaway: "A comprehensive duplex ultrasound evaluation at our Manhasset office gives our physicians a complete picture of your venous health — and it's often covered by insurance.",
+      },
+      {
+        heading: "Serving Long Island's Communities",
+        paragraphs: [
+          "Our Manhasset location is conveniently situated on Long Island's North Shore, with easy access from across Nassau and Suffolk counties. We regularly treat patients from Great Neck, Port Washington, Roslyn, Mineola, Syosset, Jericho, Huntington, and communities further east who prefer a suburban setting over a Manhattan office visit.",
+          "Long Island residents experience the same seasonal pattern as patients everywhere — vein symptoms often worsen in summer heat, during long periods of standing or sitting, and during pregnancy. Many patients schedule their initial evaluation in late spring or early summer so treatment is complete before the season peaks.",
+          "For patients who need additional care or a second opinion, our Manhattan office on the Upper East Side and our Commack location provide additional access points. Whether you're a first-time patient or have been managing vein disease for years, our team at any location delivers the same standard of expertise.",
+        ],
+      },
+    ],
+    faqSection: [
+      {
+        question: "Is the Manhasset office accepting new patients?",
+        answer: "Yes. We welcome new patients at our Manhasset location. A free vein screening is available for new patients — call 516.482.4477 to schedule or use our online contact form.",
+      },
+      {
+        question: "Do I need a referral to be seen at Schulman Vein Center in Manhasset?",
+        answer: "No referral is required for most patients. You can contact our office directly to schedule a consultation or free vein screening. If your insurance requires a referral, our staff can guide you through that process.",
+      },
+      {
+        question: "Does insurance cover vein treatment at your Manhasset office?",
+        answer: "Many varicose vein treatments are covered by insurance when symptoms such as pain, swelling, or skin changes are present. Spider vein treatment is typically considered cosmetic and not covered. Our staff verifies your specific coverage before your first appointment.",
+      },
+      {
+        question: "How long does a typical appointment take at your Manhasset office?",
+        answer: "An initial consultation and ultrasound evaluation typically takes 60 to 90 minutes. Treatment procedures generally run 30 to 60 minutes, depending on the extent of the area being treated. You can return to normal activities the same day.",
+      },
+      {
+        question: "What should I do if I'm not sure whether my vein symptoms need treatment?",
+        answer: "If you notice visible veins, leg aching, heaviness, swelling, or skin changes, a free vein screening is the best first step. Our physicians evaluate your symptoms, perform a brief examination, and let you know whether further evaluation or treatment is indicated — at no cost and with no obligation.",
+      },
+    ],
+  },
+
+{
     slug: "deep-vein-thrombosis-symptoms-treatment-new-york",
     title: "Deep Vein Thrombosis (DVT): Symptoms, Risk Factors, and When to See a Vein Specialist in New York",
     excerpt: "Learn how to recognize DVT symptoms, understand your risk factors, and find out when to see a board-certified vein specialist in New York.",
