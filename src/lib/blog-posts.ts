@@ -47,6 +47,174 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
 {
+    slug: "medicare-vein-treatment-coverage-new-york",
+    title: "Does Medicare Cover Vein Treatment? What New York Patients Need to Know",
+    excerpt: "Understand when Medicare covers varicose vein and spider vein treatment in New York — medical necessity rules, required documentation, and how to maximize your benefits.",
+    category: "Insurance",
+    publishedAt: "2026-05-31",
+    readTimeMinutes: 9,
+    author: "Dr. Lee G. Schulman",
+    metaTitle: "Does Medicare Cover Vein Treatment? | New York Vein Specialist",
+    metaDescription: "Find out when Medicare covers varicose vein treatment in New York. Learn medical necessity criteria, documentation tips, and how Schulman Vein Center can help.",
+    ogDescription: "Find out when Medicare covers varicose vein treatment in New York. Learn medical necessity criteria, documentation tips, and how Schulman Vein Center can help.",
+    featuredImage: "/images/blog/medicare-vein-treatment-coverage-new-york.jpg",
+    featuredImageAlt: "Medicare insurance card beside a vein health diagram, vein treatment coverage New York",
+    relatedLinks: [
+      { label: "Varicose Vein Treatment", href: "/services/varicose-vein-treatment" },
+      { label: "Vein Disorders", href: "/services/vein-disorders" },
+      { label: "Body Vein Treatment", href: "/services/body-vein-treatment" },
+      { label: "Free Vein Screening", href: "/services/free-vein-screening" },
+    ],
+    quickSummary: [
+      "Medicare covers varicose vein treatment when it is deemed medically necessary — not cosmetic.",
+      "Coverage requires documentation of symptoms (pain, swelling, ulcers) and often a trial of conservative therapy such as compression stockings.",
+      "Spider vein treatment (sclerotherapy for cosmetic purposes) is typically not covered by Medicare.",
+      "Part B covers outpatient vein procedures; Part A applies only if a hospital stay is involved.",
+      "Schulman Vein and Laser Center works with Medicare and most major insurance plans to help patients understand and maximize their benefits.",
+    ],
+    body: [
+      {
+        heading: "The Question Every Medicare Patient Asks",
+        paragraphs: [
+          "If you are on Medicare and struggling with varicose veins — aching legs, visible bulging veins, chronic swelling, or skin changes — one of the first questions you will ask is: will Medicare pay for this? The answer depends on a distinction that surprises many patients: whether your vein condition is medically necessary or purely cosmetic.",
+          "At Schulman Vein and Laser Center, we work with Medicare patients in Manhattan, Manhasset, and Commack every week. Understanding how coverage works before your appointment can save you from unexpected costs and help you get the care you need, when you need it.",
+        ],
+      },
+      {
+        heading: "Medicare Part B and Vein Treatment: The Basics",
+        paragraphs: [
+          "Most vein procedures performed at an outpatient vein center — including endovenous laser treatment (EVLT), radiofrequency ablation, and ultrasound-guided sclerotherapy — fall under Medicare Part B, which covers outpatient medical services and physician visits.",
+          "Medicare Part A, which covers hospital stays, is typically not involved in vein treatment unless a procedure requires inpatient admission — an uncommon scenario for modern, minimally invasive vein care. If you have Medicare Advantage (Part C), your coverage rules will mirror original Medicare but may include additional requirements from your private insurer.",
+        ],
+        callout: {
+          type: "info",
+          text: "Medicare Part B generally covers 80% of approved outpatient vein procedure costs after you meet your annual deductible. A Medigap (supplemental) policy may cover the remaining 20%.",
+        },
+      },
+      {
+        heading: "What Does \"Medically Necessary\" Mean for Vein Treatment?",
+        paragraphs: [
+          "Medicare defines medically necessary care as services or supplies that are needed to diagnose or treat a medical condition, meet accepted standards of medical practice, and are not primarily for the convenience of the patient or physician. For vein disease, this means your varicose veins must be causing documented symptoms — not simply appearing unattractive.",
+          "Medicare typically covers varicose vein treatment when you have one or more of the following:",
+        ],
+        bullets: [
+          "Chronic leg pain, heaviness, or fatigue directly linked to varicose veins",
+          "Significant leg or ankle swelling (edema) caused by venous insufficiency",
+          "Skin changes such as lipodermatosclerosis, hyperpigmentation, or venous eczema",
+          "Venous leg ulcers or a history of venous ulceration",
+          "Superficial thrombophlebitis (inflammation and clotting in a surface vein)",
+          "Documented chronic venous insufficiency confirmed by duplex ultrasound",
+          "Bleeding from varicose veins",
+        ],
+        keyTakeaway: "Symptoms, not appearance, drive Medicare coverage for varicose vein treatment.",
+      },
+      {
+        heading: "The Conservative Therapy Requirement",
+        paragraphs: [
+          "Even when symptoms are present, Medicare typically requires evidence that you have attempted conservative (non-surgical) therapy first — and that it has not adequately relieved your symptoms. This is commonly referred to as the \"conservative therapy trial\" requirement.",
+          "The most common form of conservative therapy Medicare looks for is graduated compression stockings, worn consistently for a period of weeks (often 6–12 weeks, though requirements vary by carrier). Your physician must document that you wore the stockings as directed and that your symptoms persisted or worsened despite compliance.",
+          "Other forms of conservative care that may satisfy this requirement include leg elevation, anti-inflammatory medications, and activity modification. At Schulman Vein and Laser Center, our physicians will guide you through the documentation process so that your insurance file accurately reflects your treatment history.",
+        ],
+        callout: {
+          type: "tip",
+          text: "Keep receipts for compression stockings and follow your physician's instructions precisely. Documented compliance with conservative therapy is one of the most common gaps in insurance approval — don't skip this step.",
+        },
+        imageSrc: "/images/blog/medicare-vein-treatment-coverage-new-york-3.jpg",
+        imageAlt: "Medical illustration of compression stockings and healthy venous blood flow, vein treatment New York",
+      },
+      {
+        heading: "What Medicare Does NOT Cover: Cosmetic Vein Treatment",
+        paragraphs: [
+          "Medicare explicitly excludes vein treatments that are performed solely for cosmetic reasons. If you have spider veins — the small, web-like red or purple vessels visible near the skin's surface — and they cause no pain, swelling, or medical complications, Medicare will not cover their removal.",
+          "Similarly, if varicose veins are present but entirely asymptomatic and you are seeking treatment for aesthetic reasons only, Medicare will deny coverage. This is a hard line in the coverage rules, and no amount of prior authorization paperwork will change it if symptoms cannot be documented.",
+          "That said, spider veins or varicose veins that do cause symptoms — such as itching, burning, or localized pain — may qualify for medically necessary treatment. The key is thorough documentation, which begins at your first consultation.",
+        ],
+        imageSrc: "/images/blog/medicare-vein-treatment-coverage-new-york-2.jpg",
+        imageAlt: "Physician reviewing vein treatment coverage options with a patient in a New York vein clinic",
+      },
+      {
+        heading: "How Duplex Ultrasound Supports Your Medicare Claim",
+        paragraphs: [
+          "A duplex ultrasound is a painless, non-invasive scan that maps blood flow in your veins and identifies reflux — the backward flow of blood that is the hallmark of venous insufficiency. This test is central to Medicare coverage for varicose vein treatment because it provides objective, documented evidence that your veins are medically compromised.",
+          "Without a duplex ultrasound confirming venous reflux or insufficiency, Medicare is unlikely to approve treatment — even if your veins are visibly large and symptomatic. At Schulman Vein and Laser Center, we perform duplex ultrasound in-office at our Manhattan, Manhasset, and Commack locations. The scan takes approximately 30–45 minutes and produces a detailed report that becomes part of your insurance documentation.",
+        ],
+      },
+      {
+        heading: "Medicare Advantage Plans: Additional Considerations",
+        paragraphs: [
+          "If you are enrolled in a Medicare Advantage (Part C) plan through a private insurer such as UnitedHealthcare, Humana, Aetna, or a regional plan, your vein treatment coverage follows the same general medical necessity rules as original Medicare — but your plan may layer on additional prior authorization requirements, network restrictions, or step therapy protocols.",
+          "Some Medicare Advantage plans require a referral from your primary care physician before you can see a vein specialist. Others require that you use in-network providers only. Before scheduling a consultation at Schulman Vein and Laser Center, call the member services number on the back of your insurance card to confirm our network status and ask whether prior authorization is required.",
+        ],
+        callout: {
+          type: "info",
+          text: "Schulman Vein and Laser Center participates with Medicare and many Medicare Advantage plans. Call our office to verify your specific plan before your appointment.",
+        },
+      },
+      {
+        heading: "Procedures Commonly Approved Under Medicare",
+        paragraphs: [
+          "When medical necessity criteria are met, Medicare has a consistent track record of approving the following procedures:",
+        ],
+        bullets: [
+          "Endovenous Laser Treatment (EVLT) — closes diseased great or small saphenous veins using laser energy; same-day, no general anesthesia required",
+          "Radiofrequency Ablation (RFA) — similar to EVLT but uses heat from radiofrequency energy; also outpatient with rapid recovery",
+          "Ultrasound-Guided Foam Sclerotherapy — treats larger varicose tributaries and feeder veins; often used in conjunction with ablation",
+          "Ambulatory Phlebectomy — removes large varicose vein segments through tiny skin incisions; local anesthesia only",
+          "Duplex Ultrasound Evaluation — diagnostic imaging; nearly always covered when symptoms are present",
+        ],
+        keyTakeaway: "Modern vein procedures are minimally invasive, performed in-office, and covered by Medicare when medical necessity is documented.",
+      },
+      {
+        heading: "What to Bring to Your First Appointment",
+        paragraphs: [
+          "Arriving prepared for your first vein consultation helps our team build a complete insurance file and move toward authorization without delays. Bring the following:",
+          "Our staff will verify your benefits before your appointment and walk you through any authorization steps required by your specific plan. We believe financial clarity is part of excellent patient care.",
+        ],
+        bullets: [
+          "Your Medicare card and any supplemental (Medigap) or Advantage plan card",
+          "A list of current medications and dosages",
+          "Any prior records of vein treatment, compression stocking purchases, or related physician notes",
+          "Photos of your legs at different times of day, if swelling fluctuates",
+          "A written summary of your symptoms — when they started, how they affect your daily life, and what makes them better or worse",
+        ],
+      },
+      {
+        heading: "Getting Started at Schulman Vein and Laser Center",
+        paragraphs: [
+          "Schulman Vein and Laser Center has been treating vein disease for decades, with Dr. Martin Schulman and Dr. Lee G. Schulman bringing more than 55 years of combined phlebology experience to patients across the New York metropolitan area. Our three locations — in Manhattan, Manhasset, and Commack — are fully equipped for diagnosis and treatment in a single, convenient setting.",
+          "If you are a Medicare patient wondering whether your vein symptoms qualify for covered treatment, the best first step is a free vein screening. During this no-cost visit, one of our specialists will assess your veins, review your symptoms, and give you a clear picture of your treatment options and likely insurance coverage — before any commitment is made.",
+          "You do not have to live with aching, swollen legs because you are unsure about costs. Let us help you navigate the insurance process so you can focus on feeling better.",
+        ],
+        callout: {
+          type: "tip",
+          text: "Book your complimentary Free Vein Screening at any of our New York locations — Manhattan, Manhasset, or Commack. No referral needed.",
+        },
+      },
+    ],
+    faqSection: [
+      {
+        question: "Does Medicare cover spider vein treatment?",
+        answer: "Generally no. Medicare considers spider vein removal (sclerotherapy for cosmetic veins) a cosmetic procedure and does not cover it. If spider veins are causing documented symptoms such as pain or burning, coverage may be possible — discuss your specific situation with our team.",
+      },
+      {
+        question: "How long does Medicare authorization take for vein treatment?",
+        answer: "Prior authorization timelines vary by procedure and Medicare Advantage plan. Original Medicare typically does not require prior authorization for most vein procedures, but some Medicare Advantage plans can take 1–3 weeks to process requests. Our office handles the authorization process on your behalf.",
+      },
+      {
+        question: "Do I need a referral to see a vein specialist on Medicare?",
+        answer: "Original Medicare (Parts A and B) does not require a referral to see a specialist. However, some Medicare Advantage (Part C) HMO plans do. Check your plan documents or call the number on your insurance card to confirm.",
+      },
+      {
+        question: "What is the Medicare deductible for vein treatment?",
+        answer: "In 2026, the Medicare Part B annual deductible is $257. After meeting the deductible, Medicare typically pays 80% of approved outpatient costs. A Medigap policy can cover the remaining 20% coinsurance. Actual out-of-pocket costs depend on your specific coverage.",
+      },
+      {
+        question: "Can I use Medicare at Schulman Vein and Laser Center?",
+        answer: "Yes. Schulman Vein and Laser Center accepts Medicare and many Medicare Advantage plans at our Manhattan, Manhasset, and Commack locations. Contact our office to verify your specific plan prior to your appointment.",
+      },
+    ],
+  },
+{
     slug: "vein-treatment-manhasset-long-island-new-york",
     title: "Vein Treatment in Manhasset and Long Island: What You Need to Know",
     excerpt: "Discover expert varicose and spider vein treatment on Long Island at Schulman Vein Center's Manhasset office. Board-certified care, same-day recovery, free screening.",
