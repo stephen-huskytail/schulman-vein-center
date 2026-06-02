@@ -10,9 +10,13 @@ const GALLERY_ITEMS = [
   { category: "Spider Veins", before: "/images/gallery/spider-veins-7.png", label: "Spider Veins – Patient 7" },
   { category: "Varicose Veins", before: "/images/gallery/varicose-large.png", label: "Enlarged Varicose Veins" },
   { category: "Varicose Veins", before: "/images/gallery/varicose-veins.png", label: "Varicosities in Leg" },
+  { category: "Hand Veins", before: "/images/gallery/hand-veins-11.png", label: "Hand Veins – Before & After" },
+  { category: "Hand Veins", before: "/images/gallery/hand-veins-12.jpg", label: "Hand Veins – Before & After" },
+  { category: "Hand Veins", before: "/images/gallery/hand-veins-13.png", label: "Hand Veins – Before & After" },
+  { category: "Hand Veins", before: "/images/gallery/foot-veins-1.jpg", label: "Foot Veins – Before & After" },
 ];
 
-const CATEGORIES = ["All", "Spider Veins", "Varicose Veins", "Hand Veins"];
+const CATEGORIES = ["All", "Spider Veins", "Varicose Veins", "Hand Veins", "Foot Veins"];
 
 export default function GallerySection() {
   const [active, setActive] = useState("All");
