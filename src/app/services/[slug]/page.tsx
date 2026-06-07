@@ -108,12 +108,34 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
     },
   };
 
+  const allFaqs = expandedContent
+    ? [...expandedContent.faqs, ...expandedContent.localFaqs]
+    : [];
+
+  const faqSchema = allFaqs.length > 0
+    ? {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: allFaqs.map((faq) => ({
+          "@type": "Question",
+          name: faq.q,
+          acceptedAnswer: { "@type": "Answer", text: faq.a },
+        })),
+      }
+    : null;
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(medicalProcedureSchema) }}
       />
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
       <PageHero
         eyebrow="Service Detail"
         title={service.name}

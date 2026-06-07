@@ -112,8 +112,21 @@ export default async function LocationDetailPage({ params }: LocationPageProps) 
           closes: to24HourTime(close),
         };
       }),
-    areaServed: `${location.city}, ${location.state}`,
+    areaServed: location.communitiesServed,
+    hasMap: location.mapUrl,
   };
+
+  const faqSchema = location.locationFaqs.length > 0
+    ? {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: location.locationFaqs.map((faq) => ({
+          "@type": "Question",
+          name: faq.q,
+          acceptedAnswer: { "@type": "Answer", text: faq.a },
+        })),
+      }
+    : null;
 
   return (
     <>
@@ -121,6 +134,12 @@ export default async function LocationDetailPage({ params }: LocationPageProps) 
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
       />
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
 
       <PageHero
         eyebrow={`Location: ${location.shortName}`}

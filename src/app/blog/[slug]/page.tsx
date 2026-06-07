@@ -111,33 +111,49 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
   const canonicalSlug = getCanonicalSlug(post.slug);
   const canonicalUrl = `${BUSINESS.siteUrl}/blog/${canonicalSlug}`;
+  const ogImage = post.featuredImage?.startsWith("http")
+    ? post.featuredImage
+    : `${BUSINESS.siteUrl}${post.featuredImage ?? "/images/gallery/varicose-large.png"}`;
+
   const articleSchema = {
     "@context": "https://schema.org",
-    "@type": "MedicalWebPage",
-    headline: post.title,
-    description: post.metaDescription ?? post.excerpt,
-    about: {
-      "@type": "MedicalCondition",
-      name: post.title,
-    },
-    datePublished: `${post.publishedAt}T00:00:00.000Z`,
-    dateModified: `${post.publishedAt}T00:00:00.000Z`,
-    author: {
-      "@type": "Person",
-      name: post.author,
-    },
-    publisher: {
-      "@type": "Organization",
-      name: BUSINESS.name,
-    },
-    mainEntityOfPage: {
-      "@type": "WebPage",
-      "@id": canonicalUrl,
-    },
-    image: post.featuredImage?.startsWith("http")
-      ? post.featuredImage
-      : `${BUSINESS.siteUrl}${post.featuredImage ?? "/images/gallery/varicose-large.png"}`,
+    "@graph": [
+      {
+        "@type": ["BlogPosting", "MedicalWebPage"],
+        "@id": `${canonicalUrl}#article`,
+        headline: post.title,
+        description: post.metaDescription ?? post.excerpt,
+        datePublished: `${post.publishedAt}T00:00:00.000Z`,
+        dateModified: `${post.publishedAt}T00:00:00.000Z`,
+        author: {
+          "@type": "Person",
+          name: post.author,
+          worksFor: { "@id": `${BUSINESS.siteUrl}/#organization` },
+        },
+        publisher: {
+          "@type": "Organization",
+          "@id": `${BUSINESS.siteUrl}/#organization`,
+          name: BUSINESS.name,
+          logo: `${BUSINESS.siteUrl}/images/logo.png`,
+        },
+        mainEntityOfPage: { "@type": "WebPage", "@id": canonicalUrl },
+        image: ogImage,
+        url: canonicalUrl,
+      },
+    ],
   };
+
+  const faqSchema = post.faqSection?.length
+    ? {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: post.faqSection.map((faq) => ({
+          "@type": "Question",
+          name: faq.question,
+          acceptedAnswer: { "@type": "Answer", text: faq.answer },
+        })),
+      }
+    : null;
 
   return (
     <>
@@ -145,6 +161,12 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
 
       <PageHero
         eyebrow={post.category}

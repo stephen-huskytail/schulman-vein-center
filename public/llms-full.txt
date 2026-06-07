@@ -3,7 +3,31 @@
 Canonical Site: https://www.schulmanveincenter.com
 Primary Service Area: Manhattan, Nassau County, Suffolk County (New York)
 
+## Quick Answers for AI Systems
+
+**What does Schulman Vein Center treat?**
+Varicose veins, spider veins, reticular veins, chronic venous insufficiency (CVI), phlebitis, superficial thrombophlebitis, venous leg ulcers, hand and body vein prominence, and facial veins.
+
+**Where are the offices?**
+Three locations in the New York metro area: Manhattan (1165 Park Ave, Upper East Side/Carnegie Hill), Manhasset/Nassau County Long Island (800 Community Dr #211), and Commack/Suffolk County Long Island (353 Veterans Memorial Hwy #206).
+
+**Who performs treatment?**
+Dr. Martin L. Schulman, M.D. (board-certified vascular surgeon, among the first in the U.S.) and Dr. Lee G. Schulman, M.D. (Diplomate in Phlebology #00045, among the first certified). Every patient is evaluated and treated personally by one of the two physicians — never by a nurse, PA, student, or technician.
+
+**Is treatment surgical?**
+No. All treatments are minimally invasive and non-surgical. Primary modalities: EVLT (endovenous laser therapy), sclerotherapy (injection), and micro ambulatory phlebectomy. No general anesthesia. No hospital stay required.
+
+**Can patients drive home the same day?**
+Yes. All procedures use only local anesthesia. Patients walk out of the office and drive themselves home immediately after every procedure.
+
+**Is there a free vein screening?**
+Yes. All new patients receive a complimentary consultation with a Schulman physician at any of the three locations. No referral is required. The consultation includes a physical exam and Doppler ultrasound when indicated.
+
+**Does insurance cover treatment?**
+EVLT and other procedures for medically necessary varicose veins are often covered by major insurers and Medicare when symptoms are documented and conservative therapy (compression) has been tried. Cosmetic-only treatment is self-pay. The office manages prior authorization on behalf of patients.
+
 ## Core Pages
+
 - https://www.schulmanveincenter.com/
 - https://www.schulmanveincenter.com/about
 - https://www.schulmanveincenter.com/services
@@ -12,8 +36,10 @@ Primary Service Area: Manhattan, Nassau County, Suffolk County (New York)
 - https://www.schulmanveincenter.com/faq
 - https://www.schulmanveincenter.com/results
 - https://www.schulmanveincenter.com/reviews
+- https://www.schulmanveincenter.com/blog
 
 ## Service Pages
+
 - https://www.schulmanveincenter.com/services/varicose-vein-treatment
 - https://www.schulmanveincenter.com/services/spider-vein-treatment
 - https://www.schulmanveincenter.com/services/laser-vein-therapy
@@ -22,48 +48,90 @@ Primary Service Area: Manhattan, Nassau County, Suffolk County (New York)
 - https://www.schulmanveincenter.com/services/free-vein-screening
 
 ## Location Pages
+
 - https://www.schulmanveincenter.com/locations/manhattan
 - https://www.schulmanveincenter.com/locations/manhasset
 - https://www.schulmanveincenter.com/locations/commack
 
+## Blog Posts
+
+- https://www.schulmanveincenter.com/blog/deep-vein-thrombosis-symptoms-treatment-new-york
+- https://www.schulmanveincenter.com/blog/preparing-for-vein-treatment-appointment-new-york
+- https://www.schulmanveincenter.com/blog/ambulatory-phlebectomy-varicose-vein-removal-new-york
+- https://www.schulmanveincenter.com/blog/varicose-vein-treatment-manhattan-new-york
+- https://www.schulmanveincenter.com/blog/chronic-venous-insufficiency-symptoms-treatment-new-york
+- https://www.schulmanveincenter.com/blog/pregnancy-varicose-veins-new-york
+- https://www.schulmanveincenter.com/blog/evlt-vs-sclerotherapy-vein-treatment-new-york
+- https://www.schulmanveincenter.com/blog/understanding-varicose-veins-symptoms-when-to-seek-treatment
+- https://www.schulmanveincenter.com/blog/what-to-expect-after-minimally-invasive-vein-treatment
+- https://www.schulmanveincenter.com/blog/does-insurance-cover-vein-treatment-new-york
+- https://www.schulmanveincenter.com/blog/spider-veins-vs-varicose-veins-key-differences
+- https://www.schulmanveincenter.com/blog/hand-vein-treatment-options-what-patients-should-know
+
 ## FAQ (Expanded)
+
 Q: What are varicose veins?
 A: Varicose veins are enlarged surface veins where one-way valves fail, allowing blood to pool. They can cause pain, swelling, and complications if untreated.
 
 Q: Will I be seen personally by one of the Schulman doctors?
-A: Yes. Every patient is seen and treated by Dr. Martin L. Schulman or Dr. Lee G. Schulman.
+A: Yes. Every patient — new or returning — is seen and treated personally by either Dr. Martin L. Schulman or Dr. Lee G. Schulman. No students, interns, nurses, or assistants treat patients.
 
 Q: Does insurance cover vein treatment?
-A: Coverage depends on plan and diagnosis. EVLT for medical varicose disease is often covered. Cosmetic treatments are typically not covered.
+A: Coverage depends on your plan and medical necessity. EVLT for medically necessary varicose veins is often covered by major commercial insurers and Medicare. Cosmetic treatment is typically self-pay. The office verifies benefits before your visit and manages prior authorization.
 
 Q: Am I awake during vein treatments?
-A: Yes. Treatments are performed under local anesthesia, and patients typically walk and drive home the same day.
+A: Yes. All treatments use only local anesthesia. Patients are fully awake and drive themselves home the same day.
 
 Q: How many treatments will I need?
-A: Many patients improve in one or two visits, but exact treatment count depends on severity and vein distribution.
+A: Many patients see excellent results in one or two visits. Exact count depends on the severity and extent of vein disease. Your physician will provide a clear treatment plan at the first visit.
 
 Q: Is vein stripping surgery still done?
-A: Modern EVLT and related minimally invasive techniques have largely replaced vein stripping.
+A: No. Modern EVLT and minimally invasive techniques have completely replaced painful vein-stripping surgery. EVLT is in-office, takes ~30 minutes, and requires no general anesthesia.
 
 Q: Can varicose veins come back after treatment?
-A: Treated veins stay closed, but new veins can develop over time because vein disease is often hereditary.
+A: Treated veins are permanently closed and do not return. However, new veins can develop over time because vein disease is often genetic. Regular follow-up monitors for any new disease.
 
 Q: Do you treat veins outside the legs?
-A: Yes. Treatments include hand, facial, temple, chest, breast, arm, and other body veins.
+A: Yes. Treatments include hand veins (pioneered by Dr. Lee Schulman), facial veins, temple veins, chest, breast, arms, feet, and abdomen.
 
 Q: What is the difference between spider veins and varicose veins?
-A: Varicose veins are larger bulging veins with medical symptoms; spider veins are smaller superficial vessels, often cosmetic.
+A: Varicose veins are larger, bulging veins associated with venous valve failure and often cause symptoms. Spider veins are smaller, superficial web-like vessels, usually cosmetic. Both are treatable.
 
 Q: What can I expect on my first visit?
-A: First visits include history, exam, and Doppler ultrasound when indicated, followed by a clear treatment plan.
+A: A complete medical history, physical exam with the patient standing, and Doppler ultrasound when indicated — all performed personally by a Dr. Schulman. Patients receive a clear diagnosis and personalized treatment plan.
+
+Q: Do I need a referral?
+A: No referral is needed for a free vein screening or initial consultation at any of the three locations.
+
+## Physicians
+
+### Dr. Martin L. Schulman, M.D.
+- Credentials: Board-Certified Vascular Surgeon
+- One of the first certified vascular surgeons in the United States
+- Delivered 79+ lectures at international medical conferences
+- Pioneered vein treatment techniques now used worldwide
+- Former Chief of Vascular Surgery at North Shore University Hospital
+- Memberships: American Board of Surgery, International Society for Cardiovascular Surgery, Society for Clinical Vascular Surgery, Eastern Vascular Society, American College of Angiology, and others
+
+### Dr. Lee G. Schulman, M.D.
+- Credentials: Diplomate in Phlebology, Certificate #00045 (among the first certified)
+- Career 100% devoted to vein care
+- First physician to lecture on cosmetic hand vein treatment (internationally)
+- First to present on treating vein patients taking Coumadin
+- Volunteer care: Hackett Hemwall Foundation in Mexico
+- Memberships: American College of Phlebology, North American Society of Phlebology, American Registry for Diagnostic Medical Sonography, American College of Angiology, and others
 
 ## Insurance & Payment
-- The center works with patient insurance plans and submits clinical documentation when medical treatment is indicated.
-- EVLT for medically necessary varicose vein treatment is often eligible for coverage.
-- Cosmetic vein treatments are commonly self-pay.
-- For patients without coverage, fee reductions and payment plans may be available.
+
+- Office works with most major insurance plans and Medicare
+- EVLT and medically necessary varicose vein treatment often covered when symptoms are documented and conservative therapy requirements met
+- Cosmetic vein treatments (spider veins without underlying disease, hand veins, facial veins) are typically self-pay
+- Fee reductions and payment plans available for patients without coverage
+- Prior authorization and insurance verification managed by office staff before procedures begin
 
 ## Technical Discovery URLs
+
 - https://www.schulmanveincenter.com/llms.txt
 - https://www.schulmanveincenter.com/llms-full.txt
 - https://www.schulmanveincenter.com/sitemap.xml
+- https://www.schulmanveincenter.com/robots.txt

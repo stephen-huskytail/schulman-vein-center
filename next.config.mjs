@@ -1,7 +1,28 @@
+import { fileURLToPath } from "url";
+import { dirname } from "path";
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  outputFileTracingRoot: __dirname,
   // Compress responses
   compress: true,
+
+  async redirects() {
+    return [
+      {
+        source: "/blog/what-are-varicose-veins-causes-symptoms-treatment-new-york",
+        destination: "/blog/varicose-vein-treatment-manhattan-new-york",
+        permanent: true,
+      },
+      {
+        source: "/blog/evlt-vs-sclerotherapy-which-treatment-is-right",
+        destination: "/blog/evlt-vs-sclerotherapy-vein-treatment-new-york",
+        permanent: true,
+      },
+    ];
+  },
 
   async headers() {
     return [
