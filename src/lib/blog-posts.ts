@@ -47,6 +47,156 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
 {
+    slug: "vein-treatment-commack-new-york",
+    title: "Vein Treatment in Commack, New York: What Long Island Patients Need to Know",
+    excerpt: "Discover expert varicose vein and spider vein treatment at Schulman Vein Center's Commack office — serving all of Long Island's Suffolk County with same-day recovery procedures.",
+    category: "Vein Health",
+    publishedAt: "2026-06-10",
+    readTimeMinutes: 8,
+    author: "Dr. Lee G. Schulman",
+    metaTitle: "Vein Treatment in Commack NY | Schulman Vein Center Long Island",
+    metaDescription: "Board-certified vein specialists serving Commack and all of Suffolk County. Learn about varicose vein treatment options, insurance coverage, and free screenings near you.",
+    ogDescription: "Board-certified vein specialists serving Commack and all of Suffolk County. Learn about varicose vein treatment options, insurance coverage, and free screenings near you.",
+    featuredImage: "/images/blog/vein-treatment-commack-new-york.jpg",
+    featuredImageAlt: "Vein treatment clinic in Commack New York serving Suffolk County Long Island patients",
+    relatedLinks: [
+      { label: "Varicose Vein Treatment", href: "/services/varicose-vein-treatment" },
+      { label: "Spider Vein Treatment", href: "/services/spider-vein-treatment" },
+      { label: "Laser Vein Therapy (EVLT)", href: "/services/laser-vein-therapy" },
+      { label: "Free Vein Screening", href: "/services/free-vein-screening" },
+    ],
+    quickSummary: [
+      "Schulman Vein and Laser Center's Commack office serves all of Suffolk County with board-certified vein care.",
+      "Minimally invasive treatments — EVLT, sclerotherapy, ambulatory phlebectomy — are performed in-office with same-day recovery.",
+      "Most medically necessary vein treatments are covered by insurance, including Medicare and major commercial plans.",
+      "A Free Vein Screening at our Commack office is available with no referral required.",
+      "Our Commack location makes expert vein care accessible to patients across central and western Suffolk County.",
+    ],
+    body: [
+      {
+        heading: "Expert Vein Care on Long Island — Right in Commack",
+        paragraphs: [
+          "For patients across Suffolk County, traveling into Manhattan for vein treatment has long felt like an unnecessary burden. Schulman Vein and Laser Center's Commack office changes that equation. Located at 175 Commack Road, our Long Island practice brings the same internationally recognized expertise — and the same FDA-approved, minimally invasive treatments — that our Manhattan and Manhasset patients have relied on for decades.",
+          "Dr. Martin Schulman and Dr. Lee G. Schulman have combined more than 55 years of specialized phlebology experience. Their approach is straightforward: every patient receives a thorough evaluation, a clear explanation of their condition, and a treatment plan calibrated to their specific anatomy, symptoms, and lifestyle. No unnecessary procedures. No pressure. Just expert care that gets results.",
+          "Whether you are dealing with bulging varicose veins, cosmetically bothersome spider veins, or the chronic aching and heaviness of venous insufficiency, our Commack team is equipped to help.",
+        ],
+        keyTakeaway: "Commack-area patients now have access to the same board-certified vein expertise as Schulman Vein Center's Manhattan flagship — without leaving Long Island.",
+      },
+      {
+        heading: "Who Seeks Vein Treatment at Our Commack Office?",
+        paragraphs: [
+          "Venous disease is far more common than most people realize. Approximately 40 million Americans have varicose veins, and a significant portion of those cases involve underlying venous insufficiency — a condition in which the one-way valves inside leg veins fail to close properly, allowing blood to flow backward and pool in the lower extremities.",
+          "Our Commack patients come from across western and central Suffolk County: Commack itself, Huntington, Smithtown, Hauppauge, Deer Park, Brentwood, Dix Hills, and beyond. They range in age, background, and vein condition severity — but they tend to share a common experience: they have been living with uncomfortable or unsightly veins longer than they needed to, often because they did not know how accessible treatment had become.",
+        ],
+        bullets: [
+          "Visible varicose veins — rope-like, bulging veins on the thighs or calves that may be painful or tender to the touch",
+          "Spider veins — fine red, blue, or purple web-like clusters near the surface of the skin, commonly on the legs and ankles",
+          "Chronic venous insufficiency (CVI) — persistent leg heaviness, aching, swelling, and fatigue that worsens after standing",
+          "Skin changes — brownish discoloration, leathery texture, or early signs of venous ulceration near the ankles",
+          "Restless leg symptoms — nighttime discomfort and cramping associated with underlying venous disease",
+        ],
+        keyTakeaway: "Venous disease affects patients of every age and activity level — and most cases are both treatable and at least partially covered by insurance.",
+      },
+      {
+        heading: "Treatments Available at Our Commack Location",
+        paragraphs: [
+          "Schulman Vein Center's Commack office offers the full range of minimally invasive vein treatments that have replaced surgical vein stripping as the standard of care. All procedures are performed in-office under local anesthesia, and most patients return to their normal daily activities the same day or the day after.",
+        ],
+        bullets: [
+          "Endovenous Laser Therapy (EVLT) — The gold standard for treating larger varicose veins caused by saphenous vein insufficiency. A thin laser fiber is inserted into the affected vein under ultrasound guidance, delivering targeted energy that causes the vein to close permanently. The procedure takes approximately 45 minutes, and patients walk out of the office the same day.",
+          "Sclerotherapy — A precisely injected solution causes the targeted vein to collapse and be reabsorbed by the body over several weeks. Sclerotherapy is used for both spider veins and smaller varicose veins. Multiple sessions may be recommended for optimal results.",
+          "Ultrasound-Guided Sclerotherapy — For veins that cannot be seen at the surface, we use duplex ultrasound to guide injections with pinpoint accuracy. This technique is particularly effective for perforator veins and reticular veins feeding visible clusters.",
+          "Ambulatory Phlebectomy — Larger surface varicose veins that do not respond to laser treatment may be removed through tiny, puncture-size incisions using a micro-hook technique. No stitches are required, and scarring is minimal.",
+          "Compression Therapy — Medical-grade compression stockings are often recommended as a first-line management tool and as part of post-procedure recovery. Our staff can help patients select the appropriate compression class for their condition.",
+        ],
+        imageSrc: "/images/blog/vein-treatment-commack-new-york-2.jpg",
+        imageAlt: "Vein specialist consultation at Schulman Vein Center Commack Long Island office",
+        keyTakeaway: "All procedures at our Commack office are performed in-office with local anesthesia — no hospital stay, no general anesthesia, same-day recovery.",
+      },
+      {
+        heading: "Does Insurance Cover Vein Treatment in Commack?",
+        paragraphs: [
+          "One of the most common concerns we hear from Long Island patients is about cost. The good news: most medically necessary vein treatments are covered by health insurance — including Medicare and the majority of commercial plans accepted at our Commack office.",
+          "The key distinction is medical necessity versus cosmetic treatment. Spider vein removal that is purely cosmetic is typically not covered. However, varicose veins that cause documented symptoms — pain, swelling, heaviness, skin changes, or venous ulcers — generally meet medical necessity criteria and qualify for coverage. EVLT and ultrasound-guided sclerotherapy for symptomatic venous insufficiency are routinely covered when properly documented.",
+          "Our team at the Commack office handles insurance verification and prior authorization on your behalf. We will review your specific plan, explain what is covered, and help you understand any out-of-pocket costs before you commit to treatment. We accept most major insurance plans as well as Medicare.",
+        ],
+        callout: {
+          type: "info",
+          text: "Wondering if your vein treatment will be covered? Call our Commack office at 631.543.4599 and our insurance team will verify your benefits before your appointment — no surprises.",
+        },
+        keyTakeaway: "Symptomatic varicose veins treated with EVLT or sclerotherapy are commonly covered by insurance when medical necessity is documented — our team handles the verification for you.",
+      },
+      {
+        heading: "What to Expect at Your First Visit",
+        paragraphs: [
+          "Your initial visit to our Commack office begins with a comprehensive vein evaluation. One of our physicians will take a detailed medical history, ask about your symptoms, and perform a physical examination of your legs. In most cases, we will also perform a duplex ultrasound study — a painless, non-invasive imaging test that maps the venous anatomy of your legs and identifies any underlying reflux or insufficiency that may not be visible on the surface.",
+          "Based on the evaluation findings, your physician will explain exactly what is happening in your venous system, which veins are affected, and what treatment options are appropriate. You will have the opportunity to ask questions and discuss your goals — whether your primary concern is symptom relief, cosmetic improvement, or both.",
+          "There is no pressure to proceed with treatment at your first visit. Our goal is to ensure you have the information you need to make a confident, informed decision.",
+        ],
+        imageSrc: "/images/blog/vein-treatment-commack-new-york-3.jpg",
+        imageAlt: "Minimally invasive laser vein treatment procedure at Schulman Vein Center New York",
+        callout: {
+          type: "tip",
+          text: "Wear or bring loose, comfortable clothing to your first appointment — we will need to examine your legs above the knee. Leave compression stockings at home the day of your evaluation so we can get an accurate baseline assessment.",
+        },
+      },
+      {
+        heading: "Why Commack Patients Choose Schulman Vein Center",
+        paragraphs: [
+          "There are many reasons Suffolk County patients travel to our Commack office rather than seeking care elsewhere. Beyond the depth of clinical experience our physicians bring, patients consistently cite a few factors that set Schulman Vein Center apart.",
+          "First, specialization. Schulman Vein Center does one thing and does it extraordinarily well. Our tagline — 'All We Do Is Veins™' — is not marketing language. It is a statement of philosophy. Every member of our clinical team is focused exclusively on venous disease. That level of specialization translates directly to better outcomes.",
+          "Second, technology. We invest in the latest ultrasound imaging equipment and laser platforms to ensure our procedures are precise, effective, and comfortable. Duplex ultrasound guidance is used routinely — not just for complex cases.",
+          "Third, outcomes. Our practice has earned a 5.0-star rating across more than 200 Google Reviews from patients at all three of our locations. That level of consistent satisfaction reflects a culture of care that extends beyond the procedure itself.",
+        ],
+        bullets: [
+          "Board-certified phlebologists with 55+ years combined experience",
+          "FDA-approved minimally invasive treatments — no surgery, no hospital",
+          "Same-day recovery — most patients return to normal activities the next day",
+          "5.0-star rating on Google across Manhattan, Manhasset, and Commack offices",
+          "In-network with Medicare and most major insurance plans",
+          "Free Vein Screening available — no referral required",
+        ],
+        keyTakeaway: "Schulman Vein Center brings Manhattan-level vein expertise to Commack — with the added convenience of a Long Island location and same-day recovery procedures.",
+      },
+      {
+        heading: "Serving All of Suffolk County from Commack",
+        paragraphs: [
+          "Our Commack office is conveniently located on Commack Road with easy access from the Northern State Parkway and the Long Island Expressway. Patients travel to us from throughout western and central Suffolk County, including Huntington, Smithtown, Hauppauge, Brentwood, Deer Park, Dix Hills, Kings Park, Nesconset, and surrounding communities.",
+          "For patients in eastern Suffolk who prefer a longer commute for the level of specialized care we provide, our team is happy to accommodate. And for patients who prefer to be seen at our Manhattan or Manhasset offices, we welcome coordination across all three locations.",
+          "If you have been living with uncomfortable or visible veins and putting off treatment, there has never been a better time to take the first step. A Free Vein Screening at our Commack office is available with no referral required and no obligation — just a thorough evaluation and an honest conversation about your options.",
+          "To schedule your free screening, call us at 631.543.4599 or visit our contact page. Our team is ready to help you put vein discomfort behind you — for good.",
+        ],
+        callout: {
+          type: "tip",
+          text: "Book your Free Vein Screening at our Commack office today — call 631.543.4599 or schedule online. No referral needed. Same-day recovery treatments available.",
+        },
+        keyTakeaway: "Our Commack office is accessible from across Suffolk County — call 631.543.4599 to schedule your Free Vein Screening with no referral required.",
+      },
+    ],
+    faqSection: [
+      {
+        question: "Where is Schulman Vein Center's Commack office located?",
+        answer: "Our Commack office is located at 175 Commack Road, Commack, NY. We are easily accessible from the Northern State Parkway and the Long Island Expressway, and serve patients from throughout western and central Suffolk County. Call us at 631.543.4599.",
+      },
+      {
+        question: "Do I need a referral to see a vein specialist in Commack?",
+        answer: "No referral is required to schedule a Free Vein Screening at our Commack office. You can call us directly at 631.543.4599 or book online. Our physicians will perform a full evaluation, including duplex ultrasound, at your first visit.",
+      },
+      {
+        question: "Is vein treatment painful?",
+        answer: "Most patients describe our procedures as mildly uncomfortable rather than painful. EVLT is performed under local anesthesia, and sclerotherapy involves small injections that cause only minor stinging. Most patients walk out of the office the same day and return to normal activities within 24 hours.",
+      },
+      {
+        question: "How long does vein treatment take?",
+        answer: "EVLT procedures typically take 45–60 minutes per leg. Sclerotherapy sessions are usually 30–45 minutes. Most treatment plans involve 1–3 sessions depending on the extent of venous disease. Your physician will provide a realistic timeline based on your specific anatomy.",
+      },
+      {
+        question: "Does insurance cover vein treatment at the Commack office?",
+        answer: "Medically necessary vein treatments — including EVLT and ultrasound-guided sclerotherapy for symptomatic venous insufficiency — are covered by most insurance plans and Medicare when documentation requirements are met. Our team verifies your benefits before your first appointment. Cosmetic-only spider vein treatment is generally not covered.",
+      },
+    ],
+},
+{
     slug: "exercise-vein-health-new-york",
     title: "Exercise and Vein Health: The Best (and Worst) Workouts for Your Veins",
     excerpt: "Discover which exercises strengthen vein health and which ones put your veins at risk — plus when New York patients should see a vein specialist before hitting the gym.",
