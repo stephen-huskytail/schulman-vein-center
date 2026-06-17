@@ -47,6 +47,158 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
 {
+  slug: "travel-dvt-prevention-vein-health-new-york",
+  title: "Travel and DVT: How to Protect Your Veins on Long Flights and Road Trips",
+  excerpt: "Long flights and road trips can raise your DVT risk. Learn symptoms to watch for and how to protect your leg vein health while traveling this summer.",
+  category: "Vein Health",
+  publishedAt: "2026-06-17",
+  readTimeMinutes: 8,
+  author: "Dr. Lee G. Schulman",
+  metaTitle: "Travel & DVT Prevention: Protect Your Veins on Long Trips | NY",
+  metaDescription: "Learn how long flights and road trips increase your DVT risk — and the proven steps New York patients can take to protect vein health while traveling.",
+  ogDescription: "Learn how long flights and road trips increase your DVT risk — and the proven steps New York patients can take to protect vein health while traveling.",
+  featuredImage: "/images/blog/travel-dvt-prevention-vein-health-new-york.jpg",
+  featuredImageAlt: "Passenger in airplane seat with vein circulation illustration showing DVT risk during travel",
+  relatedLinks: [
+    { label: "Vein Disorders", href: "/services/vein-disorders" },
+    { label: "Laser Vein Therapy (EVLT)", href: "/services/laser-vein-therapy" },
+    { label: "Varicose Vein Treatment", href: "/services/varicose-vein-treatment" },
+    { label: "Free Vein Screening", href: "/services/free-vein-screening" },
+  ],
+  quickSummary: [
+    "Sitting for more than 4 hours on a flight or road trip significantly increases your risk of deep vein thrombosis (DVT).",
+    "Symptoms include leg swelling, calf pain, warmth, and redness — seek care immediately if these appear after travel.",
+    "Compression socks, regular movement, and hydration are the most effective prevention strategies.",
+    "Patients with varicose veins, a history of DVT, or clotting disorders face elevated risk and should consult a vein specialist before long trips.",
+    "A Free Vein Screening at Schulman Vein and Laser Center can assess your risk and help you travel safely.",
+  ],
+  body: [
+    {
+      heading: "Why Travel Puts Your Veins at Risk",
+      paragraphs: [
+        "For most people, a long flight or cross-country road trip is simply an inconvenience. For your veins, it can be a genuine health risk. Extended periods of sitting — particularly when confined to a small seat with limited legroom — slow the flow of blood through the deep veins of your legs. Over several hours, this sluggish circulation can allow a blood clot to form, a condition known as deep vein thrombosis, or DVT.",
+        "DVT is not rare. Research estimates that one in every 1,000 Americans develops a DVT each year, and travel is one of the most commonly identified triggers. The risk roughly doubles on flights longer than four hours and continues to increase with each additional hour of immobility. Road trips carry the same risk — sitting behind the wheel for hours at a stretch is just as taxing on your veins as sitting in an airplane seat.",
+        "At Schulman Vein and Laser Center, we see patients every year who develop vein complications after travel — sometimes as a direct consequence, sometimes as a wakeup call that underlying venous disease needed attention sooner. Understanding your risk before you travel, and taking a few targeted precautions, can make all the difference.",
+      ],
+    },
+    {
+      heading: "What Is DVT and Why Is It Dangerous?",
+      paragraphs: [
+        "Deep vein thrombosis occurs when a blood clot (thrombus) forms in one of the deep veins — most commonly in the calf or thigh. Unlike the superficial veins visible under the skin, the deep veins carry the majority of blood back to the heart. A clot in these vessels disrupts that flow and, more seriously, can break off and travel to the lungs.",
+        "When a clot reaches the lungs, it causes a pulmonary embolism — a potentially life-threatening blockage that requires immediate emergency treatment. The connection between travel, DVT, and pulmonary embolism is well-documented enough that the condition is sometimes called 'economy class syndrome,' though it affects travelers in all cabin classes and in cars equally.",
+        "Even DVTs that don't travel to the lungs can cause lasting damage. Post-thrombotic syndrome — chronic leg pain, swelling, and skin changes — affects up to half of all DVT patients and can persist for years. Early detection and treatment are critical to preventing these long-term consequences.",
+      ],
+      callout: {
+        type: "warning",
+        text: "If you develop sudden calf pain, leg swelling, or shortness of breath during or shortly after travel, seek emergency care immediately. These can be signs of DVT or pulmonary embolism.",
+      },
+    },
+    {
+      heading: "Recognizing the Warning Signs",
+      paragraphs: [
+        "DVT doesn't always announce itself dramatically. In fact, roughly half of all DVTs produce no symptoms at all — which is one reason regular vein health screenings matter for frequent travelers. When symptoms do appear, they typically include:",
+      ],
+      bullets: [
+        "Swelling in one leg, usually the calf or ankle",
+        "A dull ache, cramping, or tightness in the calf or thigh",
+        "Skin that feels warm or looks red over the affected area",
+        "Skin that appears pale, bluish, or mottled",
+        "Shortness of breath, chest pain, or rapid heartbeat (signs that a clot may have reached the lungs — call 911 immediately)",
+      ],
+      paragraphs: [
+        "Symptoms can appear during travel or within hours to days afterward. If you notice any of these warning signs after a long trip, do not wait to see if they improve on their own. Call our office or go directly to an emergency room.",
+      ],
+      keyTakeaway: "Symptoms may be subtle — leg warmth, swelling, or aching after travel always warrant evaluation.",
+    },
+    {
+      heading: "Who Is Most at Risk?",
+      paragraphs: [
+        "Anyone who sits still for prolonged periods can develop a travel-related DVT, but certain factors substantially increase that risk. Patients we consider at elevated risk include those with:",
+      ],
+      bullets: [
+        "A personal or family history of DVT or pulmonary embolism",
+        "Known varicose veins or chronic venous insufficiency",
+        "Clotting disorders (thrombophilias such as Factor V Leiden or protein C deficiency)",
+        "Recent surgery, injury, or hospitalization (particularly orthopedic procedures)",
+        "Active cancer or a history of cancer treatment",
+        "Pregnancy or recent childbirth (within 6 weeks postpartum)",
+        "Obesity (BMI over 30)",
+        "Use of estrogen-containing medications (birth control pills, hormone replacement therapy)",
+        "Age over 60",
+        "Dehydration",
+      ],
+      paragraphs: [
+        "If two or more of these factors apply to you, we strongly recommend scheduling a vein evaluation before any long-haul travel. A brief consultation with Dr. Schulman can identify your individual risk level and help you plan preventive measures — or identify underlying venous disease that needs treatment before your trip.",
+      ],
+    },
+    {
+      heading: "Proven Strategies to Protect Your Veins While Traveling",
+      paragraphs: [
+        "The good news: DVT is largely preventable with the right precautions. The following evidence-based strategies are what we recommend to our patients who travel regularly or are planning long trips.",
+      ],
+      imageSrc: "/images/blog/travel-dvt-compression-socks.jpg",
+      imageAlt: "Medical compression socks showing improved vein blood flow for travel DVT prevention",
+      bullets: [
+        "Wear graduated compression socks or stockings (20–30 mmHg) for the duration of the trip — they're the single most effective non-pharmacological prevention strategy",
+        "Get up and walk for at least 5 minutes every 1–2 hours on flights; on road trips, stop every 90 minutes",
+        "Perform seated leg exercises continuously: ankle circles, heel raises, and knee lifts keep blood moving when you can't stand",
+        "Stay well hydrated — dehydration thickens the blood and increases clotting risk; avoid alcohol and excessive caffeine",
+        "Choose an aisle seat on flights to make it easier to stand and move",
+        "Avoid crossing your legs, which compresses veins and further restricts flow",
+        "Wear loose, comfortable clothing that doesn't restrict the waist, hips, or legs",
+        "If prescribed by a physician, take low-dose aspirin or anticoagulants before high-risk travel",
+      ],
+      keyTakeaway: "Compression socks and movement every 90 minutes are your two most powerful defenses against travel-related DVT.",
+    },
+    {
+      heading: "The Right Leg Exercises for Travelers",
+      paragraphs: [
+        "You don't need to do a full workout to protect your veins — simple, targeted movements done every 30 to 60 minutes are enough to keep blood circulating. These exercises can be performed in your seat without disturbing other passengers:",
+      ],
+      imageSrc: "/images/blog/travel-dvt-leg-stretch-exercise.jpg",
+      imageAlt: "Seated leg exercises for travelers including ankle circles and calf raises to prevent DVT",
+      bullets: [
+        "Ankle circles: Lift one foot slightly off the floor and rotate the ankle in a full circle, 10 times clockwise, 10 times counterclockwise. Repeat with the other foot.",
+        "Heel raises: Keeping your toes on the floor, lift both heels as high as possible, hold for 2 seconds, lower. Repeat 15–20 times.",
+        "Knee lifts: Alternately lift each knee toward your chest, hold for 2 seconds, lower. Repeat 10 times per leg.",
+        "Foot pumps: Press the balls of your feet down while lifting your heels, then reverse — lift the balls of your feet while pressing your heels down. This pumps the calf muscle, your body's natural venous 'second heart.'",
+        "Quad contractions: Tighten your thigh muscles, hold 5 seconds, release. Repeat 10 times per leg.",
+      ],
+      paragraphs: [
+        "Set a timer on your phone if you tend to lose track of time, especially on overnight flights. Even a brief 2-minute routine done consistently is far more protective than a single longer walk taken only once.",
+      ],
+    },
+    {
+      heading: "When to See a Vein Specialist Before Your Trip",
+      paragraphs: [
+        "Many patients come to us after a travel scare — swelling that didn't resolve, a DVT diagnosis in the ER, or a pulmonary embolism that made them realize their underlying vein disease needed attention. We'd rather see you before the trip.",
+        "A pre-travel vein consultation is particularly worthwhile if you have visible varicose veins, a history of leg swelling on flights, known venous insufficiency, or any of the elevated-risk factors listed above. In 30 minutes, we can perform a duplex ultrasound evaluation of your deep and superficial venous systems, identify any disease requiring treatment, and give you a personalized travel protocol — including compression prescription strength, hydration guidelines, and whether anticoagulant prophylaxis is appropriate for your situation.",
+        "For patients already under our care for varicose veins or chronic venous insufficiency, long-haul travel is always worth a quick conversation at your next appointment. Treated veins are healthier veins, and our patients who've completed EVLT or sclerotherapy generally tolerate travel far better than before treatment.",
+      ],
+    },
+    {
+      heading: "After the Trip: What to Watch For",
+      paragraphs: [
+        "The risk window for travel-related DVT doesn't close the moment you land. Clots can form — and symptoms can appear — up to 4 weeks after a long trip. During this window, pay attention to any unusual leg swelling, aching, or warmth, particularly if it's confined to one leg.",
+        "Mild leg fatigue and swelling after a long flight are common and usually resolve within 24–48 hours with elevation, hydration, and walking. Persistent or worsening symptoms, symptoms in only one leg, or any difficulty breathing should be evaluated immediately.",
+        "If you're uncertain whether what you're experiencing is normal post-travel fatigue or something that needs attention, call our office. We'd rather reassure you with a quick consultation than have you wait on a clot that needs treatment.",
+      ],
+      callout: {
+        type: "info",
+        text: "Post-travel DVT risk remains elevated for up to 4 weeks. Monitor your legs and don't dismiss persistent swelling or pain as 'just travel fatigue.'",
+      },
+    },
+    {
+      heading: "Book a Free Vein Screening Before Your Next Trip",
+      paragraphs: [
+        "Travel should be something you enjoy — not something that puts your health at risk. If you have varicose veins, a history of leg problems, or are planning a long international flight or road trip this summer, a Free Vein Screening at Schulman Vein and Laser Center is the smartest first step.",
+        "Dr. Martin Schulman and Dr. Lee G. Schulman have spent more than 55 years combined helping New York patients understand and treat their venous disease. Our Manhattan, Manhasset, and Commack offices serve patients from across the New York metropolitan area, and our Free Vein Screening requires no referral and no obligation — just a conversation and an examination that could prevent a serious complication.",
+        "Schedule your Free Vein Screening today at any of our three locations and travel with confidence this season.",
+      ],
+    },
+  ],
+},
+{
     slug: "vein-treatment-commack-new-york",
     title: "Vein Treatment in Commack, New York: What Long Island Patients Need to Know",
     excerpt: "Discover expert varicose vein and spider vein treatment at Schulman Vein Center's Commack office — serving all of Long Island's Suffolk County with same-day recovery procedures.",
