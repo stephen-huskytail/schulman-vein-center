@@ -97,6 +97,7 @@ export const BLOG_POSTS: BlogPost[] = [
       heading: "Recognizing the Warning Signs",
       paragraphs: [
         "DVT doesn't always announce itself dramatically. In fact, roughly half of all DVTs produce no symptoms at all — which is one reason regular vein health screenings matter for frequent travelers. When symptoms do appear, they typically include:",
+        "Symptoms can appear during travel or within hours to days afterward. If you notice any of these warning signs after a long trip, do not wait to see if they improve on their own. Call our office or go directly to an emergency room.",
       ],
       bullets: [
         "Swelling in one leg, usually the calf or ankle",
@@ -105,15 +106,13 @@ export const BLOG_POSTS: BlogPost[] = [
         "Skin that appears pale, bluish, or mottled",
         "Shortness of breath, chest pain, or rapid heartbeat (signs that a clot may have reached the lungs — call 911 immediately)",
       ],
-      paragraphs: [
-        "Symptoms can appear during travel or within hours to days afterward. If you notice any of these warning signs after a long trip, do not wait to see if they improve on their own. Call our office or go directly to an emergency room.",
-      ],
       keyTakeaway: "Symptoms may be subtle — leg warmth, swelling, or aching after travel always warrant evaluation.",
     },
     {
       heading: "Who Is Most at Risk?",
       paragraphs: [
         "Anyone who sits still for prolonged periods can develop a travel-related DVT, but certain factors substantially increase that risk. Patients we consider at elevated risk include those with:",
+        "If two or more of these factors apply to you, we strongly recommend scheduling a vein evaluation before any long-haul travel. A brief consultation with Dr. Schulman can identify your individual risk level and help you plan preventive measures — or identify underlying venous disease that needs treatment before your trip.",
       ],
       bullets: [
         "A personal or family history of DVT or pulmonary embolism",
@@ -126,9 +125,6 @@ export const BLOG_POSTS: BlogPost[] = [
         "Use of estrogen-containing medications (birth control pills, hormone replacement therapy)",
         "Age over 60",
         "Dehydration",
-      ],
-      paragraphs: [
-        "If two or more of these factors apply to you, we strongly recommend scheduling a vein evaluation before any long-haul travel. A brief consultation with Dr. Schulman can identify your individual risk level and help you plan preventive measures — or identify underlying venous disease that needs treatment before your trip.",
       ],
     },
     {
@@ -154,6 +150,7 @@ export const BLOG_POSTS: BlogPost[] = [
       heading: "The Right Leg Exercises for Travelers",
       paragraphs: [
         "You don't need to do a full workout to protect your veins — simple, targeted movements done every 30 to 60 minutes are enough to keep blood circulating. These exercises can be performed in your seat without disturbing other passengers:",
+        "Set a timer on your phone if you tend to lose track of time, especially on overnight flights. Even a brief 2-minute routine done consistently is far more protective than a single longer walk taken only once.",
       ],
       imageSrc: "/images/blog/travel-dvt-leg-stretch-exercise.jpg",
       imageAlt: "Seated leg exercises for travelers including ankle circles and calf raises to prevent DVT",
@@ -163,9 +160,6 @@ export const BLOG_POSTS: BlogPost[] = [
         "Knee lifts: Alternately lift each knee toward your chest, hold for 2 seconds, lower. Repeat 10 times per leg.",
         "Foot pumps: Press the balls of your feet down while lifting your heels, then reverse — lift the balls of your feet while pressing your heels down. This pumps the calf muscle, your body's natural venous 'second heart.'",
         "Quad contractions: Tighten your thigh muscles, hold 5 seconds, release. Repeat 10 times per leg.",
-      ],
-      paragraphs: [
-        "Set a timer on your phone if you tend to lose track of time, especially on overnight flights. Even a brief 2-minute routine done consistently is far more protective than a single longer walk taken only once.",
       ],
     },
     {
