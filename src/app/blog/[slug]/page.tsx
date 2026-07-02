@@ -346,7 +346,12 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 <ul className="space-y-2">
                   {post.relatedLinks.map((link) => (
                     <li key={link.href}>
-                      <Link href={link.href} className="text-[var(--sv-teal)] font-medium hover:underline">
+                      <Link
+                        href={link.href}
+                        className="text-[var(--sv-teal)] font-medium hover:underline"
+                        target={link.openInNewTab ? "_blank" : undefined}
+                        rel={link.openInNewTab ? "noopener noreferrer" : undefined}
+                      >
                         {link.label}
                       </Link>
                     </li>

@@ -18,6 +18,7 @@ export type BlogPostSection = {
 export type BlogPostLink = {
   label: string;
   href: string;
+  openInNewTab?: boolean;
 };
 
 export type BlogPostFaqItem = {
@@ -60,10 +61,11 @@ export const BLOG_POSTS: BlogPost[] = [
   featuredImage: "/images/blog/varicose-veins-summer-heat-new-york.jpg",
   featuredImageAlt: "Varicose veins summer heat New York — physician consultation at Schulman Vein and Laser Center Manhattan",
   relatedLinks: [
-    { label: "Varicose Vein Treatment", href: "/services/varicose-vein-treatment" },
-    { label: "Vein Disorders", href: "/services/vein-disorders" },
-    { label: "Laser Vein Therapy (EVLT)", href: "/services/laser-vein-therapy" },
-    { label: "Free Vein Screening", href: "/services/free-vein-screening" },
+    { label: "Varicose Vein Treatment", href: "/services/varicose-vein-treatment", openInNewTab: true },
+    { label: "Vein Disorders", href: "/services/vein-disorders", openInNewTab: true },
+    { label: "Laser Vein Therapy (EVLT)", href: "/services/laser-vein-therapy", openInNewTab: true },
+    { label: "Compression Stockings and Vein Health", href: "/blog/compression-stockings-vein-health-new-york", openInNewTab: true },
+    { label: "Free Vein Screening", href: "/services/free-vein-screening", openInNewTab: true },
   ],
   quickSummary: [
     "Summer heat causes blood vessels to dilate and blood to pool more easily in the legs, directly worsening varicose vein symptoms.",
@@ -85,7 +87,7 @@ export const BLOG_POSTS: BlogPost[] = [
     {
       heading: "Why Heat Affects Your Veins",
       paragraphs: [
-        "If you have varicose veins, you may have noticed that your legs feel noticeably worse during the summer months — heavier, achier, more swollen, and more visibly prominent than they did in spring. New York patients with varicose veins often report that summer heat triggers their worst symptom flares, and the pattern is not coincidence. There is a direct physiological reason why summer heat consistently makes vein disease worse.",
+        "If you have <a href=\"/services/varicose-vein-treatment\" target=\"_blank\" rel=\"noopener noreferrer\">varicose veins</a>, you may have noticed that your legs feel noticeably worse during the summer months — heavier, achier, more swollen, and more visibly prominent than they did in spring. New York patients with varicose veins often report that summer heat triggers their worst symptom flares, and the pattern is not coincidence. There is a direct physiological reason why summer heat consistently makes vein disease worse.",
         "Your veins respond to temperature the same way a garden hose responds to internal pressure changes — by expanding. When your body temperature rises, your nervous system signals the blood vessels near the skin to dilate. This vasodilation is a cooling mechanism: more blood near the surface means more heat can escape through the skin. It works beautifully for thermoregulation, but it creates a problem for veins that already have damaged valves.",
         "In a healthy vein, expanded vessels can still move blood efficiently upward toward the heart because the one-way valves inside the vein close properly between beats, preventing backflow. But in a varicose vein, those valves are already weakened or incompetent. When heat causes the vessel walls to relax and expand even further, the valves — already struggling — become even less effective at their job. Blood falls backward and pools in the lower extremities. The result is everything you already know: more aching, more swelling, more heaviness, and veins that look worse by the end of a hot summer day.",
       ],
@@ -93,7 +95,7 @@ export const BLOG_POSTS: BlogPost[] = [
     {
       heading: "How Summer Heat Worsens Varicose Vein Symptoms in New York",
       paragraphs: [
-        "The worsening of varicose vein symptoms during summer heat follows a predictable pattern that our patients at Schulman Vein and Laser Center describe consistently every year. Understanding what is happening can help you manage symptoms more effectively and know when the changes you are experiencing warrant medical attention rather than just endurance.",
+        "The worsening of varicose vein symptoms during summer heat follows a predictable pattern that our patients at Schulman Vein and Laser Center describe consistently every year. Understanding what is happening can help you manage symptoms more effectively and know when the changes you are experiencing warrant attention from a <a href=\"/services/vein-disorders\" target=\"_blank\" rel=\"noopener noreferrer\">vein disorder specialist</a> rather than just endurance.",
       ],
       bullets: [
         "Increased leg aching and heaviness — The most commonly reported summer symptom. Blood pooling in dilated, incompetent veins increases pressure on the vein walls and the surrounding tissues. By late afternoon on a hot day, legs that felt merely uncomfortable in the morning may feel genuinely painful.",
@@ -112,7 +114,7 @@ export const BLOG_POSTS: BlogPost[] = [
     {
       heading: "The New York Summer Challenge",
       paragraphs: [
-        "New York summers are particularly unforgiving on venous disease for reasons that go beyond simple heat. Patients in Manhattan, Long Island, and the outer boroughs face a combination of environmental stressors that compound the physiological effects of hot weather on varicose veins.",
+        "New York summers are particularly unforgiving on venous disease for reasons that go beyond simple heat. Patients near our <a href=\"/locations/manhattan\" target=\"_blank\" rel=\"noopener noreferrer\">Manhattan vein center</a>, <a href=\"/locations/manhasset\" target=\"_blank\" rel=\"noopener noreferrer\">Manhasset office</a>, <a href=\"/locations/commack\" target=\"_blank\" rel=\"noopener noreferrer\">Commack office</a>, and the outer boroughs face a combination of environmental stressors that compound the physiological effects of hot weather on varicose veins.",
         "Subway travel is a significant factor. Underground platforms reach extreme temperatures in July and August — the Metropolitan Transportation Authority has documented station temperatures exceeding 100°F during heat waves. Patients who stand on crowded, hot platforms and then remain standing on packed trains for extended commutes are stacking heat exposure on top of prolonged standing, one of the most powerful triggers for venous pooling.",
         "New York also demands a level of walking and standing that most suburban environments do not. Patients who would otherwise drive to a destination are walking blocks to transit, standing in lines, and navigating busy sidewalks — all in conditions that promote exactly the kind of upright, immobile stance that worsens venous return. This is not a reason to avoid New York's particular pace of life. It is a reason to take vein health seriously and take proactive steps before symptoms dominate the season.",
       ],
@@ -124,7 +126,7 @@ export const BLOG_POSTS: BlogPost[] = [
         "While there is no substitute for proper vein treatment when venous insufficiency is present, several practical strategies can significantly reduce summer symptom burden and protect your vein health in the short term.",
       ],
       bullets: [
-        "Wear graduated compression stockings — This is the single most effective non-pharmacological intervention for summer vein symptoms. Compression stockings apply external pressure that partially compensates for the weakened vein walls and helps push pooled blood upward. Wear them first thing in the morning before you stand up, when pooling is minimal, and keep them on through the heat of the day. Medical-grade compression (20–30 mmHg) provides far more benefit than over-the-counter travel socks.",
+        "Wear graduated compression stockings — This is the single most effective non-pharmacological intervention for summer vein symptoms. <a href=\"/blog/compression-stockings-vein-health-new-york\" target=\"_blank\" rel=\"noopener noreferrer\">Compression stockings</a> apply external pressure that partially compensates for the weakened vein walls and helps push pooled blood upward. Wear them first thing in the morning before you stand up, when pooling is minimal, and keep them on through the heat of the day. Medical-grade compression (20–30 mmHg) provides far more benefit than over-the-counter travel socks.",
         "Elevate your legs above heart level — Fifteen to twenty minutes of leg elevation at the end of the day — or during a midday break if possible — can drain a significant amount of pooled blood from the lower extremities. Even brief elevation sessions provide measurable relief from aching and swelling.",
         "Stay well hydrated — Dehydration thickens the blood and makes venous return even more difficult. New York summers cause significant fluid loss through sweat, which your blood volume cannot afford. Aim for at least 64 ounces of water daily on hot days, more if you are physically active.",
         "Time your outdoor activities strategically — If possible, walk or exercise during the cooler morning hours rather than during peak afternoon heat. Avoiding the most intense heat of the day reduces the degree of vasodilation your veins experience.",
@@ -139,7 +141,7 @@ export const BLOG_POSTS: BlogPost[] = [
       heading: "Why Summer Is a Good Time to Treat Your Veins",
       paragraphs: [
         "Many patients assume that summer is the wrong time to pursue vein treatment — that they should wait until fall when they can hide the treated legs under pants. This is a common misconception, and it costs patients months of unnecessary discomfort.",
-        "Modern vein treatments — endovenous laser therapy (EVLT), sclerotherapy, and ambulatory phlebectomy — are minimally invasive office procedures with same-day recovery. Most patients walk out of our Manhattan, Manhasset, or Commack offices the same day and return to normal activities within 24 hours. The post-procedure period requires wearing compression stockings for a week or two, but that is already advisable during summer for symptomatic patients.",
+        "Modern vein treatments — <a href=\"/services/laser-vein-therapy\" target=\"_blank\" rel=\"noopener noreferrer\">endovenous laser therapy (EVLT)</a>, sclerotherapy, and ambulatory phlebectomy — are minimally invasive office procedures with same-day recovery. Most patients walk out of our Manhattan, Manhasset, or Commack offices the same day and return to normal activities within 24 hours. The post-procedure period requires wearing compression stockings for a week or two, but that is already advisable during summer for symptomatic patients.",
         "Starting treatment in the summer means your legs are improving — not worsening — through the rest of the season. Many patients who begin treatment in June or July notice significant symptom relief within four to six weeks, well before summer ends. There is genuinely no reason to postpone treatment until fall.",
         "Insurance coverage is another practical consideration. For patients with symptomatic varicose veins, EVLT and ultrasound-guided sclerotherapy are commonly covered by insurance — including Medicare — when symptoms are documented and conservative therapy criteria are met. Beginning the evaluation and authorization process now means treatment can often be completed before year-end when deductibles typically reset.",
       ],
@@ -155,7 +157,7 @@ export const BLOG_POSTS: BlogPost[] = [
         "If you notice your veins changing in appearance — becoming larger, more prominent, developing areas of redness or tenderness — book an appointment. Superficial thrombophlebitis, a condition in which a surface vein becomes inflamed and clotted, is more common in the summer when blood flow is already sluggish. While not typically dangerous on its own, it can occasionally connect to the deep venous system and requires medical assessment.",
         "Skin changes — particularly new or worsening brownish discoloration near the ankles, weeping skin, or any open sores that do not heal — are a sign that venous disease has progressed to a stage requiring prompt treatment. Venous leg ulcers are a serious complication of untreated venous insufficiency and are far easier to manage when identified early.",
         "And if you simply feel that your legs are limiting your ability to enjoy summer — avoiding outdoor activities, cutting walks short, or sitting down more than you want to because your legs ache — that is a quality-of-life signal worth taking seriously. Vein disease is progressive. The legs that are uncomfortable this summer will be more uncomfortable next summer if the underlying venous insufficiency goes unaddressed.",
-        "At Schulman Vein and Laser Center, board-certified phlebologists Dr. Martin Schulman and Dr. Lee G. Schulman offer Free Vein Screenings at our Manhattan, Manhasset, and Commack offices. No referral is required. The screening includes a physical examination and — when appropriate — a duplex ultrasound evaluation to map your venous anatomy and identify any reflux or insufficiency driving your symptoms.",
+        "At Schulman Vein and Laser Center, board-certified phlebologists Dr. Martin Schulman and Dr. Lee G. Schulman offer <a href=\"/services/free-vein-screening\" target=\"_blank\" rel=\"noopener noreferrer\">Free Vein Screenings</a> at our Manhattan, Manhasset, and Commack offices. No referral is required. The screening includes a physical examination and — when appropriate — a duplex ultrasound evaluation to map your venous anatomy and identify any reflux or insufficiency driving your symptoms.",
       ],
       callout: {
         type: "tip",
