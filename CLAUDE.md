@@ -45,6 +45,12 @@ When implementing SEO improvements:
 - For local pages, include unique neighborhood, transportation, office, physician, FAQ, and service details. Avoid thin city-swapped copies.
 - For GEO, make answers extractable with concise summary sections and schema, then keep `llms.txt` current.
 
+## Blog SOP
+
+- Blog posts should include contextual internal links to relevant service, location, and related blog pages.
+- When adding internal links to Schulman blog content, open them in a new tab with `target="_blank"` and `rel="noopener noreferrer"` unless Stephen/Myla gives a different instruction.
+- Verify live rendered DOM, not just source code, so both inline anchors and related-resource links have the expected new-tab attributes.
+
 ## Recommended Next Task
 
 Start with blog cleanup because it has the highest immediate technical SEO risk:
