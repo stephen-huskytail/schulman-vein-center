@@ -47,9 +47,10 @@ When implementing SEO improvements:
 
 ## Blog SOP
 
-- Blog posts should include 5+ contextual internal links to relevant service, location, and related blog pages.
-- Do not force internal blog links to open in a new tab; Stephen overrode the new-tab suggestion on 2026-07-02 for SEO reasons.
-- Verify live rendered DOM, not just source code, so inline anchors and related-resource links point to the expected destinations.
+- Every new or updated blog post must include at least 5 contextual internal links in the rendered article copy.
+- Count in-copy links only: paragraph, bullet, callout, and key-takeaway anchors count; navigation, breadcrumbs, sidebar, related-resource blocks, and bottom CTA links do not satisfy blog internal-link QC.
+- Use descriptive anchors pointing to relevant service, location, and related blog pages; prefer same-window internal links. Do not force internal blog links to open in a new tab; Stephen overrode the new-tab suggestion on 2026-07-02 for SEO reasons.
+- Before publishing or reporting complete, verify the live rendered DOM for the target blog URL and confirm the post has 5+ qualifying internal links with expected destinations.
 
 ## Recommended Next Task
 
