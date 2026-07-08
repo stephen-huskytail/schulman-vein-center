@@ -2633,7 +2633,7 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Immediately after your procedure",
         paragraphs: [
           "Most patients walk out of the office the <strong>same day</strong>. Mild tightness, bruising, or tenderness along the treated vein is common and usually improves over days to weeks.",
-          "Your care team will provide clear written instructions about <strong>compression stockings, walking goals, hydration</strong>, and any short-term activity modifications before you leave.",
+          "Your care team will provide clear written instructions about <strong><a href=\"/blog/compression-stockings-vein-health-new-york\">compression stockings</a>, walking goals, hydration</strong>, and any short-term activity modifications before you leave.",
           "If you are returning to a demanding schedule — which is common for our Manhattan and Midtown patients — your physician will give you specific guidance tailored to your routine.",
         ],
         bullets: [
@@ -2943,7 +2943,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         heading: "Why hand veins become prominent",
         paragraphs: [
-          "Visible hand veins often become more noticeable with <strong>age, reduced subcutaneous fat, genetics, exercise, and natural skin thinning</strong>. In many cases this is a cosmetic concern rather than a sign of dangerous disease.",
+          "<a href=\"/services/body-vein-treatment\">Visible hand veins</a> often become more noticeable with <strong>age, reduced subcutaneous fat, genetics, exercise, and natural skin thinning</strong>. In many cases this is a cosmetic concern rather than a sign of dangerous disease.",
           "For many New York patients — particularly those in professional or public-facing roles in Manhattan or Midtown — prominent hand veins are a source of self-consciousness. A focused consultation helps determine whether treatment goals are aesthetic, functional, or both.",
         ],
         keyTakeaway:
