@@ -409,7 +409,7 @@ export const BLOG_POSTS: BlogPost[] = [
       heading: "How Compression Stockings Work",
       paragraphs: [
         "The veins in your legs face a constant mechanical challenge. Every heartbeat sends blood downward through your arteries, and your leg veins must then push that blood back up against gravity, all the way to your heart. They accomplish this through a system of one-way valves — tiny flaps that open to let blood flow upward and close to prevent it from falling back down.",
-        "When those valves weaken or become damaged, blood begins to pool in the lower legs. The result is what most people recognize as varicose veins: the twisted, bulging vessels that appear beneath the skin, often accompanied by aching, heaviness, swelling, and fatigue.",
+        "When those valves weaken or become damaged, blood begins to pool in the lower legs. The result is what most people recognize as <a href=\"/services/varicose-vein-treatment\">varicose veins</a>: the twisted, bulging vessels that appear beneath the skin, often accompanied by aching, heaviness, swelling, and fatigue.",
         "Compression stockings work by applying graduated pressure to the leg — tightest at the ankle, gradually decreasing toward the knee or thigh. This external pressure assists the vein walls and helps push pooled blood back upward, reducing the load on damaged valves. The mechanical effect is simple, but the relief it provides can be significant.",
       ],
       imageSrc: "/images/blog/compression-stockings-vein-health-new-york-how-compression-works.jpg",
@@ -422,12 +422,12 @@ export const BLOG_POSTS: BlogPost[] = [
         "If you have been diagnosed with an arterial circulation problem, compression stockings may not be appropriate without medical supervision. A vein specialist can assess whether compression is safe and beneficial for your specific situation.",
       ],
       bullets: [
-        "Varicose veins or spider veins accompanied by symptoms such as leg aching, heaviness, or swelling",
+        "<a href=\"/services/varicose-vein-treatment\">Varicose veins</a> or <a href=\"/services/spider-vein-treatment\">spider veins</a> accompanied by symptoms such as leg aching, heaviness, or swelling",
         "Chronic venous insufficiency (CVI), where damaged valves cause ongoing circulation problems",
         "A history of deep vein thrombosis (DVT) or pulmonary embolism",
         "High DVT risk — including patients who are pregnant, recovering from surgery, or taking hormonal medications",
         "Jobs that require prolonged standing or sitting, such as nursing, teaching, office work, or air travel",
-        "Post-treatment recovery after sclerotherapy, EVLT (endovenous laser therapy), or ambulatory phlebectomy",
+        "Post-treatment recovery after sclerotherapy, EVLT (<a href=\"/services/laser-vein-therapy\">endovenous laser therapy</a>), or ambulatory phlebectomy",
         "Pregnancy, particularly in the second and third trimesters when blood volume increases and the uterus puts pressure on pelvic veins",
       ],
     },
@@ -482,7 +482,7 @@ export const BLOG_POSTS: BlogPost[] = [
         "Compression stockings are an excellent management tool — they relieve symptoms and slow the progression of vein disease. But they do not treat the underlying problem. Damaged valves remain damaged. Varicose veins do not disappear with compression alone.",
         "For many patients, compression stockings are the first step in a treatment plan that eventually includes a minimally invasive procedure. Treatments like endovenous laser therapy (EVLT), sclerotherapy, or ambulatory phlebectomy can close or remove diseased veins permanently — often with same-day recovery and long-lasting results.",
         "Some insurance plans require a documented trial of compression therapy (typically three to six months) before approving coverage for vein procedures. Your vein specialist can document your compliance and help navigate the insurance process.",
-        "Whether your goal is symptom management or definitive treatment, the path forward begins with an accurate diagnosis. A Free Vein Screening at Schulman Vein and Laser Center includes a physical examination and ultrasound assessment to determine the severity of your vein disease and the treatment approach that best fits your situation.",
+        "Whether your goal is symptom management or definitive treatment, the path forward begins with an accurate diagnosis. A <a href=\"/services/free-vein-screening\">Free Vein Screening</a> at Schulman Vein and Laser Center includes a physical examination and ultrasound assessment to determine the severity of your vein disease and the treatment approach that best fits your situation.",
       ],
       callout: {
         type: "info",
@@ -529,7 +529,7 @@ export const BLOG_POSTS: BlogPost[] = [
     {
       heading: "Why Travel Puts Your Veins at Risk",
       paragraphs: [
-        "For most people, a long flight or cross-country road trip is simply an inconvenience. For your veins, it can be a genuine health risk. Extended periods of sitting — particularly when confined to a small seat with limited legroom — slow the flow of blood through the deep veins of your legs. Over several hours, this sluggish circulation can allow a blood clot to form, a condition known as deep vein thrombosis, or DVT.",
+        "For most people, a long flight or cross-country road trip is simply an inconvenience. For your veins, it can be a genuine health risk. Extended periods of sitting — particularly when confined to a small seat with limited legroom — slow the flow of blood through the deep veins of your legs. Over several hours, this sluggish circulation can allow a blood clot to form, a condition known as <a href=\"/blog/deep-vein-thrombosis-symptoms-treatment-new-york\">deep vein thrombosis</a>, or DVT.",
         "DVT is not rare. Research estimates that one in every 1,000 Americans develops a DVT each year, and travel is one of the most commonly identified triggers. The risk roughly doubles on flights longer than four hours and continues to increase with each additional hour of immobility. Road trips carry the same risk — sitting behind the wheel for hours at a stretch is just as taxing on your veins as sitting in an airplane seat.",
         "At Schulman Vein and Laser Center, we see patients every year who develop vein complications after travel — sometimes as a direct consequence, sometimes as a wakeup call that underlying venous disease needed attention sooner. Understanding your risk before you travel, and taking a few targeted precautions, can make all the difference.",
       ],
@@ -543,7 +543,7 @@ export const BLOG_POSTS: BlogPost[] = [
       ],
       callout: {
         type: "warning",
-        text: "If you develop sudden calf pain, leg swelling, or shortness of breath during or shortly after travel, seek emergency care immediately. These can be signs of DVT or pulmonary embolism.",
+        text: "If you develop sudden calf pain, leg swelling, or shortness of breath during or shortly after travel, seek emergency care immediately. These can be signs of <a href=\"/blog/deep-vein-thrombosis-symptoms-treatment-new-york\">DVT</a> or pulmonary embolism.",
       },
     },
     {
@@ -569,7 +569,7 @@ export const BLOG_POSTS: BlogPost[] = [
       ],
       bullets: [
         "A personal or family history of DVT or pulmonary embolism",
-        "Known varicose veins or chronic venous insufficiency",
+        "Known <a href=\"/services/varicose-vein-treatment\">varicose veins</a> or chronic venous insufficiency",
         "Clotting disorders (thrombophilias such as Factor V Leiden or protein C deficiency)",
         "Recent surgery, injury, or hospitalization (particularly orthopedic procedures)",
         "Active cancer or a history of cancer treatment",
@@ -620,7 +620,7 @@ export const BLOG_POSTS: BlogPost[] = [
       paragraphs: [
         "Many patients come to us after a travel scare — swelling that didn't resolve, a DVT diagnosis in the ER, or a pulmonary embolism that made them realize their underlying vein disease needed attention. We'd rather see you before the trip.",
         "A pre-travel vein consultation is particularly worthwhile if you have visible varicose veins, a history of leg swelling on flights, known venous insufficiency, or any of the elevated-risk factors listed above. In 30 minutes, we can perform a duplex ultrasound evaluation of your deep and superficial venous systems, identify any disease requiring treatment, and give you a personalized travel protocol — including compression prescription strength, hydration guidelines, and whether anticoagulant prophylaxis is appropriate for your situation.",
-        "For patients already under our care for varicose veins or chronic venous insufficiency, long-haul travel is always worth a quick conversation at your next appointment. Treated veins are healthier veins, and our patients who've completed EVLT or sclerotherapy generally tolerate travel far better than before treatment.",
+        "For patients already under our care for varicose veins or chronic venous insufficiency, long-haul travel is always worth a quick conversation at your next appointment. Treated veins are healthier veins, and our patients who've completed <a href=\"/services/laser-vein-therapy\">EVLT</a> or <a href=\"/services/spider-vein-treatment\">sclerotherapy</a> generally tolerate travel far better than before treatment.",
       ],
     },
     {
@@ -677,19 +677,19 @@ export const BLOG_POSTS: BlogPost[] = [
         paragraphs: [
           "For patients across Suffolk County, traveling into Manhattan for vein treatment has long felt like an unnecessary burden. Schulman Vein and Laser Center's Commack office changes that equation. Located at 175 Commack Road, our Long Island practice brings the same internationally recognized expertise — and the same FDA-approved, minimally invasive treatments — that our Manhattan and Manhasset patients have relied on for decades.",
           "Dr. Martin Schulman and Dr. Lee G. Schulman have combined more than 55 years of specialized phlebology experience. Their approach is straightforward: every patient receives a thorough evaluation, a clear explanation of their condition, and a treatment plan calibrated to their specific anatomy, symptoms, and lifestyle. No unnecessary procedures. No pressure. Just expert care that gets results.",
-          "Whether you are dealing with bulging varicose veins, cosmetically bothersome spider veins, or the chronic aching and heaviness of venous insufficiency, our Commack team is equipped to help.",
+          "Whether you are dealing with bulging <a href=\"/services/varicose-vein-treatment\">varicose veins</a>, cosmetically bothersome <a href=\"/services/spider-vein-treatment\">spider veins</a>, or the chronic aching and heaviness of venous insufficiency, our Commack team is equipped to help.",
         ],
         keyTakeaway: "Commack-area patients now have access to the same board-certified vein expertise as Schulman Vein Center's Manhattan flagship — without leaving Long Island.",
       },
       {
         heading: "Who Seeks Vein Treatment at Our Commack Office?",
         paragraphs: [
-          "Venous disease is far more common than most people realize. Approximately 40 million Americans have varicose veins, and a significant portion of those cases involve underlying venous insufficiency — a condition in which the one-way valves inside leg veins fail to close properly, allowing blood to flow backward and pool in the lower extremities.",
+          "Venous disease is far more common than most people realize. Approximately 40 million Americans have <a href=\"/services/varicose-vein-treatment\">varicose veins</a>, and a significant portion of those cases involve underlying <a href=\"/services/vein-disorders\">venous insufficiency</a> — a condition in which the one-way valves inside leg veins fail to close properly, allowing blood to flow backward and pool in the lower extremities.",
           "Our Commack patients come from across western and central Suffolk County: Commack itself, Huntington, Smithtown, Hauppauge, Deer Park, Brentwood, Dix Hills, and beyond. They range in age, background, and vein condition severity — but they tend to share a common experience: they have been living with uncomfortable or unsightly veins longer than they needed to, often because they did not know how accessible treatment had become.",
         ],
         bullets: [
           "Visible varicose veins — rope-like, bulging veins on the thighs or calves that may be painful or tender to the touch",
-          "Spider veins — fine red, blue, or purple web-like clusters near the surface of the skin, commonly on the legs and ankles",
+          "<a href=\"/services/spider-vein-treatment\">Spider veins</a> — fine red, blue, or purple web-like clusters near the surface of the skin, commonly on the legs and ankles",
           "Chronic venous insufficiency (CVI) — persistent leg heaviness, aching, swelling, and fatigue that worsens after standing",
           "Skin changes — brownish discoloration, leathery texture, or early signs of venous ulceration near the ankles",
           "Restless leg symptoms — nighttime discomfort and cramping associated with underlying venous disease",
@@ -702,7 +702,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "Schulman Vein Center's Commack office offers the full range of minimally invasive vein treatments that have replaced surgical vein stripping as the standard of care. All procedures are performed in-office under local anesthesia, and most patients return to their normal daily activities the same day or the day after.",
         ],
         bullets: [
-          "Endovenous Laser Therapy (EVLT) — The gold standard for treating larger varicose veins caused by saphenous vein insufficiency. A thin laser fiber is inserted into the affected vein under ultrasound guidance, delivering targeted energy that causes the vein to close permanently. The procedure takes approximately 45 minutes, and patients walk out of the office the same day.",
+          "Endovenous Laser Therapy (<a href=\"/services/laser-vein-therapy\">EVLT</a>) — The gold standard for treating larger varicose veins caused by saphenous vein insufficiency. A thin laser fiber is inserted into the affected vein under ultrasound guidance, delivering targeted energy that causes the vein to close permanently. The procedure takes approximately 45 minutes, and patients walk out of the office the same day.",
           "Sclerotherapy — A precisely injected solution causes the targeted vein to collapse and be reabsorbed by the body over several weeks. Sclerotherapy is used for both spider veins and smaller varicose veins. Multiple sessions may be recommended for optimal results.",
           "Ultrasound-Guided Sclerotherapy — For veins that cannot be seen at the surface, we use duplex ultrasound to guide injections with pinpoint accuracy. This technique is particularly effective for perforator veins and reticular veins feeding visible clusters.",
           "Ambulatory Phlebectomy — Larger surface varicose veins that do not respond to laser treatment may be removed through tiny, puncture-size incisions using a micro-hook technique. No stitches are required, and scarring is minimal.",
@@ -753,7 +753,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "Same-day recovery — most patients return to normal activities the next day",
           "5.0-star rating on Google across Manhattan, Manhasset, and Commack offices",
           "In-network with Medicare and most major insurance plans",
-          "Free Vein Screening available — no referral required",
+          "<a href=\"/services/free-vein-screening\">Free Vein Screening</a> available — no referral required",
         ],
         keyTakeaway: "Schulman Vein Center brings Manhattan-level vein expertise to Commack — with the added convenience of a Long Island location and same-day recovery procedures.",
       },
@@ -791,7 +791,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         question: "Does insurance cover vein treatment at the Commack office?",
-        answer: "Medically necessary vein treatments — including EVLT and ultrasound-guided sclerotherapy for symptomatic venous insufficiency — are covered by most insurance plans and Medicare when documentation requirements are met. Our team verifies your benefits before your first appointment. Cosmetic-only spider vein treatment is generally not covered.",
+        answer: "Medically necessary vein treatments — including EVLT and ultrasound-guided sclerotherapy for symptomatic venous insufficiency — are covered by most insurance plans and Medicare when documentation requirements are met. Our team verifies your benefits before your first appointment. Cosmetic-only <a href=\"/services/spider-vein-treatment\">spider vein treatment</a> is generally not covered.",
       },
     ],
 },
@@ -825,7 +825,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         heading: "Why Exercise Matters for Your Veins",
         paragraphs: [
-          "Your venous system depends on movement. Unlike arteries, which are powered by the heart's pump, veins rely on the contraction of surrounding muscles — especially in the legs — to push blood back up toward the heart. When you sit or stand still for extended periods, blood can pool in the lower extremities, raising pressure inside the veins and contributing to the bulging, aching, and swelling associated with varicose veins.",
+          "Your venous system depends on movement. Unlike arteries, which are powered by the heart's pump, veins rely on the contraction of surrounding muscles — especially in the legs — to push blood back up toward the heart. When you sit or stand still for extended periods, blood can pool in the lower extremities, raising pressure inside the veins and contributing to the bulging, aching, and swelling associated with <a href=\"/services/varicose-vein-treatment\">varicose veins</a>.",
           "Regular physical activity is one of the most effective lifestyle tools for maintaining vein health. The right exercises activate the calf muscle pump, improve circulation, reduce venous pressure, and support overall cardiovascular function. But not all exercise is created equal — and for patients with existing venous insufficiency, some high-intensity activities can do more harm than good.",
         ],
         keyTakeaway: "Movement is medicine for your veins — but the type of movement matters enormously.",
@@ -875,7 +875,7 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Can Exercise Cure Varicose Veins?",
         paragraphs: [
           "This is one of the most common questions we hear from patients at Schulman Vein and Laser Center. The honest answer: no. Exercise is an excellent tool for slowing the progression of venous disease, managing symptoms, and improving overall cardiovascular health — but it cannot reverse or eliminate varicose veins that have already formed.",
-          "Varicose veins develop when the one-way valves inside the vein become damaged or incompetent. Once a valve fails, blood refluxes backward and pools, permanently distending the vein wall. No amount of walking, swimming, or cycling will repair a damaged valve. For that, you need a minimally invasive procedure such as Endovenous Laser Therapy (EVLT) or sclerotherapy.",
+          "<a href=\"/services/varicose-vein-treatment\">Varicose veins</a> develop when the one-way valves inside the vein become damaged or incompetent. Once a valve fails, blood refluxes backward and pools, permanently distending the vein wall. No amount of walking, swimming, or cycling will repair a damaged valve. For that, you need a minimally invasive procedure such as Endovenous Laser Therapy (<a href=\"/services/laser-vein-therapy\">EVLT</a>) or sclerotherapy.",
           "Think of exercise as maintenance — it protects healthy veins and helps treated veins stay healthy after a procedure. But if symptomatic varicose veins are already present, treatment is the only way to eliminate them.",
         ],
         imageSrc: "/images/blog/exercise-vein-health-new-york-3.jpg",
@@ -904,12 +904,12 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "When to See a Vein Specialist",
         paragraphs: [
           "If you are exercising regularly and still experiencing leg heaviness, aching, swelling, visible varicose veins, or cramping — especially after standing — it is time to see a board-certified phlebologist. These symptoms indicate that exercise alone is not sufficient to manage your venous disease.",
-          "At Schulman Vein and Laser Center, we offer a Free Vein Screening at our Manhattan, Manhasset, and Commack offices. During your screening, one of our physicians will evaluate your legs, discuss your symptoms and lifestyle, and recommend a personalized treatment plan. Many of our patients are surprised to learn that their vein treatment is covered by insurance — including Medicare — when symptoms meet medical necessity criteria.",
+          "At Schulman Vein and Laser Center, we offer a <a href=\"/services/free-vein-screening\">Free Vein Screening</a> at our Manhattan, Manhasset, and Commack offices. During your screening, one of our physicians will evaluate your legs, discuss your symptoms and lifestyle, and recommend a personalized treatment plan. Many of our patients are surprised to learn that their vein treatment is covered by insurance — including Medicare — when symptoms meet medical necessity criteria.",
           "Our minimally invasive treatments are performed in-office with no general anesthesia and same-day recovery, so you can return to your walking routine the very next day.",
         ],
         callout: {
           type: "tip",
-          text: "You don't need a referral to schedule a free vein screening at Schulman Vein and Laser Center. Call our Manhattan office at 212.987.0500, Manhasset at 516.482.4477, or Commack at 631.543.4599.",
+          text: "You don't need a referral to schedule a <a href=\"/services/free-vein-screening\">free vein screening</a> at Schulman Vein and Laser Center. Call our Manhattan office at 212.987.0500, Manhasset at 516.482.4477, or Commack at 631.543.4599.",
         },
         keyTakeaway: "Persistent leg symptoms despite regular exercise are a clear signal to schedule a professional vein evaluation — not to exercise harder.",
       },
@@ -963,7 +963,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         heading: "The Question Every Medicare Patient Asks",
         paragraphs: [
-          "If you are on Medicare and struggling with varicose veins — aching legs, visible bulging veins, chronic swelling, or skin changes — one of the first questions you will ask is: will Medicare pay for this? The answer depends on a distinction that surprises many patients: whether your vein condition is medically necessary or purely cosmetic.",
+          "If you are on Medicare and struggling with <a href=\"/services/varicose-vein-treatment\">varicose veins</a> — aching legs, visible bulging veins, chronic swelling, or skin changes — one of the first questions you will ask is: will Medicare pay for this? The answer depends on a distinction that surprises many patients: whether your vein condition is medically necessary or purely cosmetic.",
           "At Schulman Vein and Laser Center, we work with Medicare patients in Manhattan, Manhasset, and Commack every week. Understanding how coverage works before your appointment can save you from unexpected costs and help you get the care you need, when you need it.",
         ],
       },
@@ -982,7 +982,7 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "What Does \"Medically Necessary\" Mean for Vein Treatment?",
         paragraphs: [
           "Medicare defines medically necessary care as services or supplies that are needed to diagnose or treat a medical condition, meet accepted standards of medical practice, and are not primarily for the convenience of the patient or physician. For vein disease, this means your varicose veins must be causing documented symptoms — not simply appearing unattractive.",
-          "Medicare typically covers varicose vein treatment when you have one or more of the following:",
+          "Medicare typically covers <a href=\"/services/varicose-vein-treatment\">varicose vein treatment</a> when you have one or more of the following:",
         ],
         bullets: [
           "Chronic leg pain, heaviness, or fatigue directly linked to varicose veins",
@@ -993,7 +993,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "Documented chronic venous insufficiency confirmed by duplex ultrasound",
           "Bleeding from varicose veins",
         ],
-        keyTakeaway: "Symptoms, not appearance, drive Medicare coverage for varicose vein treatment.",
+        keyTakeaway: "Symptoms, not appearance, drive Medicare coverage for varicose <a href=\"/services\">vein treatment</a>.",
       },
       {
         heading: "The Conservative Therapy Requirement",
@@ -1069,12 +1069,12 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Getting Started at Schulman Vein and Laser Center",
         paragraphs: [
           "Schulman Vein and Laser Center has been treating vein disease for decades, with Dr. Martin Schulman and Dr. Lee G. Schulman bringing more than 55 years of combined phlebology experience to patients across the New York metropolitan area. Our three locations — in Manhattan, Manhasset, and Commack — are fully equipped for diagnosis and treatment in a single, convenient setting.",
-          "If you are a Medicare patient wondering whether your vein symptoms qualify for covered treatment, the best first step is a free vein screening. During this no-cost visit, one of our specialists will assess your veins, review your symptoms, and give you a clear picture of your treatment options and likely insurance coverage — before any commitment is made.",
+          "If you are a Medicare patient wondering whether your vein symptoms qualify for covered treatment, the best first step is a <a href=\"/services/free-vein-screening\">free vein screening</a>. During this no-cost visit, one of our specialists will assess your veins, review your symptoms, and give you a clear picture of your treatment options and likely insurance coverage — before any commitment is made.",
           "You do not have to live with aching, swollen legs because you are unsure about costs. Let us help you navigate the insurance process so you can focus on feeling better.",
         ],
         callout: {
           type: "tip",
-          text: "Book your complimentary Free Vein Screening at any of our New York locations — Manhattan, Manhasset, or Commack. No referral needed.",
+          text: "Book your complimentary <a href=\"/services/free-vein-screening\">Free Vein Screening</a> at any of our New York locations — Manhattan, Manhasset, or Commack. No referral needed.",
         },
       },
     ],
@@ -1153,9 +1153,9 @@ export const BLOG_POSTS: BlogPost[] = [
           "Vein disease is more common than most people realize, and it progresses if left untreated. At our Manhasset office, we evaluate and treat the full spectrum of venous conditions:",
         ],
         bullets: [
-          "Varicose veins — enlarged, twisted veins that bulge visibly beneath the skin, often causing aching, heaviness, or swelling in the legs",
-          "Spider veins — small clusters of red, blue, or purple veins visible at the skin's surface, commonly appearing on the legs and face",
-          "Chronic venous insufficiency (CVI) — a condition where damaged vein valves allow blood to pool in the lower legs, causing swelling, skin changes, and discomfort",
+          "<a href=\"/services/varicose-vein-treatment\">Varicose veins</a> — enlarged, twisted veins that bulge visibly beneath the skin, often causing aching, heaviness, or swelling in the legs",
+          "<a href=\"/services/spider-vein-treatment\">Spider veins</a> — small clusters of red, blue, or purple veins visible at the skin's surface, commonly appearing on the legs and face",
+          "<a href=\"/services/vein-disorders\">Chronic venous insufficiency</a> (CVI) — a condition where damaged vein valves allow blood to pool in the lower legs, causing swelling, skin changes, and discomfort",
           "Deep vein thrombosis (DVT) — blood clots in the deep veins that require prompt medical evaluation and management",
           "Leg swelling and heaviness — often early signs of underlying venous insufficiency that benefit from early intervention",
           "Skin discoloration and ulcers — advanced venous disease that responds well to targeted vein treatment",
@@ -1169,8 +1169,8 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Our Minimally Invasive Treatment Options",
         paragraphs: [
           "All We Do Is Veins\u2122 — and that focus means our Long Island patients benefit from the most advanced, effective treatments available. We do not perform surgery. Every procedure at our Manhasset office is performed in-office, without general anesthesia, with minimal discomfort and same-day recovery.",
-          "Endovenous Laser Treatment (EVLT) uses focused laser energy to collapse and seal diseased varicose veins from the inside. A tiny laser fiber is guided into the vein under ultrasound, the vein is treated in a single session, and blood flow reroutes naturally through healthy veins. Most patients walk out of the office and resume their normal routine the same afternoon.",
-          "Sclerotherapy is the gold standard for spider veins and smaller varicose veins. A specialized solution is injected directly into the affected vein, causing it to collapse and fade over the following weeks. Multiple sessions are often recommended for optimal results, depending on the extent of the vein network.",
+          "Endovenous Laser Treatment (EVLT) uses focused laser energy to collapse and seal diseased <a href=\"/services/varicose-vein-treatment\">varicose veins</a> from the inside. A tiny laser fiber is guided into the vein under ultrasound, the vein is treated in a single session, and blood flow reroutes naturally through healthy veins. Most patients walk out of the office and resume their normal routine the same afternoon.",
+          "Sclerotherapy is the gold standard for <a href=\"/services/spider-vein-treatment\">spider veins</a> and smaller varicose veins. A specialized solution is injected directly into the affected vein, causing it to collapse and fade over the following weeks. Multiple sessions are often recommended for optimal results, depending on the extent of the vein network.",
           "Ambulatory Phlebectomy is ideal for large surface varicose veins that are close to the skin. Using tiny, pinhole-sized incisions (no stitches required), the vein is removed in segments while you remain awake and comfortable. This procedure leaves virtually no scarring.",
           "Ultrasound-Guided Sclerotherapy allows our physicians to treat veins that are not visible at the surface — identified and mapped precisely using real-time duplex ultrasound imaging. This ensures accurate targeting of the source veins driving surface symptoms.",
         ],
@@ -1184,7 +1184,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "Your first visit at our Manhasset office begins with a thorough consultation and venous duplex ultrasound evaluation. This imaging study maps your venous system in real time, identifying faulty valves, areas of reflux, and the root causes of your visible symptoms. Insurance often covers diagnostic ultrasound when symptoms are present.",
           "Based on your evaluation, our physicians will recommend a personalized treatment plan. We take the time to explain your diagnosis in plain language, walk you through every treatment option, and answer all your questions before any procedure begins.",
           "Most procedures at our Manhasset office take 30 to 60 minutes. You'll be awake, comfortable, and able to walk immediately after. We provide compression stockings to wear for a short recovery period, and our team checks in with you during follow-up visits to track your results.",
-          "We accept most major insurance plans, and our staff can verify your coverage before your first appointment. Many varicose vein treatments are covered when symptoms are present and medical necessity is documented — our team handles this process routinely.",
+          "We accept most major insurance plans, and our staff can verify your coverage before your first appointment. Many <a href=\"/services/varicose-vein-treatment\">varicose vein treatments</a> are covered when symptoms are present and medical necessity is documented — our team handles this process routinely.",
         ],
         callout: {
           type: "tip",
@@ -1204,7 +1204,7 @@ export const BLOG_POSTS: BlogPost[] = [
     faqSection: [
       {
         question: "Is the Manhasset office accepting new patients?",
-        answer: "Yes. We welcome new patients at our Manhasset location. A free vein screening is available for new patients — call 516.482.4477 to schedule or use our online contact form.",
+        answer: "Yes. We welcome new patients at our Manhasset location. A <a href=\"/services/free-vein-screening\">free vein screening</a> is available for new patients — call 516.482.4477 to schedule or use our online contact form.",
       },
       {
         question: "Do I need a referral to be seen at Schulman Vein Center in Manhasset?",
@@ -1263,7 +1263,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         heading: "Recognizing the Symptoms of DVT",
         paragraphs: [
-          "One of the challenges of deep vein thrombosis is that its symptoms can be subtle — or, in some cases, entirely absent. Research estimates that as many as 50 percent of DVT cases are asymptomatic, which underscores why regular vein health evaluations are so important, especially for those with known risk factors.",
+          "One of the challenges of <a href=\"/blog/deep-vein-thrombosis-symptoms-treatment-new-york\">deep vein thrombosis</a> is that its symptoms can be subtle — or, in some cases, entirely absent. Research estimates that as many as 50 percent of DVT cases are asymptomatic, which underscores why regular vein health evaluations are so important, especially for those with known risk factors.",
           "When symptoms do appear, they typically affect one leg and may develop gradually or come on suddenly. If you notice any of the following, do not wait — contact a vein specialist or seek prompt medical evaluation.",
         ],
         bullets: [
@@ -1296,7 +1296,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "Oral contraceptives and hormone replacement therapy containing estrogen",
           "A personal or family history of DVT, pulmonary embolism, or inherited clotting disorders (such as Factor V Leiden)",
           "Age over 60 — vein walls weaken and blood flow slows with age",
-          "Varicose veins — while not a direct cause of DVT, severely compromised veins can contribute to sluggish circulation",
+          "<a href=\"/services/varicose-vein-treatment\">Varicose veins</a> — while not a direct cause of DVT, severely compromised veins can contribute to sluggish circulation",
           "Smoking, which damages blood vessel walls and promotes clot formation",
         ],
         keyTakeaway: "Having even two or three of these risk factors together meaningfully increases your DVT probability — a vein specialist can help you assess your combined risk.",
@@ -1304,7 +1304,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         heading: "The Connection Between Varicose Veins and DVT",
         paragraphs: [
-          "Patients who already have varicose veins or chronic venous insufficiency often ask whether these conditions put them at greater risk for DVT. The relationship is real but nuanced.",
+          "Patients who already have <a href=\"/services/varicose-vein-treatment\">varicose veins</a> or chronic venous insufficiency often ask whether these conditions put them at greater risk for DVT. The relationship is real but nuanced.",
           "Varicose veins develop when venous valves weaken, allowing blood to pool rather than flow efficiently toward the heart. This sluggish, turbulent circulation in damaged veins creates conditions that can, over time, contribute to superficial thrombophlebitis — a clot in a surface vein — which is typically painful but not life-threatening. In a smaller subset of cases, clots in superficial veins can extend into the deep venous system and become a true DVT.",
           "This is one important reason why untreated varicose veins deserve medical attention beyond the cosmetic concern. If you have been putting off a vein evaluation because your varicose veins 'don't bother you that much,' your risk picture may be more complex than it appears.",
         ],
@@ -1326,7 +1326,7 @@ export const BLOG_POSTS: BlogPost[] = [
         ],
         bullets: [
           "Anticoagulation (blood thinners) — the cornerstone of DVT treatment. Medications such as heparin, warfarin, or newer direct oral anticoagulants (DOACs like rivaroxaban or apixaban) reduce the blood's ability to clot further and allow the body to gradually dissolve the existing clot.",
-          "Compression therapy — graduated compression stockings are prescribed for most DVT patients to reduce swelling, relieve discomfort, and lower the risk of post-thrombotic syndrome, a long-term complication that causes chronic leg pain and skin changes.",
+          "Compression therapy — graduated <a href=\"/blog/compression-stockings-vein-health-new-york\">compression stockings</a> are prescribed for most DVT patients to reduce swelling, relieve discomfort, and lower the risk of post-thrombotic syndrome, a long-term complication that causes chronic leg pain and skin changes.",
           "Catheter-directed thrombolysis — for large or limb-threatening clots, a catheter may be used to deliver clot-dissolving medication directly to the site. This is typically reserved for severe, proximal DVT.",
           "Inferior vena cava (IVC) filter — in patients who cannot take anticoagulants, a small filter can be placed in the main abdominal vein to catch clots before they reach the lungs.",
           "Elevation and early mobilization — guided movement is encouraged; prolonged bed rest is no longer standard care for most DVT patients.",
@@ -1359,7 +1359,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "If you have one or more DVT risk factors, or if you've noticed symptoms such as unexplained leg swelling, persistent heaviness, or skin changes on your legs, the right move is a professional evaluation — not a wait-and-see approach.",
           "A board-certified phlebologist can perform a thorough clinical assessment, order appropriate imaging, and create a personalized prevention or treatment plan. This is not an appointment to delay.",
           "Schulman Vein and Laser Center's physicians — Dr. Martin Schulman and Dr. Lee G. Schulman — have over 55 combined years of experience in the diagnosis and treatment of vein disorders. With offices in Manhattan, Manhasset, and Commack, expert vein care is accessible across the greater New York area.",
-          "We offer a Free Vein Screening for new patients, which includes a clinical consultation and a preliminary assessment of your vein health. There is no cost, no obligation, and no reason to put it off. Catching a problem early is always better than treating a complication.",
+          "We offer a <a href=\"/services/free-vein-screening\">Free Vein Screening</a> for new patients, which includes a clinical consultation and a preliminary assessment of your vein health. There is no cost, no obligation, and no reason to put it off. Catching a problem early is always better than treating a complication.",
         ],
         callout: {
           type: "tip",
@@ -1459,7 +1459,7 @@ export const BLOG_POSTS: BlogPost[] = [
         ],
         callout: {
           type: "tip",
-          text: "If you have been wearing compression stockings, bring them or note the compression class (15–20 mmHg, 20–30 mmHg, etc.). Your physician will want to know if you have tried conservative therapy already.",
+          text: "If you have been wearing <a href=\"/blog/compression-stockings-vein-health-new-york\">compression stockings</a>, bring them or note the compression class (15–20 mmHg, 20–30 mmHg, etc.). Your physician will want to know if you have tried conservative therapy already.",
         },
       },
       {
@@ -1503,9 +1503,9 @@ export const BLOG_POSTS: BlogPost[] = [
           "After the examination and ultrasound, your physician will give you a diagnosis. For most patients, this falls into one of a few categories:",
         ],
         bullets: [
-          "Venous reflux disease (also called chronic venous insufficiency): The valves inside one or more veins are not closing properly, allowing blood to flow backward and pool. This is the root cause of most varicose veins and many spider veins.",
+          "Venous reflux disease (also called chronic venous insufficiency): The valves inside one or more veins are not closing properly, allowing blood to flow backward and pool. This is the root cause of most <a href=\"/services/varicose-vein-treatment\">varicose veins</a> and many <a href=\"/services/spider-vein-treatment\">spider veins</a>.",
           "Superficial varicose veins without underlying reflux: The veins visible at the surface are abnormal, but there is no significant valve incompetence in the deeper trunk veins. Treatment may focus on the surface veins directly.",
-          "Spider veins (telangiectasias): Small, dilated vessels close to the skin surface. Usually cosmetic, but sometimes a marker for underlying reflux.",
+          "<a href=\"/services/spider-vein-treatment\">Spider veins</a> (telangiectasias): Small, dilated vessels close to the skin surface. Usually cosmetic, but sometimes a marker for underlying reflux.",
           "Normal venous anatomy: Some patients come in concerned about veins that turn out to be structurally and functionally normal. If that is the case, your physician will tell you directly.",
         ],
         keyTakeaway: "A clear diagnosis gives you and your physician the foundation to make the best treatment decision — together.",
@@ -1550,7 +1550,7 @@ export const BLOG_POSTS: BlogPost[] = [
         paragraphs: [
           "Schulman Vein and Laser Center was founded on a single specialty: All We Do Is Veins™. Dr. Martin Schulman and Dr. Lee G. Schulman bring more than 55 years of combined experience in phlebology — the medical specialty dedicated entirely to vein disease. This focus means that when you sit across from a Schulman physician, you are talking to someone who has spent their entire career on exactly your problem.",
           "Our three New York locations — Manhattan, Manhasset, and Commack — are designed for the reality of busy metropolitan schedules. Duplex ultrasound is performed in-office at every location. Most procedures take under an hour and patients walk out same day. And with more than 200 Google reviews and a 5.0-star patient rating, the experience of our patients speaks louder than anything we could say ourselves.",
-          "We also offer a free vein screening — a no-cost, no-obligation evaluation that gives you a real diagnosis, not a sales pitch. If you leave and decide to do nothing, that is completely your prerogative. Most patients tell us they just want to understand what is going on — and that is exactly what the screening is for.",
+          "We also offer a <a href=\"/services/free-vein-screening\">free vein screening</a> — a no-cost, no-obligation evaluation that gives you a real diagnosis, not a sales pitch. If you leave and decide to do nothing, that is completely your prerogative. Most patients tell us they just want to understand what is going on — and that is exactly what the screening is for.",
         ],
         callout: {
           type: "tip",
@@ -1613,7 +1613,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         heading: "What Is Ambulatory Phlebectomy?",
         paragraphs: [
-          "Ambulatory phlebectomy is a time-tested, office-based procedure designed to remove large, bulging varicose veins through a series of tiny, pinhole-sized incisions in the skin. Unlike traditional vein stripping — which required general anesthesia and a hospital stay — ambulatory phlebectomy is performed under local anesthesia, takes less than an hour in most cases, and allows patients to walk out of the office and resume light daily activities the same day.",
+          "Ambulatory phlebectomy is a time-tested, office-based procedure designed to remove large, bulging <a href=\"/services/varicose-vein-treatment\">varicose veins</a> through a series of tiny, pinhole-sized incisions in the skin. Unlike traditional vein stripping — which required general anesthesia and a hospital stay — ambulatory phlebectomy is performed under local anesthesia, takes less than an hour in most cases, and allows patients to walk out of the office and resume light daily activities the same day.",
           "The word 'ambulatory' is key: it means you walk in and walk out. This procedure has been refined over decades and, in experienced hands, delivers excellent cosmetic results with minimal scarring and a very low complication rate. At Schulman Vein and Laser Center, ambulatory phlebectomy is one of the most frequently requested procedures in our Manhattan, Manhasset, and Commack offices.",
         ],
       },
@@ -1632,7 +1632,7 @@ export const BLOG_POSTS: BlogPost[] = [
         ],
         callout: {
           type: "info",
-          text: "Not sure if you're a candidate? A free vein screening at Schulman Vein Center includes duplex ultrasound evaluation — no referral needed.",
+          text: "Not sure if you're a candidate? A <a href=\"/services/free-vein-screening\">free vein screening</a> at Schulman Vein Center includes duplex ultrasound evaluation — no referral needed.",
         },
       },
       {
@@ -1670,7 +1670,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "Ambulatory phlebectomy is one of several evidence-based options for treating varicose veins. Understanding how it compares helps you and your physician select the right approach — or combination of approaches — for your specific situation.",
         ],
         bullets: [
-          "Ambulatory Phlebectomy vs. Sclerotherapy: Sclerotherapy uses injectable solution to close veins from the inside and works best on small-to-medium veins and spider veins. Ambulatory phlebectomy physically removes the vein and is preferred for large, bulging varicosities that are difficult to collapse with injection alone.",
+          "Ambulatory Phlebectomy vs. Sclerotherapy: Sclerotherapy uses injectable solution to close veins from the inside and works best on small-to-medium veins and <a href=\"/services/spider-vein-treatment\">spider veins</a>. Ambulatory phlebectomy physically removes the vein and is preferred for large, bulging varicosities that are difficult to collapse with injection alone.",
           "Ambulatory Phlebectomy vs. EVLT: Endovenous Laser Therapy (EVLT) treats the underlying saphenous vein — the trunk vein responsible for reflux. Ambulatory phlebectomy removes the visible branches. Many patients benefit from both: EVLT first to address reflux, followed by ambulatory phlebectomy for surface veins.",
           "Ambulatory Phlebectomy vs. Vein Stripping: Traditional stripping required general anesthesia, hospitalization, and weeks of recovery. Ambulatory phlebectomy achieves the same goal with local anesthesia, no hospital, and same-day recovery — with superior cosmetic outcomes.",
         ],
@@ -1691,7 +1691,7 @@ export const BLOG_POSTS: BlogPost[] = [
         ],
         callout: {
           type: "tip",
-          text: "Most insurance plans, including Medicare, cover ambulatory phlebectomy when medical necessity is documented. Our team manages the authorization process for you.",
+          text: "Most insurance plans, including Medicare, cover <a href=\"/services/varicose-vein-treatment\">ambulatory phlebectomy</a> when medical necessity is documented. Our team manages the authorization process for you.",
         },
       },
       {
@@ -1718,7 +1718,7 @@ export const BLOG_POSTS: BlogPost[] = [
         ],
         callout: {
           type: "tip",
-          text: "Book your Free Vein Screening online or by phone: Manhattan (212) 987-0500 · Manhasset (516) 482-4477 · Commack (631) 543-4599.",
+          text: "Book your Free Vein Screening online or by phone: <a href=\"/locations/manhattan\">Manhattan</a> (212) 987-0500 · Manhasset (516) 482-4477 · Commack (631) 543-4599.",
         },
       },
     ],
@@ -1772,20 +1772,20 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Why Manhattan Residents Are at Higher Risk for Varicose Veins",
         paragraphs: [
           "Life in Manhattan creates a unique set of vascular stressors. Millions of New Yorkers spend hours each day commuting — standing on subway platforms, waiting in packed train cars, walking dozens of city blocks in less-than-ideal footwear. Office workers sit at desks for six, eight, or ten hours at a stretch. Restaurant workers, nurses, retail employees, and teachers spend entire shifts on their feet.",
-          "Each of these lifestyle patterns places sustained pressure on the venous system of the legs. Over time, that pressure weakens the one-way valves inside the veins — the tiny structures responsible for pushing blood back up to the heart against gravity. When those valves fail, blood pools in the lower legs, veins stretch and bulge, and the condition we know as varicose veins takes hold.",
+          "Each of these lifestyle patterns places sustained pressure on the venous system of the legs. Over time, that pressure weakens the one-way valves inside the veins — the tiny structures responsible for pushing blood back up to the heart against gravity. When those valves fail, blood pools in the lower legs, veins stretch and bulge, and the condition we know as <a href=\"/services/varicose-vein-treatment\">varicose veins</a> takes hold.",
           "This is not merely a cosmetic inconvenience. For many Manhattanites, varicose veins cause genuine physical discomfort: leg aching and heaviness after long commutes, swollen ankles by the end of a workday, cramps that interrupt sleep. Left untreated, the underlying venous disease can progress to chronic venous insufficiency — a condition that significantly impairs quality of life and, in advanced cases, leads to venous ulcers.",
         ],
       },
       {
         heading: "What Are Varicose Veins?",
         paragraphs: [
-          "Varicose veins are enlarged, twisted veins that become visible beneath the skin — typically appearing as blue, purple, or green rope-like cords along the calves, inner thighs, or behind the knees. They develop when the valves within the superficial venous system lose their ability to maintain one-directional blood flow.",
+          "<a href=\"/services/varicose-vein-treatment\">Varicose veins</a> are enlarged, twisted veins that become visible beneath the skin — typically appearing as blue, purple, or green rope-like cords along the calves, inner thighs, or behind the knees. They develop when the valves within the superficial venous system lose their ability to maintain one-directional blood flow.",
           "Healthy veins use muscular contractions and a series of valve 'gates' to move blood upward toward the heart. When a valve becomes incompetent — meaning it no longer closes fully — blood flows backward (called reflux) and pools in the segment below. That pooled blood creates elevated venous pressure, causing the vein wall to dilate and eventually become permanently distorted.",
           "Varicose veins are extremely common — studies estimate that up to 35 percent of Americans are affected. While anyone can develop them, risk is elevated by genetics, prolonged standing or sitting, pregnancy, obesity, prior blood clots, and simply getting older. In Manhattan's high-pressure, high-mobility environment, these risk factors converge for a significant portion of the population.",
         ],
         callout: {
           type: "info",
-          text: "Varicose veins and spider veins are related but distinct. Spider veins are smaller, finer vessels visible at the skin surface — often a sign of underlying venous disease. Both can be treated effectively at Schulman Vein Center.",
+          text: "Varicose veins and <a href=\"/services/spider-vein-treatment\">spider veins</a> are related but distinct. Spider veins are smaller, finer vessels visible at the skin surface — often a sign of underlying venous disease. Both can be treated effectively at Schulman Vein Center.",
         },
       },
       {
@@ -1850,7 +1850,7 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Does Insurance Cover Varicose Vein Treatment?",
         paragraphs: [
           "One of the most common questions we hear from Manhattan patients is: 'Will my insurance pay for this?' The answer, in many cases, is yes — provided treatment is deemed medically necessary rather than purely cosmetic.",
-          "Insurance carriers — including most major commercial plans, Medicare, and Medicaid — typically cover varicose vein treatment when the following criteria are met:",
+          "Insurance carriers — including most major commercial plans, Medicare, and Medicaid — typically cover <a href=\"/services/varicose-vein-treatment\">varicose vein treatment</a> when the following criteria are met:",
           "At Schulman Vein Center, we handle insurance verification, prior authorization, and documentation on behalf of our patients. We will tell you clearly — before any procedure — what your out-of-pocket responsibility will be. There are no billing surprises.",
         ],
         bullets: [
@@ -1861,7 +1861,7 @@ export const BLOG_POSTS: BlogPost[] = [
         ],
         callout: {
           type: "info",
-          text: "Purely cosmetic treatment of spider veins (without underlying venous disease) is typically not covered. However, spider vein treatment performed alongside medically necessary procedures may receive partial coverage. We help you understand exactly what applies to your plan.",
+          text: "Purely cosmetic treatment of spider veins (without underlying venous disease) is typically not covered. However, spider <a href=\"/services\">vein treatment</a> performed alongside medically necessary procedures may receive partial coverage. We help you understand exactly what applies to your plan.",
         },
       },
       {
@@ -1977,7 +1977,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "Aching, throbbing, or heaviness in the legs — particularly after prolonged standing or sitting",
           "Swelling in the ankles and lower legs (edema) that worsens throughout the day",
           "Leg cramping, especially at night",
-          "Visible varicose veins — enlarged, rope-like veins that bulge beneath the skin",
+          "Visible <a href=\"/services/varicose-vein-treatment\">varicose veins</a> — enlarged, rope-like veins that bulge beneath the skin",
           "Itching or a burning sensation along the course of affected veins",
           "Skin changes including discoloration (reddish-brown patches called hemosiderin staining) and thickening of the skin near the ankles",
           "In advanced cases: venous ulcers — slow-healing wounds that typically develop around the inner ankle",
@@ -2026,9 +2026,9 @@ export const BLOG_POSTS: BlogPost[] = [
           "The goal of CVI treatment is to eliminate reflux in the affected veins, restore healthy circulation, and prevent disease progression. At Schulman Vein Center, we offer the full spectrum of FDA-approved, minimally invasive treatments — each selected based on your specific anatomy and disease pattern.",
         ],
         bullets: [
-          "Endovenous Laser Treatment (EVLT) — A thin laser fiber is inserted into the diseased vein under ultrasound guidance. Laser energy delivered along the vein wall causes it to seal shut. The body naturally reroutes blood through healthy veins. EVLT requires only local anesthesia and patients walk out the same day.",
+          "<a href=\"/services/laser-vein-therapy\">Endovenous Laser Treatment</a> (EVLT) — A thin laser fiber is inserted into the diseased vein under ultrasound guidance. Laser energy delivered along the vein wall causes it to seal shut. The body naturally reroutes blood through healthy veins. EVLT requires only local anesthesia and patients walk out the same day.",
           "Ultrasound-Guided Sclerotherapy — A pharmaceutical solution (sclerosant) is injected directly into affected veins under real-time ultrasound visualization, causing them to collapse and fade. Ideal for medium-sized veins and tributaries not suitable for laser.",
-          "Surface Sclerotherapy — Injections targeting spider veins and small varicosities visible at the skin surface. Often used as a complementary step after treating larger feeding veins.",
+          "Surface Sclerotherapy — Injections targeting <a href=\"/services/spider-vein-treatment\">spider veins</a> and small varicosities visible at the skin surface. Often used as a complementary step after treating larger feeding veins.",
           "Compression Therapy — Medical-grade compression stockings are frequently prescribed as part of a comprehensive CVI management plan — particularly for patients with significant edema or those awaiting procedural treatment.",
           "Ambulatory Phlebectomy — For large, bulging varicose veins near the surface, tiny micro-incisions allow the veins to be physically removed under local anesthesia. The procedure leaves minimal scarring and patients resume normal activity quickly.",
         ],
@@ -2040,8 +2040,8 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         heading: "CVI vs. Varicose Veins: Understanding the Relationship",
         paragraphs: [
-          "Patients often ask whether varicose veins and CVI are the same condition. The short answer: varicose veins are frequently a symptom of CVI, but the two are distinct diagnoses.",
-          "CVI refers to the underlying functional impairment — the failure of venous valves to maintain proper one-way flow. Varicose veins are the visible manifestation that often results from that impairment. However, CVI can exist without prominent surface veins (particularly in deeper venous segments), and varicose veins can appear in patients whose valve function remains largely intact.",
+          "Patients often ask whether <a href=\"/services/varicose-vein-treatment\">varicose veins</a> and CVI are the same condition. The short answer: varicose veins are frequently a symptom of CVI, but the two are distinct diagnoses.",
+          "CVI refers to the underlying functional impairment — the failure of venous valves to maintain proper one-way flow. <a href=\"/services/varicose-vein-treatment\">Varicose veins</a> are the visible manifestation that often results from that impairment. However, CVI can exist without prominent surface veins (particularly in deeper venous segments), and varicose veins can appear in patients whose valve function remains largely intact.",
           "This distinction matters clinically. Treating visible varicose veins without addressing underlying reflux is a common reason treatments fail or symptoms recur. At Schulman Vein Center, duplex ultrasound mapping ensures we treat the root cause — not just the surface presentation.",
         ],
         keyTakeaway:
@@ -2254,7 +2254,7 @@ export const BLOG_POSTS: BlogPost[] = [
         paragraphs: [
           "In most cases, invasive vein treatment is deferred until after delivery. The reason is straightforward: many varicose veins that develop during pregnancy improve significantly — or resolve entirely — in the weeks following childbirth as blood volume normalizes and pressure on the pelvic veins is relieved.",
           "However, there are situations where seeing a <strong>board-certified phlebologist</strong> during pregnancy is appropriate. If your symptoms are severe enough to significantly impair your quality of life, if you have a history of <strong>deep vein thrombosis</strong>, if a vein becomes hard or tender (suggesting thrombophlebitis), or if you had significant venous disease prior to pregnancy, a consultation is warranted.",
-          "At Schulman Vein and Laser Center, we offer <strong>free vein screenings</strong> that include a clinical evaluation and, when appropriate, duplex ultrasound imaging. This gives expecting mothers in Manhattan, Manhasset, and Commack a clear picture of their venous health — so they are not navigating symptoms without guidance.",
+          "At Schulman Vein and Laser Center, we offer <strong><a href=\"/services/free-vein-screening\">free vein screenings</a></strong> that include a clinical evaluation and, when appropriate, duplex ultrasound imaging. This gives expecting mothers in Manhattan, Manhasset, and Commack a clear picture of their venous health — so they are not navigating symptoms without guidance.",
         ],
         keyTakeaway:
           "Most treatment is appropriately delayed until postpartum, but a specialist evaluation during pregnancy is reasonable if symptoms are severe or if you have a history of vein disease.",
@@ -2393,7 +2393,7 @@ export const BLOG_POSTS: BlogPost[] = [
         ],
         callout: {
           type: "info",
-          text: "Before your first appointment, you do not need to call your insurer. Bring your insurance card to your free vein screening and our team will verify your benefits and estimated out-of-pocket cost.",
+          text: "Before your first appointment, you do not need to call your insurer. Bring your insurance card to your <a href=\"/services/free-vein-screening\">free vein screening</a> and our team will verify your benefits and estimated out-of-pocket cost.",
         },
       },
       {
@@ -2441,8 +2441,8 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         heading: "What varicose veins actually are",
         paragraphs: [
-          "<strong>Varicose veins</strong> develop when vein valves in the legs weaken and allow blood to pool instead of returning efficiently to the heart. The pressure stretches the vein wall over time, making veins look twisted, enlarged, or rope-like.",
-          "Many people assume varicose veins are only cosmetic — but visible veins can be one sign of <strong>chronic venous insufficiency</strong>. The underlying circulation problem may be present even when discomfort seems mild or manageable.",
+          "<a href=\"/services/varicose-vein-treatment\"><strong>Varicose veins</strong></a> develop when vein valves in the legs weaken and allow blood to pool instead of returning efficiently to the heart. The pressure stretches the vein wall over time, making veins look twisted, enlarged, or rope-like.",
+          "Many people assume varicose veins are only cosmetic — but visible veins can be one sign of <a href=\"/services/vein-disorders\"><strong>chronic venous insufficiency</strong></a>. The underlying circulation problem may be present even when discomfort seems mild or manageable.",
         ],
         keyTakeaway:
           "Varicose veins are often a visible symptom of a deeper circulation problem — venous insufficiency — not just a cosmetic concern.",
@@ -2549,7 +2549,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "Immediate walking encouraged after the procedure",
         ],
         keyTakeaway:
-          "EVLT addresses the root cause of varicose veins — the incompetent trunk vein — not just the surface appearance.",
+          "EVLT addresses the root cause of <a href=\"/services/varicose-vein-treatment\">varicose veins</a> — the incompetent trunk vein — not just the surface appearance.",
       },
       {
         heading: "How sclerotherapy works",
@@ -2560,7 +2560,7 @@ export const BLOG_POSTS: BlogPost[] = [
         bullets: [
           "No anesthesia required — fine needle injection",
           "15–30 minutes per session with no downtime",
-          "Best for spider veins and smaller surface vessels",
+          "Best for <a href=\"/services/spider-vein-treatment\">spider veins</a> and smaller surface vessels",
           "Results appear gradually over several weeks",
           "Often combined with EVLT in a staged plan",
         ],
@@ -2656,7 +2656,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "Mild bruising or discoloration along the treated vein path",
           "Cord-like firmness under the skin (the treated vein closing off)",
           "Occasional aching or tightness in the first week",
-          "Temporary skin darkening near treated spider veins",
+          "Temporary skin darkening near treated <a href=\"/services/spider-vein-treatment\">spider veins</a>",
           "Minor swelling in the treated leg, especially by end of day",
         ],
         callout: {
@@ -2798,7 +2798,7 @@ export const BLOG_POSTS: BlogPost[] = [
         ],
         callout: {
           type: "tip",
-          text: "Bring your insurance card and a list of current medications to your free vein screening. Our team handles prior authorization from that first appointment — you will not need to navigate the insurance process alone.",
+          text: "Bring your insurance card and a list of current medications to your <a href=\"/services/free-vein-screening\">free vein screening</a>. Our team handles prior authorization from that first appointment — you will not need to navigate the insurance process alone.",
         },
       },
       {
@@ -2883,7 +2883,7 @@ export const BLOG_POSTS: BlogPost[] = [
         ],
         callout: {
           type: "info",
-          text: "Patients often come in for cosmetic spider veins and discover underlying varicose vein disease on ultrasound. A free vein screening at Schulman Vein and Laser Center catches this pattern early — before symptoms become severe.",
+          text: "Patients often come in for cosmetic spider veins and discover underlying varicose vein disease on ultrasound. A <a href=\"/services/free-vein-screening\">free vein screening</a> at Schulman Vein and Laser Center catches this pattern early — before symptoms become severe.",
         },
       },
       {
@@ -2971,7 +2971,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         heading: "Common treatment approaches",
         paragraphs: [
-          "Depending on anatomy, options may include <strong>targeted sclerotherapy</strong> for smaller superficial hand veins or <strong>microphlebectomy-style techniques</strong> for selected larger surface vessels. Treatment strategy is individualized to preserve function and optimize appearance.",
+          "Depending on anatomy, options may include <strong>targeted <a href=\"/services/spider-vein-treatment\">sclerotherapy</a></strong> for smaller superficial hand veins or <strong>microphlebectomy-style techniques</strong> for selected larger surface vessels. Treatment strategy is individualized to preserve function and optimize appearance.",
           "<a href=\"/services/spider-vein-treatment\">Sclerotherapy</a> for hand veins uses very fine needles and careful injection technique. Multiple sessions may be needed for full results, and treated veins fade gradually over several weeks.",
           "Learn more about <a href=\"/services/body-vein-treatment\">body vein treatment options</a> available at Schulman Vein and Laser Center.",
         ],
