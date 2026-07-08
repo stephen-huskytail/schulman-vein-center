@@ -47,9 +47,9 @@ When implementing SEO improvements:
 
 ## Blog SOP
 
-- Blog posts should include contextual internal links to relevant service, location, and related blog pages.
-- When adding internal links to Schulman blog content, open them in a new tab with `target="_blank"` and `rel="noopener noreferrer"` unless Stephen/Myla gives a different instruction.
-- Verify live rendered DOM, not just source code, so both inline anchors and related-resource links have the expected new-tab attributes.
+- Blog posts should include 5+ contextual internal links to relevant service, location, and related blog pages.
+- Do not force internal blog links to open in a new tab; Stephen overrode the new-tab suggestion on 2026-07-02 for SEO reasons.
+- Verify live rendered DOM, not just source code, so inline anchors and related-resource links point to the expected destinations.
 
 ## Recommended Next Task
 

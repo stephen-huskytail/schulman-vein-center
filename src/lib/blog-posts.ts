@@ -65,6 +65,7 @@ export const BLOG_POSTS: BlogPost[] = [
     { label: "Varicose Vein Treatment", href: "/services/varicose-vein-treatment" },
     { label: "Vein Disorders", href: "/services/vein-disorders" },
     { label: "Free Vein Screening", href: "/services/free-vein-screening" },
+    { label: "Compression Stockings and Vein Health", href: "/blog/compression-stockings-vein-health-new-york" },
   ],
   quickSummary: [
     "Sclerotherapy is the gold-standard treatment for spider veins — a precise injection that causes affected vessels to fade and disappear over several weeks.",
@@ -87,8 +88,8 @@ export const BLOG_POSTS: BlogPost[] = [
     {
       heading: "What Is Spider Vein Sclerotherapy?",
       paragraphs: [
-        "Spider vein sclerotherapy is an in-office procedure in which a physician injects a specialized solution directly into the targeted spider veins, causing the vessel walls to collapse and seal shut. Over the following weeks, the treated veins fade as the body gradually absorbs and eliminates the damaged vessel tissue. The result is a measurable reduction — and, with multiple sessions, often complete elimination — of the red, blue, and purple web-like clusters that characterize spider veins.",
-        "Sclerotherapy has been the standard treatment for spider veins for decades. When performed by an experienced vein specialist, it is highly effective, minimally discomforting, and requires no anesthesia or downtime. At Schulman Vein and Laser Center, our physicians perform sclerotherapy at all three of our New York locations — Manhattan, Manhasset, and Commack — using both traditional liquid sclerosant and foam-based techniques tailored to the size and depth of the veins being treated.",
+        "<a href=\"/services/spider-vein-treatment\">Spider vein sclerotherapy</a> is an in-office procedure in which a physician injects a specialized solution directly into the targeted spider veins, causing the vessel walls to collapse and seal shut. Over the following weeks, the treated veins fade as the body gradually absorbs and eliminates the damaged vessel tissue. The result is a measurable reduction — and, with multiple sessions, often complete elimination — of the red, blue, and purple web-like clusters that characterize spider veins.",
+        "Sclerotherapy has been the standard treatment for spider veins for decades. When performed by an experienced <a href=\"/services/vein-disorders\">vein specialist</a>, it is highly effective, minimally discomforting, and requires no anesthesia or downtime. At Schulman Vein and Laser Center, our physicians perform sclerotherapy at all three of our New York locations — <a href=\"/locations/manhattan\">Manhattan</a>, <a href=\"/locations/manhasset\">Manhasset</a>, and <a href=\"/locations/commack\">Commack</a> — using both traditional liquid sclerosant and foam-based techniques tailored to the size and depth of the veins being treated.",
         "Patients often ask why sclerotherapy outperforms topical creams, compression alone, or laser therapy for most spider vein presentations. The answer is mechanism: a sclerosant delivered directly into the vessel triggers a targeted inflammatory reaction that permanently closes the vein from the inside. Compression and creams cannot do this. Laser therapy can — but with more limitations for certain skin tones and vein colors, as discussed later in this article.",
       ],
       keyTakeaway: "Spider vein sclerotherapy works by injecting a solution that closes the vein permanently from the inside — it is the most effective and widely used treatment for red, blue, and purple surface veins.",
@@ -101,16 +102,16 @@ export const BLOG_POSTS: BlogPost[] = [
       ],
       bullets: [
         "Red, blue, or purple spider veins anywhere on the legs — including the inner thigh, outer calf, ankle, and behind the knee",
-        "Spider vein clusters that have persisted despite compression stockings or other conservative measures",
+        "Spider vein clusters that have persisted despite <a href=\"/blog/compression-stockings-vein-health-new-york\">compression stockings</a> or other conservative measures",
         "Reticular veins — slightly larger, blue-green feeding vessels 1–3 mm in diameter that often accompany spider vein clusters and should be treated first to improve spider vein clearance",
         "Post-pregnancy spider veins that did not resolve on their own within 6–12 months after delivery",
         "Spider veins that are causing localized aching, burning, or itching (which can indicate an underlying venous insufficiency component)",
       ],
       callout: {
         type: "info",
-        text: "If your spider veins are accompanied by aching, heaviness, or swelling, an underlying venous insufficiency may be driving their development. Treating spider veins without addressing the root cause leads to faster recurrence — our physicians evaluate for this at your first visit.",
+        text: "If your spider veins are accompanied by aching, heaviness, or swelling, an underlying <a href=\"/services/vein-disorders\">venous insufficiency</a> may be driving their development. Treating spider veins without addressing the root cause leads to faster recurrence — our physicians evaluate for this at your first visit.",
       },
-      keyTakeaway: "Most adults with visible spider veins on the legs are candidates for sclerotherapy. A duplex ultrasound evaluation rules out underlying venous insufficiency before treatment begins.",
+      keyTakeaway: "Most adults with visible spider veins on the legs are candidates for sclerotherapy. A <a href=\"/services/free-vein-screening\">duplex ultrasound evaluation</a> rules out underlying venous insufficiency before treatment begins.",
     },
     {
       heading: "What to Expect Before Your Sclerotherapy Session",
@@ -187,7 +188,7 @@ export const BLOG_POSTS: BlogPost[] = [
     {
       heading: "Sclerotherapy vs. Laser Treatment for Spider Veins",
       paragraphs: [
-        "Patients frequently ask whether sclerotherapy or laser therapy is the better option for spider veins. Both are effective — but they work differently, and one typically outperforms the other depending on the specific clinical situation.",
+        "Patients frequently ask whether sclerotherapy or <a href=\"/services/laser-vein-therapy\">laser therapy</a> is the better option for spider veins. Both are effective — but they work differently, and one typically outperforms the other depending on the specific clinical situation.",
         "Sclerotherapy advantages:",
       ],
       bullets: [
@@ -205,7 +206,7 @@ export const BLOG_POSTS: BlogPost[] = [
         "If spider veins on your legs have been bothering you — cosmetically, physically, or both — the best first step is a professional evaluation rather than guessing at treatment. Some spider vein presentations have an underlying venous insufficiency component that, if left untreated, causes spider veins to return quickly after treatment regardless of how many sessions you complete.",
         "At Schulman Vein and Laser Center, your first visit includes a clinical examination and, when indicated, a duplex ultrasound evaluation to map the venous anatomy beneath the surface. If the ultrasound identifies venous reflux driving your spider veins, we treat the root cause first — which produces dramatically better and longer-lasting cosmetic results.",
         "Dr. Martin Schulman and Dr. Lee G. Schulman have more than 55 combined years of phlebology experience. Their practice — All We Do Is Veins™ — is one of the most recognized vein centers in the New York metropolitan area, with offices in Manhattan, Manhasset, and Commack. Our Free Vein Screening requires no referral and no obligation. You will leave with a clear diagnosis and a personalized treatment plan.",
-        "Schedule your Free Vein Screening today and take the first step toward legs you are comfortable showing.",
+        "Schedule your <a href=\"/services/free-vein-screening\">Free Vein Screening</a> today and take the first step toward legs you are comfortable showing.",
       ],
       callout: {
         type: "tip",
