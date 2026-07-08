@@ -48,6 +48,195 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
 {
+  slug: "spider-vein-sclerotherapy-treatment-new-york",
+  title: "Sclerotherapy for Spider Veins: What to Expect Before, During, and After in New York",
+  excerpt: "Sclerotherapy is the most effective treatment for eliminating red and purple spider veins. Learn exactly what the procedure involves and what New York patients can expect.",
+  category: "Treatments",
+  publishedAt: "2026-07-08",
+  readTimeMinutes: 9,
+  author: "Dr. Lee G. Schulman",
+  metaTitle: "Spider Vein Sclerotherapy: What to Expect | New York",
+  metaDescription: "Spider vein sclerotherapy eliminates red and purple veins with a simple injection. Learn what to expect before, during, and after in New York.",
+  ogDescription: "Spider vein sclerotherapy eliminates red and purple veins with a simple injection. Learn what to expect before, during, and after treatment in New York.",
+  featuredImage: "/images/blog/spider-vein-sclerotherapy-new-york.jpg",
+  featuredImageAlt: "Spider vein sclerotherapy consultation at Schulman Vein and Laser Center Manhattan New York",
+  relatedLinks: [
+    { label: "Spider Vein Treatment", href: "/services/spider-vein-treatment" },
+    { label: "Varicose Vein Treatment", href: "/services/varicose-vein-treatment" },
+    { label: "Vein Disorders", href: "/services/vein-disorders" },
+    { label: "Free Vein Screening", href: "/services/free-vein-screening" },
+  ],
+  quickSummary: [
+    "Sclerotherapy is the gold-standard treatment for spider veins — a precise injection that causes affected vessels to fade and disappear over several weeks.",
+    "Sessions take 15 to 45 minutes in-office with no anesthesia required; most patients return to normal activities the same day.",
+    "Three to five sessions spaced 4–6 weeks apart are typically needed for complete clearance, depending on the extent of the vein network.",
+    "Wearing graduated compression stockings for 5–7 days after each session significantly improves results and reduces bruising.",
+    "A Free Vein Screening at Schulman Vein and Laser Center confirms whether spider veins have an underlying venous cause that should be treated first.",
+  ],
+  tableOfContents: [
+    "What Is Spider Vein Sclerotherapy?",
+    "Who Is a Candidate for Sclerotherapy?",
+    "What to Expect Before Your Session",
+    "What Happens During the Procedure",
+    "After Your Session: Recovery and Results",
+    "How Many Sessions Will You Need?",
+    "Sclerotherapy vs. Laser Treatment for Spider Veins",
+    "Frequently Asked Questions",
+  ],
+  body: [
+    {
+      heading: "What Is Spider Vein Sclerotherapy?",
+      paragraphs: [
+        "Spider vein sclerotherapy is an in-office procedure in which a physician injects a specialized solution directly into the targeted spider veins, causing the vessel walls to collapse and seal shut. Over the following weeks, the treated veins fade as the body gradually absorbs and eliminates the damaged vessel tissue. The result is a measurable reduction — and, with multiple sessions, often complete elimination — of the red, blue, and purple web-like clusters that characterize spider veins.",
+        "Sclerotherapy has been the standard treatment for spider veins for decades. When performed by an experienced vein specialist, it is highly effective, minimally discomforting, and requires no anesthesia or downtime. At Schulman Vein and Laser Center, our physicians perform sclerotherapy at all three of our New York locations — Manhattan, Manhasset, and Commack — using both traditional liquid sclerosant and foam-based techniques tailored to the size and depth of the veins being treated.",
+        "Patients often ask why sclerotherapy outperforms topical creams, compression alone, or laser therapy for most spider vein presentations. The answer is mechanism: a sclerosant delivered directly into the vessel triggers a targeted inflammatory reaction that permanently closes the vein from the inside. Compression and creams cannot do this. Laser therapy can — but with more limitations for certain skin tones and vein colors, as discussed later in this article.",
+      ],
+      keyTakeaway: "Spider vein sclerotherapy works by injecting a solution that closes the vein permanently from the inside — it is the most effective and widely used treatment for red, blue, and purple surface veins.",
+    },
+    {
+      heading: "Who Is a Candidate for Spider Vein Sclerotherapy?",
+      paragraphs: [
+        "Most adults with visible spider veins are candidates for sclerotherapy. Spider veins are superficial, dilated blood vessels near the skin's surface — typically less than 1–2 mm in diameter — that appear as fine red, blue, or purple lines, webs, or star-burst clusters, most commonly on the legs, thighs, calves, and ankles.",
+        "Sclerotherapy is appropriate for the following presentations:",
+      ],
+      bullets: [
+        "Red, blue, or purple spider veins anywhere on the legs — including the inner thigh, outer calf, ankle, and behind the knee",
+        "Spider vein clusters that have persisted despite compression stockings or other conservative measures",
+        "Reticular veins — slightly larger, blue-green feeding vessels 1–3 mm in diameter that often accompany spider vein clusters and should be treated first to improve spider vein clearance",
+        "Post-pregnancy spider veins that did not resolve on their own within 6–12 months after delivery",
+        "Spider veins that are causing localized aching, burning, or itching (which can indicate an underlying venous insufficiency component)",
+      ],
+      callout: {
+        type: "info",
+        text: "If your spider veins are accompanied by aching, heaviness, or swelling, an underlying venous insufficiency may be driving their development. Treating spider veins without addressing the root cause leads to faster recurrence — our physicians evaluate for this at your first visit.",
+      },
+      keyTakeaway: "Most adults with visible spider veins on the legs are candidates for sclerotherapy. A duplex ultrasound evaluation rules out underlying venous insufficiency before treatment begins.",
+    },
+    {
+      heading: "What to Expect Before Your Sclerotherapy Session",
+      paragraphs: [
+        "Preparation for sclerotherapy is straightforward. A few targeted steps help ensure your session produces the best possible results.",
+      ],
+      bullets: [
+        "Avoid shaving or applying lotion to your legs on the day of your appointment — clean, dry skin allows cleaner visualization of the treatment area.",
+        "Stop taking anti-inflammatory medications (ibuprofen, naproxen, aspirin) for 48–72 hours before your session if medically safe to do so — these can increase bruising risk. Always consult with your physician before stopping any medication.",
+        "Avoid blood-thinning supplements (fish oil, vitamin E, ginkgo, garlic) for a week before your appointment if possible.",
+        "Stay well-hydrated — adequate hydration makes veins more visible and sessions more efficient.",
+        "Bring or wear comfortable, loose clothing that allows easy access to your legs. Many patients bring shorts or loose-fitting pants to change into.",
+        "Plan to bring graduated compression stockings to your appointment — our team will help you put them on immediately after your session, which is when they're most effective.",
+      ],
+      imageSrc: "/images/blog/spider-vein-sclerotherapy-new-york-procedure.jpg",
+      imageAlt: "Physician administering sclerotherapy injection for spider vein treatment in a New York vein clinic",
+      keyTakeaway: "The most important pre-session step: avoid anti-inflammatories, stay hydrated, and arrive with clean, unlotion-ed legs. Compression stockings post-session significantly improve results.",
+    },
+    {
+      heading: "What Happens During the Sclerotherapy Procedure",
+      paragraphs: [
+        "A sclerotherapy session at Schulman Vein and Laser Center is straightforward, efficient, and designed to minimize discomfort. Here is what happens from the moment you arrive:",
+      ],
+      bullets: [
+        "Positioning: You will be asked to lie on your back or stomach depending on which leg areas are being treated. The physician will examine your legs and map the treatment areas using a bright light or vein-visualization device to identify the spider vein clusters, their extent, and any feeding reticular veins.",
+        "Cleansing: The treatment area is cleaned with an antiseptic solution.",
+        "Injections: Using a very fine needle — typically 30-gauge, comparable in width to a sewing needle — the physician injects a small amount of sclerosant solution directly into each targeted vessel. You will feel a mild stinging or burning sensation lasting a few seconds with each injection. Most patients tolerate this easily without topical anesthesia, though we can accommodate requests for numbing cream.",
+        "Compression and elevation: After each injection, the physician applies gentle pressure over the treated vessel and moves on to the next target. Sessions typically involve 10 to 40 injections depending on the surface area being treated.",
+        "Post-session dressing: Once the session is complete, compression bandages or graduated compression stockings are applied. You are asked to walk for 15–20 minutes before leaving the office — walking activates calf muscle pumping, which helps distribute the sclerosant and prevents it from pooling.",
+      ],
+      callout: {
+        type: "tip",
+        text: "Sessions take 15–45 minutes depending on the number of areas treated. Most patients are comfortable returning to desk work or light daily activities the same afternoon.",
+      },
+    },
+    {
+      heading: "After Your Session: Recovery and Results",
+      paragraphs: [
+        "The post-sclerotherapy period is when results develop — and when following your physician's instructions most carefully pays the biggest dividends. Here is what to expect in the days and weeks after treatment.",
+      ],
+      bullets: [
+        "Days 1–3: Mild bruising, redness, and localized tenderness over the treated areas are normal and expected. The treated veins may look slightly darker or more prominent at first — this is a sign the sclerosant is working, not a sign of a problem.",
+        "Days 1–7: Wear your graduated compression stockings continuously (day and night for the first 24 hours, then daily for the remaining days). Compression is one of the strongest determinants of how well sclerotherapy works — patients who skip it consistently have worse outcomes.",
+        "Days 1–14: Avoid strenuous exercise, hot baths, saunas, or direct sun exposure on the treated areas. Light walking is not only permitted but encouraged.",
+        "Weeks 2–6: The treated veins gradually fade as the body absorbs them. Spider veins treated with sclerotherapy typically show 50–90% clearance per session. Fading continues for up to 12 weeks after each session.",
+        "Months 1–3: Full results of each session become visible 6–12 weeks later. This is why follow-up sessions are spaced at least 4–6 weeks apart — you need to evaluate how much additional treatment is needed before proceeding.",
+      ],
+      imageSrc: "/images/blog/spider-vein-sclerotherapy-new-york-recovery.jpg",
+      imageAlt: "Patient in compression stocking after spider vein sclerotherapy recovery at New York vein clinic",
+      callout: {
+        type: "warning",
+        text: "Contact our office if you notice: significant leg swelling after your session, red streaking along the vein, fever, or any skin breakdown over the treated area. These are uncommon but warrant prompt evaluation.",
+      },
+      keyTakeaway: "Compression stockings worn faithfully for 5–7 days after each session are the single most impactful thing you can do to improve your sclerotherapy results.",
+    },
+    {
+      heading: "How Many Sclerotherapy Sessions Will You Need?",
+      paragraphs: [
+        "One of the most common questions patients ask before their first session is: how many treatments will it take? The honest answer depends on several factors — the total surface area of spider veins present, the size and depth of the vessels, whether underlying reticular veins or venous insufficiency are contributing, and your individual healing response.",
+        "General benchmarks from clinical experience:",
+      ],
+      bullets: [
+        "Mild spider vein clusters in one localized area: 2–3 sessions typically achieves good clearance",
+        "Moderate spider veins scattered across both legs: 3–5 sessions is the norm",
+        "Extensive spider vein networks, post-pregnancy cases, or spider veins with prominent feeder veins: 5–8 sessions may be required",
+        "Maintenance sessions 1–2 years later are common — sclerotherapy treats existing spider veins but does not prevent new ones from developing",
+      ],
+      callout: {
+        type: "info",
+        text: "Cosmetic spider vein treatment is typically not covered by insurance. However, if spider veins are causing documented symptoms — aching, burning, or itching — coverage may be possible. Our team reviews your specific plan before your first visit.",
+      },
+      keyTakeaway: "Plan for 3–5 sessions spaced 4–6 weeks apart for moderate spider vein clearance. Each session builds on the last — the cumulative improvement is significantly greater than any single session.",
+    },
+    {
+      heading: "Sclerotherapy vs. Laser Treatment for Spider Veins",
+      paragraphs: [
+        "Patients frequently ask whether sclerotherapy or laser therapy is the better option for spider veins. Both are effective — but they work differently, and one typically outperforms the other depending on the specific clinical situation.",
+        "Sclerotherapy advantages:",
+      ],
+      bullets: [
+        "Effective on red, blue, and purple vessels regardless of skin tone",
+        "Reaches deeper and larger spider veins that surface lasers cannot penetrate",
+        "Treats a larger surface area per session — ideal for patients with widespread spider veins",
+        "Lower cost per session for the volume of veins treated",
+        "More effective on blue and green reticular feeding veins",
+      ],
+      keyTakeaway: "Sclerotherapy is the preferred first-line treatment for leg spider veins in most patients. Surface laser may be added for very fine, superficial vessels that don't respond to injection — but sclerotherapy handles the majority of cases better.",
+    },
+    {
+      heading: "Book Your Free Vein Screening in New York",
+      paragraphs: [
+        "If spider veins on your legs have been bothering you — cosmetically, physically, or both — the best first step is a professional evaluation rather than guessing at treatment. Some spider vein presentations have an underlying venous insufficiency component that, if left untreated, causes spider veins to return quickly after treatment regardless of how many sessions you complete.",
+        "At Schulman Vein and Laser Center, your first visit includes a clinical examination and, when indicated, a duplex ultrasound evaluation to map the venous anatomy beneath the surface. If the ultrasound identifies venous reflux driving your spider veins, we treat the root cause first — which produces dramatically better and longer-lasting cosmetic results.",
+        "Dr. Martin Schulman and Dr. Lee G. Schulman have more than 55 combined years of phlebology experience. Their practice — All We Do Is Veins™ — is one of the most recognized vein centers in the New York metropolitan area, with offices in Manhattan, Manhasset, and Commack. Our Free Vein Screening requires no referral and no obligation. You will leave with a clear diagnosis and a personalized treatment plan.",
+        "Schedule your Free Vein Screening today and take the first step toward legs you are comfortable showing.",
+      ],
+      callout: {
+        type: "tip",
+        text: "Call our Manhattan office at 212.987.0500, Manhasset at 516.482.4477, or Commack at 631.543.4599 to book your Free Vein Screening — no referral required.",
+      },
+    },
+  ],
+  faqSection: [
+    {
+      question: "Does sclerotherapy hurt?",
+      answer: "Most patients describe sclerotherapy injections as a mild stinging or burning sensation that lasts only a few seconds per injection. The needles used are very fine (30-gauge), and the brief discomfort is easily tolerated by the vast majority of patients without topical anesthesia. If you are concerned about sensitivity, let our team know and we can discuss options.",
+    },
+    {
+      question: "How soon will I see results after sclerotherapy?",
+      answer: "Treated veins begin fading gradually over 2–6 weeks following each session. Full results are typically visible at 6–12 weeks. Some patients notice significant improvement after a single session; others require multiple sessions before dramatic clearance becomes apparent. The veins often look slightly darker or more prominent in the first 1–2 weeks — this is a normal part of the process.",
+    },
+    {
+      question: "Can spider veins come back after sclerotherapy?",
+      answer: "Sclerotherapy permanently eliminates the specific veins that are treated. However, it does not prevent new spider veins from forming — particularly if there is an underlying hereditary predisposition, hormonal influence, or untreated venous insufficiency. Many patients return for maintenance sessions every 1–2 years to address new vein development.",
+    },
+    {
+      question: "Can I exercise after sclerotherapy?",
+      answer: "Light walking is encouraged immediately after your session and in the days that follow — it promotes circulation and helps the treated veins clear faster. Strenuous exercise (running, weightlifting, high-intensity classes) should be avoided for at least 5–7 days. Your physician will give you specific guidance based on the extent of your treatment.",
+    },
+    {
+      question: "Is spider vein sclerotherapy covered by insurance?",
+      answer: "Spider vein treatment performed for cosmetic reasons is not covered by most insurance plans. If your spider veins are causing documented symptoms such as aching, burning, or itching, coverage may be available — but requires evaluation and documentation. Our team verifies your benefits before your first appointment and explains your out-of-pocket costs clearly.",
+    },
+  ],
+},
+{
   slug: "varicose-veins-summer-heat-new-york",
   title: "Why Varicose Veins Feel Worse in Summer Heat — and What New York Patients Can Do",
   excerpt: "Summer heat is one of the most consistent triggers for worsening varicose vein symptoms. Learn why heat affects your veins and what New York patients can do right now.",
