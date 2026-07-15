@@ -48,6 +48,185 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
 {
+  slug: "radiofrequency-ablation-varicose-veins-new-york",
+  title: "Radiofrequency Ablation for Varicose Veins: A Complete Guide for New York Patients",
+  excerpt: "Radiofrequency ablation permanently closes varicose veins using controlled heat — no surgery, no scarring, and same-day return to normal activity. Here is what New York patients need to know.",
+  category: "Treatments",
+  publishedAt: "2026-07-15",
+  readTimeMinutes: 10,
+  author: "Dr. Lee G. Schulman",
+  metaTitle: "Radiofrequency Ablation for Varicose Veins | New York",
+  metaDescription: "Radiofrequency ablation eliminates varicose veins using gentle heat energy. Learn how RFA works and why New York patients choose it over surgery.",
+  ogDescription: "Radiofrequency ablation permanently closes varicose veins using controlled heat — no surgery, no scarring, and same-day recovery. Learn what New York patients can expect.",
+  featuredImage: "/images/blog/radiofrequency-ablation-varicose-veins-new-york.jpg",
+  featuredImageAlt: "Physician performing radiofrequency ablation varicose veins treatment at Schulman Vein and Laser Center New York",
+  relatedLinks: [
+    { label: "Varicose Vein Treatment", href: "/services/varicose-vein-treatment" },
+    { label: "Vein Disorders", href: "/services/vein-disorders" },
+    { label: "Free Vein Screening", href: "/services/free-vein-screening" },
+    { label: "EVLT vs. Sclerotherapy: Which Is Right for You?", href: "/blog/evlt-vs-sclerotherapy-vein-treatment-new-york" },
+  ],
+  quickSummary: [
+    "Radiofrequency ablation (RFA) uses precisely controlled heat to permanently close the diseased veins responsible for varicose veins — without surgery or visible scars.",
+    "The procedure takes 45 to 90 minutes in-office under local anesthesia; patients walk out and return to normal activities the same day or the next morning.",
+    "Long-term clinical data confirms closure rates of 95–98% at five years — a significant improvement over older surgical vein stripping techniques.",
+    "Tumescent anesthesia delivered around the vein makes the procedure well-tolerated; most patients describe the ablation phase as mild warmth or pressure.",
+    "A Free Vein Screening at Schulman Vein and Laser Center includes duplex ultrasound mapping to confirm whether RFA is the right treatment for your specific venous anatomy.",
+  ],
+  tableOfContents: [
+    "What Is Radiofrequency Ablation for Varicose Veins?",
+    "How Radiofrequency Ablation Eliminates Varicose Veins",
+    "Who Is a Good Candidate for RFA?",
+    "What to Expect During the RFA Procedure",
+    "Recovery After Radiofrequency Ablation",
+    "RFA vs. Endovenous Laser Therapy: What's the Difference?",
+    "Frequently Asked Questions",
+  ],
+  body: [
+    {
+      heading: "What Is Radiofrequency Ablation for Varicose Veins?",
+      paragraphs: [
+        "Radiofrequency ablation (RFA) is a minimally invasive, office-based procedure that uses controlled thermal energy to permanently close the diseased veins responsible for varicose veins. Rather than cutting or removing veins — as older surgical techniques required — RFA delivers precisely calibrated radiofrequency energy through a thin catheter inserted directly into the vein. The heat causes the vein wall to contract and seal shut, and the body naturally absorbs the treated tissue over the following weeks and months.",
+        "The procedure was approved by the FDA in the late 1990s and has since become one of the most widely performed varicose vein treatments in the United States. Long-term clinical studies confirm closure rates of 95–98% at five years, far exceeding the durability of older surgical vein stripping. For patients in the New York metropolitan area who want an effective, scar-free alternative to surgery, radiofrequency ablation offers compelling results with a same-day recovery.",
+        "At Schulman Vein and Laser Center — with offices in Manhattan, Manhasset, and Commack — board-certified phlebologists Dr. Martin Schulman and Dr. Lee G. Schulman have performed RFA for over two decades. The practice's sole focus on <a href=\"/services/vein-disorders\">vein disease</a> ensures that every patient receives the highest standard of care for this procedure.",
+      ],
+      keyTakeaway: "Radiofrequency ablation permanently closes varicose veins using controlled heat delivered through a thin catheter — no surgery, no general anesthesia, and no visible scars.",
+    },
+    {
+      heading: "How Radiofrequency Ablation Eliminates Varicose Veins",
+      paragraphs: [
+        "The physics behind radiofrequency ablation are straightforward: alternating electrical current at radiofrequency wavelengths passes through tissue and generates heat through resistance. In RFA, this energy is delivered in a highly localized and controlled way along the interior of the vein wall, raising the temperature to the precise threshold needed to cause the collagen in the vein wall to contract and the vessel to seal permanently.",
+        "Step by step, the mechanism works as follows:",
+      ],
+      bullets: [
+        "The physician inserts a thin catheter into the diseased vein under ultrasound guidance, typically through a small puncture at or below the knee",
+        "The catheter is advanced to the highest point of venous reflux — usually near the saphenofemoral junction — under real-time ultrasound visualization",
+        "Dilute local anesthetic (tumescent anesthesia) is injected around the entire length of the vein, compressing it around the catheter and creating a heat-protective buffer between the vein and surrounding tissue",
+        "The physician slowly withdraws the catheter, heating the vein wall in precise 7 cm segments — each segment receives approximately 20 seconds of heat treatment at a controlled temperature",
+        "The vein seals progressively from the junction downward, eliminating the source of reflux that causes varicose veins to form",
+      ],
+      imageSrc: "/images/blog/radiofrequency-ablation-procedure-new-york.jpg",
+      imageAlt: "Physician performing ultrasound-guided radiofrequency ablation procedure on patient's leg at New York vein clinic",
+      callout: {
+        type: "info",
+        text: "The entire heating phase typically takes 10 to 15 minutes per vein treated. Once sealed, the vein is reabsorbed by the body over 6 to 12 months with no external evidence of where it once was.",
+      },
+      keyTakeaway: "RFA heats the vein wall from the inside using a precisely controlled catheter, causing it to seal shut permanently. The process is guided by real-time ultrasound at every step.",
+    },
+    {
+      heading: "Who Is a Good Candidate for RFA?",
+      paragraphs: [
+        "RFA is most appropriate for patients with varicose veins caused by venous reflux in the great saphenous vein or small saphenous vein — the primary superficial veins of the leg. Most patients with symptomatic <a href=\"/services/varicose-vein-treatment\">varicose veins</a> qualify, including those who have previously tried conservative treatments without adequate relief.",
+        "Good candidates typically share several characteristics:",
+      ],
+      bullets: [
+        "Visible varicose veins causing symptoms such as aching, heaviness, swelling, leg fatigue, or nighttime cramps",
+        "Duplex ultrasound confirmation of venous reflux — the backward flow of blood caused by incompetent vein valves — in the saphenous system",
+        "Veins large enough to accommodate the RFA catheter (generally 3 mm or larger in diameter)",
+        "Overall good health and the ability to walk immediately after the procedure",
+        "No active deep vein thrombosis (DVT) in the affected limb",
+        "Not currently pregnant — varicose veins that develop during pregnancy are typically monitored for 6–12 months post-delivery before treatment is recommended",
+      ],
+      callout: {
+        type: "info",
+        text: "A duplex ultrasound evaluation is required before RFA to map which veins have reflux, confirm the anatomy of your saphenous system, and identify any contraindications. This evaluation is performed at your first visit at Schulman Vein and Laser Center.",
+      },
+      keyTakeaway: "Most adults with symptomatic varicose veins caused by saphenous vein reflux are candidates for RFA. A duplex ultrasound evaluation is the necessary first step to confirm suitability.",
+    },
+    {
+      heading: "What to Expect During the RFA Procedure",
+      paragraphs: [
+        "Understanding the sequence of the procedure helps patients arrive with realistic expectations. Here is what a typical RFA session at Schulman Vein and Laser Center looks like from arrival to discharge.",
+      ],
+      bullets: [
+        "Arrival and preparation: You are asked to wear or bring shorts or loose pants that allow easy access to the leg being treated. The leg is examined with duplex ultrasound and treatment sites are marked.",
+        "Local anesthesia and catheter placement: The entry site is numbed with a small injection, and a thin catheter (approximately 2 mm in diameter) is inserted into the vein through a small puncture — no incision or stitches required.",
+        "Tumescent anesthesia: A dilute local anesthetic solution is injected along the full length of the vein. This is the phase most patients notice most — mild pressure and the sensation of cool fluid around the vein. Most patients rate this as mild discomfort rather than pain.",
+        "Ablation: The catheter is activated and slowly withdrawn, treating the vein in segments. Patients commonly feel mild warmth or pressure during this phase, but rarely anything stronger.",
+        "Compression and discharge: A compression bandage or stocking is applied immediately. You walk for 30 to 45 minutes before leaving — this activates calf muscle pumping, moves blood through the deep system, and significantly reduces the risk of post-procedure inflammation.",
+      ],
+      callout: {
+        type: "tip",
+        text: "Total procedure time is 45 to 90 minutes depending on vein length and whether additional treatments are performed. Arrange a driver for your first visit — most patients drive themselves to all subsequent follow-up appointments.",
+      },
+    },
+    {
+      heading: "Recovery After Radiofrequency Ablation",
+      paragraphs: [
+        "Recovery from RFA is one of its strongest advantages over surgical alternatives. Here is what to expect in the days and weeks following treatment.",
+      ],
+      bullets: [
+        "Day 1: Walk for at least 30 minutes after leaving the office. Mild bruising, tenderness, and localized firmness along the treated vein are normal and expected. Take over-the-counter acetaminophen for discomfort — avoid ibuprofen and aspirin for the first 48 hours unless otherwise directed by your physician.",
+        "Days 1–7: Wear your compression stocking continuously (day and night for the first 24–48 hours, then daily through day 7). Compression is a non-negotiable component of good outcomes — it accelerates vein absorption and reduces the risk of phlebitis.",
+        "Days 1–14: Avoid strenuous exercise, heavy lifting over 25 lbs, hot baths, saunas, or direct sun exposure on the treated leg. Light walking is not only permitted but actively encouraged.",
+        "Weeks 2–6: Bruising fades and the treated vein becomes less palpable as the tissue is progressively reabsorbed. Varicose veins fed by the treated trunk will begin to flatten and fade during this period.",
+        "Months 3–6: A follow-up duplex ultrasound scan at 4–6 weeks confirms closure and identifies any tributary veins that need additional sclerotherapy. Most patients see dramatic improvement by the three-month mark.",
+      ],
+      imageSrc: "/images/blog/radiofrequency-ablation-recovery-new-york.jpg",
+      imageAlt: "Patient resting with compression bandages after radiofrequency ablation recovery at New York vein clinic",
+      callout: {
+        type: "warning",
+        text: "Contact our office if you notice significant leg swelling after your procedure, red streaking along the vein, fever, or any skin breakdown over the treated area. These are uncommon but warrant prompt evaluation.",
+      },
+      keyTakeaway: "RFA recovery is measured in days, not weeks. Most patients return to desk work the same day or the next morning and resume full physical activity within 10 to 14 days.",
+    },
+    {
+      heading: "RFA vs. Endovenous Laser Therapy: What's the Difference?",
+      paragraphs: [
+        "Radiofrequency ablation and endovenous laser therapy (EVLT) are both catheter-based heat treatments that close varicose veins from the inside — and both dramatically outperform surgical vein stripping on every meaningful metric. Patients frequently ask which is better.",
+        "The short answer: both work extremely well, with comparable long-term closure rates of 95–98% at five years. The practical differences are as follows:",
+      ],
+      bullets: [
+        "Post-procedure comfort: Most comparative studies show slightly lower post-procedure bruising and discomfort with RFA versus EVLT, attributed to its more uniform, segmental heat delivery compared to laser's pulsed mechanism",
+        "Tortuous veins: RFA is generally considered more forgiving on veins with significant tortuosity or irregular anatomy, where advancing a laser fiber can be more challenging",
+        "Speed: EVLT is often slightly faster for straight-segment veins — though the difference is typically under 10 minutes total procedure time",
+        "Established data: EVLT has a slightly longer clinical track record; RFA's evidence base is now equivalent, with numerous long-term studies confirming durable closure",
+        "Combined use: In some cases, our physicians use both techniques in the same session — RFA for the main saphenous trunk and laser for specific tortuous segments",
+      ],
+      callout: {
+        type: "info",
+        text: "Our physicians evaluate your venous anatomy, duplex ultrasound findings, and personal preference when recommending RFA versus EVLT. For most patients, either achieves excellent long-term results.",
+      },
+      keyTakeaway: "RFA and EVLT achieve comparable long-term results. RFA is generally associated with slightly less post-procedure discomfort and is often preferred for complex venous anatomy.",
+    },
+    {
+      heading: "Book Your Free Vein Screening in New York",
+      paragraphs: [
+        "If varicose veins are causing you aching, heaviness, swelling, or visible bulging on your legs, the most important first step is an accurate diagnosis — not guesswork. Radiofrequency ablation produces excellent results when the procedure is matched to the right patient with the right venous anatomy. That matching requires a duplex ultrasound evaluation, which is why we always perform one at the first visit.",
+        "At Schulman Vein and Laser Center, your first appointment includes a clinical examination and duplex ultrasound to map your venous anatomy, identify which veins are refluxing, and determine whether RFA, EVLT, sclerotherapy, or a combination approach will produce the best outcome for your specific presentation.",
+        "Dr. Martin Schulman and Dr. Lee G. Schulman bring more than 55 combined years of phlebology expertise to every patient encounter. Their practice — All We Do Is Veins™ — is one of the most respected vein centers in the New York metropolitan area, serving patients from Manhattan, Manhasset, and Commack. Our <a href=\"/services/free-vein-screening\">Free Vein Screening</a> requires no referral and no obligation. You will leave with a clear diagnosis and a personalized treatment plan.",
+        "Schedule your Free Vein Screening today and take the first step toward healthy, pain-free legs.",
+      ],
+      callout: {
+        type: "tip",
+        text: "Call our Manhattan office at 212.987.0500, Manhasset at 516.482.4477, or Commack at 631.543.4599 to book your Free Vein Screening — no referral required.",
+      },
+    },
+  ],
+  faqSection: [
+    {
+      question: "Is radiofrequency ablation painful?",
+      answer: "Most patients tolerate RFA well under local (tumescent) anesthesia. The phase most commonly described as uncomfortable is the tumescent anesthesia injection — a mild pressure and sensation of cool fluid around the vein. The ablation itself typically produces only mild warmth or pressure. Most patients rate overall discomfort as minimal and manage any post-procedure soreness with over-the-counter acetaminophen.",
+    },
+    {
+      question: "How long does radiofrequency ablation last?",
+      answer: "Long-term clinical studies confirm closure rates of 95–98% at five years for the treated vein. The treated saphenous vein does not reopen — once it seals, it remains sealed. However, varicose vein disease can progress over time, and new veins may develop in adjacent areas as the underlying tendency toward vein valve failure continues. Follow-up ultrasound at 4–6 weeks, then annually, allows early identification of any new reflux.",
+    },
+    {
+      question: "Does insurance cover radiofrequency ablation for varicose veins?",
+      answer: "Yes — radiofrequency ablation for varicose veins is typically covered by most major insurance plans, including Medicare, when the procedure is medically necessary. Medical necessity generally requires documented symptoms (aching, swelling, skin changes, or ulceration) and duplex ultrasound confirmation of venous reflux. Our team verifies your benefits and documents clinical necessity before your first appointment so there are no surprises.",
+    },
+    {
+      question: "How soon can I return to work after RFA?",
+      answer: "Most patients return to desk work the same day or the next morning. Those with physically demanding jobs — construction, nursing, retail with extended standing — may need 2–5 days of modified activity before returning to full duty. Athletes typically resume full training within 10 to 14 days. Your physician will give you specific guidance based on your procedure and job demands.",
+    },
+    {
+      question: "Will varicose veins come back after radiofrequency ablation?",
+      answer: "The specific vein treated with RFA is permanently closed and will not return. However, the underlying genetic tendency toward vein valve failure means new varicose veins can develop in other vessels over time — particularly in younger patients. Addressing any identified tributary veins (branch varicose veins) with sclerotherapy or ambulatory phlebectomy after the saphenous trunk is treated reduces the likelihood of recurrence in the same region.",
+    },
+  ],
+},
+{
   slug: "spider-vein-sclerotherapy-treatment-new-york",
   title: "Sclerotherapy for Spider Veins: What to Expect Before, During, and After in New York",
   excerpt: "Sclerotherapy is the most effective treatment for eliminating red and purple spider veins. Learn exactly what the procedure involves and what New York patients can expect.",
