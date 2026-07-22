@@ -81,6 +81,12 @@
 - 2026-04-03: Spider veins vs varicose veins (comparison)
 - 2026-04-02: Hand vein treatment
 
+## Automation Controls (effective 2026-07-22)
+- **Primary publisher:** Multica autopilot `f7194f50-a142-4733-9501-b439703d6af4`, Wednesday 10:00 AM `America/Los_Angeles`.
+- **Read-only readiness preflight:** `294e3293-2b28-4210-947b-35a8ea9d45ec`, Wednesday 9:45 AM `America/Los_Angeles`; exact scheduled-runtime checkout/source-path/build readiness only. It never drafts, writes, or publishes.
+- **Read-only semantic watchdog:** `566395ff-6510-4c36-98d2-e05b50ef9605`, Wednesday 10:20 AM `America/Los_Angeles`; validates the primary run plus current-date public index/article/image proof. A verified live canonical article resolves a historic blocked primary run and must suppress duplicate recovery/alerts. Missing live proof emits one Slack blocker with a precise safe recovery action.
+- **Configuration invariant:** `stephen-huskytail/schulman-vein-center` must remain registered in the Multica workspace. The publisher/preflight use repository-native `LEARNINGS.md`, `CLAUDE.md`, `src/lib/blog-posts.ts`, and `public/images/blog/`; no retired Google Doc, separate reference file, `coworker_git`, or `deploy.py` dependency is permitted.
+
 ## Notes
 - Publishing reference at skills/blog_writing/references/schulman-vein-center-publishing.md does NOT yet exist as of 2026-07-08. Publishing is handled directly from this LEARNINGS.md + CLAUDE.md brief.
 - Deploy method: git push to main (GitHub → Vercel auto-deploy). No deploy.py exists; standard Vercel GitHub integration handles it.

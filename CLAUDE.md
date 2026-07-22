@@ -52,6 +52,28 @@ When implementing SEO improvements:
 - Use descriptive anchors pointing to relevant service, location, and related blog pages; prefer same-window internal links. Do not force internal blog links to open in a new tab; Stephen overrode the new-tab suggestion on 2026-07-02 for SEO reasons.
 - Before publishing or reporting complete, verify the live rendered DOM for the target blog URL and confirm the post has 5+ qualifying internal links with expected destinations.
 
+## Recurring Blog Automation SOP
+
+### Source and runtime boundary
+
+- The repository on `main` is the only publishing source of truth: `LEARNINGS.md` for dedupe/run history, this `CLAUDE.md` for the operating rules, `src/lib/blog-posts.ts` for article data, and `public/images/blog/` for assets. Do not use the retired private Google Doc, a separate publishing-reference file, or nonexistent `coworker_git`/`deploy.py` helpers.
+- A local shell cannot prove Multica checkout readiness: `multica repo checkout` requires the daemon environment. The independently scheduled preflight must execute inside the assigned Multica runtime and explicitly prove that the registered repository can be checked out at `main` and that the required source paths exist.
+- Before changing a scheduled job, re-read its active Multica configuration after the mutation. Confirm its repository identity, assigned agent, `run_only` mode, enabled trigger, exact IANA timezone, and next fire time. Schedule changes remain a Stephen-authorized control-plane action.
+
+### Required delivery controls
+
+- Primary publisher: Wednesday, **10:00 AM America/Los_Angeles**.
+- Read-only readiness preflight: Wednesday, **9:45 AM America/Los_Angeles**. It checks enabled trigger/timezone, assigned runtime, repository mapping/checkout, `LEARNINGS.md`/`CLAUDE.md`/`src/lib/blog-posts.ts`, and a non-publishing build path. It must alert `#hermes-blogs` immediately on a failure and never draft, commit, publish, or generate images.
+- Read-only semantic watchdog: Wednesday, **10:20 AM America/Los_Angeles**. It must inspect both the primary run and the public site. Success requires current-date canonical article proof: expected visible title/date, HTTP 200 for the article and blog index, plus HTTP 200 for all three referenced article images.
+- Semantic delivery—not the outer Multica run state—is decisive. If the primary run is blocked or errors but a verified current-date canonical post is already live, the watchdog returns `PROOF PASS`, stays silent, and must not request a duplicate recovery. If live proof is absent, it posts one concise `WATCHDOG BLOCKED` alert with the run ID, precise missing proof, owner, and safe next action.
+
+### Catch-up and publication gates
+
+- Do not manually retrigger the primary publisher merely to clear an alert. A catch-up requires explicit content/publish authority, is limited to one deduplicated post, and must use the normal repository workflow.
+- Before a catch-up or scheduled release: confirm no current-date duplicate is live; select a topic outside `LEARNINGS.md` history; use authoritative medical sources; write conservative, non-diagnostic copy; create three distinct approved images; ensure each image path extension matches its actual bytes; and retain at least five qualifying contextual internal links in the body.
+- Before push: run `npm run build`, inspect the staged diff and image MIME/extension alignment, obtain an independent final review for the exact diff, commit only scoped files, and push the approved identity.
+- Before reporting success: verify the custom-domain canonical article in a browser, publication date/title/canonical metadata, qualifying internal links, and all three actual article image responses. Log the exact result to the Schulman Close lead and record the run in `LEARNINGS.md`.
+
 ## Recommended Next Task
 
 Start with blog cleanup because it has the highest immediate technical SEO risk:
