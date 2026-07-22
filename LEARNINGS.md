@@ -2,6 +2,21 @@
 
 ## Run Log
 
+### 2026-07-22 — leg-swelling-vein-disease-new-york
+- **Topic:** Leg Swelling and Vein Disease: When to Seek Care in New York
+- **Live URL:** https://www.schulmanveincenter.com/blog/leg-swelling-vein-disease-new-york
+- **HTTP Status:** 200 ✓ (canonical DOM and all three image assets verified live)
+- **Author:** Dr. Lee G. Schulman
+- **Category:** Patient Guide
+- **Images:** 3 × GPT Image 2 (`gpt-image-2-medium`, 1536×1024 PNG)
+  - `leg-swelling-vein-disease-new-york.png` (featured)
+  - `venous-reflux-leg-swelling-ultrasound-new-york.png` (in-body)
+  - `leg-swelling-walking-vein-health-new-york.png` (in-body)
+- **Deploy:** commit `94d943d` pushed to `main` → Vercel auto-deploy → live HTTP 200
+- **SEO gates:** meta title 57 chars, meta description 141 chars, primary keyword "leg swelling and vein disease" in H1/first-100-words/H2/slug/alt text ✓
+- **Internal links:** /services/vein-disorders, /services/varicose-vein-treatment, /blog/compression-stockings-vein-health-new-york, /blog/exercise-vein-health-new-york, /blog/deep-vein-thrombosis-symptoms-treatment-new-york, /services/free-vein-screening ✓
+- **Recovery context:** scheduled run `cd77ca43-6a50-4036-8b7b-dc1e8181f3a6` blocked before source checkout due to missing Multica repo registration; repo mapping, runtime preflight, and read-only semantic watchdog were repaired before authorized catch-up publication.
+
 ### 2026-07-15 — radiofrequency-ablation-varicose-veins-new-york
 - **Topic:** Radiofrequency Ablation for Varicose Veins: A Complete Guide for New York Patients
 - **Live URL:** https://www.schulmanveincenter.com/blog/radiofrequency-ablation-varicose-veins-new-york
@@ -42,6 +57,7 @@
 ---
 
 ## Topics Published (avoid duplication)
+- 2026-07-22: Leg swelling and vein disease — evaluation patterns and urgent-care red flags
 - 2026-07-15: Radiofrequency ablation (RFA) for varicose veins — complete guide
 - 2026-07-08: Spider vein sclerotherapy (what to expect before/during/after)
 - 2026-07-01: Varicose veins + summer heat
