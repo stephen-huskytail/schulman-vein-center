@@ -48,6 +48,134 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
 {
+  slug: "leg-swelling-vein-disease-new-york",
+  title: "Leg Swelling and Vein Disease: When to Seek Care in New York",
+  excerpt: "Leg swelling can have many causes. Learn how vein disease may contribute, which changes deserve attention, and how a New York vein evaluation can help.",
+  category: "Patient Guide",
+  publishedAt: "2026-07-22",
+  readTimeMinutes: 8,
+  author: "Dr. Lee G. Schulman",
+  metaTitle: "Leg Swelling and Vein Disease Guide for New York Patients",
+  metaDescription: "Learn when leg swelling may be related to vein disease, what symptoms deserve medical attention, and how a New York vein evaluation can help.",
+  ogDescription: "Leg swelling has many possible causes. Learn when vein disease may be a factor, which symptoms deserve prompt attention, and how evaluation can help.",
+  featuredImage: "/images/blog/leg-swelling-vein-disease-new-york.png",
+  featuredImageAlt: "Physician discussing leg swelling and vein disease evaluation with an adult patient in a New York vein clinic",
+  relatedLinks: [
+    { label: "Vein Disorders & Conditions", href: "/services/vein-disorders" },
+    { label: "Varicose Vein Treatment", href: "/services/varicose-vein-treatment" },
+    { label: "Free Vein Screening", href: "/services/free-vein-screening" },
+    { label: "Compression Stockings and Vein Health", href: "/blog/compression-stockings-vein-health-new-york" },
+  ],
+  quickSummary: [
+    "Leg swelling can have many causes, so a change in one or both legs deserves a thoughtful medical evaluation rather than self-diagnosis.",
+    "Vein disease can contribute to swelling when leg-vein valves do not move blood back toward the heart efficiently, particularly after long periods of standing or sitting.",
+    "Visible varicose veins, heaviness, aching, skin changes, or swelling that keeps returning are useful details to discuss with a clinician.",
+    "Sudden or severe symptoms, especially with chest pain or shortness of breath, need urgent medical attention rather than an online assessment.",
+  ],
+  tableOfContents: [
+    "Why Leg Swelling Deserves Attention",
+    "How Leg Swelling and Vein Disease Can Be Connected",
+    "Patterns That May Point to a Vein Evaluation",
+    "When to Seek Urgent Medical Care",
+    "What Happens During a Vein Evaluation",
+    "Practical Steps While You Arrange Care",
+    "Talk With a New York Vein Specialist",
+    "Frequently Asked Questions",
+  ],
+  body: [
+    {
+      heading: "Why Leg Swelling Deserves Attention",
+      paragraphs: [
+        "Leg swelling can happen for many reasons, from a long day on your feet to medication effects, injury, heart or kidney concerns, lymphatic issues, or a problem in the veins. Because the cause is not always obvious, persistent or recurring swelling is worth discussing with a qualified clinician instead of trying to diagnose it from appearance alone.",
+        "For some patients, leg swelling and vein disease are connected. Veins in the legs rely on one-way valves and the calf muscles to help move blood upward toward the heart. When that system is not working efficiently, pressure can build in the lower legs and ankles. Learning about <a href=\"/services/vein-disorders\">vein disorders and conditions</a> can help you recognize why an evaluation may be useful without assuming that every swollen leg has the same cause.",
+      ],
+      keyTakeaway: "Persistent or recurring leg swelling has more than one possible cause. A clinical evaluation is the safest way to understand what is contributing to your symptoms.",
+    },
+    {
+      heading: "How Leg Swelling and Vein Disease Can Be Connected",
+      paragraphs: [
+        "Chronic venous insufficiency is a term clinicians use when leg veins have difficulty returning blood to the heart. If vein valves are weakened or damaged, blood can pool in the legs, particularly when you are standing. That extra pressure may contribute to ankle or lower-leg swelling, a heavy or tired feeling, visible veins, or skin changes over time.",
+        "This does not mean that swelling automatically signals venous insufficiency. A medical history, physical examination, and—when appropriate—an ultrasound study help separate vein-related concerns from other possible causes. If you also notice bulging or uncomfortable veins, our overview of <a href=\"/services/varicose-vein-treatment\">varicose vein treatment options</a> explains how a care plan is matched to the vein problem that is actually found.",
+      ],
+      imageSrc: "/images/blog/venous-reflux-leg-swelling-ultrasound-new-york.png",
+      imageAlt: "Ultrasound evaluation of leg swelling and vein disease in a New York vascular clinic",
+      callout: {
+        type: "info",
+        text: "Vein symptoms and leg swelling can overlap with other health concerns. An exam helps identify whether vein disease is part of the picture and what next step is appropriate.",
+      },
+      keyTakeaway: "Vein valve problems can contribute to lower-leg swelling, but symptoms alone cannot confirm the cause.",
+    },
+    {
+      heading: "Patterns That May Point to a Vein Evaluation",
+      paragraphs: [
+        "A useful starting point is to notice the pattern: when swelling appears, whether it improves overnight, whether one leg is affected more than the other, and what other symptoms appear with it. Those details give your clinician better information than a single snapshot of your ankle or calf.",
+        "Consider arranging an evaluation when swelling keeps returning, feels worse after prolonged standing or sitting, or occurs alongside aching, heaviness, itching, visible varicose veins, or skin discoloration. A prior blood clot, family history of vein problems, pregnancy history, or work that requires long periods on your feet may also be relevant context. Our article on <a href=\"/blog/compression-stockings-vein-health-new-york\">compression stockings and vein health</a> explains why compression may be part of a clinician-guided plan for some patients, but it is not a substitute for finding the cause of swelling.",
+        "Gentle movement can support normal calf-muscle pumping during the day. For patients who have been cleared for activity, these <a href=\"/blog/exercise-vein-health-new-york\">vein-health exercise considerations</a> offer practical ways to build movement into a routine without treating exercise as a diagnosis or a cure.",
+      ],
+      keyTakeaway: "Recurring swelling plus heaviness, visible veins, skin changes, or a clear standing/sitting pattern is useful information to bring to a clinician.",
+    },
+    {
+      heading: "When to Seek Urgent Medical Care",
+      paragraphs: [
+        "Some symptoms need urgent assessment rather than a routine vein screening. Seek urgent medical care for sudden or severe leg swelling, new one-sided calf pain or tenderness, a leg that becomes markedly red or warm, chest pain, shortness of breath, fainting, or coughing up blood. These symptoms can be associated with serious conditions and should not be self-managed at home.",
+        "If you are concerned about a possible clot, this is not the time to wait for an elective appointment or rely on an online checklist. Our guide to <a href=\"/blog/deep-vein-thrombosis-symptoms-treatment-new-york\">DVT symptoms and treatment</a> provides additional patient education, but urgent symptoms require prompt in-person medical guidance.",
+      ],
+      callout: {
+        type: "warning",
+        text: "Sudden one-sided leg swelling or pain—especially with chest pain or shortness of breath—requires urgent medical evaluation. Call emergency services if symptoms are severe or you think you may be having an emergency.",
+      },
+      keyTakeaway: "Do not wait on sudden, severe, or one-sided symptoms, particularly when they occur with breathing or chest symptoms.",
+    },
+    {
+      heading: "What Happens During a Vein Evaluation",
+      paragraphs: [
+        "A vein evaluation generally begins with your symptoms, medical history, medications, and a focused examination of your legs. Depending on the findings, a duplex ultrasound may be used to look at vein structure and blood flow. The goal is not to assume a treatment before the evaluation; it is to identify whether reflux, prior clot-related changes, varicose veins, or another concern needs attention.",
+        "If a vein-related issue is identified, your clinician can explain the options that fit your anatomy, symptoms, overall health, and goals. Some patients benefit from conservative measures; others may be candidates for procedures after appropriate evaluation. A personalized plan is more useful than a one-size-fits-all response to swelling.",
+      ],
+      imageSrc: "/images/blog/leg-swelling-walking-vein-health-new-york.png",
+      imageAlt: "Adult patient walking outdoors while managing leg swelling and vein health in New York",
+      keyTakeaway: "A vein evaluation is designed to clarify the cause of symptoms and guide an individualized plan—not to presume a procedure.",
+    },
+    {
+      heading: "Practical Steps While You Arrange Care",
+      paragraphs: [
+        "Until you have been evaluated, keep a simple record of when swelling occurs, what makes it better or worse, and whether you notice skin changes, pain, visible veins, or symptoms in one leg only. Bring a current medication list and any history of blood clots, surgeries, pregnancies, or prior vein treatment to your appointment.",
+        "Avoid assuming that every product or home remedy is appropriate for you. Compression, leg elevation, and activity recommendations depend on the cause of swelling and your overall health. A clinician who knows your history can tell you whether those steps fit your situation and when a more urgent evaluation is needed.",
+      ],
+      keyTakeaway: "Tracking the timing and accompanying symptoms of swelling can make an in-person evaluation more productive.",
+    },
+    {
+      heading: "Talk With a New York Vein Specialist",
+      paragraphs: [
+        "If recurring leg swelling, heaviness, or visible veins are affecting your day, a focused vein evaluation can help you move from guesswork to clearer answers. At Schulman Vein and Laser Center, patients from Manhattan, Manhasset, Commack, and surrounding communities can start with a <a href=\"/services/free-vein-screening\">Free Vein Screening</a> to discuss symptoms and determine the right next step.",
+        "Call our Manhattan office at 212.987.0500, Manhasset at 516.482.4477, or Commack at 631.543.4599 to schedule. This article is educational and is not a diagnosis; seek urgent care for emergency symptoms.",
+      ],
+      callout: {
+        type: "tip",
+        text: "Bring a short symptom timeline to your visit: when swelling started, whether it is one-sided or both-sided, what changes it, and any related pain, skin changes, or history of blood clots.",
+      },
+    },
+  ],
+  faqSection: [
+    {
+      question: "Can vein disease cause leg swelling?",
+      answer: "It can contribute to swelling in some patients, particularly when vein valves are not moving blood back toward the heart efficiently. Leg swelling has many possible causes, so a clinician should evaluate persistent or recurring symptoms rather than assuming vein disease is the cause.",
+    },
+    {
+      question: "Is swelling in one leg more concerning than swelling in both legs?",
+      answer: "A difference between one leg and the other is important information to share with a clinician. Sudden one-sided swelling, new calf pain, warmth, redness, chest pain, or shortness of breath needs urgent medical evaluation because it can be associated with serious conditions.",
+    },
+    {
+      question: "Will compression stockings fix leg swelling?",
+      answer: "Compression can be part of a clinician-guided plan for some people, but it does not establish the cause of swelling or replace an evaluation. The right compression approach depends on your symptoms, circulation, and medical history.",
+    },
+    {
+      question: "How do clinicians check for vein-related swelling?",
+      answer: "An evaluation typically includes a medical history and physical examination. A clinician may recommend duplex ultrasound to assess blood flow and vein structure when it is appropriate for the symptoms and findings.",
+    },
+  ],
+},
+{
   slug: "radiofrequency-ablation-varicose-veins-new-york",
   title: "Radiofrequency Ablation for Varicose Veins: A Complete Guide for New York Patients",
   excerpt: "Radiofrequency ablation permanently closes varicose veins using controlled heat — no surgery, no scarring, and same-day return to normal activity. Here is what New York patients need to know.",
