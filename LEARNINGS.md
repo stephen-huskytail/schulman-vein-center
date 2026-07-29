@@ -2,6 +2,23 @@
 
 ## Run Log
 
+### 2026-07-29 — itchy-legs-and-vein-disease-new-york
+- **Topic:** Itchy Legs and Vein Disease: What New York Patients Should Know
+- **Live URL:** https://www.schulmanveincenter.com/blog/itchy-legs-and-vein-disease-new-york
+- **HTTP Status:** 200 ✓ (canonical article, blog index, rendered DOM, and all three image assets verified live)
+- **Author:** Dr. Lee G. Schulman
+- **Category:** Patient Guide
+- **Images:** 3 × GPT Image 2 (`gpt-image-2`, medium quality, 1536×1024 PNG)
+  - `itchy-legs-and-vein-disease-new-york.png` (featured)
+  - `itchy-legs-vein-ultrasound-new-york.png` (in-body)
+  - `itchy-legs-gentle-walking-new-york.png` (in-body)
+- **Deploy:** commit `acfe149` pushed to `main` → Vercel auto-deploy → live HTTP 200
+- **SEO gates:** meta title 53 chars, meta description 151 chars, primary keyword "itchy legs and vein disease" in H1/first-100-words/H2/slug/alt text ✓
+- **Internal links:** 9 qualifying in-body links, including /services/vein-disorders, /services/varicose-vein-treatment, /services/free-vein-screening, three locations, and three related blog guides ✓
+- **Structured data:** BlogPosting + MedicalWebPage + FAQPage; exact canonical and Open Graph metadata verified ✓
+- **Medical sources reviewed:** Cleveland Clinic, Johns Hopkins Medicine, and NIH/National Library of Medicine patient/clinical guidance on chronic venous insufficiency ✓
+- **Autopilot run:** `e453f7b3-74fd-4638-a1b2-30c752045c0f`
+
 ### 2026-07-22 — leg-swelling-vein-disease-new-york
 - **Topic:** Leg Swelling and Vein Disease: When to Seek Care in New York
 - **Live URL:** https://www.schulmanveincenter.com/blog/leg-swelling-vein-disease-new-york
@@ -57,6 +74,7 @@
 ---
 
 ## Topics Published (avoid duplication)
+- 2026-07-29: Itchy legs and vein disease — skin changes, warning signs, and evaluation
 - 2026-07-22: Leg swelling and vein disease — evaluation patterns and urgent-care red flags
 - 2026-07-15: Radiofrequency ablation (RFA) for varicose veins — complete guide
 - 2026-07-08: Spider vein sclerotherapy (what to expect before/during/after)
