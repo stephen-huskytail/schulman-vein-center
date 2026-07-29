@@ -48,6 +48,151 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
 {
+  slug: "itchy-legs-and-vein-disease-new-york",
+  title: "Itchy Legs and Vein Disease: What New York Patients Should Know",
+  excerpt: "Persistent leg itching can have many causes. Learn when vein disease may be part of the picture, which skin changes matter, and when to arrange an evaluation.",
+  category: "Patient Guide",
+  publishedAt: "2026-07-29",
+  readTimeMinutes: 8,
+  author: "Dr. Lee G. Schulman",
+  metaTitle: "Itchy Legs and Vein Disease: A New York Patient Guide",
+  metaDescription: "Learn how itchy legs and vein disease may be connected, which skin changes deserve attention, and when New York patients should seek a vein evaluation.",
+  ogDescription: "Persistent leg itching is not always a skin-only concern. Learn when vein disease may contribute and which changes deserve a New York vein evaluation.",
+  featuredImage: "/images/blog/itchy-legs-and-vein-disease-new-york.png",
+  featuredImageAlt: "Physician evaluating itchy legs and vein disease with an adult patient in a New York vein clinic",
+  relatedLinks: [
+    { label: "Vein Disorders & Conditions", href: "/services/vein-disorders" },
+    { label: "Varicose Vein Treatment", href: "/services/varicose-vein-treatment" },
+    { label: "Compression Stockings and Vein Health", href: "/blog/compression-stockings-vein-health-new-york" },
+    { label: "Free Vein Screening", href: "/services/free-vein-screening" },
+  ],
+  quickSummary: [
+    "Itchy lower legs can come from dry skin, irritation, allergies, infection, medication effects, or circulation-related conditions; symptoms alone cannot identify the cause.",
+    "Chronic venous insufficiency may contribute to itching when elevated pressure in leg veins is accompanied by swelling, inflammation, or changes in skin color and texture.",
+    "Itching that keeps returning alongside ankle swelling, heaviness, visible veins, or reddish-brown discoloration is useful information to share with a clinician.",
+    "Open sores, spreading redness, drainage, fever, sudden one-sided swelling, chest pain, or shortness of breath need prompt or urgent medical attention.",
+  ],
+  tableOfContents: [
+    "Why Persistent Leg Itching Deserves Attention",
+    "How Itchy Legs and Vein Disease Can Be Connected",
+    "Skin and Symptom Patterns Worth Tracking",
+    "When to Seek Prompt Medical Care",
+    "What a Vein Evaluation May Include",
+    "Practical Steps While You Arrange Care",
+    "Book a Free Vein Screening in New York",
+    "Frequently Asked Questions",
+  ],
+  body: [
+    {
+      heading: "Why Persistent Leg Itching Deserves Attention",
+      paragraphs: [
+        "Itchy legs and vein disease are sometimes connected, but itching by itself does not establish a vein problem. Dry skin, contact irritation, eczema, infection, medication effects, and other health conditions can produce similar symptoms. The safest approach is to notice the pattern and arrange an evaluation when itching persists, keeps returning, or appears with other leg changes.",
+        "Vein-related symptoms often develop gradually. A person may first notice ankle swelling after a long day, a heavy feeling in the calves, or visible veins before the skin becomes dry, flaky, irritated, or discolored. Our overview of <a href=\"/services/vein-disorders\">vein disorders and conditions</a> explains why these symptoms deserve a complete clinical picture rather than a diagnosis based on appearance alone.",
+      ],
+      keyTakeaway: "Persistent itching has many possible causes. The combination of itching with swelling, heaviness, visible veins, or skin changes is more informative than itching alone.",
+    },
+    {
+      heading: "How Itchy Legs and Vein Disease Can Be Connected",
+      paragraphs: [
+        "Leg veins use one-way valves and the calf-muscle pump to move blood back toward the heart. When valves do not close efficiently, blood may flow backward and pool in the lower legs. Clinicians call this venous reflux; when it produces ongoing symptoms and tissue changes, it may be part of chronic venous insufficiency.",
+        "Higher pressure in the lower-leg veins can contribute to fluid buildup and inflammation in nearby tissue. Over time, some people develop itching or flaking skin, ankle swelling, reddish-brown discoloration, or a firmer texture near the lower calf and ankle. These patterns are described in patient guidance from Cleveland Clinic, Johns Hopkins Medicine, and the National Library of Medicine, but an in-person assessment is still needed to determine whether they apply to an individual patient.",
+        "If itching appears with recurrent swelling, our guide to <a href=\"/blog/leg-swelling-vein-disease-new-york\">leg swelling and vein disease</a> can help you organize the details to discuss with a clinician. If bulging veins are also present, learn how a physician evaluates candidates for <a href=\"/services/varicose-vein-treatment\">varicose vein treatment</a> after identifying the underlying anatomy.",
+      ],
+      imageSrc: "/images/blog/itchy-legs-vein-ultrasound-new-york.png",
+      imageAlt: "Duplex ultrasound evaluation for itchy legs and vein disease at a New York vein clinic",
+      callout: {
+        type: "info",
+        text: "Vein disease is one possible contributor to lower-leg itching, not the only one. A clinician may need to consider skin conditions, infection, medications, and other circulation concerns.",
+      },
+      keyTakeaway: "Venous pressure may affect the lower-leg skin, but symptoms must be evaluated in context before a cause or treatment is chosen.",
+    },
+    {
+      heading: "Skin and Symptom Patterns Worth Tracking",
+      paragraphs: [
+        "Before an appointment, note where the itching occurs and when it feels strongest. Record whether it affects one leg or both, whether it is concentrated near the ankles, and whether it becomes more noticeable after prolonged standing or sitting. Also note what the skin looks and feels like before scratching or applying a product.",
+        "Details that may help your clinician include recurring ankle swelling, aching or heaviness, nighttime cramping, visible spider or varicose veins, flaky skin, reddish-brown discoloration, warmth, tenderness, or any area that is slow to heal. Photographs taken in consistent lighting can help show changes over time, but they do not replace an examination.",
+        "Do not assume that compression is appropriate solely because itching occurs near visible veins. Our patient guide to <a href=\"/blog/compression-stockings-vein-health-new-york\">compression stockings and vein health</a> explains why fit, pressure level, circulation, and medical history should guide their use.",
+      ],
+      bullets: [
+        "Location: ankle, shin, calf, or a specific patch of skin",
+        "Timing: after standing, late in the day, overnight, or after using a new product",
+        "Associated symptoms: swelling, heaviness, aching, warmth, redness, or visible veins",
+        "Skin changes: flaking, thickening, discoloration, drainage, or an open area",
+        "History: prior blood clot, leg injury, pregnancy, vein treatment, or long periods of standing or sitting",
+      ],
+      keyTakeaway: "A short symptom and skin-change record gives a clinician more useful evidence than trying to label the problem at home.",
+    },
+    {
+      heading: "When to Seek Prompt Medical Care",
+      paragraphs: [
+        "Contact a healthcare professional promptly if the skin becomes increasingly red, warm, painful, swollen, or begins to drain; if an open area develops; or if you have fever or feel unwell. Scratching fragile or inflamed skin can create breaks that need assessment, especially when swelling or discoloration is already present.",
+        "Sudden one-sided leg swelling or pain requires a different level of concern than gradual itching. Seek urgent medical evaluation for sudden swelling, new calf tenderness, marked warmth or redness, chest pain, shortness of breath, fainting, or coughing up blood. Our educational guide to <a href=\"/blog/deep-vein-thrombosis-symptoms-treatment-new-york\">deep vein thrombosis symptoms</a> provides context, but emergency symptoms should never wait for a routine screening.",
+      ],
+      callout: {
+        type: "warning",
+        text: "Call emergency services for severe chest pain, shortness of breath, fainting, or other symptoms that may be an emergency. A blog article cannot safely rule out a blood clot, infection, or another urgent condition.",
+      },
+      keyTakeaway: "Open skin, spreading redness, drainage, fever, or sudden one-sided swelling deserves prompt medical guidance; breathing or chest symptoms may require emergency care.",
+    },
+    {
+      heading: "What a Vein Evaluation May Include",
+      paragraphs: [
+        "A vein-focused evaluation usually begins with a medical history and examination of both legs. The clinician may ask when itching began, whether swelling changes through the day, which products or medications you use, and whether you have a history of blood clots, skin conditions, injuries, or prior vein procedures.",
+        "When the history and examination suggest a circulation concern, duplex ultrasound may be used to assess vein structure and the direction of blood flow. The test can help identify reflux or evidence of prior clot-related changes. If the findings point instead to a skin condition, infection, arterial issue, or another medical cause, the appropriate next step may involve a different clinician or additional testing.",
+        "New York patients can choose the most convenient practice location—<a href=\"/locations/manhattan\">Manhattan</a>, <a href=\"/locations/manhasset\">Manhasset</a>, or <a href=\"/locations/commack\">Commack</a>—when arranging a physician-led evaluation.",
+      ],
+      keyTakeaway: "The purpose of an evaluation is to identify what is causing the symptoms, not to assume that every itchy leg needs a vein procedure.",
+    },
+    {
+      heading: "Practical Steps While You Arrange Care",
+      paragraphs: [
+        "Try to avoid vigorous scratching, which can further irritate the skin or create small breaks. Use gentle, fragrance-free skin products unless a clinician has given you different instructions, and avoid starting medicated creams on a persistent or changing rash without professional guidance. Bring a list or photograph of products you have already tried to your appointment.",
+        "If you have been medically cleared for activity, regular gentle walking supports the normal calf-muscle pump and may reduce long periods of immobility. Movement is not a diagnosis or a cure, and new pain, sudden swelling, or other concerning symptoms should change the plan. Keep following guidance from your own healthcare professionals about skin care, exercise, leg elevation, and compression.",
+      ],
+      imageSrc: "/images/blog/itchy-legs-gentle-walking-new-york.png",
+      imageAlt: "New York patient taking a gentle walk while monitoring itchy legs and vein health",
+      callout: {
+        type: "tip",
+        text: "Bring a one-week symptom record to your visit, including timing, location, visible skin changes, swelling, and anything that seemed to improve or worsen the itching.",
+      },
+      keyTakeaway: "Protect irritated skin, avoid self-diagnosing, and document the pattern while you arrange appropriate care.",
+    },
+    {
+      heading: "Book a Free Vein Screening in New York",
+      paragraphs: [
+        "If persistent lower-leg itching occurs with swelling, heaviness, visible veins, or skin discoloration, a focused vein screening can help determine whether a circulation problem may be contributing. Schulman Vein and Laser Center serves patients across Manhattan, Nassau County, and Suffolk County with physician-led care at three New York locations.",
+        "Book a <a href=\"/services/free-vein-screening\">Free Vein Screening</a> to discuss your symptoms and the appropriate next step. Call Manhattan at 212.987.0500, Manhasset at 516.482.4477, or Commack at 631.543.4599. This article is educational, does not provide a diagnosis, and is not a substitute for urgent medical care when warning signs are present.",
+      ],
+      callout: {
+        type: "tip",
+        text: "A screening is a starting point. Your physician will explain whether a vein evaluation, another medical assessment, or simple monitoring is appropriate for your symptoms.",
+      },
+    },
+  ],
+  faqSection: [
+    {
+      question: "Can vein disease cause itchy legs?",
+      answer: "Vein disease can contribute to lower-leg itching in some patients, particularly when itching occurs with swelling, heaviness, visible veins, or changes in skin color and texture. Itching has many other causes, so an evaluation is needed before attributing it to the veins.",
+    },
+    {
+      question: "What skin changes can occur with chronic venous insufficiency?",
+      answer: "Possible changes include dry or flaky skin, itching, reddish-brown discoloration near the ankles, thickened or firmer skin, and—in more advanced cases—open sores. These changes can overlap with other conditions and should be assessed by a qualified clinician.",
+    },
+    {
+      question: "Should I use compression stockings for itchy legs?",
+      answer: "Do not choose compression solely because your legs itch. Compression may help some people with diagnosed venous disease, but the correct pressure and fit depend on circulation, medical history, and the cause of symptoms. Ask a clinician what is appropriate for you.",
+    },
+    {
+      question: "How will a clinician check whether itching is related to my veins?",
+      answer: "The evaluation generally includes a medical history and examination of both legs. When appropriate, duplex ultrasound can assess vein structure and blood flow. The clinician may also recommend evaluation for a skin condition, infection, or another medical cause.",
+    },
+    {
+      question: "When is an itchy leg an urgent concern?",
+      answer: "Seek prompt medical guidance for open skin, drainage, spreading redness, warmth, increasing pain, swelling, fever, or feeling unwell. Sudden one-sided swelling or pain—especially with chest pain or shortness of breath—needs urgent or emergency evaluation.",
+    },
+  ],
+},
+{
   slug: "leg-swelling-vein-disease-new-york",
   title: "Leg Swelling and Vein Disease: When to Seek Care in New York",
   excerpt: "Leg swelling can have many causes. Learn how vein disease may contribute, which changes deserve attention, and how a New York vein evaluation can help.",
