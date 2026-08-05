@@ -48,6 +48,150 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
 {
+  slug: "leg-cramps-vein-disease-new-york",
+  title: "Nighttime Leg Cramps and Vein Disease: What New York Patients Should Know",
+  excerpt: "Nighttime leg cramps can have many causes. Learn when vein disease may be part of the picture, which patterns matter, and when to arrange a New York vein evaluation.",
+  category: "Patient Guide",
+  publishedAt: "2026-08-05",
+  readTimeMinutes: 8,
+  author: "Dr. Lee G. Schulman",
+  metaTitle: "Nighttime Leg Cramps and Vein Disease: NY Patient Guide",
+  metaDescription: "Learn how nighttime leg cramps and vein disease may be connected, which symptoms deserve attention, and when New York patients should seek a vein evaluation.",
+  ogDescription: "Nighttime leg cramps are common, but they are sometimes linked to vein disease. Learn which patterns deserve attention and how a New York evaluation can help.",
+  featuredImage: "/images/blog/leg-cramps-vein-disease-new-york.png",
+  featuredImageAlt: "Physician discussing nighttime leg cramps and vein disease with an adult patient in a New York vein clinic",
+  relatedLinks: [
+    { label: "Vein Disorders & Conditions", href: "/services/vein-disorders" },
+    { label: "Varicose Vein Treatment", href: "/services/varicose-vein-treatment" },
+    { label: "Leg Swelling and Vein Disease", href: "/blog/leg-swelling-vein-disease-new-york" },
+    { label: "Free Vein Screening", href: "/services/free-vein-screening" },
+  ],
+  quickSummary: [
+    "Nighttime leg cramps have many possible causes, including dehydration, electrolyte imbalance, medication effects, nerve issues, and circulation-related conditions; cramps alone cannot identify the cause.",
+    "Chronic venous insufficiency may contribute to nighttime cramping when pooled blood and elevated pressure in the leg veins affect surrounding muscles and tissue, particularly after long periods of standing.",
+    "Cramps that keep returning alongside leg swelling, heaviness, visible veins, or skin changes are useful details to share with a clinician.",
+    "Sudden one-sided leg swelling or pain, especially with chest pain or shortness of breath, needs urgent medical attention rather than an at-home assessment.",
+  ],
+  tableOfContents: [
+    "Why Nighttime Leg Cramps Deserve Attention",
+    "How Leg Cramps and Vein Disease Can Be Connected",
+    "Patterns Worth Tracking",
+    "When to Seek Prompt Medical Care",
+    "What a Vein Evaluation May Include",
+    "Practical Steps While You Arrange Care",
+    "Book a Free Vein Screening in New York",
+    "Frequently Asked Questions",
+  ],
+  body: [
+    {
+      heading: "Why Nighttime Leg Cramps Deserve Attention",
+      paragraphs: [
+        "Leg cramps and vein disease are sometimes connected, but a nighttime cramp by itself does not confirm a vein problem. Dehydration, low magnesium or potassium, certain medications, nerve irritation, and simple overuse after a long day on your feet can all produce a sudden, painful muscle contraction in the calf or foot. The safest approach is to notice the pattern and arrange an evaluation when cramps persist, keep returning, or appear alongside other leg changes.",
+        "Vein-related symptoms often build gradually before cramping becomes noticeable. A person may first notice ankle swelling after standing, a heavy feeling in the calves, or visible veins before nighttime cramps become a regular disruption to sleep. Our overview of <a href=\"/services/vein-disorders\">vein disorders and conditions</a> explains why these symptoms deserve a complete clinical picture rather than a diagnosis based on the cramp alone.",
+      ],
+      keyTakeaway: "Nighttime leg cramps have many possible causes. The combination of cramping with swelling, heaviness, visible veins, or skin changes is more informative than cramping alone.",
+    },
+    {
+      heading: "How Leg Cramps and Vein Disease Can Be Connected",
+      paragraphs: [
+        "Leg veins rely on one-way valves and the calf-muscle pump to move blood back toward the heart. When those valves do not close efficiently, blood can flow backward and pool in the lower legs, a pattern clinicians call venous reflux. When reflux produces ongoing symptoms and tissue changes, it may be part of chronic venous insufficiency.",
+        "Pooled blood and elevated pressure in the lower-leg veins can affect the surrounding muscles, nerves, and tissue fluid balance. Some patients describe this as a tight, cramping, or restless sensation that becomes most noticeable at night, when the legs are still after a day of standing or sitting. These patterns are described in patient guidance from Cleveland Clinic, Johns Hopkins Medicine, and the National Library of Medicine, but an in-person assessment is still needed to determine whether they apply to an individual patient.",
+        "If cramping appears with recurrent swelling, our guide to <a href=\"/blog/leg-swelling-vein-disease-new-york\">leg swelling and vein disease</a> can help you organize the details to discuss with a clinician. If bulging or visibly enlarged veins are also present, learn how a physician evaluates candidates for <a href=\"/services/varicose-vein-treatment\">varicose vein treatment</a> after identifying the underlying anatomy.",
+      ],
+      imageSrc: "/images/blog/leg-cramps-vein-ultrasound-new-york.png",
+      imageAlt: "Duplex ultrasound evaluation for leg cramps and vein disease at a New York vein clinic",
+      callout: {
+        type: "info",
+        text: "Vein disease is one possible contributor to nighttime leg cramps, not the only one. A clinician may need to consider hydration, electrolytes, medications, nerve function, and other circulation concerns.",
+      },
+      keyTakeaway: "Venous pooling may affect the muscles and tissue around the lower leg, but cramping must be evaluated in context before a cause or treatment is chosen.",
+    },
+    {
+      heading: "Patterns Worth Tracking",
+      paragraphs: [
+        "Before an appointment, note when cramps occur, how long they last, and whether they affect one leg or both. Cramps that wake you soon after lying down, or that ease when you stand and stretch, provide different information than cramps that come and go unpredictably throughout the day.",
+        "Details that may help your clinician include recurring ankle swelling, aching or heaviness, visible spider or varicose veins, skin discoloration, or a history of prolonged standing or sitting during the day. Our article on <a href=\"/blog/compression-stockings-vein-health-new-york\">compression stockings and vein health</a> explains why compression may be part of a clinician-guided plan for some patients, but it is not a substitute for finding the cause of the cramping.",
+        "Gentle daytime movement can support normal calf-muscle pumping. For patients who have been cleared for activity, these <a href=\"/blog/exercise-vein-health-new-york\">vein-health exercise considerations</a> offer practical ways to build movement into a routine without treating exercise as a diagnosis or a cure.",
+      ],
+      bullets: [
+        "Timing: shortly after lying down, in the middle of the night, or unpredictable",
+        "Duration and location: calf, foot, or thigh, and how long the cramp lasts",
+        "Associated symptoms: swelling, heaviness, aching, visible veins, or skin changes",
+        "Daily pattern: long periods of standing, sitting, or a physically demanding job",
+        "History: prior blood clot, pregnancy, leg injury, or vein treatment",
+      ],
+      keyTakeaway: "A short record of when cramps happen and what accompanies them gives a clinician more useful evidence than trying to label the cause at home.",
+    },
+    {
+      heading: "When to Seek Prompt Medical Care",
+      paragraphs: [
+        "Some symptoms need urgent assessment rather than a routine vein screening. Seek urgent medical care for sudden or severe leg swelling, new one-sided calf pain or tenderness, a leg that becomes markedly red or warm, chest pain, shortness of breath, fainting, or coughing up blood. These symptoms can be associated with serious conditions and should not be self-managed at home.",
+        "If you are concerned about a possible clot, this is not the time to wait for an elective appointment or rely on an online checklist. Our guide to <a href=\"/blog/deep-vein-thrombosis-symptoms-treatment-new-york\">DVT symptoms and treatment</a> provides additional patient education, but urgent symptoms require prompt in-person medical guidance.",
+      ],
+      callout: {
+        type: "warning",
+        text: "Sudden one-sided leg swelling or pain—especially with chest pain or shortness of breath—requires urgent medical evaluation. Call emergency services if symptoms are severe or you think you may be having an emergency.",
+      },
+      keyTakeaway: "Do not wait on sudden, severe, or one-sided symptoms, particularly when they occur with breathing or chest symptoms.",
+    },
+    {
+      heading: "What a Vein Evaluation May Include",
+      paragraphs: [
+        "A vein evaluation generally begins with your symptoms, medical history, medications, and a focused examination of your legs. Depending on the findings, a duplex ultrasound may be used to look at vein structure and the direction of blood flow. The goal is to identify whether reflux, prior clot-related changes, varicose veins, or another concern needs attention—not to assume a treatment before the evaluation.",
+        "If a vein-related issue is identified, your clinician can explain the options that fit your anatomy, symptoms, overall health, and goals. Some patients benefit from conservative measures; others may be candidates for procedures after appropriate evaluation. New York patients can choose the most convenient practice location—<a href=\"/locations/manhattan\">Manhattan</a>, <a href=\"/locations/manhasset\">Manhasset</a>, or <a href=\"/locations/commack\">Commack</a>—when arranging a physician-led evaluation.",
+      ],
+      keyTakeaway: "A vein evaluation is designed to clarify the cause of symptoms and guide an individualized plan—not to presume a procedure.",
+    },
+    {
+      heading: "Practical Steps While You Arrange Care",
+      paragraphs: [
+        "Until you have been evaluated, keep a simple record of when cramps occur, how long they last, and whether swelling, aching, or visible veins appear with them. Bring a current medication list, since some prescriptions can contribute to cramping, along with any history of blood clots, pregnancies, or prior vein treatment.",
+        "Gentle calf stretching before bed, adequate hydration, and avoiding long uninterrupted periods of sitting or standing during the day are reasonable general measures for many people. These steps are not a treatment for venous disease, and a clinician who knows your history can tell you whether they fit your situation or whether a more thorough evaluation is needed.",
+      ],
+      imageSrc: "/images/blog/leg-cramps-calf-stretch-new-york.png",
+      imageAlt: "New York patient performing a gentle calf stretch in the evening while managing leg cramps and vein health",
+      callout: {
+        type: "tip",
+        text: "Bring a one-week symptom record to your visit, including when cramps occur, how long they last, and any swelling, heaviness, or visible veins that appear with them.",
+      },
+      keyTakeaway: "Track the timing and accompanying symptoms of your cramps, use reasonable general measures, and let a clinician determine whether a vein evaluation is appropriate.",
+    },
+    {
+      heading: "Book a Free Vein Screening in New York",
+      paragraphs: [
+        "If nighttime leg cramps occur with swelling, heaviness, visible veins, or skin changes, a focused vein screening can help determine whether a circulation problem may be contributing. Schulman Vein and Laser Center serves patients across Manhattan, Nassau County, and Suffolk County with physician-led care at three New York locations.",
+        "Book a <a href=\"/services/free-vein-screening\">Free Vein Screening</a> to discuss your symptoms and the appropriate next step. Call Manhattan at 212.987.0500, Manhasset at 516.482.4477, or Commack at 631.543.4599. This article is educational, does not provide a diagnosis, and is not a substitute for urgent medical care when warning signs are present.",
+      ],
+      callout: {
+        type: "tip",
+        text: "A screening is a starting point. Your physician will explain whether a vein evaluation, another medical assessment, or simple monitoring is appropriate for your symptoms.",
+      },
+    },
+  ],
+  faqSection: [
+    {
+      question: "Can vein disease cause nighttime leg cramps?",
+      answer: "Vein disease can contribute to nighttime leg cramps in some patients, particularly when cramping occurs with swelling, heaviness, visible veins, or skin changes. Cramps have many other causes, so an evaluation is needed before attributing them to the veins.",
+    },
+    {
+      question: "What else can cause leg cramps at night?",
+      answer: "Common non-vein causes include dehydration, low magnesium or potassium, certain medications, nerve irritation, and muscle overuse. A clinician can help sort through these possibilities alongside a circulation assessment.",
+    },
+    {
+      question: "Will compression stockings stop nighttime leg cramps?",
+      answer: "Do not choose compression solely because you have nighttime cramps. Compression may help some people with diagnosed venous disease, but the correct pressure and fit depend on circulation, medical history, and the cause of symptoms. Ask a clinician what is appropriate for you.",
+    },
+    {
+      question: "How will a clinician check whether cramping is related to my veins?",
+      answer: "The evaluation generally includes a medical history and examination of both legs. When appropriate, duplex ultrasound can assess vein structure and blood flow. The clinician may also consider hydration, electrolytes, medications, and nerve-related causes.",
+    },
+    {
+      question: "When is a nighttime leg cramp an urgent concern?",
+      answer: "Seek prompt medical guidance for cramping accompanied by significant swelling, warmth, redness, or pain that does not resolve. Sudden one-sided leg swelling or pain—especially with chest pain or shortness of breath—needs urgent or emergency evaluation.",
+    },
+  ],
+},
+{
   slug: "itchy-legs-and-vein-disease-new-york",
   title: "Itchy Legs and Vein Disease: What New York Patients Should Know",
   excerpt: "Persistent leg itching can have many causes. Learn when vein disease may be part of the picture, which skin changes matter, and when to arrange an evaluation.",
