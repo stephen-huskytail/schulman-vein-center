@@ -2,6 +2,23 @@
 
 ## Run Log
 
+### 2026-08-05 — leg-cramps-vein-disease-new-york
+- **Topic:** Nighttime Leg Cramps and Vein Disease: What New York Patients Should Know
+- **Live URL:** https://www.schulmanveincenter.com/blog/leg-cramps-vein-disease-new-york
+- **HTTP Status:** 200 ✓ (canonical article, blog index, and all three image assets verified live)
+- **Author:** Dr. Lee G. Schulman
+- **Category:** Patient Guide
+- **Images:** 3 × GPT Image 2 (`gpt-image-2`, medium quality, 1536×1024 PNG)
+  - `leg-cramps-vein-disease-new-york.png` (featured)
+  - `leg-cramps-vein-ultrasound-new-york.png` (in-body)
+  - `leg-cramps-calf-stretch-new-york.png` (in-body)
+- **Deploy:** commit `6a4f9a4` pushed to `main` → Vercel auto-deploy → live HTTP 200
+- **SEO gates:** meta title 55 chars, meta description 157 chars, primary keyword "leg cramps and vein disease" in H1/first-100-words/H2/slug/alt text ✓
+- **Internal links:** 10 qualifying in-body links, including /services/vein-disorders, /services/varicose-vein-treatment, /services/free-vein-screening, three locations, and related blog guides (leg swelling, compression stockings, exercise, DVT) ✓
+- **Structured data:** BlogPosting + MedicalWebPage + FAQPage; exact canonical and Open Graph metadata verified ✓
+- **Medical sources reviewed:** Cleveland Clinic, Johns Hopkins Medicine, and NIH/National Library of Medicine patient/clinical guidance on chronic venous insufficiency and nocturnal leg cramps ✓
+- **Autopilot run:** `2aea734c-1510-4c10-b4ed-b4267d35ac7c`
+
 ### 2026-07-29 — itchy-legs-and-vein-disease-new-york
 - **Topic:** Itchy Legs and Vein Disease: What New York Patients Should Know
 - **Live URL:** https://www.schulmanveincenter.com/blog/itchy-legs-and-vein-disease-new-york
@@ -74,6 +91,7 @@
 ---
 
 ## Topics Published (avoid duplication)
+- 2026-08-05: Nighttime leg cramps and vein disease — symptom patterns and evaluation
 - 2026-07-29: Itchy legs and vein disease — skin changes, warning signs, and evaluation
 - 2026-07-22: Leg swelling and vein disease — evaluation patterns and urgent-care red flags
 - 2026-07-15: Radiofrequency ablation (RFA) for varicose veins — complete guide
