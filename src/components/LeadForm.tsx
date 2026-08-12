@@ -8,6 +8,7 @@ import { Send, CheckCircle2 } from "lucide-react";
 import { toast } from "sonner";
 import { LOCATIONS } from "@/lib/constants";
 import { HONEYPOT_FIELD_NAME, SERVICES_LIST } from "@/lib/lead-form";
+import { LEAD_FORM_SUCCESS_EVENT } from "@/components/GoogleAnalyticsPageView";
 
 const schema = z.object({
   name: z.string().min(2, "Please enter your full name").max(80, "Please enter a shorter name"),
@@ -79,6 +80,8 @@ export default function LeadForm({
       }
 
       setSubmitted(true);
+      // The analytics listener sends only the configured conversion metadata, never form values.
+      document.dispatchEvent(new Event(LEAD_FORM_SUCCESS_EVENT));
       toast.success("Appointment request received! We'll contact you within 1 business day.");
       const nextStartedAt = Date.now().toString();
       setFormStartedAt(nextStartedAt);

@@ -45,7 +45,7 @@ export default function PrivacyPage() {
               <strong>Health information</strong> — symptoms, treatment areas, or medical questions you voluntarily share in form submissions or calls. This information is treated as Protected Health Information (PHI) under HIPAA.
             </li>
             <li>
-              <strong>Usage data</strong> — when you choose to enable analytics on an eligible public page, Google Analytics may collect information about pages visited, time on site, browser type, IP address, and referring URL.
+              <strong>Usage data</strong> — when you choose to enable analytics, Google Analytics and Google Ads may collect information about pages visited, time on site, browser type, IP address, referring URL, and website conversion interactions.
             </li>
           </ul>
 
@@ -69,14 +69,14 @@ export default function PrivacyPage() {
 
           <h2>4. Cookies &amp; Analytics</h2>
           <p>
-            Google Analytics is loaded only after you select “Accept analytics” in the analytics preference prompt on an eligible public page. If you select “Decline,” Google Analytics is not loaded. The analytics prompt and Google Analytics are not shown or loaded on our contact and consultation-request pages.
+            Google Analytics and Google Ads measurement load only after you select “Accept analytics” in the analytics preference prompt. If you select “Decline,” neither Google tag loads. With consent, Google Ads may measure successful appointment-request submissions and calls initiated from website phone links; form details, health information, and phone numbers are not sent as conversion-event data.
           </p>
 
           <h2>5. Third-Party Services</h2>
           <p>We may share limited information with trusted service providers who assist us in operating our website and running our practice, including:</p>
           <ul>
             <li>Email and appointment scheduling platforms</li>
-            <li>Google Analytics (website analytics)</li>
+            <li>Google Analytics and Google Ads (website analytics and conversion measurement)</li>
             <li>Vercel (website hosting)</li>
           </ul>
           <p>These providers are contractually obligated to protect your data and may not use it for their own purposes.</p>
