@@ -48,6 +48,198 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
 {
+  slug: "venaseal-vein-closure-new-york",
+  title: "VenaSeal Vein Closure: What New York Patients Should Know",
+  excerpt: "VenaSeal vein closure seals diseased leg veins with a medical adhesive instead of heat. No tumescent anesthesia, and for many patients, no compression stockings afterward. Here is what New York patients should know before their first visit.",
+  category: "Treatments",
+  publishedAt: "2026-08-12",
+  readTimeMinutes: 9,
+  author: "Dr. Lee G. Schulman",
+  metaTitle: "VenaSeal Vein Closure: What New York Patients Should Know",
+  metaDescription: "VenaSeal vein closure uses a medical adhesive to seal varicose veins without tumescent anesthesia. See how New York patients can qualify for this procedure.",
+  ogDescription: "VenaSeal vein closure seals diseased leg veins with a medical adhesive instead of heat. No tumescent anesthesia, and for many patients, no compression stockings afterward. Learn how it works for New York patients.",
+  featuredImage: "/images/blog/venaseal-vein-closure-new-york.png",
+  featuredImageAlt: "Physician preparing a VenaSeal vein closure procedure at a Manhattan vein clinic",
+  relatedLinks: [
+    { label: "Varicose Vein Treatment", href: "/services/varicose-vein-treatment" },
+    { label: "Laser Vein Therapy (EVLT)", href: "/services/laser-vein-therapy" },
+    { label: "Vein Disorders & Conditions", href: "/services/vein-disorders" },
+    { label: "Radiofrequency Ablation for Varicose Veins", href: "/blog/radiofrequency-ablation-varicose-veins-new-york" },
+    { label: "Free Vein Screening", href: "/services/free-vein-screening" },
+  ],
+  quickSummary: [
+    "VenaSeal vein closure uses a specially formulated medical adhesive, delivered through a thin catheter, to permanently seal the diseased vein responsible for varicose veins.",
+    "Unlike radiofrequency ablation (RFA) or endovenous laser therapy (EVLT), VenaSeal does not use heat and does not require tumescent (numbing fluid) anesthesia along the vein.",
+    "The VeClose clinical trial found VenaSeal achieved vein closure comparable to radiofrequency ablation: 99% occlusion at three months versus 96% for RFA.",
+    "Many patients do not need to wear compression stockings after VenaSeal, though your physician may still recommend them depending on your individual anatomy.",
+    "A Free Vein Screening at Schulman Vein and Laser Center, including duplex ultrasound mapping, determines whether VenaSeal, RFA, EVLT, or another approach fits your venous anatomy.",
+  ],
+  tableOfContents: [
+    "What Is VenaSeal Vein Closure?",
+    "How VenaSeal Vein Closure Works",
+    "Who Is a Good Candidate for VenaSeal?",
+    "What to Expect During the Procedure",
+    "Recovery After VenaSeal Vein Closure",
+    "VenaSeal vs. Radiofrequency Ablation and EVLT",
+    "Possible Risks and Considerations",
+    "Frequently Asked Questions",
+  ],
+  body: [
+    {
+      heading: "What Is VenaSeal Vein Closure?",
+      paragraphs: [
+        "VenaSeal vein closure is an FDA-approved, minimally invasive procedure that treats varicose veins caused by a diseased saphenous vein without heat, without surgery, and without tumescent anesthesia. Instead of heating the vein wall from the inside, a physician delivers a small amount of specially formulated medical adhesive through a thin catheter, sealing the vein shut so blood reroutes to healthy vessels nearby.",
+        "The VenaSeal Closure System received FDA approval in February 2015 and has become one of the more widely adopted non-thermal vein treatment options in the United States. For patients who want to avoid the numbing-fluid injections used in laser and radiofrequency procedures, or who would prefer to skip daily compression stocking wear during recovery, VenaSeal offers a meaningfully different experience while addressing the same underlying problem: venous reflux, the backward flow of blood through faulty vein valves.",
+        "At Schulman Vein and Laser Center, with offices in Manhattan, Manhasset, and Commack, our physicians evaluate every patient's venous anatomy with duplex ultrasound before recommending VenaSeal, radiofrequency ablation, EVLT, or another approach. Learn more about the full range of conditions we treat on our <a href=\"/services/vein-disorders\">vein disorders and conditions</a> page.",
+      ],
+      keyTakeaway: "VenaSeal vein closure uses a medical adhesive instead of heat or surgery to permanently seal the diseased vein causing varicose veins.",
+    },
+    {
+      heading: "How VenaSeal Vein Closure Works",
+      paragraphs: [
+        "The VenaSeal system delivers a cyanoacrylate-based medical adhesive, in the same general chemical class as surgical skin adhesives, through a catheter advanced into the diseased vein under real-time ultrasound guidance. The physician performs a series of controlled adhesive deposits along the length of the vein while applying brief external compression at each point.",
+        "Over the following weeks, the body forms scar tissue around the sealed vein, permanently closing it and rerouting blood flow to healthy veins nearby. Because the adhesive itself is not thermal, there is no need for the tumescent anesthesia that surrounds the vein during laser or <a href=\"/blog/radiofrequency-ablation-varicose-veins-new-york\">radiofrequency ablation</a> — a step some patients find to be the least comfortable part of those procedures.",
+        "The typical sequence looks like this:",
+      ],
+      bullets: [
+        "A thin catheter is guided into the diseased vein under ultrasound visualization, typically through a single small puncture near the knee",
+        "The physician activates the VenaSeal dispenser to deliver small, precise amounts of medical adhesive along the vein in sequence",
+        "Brief manual compression is applied at each deposit point to hold the vein walls together while the adhesive sets",
+        "The catheter is withdrawn as treatment progresses down the length of the diseased vein segment",
+        "A small dressing is applied over the single entry point; no incision or stitches are needed",
+      ],
+      imageSrc: "/images/blog/venaseal-adhesive-catheter-procedure-new-york.png",
+      imageAlt: "Ultrasound-guided VenaSeal vein closure catheter procedure at a New York vein clinic",
+      callout: {
+        type: "info",
+        text: "The VeClose clinical trial, a randomized comparison of VenaSeal against radiofrequency ablation, found 99% vein occlusion at three months in the VenaSeal group versus 96% in the RFA group — comparable effectiveness between the two approaches.",
+      },
+      keyTakeaway: "VenaSeal seals the vein using a medical adhesive delivered by catheter under ultrasound guidance, without heat or tumescent anesthesia.",
+    },
+    {
+      heading: "Who Is a Good Candidate for VenaSeal?",
+      paragraphs: [
+        "VenaSeal is designed for patients with varicose veins caused by reflux in the great saphenous vein, small saphenous vein, or accessory saphenous veins — the same superficial veins commonly treated with <a href=\"/services/varicose-vein-treatment\">varicose vein treatment</a> options such as radiofrequency ablation or <a href=\"/services/laser-vein-therapy\">laser vein therapy (EVLT)</a>. A duplex ultrasound evaluation confirms whether your venous anatomy is a good match for this technique.",
+        "Good candidates typically share several characteristics:",
+      ],
+      bullets: [
+        "Visible varicose veins with symptoms such as aching, heaviness, <a href=\"/blog/leg-swelling-vein-disease-new-york\">leg swelling</a>, or leg fatigue",
+        "Duplex ultrasound confirmation of reflux in the saphenous vein system",
+        "A preference to avoid tumescent anesthesia or extended compression stocking wear",
+        "No known allergy or sensitivity to cyanoacrylate adhesives",
+        "No active infection or deep vein thrombosis in the leg being treated",
+      ],
+      callout: {
+        type: "warning",
+        text: "Patients with a known sensitivity or allergy to cyanoacrylate adhesives are generally not candidates for VenaSeal. Discuss any adhesive allergy or sensitivity with your physician during your evaluation.",
+      },
+      keyTakeaway: "Most patients with symptomatic saphenous vein reflux are candidates for VenaSeal, though a documented adhesive allergy or active infection may rule it out.",
+    },
+    {
+      heading: "What to Expect During the Procedure",
+      paragraphs: [
+        "Understanding the sequence of the procedure helps patients arrive with realistic expectations. Here is what a typical VenaSeal session at Schulman Vein and Laser Center looks like from arrival to discharge.",
+      ],
+      bullets: [
+        "Arrival and mapping: your leg is examined with duplex ultrasound and the treatment path is marked before the procedure begins",
+        "Local anesthesia: only the small catheter entry point near the knee is numbed; no anesthetic fluid is injected along the full length of the vein",
+        "Adhesive delivery: the physician advances the catheter and delivers the medical adhesive in a series of controlled deposits, applying brief compression at each point",
+        "Dressing and walking: a small dressing covers the single entry site, and you walk for a short period before leaving the office to support normal circulation",
+      ],
+      callout: {
+        type: "tip",
+        text: "Most VenaSeal procedures take 20 to 45 minutes depending on the length of vein treated. Because there is no tumescent anesthesia step, total time in the office is often shorter than RFA or EVLT.",
+      },
+    },
+    {
+      heading: "Recovery After VenaSeal Vein Closure",
+      paragraphs: [
+        "Recovery is one of the features patients ask about most. Here is what to generally expect in the days and weeks following treatment, though your physician will tailor guidance to your specific procedure.",
+      ],
+      bullets: [
+        "Day 1: Most patients resume normal daily activities the same day and return to desk-based work the next morning. Physically demanding jobs may call for a day or two of modified activity.",
+        "Compression: Many patients do not need to wear compression stockings after VenaSeal, though your physician may still recommend them for a short period depending on your anatomy and any additional treatments performed at the same visit.",
+        "Bruising and soreness: Reported bruising and tenderness following VenaSeal tend to be mild, though individual experiences vary.",
+        "Follow-up: A follow-up duplex ultrasound, typically at 4 to 6 weeks, confirms that the treated vein remains closed and identifies any tributary veins that may benefit from additional <a href=\"/blog/spider-vein-sclerotherapy-treatment-new-york\">sclerotherapy</a>.",
+      ],
+      imageSrc: "/images/blog/venaseal-recovery-consultation-new-york.png",
+      imageAlt: "Physician reviewing VenaSeal vein closure recovery progress with a patient in a New York clinic",
+      callout: {
+        type: "warning",
+        text: "Contact our office if you notice spreading redness, warmth, significant swelling, or fever after your procedure. These are uncommon but warrant prompt evaluation, as with any vein procedure.",
+      },
+      keyTakeaway: "Recovery after VenaSeal is typically quick, and many patients skip extended compression stocking wear, but your physician will tailor aftercare to your anatomy.",
+    },
+    {
+      heading: "VenaSeal vs. Radiofrequency Ablation and EVLT: What's the Difference?",
+      paragraphs: [
+        "VenaSeal, radiofrequency ablation, and endovenous laser therapy all close the diseased vein responsible for varicose veins, but they reach that result differently. Patients frequently ask which approach is right for them.",
+        "The practical differences are as follows:",
+      ],
+      bullets: [
+        "Anesthesia: RFA and EVLT require tumescent anesthesia along the full length of the vein; VenaSeal only numbs the single catheter entry point",
+        "Compression: RFA and EVLT typically call for a week or more of daily compression stocking wear; many VenaSeal patients skip this step",
+        "Mechanism: RFA and EVLT close the vein with controlled heat; VenaSeal closes the vein with a medical adhesive",
+        "Evidence base: RFA and EVLT have the longest clinical track record; VenaSeal's VeClose trial and subsequent studies show comparable closure rates",
+        "Candidacy: not every vein or patient is suited to every technique; some patients are better matched to <a href=\"/blog/radiofrequency-ablation-varicose-veins-new-york\">radiofrequency ablation</a>, while others are better candidates for VenaSeal or a combination approach with sclerotherapy for smaller branch veins",
+      ],
+      callout: {
+        type: "info",
+        text: "Our physicians evaluate your venous anatomy, duplex ultrasound findings, and personal preference when recommending VenaSeal, RFA, or EVLT. For most patients, any of these approaches can achieve excellent results when matched to the right anatomy.",
+      },
+      keyTakeaway: "VenaSeal, RFA, and EVLT all achieve comparable vein closure. The right choice depends on your venous anatomy and preferences around anesthesia and compression.",
+    },
+    {
+      heading: "Possible Risks and Considerations",
+      paragraphs: [
+        "As with any vein procedure, VenaSeal carries risks that your physician will review in detail during your consultation. These are uncommon but worth understanding before treatment.",
+      ],
+      bullets: [
+        "Allergic-type reaction to the cyanoacrylate adhesive in a small subset of patients",
+        "Localized inflammation or phlebitis over the treated vein",
+        "Bruising, tenderness, or palpable firmness along the treated vein while it is being reabsorbed",
+        "Rare risks associated with any endovenous procedure, including deep vein thrombosis",
+      ],
+      keyTakeaway: "VenaSeal is well tolerated by most patients, but a physician evaluation is needed to rule out adhesive sensitivity and confirm the procedure is appropriate for your anatomy.",
+    },
+    {
+      heading: "Book Your Free Vein Screening in New York",
+      paragraphs: [
+        "If varicose veins are causing aching, heaviness, swelling, or visible bulging on your legs, the most important first step is an accurate diagnosis, not guesswork. VenaSeal produces excellent results when matched to the right patient and the right venous anatomy, which is why a duplex ultrasound evaluation always comes first.",
+        "At Schulman Vein and Laser Center, your first appointment includes a clinical examination and duplex ultrasound to map your venous anatomy and determine whether VenaSeal, RFA, EVLT, sclerotherapy, or a combination approach will produce the best outcome for your specific presentation.",
+        "Dr. Martin L. Schulman, a board-certified vascular surgeon, and Dr. Lee G. Schulman, a Diplomate in Phlebology (#00045), bring more than 55 combined years of vein-only experience to every patient encounter. Their practice, All We Do Is Veins™, is one of the most respected vein centers in the New York metropolitan area, serving patients from Manhattan, Manhasset, and Commack. Our <a href=\"/services/free-vein-screening\">Free Vein Screening</a> requires no referral and no obligation. You will leave with a clear diagnosis and a personalized treatment plan.",
+        "Schedule your Free Vein Screening today, or <a href=\"/contact\">contact our office</a> with any questions before your visit, and take the first step toward healthy, comfortable legs.",
+      ],
+      callout: {
+        type: "tip",
+        text: "Call our Manhattan office at 212.987.0500, Manhasset at 516.482.4477, or Commack at 631.543.4599 to book your Free Vein Screening — no referral required.",
+      },
+    },
+  ],
+  faqSection: [
+    {
+      question: "Is VenaSeal vein closure painful?",
+      answer: "Most patients tolerate VenaSeal well. Because only the catheter entry point near the knee is numbed, there is no tumescent fluid injected along the length of the vein, which many patients find more comfortable than the numbing step in radiofrequency ablation or laser treatment. Any post-procedure soreness is typically mild and manageable with over-the-counter acetaminophen.",
+    },
+    {
+      question: "How is VenaSeal different from radiofrequency ablation or laser treatment?",
+      answer: "VenaSeal closes the diseased vein with a medical adhesive rather than controlled heat, so it does not require tumescent anesthesia and, for many patients, does not require extended compression stocking wear afterward. The VeClose clinical trial found comparable closure rates between VenaSeal and radiofrequency ablation. Your physician will help determine which approach best fits your venous anatomy.",
+    },
+    {
+      question: "Do I need to wear compression stockings after VenaSeal?",
+      answer: "Many VenaSeal patients do not need extended compression stocking wear, which is one of the differences from radiofrequency ablation and EVLT. That said, your physician may still recommend compression for a short period depending on your individual anatomy or if additional treatments, such as sclerotherapy for smaller branch veins, are performed at the same visit.",
+    },
+    {
+      question: "Does insurance cover VenaSeal vein closure?",
+      answer: "Coverage for VenaSeal varies by insurance plan and continues to evolve as more payers finalize policies for this newer procedure. Many plans cover VenaSeal when medical necessity is documented, similar to other varicose vein treatments, but the specific requirements differ by carrier. Our team verifies your individual benefits before your procedure so there are no surprises.",
+    },
+    {
+      question: "Am I a candidate for VenaSeal if I have allergies?",
+      answer: "A known allergy or sensitivity to cyanoacrylate adhesives generally rules out VenaSeal as an option, since the procedure relies on this class of medical adhesive to close the vein. Tell your physician about any known adhesive sensitivities during your evaluation so they can recommend an alternative such as radiofrequency ablation or EVLT if needed.",
+    },
+  ],
+},
+{
   slug: "leg-cramps-vein-disease-new-york",
   title: "Nighttime Leg Cramps and Vein Disease: What New York Patients Should Know",
   excerpt: "Nighttime leg cramps can have many causes. Learn when vein disease may be part of the picture, which patterns matter, and when to arrange a New York vein evaluation.",
