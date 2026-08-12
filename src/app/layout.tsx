@@ -1,14 +1,13 @@
 import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
-import { Analytics } from "@vercel/analytics/react";
 import { Toaster } from "sonner";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import StickyMobileCTA from "@/components/StickyMobileCTA";
 import TrustBar from "@/components/TrustBar";
 import ScrollToTop from "@/components/ScrollToTop";
-import GoogleAnalyticsPageView from "@/components/GoogleAnalyticsPageView";
+import AnalyticsBoundary from "@/components/AnalyticsBoundary";
 import { BUSINESS } from "@/lib/constants";
 
 const inter = Inter({
@@ -94,7 +93,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
       <body className="font-body antialiased bg-white text-gray-800">
-        <GoogleAnalyticsPageView />
+        <AnalyticsBoundary />
         <ScrollToTop />
         <TrustBar />
         <Header />
@@ -102,7 +101,6 @@ export default function RootLayout({
         <Footer />
         <StickyMobileCTA />
         <Toaster richColors position="top-right" />
-        <Analytics />
       </body>
     </html>
   );

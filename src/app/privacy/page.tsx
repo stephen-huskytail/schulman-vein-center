@@ -45,7 +45,7 @@ export default function PrivacyPage() {
               <strong>Health information</strong> — symptoms, treatment areas, or medical questions you voluntarily share in form submissions or calls. This information is treated as Protected Health Information (PHI) under HIPAA.
             </li>
             <li>
-              <strong>Usage data</strong> — when you choose to enable analytics, Google Analytics and Google Ads may collect information about pages visited, time on site, browser type, IP address, referring URL, and website conversion interactions.
+              <strong>Usage data</strong> — only when you choose to enable analytics on an approved informational page, Google Analytics, Google Ads, and Vercel Analytics may collect technical and usage information such as pages visited, browser type, IP address, referring URL, and website conversion interactions. Analytics are not loaded on pages with appointment or consultation forms, or on this Privacy Policy and the Terms of Use.
             </li>
           </ul>
 
@@ -69,17 +69,18 @@ export default function PrivacyPage() {
 
           <h2>4. Cookies &amp; Analytics</h2>
           <p>
-            Google Analytics and Google Ads measurement load only after you select “Accept analytics” in the analytics preference prompt. If you select “Decline,” neither Google tag loads. With consent, Google Ads may measure successful appointment-request submissions and calls initiated from website phone links; form details, health information, and phone numbers are not sent as conversion-event data.
+            Google Analytics, Google Ads, and Vercel Analytics load only after you select “Accept analytics” in the analytics preference prompt and only on approved informational pages. If you select “Decline,” they do not load. They are not shown or loaded on pages with appointment or consultation forms, including the home and contact pages, or on this Privacy Policy and the Terms of Use. Google Analytics page views use the page pathname without query-string data. Google Ads may measure calls initiated from phone links on approved pages; form details, health information, phone numbers, and query strings are not sent as conversion-event data.
           </p>
 
           <h2>5. Third-Party Services</h2>
           <p>We may share limited information with trusted service providers who assist us in operating our website and running our practice, including:</p>
           <ul>
             <li>Email and appointment scheduling platforms</li>
-            <li>Google Analytics and Google Ads (website analytics and conversion measurement)</li>
+            <li>Google Analytics and Google Ads (optional website analytics and conversion measurement on approved informational pages)</li>
+            <li>Vercel Analytics (optional website analytics on approved informational pages)</li>
             <li>Vercel (website hosting)</li>
           </ul>
-          <p>These providers are contractually obligated to protect your data and may not use it for their own purposes.</p>
+          <p>Each provider processes information under its own applicable terms and privacy practices. This policy does not represent a contractual, HIPAA, or legal-compliance determination for any analytics provider.</p>
 
           <h2>6. Data Security</h2>
           <p>

@@ -160,7 +160,7 @@ export async function POST(req: Request) {
 
   if (spamReason) {
     console.warn("Suppressed likely automated consultation request", { reason: spamReason });
-    return NextResponse.json({ ok: true });
+    return NextResponse.json({ ok: true, delivered: false });
   }
 
   const selectedLocation = LOCATIONS.find((loc) => loc.id === data.location);
@@ -225,5 +225,5 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "Unable to send your request right now. Please call us directly." }, { status: 502 });
   }
 
-  return NextResponse.json({ ok: true });
+  return NextResponse.json({ ok: true, delivered: true });
 }
