@@ -6,12 +6,10 @@ import { useEffect, useRef, useState } from "react";
 import {
   ANALYTICS_CONSENT_STORAGE_KEY,
   isAnalyticsAllowedRoute,
-  LEAD_FORM_SUCCESS_EVENT,
 } from "@/lib/analytics-policy";
 
 const MEASUREMENT_ID = "G-YPPT8SEMG5";
 const GOOGLE_ADS_ID = "AW-1070427255";
-const LEAD_FORM_CONVERSION_ID = "AW-1070427255/ENYNCOHM2uAcEPfYtf4D";
 const CALL_FORWARDING_CONVERSION_ID = "AW-1070427255/-PziCNnZ2uAcEPfYtf4D";
 const CLICK_TO_CALL_CONVERSION_ID = "AW-1070427255/pDThCNzZ2uAcEPfYtf4D";
 const CALL_FORWARDING_NUMBER = "(516) 482-4477";
@@ -102,7 +100,6 @@ export default function AnalyticsBoundary() {
   const [consent, setConsent] = useState<AnalyticsConsent>(null);
   const allowed = isAnalyticsAllowedRoute(pathname);
   const configuredRef = useRef(false);
-  const deliveredSubmissionRef = useRef(false);
 
   useEffect(() => {
     try {
@@ -131,11 +128,6 @@ export default function AnalyticsBoundary() {
 
   useEffect(() => {
     if (consent !== "accepted" || !allowed) return;
-    const onLeadFormSuccess = () => {
-      if (deliveredSubmissionRef.current) return;
-      deliveredSubmissionRef.current = true;
-      sendGoogleAdsConversion(LEAD_FORM_CONVERSION_ID);
-    };
     const onPhoneClick = (event: MouseEvent) => {
       if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
       const target = event.target instanceof Element ? event.target.closest<HTMLAnchorElement>('a[href^="tel:"]') : null;
@@ -152,10 +144,8 @@ export default function AnalyticsBoundary() {
       const fallbackTimer = window.setTimeout(navigate, PHONE_NAVIGATION_TIMEOUT_MS);
       sendGoogleAdsConversion(CLICK_TO_CALL_CONVERSION_ID, navigate);
     };
-    document.addEventListener(LEAD_FORM_SUCCESS_EVENT, onLeadFormSuccess);
     document.addEventListener("click", onPhoneClick, true);
     return () => {
-      document.removeEventListener(LEAD_FORM_SUCCESS_EVENT, onLeadFormSuccess);
       document.removeEventListener("click", onPhoneClick, true);
     };
   }, [allowed, consent]);

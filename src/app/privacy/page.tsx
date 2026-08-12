@@ -45,7 +45,7 @@ export default function PrivacyPage() {
               <strong>Health information</strong> — symptoms, treatment areas, or medical questions you voluntarily share in form submissions or calls. This information is treated as Protected Health Information (PHI) under HIPAA.
             </li>
             <li>
-              <strong>Usage data</strong> — only when you choose to enable analytics on an approved informational page, Google Analytics, Google Ads, and Vercel Analytics may collect technical and usage information such as pages visited, browser type, IP address, referring URL, and website conversion interactions. Analytics are not loaded on pages with appointment or consultation forms, or on this Privacy Policy and the Terms of Use.
+              <strong>Usage data</strong> — only when you choose to enable analytics on an approved informational page, Google Analytics, Google Ads, and Vercel Analytics may collect technical and usage information such as pages visited, browser type, IP address, referring URL, and limited call-measurement interactions from phone links on approved pages. Analytics are not loaded on pages with appointment or consultation forms, or on this Privacy Policy and the Terms of Use.
             </li>
           </ul>
 
@@ -76,7 +76,7 @@ export default function PrivacyPage() {
           <p>We may share limited information with trusted service providers who assist us in operating our website and running our practice, including:</p>
           <ul>
             <li>Email and appointment scheduling platforms</li>
-            <li>Google Analytics and Google Ads (optional website analytics and conversion measurement on approved informational pages)</li>
+            <li>Google Analytics and Google Ads (optional website analytics and call measurement on approved informational pages)</li>
             <li>Vercel Analytics (optional website analytics on approved informational pages)</li>
             <li>Vercel (website hosting)</li>
           </ul>

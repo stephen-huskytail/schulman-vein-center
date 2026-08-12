@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
@@ -8,7 +8,6 @@ import { Send, CheckCircle2 } from "lucide-react";
 import { toast } from "sonner";
 import { LOCATIONS } from "@/lib/constants";
 import { HONEYPOT_FIELD_NAME, SERVICES_LIST } from "@/lib/lead-form";
-import { LEAD_FORM_SUCCESS_EVENT } from "@/lib/analytics-policy";
 
 const schema = z.object({
   name: z.string().min(2, "Please enter your full name").max(80, "Please enter a shorter name"),
@@ -42,7 +41,6 @@ export default function LeadForm({
 }: LeadFormProps) {
   const [submitted, setSubmitted] = useState(false);
   const [formStartedAt, setFormStartedAt] = useState("");
-  const conversionDispatchedRef = useRef(false);
 
   const {
     register,
@@ -65,7 +63,6 @@ export default function LeadForm({
   }, [setValue]);
 
   const onSubmit = async (data: FormData) => {
-    conversionDispatchedRef.current = false;
     try {
       const response = await fetch("/api/contact", {
         method: "POST",
@@ -82,11 +79,6 @@ export default function LeadForm({
       }
 
       setSubmitted(true);
-      // Only a confirmed Resend acceptance can trigger this payload-free event.
-      if (result.delivered === true && !conversionDispatchedRef.current) {
-        conversionDispatchedRef.current = true;
-        document.dispatchEvent(new Event(LEAD_FORM_SUCCESS_EVENT));
-      }
       toast.success("Appointment request received! We'll contact you within 1 business day.");
       const nextStartedAt = Date.now().toString();
       setFormStartedAt(nextStartedAt);

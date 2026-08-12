@@ -1,5 +1,4 @@
 export const ANALYTICS_CONSENT_STORAGE_KEY = "schulman-analytics-consent";
-export const LEAD_FORM_SUCCESS_EVENT = "schulman:lead-form-success";
 
 /**
  * Analytics are opt-in and restricted to public informational content. New
