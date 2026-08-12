@@ -77,7 +77,6 @@ export default function PrivacyPage() {
           <ul>
             <li>Email and appointment scheduling platforms</li>
             <li>Google Analytics and Google Ads (optional website analytics and call measurement on approved informational pages)</li>
-            <li>Google Analytics and Google Ads (optional website analytics and call measurement on approved informational pages)</li>
             <li>Vercel (website hosting)</li>
           </ul>
           <p>Each provider processes information under its own applicable terms and privacy practices. This policy does not represent a contractual, HIPAA, or legal-compliance determination for any analytics provider.</p>
