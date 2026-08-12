@@ -45,7 +45,7 @@ export default function PrivacyPage() {
               <strong>Health information</strong> — symptoms, treatment areas, or medical questions you voluntarily share in form submissions or calls. This information is treated as Protected Health Information (PHI) under HIPAA.
             </li>
             <li>
-              <strong>Usage data</strong> — IP address, browser type, pages visited, time on site, and referring URL, collected automatically via cookies and analytics tools.
+              <strong>Usage data</strong> — when you choose to enable analytics on an eligible public page, Google Analytics may collect information about pages visited, time on site, browser type, IP address, and referring URL.
             </li>
           </ul>
 
@@ -69,7 +69,7 @@ export default function PrivacyPage() {
 
           <h2>4. Cookies &amp; Analytics</h2>
           <p>
-            Our website uses cookies and third-party analytics tools (including Google Analytics) to understand how visitors use our site. These tools collect anonymized usage data. You can disable cookies in your browser settings at any time; however, some features of the site may not function properly.
+            Google Analytics is loaded only after you select “Accept analytics” in the analytics preference prompt on an eligible public page. If you select “Decline,” Google Analytics is not loaded. The analytics prompt and Google Analytics are not shown or loaded on our contact and consultation-request pages.
           </p>
 
           <h2>5. Third-Party Services</h2>

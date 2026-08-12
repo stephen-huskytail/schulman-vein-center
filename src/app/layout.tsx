@@ -8,6 +8,7 @@ import Footer from "@/components/Footer";
 import StickyMobileCTA from "@/components/StickyMobileCTA";
 import TrustBar from "@/components/TrustBar";
 import ScrollToTop from "@/components/ScrollToTop";
+import GoogleAnalyticsPageView from "@/components/GoogleAnalyticsPageView";
 import { BUSINESS } from "@/lib/constants";
 
 const inter = Inter({
@@ -93,6 +94,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
       <body className="font-body antialiased bg-white text-gray-800">
+        <GoogleAnalyticsPageView />
         <ScrollToTop />
         <TrustBar />
         <Header />
