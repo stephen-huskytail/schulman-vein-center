@@ -133,12 +133,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
-  const blogPostRoutes: MetadataRoute.Sitemap = getAllBlogPosts().map((post) => ({
-    url: `${base}/blog/${post.slug}`,
-    lastModified: new Date(post.publishedAt),
-    changeFrequency: "monthly",
-    priority: 0.7,
-  }));
+  const blogPostRoutes: MetadataRoute.Sitemap = getAllBlogPosts()
+    .filter((post) => post.slug !== "evlt-vs-sclerotherapy-which-treatment-is-right")
+    .map((post) => ({
+      url: `${base}/blog/${post.slug}`,
+      lastModified: new Date(post.publishedAt),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    }));
 
   return [...routes, ...blogPostRoutes];
 }
