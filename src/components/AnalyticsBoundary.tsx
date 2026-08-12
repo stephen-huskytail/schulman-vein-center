@@ -1,6 +1,5 @@
 "use client";
 
-import { Analytics } from "@vercel/analytics/react";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import {
@@ -95,11 +94,22 @@ function loadGoogleTags(onReady: () => void) {
   document.head.appendChild(script);
 }
 
+function removeGoogleTrackingArtifacts(): boolean {
+  const scripts = Array.from(document.querySelectorAll<HTMLScriptElement>(GOOGLE_TAG_SCRIPT_SELECTOR));
+  if (scripts.length === 0) return false;
+
+  scripts.forEach((script) => script.remove());
+  delete window.gtag;
+  delete window.dataLayer;
+  return true;
+}
+
 export default function AnalyticsBoundary() {
   const pathname = usePathname();
   const [consent, setConsent] = useState<AnalyticsConsent>(null);
   const allowed = isAnalyticsAllowedRoute(pathname);
   const configuredRef = useRef(false);
+  const excludedRouteReloadRef = useRef(false);
 
   useEffect(() => {
     try {
@@ -109,6 +119,17 @@ export default function AnalyticsBoundary() {
       setConsent(null);
     }
   }, []);
+
+  useEffect(() => {
+    if (consent !== "accepted" || allowed || excludedRouteReloadRef.current) return;
+
+    // The root layout survives App Router and history navigation. If this
+    // document previously loaded our tag, remove its page artifacts before
+    // replacing it so excluded routes start without this boundary or tag.
+    if (!removeGoogleTrackingArtifacts()) return;
+    excludedRouteReloadRef.current = true;
+    window.location.replace(window.location.href);
+  }, [allowed, consent, pathname]);
 
   useEffect(() => {
     if (consent !== "accepted" || !allowed) return;
@@ -157,10 +178,9 @@ export default function AnalyticsBoundary() {
 
   if (!allowed) return null;
   return <>
-    {consent === "accepted" && <Analytics />}
     {consent === null && <section aria-label="Analytics preference" className="fixed inset-x-4 bottom-4 z-[60] mx-auto max-w-xl rounded-xl border border-gray-200 bg-white p-4 shadow-xl sm:p-5">
       <p className="text-sm font-semibold text-[var(--sv-navy)]">Analytics preference</p>
-      <p className="mt-1 text-sm leading-6 text-gray-600">With your permission, we use Google Analytics, Google Ads, and Vercel Analytics on selected informational pages. We do not send form details to analytics providers.</p>
+      <p className="mt-1 text-sm leading-6 text-gray-600">With your permission, we use Google Analytics and Google Ads on selected informational pages. We do not send form details to analytics providers.</p>
       <div className="mt-4 flex flex-wrap gap-3">
         <button type="button" onClick={() => chooseConsent("accepted")} className="btn-primary text-sm">Accept analytics</button>
         <button type="button" onClick={() => chooseConsent("declined")} className="rounded-lg border-2 border-[var(--sv-navy)] px-4 py-2 text-sm font-semibold text-[var(--sv-navy)] transition-colors hover:border-[var(--sv-teal)] hover:text-[var(--sv-teal)]">Decline</button>

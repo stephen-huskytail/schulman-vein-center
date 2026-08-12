@@ -10,7 +10,7 @@ Modern, SEO-optimized one-page website for Schulman Vein and Laser Center built 
 - **Icons**: Lucide React
 - **Forms**: React Hook Form + Zod
 - **Notifications**: Sonner
-- **Analytics**: Vercel Analytics
+- **Analytics**: consent-gated Google Analytics and Google Ads on approved informational routes
 - **Fonts**: Playfair Display (headings) + Inter (body)
 
 ## Brand Colors
