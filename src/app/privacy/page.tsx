@@ -44,9 +44,6 @@ export default function PrivacyPage() {
             <li>
               <strong>Health information</strong> — symptoms, treatment areas, or medical questions you voluntarily share in form submissions or calls. This information is treated as Protected Health Information (PHI) under HIPAA.
             </li>
-            <li>
-              <strong>Usage data</strong> — only when you choose to enable analytics on an approved informational page, Google Analytics and Google Ads may collect technical and usage information such as pages visited, browser type, IP address, referring URL, and limited call-measurement interactions from phone links on approved pages. Analytics are not loaded on pages with appointment or consultation forms, or on this Privacy Policy and the Terms of Use.
-            </li>
           </ul>
 
           <h2>2. How We Use Your Information</h2>
@@ -67,16 +64,10 @@ export default function PrivacyPage() {
             As a medical practice, we are subject to the Health Insurance Portability and Accountability Act (HIPAA). Any health-related information you share with us is treated as PHI and is handled in accordance with our HIPAA Notice of Privacy Practices, available upon request at any of our offices. We use HIPAA-compliant systems to transmit and store health information.
           </p>
 
-          <h2>4. Cookies &amp; Analytics</h2>
-          <p>
-            Google Analytics and Google Ads load only after you select “Accept analytics” in the analytics preference prompt and only on approved informational pages. If you select “Decline,” they do not load. They are not shown or loaded on pages with appointment or consultation forms, including the home and contact pages, or on this Privacy Policy and the Terms of Use. Google Analytics page views use the page pathname without query-string data. Google Ads may measure calls initiated from phone links on approved pages; form details, health information, phone numbers, and query strings are not sent as conversion-event data.
-          </p>
-
-          <h2>5. Third-Party Services</h2>
+          <h2>4. Third-Party Services</h2>
           <p>We may share limited information with trusted service providers who assist us in operating our website and running our practice, including:</p>
           <ul>
             <li>Email and appointment scheduling platforms</li>
-            <li>Google Analytics and Google Ads (optional website analytics and call measurement on approved informational pages)</li>
             <li>Vercel (website hosting)</li>
           </ul>
           <p>Each provider processes information under its own applicable terms and privacy practices. This policy does not represent a contractual, HIPAA, or legal-compliance determination for any analytics provider.</p>

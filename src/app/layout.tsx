@@ -7,7 +7,6 @@ import Footer from "@/components/Footer";
 import StickyMobileCTA from "@/components/StickyMobileCTA";
 import TrustBar from "@/components/TrustBar";
 import ScrollToTop from "@/components/ScrollToTop";
-import AnalyticsBoundary from "@/components/AnalyticsBoundary";
 import { BUSINESS } from "@/lib/constants";
 
 const inter = Inter({
@@ -92,8 +91,23 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
+      <head>
+        {/* Static vendor bootstrap; it does not interpolate user-controlled content. */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s);j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id=GTM-NSJT8NRG';f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-NSJT8NRG');`,
+          }}
+        />
+      </head>
       <body className="font-body antialiased bg-white text-gray-800">
-        <AnalyticsBoundary />
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-NSJT8NRG"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          />
+        </noscript>
         <ScrollToTop />
         <TrustBar />
         <Header />
