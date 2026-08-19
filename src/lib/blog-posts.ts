@@ -48,6 +48,151 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
 {
+  slug: "restless-legs-syndrome-vein-disease-new-york",
+  title: "Restless Legs Syndrome and Vein Disease: What New York Patients Should Know",
+  excerpt: "Restless legs syndrome and vein disease sometimes occur together. Learn what research shows about the connection, which symptoms to track, and when New York patients should consider a vein evaluation.",
+  category: "Patient Guide",
+  publishedAt: "2026-08-19",
+  readTimeMinutes: 8,
+  author: "Dr. Lee G. Schulman",
+  metaTitle: "Restless Legs Syndrome and Vein Disease: NY Patient Guide",
+  metaDescription: "Restless legs syndrome and vein disease may be linked. Learn the connection, key symptoms to track, and when New York patients should seek evaluation.",
+  ogDescription: "Restless legs syndrome and vein disease sometimes occur together. Learn what research shows about the connection and when New York patients should consider a vein evaluation.",
+  featuredImage: "/images/blog/restless-legs-syndrome-vein-disease-new-york.png",
+  featuredImageAlt: "Physician discussing restless legs syndrome and vein disease with a patient at a New York vein clinic",
+  relatedLinks: [
+    { label: "Vein Disorders & Conditions", href: "/services/vein-disorders" },
+    { label: "Varicose Vein Treatment", href: "/services/varicose-vein-treatment" },
+    { label: "Nighttime Leg Cramps and Vein Disease", href: "/blog/leg-cramps-vein-disease-new-york" },
+    { label: "Free Vein Screening", href: "/services/free-vein-screening" },
+  ],
+  quickSummary: [
+    "Restless legs syndrome (RLS) causes an uncomfortable urge to move the legs that typically worsens at rest and improves temporarily with movement; it has several recognized causes.",
+    "Published research has found a notable overlap between restless legs syndrome and chronic venous insufficiency, and some clinical studies report symptom improvement after treating underlying venous reflux in patients who had both conditions.",
+    "The relationship is still being studied. RLS also has non-venous causes such as iron deficiency, pregnancy, kidney disease, and certain medications.",
+    "Restless-leg symptoms alongside visible varicose veins, aching, heaviness, or swelling are useful details to bring to a clinician.",
+    "A Free Vein Screening with duplex ultrasound can help determine whether venous reflux may be contributing to your symptoms.",
+  ],
+  tableOfContents: [
+    "Understanding Restless Legs Syndrome",
+    "How Restless Legs Syndrome and Vein Disease May Be Connected",
+    "Symptom Patterns Worth Tracking",
+    "When to Seek Prompt Medical Care",
+    "What a Vein Evaluation May Include",
+    "Practical Steps While You Arrange Care",
+    "Book a Free Vein Screening in New York",
+    "Frequently Asked Questions",
+  ],
+  body: [
+    {
+      heading: "Understanding Restless Legs Syndrome",
+      paragraphs: [
+        "Restless legs syndrome and vein disease are increasingly discussed together by clinicians who treat chronic leg symptoms. Restless legs syndrome (RLS) is a neurological condition marked by an uncomfortable urge to move the legs, typically worse in the evening or at rest and temporarily relieved by movement. On its own, RLS does not point to a single cause — but for some patients, an underlying vein problem is part of the picture.",
+        "Recognized contributors to RLS include low iron stores, certain medications, pregnancy, kidney disease, and differences in dopamine-related nerve signaling. For a portion of patients — particularly those with visible varicose veins or documented venous reflux — circulation may be an additional factor worth evaluating alongside these more established causes. Learn more about the range of circulation-related symptoms we assess on our <a href=\"/services/vein-disorders\">vein disorders and conditions</a> page.",
+      ],
+      keyTakeaway: "Restless legs syndrome has several recognized causes. For patients with visible varicose veins or other vein symptoms, venous reflux may be one additional factor worth evaluating.",
+    },
+    {
+      heading: "How Restless Legs Syndrome and Vein Disease May Be Connected",
+      paragraphs: [
+        "A growing body of vascular literature has examined restless legs syndrome and vein disease together, most often in the context of chronic venous insufficiency — the condition in which faulty vein valves allow blood to pool in the lower legs. A systematic review of the published research found a substantial overlap between the two conditions across the studies examined, though study designs varied and the authors called for further standardized research to clarify the relationship.",
+        "Several mechanisms have been proposed. Pooled blood in a diseased superficial vein may irritate nearby nerves, and reduced circulation can affect oxygen delivery to leg tissue — both plausible contributors to the uncomfortable sensations associated with RLS. Some published case series and retrospective reviews report that patients with both conditions experienced meaningful symptom improvement after treatment of the underlying venous reflux, such as <a href=\"/blog/radiofrequency-ablation-varicose-veins-new-york\">radiofrequency ablation</a> or ultrasound-guided sclerotherapy, though results varied and RLS did not fully resolve for every patient studied.",
+        "This is an association, not a proven cause-and-effect relationship for every patient. RLS also occurs in people with no vein disease at all, and vein disease is common in people who never develop RLS. If you have both conditions, a physician-led evaluation of your <a href=\"/services/varicose-vein-treatment\">varicose vein treatment</a> options can help determine whether addressing venous reflux is appropriate for you.",
+      ],
+      imageSrc: "/images/blog/restless-legs-ultrasound-evaluation-new-york.png",
+      imageAlt: "Duplex ultrasound evaluation for restless legs syndrome and vein disease at a New York vein clinic",
+      callout: {
+        type: "info",
+        text: "Research on restless legs syndrome and vein disease shows a meaningful association, and some studies report symptom improvement after venous treatment. It is not yet established that treating vein disease resolves RLS for every patient.",
+      },
+      keyTakeaway: "Published research links restless legs syndrome and vein disease, and treating venous reflux has improved symptoms for some patients in clinical studies — but the relationship is still being studied and evaluation should be individualized.",
+    },
+    {
+      heading: "Symptom Patterns Worth Tracking",
+      paragraphs: [
+        "Restless legs syndrome is defined by an urge to move the legs, often described as crawling, tingling, pulling, or aching, that worsens during rest and improves temporarily with movement. Because these sensations can overlap with venous symptoms, tracking the full pattern — not just the urge to move — gives a clinician more useful information.",
+        "It may help to note whether restless sensations occur alongside visible varicose or spider veins, ankle swelling, aching or heaviness after standing, or <a href=\"/blog/leg-cramps-vein-disease-new-york\">nighttime leg cramps</a>, which share some of the same evening symptom pattern. Details about timing, which leg or legs are affected, and what — if anything — provides relief can help distinguish a primarily neurological presentation from one where venous reflux may be contributing.",
+      ],
+      bullets: [
+        "Timing: worse in the evening, at night, or after prolonged sitting",
+        "Relief pattern: temporarily improves with walking, stretching, or leg movement",
+        "Visible signs: bulging veins, spider veins, or ankle and leg swelling",
+        "Associated symptoms: aching, heaviness, or <a href=\"/blog/leg-swelling-vein-disease-new-york\">leg swelling</a> after standing",
+        "History: iron deficiency, pregnancy, kidney disease, or medications known to affect RLS",
+      ],
+      keyTakeaway: "A detailed symptom record — including timing, relief pattern, and any visible vein changes — helps a clinician determine whether venous reflux may be part of the picture.",
+    },
+    {
+      heading: "When to Seek Prompt Medical Care",
+      paragraphs: [
+        "Restless legs syndrome itself is not an emergency, but some accompanying symptoms need prompt attention. Contact a healthcare professional if leg discomfort is accompanied by significant swelling, skin discoloration, warmth, or tenderness, or if symptoms are severely disrupting sleep.",
+        "Sudden one-sided leg swelling or pain is a different concern and should not be assumed to be RLS or ordinary vein disease. Our educational guide to <a href=\"/blog/deep-vein-thrombosis-symptoms-treatment-new-york\">deep vein thrombosis symptoms</a> explains the warning signs, but new one-sided swelling, calf tenderness, chest pain, or shortness of breath warrants urgent evaluation rather than a routine appointment.",
+      ],
+      callout: {
+        type: "warning",
+        text: "Call emergency services for chest pain, shortness of breath, fainting, or other symptoms that may indicate an emergency. A blog article cannot rule out a blood clot or another urgent condition.",
+      },
+      keyTakeaway: "Ordinary RLS symptoms warrant a routine evaluation; sudden one-sided swelling, chest pain, or shortness of breath require urgent medical attention.",
+    },
+    {
+      heading: "What a Vein Evaluation May Include",
+      paragraphs: [
+        "A vein-focused evaluation for a patient with restless-leg symptoms typically begins with a medical history and physical examination of both legs, including a review of iron levels, medications, and other recognized RLS risk factors already addressed with a primary care physician or neurologist.",
+        "When visible veins or other circulation-related signs are present, duplex ultrasound can assess vein structure and the direction of blood flow to determine whether venous reflux is present and to what degree. If reflux is identified and judged to be a meaningful contributor, your physician can discuss treatment options; if the ultrasound is unremarkable, continued management of RLS with your primary care physician or a sleep or neurology specialist remains the appropriate path.",
+        "New York patients can choose the most convenient practice location — <a href=\"/locations/manhattan\">Manhattan</a>, <a href=\"/locations/manhasset\">Manhasset</a>, or <a href=\"/locations/commack\">Commack</a> — for a physician-led evaluation.",
+      ],
+      keyTakeaway: "An evaluation determines whether venous reflux is present and relevant, rather than assuming every restless-leg symptom is vein-related.",
+    },
+    {
+      heading: "Practical Steps While You Arrange Care",
+      paragraphs: [
+        "While you arrange an evaluation, continue any RLS management already recommended by your physician, including iron testing when appropriate and a review of medications that can worsen symptoms. If you have been medically cleared for activity, gentle daytime walking and periodic leg elevation may support circulation, though they are not a treatment for either condition on their own.",
+        "Avoid starting compression stockings on your own before a clinician confirms they are appropriate; our guide to <a href=\"/blog/compression-stockings-vein-health-new-york\">compression stockings and vein health</a> explains why fit and pressure level should be individualized. Likewise, review any new supplement or medication — including iron supplements — with your physician before starting it, since inappropriate iron supplementation carries its own risks.",
+      ],
+      imageSrc: "/images/blog/restless-legs-walking-relief-new-york.png",
+      imageAlt: "New York patient walking outdoors to help manage restless legs syndrome and vein disease symptoms",
+      callout: {
+        type: "tip",
+        text: "Keep a brief symptom log for two weeks — timing, relief pattern, and any visible vein changes — to share at your evaluation.",
+      },
+      keyTakeaway: "Continue guidance from your existing physicians, avoid self-directed compression or iron supplementation, and document your symptom pattern before your visit.",
+    },
+    {
+      heading: "Book a Free Vein Screening in New York",
+      paragraphs: [
+        "If restless-leg symptoms occur alongside visible varicose veins, leg swelling, or heaviness, a focused vein screening can help determine whether venous reflux may be contributing. Schulman Vein and Laser Center provides physician-led evaluations at three New York locations serving Manhattan, Nassau County, and Suffolk County.",
+        "Book a <a href=\"/services/free-vein-screening\">Free Vein Screening</a> to discuss your symptoms. Call Manhattan at 212.987.0500, Manhasset at 516.482.4477, or Commack at 631.543.4599. This article is educational, does not provide a diagnosis, and does not replace evaluation by your primary care physician, neurologist, or sleep specialist for restless legs syndrome.",
+      ],
+      callout: {
+        type: "tip",
+        text: "A vein screening addresses circulation. If venous reflux is not found or is not the primary driver of your symptoms, continued RLS management with your primary care physician or a sleep or neurology specialist is the appropriate next step.",
+      },
+    },
+  ],
+  faqSection: [
+    {
+      question: "Can vein disease cause restless legs syndrome?",
+      answer: "Research shows a notable association between restless legs syndrome and vein disease, particularly chronic venous insufficiency, and some studies report symptom improvement after venous reflux is treated. It has not been established that vein disease causes RLS in every patient, and RLS has several other recognized causes.",
+    },
+    {
+      question: "Will treating my varicose veins cure my restless legs syndrome?",
+      answer: "Not necessarily. Some published studies report meaningful symptom improvement after treatments such as radiofrequency ablation or sclerotherapy in patients who had both conditions, but results varied and RLS did not fully resolve for every patient. A vein evaluation can determine whether reflux is present and whether treatment is appropriate for you.",
+    },
+    {
+      question: "What other conditions can cause restless legs syndrome?",
+      answer: "RLS has been linked to iron deficiency, pregnancy, kidney disease, certain medications, and differences in dopamine-related nerve signaling, among other factors. A physician — often a primary care doctor or neurologist — typically leads the initial RLS workup.",
+    },
+    {
+      question: "How does a vein evaluation for restless legs symptoms work?",
+      answer: "It typically includes a medical history, physical examination, and duplex ultrasound to assess vein structure and blood flow. This determines whether venous reflux is present and may be a contributing factor, rather than assuming a cause without testing.",
+    },
+    {
+      question: "When should I seek urgent care instead of a routine vein screening?",
+      answer: "Seek urgent medical evaluation for sudden one-sided leg swelling or pain, marked warmth or redness, chest pain, shortness of breath, or fainting. These symptoms are not typical of restless legs syndrome or routine vein disease and need prompt attention.",
+    },
+  ],
+},
+{
   slug: "venaseal-vein-closure-new-york",
   title: "VenaSeal Vein Closure: What New York Patients Should Know",
   excerpt: "VenaSeal vein closure seals diseased leg veins with a medical adhesive instead of heat. No tumescent anesthesia, and for many patients, no compression stockings afterward. Here is what New York patients should know before their first visit.",
