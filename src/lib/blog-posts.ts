@@ -48,6 +48,172 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
 {
+  slug: "venous-leg-ulcers-new-york",
+  title: "Venous Leg Ulcers: Causes, Warning Signs, and Treatment for New York Patients",
+  excerpt: "Venous leg ulcers are a serious complication of chronic venous insufficiency. Learn the early warning signs, when to seek urgent care, and how New York patients can treat the underlying vein disease to support healing and prevent recurrence.",
+  category: "Patient Guide",
+  publishedAt: "2026-08-26",
+  readTimeMinutes: 9,
+  author: "Dr. Lee G. Schulman",
+  metaTitle: "Venous Leg Ulcers: Causes, Warning Signs & Treatment",
+  metaDescription: "Venous leg ulcers are a serious complication of vein disease. Learn the warning signs, when to seek urgent care, and treatment options for New York patients.",
+  ogDescription: "Venous leg ulcers are a serious complication of chronic venous insufficiency. Learn the early warning signs, when to seek urgent care, and how New York patients can support healing and prevent recurrence.",
+  featuredImage: "/images/blog/venous-leg-ulcers-new-york.png",
+  featuredImageAlt: "Physician discussing venous leg ulcers and chronic vein disease with a patient at a New York vein clinic",
+  relatedLinks: [
+    { label: "Vein Disorders & Conditions", href: "/services/vein-disorders" },
+    { label: "Varicose Vein Treatment", href: "/services/varicose-vein-treatment" },
+    { label: "Chronic Venous Insufficiency Symptoms & Treatment", href: "/blog/chronic-venous-insufficiency-symptoms-treatment-new-york" },
+    { label: "Free Vein Screening", href: "/services/free-vein-screening" },
+  ],
+  quickSummary: [
+    "Venous leg ulcers are open wounds that develop near the ankle when chronic venous insufficiency causes long-term venous hypertension and skin breakdown.",
+    "Warning signs often appear before an ulcer forms: leg swelling, cramping, itching, and skin that thickens or darkens to red, purple, or brown (stasis dermatitis).",
+    "An existing ulcer is typically shallow with irregular, uneven edges near the ankle, and the surrounding skin may look shiny, feel warmer than usual, or ooze.",
+    "Compression therapy is the recognized first-line treatment, alongside wound care and treatment of the underlying venous reflux causing the ulcer.",
+    "A vein evaluation with duplex ultrasound can identify treatable venous reflux and support both healing and long-term ulcer prevention.",
+  ],
+  tableOfContents: [
+    "What Are Venous Leg Ulcers?",
+    "What Causes Venous Leg Ulcers",
+    "Early Warning Signs Before an Ulcer Forms",
+    "Recognizing an Existing Ulcer",
+    "When Venous Leg Ulcers Need Urgent Care",
+    "How Venous Leg Ulcers Are Diagnosed and Treated",
+    "Preventing Recurrence",
+    "Book a Free Vein Screening in New York",
+    "Frequently Asked Questions",
+  ],
+  body: [
+    {
+      heading: "What Are Venous Leg Ulcers?",
+      paragraphs: [
+        "Venous leg ulcers are open wounds that develop on the lower leg, usually near the ankle, when chronic venous insufficiency progresses far enough to break down the skin. They are the most advanced visible complication of vein disease and, in published wound-care research, account for the large majority of chronic leg ulcers seen in clinical practice. For New York patients managing long-standing varicose veins or venous insufficiency, understanding venous leg ulcers — how they develop, what the earliest warning signs look like, and when to seek care — can make an important difference in preventing one or catching it early.",
+        "At Schulman Vein and Laser Center, our physicians evaluate patients with visible skin changes, chronic swelling, or slow-healing wounds on the lower leg as part of our comprehensive <a href=\"/services/vein-disorders\">vein disorders and conditions</a> care. This guide explains what causes venous leg ulcers, the warning signs to watch for, and how a physician-led evaluation can support both healing and prevention of recurrence.",
+      ],
+      keyTakeaway: "Venous leg ulcers are open wounds caused by long-term venous insufficiency and are the most advanced complication of vein disease affecting the skin.",
+    },
+    {
+      heading: "What Causes Venous Leg Ulcers",
+      paragraphs: [
+        "Venous leg ulcers develop as a result of sustained venous hypertension — persistently elevated pressure inside the leg veins caused by faulty vein valves that allow blood to pool instead of returning efficiently to the heart. Over months or years, this elevated pressure damages the smallest blood vessels in the skin, triggers ongoing inflammation, and gradually breaks down tissue until an open wound forms, most often over the inner ankle.",
+        "This process is the natural progression of untreated or undertreated <a href=\"/blog/chronic-venous-insufficiency-symptoms-treatment-new-york\">chronic venous insufficiency</a>, the same underlying condition responsible for varicose veins, chronic <a href=\"/blog/leg-swelling-vein-disease-new-york\">leg swelling</a>, and skin changes like stasis dermatitis. Recognized risk factors include a long history of untreated varicose veins, prior deep vein thrombosis, obesity, prolonged standing occupations, and a family history of vein disease.",
+      ],
+      keyTakeaway: "Venous leg ulcers result from long-term venous hypertension caused by chronic venous insufficiency — the same condition behind varicose veins and chronic leg swelling.",
+    },
+    {
+      heading: "Early Warning Signs Before an Ulcer Forms",
+      paragraphs: [
+        "Venous leg ulcers rarely appear without warning. In the months or years beforehand, the skin on the lower leg typically shows a recognizable pattern of change that reflects worsening venous insufficiency.",
+      ],
+      bullets: [
+        "Persistent swelling or heaviness in the lower leg, especially by the end of the day",
+        "Skin that becomes thickened, hardened, or leathery just above the ankle (a change called lipodermatosclerosis)",
+        "Discoloration of the skin to a dark red, purple, or brown tone (stasis dermatitis) from years of pooled blood",
+        "Itching, tingling, or a dry, scaly texture over the affected skin",
+        "Visible varicose veins, especially clustered near the ankle or inner calf",
+      ],
+      callout: {
+        type: "info",
+        text: "These changes are a signal to seek evaluation, not a diagnosis on their own. A physician-led exam can determine how advanced the underlying vein disease is before an ulcer develops.",
+      },
+      keyTakeaway: "Skin thickening, discoloration, persistent swelling, and itching near the ankle often precede a venous leg ulcer and are a reason to seek evaluation early.",
+    },
+    {
+      heading: "Recognizing an Existing Ulcer",
+      paragraphs: [
+        "When a venous leg ulcer does form, it typically appears over the inner ankle as a shallow wound with an irregular shape and uneven edges. The skin surrounding the ulcer often looks shiny or stretched thin, may feel warmer than the surrounding skin, and the wound itself is usually painful and may ooze or bleed.",
+        "These features distinguish venous leg ulcers from other types of chronic wounds, such as arterial ulcers (which tend to be smaller, deeper, and located on the toes or foot) or diabetic ulcers (which typically form over pressure points on the sole). Because treatment differs by ulcer type, an accurate diagnosis matters before starting compression therapy or wound care.",
+      ],
+      callout: {
+        type: "warning",
+        text: "Do not begin compression therapy on your own before a clinician confirms adequate arterial blood flow. Compression can be harmful if significant arterial disease is present.",
+      },
+      keyTakeaway: "A venous leg ulcer is typically a shallow, irregular wound near the ankle with surrounding skin changes — distinguishing it from arterial or diabetic ulcers is an important first step.",
+    },
+    {
+      heading: "When Venous Leg Ulcers Need Urgent Care",
+      paragraphs: [
+        "Venous leg ulcers do not heal on their own, and a wound that lingers creates an ongoing risk of infection. If an ulcer does not show improvement within a few weeks of starting care, or shows signs of infection, prompt medical evaluation is important to prevent more serious complications.",
+      ],
+      bullets: [
+        "Spreading redness, warmth, or swelling around the wound",
+        "A foul odor or pus draining from the ulcer",
+        "Fever or feeling generally unwell alongside a leg wound",
+        "Rapidly increasing pain or a wound that appears to be growing",
+      ],
+      callout: {
+        type: "warning",
+        text: "Untreated infection around a venous leg ulcer can progress to cellulitis, a serious skin infection that requires prompt medical treatment. Seek care right away for any of the warning signs above, and call emergency services for fever with spreading redness, confusion, or feeling seriously unwell.",
+      },
+      keyTakeaway: "An ulcer that isn't improving, or shows spreading redness, odor, fever, or worsening pain, needs prompt medical attention to prevent infection or cellulitis.",
+    },
+    {
+      heading: "How Venous Leg Ulcers Are Diagnosed and Treated",
+      paragraphs: [
+        "Diagnosis begins with a physical examination and a review of your vein disease history, followed by two key tests. An ankle-brachial index (ABI) test compares blood pressure at the ankle and arm to rule out significant arterial disease, since compression therapy — the standard treatment for venous ulcers — can be unsafe if arterial blood flow is compromised. Duplex ultrasound then maps the venous system to confirm reflux and identify which veins are contributing to the elevated pressure.",
+        "Once arterial disease is ruled out, compression therapy is the recognized first-line treatment for venous leg ulcers: specialized bandaging or garments apply graduated pressure to counteract venous hypertension and support healing. Wound care — cleaning, dressing changes, and infection monitoring — proceeds alongside compression. Many patients also benefit from treating the underlying venous reflux directly, using approaches such as <a href=\"/blog/radiofrequency-ablation-varicose-veins-new-york\">radiofrequency ablation</a> or <a href=\"/services/laser-vein-therapy\">laser vein therapy</a> for the diseased vein feeding the ulcer, which published research associates with faster healing and fewer recurrences than compression alone.",
+      ],
+      imageSrc: "/images/blog/venous-leg-ulcers-ultrasound-evaluation-new-york.png",
+      imageAlt: "Duplex ultrasound evaluation of the leg for venous leg ulcers and venous reflux at a New York vein clinic",
+      callout: {
+        type: "info",
+        text: "Compression therapy remains the foundation of venous ulcer care, but addressing the underlying diseased vein with a procedure such as radiofrequency ablation or sclerotherapy is increasingly recognized as an important step toward healing and preventing the ulcer from returning.",
+      },
+      keyTakeaway: "Diagnosis combines an ankle-brachial index test with duplex ultrasound; treatment pairs compression therapy and wound care with procedures that close the underlying diseased vein.",
+    },
+    {
+      heading: "Preventing Recurrence",
+      paragraphs: [
+        "Venous leg ulcers have a well-documented tendency to return, which is why ongoing management matters even after a wound has fully healed. Patients who complete treatment of their underlying <a href=\"/services/varicose-vein-treatment\">varicose vein treatment</a> and continue wearing properly fitted compression stockings, as outlined in our guide to <a href=\"/blog/compression-stockings-vein-health-new-york\">compression stockings and vein health</a>, significantly reduce their risk of a new ulcer forming.",
+      ],
+      bullets: [
+        "Wear medically fitted compression stockings as directed, even after the ulcer has healed",
+        "Elevate the legs above heart level periodically throughout the day",
+        "Stay active with regular walking to support calf-muscle circulation",
+        "Maintain a healthy weight and inspect the skin on your lower legs regularly for new changes",
+        "Keep up with follow-up vein evaluations, especially if you have a history of varicose veins or previous ulcers",
+      ],
+      imageSrc: "/images/blog/venous-leg-ulcers-compression-therapy-new-york.png",
+      imageAlt: "Patient receiving compression therapy for venous leg ulcer prevention at a New York vein clinic",
+      keyTakeaway: "Recurrence is common without ongoing care; compression, activity, weight management, and treating the underlying vein disease all reduce the risk of a new ulcer.",
+    },
+    {
+      heading: "Book a Free Vein Screening in New York",
+      paragraphs: [
+        "If you notice skin changes, chronic swelling, or a slow-healing wound on your lower leg, do not wait for it to worsen. Schulman Vein and Laser Center provides physician-led evaluations, including duplex ultrasound, at three New York locations serving Manhattan, Nassau County, and Suffolk County.",
+        "Book a <a href=\"/services/free-vein-screening\">Free Vein Screening</a> to have your legs evaluated. Call Manhattan at 212.987.0500, Manhasset at 516.482.4477, or Commack at 631.543.4599. If you already have an open wound with signs of infection, contact your physician or seek urgent care promptly rather than waiting for a scheduled screening. This article is educational and does not replace an in-person medical evaluation.",
+      ],
+      callout: {
+        type: "tip",
+        text: "New York patients can visit our <a href=\"/locations/manhattan\">Manhattan</a>, <a href=\"/locations/manhasset\">Manhasset</a>, or <a href=\"/locations/commack\">Commack</a> office for a physician-led evaluation of chronic leg swelling, skin changes, or slow-healing wounds.",
+      },
+    },
+  ],
+  faqSection: [
+    {
+      question: "What is the first sign of a venous leg ulcer?",
+      answer: "Before an ulcer forms, most patients notice persistent leg swelling, skin that thickens or darkens to a red, purple, or brown tone, and itching over the lower leg. These changes, along with visible varicose veins, are worth a vein evaluation before an open wound develops.",
+    },
+    {
+      question: "How long does it take for a venous leg ulcer to heal?",
+      answer: "Healing time varies widely depending on ulcer size, how long it has been present, and whether the underlying venous reflux is treated. Compression therapy combined with treatment of the diseased vein generally supports faster healing than compression alone, though your physician can give you a timeline specific to your wound.",
+    },
+    {
+      question: "Can venous leg ulcers be treated without surgery?",
+      answer: "Yes. Compression therapy and wound care are the first-line, non-surgical treatments, and many patients also benefit from minimally invasive, in-office procedures such as radiofrequency ablation, VenaSeal, or sclerotherapy to close the diseased vein feeding the ulcer — none of which require traditional surgery.",
+    },
+    {
+      question: "Are venous leg ulcers dangerous?",
+      answer: "An untreated venous leg ulcer can become infected, and infection can progress to cellulitis, a serious skin infection requiring prompt medical treatment. Spreading redness, warmth, odor, pus, or fever around a leg wound warrant urgent medical attention.",
+    },
+    {
+      question: "Will a venous leg ulcer come back after it heals?",
+      answer: "Venous leg ulcers can recur, especially without ongoing care. Continued use of compression stockings, treatment of the underlying venous reflux, and regular follow-up meaningfully reduce the risk of a new ulcer forming.",
+    },
+  ],
+},
+{
   slug: "restless-legs-syndrome-vein-disease-new-york",
   title: "Restless Legs Syndrome and Vein Disease: What New York Patients Should Know",
   excerpt: "Restless legs syndrome and vein disease sometimes occur together. Learn what research shows about the connection, which symptoms to track, and when New York patients should consider a vein evaluation.",
