@@ -48,6 +48,150 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
 {
+  slug: "vein-disease-in-men-new-york",
+  title: "Vein Disease in Men: What New York Patients Should Know",
+  excerpt: "Vein disease is often seen as a women's health issue, but men develop varicose veins and chronic venous insufficiency too, often with less awareness and later diagnosis. Here is what New York men should know about symptoms, risk, and treatment.",
+  category: "Patient Guide",
+  publishedAt: "2026-09-16",
+  readTimeMinutes: 8,
+  author: "Dr. Lee G. Schulman",
+  metaTitle: "Vein Disease in Men: What New York Patients Should Know",
+  metaDescription: "Vein disease in men is common but often underdiagnosed. Learn the warning signs, risk factors, and treatment options available at three New York locations.",
+  ogDescription: "Vein disease in men is often overlooked and diagnosed later than in women. Learn the warning signs, risk factors, and treatment options available for New York men.",
+  featuredImage: "/images/blog/vein-disease-in-men-new-york.png",
+  featuredImageAlt: "Male patient discussing vein disease in men with a physician reviewing a leg vein ultrasound at a New York clinic",
+  relatedLinks: [
+    { label: "Vein Disorders & Conditions", href: "/services/vein-disorders" },
+    { label: "Varicose Vein Treatment", href: "/services/varicose-vein-treatment" },
+    { label: "Radiofrequency Ablation for Varicose Veins", href: "/blog/radiofrequency-ablation-varicose-veins-new-york" },
+    { label: "Free Vein Screening", href: "/services/free-vein-screening" },
+  ],
+  quickSummary: [
+    "Vein disease in men is common, but men are diagnosed later and treated less often than women with the same condition, partly because symptoms are frequently dismissed as normal aging or muscle soreness.",
+    "Roughly 1 in 4 to 1 in 3 adult men will develop varicose veins or chronic venous insufficiency (CVI) over their lifetime, though awareness of this remains lower among men than women.",
+    "Occupational standing, prior athletic injury, family history, and higher body weight are common contributing factors for vein disease in men.",
+    "Warning signs in men often include leg heaviness after standing, ankle swelling by evening, and visible bulging veins that are sometimes dismissed as \"just from being active.\"",
+    "A physician-led duplex ultrasound can confirm venous reflux, and most confirmed cases are treatable with minimally invasive, in-office procedures.",
+  ],
+  tableOfContents: [
+    "Why Vein Disease in Men Is Often Overlooked",
+    "How Common Is Vein Disease in Men?",
+    "Risk Factors for Vein Disease in New York Men",
+    "Warning Signs Men Shouldn't Dismiss",
+    "When Vein Symptoms Need Prompt Care",
+    "How We Diagnose and Treat Vein Disease in Men",
+    "Book a Free Vein Screening in New York",
+    "Frequently Asked Questions",
+  ],
+  body: [
+    {
+      heading: "Why Vein Disease in Men Is Often Overlooked",
+      paragraphs: [
+        "Vein disease in men is far more common than most people assume, yet men are diagnosed later and treated less often than women with the same condition. At Schulman Vein and Laser Center, we regularly see New York men who spent years attributing aching, heavy, or swollen legs to age, exercise, or simply being on their feet all day, without realizing chronic venous insufficiency was the underlying cause.",
+        "This guide explains why vein disease in men is frequently overlooked, the warning signs to watch for, and when Manhattan, Manhasset, and Commack patients should consider a screening, as part of our <a href=\"/services/vein-disorders\">vein disorders and conditions</a> care.",
+      ],
+      keyTakeaway: "Vein disease in men is common but under-recognized, largely because symptoms are often mistaken for normal muscle fatigue or aging rather than a treatable vascular condition.",
+    },
+    {
+      heading: "How Common Is Vein Disease in Men?",
+      paragraphs: [
+        "Population studies on chronic venous disease consistently find that varicose veins and CVI affect a substantial share of men, not just women. Estimates from large vein-disease prevalence studies, including the Edinburgh Vein Study and similar population surveys, suggest that roughly one in four to one in three adult men will develop visible varicose veins or venous insufficiency at some point in life.",
+        "Despite this prevalence, public awareness campaigns, product marketing, and even some patient assumptions have historically framed vein disease as a women's issue, tied to pregnancy and hormonal changes. That framing does not reflect the clinical reality: men experience the same underlying valve dysfunction, often from different or additional risk factors, and often present with more advanced disease at the time of diagnosis simply because they waited longer to be evaluated.",
+      ],
+      imageSrc: "/images/blog/vein-disease-in-men-ultrasound-evaluation-new-york.png",
+      imageAlt: "Duplex ultrasound vein evaluation being performed on a male patient's leg at a New York vein clinic",
+      callout: {
+        type: "info",
+        text: "Men are not immune to vein disease, and delaying evaluation because symptoms seem minor or \"just muscle soreness\" is one of the most common reasons male patients present with more advanced venous insufficiency.",
+      },
+      keyTakeaway: "Vein disease affects a large share of men, but later diagnosis is common because symptoms are frequently under-reported or misattributed to other causes.",
+    },
+    {
+      heading: "Risk Factors for Vein Disease in New York Men",
+      paragraphs: [
+        "Several well-documented risk factors are especially relevant for men, and often combine with each other over a working lifetime.",
+      ],
+      bullets: [
+        "Occupations that involve <a href=\"/blog/standing-all-day-vein-disease-new-york\">standing all day</a>, common in construction, hospitality, healthcare, and transit work across New York",
+        "Prior leg injury or orthopedic surgery that may have affected vein valve function, sometimes years earlier",
+        "Family history of varicose veins or CVI, which affects men and women similarly; see our guide to <a href=\"/blog/family-history-vein-disease-new-york\">family history and vein disease</a>",
+        "Higher body weight, which increases pressure on leg veins",
+        "Age, since vein wall and valve elasticity naturally decreases over time",
+        "A sedentary desk job with long periods of sitting, which reduces the calf muscle pump's ability to move blood out of the legs",
+      ],
+      keyTakeaway: "Occupational standing, prior injury, family history, body weight, and age are the most common contributing factors seen in male patients with vein disease.",
+    },
+    {
+      heading: "Warning Signs Men Shouldn't Dismiss",
+      paragraphs: [
+        "Men often wait longer than women to mention leg symptoms to a physician, sometimes for years. Recognizing these signs earlier can lead to a simpler, less invasive evaluation and treatment path.",
+      ],
+      bullets: [
+        "Aching, heaviness, or fatigue in the legs by the end of a workday",
+        "Ankle or lower-leg swelling that builds through the day and improves overnight, discussed further in our guide to <a href=\"/blog/leg-swelling-vein-disease-new-york\">leg swelling and vein disease</a>",
+        "Visible bulging or twisted veins, especially behind the knee or along the inner calf",
+        "Itching or skin discoloration over the lower leg, covered in our guide to <a href=\"/blog/itchy-legs-and-vein-disease-new-york\">itchy legs and vein disease</a>",
+        "Nighttime leg cramps, which can also be linked to venous insufficiency",
+      ],
+      keyTakeaway: "Persistent leg heaviness, evening swelling, visible bulging veins, and skin changes are common early warning signs of vein disease in men and warrant an evaluation rather than being dismissed.",
+    },
+    {
+      heading: "When Vein Symptoms Need Prompt Care",
+      paragraphs: [
+        "Mild aching or occasional visible veins are common and not an emergency. Contact your physician if leg symptoms persist despite rest and elevation, worsen steadily over weeks or months, or come with skin changes such as thickening, discoloration, or a wound near the ankle that will not heal.",
+      ],
+      callout: {
+        type: "warning",
+        text: "Sudden one-sided leg swelling, redness, warmth, or calf pain is different from typical vein disease symptoms. Seek prompt medical evaluation, since these can be signs of a blood clot. Call emergency services for chest pain or shortness of breath.",
+      },
+      keyTakeaway: "Persistent, worsening, or skin-related vein symptoms warrant a physician evaluation, and any sudden one-sided swelling or calf pain needs prompt medical attention.",
+    },
+    {
+      heading: "How We Diagnose and Treat Vein Disease in Men",
+      paragraphs: [
+        "A vein evaluation begins with a physical exam and symptom history. Duplex ultrasound is the standard next step: a painless imaging test that maps the leg veins and measures blood flow direction to confirm whether venous reflux is present.",
+        "When treatment is appropriate, most male patients are candidates for the same minimally invasive, in-office procedures used for women, including <a href=\"/blog/radiofrequency-ablation-varicose-veins-new-york\">radiofrequency ablation</a>, VenaSeal, and <a href=\"/services/varicose-vein-treatment\">sclerotherapy for varicose and spider veins</a>. These procedures are performed under local anesthesia, and most patients return to normal activity within a day or two, following their physician's specific guidance. Staying active with regular walking supports healthy circulation after treatment and as part of ongoing vein health.",
+      ],
+      imageSrc: "/images/blog/vein-disease-in-men-active-lifestyle-new-york.png",
+      imageAlt: "Man walking outdoors in New York supporting vein health and circulation after vein disease treatment",
+      keyTakeaway: "Diagnosis relies on duplex ultrasound, and most confirmed cases in men are treatable with the same minimally invasive, in-office procedures used for female patients.",
+    },
+    {
+      heading: "Book a Free Vein Screening in New York",
+      paragraphs: [
+        "If you're a man noticing leg heaviness, swelling, or visible veins, don't assume it's just from being on your feet or getting older. Schulman Vein and Laser Center provides physician-led evaluations, including duplex ultrasound, at three New York locations serving Manhattan, Nassau County, and Suffolk County.",
+        "Book a <a href=\"/services/free-vein-screening\">Free Vein Screening</a> to have your legs evaluated. Call Manhattan at 212.987.0500, Manhasset at 516.482.4477, or Commack at 631.543.4599. This article is educational and does not replace an in-person medical evaluation.",
+      ],
+      callout: {
+        type: "tip",
+        text: "New York men can visit our <a href=\"/locations/manhattan\">Manhattan</a>, <a href=\"/locations/manhasset\">Manhasset</a>, or <a href=\"/locations/commack\">Commack</a> office for a physician-led vein evaluation.",
+      },
+    },
+  ],
+  faqSection: [
+    {
+      question: "Do men actually get vein disease, or is it mostly a women's issue?",
+      answer: "Men develop varicose veins and chronic venous insufficiency at meaningfully high rates, with population studies estimating that roughly one in four to one in three adult men will develop the condition. Men are frequently diagnosed later than women, often because symptoms are dismissed as normal muscle fatigue rather than a vascular issue.",
+    },
+    {
+      question: "What causes vein disease in men specifically?",
+      answer: "The underlying cause, weakened one-way vein valves that allow blood to pool in the legs, is the same in men and women. Common contributing factors in men include standing occupations, prior leg injury, family history, higher body weight, and age.",
+    },
+    {
+      question: "Why do men wait longer to get evaluated for vein disease?",
+      answer: "Men often attribute early symptoms like leg heaviness or mild swelling to normal fatigue, aging, or physical activity rather than a vein condition, and may be less likely to seek a routine screening. This can lead to more advanced disease by the time of diagnosis.",
+    },
+    {
+      question: "Are vein treatments different for men than for women?",
+      answer: "No. Diagnosis relies on the same duplex ultrasound evaluation, and treatment options, including radiofrequency ablation, VenaSeal, and sclerotherapy, are the same minimally invasive, in-office procedures used for female patients.",
+    },
+    {
+      question: "When should a man see a doctor about leg vein symptoms?",
+      answer: "Persistent leg heaviness, aching, evening ankle swelling, or visible bulging veins are reasonable reasons to schedule a vein screening. Sudden one-sided swelling, redness, warmth, or calf pain needs prompt medical evaluation, since these can indicate a blood clot rather than typical vein disease.",
+    },
+  ],
+},
+{
   slug: "family-history-vein-disease-new-york",
   title: "Family History and Vein Disease: What New York Patients Should Know",
   excerpt: "Family history is one of the most consistently documented risk factors for varicose veins and chronic venous insufficiency. Learn what a parent's or sibling's vein disease means for your own risk, and when New York patients should consider an earlier screening.",
