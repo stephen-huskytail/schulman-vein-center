@@ -2,6 +2,38 @@
 
 ## Run Log
 
+### 2026-09-16 — vein-disease-in-men-new-york
+- **Topic:** Vein Disease in Men: What New York Patients Should Know
+- **Live URL:** https://www.schulmanveincenter.com/blog/vein-disease-in-men-new-york
+- **HTTP Status:** 200 ✓ (canonical article, blog index, and all three image assets verified live)
+- **Author:** Dr. Lee G. Schulman
+- **Category:** Patient Guide
+- **Images:** 3 × GPT Image 2 (`gpt-image-2`, medium quality, 1536×1024 PNG)
+  - `vein-disease-in-men-new-york.png` (featured)
+  - `vein-disease-in-men-ultrasound-evaluation-new-york.png` (in-body)
+  - `vein-disease-in-men-active-lifestyle-new-york.png` (in-body)
+- **Deploy:** commit `76d3a99` pushed to `main` → Vercel auto-deploy → live HTTP 200
+- **SEO gates:** meta title 55 chars, meta description 155 chars, primary keyword "vein disease in men" in H1/first-100-words/H2/slug/alt text ✓
+- **Internal links:** 8 qualifying in-copy links (8 distinct destinations), including /services/vein-disorders, /services/varicose-vein-treatment, /services/free-vein-screening, and blog guides on standing all day, family history, leg swelling, itchy legs, and RFA ✓
+- **Structured data:** BlogPosting + MedicalWebPage + FAQPage confirmed live in rendered JSON-LD; exact canonical and Open Graph metadata verified ✓
+- **Medical sources reviewed:** population-level chronic venous disease prevalence data (e.g., Edinburgh Vein Study and similar cohort literature) on vein disease affecting a substantial share of men; copy written as documented prevalence/risk framing, not guaranteed outcomes, with individualized-evaluation language throughout ✓
+- **Independent review:** general-purpose QA agent verified medical claim accuracy/tone, doctor-credential accuracy against `src/lib/constants.ts`, internal link integrity (8 in-copy links, no forced new-tab), TypeScript shape, duplicate-topic check, slug uniqueness, and image integrity (three distinct 1536×1024 PNGs) before push — no issues found ✓
+- **Note:** LEARNINGS.md had no entry for the 2026-09-09 run (`family-history-vein-disease-new-york`, commit `ec542fd`); backfilled below from git history and live-site verification during this run. No republish action taken for that post.
+- **Autopilot run:** `01a0ab09-33d7-71ef-9d3b-96c323f816ca`
+
+### 2026-09-09 — family-history-vein-disease-new-york
+- **Topic:** Family History and Vein Disease: What New York Patients Should Know
+- **Live URL:** https://www.schulmanveincenter.com/blog/family-history-vein-disease-new-york
+- **HTTP Status:** 200 ✓ (verified live as of the 2026-09-16 run; entry backfilled because this run was not logged at publish time)
+- **Author:** Dr. Lee G. Schulman
+- **Category:** Patient Guide
+- **Images:** 3 × GPT Image 2 (`gpt-image-2`, medium quality, 1536×1024 PNG)
+  - `family-history-vein-disease-new-york.png` (featured)
+  - `family-history-vein-genetic-consultation-new-york.png` (in-body)
+  - `family-history-vein-ultrasound-screening-new-york.png` (in-body)
+- **Deploy:** commit `ec542fd` pushed to `main` → Vercel auto-deploy → live HTTP 200
+- **Note:** This run's log entry was missing from LEARNINGS.md prior to 2026-09-16; backfilled from `src/lib/blog-posts.ts` and live-site verification. No republish action taken.
+
 ### 2026-09-02 — standing-all-day-vein-disease-new-york
 - **Topic:** Standing All Day and Vein Disease: What New York Patients Should Know
 - **Live URL:** https://www.schulmanveincenter.com/blog/standing-all-day-vein-disease-new-york
@@ -158,6 +190,8 @@
 ---
 
 ## Topics Published (avoid duplication)
+- 2026-09-16: Vein disease in men — underdiagnosis, prevalence, risk factors, and warning signs specific to male patients
+- 2026-09-09: Family history and vein disease — genetics/heredity as a risk factor
 - 2026-09-02: Standing all day and vein disease — occupational standing as a risk factor, NYC workforce angle
 - 2026-08-26: Venous leg ulcers — causes, warning signs, treatment
 - 2026-08-19: Restless legs syndrome and vein disease — RLS/CVI association, symptom patterns, evaluation
