@@ -135,6 +135,22 @@
 - **Medical sources reviewed:** Cleveland Clinic, Johns Hopkins Medicine, and NIH/National Library of Medicine patient/clinical guidance on chronic venous insufficiency ✓
 - **Autopilot run:** `e453f7b3-74fd-4638-a1b2-30c752045c0f`
 
+### 2026-09-23 — sitting-and-vein-disease-new-york
+- **Topic:** Sitting and Vein Disease: What New York Office Workers Should Know
+- **Live URL:** https://www.schulmanveincenter.com/blog/sitting-and-vein-disease-new-york
+- **HTTP Status:** 200 ✓ (canonical DOM, blog index, and all three image assets verified live)
+- **Author:** Dr. Lee G. Schulman
+- **Category:** Patient Guide
+- **Images:** 3 × GPT Image 2 (`gpt-image-2-medium`, 1536×1024 PNG)
+  - `sitting-and-vein-disease-new-york.png` (featured)
+  - `sitting-and-vein-disease-ultrasound-evaluation-new-york.png` (in-body)
+  - `sitting-and-vein-disease-walking-break-new-york.png` (in-body)
+- **Deploy:** commit `444c9d7` pushed to `main` → Vercel auto-deploy → live HTTP 200
+- **SEO gates:** meta title 54 chars, meta description 144 chars, primary keyword "sitting and vein disease" in H1/first-100-words/H2/slug/alt text ✓
+- **Internal links:** 9 in-body contextual links incl. /services/vein-disorders, /services/free-vein-screening, /blog/standing-all-day-vein-disease-new-york, /blog/family-history-vein-disease-new-york, /blog/leg-swelling-vein-disease-new-york, /blog/exercise-vein-health-new-york, plus all 3 location pages ✓
+- **Slack:** Posted to #hermes-blogs (C0BFFC20D6C) ✓
+- **Autopilot run:** `01a0cf15-ec55-7d32-800b-d0bdaf49e6ce`
+
 ### 2026-07-22 — leg-swelling-vein-disease-new-york
 - **Topic:** Leg Swelling and Vein Disease: When to Seek Care in New York
 - **Live URL:** https://www.schulmanveincenter.com/blog/leg-swelling-vein-disease-new-york
@@ -190,6 +206,7 @@
 ---
 
 ## Topics Published (avoid duplication)
+- 2026-09-23: Sitting and vein disease — prolonged desk-job sitting as a risk factor, NYC office worker angle
 - 2026-09-16: Vein disease in men — underdiagnosis, prevalence, risk factors, and warning signs specific to male patients
 - 2026-09-09: Family history and vein disease — genetics/heredity as a risk factor
 - 2026-09-02: Standing all day and vein disease — occupational standing as a risk factor, NYC workforce angle
