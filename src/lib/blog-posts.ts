@@ -48,6 +48,150 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
 {
+  slug: "sitting-and-vein-disease-new-york",
+  title: "Sitting and Vein Disease: What New York Office Workers Should Know",
+  excerpt: "Desk jobs and long commutes mean many New Yorkers sit for most of the day. Learn how sitting and vein disease are connected, the warning signs to watch for, and simple habits that support healthy circulation.",
+  category: "Patient Guide",
+  publishedAt: "2026-09-23",
+  readTimeMinutes: 8,
+  author: "Dr. Lee G. Schulman",
+  metaTitle: "Sitting and Vein Disease: New York Office Worker Guide",
+  metaDescription: "Prolonged sitting can raise your risk of vein disease. Learn the warning signs, risk factors, and treatment options at three New York locations.",
+  ogDescription: "Desk jobs and long commutes add up to hours of sitting. Learn how sitting and vein disease are connected and when New York office workers should get evaluated.",
+  featuredImage: "/images/blog/sitting-and-vein-disease-new-york.png",
+  featuredImageAlt: "New York office worker at a desk for a long stretch, a common contributor to sitting and vein disease",
+  relatedLinks: [
+    { label: "Vein Disorders & Conditions", href: "/services/vein-disorders" },
+    { label: "Varicose Vein Treatment", href: "/services/varicose-vein-treatment" },
+    { label: "Standing All Day and Vein Disease", href: "/blog/standing-all-day-vein-disease-new-york" },
+    { label: "Free Vein Screening", href: "/services/free-vein-screening" },
+  ],
+  quickSummary: [
+    "Sitting and vein disease are connected because long periods without leg movement reduce how effectively the calf muscle pump moves blood back toward the heart.",
+    "Desk jobs, long commutes, and extended screen time are common New York risk factors, often combined with family history, prior pregnancy, or higher body weight.",
+    "Warning signs include ankle swelling by the end of the day, leg heaviness, aching, and visible bulging or spider veins that build up with prolonged sitting.",
+    "Short movement breaks, calf-pump exercises, and posture changes can support circulation, but they do not replace a physician evaluation for existing symptoms.",
+    "A duplex ultrasound can confirm venous reflux, and most confirmed cases respond well to minimally invasive, in-office treatment.",
+  ],
+  tableOfContents: [
+    "Why Sitting and Vein Disease Are Connected",
+    "How Prolonged Sitting Affects Leg Circulation",
+    "Risk Factors for New York Office Workers",
+    "Warning Signs to Watch For",
+    "When Vein Symptoms Need Prompt Care",
+    "Simple Habits to Support Circulation at a Desk Job",
+    "Book a Free Vein Screening in New York",
+    "Frequently Asked Questions",
+  ],
+  body: [
+    {
+      heading: "Why Sitting and Vein Disease Are Connected",
+      paragraphs: [
+        "Sitting and vein disease are connected because long, uninterrupted periods in a chair reduce how well blood moves out of the lower legs. Many New Yorkers, from Manhattan office professionals to Long Island commuters, spend eight or more hours a day seated between a desk, a train, and a couch, often without realizing how that pattern affects leg circulation over months and years.",
+        "At Schulman Vein and Laser Center, we regularly evaluate patients who first noticed ankle swelling or leg heaviness only after a long stretch of desk work, and who are surprised to learn that sitting can be as much of a risk factor as standing. This guide explains the connection, the warning signs, and when Manhattan, Manhasset, and Commack patients should consider a screening, as part of our <a href=\"/services/vein-disorders\">vein disorders and conditions</a> care.",
+      ],
+      keyTakeaway: "Sitting and vein disease are linked because prolonged immobility reduces the calf muscle pump's ability to move blood out of the legs, and this pattern is common among New York office workers.",
+    },
+    {
+      heading: "How Prolonged Sitting Affects Leg Circulation",
+      paragraphs: [
+        "Blood returns from the legs to the heart with help from one-way vein valves and the calf muscle pump, which contracts with each step to push blood upward. When you sit for long periods, the calf muscle stays mostly inactive, blood flow slows, and pressure can build in the lower-leg veins.",
+        "Occasional prolonged sitting is not harmful on its own. The concern is a sustained daily pattern, year after year, especially in people who already have weakened vein valves from family history, prior pregnancy, or other risk factors. Over time, that combination can contribute to varicose veins or chronic venous insufficiency (CVI).",
+      ],
+      imageSrc: "/images/blog/sitting-and-vein-disease-ultrasound-evaluation-new-york.png",
+      imageAlt: "Duplex ultrasound vein evaluation for sitting and vein disease at a New York vein clinic",
+      callout: {
+        type: "info",
+        text: "Sitting and standing all day are different occupational patterns, but both can contribute to vein disease by limiting how often the calf muscle pump is active. See our related guide to <a href=\"/blog/standing-all-day-vein-disease-new-york\">standing all day and vein disease</a>.",
+      },
+      keyTakeaway: "Prolonged sitting slows the calf muscle pump that normally helps move blood out of the legs, which can contribute to venous pressure over time.",
+    },
+    {
+      heading: "Risk Factors for New York Office Workers",
+      paragraphs: [
+        "Several factors commonly combine with a desk-based job to raise the risk of vein disease among New York professionals.",
+      ],
+      bullets: [
+        "Long commutes by subway, car, or train that add sitting time on top of a full workday",
+        "A sedentary desk job with limited walking breaks between meetings",
+        "Family history of varicose veins or CVI; see our guide to <a href=\"/blog/family-history-vein-disease-new-york\">family history and vein disease</a>",
+        "Prior pregnancy, which temporarily increases pressure on leg veins",
+        "Higher body weight, which adds pressure on the venous system",
+        "Age, since vein wall and valve elasticity naturally decreases over time",
+      ],
+      keyTakeaway: "Long commutes, limited movement during the workday, family history, prior pregnancy, body weight, and age are the most common contributing factors seen in office workers with vein disease.",
+    },
+    {
+      heading: "Warning Signs to Watch For",
+      paragraphs: [
+        "Many people attribute early symptoms to a long day at a desk rather than to a vein condition, which can delay diagnosis. Recognizing these signs earlier supports a simpler, less invasive evaluation and treatment path.",
+      ],
+      bullets: [
+        "Ankle or lower-leg swelling that builds by the end of the workday, discussed further in our guide to <a href=\"/blog/leg-swelling-vein-disease-new-york\">leg swelling and vein disease</a>",
+        "Aching, heaviness, or fatigue in the legs after sitting for long stretches",
+        "Visible bulging or twisted veins, especially behind the knee or along the inner calf",
+        "Numbness, tingling, or restlessness in the legs during long meetings or commutes",
+        "Nighttime leg cramps, which can also be linked to venous insufficiency",
+      ],
+      keyTakeaway: "Evening ankle swelling, leg heaviness after sitting, visible bulging veins, and restlessness are common early warning signs and warrant an evaluation rather than being dismissed as ordinary desk fatigue.",
+    },
+    {
+      heading: "When Vein Symptoms Need Prompt Care",
+      paragraphs: [
+        "Mild aching or occasional visible veins are common and not an emergency. Contact your physician if leg symptoms persist despite rest and elevation, worsen steadily over weeks or months, or come with skin changes such as thickening, discoloration, or a wound near the ankle that will not heal.",
+      ],
+      callout: {
+        type: "warning",
+        text: "Sudden one-sided leg swelling, redness, warmth, or calf pain after a long flight, drive, or period of sitting is different from typical vein disease symptoms. Seek prompt medical evaluation, since these can be signs of a blood clot. Call emergency services for chest pain or shortness of breath.",
+      },
+      keyTakeaway: "Persistent, worsening, or skin-related vein symptoms warrant a physician evaluation, and any sudden one-sided swelling or calf pain after prolonged sitting needs prompt medical attention.",
+    },
+    {
+      heading: "Simple Habits to Support Circulation at a Desk Job",
+      paragraphs: [
+        "A few practical habits can support healthy circulation during a sitting-heavy workday, though they do not replace medical evaluation for existing symptoms.",
+        "Standing up and walking for a few minutes every 30 to 60 minutes helps reactivate the calf muscle pump. Simple seated ankle circles or calf raises can help during long meetings or train commutes when standing is not practical. Staying hydrated and avoiding tightly crossed legs for extended periods can also help. Our guide to <a href=\"/blog/exercise-vein-health-new-york\">exercise and vein health</a> covers movement patterns that support circulation without overexertion.",
+      ],
+      imageSrc: "/images/blog/sitting-and-vein-disease-walking-break-new-york.png",
+      imageAlt: "New York office worker taking a walking break outside during the workday to support vein health while managing sitting and vein disease risk",
+      keyTakeaway: "Short movement breaks, seated calf exercises, and posture awareness can support circulation during a desk-heavy day, but persistent symptoms still need a physician evaluation.",
+    },
+    {
+      heading: "Book a Free Vein Screening in New York",
+      paragraphs: [
+        "If you have a desk job or long commute and are noticing leg heaviness, swelling, or visible veins, it's worth having your legs evaluated rather than assuming it's ordinary end-of-day fatigue. Schulman Vein and Laser Center provides physician-led evaluations, including duplex ultrasound, at three New York locations serving Manhattan, Nassau County, and Suffolk County.",
+        "Book a <a href=\"/services/free-vein-screening\">Free Vein Screening</a> to have your legs evaluated. Call Manhattan at 212.987.0500, Manhasset at 516.482.4477, or Commack at 631.543.4599. This article is educational and does not replace an in-person medical evaluation.",
+      ],
+      callout: {
+        type: "tip",
+        text: "New York office workers can visit our <a href=\"/locations/manhattan\">Manhattan</a>, <a href=\"/locations/manhasset\">Manhasset</a>, or <a href=\"/locations/commack\">Commack</a> office for a physician-led vein evaluation.",
+      },
+    },
+  ],
+  faqSection: [
+    {
+      question: "Can sitting all day really cause vein disease?",
+      answer: "Prolonged sitting does not cause vein disease by itself, but it is a meaningful contributing factor. Sitting and vein disease are connected because long periods without leg movement reduce how effectively the calf muscle pump moves blood out of the legs, which can add to pressure in vein valves that are already weakened by other risk factors.",
+    },
+    {
+      question: "Is sitting worse than standing for vein health?",
+      answer: "Neither is inherently worse. Both prolonged sitting and prolonged standing limit how often the calf muscle pump is active, which is the shared underlying concern. The healthiest pattern for most people combines regular movement with either position rather than staying still for hours at a time.",
+    },
+    {
+      question: "What can I do at my desk job to reduce my risk?",
+      answer: "Standing and walking for a few minutes every 30 to 60 minutes, doing seated ankle circles or calf raises during long meetings, staying hydrated, and avoiding tightly crossed legs can help support circulation. These habits support vein health but do not replace an evaluation if you already have symptoms.",
+    },
+    {
+      question: "When should an office worker get a vein screening?",
+      answer: "Consider a screening if you notice ankle swelling by the end of the workday, leg heaviness or aching after sitting, visible bulging or spider veins, or nighttime leg cramps. A physician-led duplex ultrasound can confirm whether venous reflux is present.",
+    },
+    {
+      question: "Is sudden leg swelling after a long flight or drive the same as vein disease from sitting at a desk?",
+      answer: "No. Sudden one-sided leg swelling, redness, warmth, or calf pain after a long flight, drive, or period of sitting can be a sign of a blood clot and needs prompt medical evaluation. This is different from the gradual heaviness and evening swelling typically associated with chronic venous insufficiency.",
+    },
+  ],
+},
+{
   slug: "vein-disease-in-men-new-york",
   title: "Vein Disease in Men: What New York Patients Should Know",
   excerpt: "Vein disease is often seen as a women's health issue, but men develop varicose veins and chronic venous insufficiency too, often with less awareness and later diagnosis. Here is what New York men should know about symptoms, risk, and treatment.",
