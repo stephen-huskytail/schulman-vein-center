@@ -48,6 +48,149 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
 {
+  slug: "weight-and-vein-disease-new-york",
+  title: "Weight and Vein Disease: What New York Patients Should Know",
+  excerpt: "Extra body weight adds pressure on leg veins and is a well-documented risk factor for vein disease. Learn how weight and vein disease are connected, the warning signs, and treatment options at three New York locations.",
+  category: "Patient Guide",
+  publishedAt: "2026-09-30",
+  readTimeMinutes: 8,
+  author: "Dr. Lee G. Schulman",
+  metaTitle: "Weight and Vein Disease: What NY Patients Should Know",
+  metaDescription: "Extra weight adds pressure on leg veins and can worsen vein disease. Learn the connection, warning signs, and treatment options at three New York locations.",
+  ogDescription: "Extra body weight adds pressure on the venous system. Learn how weight and vein disease are connected and when New York patients should get evaluated.",
+  featuredImage: "/images/blog/weight-and-vein-disease-new-york.png",
+  featuredImageAlt: "New York patient consultation discussing weight and vein disease risk factors with a physician",
+  relatedLinks: [
+    { label: "Vein Disorders & Conditions", href: "/services/vein-disorders" },
+    { label: "Varicose Vein Treatment", href: "/services/varicose-vein-treatment" },
+    { label: "Sitting and Vein Disease", href: "/blog/sitting-and-vein-disease-new-york" },
+    { label: "Free Vein Screening", href: "/services/free-vein-screening" },
+  ],
+  quickSummary: [
+    "Weight and vein disease are connected because extra body weight adds sustained pressure on the venous system, making it harder for one-way vein valves to move blood back toward the heart.",
+    "Higher body weight is one of several common risk factors for New York patients, often combined with family history, prolonged sitting or standing, and prior pregnancy.",
+    "Warning signs include ankle and lower-leg swelling, aching or heaviness, visible bulging veins, and skin changes near the ankle.",
+    "Gradual, physician-guided weight management and regular low-impact movement can support vein health, but they do not replace evaluation for existing symptoms.",
+    "A duplex ultrasound can confirm venous reflux, and most confirmed cases respond well to minimally invasive, in-office treatment regardless of body weight.",
+  ],
+  tableOfContents: [
+    "Why Weight and Vein Disease Are Connected",
+    "How Extra Weight Affects Leg Vein Pressure",
+    "Risk Factors That Often Combine With Body Weight",
+    "Warning Signs to Watch For",
+    "When Vein Symptoms Need Prompt Care",
+    "Weight Management and Vein Health: What Helps",
+    "Book a Free Vein Screening in New York",
+    "Frequently Asked Questions",
+  ],
+  body: [
+    {
+      heading: "Why Weight and Vein Disease Are Connected",
+      paragraphs: [
+        "Weight and vein disease are connected because carrying extra body weight places sustained, additional pressure on the veins in the legs and pelvis, making it harder for one-way vein valves to move blood efficiently back toward the heart. Many New York patients, across Manhattan, Nassau County, and Suffolk County, first notice leg heaviness or swelling after gradual weight gain over months or years, often without realizing weight is a contributing factor alongside family history or occupation.",
+        "At Schulman Vein and Laser Center, we regularly evaluate patients whose vein symptoms became more noticeable as their body weight increased, and we explain this connection without judgment, since higher body weight is one of many well-documented risk factors for vein disease, not a guaranteed cause. This guide explains how weight and vein disease interact, the warning signs to watch for, and when Manhattan, Manhasset, and Commack patients should consider a screening, as part of our <a href=\"/services/vein-disorders\">vein disorders and conditions</a> care.",
+      ],
+      keyTakeaway: "Weight and vein disease are linked because extra body weight adds pressure on leg veins, which can make it harder for vein valves to function efficiently over time.",
+    },
+    {
+      heading: "How Extra Weight Affects Leg Vein Pressure",
+      paragraphs: [
+        "Veins rely on a combination of one-way valves and the calf muscle pump to move blood upward against gravity. Extra body weight, particularly around the abdomen, can increase pressure inside the abdominal cavity and pelvis, which in turn raises pressure in the leg veins below. Over time, that added pressure can stretch vein walls and stress the valves that normally prevent blood from flowing backward.",
+        "Higher body weight can also make it more physically demanding to stay active, which can reduce how often the calf muscle pump is engaged. This combination, more venous pressure and less calf-pump activity, is part of why population studies consistently identify higher body mass index as a risk factor associated with varicose veins and chronic venous insufficiency (CVI).",
+      ],
+      imageSrc: "/images/blog/weight-and-vein-disease-ultrasound-evaluation-new-york.png",
+      imageAlt: "Duplex ultrasound vein evaluation for weight and vein disease risk factors at a New York vein clinic",
+      callout: {
+        type: "info",
+        text: "Weight is one of several risk factors for vein disease, alongside family history, pregnancy, and occupations that involve prolonged sitting. See our related guide to <a href=\"/blog/sitting-and-vein-disease-new-york\">sitting and vein disease</a>.",
+      },
+      keyTakeaway: "Extra body weight raises pressure in the abdominal and pelvic veins, which increases pressure in the legs and can stress vein valves over time.",
+    },
+    {
+      heading: "Risk Factors That Often Combine With Body Weight",
+      paragraphs: [
+        "Body weight rarely acts alone. Several other factors commonly combine with higher body weight to raise the overall risk of vein disease among New York patients.",
+      ],
+      bullets: [
+        "Family history of varicose veins or CVI; see our guide to <a href=\"/blog/family-history-vein-disease-new-york\">family history and vein disease</a>",
+        "Occupations involving prolonged sitting or standing, which further limit calf-pump activity",
+        "Prior pregnancy, which temporarily increases pressure on leg veins",
+        "Age, since vein wall and valve elasticity naturally decreases over time",
+        "Limited mobility or reduced physical activity",
+      ],
+      keyTakeaway: "Family history, occupation, prior pregnancy, and age frequently combine with body weight to raise the overall risk of vein disease.",
+    },
+    {
+      heading: "Warning Signs to Watch For",
+      paragraphs: [
+        "Patients sometimes attribute early vein symptoms to general fatigue or unrelated joint discomfort rather than to a vein condition, which can delay diagnosis. Recognizing these signs earlier supports a simpler, less invasive evaluation and treatment path.",
+      ],
+      bullets: [
+        "Ankle or lower-leg swelling that builds over the course of the day, discussed further in our guide to <a href=\"/blog/leg-swelling-vein-disease-new-york\">leg swelling and vein disease</a>",
+        "Aching, heaviness, or fatigue in the legs, especially after standing or sitting for long periods",
+        "Visible bulging or twisted veins, especially behind the knee or along the inner calf",
+        "Skin changes near the ankle, such as discoloration, thickening, or a wound that will not heal",
+        "Nighttime leg cramps, which can also be linked to venous insufficiency",
+      ],
+      keyTakeaway: "Evening ankle swelling, leg heaviness, visible bulging veins, and skin changes near the ankle are common early warning signs and warrant an evaluation.",
+    },
+    {
+      heading: "When Vein Symptoms Need Prompt Care",
+      paragraphs: [
+        "Mild aching or occasional visible veins are common and not an emergency. Contact your physician if leg symptoms persist despite rest and elevation, worsen steadily over weeks or months, or come with skin changes such as thickening, discoloration, or a wound near the ankle that will not heal.",
+      ],
+      callout: {
+        type: "warning",
+        text: "Sudden one-sided leg swelling, redness, warmth, or calf pain is different from typical vein disease symptoms. Seek prompt medical evaluation, since these can be signs of a blood clot. Call emergency services for chest pain or shortness of breath.",
+      },
+      keyTakeaway: "Persistent, worsening, or skin-related vein symptoms warrant a physician evaluation, and any sudden one-sided swelling or calf pain needs prompt medical attention.",
+    },
+    {
+      heading: "Weight Management and Vein Health: What Helps",
+      paragraphs: [
+        "Gradual, sustainable weight management, guided by a primary care physician or specialist, can help reduce pressure on the venous system over time, but it is not a treatment for veins that already show reflux on ultrasound. Low-impact activities such as walking or swimming support both circulation and weight goals without placing excess strain on joints.",
+        "Compression stockings, leg elevation, and regular movement breaks can also support circulation alongside a gradual weight-management plan. Our guide to <a href=\"/blog/exercise-vein-health-new-york\">exercise and vein health</a> covers movement patterns that support circulation without overexertion. These habits support vein health but do not replace a physician evaluation for existing symptoms.",
+      ],
+      imageSrc: "/images/blog/weight-and-vein-disease-walking-new-york.png",
+      imageAlt: "New York patient walking outdoors to support healthy weight and vein health while managing weight and vein disease risk factors",
+      keyTakeaway: "Gradual weight management, low-impact activity, and compression support circulation, but existing vein symptoms still need a physician evaluation.",
+    },
+    {
+      heading: "Book a Free Vein Screening in New York",
+      paragraphs: [
+        "If you are noticing leg heaviness, swelling, or visible veins, regardless of body weight, it's worth having your legs evaluated by a physician. Schulman Vein and Laser Center provides physician-led evaluations, including duplex ultrasound, at three New York locations serving Manhattan, Nassau County, and Suffolk County.",
+        "Book a <a href=\"/services/free-vein-screening\">Free Vein Screening</a> to have your legs evaluated. Call Manhattan at 212.987.0500, Manhasset at 516.482.4477, or Commack at 631.543.4599. This article is educational and does not replace an in-person medical evaluation.",
+      ],
+      callout: {
+        type: "tip",
+        text: "New York patients can visit our <a href=\"/locations/manhattan\">Manhattan</a>, <a href=\"/locations/manhasset\">Manhasset</a>, or <a href=\"/locations/commack\">Commack</a> office for a physician-led vein evaluation.",
+      },
+    },
+  ],
+  faqSection: [
+    {
+      question: "Does being overweight cause varicose veins?",
+      answer: "Extra body weight does not cause vein disease by itself, but it is a well-documented risk factor. Weight and vein disease are connected because higher body weight adds sustained pressure on the venous system, which can stress vein valves that may already be weakened by family history or other factors.",
+    },
+    {
+      question: "Will losing weight get rid of my varicose veins?",
+      answer: "Weight loss alone will not reverse veins that already show reflux on ultrasound, since the valve damage does not repair itself. However, gradual weight management can reduce pressure on the venous system and support overall vein health alongside physician-guided treatment.",
+    },
+    {
+      question: "What body weight puts someone at higher risk for vein disease?",
+      answer: "There is no single weight threshold. Risk increases gradually as body weight increases, and it combines with other factors such as family history, occupation, prior pregnancy, and age. A physician evaluation is the most reliable way to assess individual risk.",
+    },
+    {
+      question: "What treatment options are available for vein disease regardless of body weight?",
+      answer: "Most confirmed cases of vein disease respond well to minimally invasive, in-office treatments such as endovenous laser therapy (EVLT) or sclerotherapy, regardless of body weight. A duplex ultrasound evaluation determines which treatment is appropriate for each patient.",
+    },
+    {
+      question: "When should I get a vein screening if I'm concerned about weight and vein disease?",
+      answer: "Consider a screening if you notice ankle swelling, leg heaviness or aching, visible bulging or spider veins, or skin changes near the ankle. A physician-led duplex ultrasound can confirm whether venous reflux is present.",
+    },
+  ],
+},
+{
   slug: "sitting-and-vein-disease-new-york",
   title: "Sitting and Vein Disease: What New York Office Workers Should Know",
   excerpt: "Desk jobs and long commutes mean many New Yorkers sit for most of the day. Learn how sitting and vein disease are connected, the warning signs to watch for, and simple habits that support healthy circulation.",
