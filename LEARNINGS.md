@@ -2,6 +2,25 @@
 
 ## Run Log
 
+### 2026-09-30 — weight-and-vein-disease-new-york
+- **Topic:** Weight and Vein Disease: What New York Patients Should Know
+- **Live URL:** https://www.schulmanveincenter.com/blog/weight-and-vein-disease-new-york
+- **HTTP Status:** 200 ✓ (canonical article, blog index, and all three image assets verified live)
+- **Author:** Dr. Lee G. Schulman
+- **Category:** Patient Guide
+- **Images:** 3 × GPT Image 2 (`gpt-image-2-medium`, 1536×1024 PNG)
+  - `weight-and-vein-disease-new-york.png` (featured)
+  - `weight-and-vein-disease-ultrasound-evaluation-new-york.png` (in-body)
+  - `weight-and-vein-disease-walking-new-york.png` (in-body)
+- **Deploy:** commit `9a47097` pushed to `main` → Vercel auto-deploy → live HTTP 200
+- **SEO gates:** meta title 53 chars, meta description 156 chars, primary keyword "weight and vein disease" in H1/first-100-words/H2/slug/alt text ✓
+- **Internal links:** 9 in-body/callout contextual links incl. /services/vein-disorders, /services/varicose-vein-treatment, /services/free-vein-screening, /blog/sitting-and-vein-disease-new-york, /blog/family-history-vein-disease-new-york, /blog/leg-swelling-vein-disease-new-york, /blog/exercise-vein-health-new-york, plus all 3 location pages ✓
+- **Structured data:** BlogPosting + MedicalWebPage + FAQPage confirmed live in rendered JSON-LD; exact canonical and Open Graph metadata verified ✓
+- **Medical sources reviewed:** established vascular-medicine literature (e.g., Edinburgh Vein Study and related population cohort data) identifying higher body weight/BMI as a documented risk factor for varicose veins and chronic venous insufficiency; copy written as risk-factor framing (not guaranteed causation), explicitly notes weight loss alone does not reverse existing venous reflux, with individualized-evaluation language throughout ✓
+- **Independent review:** general-purpose QA agent verified medical claim accuracy/tone, doctor-credential accuracy against `src/lib/constants.ts` (no credential claims made in body text), internal link integrity (all hrefs resolve to valid service/location/blog routes), no forced-new-tab internal links, TypeScript shape, duplicate-topic check, slug uniqueness, and image integrity (three distinct 1536×1024 PNGs) before push — no issues found ✓
+- **Slack:** Posted to #hermes-blogs (C0BFFC20D6C) ✓
+- **Autopilot run:** `01a0f322-3c1a-77c3-9eb0-4577e869574d`
+
 ### 2026-09-16 — vein-disease-in-men-new-york
 - **Topic:** Vein Disease in Men: What New York Patients Should Know
 - **Live URL:** https://www.schulmanveincenter.com/blog/vein-disease-in-men-new-york
