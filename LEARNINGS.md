@@ -2,6 +2,25 @@
 
 ## Run Log
 
+### 2026-10-07 — diabetes-and-vein-disease-new-york
+- **Topic:** Diabetes and Vein Disease: What New York Patients Should Know
+- **Live URL:** https://www.schulmanveincenter.com/blog/diabetes-and-vein-disease-new-york
+- **HTTP Status:** 200 ✓ (canonical article, blog index, and all three image assets verified live)
+- **Author:** Dr. Lee G. Schulman
+- **Category:** Patient Guide
+- **Images:** 3 × GPT Image 2 (`gpt-image-2`, medium quality, 1536×1024 PNG)
+  - `diabetes-and-vein-disease-new-york.png` (featured)
+  - `diabetes-vein-ultrasound-evaluation-new-york.png` (in-body)
+  - `diabetes-vein-foot-check-new-york.png` (in-body)
+- **Deploy:** commit `0073cfe` pushed to `main` → Vercel auto-deploy → live HTTP 200
+- **SEO gates:** meta title 55 chars, meta description 154 chars, primary keyword "diabetes and vein disease" in H1/first-100-words/H2/slug/alt text ✓
+- **Internal links:** 8 qualifying in-body/callout contextual links incl. /services/vein-disorders, /services/varicose-vein-treatment, /services/free-vein-screening, /blog/weight-and-vein-disease-new-york, /blog/family-history-vein-disease-new-york, /blog/leg-swelling-vein-disease-new-york, plus all 3 location pages ✓
+- **Structured data:** BlogPosting + MedicalWebPage + FAQPage confirmed live in rendered JSON-LD; exact canonical and Open Graph metadata verified ✓
+- **Medical claim framing:** Diabetes explicitly framed as affecting vascular health/wound healing and complicating evaluation — not as a direct cause of varicose veins (distinct from stronger-evidence risk factors like family history or prolonged standing). Diabetic neuropathy's effect on symptom awareness and the venous-vs-diabetic-ulcer distinction were both written conservatively with individualized-evaluation language throughout ✓
+- **Independent review:** general-purpose QA agent verified medical claim accuracy/tone, doctor-credential accuracy against `src/lib/constants.ts` (no "board-certified" claim made for Dr. Lee Schulman, matching his actual Diplomate in Phlebology credential), internal link integrity (8 links, no forced new-tab), TypeScript shape, duplicate-topic check, slug uniqueness, and image integrity (three distinct 1536×1024 PNGs) before push — no issues found ✓
+- **Slack:** Posted to #hermes-blogs (C0BFFC20D6C) ✓
+- **Autopilot run:** `01a1172e-d4e6-7cad-bb26-86111f890f41`
+
 ### 2026-09-30 — weight-and-vein-disease-new-york
 - **Topic:** Weight and Vein Disease: What New York Patients Should Know
 - **Live URL:** https://www.schulmanveincenter.com/blog/weight-and-vein-disease-new-york
@@ -225,6 +244,7 @@
 ---
 
 ## Topics Published (avoid duplication)
+- 2026-10-07: Diabetes and vein disease — vascular/wound-healing complication angle, neuropathy symptom masking (not framed as a direct cause)
 - 2026-09-23: Sitting and vein disease — prolonged desk-job sitting as a risk factor, NYC office worker angle
 - 2026-09-16: Vein disease in men — underdiagnosis, prevalence, risk factors, and warning signs specific to male patients
 - 2026-09-09: Family history and vein disease — genetics/heredity as a risk factor
