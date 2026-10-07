@@ -48,6 +48,149 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
 {
+  slug: "diabetes-and-vein-disease-new-york",
+  title: "Diabetes and Vein Disease: What New York Patients Should Know",
+  excerpt: "Diabetes affects circulation and wound healing in ways that can complicate vein disease. Learn how diabetes and vein disease interact, the warning signs to watch for, and treatment options at three New York locations.",
+  category: "Patient Guide",
+  publishedAt: "2026-10-07",
+  readTimeMinutes: 8,
+  author: "Dr. Lee G. Schulman",
+  metaTitle: "Diabetes and Vein Disease: What NY Patients Should Know",
+  metaDescription: "Diabetes affects circulation and wound healing, which can complicate vein disease. Learn the connection, warning signs, and treatment options in New York.",
+  ogDescription: "Diabetes affects vascular health and wound healing. Learn how diabetes and vein disease interact and when New York patients should get evaluated.",
+  featuredImage: "/images/blog/diabetes-and-vein-disease-new-york.png",
+  featuredImageAlt: "New York patient consultation discussing diabetes and vein disease with a physician",
+  relatedLinks: [
+    { label: "Vein Disorders & Conditions", href: "/services/vein-disorders" },
+    { label: "Varicose Vein Treatment", href: "/services/varicose-vein-treatment" },
+    { label: "Weight and Vein Disease", href: "/blog/weight-and-vein-disease-new-york" },
+    { label: "Free Vein Screening", href: "/services/free-vein-screening" },
+  ],
+  quickSummary: [
+    "Diabetes does not directly cause varicose veins, but it affects blood vessel health broadly and can complicate the evaluation and healing of venous conditions in New York patients.",
+    "Diabetic neuropathy can reduce leg and foot sensation, so visible signs such as swelling and skin changes become more important than pain alone for catching vein problems early.",
+    "Diabetes and vein disease can overlap with impaired wound healing, which is why any non-healing leg or foot wound in a diabetic patient needs an accurate diagnosis before starting treatment.",
+    "Managing blood sugar, staying active with physician-approved movement, and routine leg and foot checks support overall vascular health alongside vein-specific care.",
+    "A duplex ultrasound can confirm whether venous reflux is present, and most confirmed cases respond well to minimally invasive, in-office treatment.",
+  ],
+  tableOfContents: [
+    "Why Diabetes and Vein Disease Are Connected",
+    "How Diabetes Affects Circulation and Wound Healing",
+    "Risk Factors That Often Combine With Diabetes",
+    "Warning Signs to Watch For",
+    "When Vein Symptoms Need Prompt Care",
+    "Managing Diabetes and Supporting Vein Health",
+    "Book a Free Vein Screening in New York",
+    "Frequently Asked Questions",
+  ],
+  body: [
+    {
+      heading: "Why Diabetes and Vein Disease Are Connected",
+      paragraphs: [
+        "Diabetes and vein disease are connected because diabetes affects the health of blood vessels throughout the body, including the veins in the legs, and can make existing venous problems harder to evaluate and heal. Many New York patients, across Manhattan, Nassau County, and Suffolk County, manage diabetes for years before realizing it can influence how vein symptoms present and how quickly leg wounds heal.",
+        "At Schulman Vein and Laser Center, we regularly evaluate diabetic patients who also show signs of vein disease, and we explain this connection carefully, since diabetes is not a direct cause of varicose veins the way family history or prolonged standing can be. This guide explains how diabetes and vein disease interact, the warning signs to watch for, and when Manhattan, Manhasset, and Commack patients should consider a screening, as part of our <a href=\"/services/vein-disorders\">vein disorders and conditions</a> care.",
+      ],
+      keyTakeaway: "Diabetes does not directly cause vein disease, but it affects vascular health broadly and can complicate the evaluation and healing of venous conditions.",
+    },
+    {
+      heading: "How Diabetes Affects Circulation and Wound Healing",
+      paragraphs: [
+        "Over time, diabetes can damage both large and small blood vessels and the nerves that supply the legs and feet, a combination that affects circulation and sensation. Diabetic peripheral neuropathy can reduce a patient's ability to feel aching, heaviness, or discomfort that would otherwise be an early warning sign of vein disease, which means visible changes become a more important signal than pain alone.",
+        "Diabetes also commonly affects how quickly skin heals after an injury. When a patient has both diabetes and venous insufficiency, a leg wound can take longer to heal and may need a more careful diagnosis to determine whether it is primarily a venous ulcer, a diabetic ulcer, or a combination, since treatment differs by wound type.",
+      ],
+      imageSrc: "/images/blog/diabetes-vein-ultrasound-evaluation-new-york.png",
+      imageAlt: "Duplex ultrasound vein evaluation for a patient managing diabetes and vein disease at a New York vein clinic",
+      callout: {
+        type: "info",
+        text: "Diabetic neuropathy can mask the aching or heaviness that often signals vein disease. See our related guide to <a href=\"/blog/leg-swelling-vein-disease-new-york\">leg swelling and vein disease</a> for other signs to watch for.",
+      },
+      keyTakeaway: "Diabetes can reduce leg sensation and slow wound healing, which makes visible signs more important than pain for catching vein problems early.",
+    },
+    {
+      heading: "Risk Factors That Often Combine With Diabetes",
+      paragraphs: [
+        "Diabetes rarely acts alone. Several other factors commonly combine with diabetes to raise the overall risk of vein disease, or to make existing vein disease harder to manage, among New York patients.",
+      ],
+      bullets: [
+        "Higher body weight, which adds pressure on leg veins; see our guide to <a href=\"/blog/weight-and-vein-disease-new-york\">weight and vein disease</a>",
+        "Family history of varicose veins or chronic venous insufficiency, covered in our guide to <a href=\"/blog/family-history-vein-disease-new-york\">family history and vein disease</a>",
+        "Reduced mobility, which limits calf-pump activity that normally supports healthy circulation",
+        "Occupations involving prolonged sitting or standing",
+        "Age, since vein wall and valve elasticity naturally decreases over time",
+      ],
+      keyTakeaway: "Higher body weight, family history, reduced mobility, occupation, and age frequently combine with diabetes to raise overall vein disease risk.",
+    },
+    {
+      heading: "Warning Signs to Watch For",
+      paragraphs: [
+        "Because diabetic neuropathy can blunt pain signals, diabetic patients should pay close attention to visible and physical changes in the legs and feet rather than relying on discomfort alone to flag a problem.",
+      ],
+      bullets: [
+        "Ankle or lower-leg swelling that builds over the course of the day",
+        "Visible bulging or twisted veins, especially behind the knee or along the inner calf",
+        "Skin changes near the ankle, such as discoloration, thickening, or dryness",
+        "Any sore, blister, or wound on the leg or foot that is slow to heal",
+        "A feeling of heaviness or fatigue in the legs, when sensation allows it to be noticed",
+      ],
+      keyTakeaway: "Evening ankle swelling, visible bulging veins, skin changes, and any slow-healing leg or foot wound are warning signs that warrant a prompt evaluation.",
+    },
+    {
+      heading: "When Vein Symptoms Need Prompt Care",
+      paragraphs: [
+        "Any new or non-healing wound on the leg or foot in a patient with diabetes deserves prompt medical attention, since diabetic and venous wounds require different treatment approaches and delayed care raises the risk of complications. Contact your physician if leg or foot skin changes, swelling, or a wound persist despite basic care.",
+      ],
+      callout: {
+        type: "warning",
+        text: "Sudden one-sided leg swelling, redness, warmth, or calf pain is different from typical vein disease symptoms and can be a sign of a blood clot, which carries added risk for diabetic patients with circulation concerns. Seek prompt medical evaluation, and call emergency services for chest pain or shortness of breath.",
+      },
+      keyTakeaway: "Any new or slow-healing leg or foot wound in a diabetic patient needs prompt evaluation, and any sudden one-sided swelling or calf pain needs urgent medical attention.",
+    },
+    {
+      heading: "Managing Diabetes and Supporting Vein Health",
+      paragraphs: [
+        "Working with a primary care physician or endocrinologist to keep blood sugar well managed supports overall vascular health, which benefits circulation in the legs alongside any vein-specific treatment. Routine self-checks of the legs and feet, looking for new swelling, skin changes, or wounds, help catch problems early, especially when neuropathy reduces sensation.",
+        "Physician-approved, low-impact movement such as walking supports the calf-muscle pump that helps move blood back toward the heart. Compression stockings and leg elevation can also support circulation, but they do not replace a physician evaluation for a diabetic patient with new leg or foot changes.",
+      ],
+      imageSrc: "/images/blog/diabetes-vein-foot-check-new-york.png",
+      imageAlt: "New York patient performing a routine foot and leg skin check to support diabetes and vein disease management",
+      keyTakeaway: "Blood sugar management, routine leg and foot checks, and physician-approved movement support vascular health alongside any vein-specific treatment.",
+    },
+    {
+      heading: "Book a Free Vein Screening in New York",
+      paragraphs: [
+        "If you manage diabetes and are noticing leg heaviness, swelling, visible veins, or any slow-healing skin change, it's worth having your legs evaluated by a physician. Schulman Vein and Laser Center provides physician-led evaluations, including duplex ultrasound, at three New York locations serving Manhattan, Nassau County, and Suffolk County.",
+        "Book a <a href=\"/services/free-vein-screening\">Free Vein Screening</a> to have your legs evaluated. Call Manhattan at 212.987.0500, Manhasset at 516.482.4477, or Commack at 631.543.4599. This article is educational and does not replace an in-person medical evaluation.",
+      ],
+      callout: {
+        type: "tip",
+        text: "New York patients can visit our <a href=\"/locations/manhattan\">Manhattan</a>, <a href=\"/locations/manhasset\">Manhasset</a>, or <a href=\"/locations/commack\">Commack</a> office for a physician-led vein evaluation.",
+      },
+    },
+  ],
+  faqSection: [
+    {
+      question: "Does diabetes cause varicose veins?",
+      answer: "Diabetes does not directly cause varicose veins. Varicose veins develop from valve dysfunction that is more closely tied to factors such as family history, prolonged standing or sitting, and higher body weight. However, diabetes affects vascular health broadly and can complicate the evaluation and healing of venous conditions when both are present.",
+    },
+    {
+      question: "Why are leg wounds more serious for diabetic patients with vein disease?",
+      answer: "Diabetes can slow skin healing and reduce leg and foot sensation through neuropathy. When venous insufficiency is also present, a leg wound can take longer to heal and needs an accurate diagnosis to determine whether it is a venous ulcer, a diabetic ulcer, or a combination, since treatment differs by wound type.",
+    },
+    {
+      question: "Can diabetic neuropathy hide the symptoms of vein disease?",
+      answer: "Yes. Diabetic neuropathy can reduce a patient's ability to feel aching or heaviness in the legs, symptoms that often signal vein disease. This makes visible changes, such as swelling, bulging veins, or skin discoloration, more important to watch for than pain alone.",
+    },
+    {
+      question: "What treatment options are available for vein disease in diabetic patients?",
+      answer: "Most confirmed cases of vein disease respond well to minimally invasive, in-office treatments such as endovenous laser therapy (EVLT) or sclerotherapy. A duplex ultrasound evaluation and a review of a patient's diabetes management help determine which treatment and timing are appropriate.",
+    },
+    {
+      question: "When should a diabetic patient get a vein screening?",
+      answer: "Consider a screening if you notice ankle swelling, visible bulging or spider veins, skin changes near the ankle, or any slow-healing wound on the leg or foot. A physician-led duplex ultrasound can confirm whether venous reflux is present.",
+    },
+  ],
+},
+{
   slug: "weight-and-vein-disease-new-york",
   title: "Weight and Vein Disease: What New York Patients Should Know",
   excerpt: "Extra body weight adds pressure on leg veins and is a well-documented risk factor for vein disease. Learn how weight and vein disease are connected, the warning signs, and treatment options at three New York locations.",
