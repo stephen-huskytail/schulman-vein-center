@@ -25,6 +25,8 @@
   }
   body {
     @apply antialiased font-body text-gray-800;
+    /* Slide-in animations start off-canvas; clip (not hidden) keeps sticky elements working. */
+    overflow-x: clip;
   }
   h1, h2, h3, h4 {
     @apply font-heading leading-tight;

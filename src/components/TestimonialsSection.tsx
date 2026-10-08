@@ -3,6 +3,8 @@
 import { motion } from "framer-motion";
 import { Star, Quote } from "lucide-react";
 import { TESTIMONIALS } from "@/lib/constants";
+import { PATIENT_VIDEOS } from "@/lib/patient-videos";
+import PatientVideoReviews from "@/components/PatientVideoReviews";
 
 interface TestimonialsSectionProps {
   variant?: "navy" | "light";
@@ -62,6 +64,9 @@ export default function TestimonialsSection({ variant = "navy" }: TestimonialsSe
             </span>
           </div>
         </div>
+
+        {/* Patient video reviews */}
+        <PatientVideoReviews videos={PATIENT_VIDEOS} variant={variant} />
 
         {/* Testimonial grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
