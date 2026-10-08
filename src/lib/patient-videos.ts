@@ -17,7 +17,7 @@ export const PATIENT_VIDEOS: PatientVideo[] = [
   {
     id: "rn",
     src: `${BLOB_BASE}/testimonial-01-rn.mp4`,
-    poster: `${BLOB_BASE}/testimonial-01-rn-poster.webp`,
+    poster: `${BLOB_BASE}/testimonial-01-rn-poster-v5-172.webp`,
     captions: `${BLOB_BASE}/testimonial-01-rn.en.vtt`,
     name: "Registered nurse",
     meta: "Varicose vein treatment",
@@ -37,7 +37,7 @@ export const PATIENT_VIDEOS: PatientVideo[] = [
   {
     id: "varicose",
     src: `${BLOB_BASE}/testimonial-03-varicose.mp4`,
-    poster: `${BLOB_BASE}/testimonial-03-varicose-poster.webp`,
+    poster: `${BLOB_BASE}/testimonial-03-varicose-poster-v3.webp`,
     captions: `${BLOB_BASE}/testimonial-03-varicose.en.vtt`,
     name: "Varicose vein patient",
     meta: "Treated by Dr. Schulman",
