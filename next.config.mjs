@@ -274,7 +274,10 @@ const nextConfig = {
     deviceSizes: [390, 640, 750, 828, 1080, 1200, 1920],
     imageSizes: [16, 32, 64, 96, 128, 256],
     minimumCacheTTL: 86400,
-    remotePatterns: [],
+    remotePatterns: [
+      // Patient video posters in the project's Vercel Blob store.
+      { protocol: "https", hostname: "r4whkef2tt5x9iis.public.blob.vercel-storage.com", pathname: "/testimonials/**" },
+    ],
   },
 
   // Faster builds + smaller bundles

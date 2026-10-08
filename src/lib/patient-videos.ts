@@ -1,5 +1,5 @@
-// Patient video reviews (Designer spec 2026-10-08). Videos and captions live in the
-// project's Vercel Blob store; posters are local so next/image can optimise them.
+// Patient video reviews (Designer spec 2026-10-08). Videos, captions and posters live in the
+// project's Vercel Blob store; posters are optimised through next/image.
 const BLOB_BASE = "https://r4whkef2tt5x9iis.public.blob.vercel-storage.com/testimonials";
 
 export interface PatientVideo {
@@ -17,7 +17,7 @@ export const PATIENT_VIDEOS: PatientVideo[] = [
   {
     id: "rn",
     src: `${BLOB_BASE}/testimonial-01-rn.mp4`,
-    poster: "/images/testimonials/testimonial-01-rn.webp",
+    poster: `${BLOB_BASE}/testimonial-01-rn-poster.webp`,
     captions: `${BLOB_BASE}/testimonial-01-rn.en.vtt`,
     name: "Registered nurse",
     meta: "Varicose vein treatment",
@@ -27,7 +27,7 @@ export const PATIENT_VIDEOS: PatientVideo[] = [
   {
     id: "cathy",
     src: `${BLOB_BASE}/testimonial-02-cathy-commack.mp4`,
-    poster: "/images/testimonials/testimonial-02-cathy-commack.webp",
+    poster: `${BLOB_BASE}/testimonial-02-cathy-commack-poster.webp`,
     captions: `${BLOB_BASE}/testimonial-02-cathy-commack.en.vtt?v=2`,
     name: "Cathy",
     meta: "Patient, Commack office",
@@ -37,7 +37,7 @@ export const PATIENT_VIDEOS: PatientVideo[] = [
   {
     id: "varicose",
     src: `${BLOB_BASE}/testimonial-03-varicose.mp4`,
-    poster: "/images/testimonials/testimonial-03-varicose.webp",
+    poster: `${BLOB_BASE}/testimonial-03-varicose-poster.webp`,
     captions: `${BLOB_BASE}/testimonial-03-varicose.en.vtt`,
     name: "Varicose vein patient",
     meta: "Treated by Dr. Schulman",
@@ -47,7 +47,7 @@ export const PATIENT_VIDEOS: PatientVideo[] = [
   {
     id: "retired-teacher",
     src: `${BLOB_BASE}/testimonial-04-retired-teacher.mp4`,
-    poster: "/images/testimonials/testimonial-04-retired-teacher.webp",
+    poster: `${BLOB_BASE}/testimonial-04-retired-teacher-poster.webp`,
     captions: `${BLOB_BASE}/testimonial-04-retired-teacher.en.vtt`,
     name: "Retired teacher",
     meta: "Varicose vein treatment",
