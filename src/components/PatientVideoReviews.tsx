@@ -90,13 +90,13 @@ export default function PatientVideoReviews({ videos, variant = "navy" }: Patien
                     />
                     <span
                       aria-hidden="true"
-                      className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center w-14 h-14 md:w-[68px] md:h-[68px] rounded-full bg-[var(--sv-teal)] ring-[3px] ring-white/90 shadow-lg transition-colors group-hover:bg-[var(--sv-teal-light)] group-focus-visible:bg-[var(--sv-teal-light)] group-focus-visible:outline group-focus-visible:outline-2 group-focus-visible:outline-offset-[3px] group-focus-visible:outline-[var(--sv-teal-light)]"
+                      className="absolute left-1/2 top-[62%] -translate-x-1/2 -translate-y-1/2 flex items-center justify-center w-14 h-14 md:w-[68px] md:h-[68px] rounded-full bg-[var(--sv-teal)] ring-[3px] ring-white/90 shadow-lg transition-colors group-hover:bg-[var(--sv-teal-light)] group-focus-visible:bg-[var(--sv-teal-light)] group-focus-visible:outline group-focus-visible:outline-2 group-focus-visible:outline-offset-[3px] group-focus-visible:outline-[var(--sv-teal-light)]"
                     >
                       <Play className="w-[26px] h-[26px] text-white fill-white translate-x-[2px]" />
                     </span>
                     <span
                       aria-hidden="true"
-                      className="absolute bottom-3 right-3 rounded-full bg-[var(--sv-navy)]/80 px-[9px] py-[6px] text-xs font-semibold leading-none text-white"
+                      className="absolute bottom-3 right-3 rounded-full bg-[rgba(11,37,69,0.78)] px-[9px] py-[6px] text-xs font-semibold leading-none text-white"
                     >
                       {formatDuration(video.durationSeconds)}
                     </span>
