@@ -28,7 +28,7 @@ export const PATIENT_VIDEOS: PatientVideo[] = [
     id: "cathy",
     src: `${BLOB_BASE}/testimonial-02-cathy-commack.mp4`,
     poster: "/images/testimonials/testimonial-02-cathy-commack.webp",
-    captions: `${BLOB_BASE}/testimonial-02-cathy-commack.en.vtt`,
+    captions: `${BLOB_BASE}/testimonial-02-cathy-commack.en.vtt?v=2`,
     name: "Cathy",
     meta: "Patient, Commack office",
     durationSeconds: 17,
