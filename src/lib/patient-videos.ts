@@ -17,7 +17,7 @@ export const PATIENT_VIDEOS: PatientVideo[] = [
   {
     id: "rn",
     src: `${BLOB_BASE}/testimonial-01-rn.mp4`,
-    poster: `${BLOB_BASE}/testimonial-01-rn-poster-v3.webp`,
+    poster: `${BLOB_BASE}/testimonial-01-rn-poster-v5-174.webp`,
     captions: `${BLOB_BASE}/testimonial-01-rn.en.vtt`,
     name: "Registered nurse",
     meta: "Varicose vein treatment",
