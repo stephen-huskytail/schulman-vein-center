@@ -28,7 +28,7 @@ export default function PatientVideoReviews({ videos, variant = "navy" }: Patien
   };
 
   return (
-    <div className="mb-14">
+    <div className="mb-14" data-video-reviews>
       <h3
         className={`font-heading font-bold text-[22px] md:text-[26px] text-center mb-2 ${
           isLight ? "text-[var(--sv-navy)]" : "text-white"
