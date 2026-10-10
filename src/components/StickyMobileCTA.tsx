@@ -9,7 +9,9 @@ export default function StickyMobileCTA() {
       <div className="grid grid-cols-2">
         <CallNowButton
           variant="custom"
-          className="flex flex-col items-center justify-center gap-1 py-3 bg-[var(--sv-navy)] text-white active:bg-[var(--sv-navy-light)] transition-colors"
+          className="flex h-full w-full flex-col items-center justify-center gap-1 py-3 bg-[var(--sv-navy)] text-white text-xs font-bold tracking-wide active:bg-[var(--sv-navy-light)] transition-colors"
+          wrapperClassName="block"
+          menuClassName="top-auto bottom-full mb-2 mt-0 left-2 right-auto"
           iconSize="w-5 h-5"
         />
         <a
