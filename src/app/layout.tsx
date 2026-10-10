@@ -111,7 +111,7 @@ export default function RootLayout({
         <ScrollToTop />
         <TrustBar />
         <Header />
-        <main className="pt-[124px] lg:pt-[132px] pb-[64px] xl:pb-0">{children}</main>
+        <main className="pt-[124px] lg:pt-[132px] pb-[64px] xl:pb-0 overflow-x-clip">{children}</main>
         <Footer />
         <StickyMobileCTA />
         <Toaster richColors position="top-right" />
