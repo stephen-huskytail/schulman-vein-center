@@ -10,6 +10,8 @@ type CallNowButtonProps = {
   variant?: "primary" | "outline" | "compact" | "secondary" | "custom";
   label?: string;
   iconSize?: string;
+  wrapperClassName?: string;
+  menuClassName?: string;
 };
 
 export default function CallNowButton({
@@ -17,6 +19,8 @@ export default function CallNowButton({
   variant = "primary",
   label = "Call Now",
   iconSize,
+  wrapperClassName,
+  menuClassName,
 }: CallNowButtonProps) {
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
@@ -53,7 +57,7 @@ export default function CallNowButton({
   const iconClass = iconSize || "w-4 h-4";
 
   return (
-    <div ref={ref} className="relative inline-block">
+    <div ref={ref} className={cn("relative inline-block", wrapperClassName)}>
       <button
         type="button"
         onClick={() => setOpen(!open)}
@@ -67,7 +71,10 @@ export default function CallNowButton({
 
       {open && (
         <div
-          className="absolute top-full mt-2 right-0 z-[70] w-72 bg-white rounded-xl shadow-xl border border-gray-100 overflow-hidden"
+          className={cn(
+            "absolute top-full mt-2 right-0 z-[70] w-72 bg-white rounded-xl shadow-xl border border-gray-100 overflow-hidden",
+            menuClassName
+          )}
           role="dialog"
           aria-label="Choose a location to call"
         >
