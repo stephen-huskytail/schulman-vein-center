@@ -48,6 +48,149 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
 {
+  slug: "menopause-and-vein-disease-new-york",
+  title: "Menopause and Vein Disease: What New York Women Should Know",
+  excerpt: "Menopause brings hormonal shifts that can affect vein wall strength and elasticity. Learn how menopause and vein disease are connected, the warning signs to watch for, and treatment options at three New York locations.",
+  category: "Patient Guide",
+  publishedAt: "2026-10-14",
+  readTimeMinutes: 8,
+  author: "Dr. Lee G. Schulman",
+  metaTitle: "Menopause and Vein Disease: What NY Women Should Know",
+  metaDescription: "Menopause brings hormonal shifts that can affect vein wall strength. Learn how menopause and vein disease are connected and treatment options in New York.",
+  ogDescription: "Declining estrogen affects vein wall elasticity during menopause. Learn how menopause and vein disease interact and when New York women should get evaluated.",
+  featuredImage: "/images/blog/menopause-and-vein-disease-new-york.png",
+  featuredImageAlt: "New York patient consultation discussing menopause and vein disease with a physician",
+  relatedLinks: [
+    { label: "Vein Disorders & Conditions", href: "/services/vein-disorders" },
+    { label: "Varicose Vein Treatment", href: "/services/varicose-vein-treatment" },
+    { label: "Family History and Vein Disease", href: "/blog/family-history-vein-disease-new-york" },
+    { label: "Free Vein Screening", href: "/services/free-vein-screening" },
+  ],
+  quickSummary: [
+    "Menopause does not directly cause varicose veins, but declining estrogen affects collagen and elastin in blood vessel walls, and hormonal change is recognized as a contributing risk factor for venous insufficiency in New York women.",
+    "Hormone replacement therapy (HRT) carries its own, separate risk considerations for blood clots, so women considering HRT should discuss their personal vein and clotting history with their prescribing physician.",
+    "Menopause often combines with other risk factors, such as family history, higher body weight, and reduced activity, to raise the overall likelihood of noticing new or worsening varicose veins.",
+    "Watch for new bulging veins, ankle swelling, leg heaviness, or skin changes that appear or worsen around perimenopause and menopause.",
+    "A duplex ultrasound can confirm whether venous reflux is present, and most confirmed cases respond well to minimally invasive, in-office treatment.",
+  ],
+  tableOfContents: [
+    "Why Menopause and Vein Disease Are Connected",
+    "How Hormonal Changes Affect Vein Walls",
+    "Risk Factors That Often Combine With Menopause",
+    "Warning Signs to Watch For",
+    "When Vein Symptoms Need Prompt Care",
+    "Supporting Vein Health During and After Menopause",
+    "Book a Free Vein Screening in New York",
+    "Frequently Asked Questions",
+  ],
+  body: [
+    {
+      heading: "Why Menopause and Vein Disease Are Connected",
+      paragraphs: [
+        "Menopause and vein disease are connected because the hormonal shifts of perimenopause and menopause can affect the strength and elasticity of vein walls, which is why many women in Manhattan, Nassau County, and Suffolk County notice new or worsening varicose veins during this stage of life. Declining estrogen influences collagen and elastin production in blood vessel walls, and hormonal change is recognized among the factors that can contribute to venous insufficiency.",
+        "At Schulman Vein and Laser Center, we regularly evaluate women navigating this transition, and we explain the connection carefully, since menopause is not a direct cause of varicose veins the way family history or prolonged standing can be. This guide explains how menopause and vein disease interact, the warning signs to watch for, and when Manhattan, Manhasset, and Commack patients should consider a screening, as part of our <a href=\"/services/vein-disorders\">vein disorders and conditions</a> care.",
+      ],
+      keyTakeaway: "Menopause does not directly cause vein disease, but hormonal changes affect vein wall strength and can contribute to venous insufficiency.",
+    },
+    {
+      heading: "How Hormonal Changes Affect Vein Walls",
+      paragraphs: [
+        "Estrogen plays a role in maintaining the collagen and elastin that give vein walls their strength and flexibility. As estrogen levels decline during perimenopause and menopause, some women experience a gradual loss of vein wall elasticity, which can make existing weak valves more likely to allow blood to pool and can make visible veins more noticeable.",
+        "These hormonal shifts happen alongside other normal aging changes in the venous system, so menopause is best understood as one contributing factor among several rather than a standalone cause. Women who already have a family history of varicose veins or other risk factors may notice symptoms become more apparent during this time.",
+      ],
+      imageSrc: "/images/blog/menopause-vein-ultrasound-evaluation-new-york.png",
+      imageAlt: "Duplex ultrasound vein evaluation for a patient navigating menopause and vein disease at a New York vein clinic",
+      callout: {
+        type: "info",
+        text: "Hormone replacement therapy (HRT) has its own separate association with blood clot risk. If you are considering HRT, discuss your personal vein and clotting history with your prescribing physician.",
+      },
+      keyTakeaway: "Declining estrogen during menopause can reduce vein wall elasticity, which may make existing weak valves and visible veins more noticeable.",
+    },
+    {
+      heading: "Risk Factors That Often Combine With Menopause",
+      paragraphs: [
+        "Menopause rarely acts alone. Several other factors commonly combine with the hormonal changes of menopause to raise the overall risk of vein disease, or to make existing vein disease more noticeable, among New York women.",
+      ],
+      bullets: [
+        "Family history of varicose veins or chronic venous insufficiency, covered in our guide to <a href=\"/blog/family-history-vein-disease-new-york\">family history and vein disease</a>",
+        "Higher body weight, which adds pressure on leg veins; see our guide to <a href=\"/blog/weight-and-vein-disease-new-york\">weight and vein disease</a>",
+        "Reduced activity levels, which limits calf-pump activity that normally supports healthy circulation",
+        "Prior pregnancies, which can stretch vein walls and weaken valves over time",
+        "Age, since vein wall and valve elasticity naturally decreases over time regardless of hormonal status",
+      ],
+      keyTakeaway: "Family history, higher body weight, reduced activity, prior pregnancies, and age frequently combine with menopause to raise overall vein disease risk.",
+    },
+    {
+      heading: "Warning Signs to Watch For",
+      paragraphs: [
+        "Women navigating perimenopause and menopause should pay attention to new or worsening leg symptoms, since this transition is a common time for previously minor vein changes to become more noticeable.",
+      ],
+      bullets: [
+        "New or more visible bulging or twisted veins, especially behind the knee or along the inner calf",
+        "Ankle or lower-leg swelling that builds over the course of the day",
+        "A feeling of heaviness, fatigue, or aching in the legs, especially after standing or sitting for long periods",
+        "Skin changes near the ankle, such as discoloration, thickening, or dryness",
+        "Leg cramping, particularly at night; see our guide to <a href=\"/blog/leg-cramps-vein-disease-new-york\">nighttime leg cramps and vein disease</a>",
+      ],
+      keyTakeaway: "New or worsening bulging veins, ankle swelling, leg heaviness, skin changes, and nighttime cramping are warning signs that warrant a prompt evaluation.",
+    },
+    {
+      heading: "When Vein Symptoms Need Prompt Care",
+      paragraphs: [
+        "Most menopause-related vein changes develop gradually and are not an emergency, but certain symptoms need prompt medical attention regardless of menopausal status, particularly for women who are taking or considering hormone replacement therapy.",
+      ],
+      callout: {
+        type: "warning",
+        text: "Sudden one-sided leg swelling, redness, warmth, or calf pain is different from typical vein disease symptoms and can be a sign of a blood clot, a risk that warrants extra attention for women on hormone therapy. Seek prompt medical evaluation, and call emergency services for chest pain or shortness of breath.",
+      },
+      keyTakeaway: "Sudden one-sided leg swelling, redness, warmth, or calf pain needs prompt medical evaluation, especially for women on hormone therapy.",
+    },
+    {
+      heading: "Supporting Vein Health During and After Menopause",
+      paragraphs: [
+        "Staying physically active supports the calf-muscle pump that helps move blood back toward the heart, which can help offset some of the circulatory changes that come with menopause. Regular walking, maintaining a healthy weight, and avoiding long periods of uninterrupted sitting or standing all support vein health during this transition.",
+        "Compression stockings and leg elevation can also support circulation and ease day-to-day symptoms, but they do not reverse existing venous reflux. A physician evaluation is the only way to confirm whether venous insufficiency is present and to discuss which treatment, if any, makes sense alongside your broader menopause care.",
+      ],
+      imageSrc: "/images/blog/menopause-vein-active-lifestyle-new-york.png",
+      imageAlt: "New York woman walking outdoors to support vein health during menopause and vein disease management",
+      keyTakeaway: "Regular activity, a healthy weight, and compression support can help manage symptoms, but only a physician evaluation can confirm venous insufficiency.",
+    },
+    {
+      heading: "Book a Free Vein Screening in New York",
+      paragraphs: [
+        "If you are noticing new or worsening varicose veins, leg heaviness, or swelling during perimenopause or menopause, it's worth having your legs evaluated by a physician. Schulman Vein and Laser Center provides physician-led evaluations, including duplex ultrasound, at three New York locations serving Manhattan, Nassau County, and Suffolk County.",
+        "Book a <a href=\"/services/free-vein-screening\">Free Vein Screening</a> to have your legs evaluated. Call Manhattan at 212.987.0500, Manhasset at 516.482.4477, or Commack at 631.543.4599. This article is educational and does not replace an in-person medical evaluation.",
+      ],
+      callout: {
+        type: "tip",
+        text: "New York patients can visit our <a href=\"/locations/manhattan\">Manhattan</a>, <a href=\"/locations/manhasset\">Manhasset</a>, or <a href=\"/locations/commack\">Commack</a> office for a physician-led vein evaluation.",
+      },
+    },
+  ],
+  faqSection: [
+    {
+      question: "Does menopause cause varicose veins?",
+      answer: "Menopause does not directly cause varicose veins. Varicose veins develop from valve dysfunction that is more closely tied to factors such as family history, prolonged standing or sitting, and higher body weight. However, declining estrogen during menopause affects collagen and elastin in vein walls and is recognized as a contributing risk factor for venous insufficiency.",
+    },
+    {
+      question: "Does hormone replacement therapy (HRT) affect vein disease?",
+      answer: "HRT has its own separate association with blood clot risk that is distinct from everyday varicose vein development. Women considering or currently taking HRT should discuss their personal vein and clotting history with their prescribing physician.",
+    },
+    {
+      question: "Why do varicose veins often become more noticeable during menopause?",
+      answer: "Declining estrogen can reduce the elasticity of vein walls, which may make existing weak valves and visible veins more noticeable. Menopause often combines with other factors, such as family history, body weight, and activity level, to influence how apparent symptoms become.",
+    },
+    {
+      question: "What treatment options are available for vein disease during menopause?",
+      answer: "Most confirmed cases of vein disease respond well to minimally invasive, in-office treatments such as endovenous laser therapy (EVLT) or sclerotherapy. A duplex ultrasound evaluation helps confirm whether venous reflux is present and which treatment and timing are appropriate.",
+    },
+    {
+      question: "When should a woman going through menopause get a vein screening?",
+      answer: "Consider a screening if you notice new or more visible bulging veins, ankle swelling, leg heaviness, or nighttime leg cramping during perimenopause or menopause. A physician-led duplex ultrasound can confirm whether venous reflux is present.",
+    },
+  ],
+},
+{
   slug: "diabetes-and-vein-disease-new-york",
   title: "Diabetes and Vein Disease: What New York Patients Should Know",
   excerpt: "Diabetes affects circulation and wound healing in ways that can complicate vein disease. Learn how diabetes and vein disease interact, the warning signs to watch for, and treatment options at three New York locations.",
