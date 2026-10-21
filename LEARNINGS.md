@@ -2,6 +2,18 @@
 
 ## Run Log
 
+### 2026-10-21 — phlebologist-vs-vascular-surgeon
+- Topic: Phlebologist vs Vascular Surgeon: Who Should Treat Your Veins?
+- Live URL: https://www.schulmanveincenter.com/blog/phlebologist-vs-vascular-surgeon
+- Released via PR #8: reviewed candidate83f06c97, merge899f369e99815026231d6c7242d54ac9cdf9f5d9; productiondpl_FmJZBRP3yZtnnNBDm15i7xA1S1eW READY2026-10-21T14:11:07.564Z. Builder live verification completed07:17PT; hard10PT deadline met.
+- Author: Dr. Lee G. Schulman. Patient Guide; publication date2026-10-21. Individual credential claims omitted per approved SEO review.
+- Three approved Higgsfield PNG illustrations,1536x1024: phlebologist-vs-vascular-surgeon.png (hero only), phlebologist-leg-vein-model-new-york.png, phlebologist-credentials-check-new-york.png. All actual images200 and exact approved package bytes.
+- Article/index/sitemap200, exact56-character absolute title,159-character description, self-canonical/OG, BlogPosting+MedicalWebPage, FAQ4/Breadcrumb schema confirmed. Source7lists/33items and comparison table preserved;10 qualifying contextual internal links same-tab; external links new-tab.
+- Independent pre-push QC-MM PASS on exactcandidate at14:05UTC. RV builder live desktop1200/mobile390 checks pass; subsequent MM HTTP/source/image readback agrees. Independent live QC and PM acceptance remain separate.
+- Proofread: lists 7/7, artifact scan 0, spell check pass
+- Shared package: clients/schulman-vein-center/blog/posts/2026-10-21-phlebologist-vs-vascular-surgeon/. Publication log already recorded once; do not replay this slot. No client contact or scheduler change.
+
+
 ### 2026-10-07 — diabetes-and-vein-disease-new-york
 - **Topic:** Diabetes and Vein Disease: What New York Patients Should Know
 - **Live URL:** https://www.schulmanveincenter.com/blog/diabetes-and-vein-disease-new-york
