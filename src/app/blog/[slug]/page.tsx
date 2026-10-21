@@ -76,7 +76,9 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
     : `${BUSINESS.siteUrl}${post.featuredImage ?? "/images/gallery/varicose-large.png"}`;
 
   return {
-    title: post.metaTitle ?? `${post.title} | Schulman Vein and Laser Center`,
+    title: post.slug === "phlebologist-vs-vascular-surgeon"
+      ? { absolute: post.metaTitle! }
+      : post.metaTitle ?? `${post.title} | Schulman Vein and Laser Center`,
     description: post.metaDescription ?? post.excerpt,
     alternates: {
       canonical: canonicalUrl,
@@ -90,8 +92,8 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
       images: [
         {
           url: ogImageUrl,
-          width: 1200,
-          height: 675,
+          width: post.contentHtml ? 1536 : 1200,
+          height: post.contentHtml ? 1024 : 675,
           alt: post.featuredImageAlt ?? post.title,
         },
       ],
@@ -204,8 +206,8 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               <Image
                 src={post.featuredImage}
                 alt={post.featuredImageAlt ?? post.title}
-                width={1200}
-                height={675}
+                width={post.contentHtml ? 1536 : 1200}
+                height={post.contentHtml ? 1024 : 675}
                 className="w-full h-auto rounded-xl mb-8"
                 priority
               />
@@ -220,6 +222,10 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               </div>
             )}
 
+            {post.contentHtml ? (
+              <div data-approved-content className="space-y-5 text-gray-700 leading-relaxed [&_h2]:font-heading [&_h2]:text-2xl [&_h2]:font-bold [&_h2]:text-[var(--sv-navy)] [&_h2]:pt-5 [&_h3]:font-semibold [&_h3]:text-lg [&_ul]:list-disc [&_ul]:pl-6 [&_ol]:list-decimal [&_ol]:pl-6 [&_li]:mb-2 [&_a]:text-[var(--sv-teal)] [&_a]:underline [&_table]:w-full [&_table]:text-sm [&_th]:text-left [&_th]:align-top [&_td]:align-top [&_th]:border [&_td]:border [&_th]:p-2 [&_td]:p-2" dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
+            ) : (
+              <>
             {post.tableOfContents?.length ? (
               <nav className="mb-8 rounded-xl border border-[var(--sv-teal)]/30 bg-[var(--sv-teal)]/5 p-5">
                 <div className="flex items-center gap-2 mb-3 text-[var(--sv-navy)] font-semibold text-sm uppercase tracking-wide">
@@ -359,6 +365,9 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 </ul>
               </section>
             ) : null}
+
+              </>
+            )}
 
             <section className="mt-10 bg-[var(--sv-cream)] rounded-xl border border-gray-100 p-6 md:p-7">
               <h2 className="font-heading text-2xl font-bold text-[var(--sv-navy)] mb-3">
