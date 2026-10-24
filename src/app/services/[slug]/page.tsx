@@ -149,6 +149,11 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
 
       <section className="section-light">
         <div className="container-narrow">
+          {(service.slug === "varicose-vein-treatment" || service.slug === "spider-vein-treatment") && (
+            <p className="mb-8 text-gray-700 leading-relaxed">
+              Looking for a <Link href="/vein-doctor-nassau-county" className="font-semibold text-[var(--sv-navy)] underline underline-offset-4">vein doctor in Nassau County</Link>? Read our guide to choosing a doctor and planning your Manhasset visit.
+            </p>
+          )}
           <div className="mb-8">
             <Link href="/services" className="inline-flex items-center gap-2 text-sm text-[var(--sv-teal)] font-semibold">
               <ChevronRight className="w-4 h-4 rotate-180" />
