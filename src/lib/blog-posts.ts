@@ -3326,6 +3326,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "If you live on Long Island and have been putting off vein treatment, you're not alone. Many patients assume they need to travel into Manhattan for high-quality vascular care — or that visible veins are simply something they have to live with. Neither is true.",
           "Schulman Vein and Laser Center has served Long Island patients from our Manhasset location for decades. Our physicians, Dr. Martin Schulman and Dr. Lee G. Schulman, are internationally recognized phlebologists with more than 55 years of combined experience. Every procedure we perform is minimally invasive, FDA-approved, and designed around one goal: getting you back to your normal life the same day.",
           "Our Manhasset office combines the expertise of a Manhattan specialist practice with the convenience of a Long Island location — close to Great Neck, Port Washington, Roslyn, Garden City, and communities across Nassau County.",
+          "Planning a local visit? See our <a href=\"/locations/manhasset\">Manhasset office</a> page, or read our guide to choosing a <a href=\"/vein-doctor-nassau-county\">vein doctor in Nassau County</a>.",
         ],
         imageSrc: "/images/blog/vein-treatment-manhasset-long-island-new-york-office.jpg",
         imageAlt: "Schulman Vein Center Manhasset Long Island office exterior and consultation room",

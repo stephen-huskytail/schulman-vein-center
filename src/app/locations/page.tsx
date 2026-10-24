@@ -34,6 +34,9 @@ export default function LocationsPage() {
 
       <section className="section-light">
         <div className="container-sv">
+          <p className="mb-8 text-gray-700 leading-relaxed">
+            Looking for a <Link href="/vein-doctor-nassau-county" className="font-semibold text-[var(--sv-navy)] underline underline-offset-4">vein doctor in Nassau County</Link>? Read our guide to choosing a doctor and planning your Manhasset visit.
+          </p>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
             {LOCATIONS.map((location) => (
               <article

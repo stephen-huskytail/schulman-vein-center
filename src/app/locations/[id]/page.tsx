@@ -226,6 +226,11 @@ export default async function LocationDetailPage({ params }: LocationPageProps) 
           <div className="bg-white rounded-2xl border border-gray-100 shadow-card p-6 md:p-8 mb-8">
             <h2 className="section-title text-2xl mb-4">Neighborhood Context</h2>
             <p className="text-gray-700 leading-relaxed">{location.neighborhoodContext}</p>
+            {location.id === "manhasset" && (
+              <p className="mt-4 text-gray-700 leading-relaxed">
+                Looking for a <Link href="/vein-doctor-nassau-county" className="font-semibold text-[var(--sv-navy)] underline underline-offset-4">vein doctor in Nassau County</Link>? Read our guide to choosing a doctor and planning your Manhasset visit.
+              </p>
+            )}
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
