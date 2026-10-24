@@ -11,7 +11,7 @@ export default function SiteChrome({ children }: { children: React.ReactNode }) 
   const pathname = usePathname();
 
   // The county page must not inherit unconfirmed offers, ratings or outcome claims.
-  if (pathname === "/vein-doctor-nassau-county") {
+  if (pathname === "/vein-doctor-nassau-county" || pathname === "/vein-doctor-nassau-county/") {
     return (
       <>
         <a href="#county-content" className="sr-only focus:not-sr-only focus:block focus:p-4">
