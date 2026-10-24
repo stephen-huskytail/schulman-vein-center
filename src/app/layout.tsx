@@ -2,10 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "sonner";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import StickyMobileCTA from "@/components/StickyMobileCTA";
-import TrustBar from "@/components/TrustBar";
+import SiteChrome from "@/components/SiteChrome";
 import ScrollToTop from "@/components/ScrollToTop";
 import { BUSINESS } from "@/lib/constants";
 
@@ -109,11 +106,7 @@ export default function RootLayout({
           />
         </noscript>
         <ScrollToTop />
-        <TrustBar />
-        <Header />
-        <main className="pt-[124px] lg:pt-[132px] pb-[64px] xl:pb-0 overflow-x-clip">{children}</main>
-        <Footer />
-        <StickyMobileCTA />
+        <SiteChrome>{children}</SiteChrome>
         <Toaster richColors position="top-right" />
       </body>
     </html>
