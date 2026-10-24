@@ -34,6 +34,7 @@ export default function NassauCountyPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <PageHero
         eyebrow="Nassau County · Manhasset"
+        eyebrowClassName="text-cyan-200"
         title="Vein Doctor Serving Nassau County from Manhasset"
         description="What to ask when choosing a vein doctor, what a screening includes, and where to find our Manhasset office."
         breadcrumbs={[

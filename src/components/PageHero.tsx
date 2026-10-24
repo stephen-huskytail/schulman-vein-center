@@ -7,9 +7,10 @@ interface PageHeroProps {
   title: string;
   description: string;
   breadcrumbs?: BreadcrumbItem[];
+  eyebrowClassName?: string;
 }
 
-export default function PageHero({ eyebrow, title, description, breadcrumbs = [] }: PageHeroProps) {
+export default function PageHero({ eyebrow, title, description, breadcrumbs = [], eyebrowClassName = "text-[var(--sv-teal)]" }: PageHeroProps) {
   const breadcrumbSchema = breadcrumbs.length > 0 ? createBreadcrumbSchema(breadcrumbs) : null;
 
   return (
@@ -42,7 +43,7 @@ export default function PageHero({ eyebrow, title, description, breadcrumbs = []
             </nav>
           </>
         ) : null}
-        <p className="text-sm font-semibold tracking-widest uppercase mb-2 text-[var(--sv-teal)]">
+        <p className={`text-sm font-semibold tracking-widest uppercase mb-2 ${eyebrowClassName}`}>
           {eyebrow}
         </p>
         <h1 className="font-heading text-3xl md:text-5xl font-bold text-white mb-4">
