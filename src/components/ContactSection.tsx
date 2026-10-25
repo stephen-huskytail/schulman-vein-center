@@ -5,7 +5,7 @@ import { Phone, Mail, CheckCircle2 } from "lucide-react";
 import { BUSINESS, LOCATIONS } from "@/lib/constants";
 import LeadForm from "@/components/LeadForm";
 
-export default function ContactSection() {
+export default function ContactSection({ initialLocation }: { initialLocation?: string }) {
   return (
     <section id="contact" className="section-cream">
       <div className="container-sv">
@@ -97,7 +97,7 @@ export default function ContactSection() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="lg:col-span-3"
           >
-            <LeadForm />
+            <LeadForm initialLocation={initialLocation} locationContext={Boolean(initialLocation)} />
           </motion.div>
         </div>
       </div>

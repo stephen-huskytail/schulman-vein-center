@@ -189,8 +189,8 @@ export default async function LocationDetailPage({ params }: LocationPageProps) 
                 <a href={location.phoneHref} className="btn-primary justify-center">
                   Call {location.shortName}
                 </a>
-                <Link href="/contact" className="btn-outline-navy justify-center">
-                  Book Online
+                <Link href={location.id === "manhasset" ? "/contact?location=manhasset#contact" : "/contact"} className="btn-outline-navy justify-center min-h-12">
+                  {location.id === "manhasset" ? "Request a Manhasset Screening" : "Book Online"}
                 </Link>
               </div>
 

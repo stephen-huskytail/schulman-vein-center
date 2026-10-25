@@ -29,6 +29,8 @@ interface LeadFormProps {
   className?: string;
   buttonText?: string;
   textareaRows?: number;
+  initialLocation?: string;
+  locationContext?: boolean;
 }
 
 export default function LeadForm({
@@ -38,6 +40,8 @@ export default function LeadForm({
   className = "bg-white rounded-2xl shadow-card p-6 md:p-8 border border-gray-100",
   buttonText = "Request Free Consultation",
   textareaRows = 8,
+  initialLocation = "",
+  locationContext = false,
 }: LeadFormProps) {
   const [submitted, setSubmitted] = useState(false);
   const [formStartedAt, setFormStartedAt] = useState("");
@@ -48,13 +52,19 @@ export default function LeadForm({
     formState: { errors, isSubmitting },
     reset,
     setValue,
+    watch,
   } = useForm<FormData>({
     resolver: zodResolver(schema),
     defaultValues: {
       website: "",
       formStartedAt,
+      location: LOCATIONS.some((location) => location.id === initialLocation) ? initialLocation : "",
     },
   });
+
+  const selectedLocation = LOCATIONS.find((location) => location.id === watch("location"));
+  const contextualTitle = locationContext && selectedLocation ? `Request a ${selectedLocation.shortName} Screening` : title;
+  const contextualButton = locationContext && selectedLocation ? `Send ${selectedLocation.shortName} Screening Request` : buttonText;
 
   useEffect(() => {
     const startedAt = Date.now().toString();
@@ -82,7 +92,7 @@ export default function LeadForm({
       toast.success("Appointment request received! We'll contact you within 1 business day.");
       const nextStartedAt = Date.now().toString();
       setFormStartedAt(nextStartedAt);
-      reset({ website: "", formStartedAt: nextStartedAt });
+      reset({ website: "", formStartedAt: nextStartedAt, location: data.location });
       if (onSuccess) onSuccess();
     } catch (err: any) {
       console.error("Submission error:", err);
@@ -123,7 +133,7 @@ export default function LeadForm({
       className={className}
     >
       <h3 className={`font-heading font-bold text-[var(--sv-navy)] ${isCompact ? "text-lg mb-4" : "text-xl mb-6"}`}>
-        {title}
+        {contextualTitle}
       </h3>
 
       <div
@@ -224,7 +234,7 @@ export default function LeadForm({
         ) : (
           <>
             <Send className="w-4 h-4" />
-            {buttonText}
+            {contextualButton}
           </>
         )}
       </button>
