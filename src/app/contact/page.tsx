@@ -21,8 +21,8 @@ export default async function ContactPage({ searchParams }: {
     <>
       <PageHero
         eyebrow="Contact"
-        title={initialLocation ? `Request a Screening in ${initialLocation.shortName}` : "Schedule a Free Vein Consultation"}
-        description={initialLocation ? `${initialLocation.shortName} is selected below. You can change your preferred office before sending your request.` : "Choose the location most convenient for you, call directly, or send a consultation request to our care team."}
+        title={initialLocation ? "Request a Vein Screening" : "Schedule a Free Vein Consultation"}
+        description={initialLocation ? "Choose your preferred office below before sending your screening request." : "Choose the location most convenient for you, call directly, or send a consultation request to our care team."}
         breadcrumbs={[
           { name: "Home", url: `${BUSINESS.siteUrl}/` },
           { name: "Contact", url: `${BUSINESS.siteUrl}/contact` },

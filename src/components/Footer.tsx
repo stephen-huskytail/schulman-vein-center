@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import Image from "next/image";
 import { Phone, Mail, MapPin } from "lucide-react";
 import { BUSINESS, LOCATIONS } from "@/lib/constants";
@@ -6,6 +9,9 @@ import CallNowButton from "@/components/CallNowButton";
 
 export default function Footer() {
   const year = new Date().getFullYear();
+  const isManhasset = usePathname() === "/locations/manhasset";
+  const contactHref = isManhasset ? "/contact?location=manhasset#contact" : "/contact";
+  const manhasset = LOCATIONS.find((location) => location.id === "manhasset")!;
 
   return (
     <footer className="bg-[var(--sv-navy)] text-white">
@@ -21,8 +27,15 @@ export default function Footer() {
             </p>
           </div>
           <div className="flex flex-col sm:flex-row items-center gap-3 shrink-0">
-            <CallNowButton variant="secondary" />
-            <Link href="/contact" className="btn-gold text-sm">
+            {isManhasset ? (
+              <a href={manhasset.phoneHref} className="btn-secondary text-sm min-h-12">
+                <Phone className="w-4 h-4" />
+                Call Manhasset
+              </a>
+            ) : (
+              <CallNowButton variant="secondary" />
+            )}
+            <Link href={contactHref} className="btn-gold text-sm">
               Schedule Consultation
             </Link>
           </div>
@@ -93,7 +106,7 @@ export default function Footer() {
                 { label: "Patient Reviews", href: "/reviews" },
                 { label: "FAQ – About Veins", href: "/faq" },
                 { label: "Insurance Coverage", href: "/#insurance" },
-                { label: "Contact & Locations", href: "/contact" },
+                { label: "Contact & Locations", href: contactHref },
               ].map((l) => (
                 <li key={l.label}>
                   <Link
@@ -158,7 +171,7 @@ export default function Footer() {
             <Link href="/sitemap-page" className="py-1 hover:text-white/80 transition-colors">Sitemap</Link>
             <Link href="/privacy" className="py-1 hover:text-white/80 transition-colors">Privacy Policy</Link>
             <Link href="/terms" className="py-1 hover:text-white/80 transition-colors">Terms of Use</Link>
-            <Link href="/contact" className="py-1 hover:text-white/80 transition-colors">Contact Us</Link>
+            <Link href={contactHref} className="py-1 hover:text-white/80 transition-colors">Contact Us</Link>
           </div>
         </div>
       </div>
