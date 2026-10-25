@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import ContactSection from "@/components/ContactSection";
 import PageHero from "@/components/PageHero";
-import { BUSINESS } from "@/lib/constants";
+import { BUSINESS, LOCATIONS } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Contact Us — Manhattan, Manhasset & Commack",
@@ -12,19 +12,23 @@ export const metadata: Metadata = {
   },
 };
 
-export default function ContactPage() {
+export default async function ContactPage({ searchParams }: {
+  searchParams: Promise<{ location?: string | string[] }>;
+}) {
+  const query = await searchParams;
+  const initialLocation = LOCATIONS.find((location) => location.id === query.location);
   return (
     <>
       <PageHero
         eyebrow="Contact"
-        title="Schedule a Free Vein Consultation"
-        description="Choose the location most convenient for you, call directly, or send a consultation request to our care team."
+        title={initialLocation ? `Request a Screening in ${initialLocation.shortName}` : "Schedule a Free Vein Consultation"}
+        description={initialLocation ? `${initialLocation.shortName} is selected below. You can change your preferred office before sending your request.` : "Choose the location most convenient for you, call directly, or send a consultation request to our care team."}
         breadcrumbs={[
           { name: "Home", url: `${BUSINESS.siteUrl}/` },
           { name: "Contact", url: `${BUSINESS.siteUrl}/contact` },
         ]}
       />
-      <ContactSection />
+      <ContactSection key={initialLocation?.id ?? "general"} initialLocation={initialLocation?.id} />
     </>
   );
 }

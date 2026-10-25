@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { Menu, X, ChevronDown, Phone } from "lucide-react";
 import { LOCATIONS } from "@/lib/constants";
 import CallNowButton from "@/components/CallNowButton";
@@ -54,6 +55,8 @@ const NAV_ITEMS: NavItem[] = [
 ];
 
 export default function Header() {
+  const isManhasset = usePathname() === "/locations/manhasset";
+  const contactHref = isManhasset ? "/contact?location=manhasset#contact" : "/contact";
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
@@ -106,7 +109,7 @@ export default function Header() {
                 onMouseLeave={() => setActiveDropdown(null)}
               >
                 <Link
-                  href={item.href}
+                  href={item.href === "/contact" ? contactHref : item.href}
                   className={cn(
                     "flex items-center gap-1 px-3 py-2 text-sm font-semibold rounded-lg transition-colors",
                     "text-[var(--sv-navy)] hover:text-[var(--sv-teal)] hover:bg-[var(--sv-teal)]/5"
@@ -139,7 +142,7 @@ export default function Header() {
 
           <div className="hidden xl:flex items-center gap-3">
             <CallNowButton variant="compact" />
-            <Link href="/contact" className="btn-primary text-sm py-2.5 px-5">
+            <Link href={contactHref} className="btn-primary text-sm py-2.5 px-5">
               Free Screening
             </Link>
           </div>
@@ -166,7 +169,7 @@ export default function Header() {
               {NAV_ITEMS.map((item) => (
                 <div key={item.label}>
                   <Link
-                    href={item.href}
+                    href={item.href === "/contact" ? contactHref : item.href}
                     className="flex items-center justify-between px-4 py-3 rounded-xl text-base font-semibold text-[var(--sv-navy)] hover:bg-[var(--sv-teal)]/5 hover:text-[var(--sv-teal)] transition-colors"
                     onClick={handleNavClick}
                   >
@@ -210,7 +213,7 @@ export default function Header() {
 
             <div className="mt-4">
               <Link
-                href="/contact"
+                href={contactHref}
                 className="btn-primary w-full justify-center text-center"
                 onClick={handleNavClick}
               >
