@@ -76,7 +76,7 @@ export default function NassauCountyPage() {
       </section>
 
       <section className="section-gray">
-        <div className="container-sv grid items-start gap-8 lg:grid-cols-2 text-gray-700 [&_h2]:mb-5 [&_h2]:font-heading [&_h2]:text-2xl [&_h2]:font-bold [&_h2]:text-[var(--sv-navy)] md:[&_h2]:text-3xl [&_p]:leading-relaxed">
+        <div className="container-sv columns-1 gap-8 lg:columns-2 text-gray-700 [&>article]:mb-8 [&>article]:break-inside-avoid [&>article:last-child]:mb-0 [&_h2]:mb-5 [&_h2]:font-heading [&_h2]:text-2xl [&_h2]:font-bold [&_h2]:text-[var(--sv-navy)] md:[&_h2]:text-3xl [&_p]:leading-relaxed">
           <article className="rounded-2xl border border-gray-100 bg-white p-6 shadow-card md:p-8">
             <h2>What to Look For in a Vein Doctor in Nassau County</h2>
             <p className="mb-5">Searching for a vein specialist in Nassau County brings up many kinds of clinics. These questions make them easier to compare:</p>
