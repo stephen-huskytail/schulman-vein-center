@@ -301,3 +301,9 @@
 - Deploy method: git push to main (GitHub → Vercel auto-deploy). No deploy.py exists; standard Vercel GitHub integration handles it.
 - Image generation: OpenAI API key from Doppler (huskytail-clients/prd → OPENAI_API_KEY), model gpt-image-2 via hermes venv Python.
 - Slack posting: SLACK_BOT_TOKEN from Doppler (huskytail-clients/prd), posted via curl to Slack API.
+
+## Published 2026-10-28 — Spider veins on face
+- URL: https://www.schulmanveincenter.com/blog/spider-veins-on-face
+- Published October 28, 2026; Dr. Lee G. Schulman; primary keyword: spider veins on face.
+- PR16 release55468d1; approved/QC head295139e. Exact-copy/list/table/FAQ preservation, article-only absolute title, three images, five contextual links, schema/index/sitemap and live HTTP29/29 verified. Desktop1440/mobile390 public rendering and table scroller pass.
+- Inter and Playfair are now self-hosted through next/font/local (same weights/variables/display, Playfair serif fallback), with original OFL licenses/source notes. No dependency upgrade. This removes the intermittent extensionless Google font URL build failure; font change passed independent QC on the exact head.
