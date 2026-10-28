@@ -1,22 +1,26 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import { Toaster } from "sonner";
 import SiteChrome from "@/components/SiteChrome";
 import ScrollToTop from "@/components/ScrollToTop";
 import { BUSINESS } from "@/lib/constants";
 
-const inter = Inter({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+const inter = localFont({
+  src: "./fonts/Inter-latin-variable.woff2",
+  weight: "400 700",
+  style: "normal",
   variable: "--font-inter",
+  adjustFontFallback: "Arial",
   display: "swap",
 });
 
-const playfair = Playfair_Display({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
+const playfair = localFont({
+  src: "./fonts/PlayfairDisplay-latin-variable.woff2",
+  weight: "400 800",
+  style: "normal",
   variable: "--font-playfair",
+  adjustFontFallback: "Times New Roman",
   display: "swap",
 });
 
