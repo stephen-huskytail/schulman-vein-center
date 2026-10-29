@@ -3707,7 +3707,7 @@ export const BLOG_POSTS: BlogPost[] = [
         bullets: [
           "Health history intake: A member of our clinical team will review your medical history, current medications, prior procedures, and symptom timeline before the physician enters the room.",
           "Visual and physical examination: Your physician will examine your legs while you are standing. Gravity causes veins to fill with blood, which makes reflux and abnormal patterns far easier to see and palpate. You will be asked to stand for at least part of this evaluation.",
-          "Duplex ultrasound: This is the most important diagnostic step. A handheld probe is pressed against the skin of your leg and transmits sound waves that create a real-time image of blood flow inside your veins. The physician looks for reflux (backward blood flow), obstruction, and valve incompetence — none of which are visible on the surface. Duplex ultrasound is non-invasive, painless, and takes 15 to 30 minutes. No referral to an imaging center is needed: we perform all ultrasound in-office.",
+          "Duplex ultrasound: This is the most important diagnostic step. A handheld probe is pressed against the skin of your leg and transmits sound waves that create a real-time image of blood flow inside your veins. The physician looks for reflux (backward blood flow), obstruction, and valve incompetence — none of which are visible on the surface. Duplex ultrasound is non-invasive and takes 15 to 30 minutes. Pressure from the probe can cause slight pain. No referral to an imaging center is needed: we perform all ultrasound in-office.",
           "Diagnosis and findings discussion: Once the examination and imaging are complete, your physician will walk you through exactly what was found — what is working correctly, what is not, and what the clinical significance is.",
           "Treatment options: If treatment is indicated, your physician will explain every option that applies to your situation, including the mechanism, expected outcomes, recovery time, and typical costs and insurance coverage.",
         ],
@@ -3791,7 +3791,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         question: "Will the duplex ultrasound hurt?",
         answer:
-          "No. Duplex ultrasound is entirely non-invasive and painless. A handheld probe is pressed against the skin with ultrasound gel and moved along the leg. There are no needles, no radiation, and no discomfort. The exam takes approximately 15 to 30 minutes.",
+          "Duplex ultrasound is non-invasive, but pressure from the probe can cause slight pain. A handheld probe is pressed against the skin with ultrasound gel and moved along the leg. The ultrasound scan itself uses no needles or ionizing radiation. The exam takes approximately 15 to 30 minutes.",
       },
       {
         question: "What should I wear to a vein consultation?",
@@ -4228,7 +4228,7 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "How CVI Is Diagnosed",
         paragraphs: [
           "Accurate diagnosis of CVI begins with a thorough clinical evaluation. At Schulman Vein Center, our physicians start by reviewing your medical history, occupational habits, symptoms, and any prior vein treatments or clot history.",
-          "The cornerstone diagnostic tool is duplex ultrasound — a non-invasive imaging technique that maps the venous anatomy of your legs and identifies exactly where reflux is occurring. This study is performed in-office, requires no preparation, and typically takes 30–45 minutes.",
+          "The cornerstone diagnostic tool is duplex ultrasound — a non-invasive imaging technique that maps the venous anatomy of your legs and identifies exactly where reflux is occurring. This study is performed in-office and typically takes 30–45 minutes. Little or no special preparation is usually needed, but instructions depend on the scan. Follow the clinic’s preparation instructions.",
           "Duplex ultrasound allows us to:",
           "This imaging-guided approach is why a specialist evaluation at Schulman Vein Center yields far more actionable information than a general practitioner visit. Treatment decisions rooted in objective ultrasound findings lead to better, more durable outcomes.",
         ],
