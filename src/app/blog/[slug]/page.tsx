@@ -76,7 +76,7 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
     : `${BUSINESS.siteUrl}${post.featuredImage ?? "/images/gallery/varicose-large.png"}`;
 
   return {
-    title: ["phlebologist-vs-vascular-surgeon", "spider-veins-on-face"].includes(post.slug)
+    title: ["phlebologist-vs-vascular-surgeon", "spider-veins-on-face", "venous-duplex-ultrasound"].includes(post.slug)
       ? { absolute: post.metaTitle! }
       : post.metaTitle ?? `${post.title} | Schulman Vein and Laser Center`,
     description: post.metaDescription ?? post.excerpt,
@@ -327,7 +327,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               ))}
             </div>
 
-            {post.faqSection?.length && post.slug !== "spider-veins-on-face" ? (
+            {post.faqSection?.length && !["spider-veins-on-face", "venous-duplex-ultrasound"].includes(post.slug) ? (
               <section className="mt-10 rounded-xl border border-gray-100 bg-white p-6 md:p-7">
                 <h2 className="font-heading text-2xl font-bold text-[var(--sv-navy)] mb-6 flex items-center gap-2">
                   <HelpCircle className="w-6 h-6 text-[var(--sv-teal)]" />
