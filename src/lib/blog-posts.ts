@@ -791,7 +791,7 @@ export const BLOG_POSTS: BlogPost[] = [
     {
       heading: "How We Diagnose and Treat Vein Disease in Men",
       paragraphs: [
-        "A vein evaluation begins with a physical exam and symptom history. Duplex ultrasound is the standard next step: a painless imaging test that maps the leg veins and measures blood flow direction to confirm whether venous reflux is present.",
+        "A vein evaluation begins with a physical exam and symptom history. When indicated, duplex ultrasound is the standard next step: a non-invasive imaging test that should not be painful, although pressing on a vein can cause slight pain. It maps the leg veins and measures blood flow direction to confirm whether venous reflux is present.",
         "When treatment is appropriate, most male patients are candidates for the same minimally invasive, in-office procedures used for women, including <a href=\"/blog/radiofrequency-ablation-varicose-veins-new-york\">radiofrequency ablation</a>, VenaSeal, and <a href=\"/services/varicose-vein-treatment\">sclerotherapy for varicose and spider veins</a>. These procedures are performed under local anesthesia, and most patients return to normal activity within a day or two, following their physician's specific guidance. Staying active with regular walking supports healthy circulation after treatment and as part of ongoing vein health.",
       ],
       imageSrc: "/images/blog/vein-disease-in-men-active-lifestyle-new-york.png",
@@ -801,7 +801,7 @@ export const BLOG_POSTS: BlogPost[] = [
     {
       heading: "Book a Free Vein Screening in New York",
       paragraphs: [
-        "If you're a man noticing leg heaviness, swelling, or visible veins, don't assume it's just from being on your feet or getting older. Schulman Vein and Laser Center provides physician-led evaluations, including duplex ultrasound, at three New York locations serving Manhattan, Nassau County, and Suffolk County.",
+        "If you're a man noticing leg heaviness, swelling, or visible veins, don't assume it's just from being on your feet or getting older. Schulman Vein and Laser Center provides physician-led evaluations, including duplex ultrasound when indicated, at three New York locations serving Manhattan, Nassau County, and Suffolk County.",
         "Book a <a href=\"/services/free-vein-screening\">Free Vein Screening</a> to have your legs evaluated. Call Manhattan at 212.987.0500, Manhasset at 516.482.4477, or Commack at 631.543.4599. This article is educational and does not replace an in-person medical evaluation.",
       ],
       callout: {
@@ -953,7 +953,7 @@ export const BLOG_POSTS: BlogPost[] = [
     {
       heading: "How We Diagnose and Treat Vein Disease Linked to Family History",
       paragraphs: [
-        "A vein evaluation begins with a physical exam and a review of your family and symptom history. Duplex ultrasound is the standard next step: a painless imaging test that maps your leg veins and measures blood flow direction to confirm whether venous reflux is present, often before varicose veins are visible to the eye.",
+        "A vein evaluation begins with a physical exam and a review of your family and symptom history. When indicated, duplex ultrasound is the standard next step: a non-invasive imaging test that should not be painful, although pressing on a vein can cause slight pain. It maps your leg veins and measures blood flow direction to confirm whether venous reflux is present, often before varicose veins are visible to the eye.",
         "When treatment is appropriate, most patients today are candidates for minimally invasive, in-office procedures rather than traditional surgery, including <a href=\"/blog/radiofrequency-ablation-varicose-veins-new-york\">radiofrequency ablation</a>, VenaSeal, and <a href=\"/services/varicose-vein-treatment\">sclerotherapy for varicose and spider veins</a>. These procedures are performed under local anesthesia, and most patients return to normal activity within a day or two, following their physician's specific guidance.",
       ],
       imageSrc: "/images/blog/family-history-vein-ultrasound-screening-new-york.png",
@@ -963,7 +963,7 @@ export const BLOG_POSTS: BlogPost[] = [
     {
       heading: "Book a Free Vein Screening in New York",
       paragraphs: [
-        "If vein disease runs in your family, don't wait for visible varicose veins before asking questions. Schulman Vein and Laser Center provides physician-led evaluations, including duplex ultrasound, at three New York locations serving Manhattan, Nassau County, and Suffolk County.",
+        "If vein disease runs in your family, don't wait for visible varicose veins before asking questions. Schulman Vein and Laser Center provides physician-led evaluations, including duplex ultrasound when indicated, at three New York locations serving Manhattan, Nassau County, and Suffolk County.",
         "Book a <a href=\"/services/free-vein-screening\">Free Vein Screening</a> to have your legs evaluated. Call Manhattan at 212.987.0500, Manhasset at 516.482.4477, or Commack at 631.543.4599. This article is educational and does not replace an in-person medical evaluation.",
       ],
       callout: {
@@ -1120,7 +1120,7 @@ export const BLOG_POSTS: BlogPost[] = [
     {
       heading: "How Vein Disease From Prolonged Standing Is Diagnosed and Treated",
       paragraphs: [
-        "A vein evaluation for standing-related symptoms begins with a physical examination and a review of your work history, shift length, and symptom pattern. Duplex ultrasound is the standard next step: a painless imaging test that maps the veins in your leg and measures the direction of blood flow to confirm whether venous reflux is present and how severe it is.",
+        "A vein evaluation for standing-related symptoms begins with a physical examination and a review of your work history, shift length, and symptom pattern. When indicated, duplex ultrasound is the standard next step: a non-invasive imaging test that should not be painful, although pressing on a vein can cause slight pain. It maps the veins in your leg and measures the direction of blood flow to confirm whether venous reflux is present and how severe it is.",
         "When reflux is confirmed and treatment is appropriate, most patients today are candidates for minimally invasive, in-office procedures rather than traditional surgery, including <a href=\"/blog/radiofrequency-ablation-varicose-veins-new-york\">radiofrequency ablation</a>, VenaSeal, and <a href=\"/services/varicose-vein-treatment\">sclerotherapy for varicose and spider veins</a>. These procedures are performed under local anesthesia, and most patients return to work — including standing jobs — within a day or two, following their physician's specific guidance.",
       ],
       imageSrc: "/images/blog/standing-all-day-vein-ultrasound-evaluation-new-york.png",
@@ -1134,7 +1134,7 @@ export const BLOG_POSTS: BlogPost[] = [
     {
       heading: "Book a Free Vein Screening in New York",
       paragraphs: [
-        "If your legs consistently ache, swell, or show visible veins after standing shifts, don't wait for symptoms to worsen. Schulman Vein and Laser Center provides physician-led evaluations, including duplex ultrasound, at three New York locations serving Manhattan, Nassau County, and Suffolk County.",
+        "If your legs consistently ache, swell, or show visible veins after standing shifts, don't wait for symptoms to worsen. Schulman Vein and Laser Center provides physician-led evaluations, including duplex ultrasound when indicated, at three New York locations serving Manhattan, Nassau County, and Suffolk County.",
         "Book a <a href=\"/services/free-vein-screening\">Free Vein Screening</a> to have your legs evaluated. Call Manhattan at 212.987.0500, Manhasset at 516.482.4477, or Commack at 631.543.4599. This article is educational and does not replace an in-person medical evaluation.",
       ],
       callout: {
@@ -2946,7 +2946,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         heading: "What to Expect at Your First Visit",
         paragraphs: [
-          "Your initial visit to our Commack office begins with a comprehensive vein evaluation. One of our physicians will take a detailed medical history, ask about your symptoms, and perform a physical examination of your legs. In most cases, we will also perform a duplex ultrasound study — a painless, non-invasive imaging test that maps the venous anatomy of your legs and identifies any underlying reflux or insufficiency that may not be visible on the surface.",
+          "Your initial visit to our Commack office begins with a comprehensive vein evaluation. One of our physicians will take a detailed medical history, ask about your symptoms, and perform a physical examination of your legs. When indicated, we will also perform a duplex ultrasound study — a non-invasive imaging test that should not be painful, although pressing on a vein can cause slight pain. It maps the venous anatomy of your legs and identifies any underlying reflux or insufficiency that may not be visible on the surface.",
           "Based on the evaluation findings, your physician will explain exactly what is happening in your venous system, which veins are affected, and what treatment options are appropriate. You will have the opportunity to ask questions and discuss your goals — whether your primary concern is symptom relief, cosmetic improvement, or both.",
           "There is no pressure to proceed with treatment at your first visit. Our goal is to ensure you have the information you need to make a confident, informed decision.",
         ],
@@ -2997,7 +2997,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         question: "Do I need a referral to see a vein specialist in Commack?",
-        answer: "No referral is required to schedule a Free Vein Screening at our Commack office. You can call us directly at 631.543.4599 or book online. Our physicians will perform a full evaluation, including duplex ultrasound, at your first visit.",
+        answer: "No referral is required to schedule a Free Vein Screening at our Commack office. You can call us directly at 631.543.4599 or book online. Our physicians will perform a full evaluation, including duplex ultrasound when indicated, at your first visit.",
       },
       {
         question: "Is vein treatment painful?",
@@ -3240,8 +3240,8 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         heading: "How Duplex Ultrasound Supports Your Medicare Claim",
         paragraphs: [
-          "A duplex ultrasound is a painless, non-invasive scan that maps blood flow in your veins and identifies reflux — the backward flow of blood that is the hallmark of venous insufficiency. This test is central to Medicare coverage for varicose vein treatment because it provides objective, documented evidence that your veins are medically compromised.",
-          "Without a duplex ultrasound confirming venous reflux or insufficiency, Medicare is unlikely to approve treatment — even if your veins are visibly large and symptomatic. At Schulman Vein and Laser Center, we perform duplex ultrasound in-office at our Manhattan, Manhasset, and Commack locations. The scan takes approximately 30–45 minutes and produces a detailed report that becomes part of your insurance documentation.",
+          "A duplex ultrasound is a non-invasive scan that maps blood flow in your veins and identifies reflux — the backward flow of blood that is the hallmark of venous insufficiency. It should not be painful, although pressing on a vein can cause slight pain. This test is central to Medicare coverage for varicose vein treatment because it provides objective, documented evidence that your veins are medically compromised.",
+          "Without a duplex ultrasound confirming venous reflux or insufficiency, Medicare is unlikely to approve treatment — even if your veins are visibly large and symptomatic. At Schulman Vein and Laser Center, we perform duplex ultrasound in-office at our Manhattan, Manhasset, and Commack locations. The scan produces a detailed report that becomes part of your insurance documentation.",
         ],
       },
       {
@@ -3531,7 +3531,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         heading: "How DVT Is Diagnosed",
         paragraphs: [
-          "When a patient presents with symptoms suggestive of DVT, the primary diagnostic tool is duplex ultrasound — a non-invasive imaging technique that visualizes blood flow in real time and can detect the presence, location, and extent of a clot with excellent accuracy. This is a painless, office-based exam that takes approximately 30–60 minutes.",
+          "When a patient presents with symptoms suggestive of DVT, the primary diagnostic tool is duplex ultrasound — a non-invasive imaging technique that visualizes blood flow in real time and can detect the presence, location, and extent of a clot with excellent accuracy. This is an office-based exam that should not be painful, although pressing on a vein can cause slight pain.",
           "In some cases, a D-dimer blood test may be ordered. Elevated D-dimer levels indicate that the body is actively breaking down a clot, but the test alone cannot confirm DVT — it must be interpreted alongside clinical findings and ultrasound results.",
           "At Schulman Vein and Laser Center, our phlebologists are experts in vascular ultrasound interpretation. We take a comprehensive view: not just whether a clot is present today, but what anatomical or lifestyle factors may have contributed — and what steps will reduce your risk going forward.",
         ],
@@ -3713,7 +3713,7 @@ export const BLOG_POSTS: BlogPost[] = [
         ],
         callout: {
           type: "info",
-          text: "All duplex ultrasound imaging is performed in our offices — no separate imaging appointment, no waiting weeks for results. Your physician reviews the ultrasound findings with you the same day.",
+          text: "Ask the office where your ultrasound will take place, when the results will be available and who will explain them.",
         },
       },
       {
