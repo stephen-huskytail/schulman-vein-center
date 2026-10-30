@@ -801,7 +801,7 @@ export const BLOG_POSTS: BlogPost[] = [
     {
       heading: "Book a Free Vein Screening in New York",
       paragraphs: [
-        "If you're a man noticing leg heaviness, swelling, or visible veins, don't assume it's just from being on your feet or getting older. Schulman Vein and Laser Center provides physician-led evaluations, including duplex ultrasound, at three New York locations serving Manhattan, Nassau County, and Suffolk County.",
+        "If you're a man noticing leg heaviness, swelling, or visible veins, don't assume it's just from being on your feet or getting older. Schulman Vein and Laser Center provides physician-led evaluations, including duplex ultrasound when indicated, at three New York locations serving Manhattan, Nassau County, and Suffolk County.",
         "Book a <a href=\"/services/free-vein-screening\">Free Vein Screening</a> to have your legs evaluated. Call Manhattan at 212.987.0500, Manhasset at 516.482.4477, or Commack at 631.543.4599. This article is educational and does not replace an in-person medical evaluation.",
       ],
       callout: {
@@ -963,7 +963,7 @@ export const BLOG_POSTS: BlogPost[] = [
     {
       heading: "Book a Free Vein Screening in New York",
       paragraphs: [
-        "If vein disease runs in your family, don't wait for visible varicose veins before asking questions. Schulman Vein and Laser Center provides physician-led evaluations, including duplex ultrasound, at three New York locations serving Manhattan, Nassau County, and Suffolk County.",
+        "If vein disease runs in your family, don't wait for visible varicose veins before asking questions. Schulman Vein and Laser Center provides physician-led evaluations, including duplex ultrasound when indicated, at three New York locations serving Manhattan, Nassau County, and Suffolk County.",
         "Book a <a href=\"/services/free-vein-screening\">Free Vein Screening</a> to have your legs evaluated. Call Manhattan at 212.987.0500, Manhasset at 516.482.4477, or Commack at 631.543.4599. This article is educational and does not replace an in-person medical evaluation.",
       ],
       callout: {
@@ -1134,7 +1134,7 @@ export const BLOG_POSTS: BlogPost[] = [
     {
       heading: "Book a Free Vein Screening in New York",
       paragraphs: [
-        "If your legs consistently ache, swell, or show visible veins after standing shifts, don't wait for symptoms to worsen. Schulman Vein and Laser Center provides physician-led evaluations, including duplex ultrasound, at three New York locations serving Manhattan, Nassau County, and Suffolk County.",
+        "If your legs consistently ache, swell, or show visible veins after standing shifts, don't wait for symptoms to worsen. Schulman Vein and Laser Center provides physician-led evaluations, including duplex ultrasound when indicated, at three New York locations serving Manhattan, Nassau County, and Suffolk County.",
         "Book a <a href=\"/services/free-vein-screening\">Free Vein Screening</a> to have your legs evaluated. Call Manhattan at 212.987.0500, Manhasset at 516.482.4477, or Commack at 631.543.4599. This article is educational and does not replace an in-person medical evaluation.",
       ],
       callout: {
