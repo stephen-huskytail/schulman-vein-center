@@ -7,7 +7,7 @@ import { Phone, Mail, MapPin } from "lucide-react";
 import { BUSINESS, LOCATIONS } from "@/lib/constants";
 import CallNowButton from "@/components/CallNowButton";
 
-export default function Footer() {
+export default function Footer({ neutral = false }: { neutral?: boolean }) {
   const year = new Date().getFullYear();
   const isManhasset = usePathname() === "/locations/manhasset";
   const contactHref = isManhasset ? "/contact?location=manhasset#contact" : "/contact";
@@ -15,6 +15,8 @@ export default function Footer() {
 
   return (
     <footer className="bg-[var(--sv-navy)] text-white">
+      {!neutral && (
+        <>
       {/* ── CTA Band ── */}
       <div className="bg-[var(--sv-teal)] py-8 md:py-10">
         <div className="container-sv flex flex-col md:flex-row items-center justify-between gap-6">
@@ -42,6 +44,9 @@ export default function Footer() {
         </div>
       </div>
 
+        </>
+      )}
+
       {/* ── Main Footer ── */}
       <div className="py-12 md:py-16 border-b border-white/10">
         <div className="container-sv grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
@@ -52,7 +57,7 @@ export default function Footer() {
               <p className="font-heading text-[#C8973A] text-sm font-medium">and Laser Center</p>
             </div>
             <p className="text-white/70 text-sm leading-relaxed">
-              Manhattan and Long Island's vein specialists. Exclusively dedicated to the diagnosis and treatment of vein disease for over 55 years.
+              {neutral ? "Manhattan and Long Island's vein specialists." : "Manhattan and Long Island's vein specialists. Exclusively dedicated to the diagnosis and treatment of vein disease for over 55 years."}
             </p>
             <div className="mt-4 inline-flex items-center gap-2 bg-[var(--sv-gold)]/10 border border-[var(--sv-gold)]/30 rounded-full px-4 py-1.5">
               <span className="w-1.5 h-1.5 rounded-full bg-[var(--sv-gold)] shrink-0" />
@@ -80,7 +85,7 @@ export default function Footer() {
                 { label: "Hand & Body Vein Treatment", href: "/services/body-vein-treatment" },
                 { label: "Phlebitis Treatment", href: "/services/vein-disorders" },
                 { label: "Venous Leg Ulcers", href: "/services/vein-disorders" },
-                { label: "Free Vein Screening", href: "/services/free-vein-screening" },
+                { label: neutral ? "Vein Screening" : "Free Vein Screening", href: "/services/free-vein-screening" },
               ].map((s) => (
                 <li key={s.label}>
                   <Link
@@ -107,7 +112,7 @@ export default function Footer() {
                 { label: "FAQ – About Veins", href: "/faq" },
                 { label: "Insurance Coverage", href: "/#insurance" },
                 { label: "Contact & Locations", href: contactHref },
-              ].map((l) => (
+              ].filter((l) => !(neutral && l.href === "/reviews")).map((l) => (
                 <li key={l.label}>
                   <Link
                     href={l.href}

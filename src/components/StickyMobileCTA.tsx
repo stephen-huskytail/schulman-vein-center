@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { LOCATIONS } from "@/lib/constants";
 import CallNowButton from "@/components/CallNowButton";
 
-export default function StickyMobileCTA() {
+export default function StickyMobileCTA({ neutral = false }: { neutral?: boolean }) {
   const isManhasset = usePathname() === "/locations/manhasset";
   const manhasset = LOCATIONS.find((location) => location.id === "manhasset")!;
   return (
@@ -28,7 +28,7 @@ export default function StickyMobileCTA() {
           className="flex flex-col items-center justify-center gap-1 py-3 bg-[var(--sv-teal)] text-white active:bg-[var(--sv-teal-light)] transition-colors"
         >
           <Calendar className="w-5 h-5" />
-          <span className="text-xs font-bold tracking-wide">{isManhasset ? "Manhasset Screening" : "Free Screening"}</span>
+          <span className="text-xs font-bold tracking-wide">{isManhasset ? "Manhasset Screening" : neutral ? "Schedule a Screening" : "Free Screening"}</span>
         </a>
       </div>
     </div>
