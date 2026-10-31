@@ -39,6 +39,8 @@ export const COMMUNITIES = [
   "Bayside and Fresh Meadows (Queens)",
   "Williston Park, Herricks, and Albertson",
 ];
-export const DOCTORS = ["Dr. Martin L. Schulman, M.D., Physician", "Dr. Lee G. Schulman, M.D., Physician"];
+export const DOCTORS: [string, string][] = [["martin-schulman", "Dr. Martin L. Schulman, M.D., Physician"], ["lee-schulman", "Dr. Lee G. Schulman, M.D., Physician"]];
 export const DOCTORS_AVAILABILITY = "Both Dr. Martin L. Schulman and Dr. Lee G. Schulman see patients at the Manhasset office.";
 
+// Stephen's line (via PM - Stephen f45b249f), directly under the testimonials heading.
+export const EXPERIENCES_LINE = "Individual experiences vary. Treatment suitability, recovery and outcomes depend on the patient; no result is guaranteed.";

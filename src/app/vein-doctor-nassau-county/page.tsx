@@ -3,6 +3,8 @@ import Link from "next/link";
 import { MapPin, Phone } from "lucide-react";
 import Image from "next/image";
 import { createBreadcrumbSchema } from "@/lib/utils";
+import { DOCTORS as DOCTOR_RECORDS } from "@/lib/constants";
+import PatientReviewsBlock from "@/components/PatientReviewsBlock";
 import { ChevronRight, Plus } from "lucide-react";
 import { NASSAU_COUNTY_FAQS } from "@/lib/nassau-county";
 import { COMMUNITIES, COVERAGE, DEFINITIONS, DESCRIPTION, DOCTORS, DOCTORS_AVAILABILITY, LEAD_QUESTIONS_CLOSING, OFFICE_INTRO, SUITABILITY, VARIANT, VARIANTS } from "@/lib/nassau-county-page";
@@ -138,14 +140,17 @@ export default function NassauCountyPage() {
           </article>
           <article className="rounded-2xl border border-gray-100 bg-white p-6 shadow-card md:p-8">
             <h2>Meet the Doctors</h2>
-            <ul className="mb-4 space-y-1 font-heading text-xl font-semibold text-[var(--sv-navy)]">
-              {DOCTORS.map((name) => (<li key={name}>{name}</li>))}
+            <ul className="mb-4 space-y-3 font-heading text-xl font-semibold text-[var(--sv-navy)]">
+              {DOCTORS.map(([id, name]) => (<li key={id}>{name}<span className="mt-0.5 block font-body text-base font-normal text-gray-600">{DOCTOR_RECORDS.find((d) => d.id === id)?.credentials}</span></li>))}
             </ul>
             <p className="mb-4">{DOCTORS_AVAILABILITY}</p>
             <p>Please call ahead if you would like to schedule with your preferred doctor. Learn more <Link href="/about#doctors" className={textLink}>about our doctors</Link>.</p>
           </article>
         </div>
       </section>
+
+      {/* HUS-1366: ONE removable block (NY Education Law §6530(27)(a)(iii) advisory). To remove: delete this line and the import above, then delete src/components/PatientReviewsBlock.tsx. */}
+      <PatientReviewsBlock />
 
       <section className="section-cream" aria-labelledby="county-faq-heading">
         <div className="container-narrow">
