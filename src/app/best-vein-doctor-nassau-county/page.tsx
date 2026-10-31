@@ -91,8 +91,9 @@ export default function BestVeinDoctorNassauCountyPage() {
             <div className="gold-line mb-6" />
             <p className="max-w-xl text-base leading-relaxed text-white/80 md:text-lg">{COPY.intro}</p>
           </div>
-          <div className="mx-auto w-full max-w-[480px] overflow-hidden rounded-2xl border border-white/20 bg-white p-3 shadow-xl sm:p-5">
-            <Image src="/images/team.jpg" alt="Portraits of the two Schulman vein doctors" width={520} height={240} priority sizes="(max-width: 520px) 90vw, 480px" className="h-auto w-full object-contain" />
+          <div className="mx-auto w-full max-w-[480px] overflow-hidden rounded-2xl border border-white/20 bg-white shadow-xl">
+            {/* The source file has blue bars at both edges; the image is scaled so the card shows the two portraits and captions only (crop by CSS, no new imagery). */}
+            <Image src="/images/team.jpg" alt="Portraits of the two Schulman vein doctors" width={520} height={240} priority sizes="(max-width: 520px) 100vw, 480px" className="-ml-[6%] h-auto w-[112%] max-w-none" />
           </div>
         </div>
       </section>
@@ -121,7 +122,7 @@ export default function BestVeinDoctorNassauCountyPage() {
       <section className="bg-white py-12 md:py-16">
         <div className="container-sv space-y-8">
           <article className={card}>
-            <h2 className="mb-4">What to Look For in a Vein Doctor or Vein Center in Nassau County</h2>
+            <h2 className="section-title mb-4">What to Look For in a Vein Doctor or Vein Center in Nassau County</h2>
             <p className="mb-4">{COPY.lookForIntro}</p>
             <ul className={listClass}>
               {COPY.lookFor.map(([q, a]) => (<li key={q}><strong>{q}</strong> {a}</li>))}
@@ -130,7 +131,7 @@ export default function BestVeinDoctorNassauCountyPage() {
           </article>
 
           <article className={card}>
-            <h2 className="mb-4">Our Doctors at the Manhasset Office</h2>
+            <h2 className="section-title mb-4">Our Doctors at the Manhasset Office</h2>
             <ul className="mb-4 space-y-1 font-heading text-xl font-semibold text-[var(--sv-navy)]">
               {COPY.doctors.map((d) => (<li key={d}>{d}</li>))}
             </ul>
@@ -141,7 +142,7 @@ export default function BestVeinDoctorNassauCountyPage() {
           </article>
 
           <article className={card}>
-            <h2 className="mb-4">What Happens at a Vein Screening</h2>
+            <h2 className="section-title mb-4">What Happens at a Vein Screening</h2>
             <p className="mb-3">{COPY.screeningIntro}</p>
             <ul className={`${listClass} mb-5`}>
               {COPY.screeningSteps.map((s) => (<li key={s}>{s}</li>))}
@@ -152,7 +153,7 @@ export default function BestVeinDoctorNassauCountyPage() {
           </article>
 
           <article className={card}>
-            <h2 className="mb-4">Vein Conditions We Evaluate in Nassau County</h2>
+            <h2 className="section-title mb-4">Vein Conditions We Evaluate in Nassau County</h2>
             <Image src="/images/blog/spider-veins-vs-varicose-veins-differences.svg" alt="Illustrated comparison of spider veins and varicose veins" width={1200} height={675} sizes="(max-width: 1024px) 90vw, 560px" className="mb-5 h-auto w-full max-w-xl rounded-xl" />
             <p className="mb-4">{COPY.conditionsIntro}</p>
             <ul className={`${listClass} mb-5`}>
@@ -163,7 +164,7 @@ export default function BestVeinDoctorNassauCountyPage() {
           </article>
 
           <article className={card}>
-            <h2 className="mb-4">Our Manhasset Office</h2>
+            <h2 className="section-title mb-4">Our Manhasset Office</h2>
             <p className="mb-5">{COPY.officeIntro}</p>
             <h3 className="mb-2 font-heading text-xl font-semibold text-[var(--sv-navy)]">Getting there</h3>
             <p className="mb-5">{COPY.gettingThere}</p>
@@ -175,7 +176,7 @@ export default function BestVeinDoctorNassauCountyPage() {
           </article>
 
           <article className={card}>
-            <h2 className="mb-4">Insurance and Cost</h2>
+            <h2 className="section-title mb-4">Insurance and Cost</h2>
             <p className="mb-3">{COPY.insurance1}</p>
             <p>{COPY.insurance2}</p>
           </article>
