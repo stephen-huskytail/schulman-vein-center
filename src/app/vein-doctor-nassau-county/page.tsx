@@ -3,12 +3,11 @@ import Link from "next/link";
 import { MapPin, Phone } from "lucide-react";
 import Image from "next/image";
 import { createBreadcrumbSchema } from "@/lib/utils";
-import { DOCTORS as DOCTOR_RECORDS, TESTIMONIALS } from "@/lib/constants";
-import { PATIENT_VIDEOS } from "@/lib/patient-videos";
-import PatientVideoReviews from "@/components/PatientVideoReviews";
+import { DOCTORS as DOCTOR_RECORDS } from "@/lib/constants";
+import PatientReviewsBlock from "@/components/PatientReviewsBlock";
 import { ChevronRight, Plus } from "lucide-react";
 import { NASSAU_COUNTY_FAQS } from "@/lib/nassau-county";
-import { COMMUNITIES, COVERAGE, DEFINITIONS, DESCRIPTION, DOCTORS, DOCTORS_AVAILABILITY, EXPERIENCES_LINE, LEAD_QUESTIONS_CLOSING, OFFICE_INTRO, SUITABILITY, VARIANT, VARIANTS } from "@/lib/nassau-county-page";
+import { COMMUNITIES, COVERAGE, DEFINITIONS, DESCRIPTION, DOCTORS, DOCTORS_AVAILABILITY, LEAD_QUESTIONS_CLOSING, OFFICE_INTRO, SUITABILITY, VARIANT, VARIANTS } from "@/lib/nassau-county-page";
 
 const canonical = "https://www.schulmanveincenter.com/vein-doctor-nassau-county";
 const variant = VARIANTS[VARIANT];
@@ -150,23 +149,8 @@ export default function NassauCountyPage() {
         </div>
       </section>
 
-      <section className="bg-white py-12 md:py-16" aria-labelledby="patients-say-heading">
-        <div className="container-sv">
-          <h2 id="patients-say-heading" className="section-title mb-4 text-center">What Our Patients Say</h2>
-          <p className="mx-auto mb-10 max-w-2xl text-center text-base leading-relaxed text-gray-700">{EXPERIENCES_LINE}</p>
-          <div className="grid gap-6 md:grid-cols-2">
-            {TESTIMONIALS.map((t) => (
-              <figure key={t.name} className="rounded-2xl border border-gray-100 bg-white p-6 shadow-card md:p-8">
-                <blockquote className="text-lg leading-relaxed text-gray-700">“{t.text}”</blockquote>
-                <figcaption className="mt-4 font-semibold text-[var(--sv-navy)]">— {t.name}, {t.location}</figcaption>
-              </figure>
-            ))}
-          </div>
-          <div className="mt-14">
-            <PatientVideoReviews videos={PATIENT_VIDEOS} variant="light" />
-          </div>
-        </div>
-      </section>
+      {/* HUS-1366: ONE removable block (NY Education Law §6530(27)(a)(iii) advisory). To remove: delete this line and the import above, then delete src/components/PatientReviewsBlock.tsx. */}
+      <PatientReviewsBlock />
 
       <section className="section-cream" aria-labelledby="county-faq-heading">
         <div className="container-narrow">
