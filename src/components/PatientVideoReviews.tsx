@@ -9,13 +9,15 @@ import type { PatientVideo } from "@/lib/patient-videos";
 interface PatientVideoReviewsProps {
   videos: PatientVideo[];
   variant?: "navy" | "light";
+  /** HUS-1366: when true the English caption track is switched on at playback. Default false = unchanged behaviour on every other page. */
+  captionsOn?: boolean;
 }
 
 function formatDuration(seconds: number) {
   return `${Math.floor(seconds / 60)}:${String(seconds % 60).padStart(2, "0")}`;
 }
 
-export default function PatientVideoReviews({ videos, variant = "navy" }: PatientVideoReviewsProps) {
+export default function PatientVideoReviews({ videos, variant = "navy", captionsOn = false }: PatientVideoReviewsProps) {
   const isLight = variant === "light";
   // Videos mount only after a click, so no video bytes load on page view.
   const [started, setStarted] = useState<string[]>([]);
@@ -65,7 +67,7 @@ export default function PatientVideoReviews({ videos, variant = "navy" }: Patien
                     crossOrigin="anonymous"
                     onPlay={() => pauseOthers(video.id)}
                   >
-                    <track kind="captions" srcLang="en" label="English" src={video.captions} />
+                    <track kind="captions" srcLang="en" label="English" src={video.captions} {...(captionsOn ? { default: true } : {})} />
                   </video>
                 ) : (
                   <button

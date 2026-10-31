@@ -44,3 +44,9 @@ export const DOCTORS_AVAILABILITY = "Both Dr. Martin L. Schulman and Dr. Lee G. 
 
 // Stephen's line (via PM - Stephen f45b249f), directly under the testimonials heading.
 export const EXPERIENCES_LINE = "Individual experiences vary. Treatment suitability, recovery and outcomes depend on the patient; no result is guaranteed.";
+
+// [NEW] blocks Stephen included "as written" for client review (COPY-A.md v3: A63-A67); Legal marks them CHANGE for public release, listed in QUESTIONS-FOR-STEPHEN.md / CLIENT-CONFIRM-LIST.md.
+export const SCREENING_LENGTH = "Most screenings take 15 to 20 minutes, and up to 30 minutes for more complex cases.";
+export const GETTING_THERE = "The Manhasset office is located off the Northern State Parkway and is easy to reach by car from the LIE (I-495), Northern State, and Cross Island Parkway. The building offers ample free parking. The Manhasset LIRR station (Port Washington Branch) is about one mile away for train commuters.";
+export const DOCTORS_PERSONAL = "Every patient is evaluated and treated personally by Dr. Martin L. Schulman or Dr. Lee G. Schulman.";
+export const PRACTICE_FOCUS = "Our practice is focused entirely on vein care.";

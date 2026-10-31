@@ -1,16 +1,18 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { MapPin, Phone } from "lucide-react";
+import { Clock, MapPin, Phone } from "lucide-react";
 import Image from "next/image";
 import { createBreadcrumbSchema } from "@/lib/utils";
-import { DOCTORS as DOCTOR_RECORDS } from "@/lib/constants";
+import { DOCTORS as DOCTOR_RECORDS, LOCATIONS } from "@/lib/constants";
 import PatientReviewsBlock from "@/components/PatientReviewsBlock";
 import { ChevronRight, Plus } from "lucide-react";
 import { NASSAU_COUNTY_FAQS } from "@/lib/nassau-county";
-import { COMMUNITIES, COVERAGE, DEFINITIONS, DESCRIPTION, DOCTORS, DOCTORS_AVAILABILITY, LEAD_QUESTIONS_CLOSING, OFFICE_INTRO, SUITABILITY, VARIANT, VARIANTS } from "@/lib/nassau-county-page";
+import { COMMUNITIES, COVERAGE, DEFINITIONS, DESCRIPTION, DOCTORS, DOCTORS_AVAILABILITY, DOCTORS_PERSONAL, GETTING_THERE, PRACTICE_FOCUS, SCREENING_LENGTH, LEAD_QUESTIONS_CLOSING, OFFICE_INTRO, SUITABILITY, VARIANT, VARIANTS } from "@/lib/nassau-county-page";
 
 const canonical = "https://www.schulmanveincenter.com/vein-doctor-nassau-county";
 const variant = VARIANTS[VARIANT];
+const manhasset = LOCATIONS.find((l) => l.id === "manhasset")!;
+const DAYS = [["mon", "Mon"], ["tue", "Tue"], ["wed", "Wed"], ["thu", "Thu"], ["fri", "Fri"], ["sat", "Sat"], ["sun", "Sun"]] as const;
 const title = variant.title;
 const description = DESCRIPTION;
 
@@ -81,6 +83,7 @@ export default function NassauCountyPage() {
             <ul className="space-y-5 text-gray-700">
               <li className="flex gap-3"><MapPin className="mt-1 h-5 w-5 shrink-0 text-[var(--sv-teal)]" aria-hidden="true" /><span><strong className="block text-[var(--sv-navy)]">Manhasset office</strong>800 Community Dr #211<br />Manhasset, NY 11030</span></li>
               <li className="flex gap-3"><Phone className="h-5 w-5 shrink-0 text-[var(--sv-teal)]" aria-hidden="true" /><a className={textLink} href="tel:5164824477">516.482.4477</a></li>
+              <li className="flex gap-3"><Clock className="mt-1 h-5 w-5 shrink-0 text-[var(--sv-teal)]" aria-hidden="true" /><span><strong className="block text-[var(--sv-navy)]">Hours</strong>{DAYS.map(([k, label]) => (<span key={k} className="block">{label}: {manhasset.hours[k]}</span>))}</span></li>
             </ul>
           </aside>
         </div>
@@ -123,10 +126,12 @@ export default function NassauCountyPage() {
               <li>We talk through treatment options and insurance considerations.</li>
             </ul>
             <p>Wear loose clothing that allows access above the knee, and skip lotion on your legs that day. There is no special preparation: eat and drink normally and arrive a few minutes early. Read more about the <Link href="/services/free-vein-screening" className={textLink}>vein screening</Link>.</p>
+            <p className="mt-5">{SCREENING_LENGTH}</p>
           </article>
           <article className="rounded-2xl border border-gray-100 bg-white p-6 shadow-card md:p-8">
             <h2>Getting to Our Nassau County Vein Office</h2>
             <p>Our office is at 800 Community Drive, Suite 211, in Manhasset. For a map and directions, see our <Link href="/locations/manhasset" className={textLink}>Manhasset location page</Link>.</p>
+            <p className="mt-5">{GETTING_THERE}</p>
             <p className="mt-5">{OFFICE_INTRO}</p>
             <h3 className="mb-2 mt-5 font-heading text-xl font-semibold text-[var(--sv-navy)]">Communities served</h3>
             <ul className={listClass}>
@@ -144,6 +149,8 @@ export default function NassauCountyPage() {
               {DOCTORS.map(([id, name]) => (<li key={id}>{name}<span className="mt-0.5 block font-body text-base font-normal text-gray-600">{DOCTOR_RECORDS.find((d) => d.id === id)?.credentials}</span></li>))}
             </ul>
             <p className="mb-4">{DOCTORS_AVAILABILITY}</p>
+            <p className="mb-4">{DOCTORS_PERSONAL}</p>
+            <p className="mb-4">{PRACTICE_FOCUS}</p>
             <p>Please call ahead if you would like to schedule with your preferred doctor. Learn more <Link href="/about#doctors" className={textLink}>about our doctors</Link>.</p>
           </article>
         </div>
