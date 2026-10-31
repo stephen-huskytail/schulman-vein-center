@@ -4,7 +4,8 @@ export const VARIANT: "A" | "B" = "A";
 
 export const VARIANTS = {
   A: {
-    title: "Best Vein Doctor Or Vein Center In Nassau County",
+    // Title tag per Stephen (via Everest) and SEO 1's confirmed text; the H1 stays Stephen's exact phrase.
+    title: "Best Vein Doctor in Nassau County | Schulman Vein",
     h1: "Best Vein Doctor Or Vein Center In Nassau County",
     guide: [
       "Patient guide to choosing vein care",
