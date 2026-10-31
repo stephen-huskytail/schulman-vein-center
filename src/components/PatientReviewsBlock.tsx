@@ -21,7 +21,7 @@ export default function PatientReviewsBlock() {
         ))}
       </div>
       <div className="mt-14">
-        <PatientVideoReviews videos={PATIENT_VIDEOS} variant="light" captionsOn />
+        <PatientVideoReviews videos={PATIENT_VIDEOS} variant="light" captionsOn fourUp />
       </div>
     </div>
   </section>

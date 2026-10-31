@@ -11,13 +11,15 @@ interface PatientVideoReviewsProps {
   variant?: "navy" | "light";
   /** HUS-1366: when true the English caption track is switched on at playback. Default false = unchanged behaviour on every other page. */
   captionsOn?: boolean;
+  /** HUS-1367: when true the posters sit 4-up from lg. Default false = unchanged 2-up grid on every other page. */
+  fourUp?: boolean;
 }
 
 function formatDuration(seconds: number) {
   return `${Math.floor(seconds / 60)}:${String(seconds % 60).padStart(2, "0")}`;
 }
 
-export default function PatientVideoReviews({ videos, variant = "navy", captionsOn = false }: PatientVideoReviewsProps) {
+export default function PatientVideoReviews({ videos, variant = "navy", captionsOn = false, fourUp = false }: PatientVideoReviewsProps) {
   const isLight = variant === "light";
   // Videos mount only after a click, so no video bytes load on page view.
   const [started, setStarted] = useState<string[]>([]);
@@ -42,7 +44,7 @@ export default function PatientVideoReviews({ videos, variant = "navy", captions
         Short video reviews from patients treated by Dr. Schulman.
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+      <div className={`grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6${fourUp ? " lg:grid-cols-4" : ""}`}>
         {videos.map((video) => {
           const isStarted = started.includes(video.id);
           return (
@@ -87,7 +89,7 @@ export default function PatientVideoReviews({ videos, variant = "navy", captions
                       src={video.poster}
                       alt=""
                       fill
-                      sizes="(min-width: 768px) 50vw, 100vw"
+                      sizes={fourUp ? "(min-width: 1024px) 286px, (min-width: 768px) 50vw, 100vw" : "(min-width: 768px) 50vw, 100vw"}
                       className="object-cover"
                     />
                     <span

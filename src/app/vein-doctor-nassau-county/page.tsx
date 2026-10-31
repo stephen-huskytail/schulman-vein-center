@@ -7,7 +7,7 @@ import { DOCTORS as DOCTOR_RECORDS, LOCATIONS } from "@/lib/constants";
 import PatientReviewsBlock from "@/components/PatientReviewsBlock";
 import { ChevronRight, Plus } from "lucide-react";
 import { NASSAU_COUNTY_FAQS } from "@/lib/nassau-county";
-import { COMMUNITIES, COVERAGE, DEFINITIONS, DESCRIPTION, DOCTORS, DOCTORS_AVAILABILITY, DOCTORS_PERSONAL, GETTING_THERE, PRACTICE_FOCUS, SCREENING_LENGTH, LEAD_QUESTIONS_CLOSING, OFFICE_INTRO, SUITABILITY, VARIANT, VARIANTS } from "@/lib/nassau-county-page";
+import { COMMUNITIES, COVERAGE, DEFINITIONS, DESCRIPTION, DOCTORS, DOCTORS_AVAILABILITY, DOCTORS_PERSONAL, GETTING_THERE, HERO_SUBTITLE, PRACTICE_FOCUS, SCREENING_LENGTH, LEAD_QUESTIONS_CLOSING, OFFICE_INTRO, SUITABILITY, VARIANT, VARIANTS } from "@/lib/nassau-county-page";
 
 const canonical = "https://www.schulmanveincenter.com/vein-doctor-nassau-county";
 const variant = VARIANTS[VARIANT];
@@ -59,26 +59,9 @@ export default function NassauCountyPage() {
               {variant.guide.map((line, i) => (<p key={line} className={i === 0 ? "font-semibold" : undefined}>{line}</p>))}
             </div>
             <div className="gold-line mb-6" />
-            <p className="max-w-xl text-base leading-relaxed text-white/80 md:text-lg">What to ask when choosing a vein doctor, what a screening includes, and where to find our Manhasset office.</p>
+            <p className="max-w-xl text-base leading-relaxed text-white/80 md:text-lg">{HERO_SUBTITLE}</p>
           </div>
-          <div className="mx-auto w-full max-w-[480px] overflow-hidden rounded-2xl border border-white/20 bg-white shadow-xl">
-            {/* The source file has blue bars at both edges; scaled so the card shows the two portraits and captions only (CSS crop, no new imagery). */}
-            <Image src="/images/team.jpg" alt="Portraits of the two Schulman vein doctors" width={520} height={240} priority sizes="(max-width: 520px) 100vw, 480px" className="-ml-[6%] h-auto w-[112%] max-w-none" />
-          </div>
-        </div>
-      </section>
-
-      <section className="section-cream">
-        <div className="container-sv grid items-start gap-8 lg:grid-cols-[minmax(0,1fr)_340px] lg:gap-12">
-          <div className="space-y-6 text-lg leading-relaxed text-gray-700">
-            <p>If you are looking for a vein doctor in Nassau County, our <Link href="/locations/manhasset" className={textLink}>Manhasset office</Link> at 800 Community Drive, Suite 211 is where we see our Nassau County patients.</p>
-            <p>A <Link href="/services/free-vein-screening" className={textLink}>vein screening</Link> with one of our doctors helps you learn what is going on with your veins before you decide on anything.</p>
-            <div className="flex flex-wrap gap-3">
-              <a href="tel:5164824477" className="btn-primary justify-center text-base"><Phone className="h-5 w-5" aria-hidden="true" />Call 516.482.4477</a>
-              <Link href="/services/free-vein-screening" className="btn-outline-navy justify-center text-base">Ask About Vein Screening</Link>
-            </div>
-          </div>
-          <aside aria-labelledby="office-summary" className="rounded-2xl border border-gray-200 bg-white p-6 shadow-card">
+          <aside aria-labelledby="office-summary" className="w-full max-w-[480px] rounded-2xl border border-white/20 bg-white p-6 shadow-xl lg:mx-auto lg:max-w-[400px]">
             <h2 id="office-summary" className="mb-5 font-heading text-2xl font-bold text-[var(--sv-navy)]">At a Glance</h2>
             <ul className="space-y-5 text-gray-700">
               <li className="flex gap-3"><MapPin className="mt-1 h-5 w-5 shrink-0 text-[var(--sv-teal)]" aria-hidden="true" /><span><strong className="block text-[var(--sv-navy)]">Manhasset office</strong>800 Community Dr #211<br />Manhasset, NY 11030</span></li>
@@ -89,8 +72,22 @@ export default function NassauCountyPage() {
         </div>
       </section>
 
+      <section className="section-cream !py-16">
+        <div className="container-sv">
+          <div className="mx-auto max-w-[860px] space-y-6 text-lg leading-relaxed text-gray-700 md:text-center">
+            <p>If you are looking for a vein doctor in Nassau County, our <Link href="/locations/manhasset" className={textLink}>Manhasset office</Link> at 800 Community Drive, Suite 211 is where we see our Nassau County patients.</p>
+            <p>A <Link href="/services/free-vein-screening" className={textLink}>vein screening</Link> with one of our doctors helps you learn what is going on with your veins before you decide on anything.</p>
+            <div className="flex flex-wrap gap-3 md:justify-center">
+              <a href="tel:5164824477" className="btn-primary justify-center text-base"><Phone className="h-5 w-5" aria-hidden="true" />Call 516.482.4477</a>
+              <Link href="/services/free-vein-screening" className="btn-outline-navy justify-center text-base">Ask About Vein Screening</Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="section-gray">
-        <div className="container-sv columns-1 gap-8 lg:columns-2 text-gray-700 [&>article]:mb-8 [&>article]:break-inside-avoid [&>article:last-child]:mb-0 [&_h2]:mb-5 [&_h2]:font-heading [&_h2]:text-2xl [&_h2]:font-bold [&_h2]:text-[var(--sv-navy)] md:[&_h2]:text-3xl [&_p]:leading-relaxed">
+        <div className="container-sv text-gray-700 [&_h2]:mb-5 [&_h2]:font-heading [&_h2]:text-2xl [&_h2]:font-bold [&_h2]:text-[var(--sv-navy)] md:[&_h2]:text-3xl [&_p]:leading-relaxed">
+          <div className="columns-1 gap-8 lg:columns-2 [&>article]:mb-8 [&>article]:break-inside-avoid [&>article:last-child]:mb-0">
           <article className="rounded-2xl border border-gray-100 bg-white p-6 shadow-card md:p-8">
             <h2>What to Look For in a Vein Doctor in Nassau County</h2>
             <p className="mb-5">Searching for a vein specialist in Nassau County brings up many kinds of clinics. These questions make them easier to compare:</p>
@@ -143,15 +140,19 @@ export default function NassauCountyPage() {
             <p>Whether a treatment is considered medically necessary depends on your symptoms and your plan. If you plan to submit an insurance claim, check whether your plan requires a referral from your primary care physician.</p>
             <p className="mt-5">{COVERAGE}</p>
           </article>
-          <article className="rounded-2xl border border-gray-100 bg-white p-6 shadow-card md:p-8">
-            <h2>Meet the Doctors</h2>
-            <ul className="mb-4 space-y-3 font-heading text-xl font-semibold text-[var(--sv-navy)]">
-              {DOCTORS.map(([id, name]) => (<li key={id}>{name}<span className="mt-0.5 block font-body text-base font-normal text-gray-600">{DOCTOR_RECORDS.find((d) => d.id === id)?.credentials}</span></li>))}
-            </ul>
-            <p className="mb-4">{DOCTORS_AVAILABILITY}</p>
-            <p className="mb-4">{DOCTORS_PERSONAL}</p>
-            <p className="mb-4">{PRACTICE_FOCUS}</p>
-            <p>Please call ahead if you would like to schedule with your preferred doctor. Learn more <Link href="/about#doctors" className={textLink}>about our doctors</Link>.</p>
+          </div>
+          <article className="mt-8 grid items-center gap-6 rounded-2xl border border-gray-100 bg-white p-6 shadow-card md:p-8 lg:grid-cols-[380px_minmax(0,1fr)] lg:gap-12">
+            <Image src="/images/team-doctors.webp" alt="Dr. Martin L. Schulman and Dr. Lee G. Schulman" width={380} height={240} sizes="(min-width: 1024px) 380px, 100vw" loading="lazy" className="h-auto w-full max-w-[380px] rounded-xl border border-gray-200" />
+            <div>
+              <h2>Meet the Doctors</h2>
+              <ul className="mb-4 space-y-3 font-heading text-xl font-semibold text-[var(--sv-navy)]">
+                {DOCTORS.map(([id, name]) => (<li key={id}>{name}<span className="mt-0.5 block font-body text-base font-normal text-gray-600">{DOCTOR_RECORDS.find((d) => d.id === id)?.credentials}</span></li>))}
+              </ul>
+              <p className="mb-4">{DOCTORS_AVAILABILITY}</p>
+              <p className="mb-4">{DOCTORS_PERSONAL}</p>
+              <p className="mb-4">{PRACTICE_FOCUS}</p>
+              <p>Please call ahead if you would like to schedule with your preferred doctor. Learn more <Link href="/about#doctors" className={textLink}>about our doctors</Link>.</p>
+            </div>
           </article>
         </div>
       </section>

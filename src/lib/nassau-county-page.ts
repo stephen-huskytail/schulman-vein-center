@@ -7,10 +7,8 @@ export const VARIANTS = {
     // Title tag per Stephen (via Everest) and SEO 1's confirmed text; the H1 stays Stephen's exact phrase.
     title: "Best Vein Doctor in Nassau County | Schulman Vein",
     h1: "Best Vein Doctor Or Vein Center In Nassau County",
-    guide: [
-      "Patient guide to choosing vein care",
-      "“Best” depends on your medical needs. This page does not claim an independent ranking or guarantee results.",
-    ],
+    // HUS-1367: the "Best depends on your medical needs…" guide line is removed from the hero (Stephen's owner decision).
+    guide: ["Patient guide to choosing vein care"],
   },
   B: {
     title: "Choosing a Vein Doctor or Vein Center in Nassau County",
@@ -50,3 +48,6 @@ export const SCREENING_LENGTH = "Most screenings take 15 to 20 minutes, and up t
 export const GETTING_THERE = "The Manhasset office is located off the Northern State Parkway and is easy to reach by car from the LIE (I-495), Northern State, and Cross Island Parkway. The building offers ample free parking. The Manhasset LIRR station (Port Washington Branch) is about one mile away for train commuters.";
 export const DOCTORS_PERSONAL = "Every patient is evaluated and treated personally by Dr. Martin L. Schulman or Dr. Lee G. Schulman.";
 export const PRACTICE_FOCUS = "Our practice is focused entirely on vein care.";
+
+// HUS-1367: hero subtitle, Content 3 option A, verbatim from site-fixes/HUS-1367-schulman-page-balance/HERO-SUBTITLE.md (replaces both former hero lines).
+export const HERO_SUBTITLE = "Meet the Schulman vein doctors, see what a vein screening includes, and find our Manhasset office at 800 Community Drive. Call 516.482.4477 to ask about a visit.";
