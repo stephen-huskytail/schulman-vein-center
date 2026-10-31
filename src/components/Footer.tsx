@@ -14,7 +14,7 @@ export default function Footer({ neutral = false }: { neutral?: boolean }) {
   const manhasset = LOCATIONS.find((location) => location.id === "manhasset")!;
 
   return (
-    <footer className="bg-[var(--sv-navy)] text-white">
+    <footer className={neutral ? "bg-[var(--sv-navy)] text-white border-t border-white/[0.12]" : "bg-[var(--sv-navy)] text-white"}>
       {!neutral && (
         <>
       {/* ── CTA Band ── */}
@@ -59,12 +59,14 @@ export default function Footer({ neutral = false }: { neutral?: boolean }) {
             <p className="text-white/70 text-sm leading-relaxed">
               {neutral ? "Manhattan and Long Island's vein specialists." : "Manhattan and Long Island's vein specialists. Exclusively dedicated to the diagnosis and treatment of vein disease for over 55 years."}
             </p>
+            {!neutral && (
             <div className="mt-4 inline-flex items-center gap-2 bg-[var(--sv-gold)]/10 border border-[var(--sv-gold)]/30 rounded-full px-4 py-1.5">
               <span className="w-1.5 h-1.5 rounded-full bg-[var(--sv-gold)] shrink-0" />
               <span className="text-[var(--sv-gold)] font-black tracking-[0.16em] uppercase text-xs">
                 All We Do Is Veins™
               </span>
             </div>
+            )}
             <a
               href={BUSINESS.emailHref}
               className="mt-4 flex items-center gap-2 text-sm text-white/70 hover:text-white transition-colors"

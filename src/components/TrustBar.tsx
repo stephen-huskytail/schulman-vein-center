@@ -11,6 +11,7 @@ export default function TrustBar({ neutral = false }: { neutral?: boolean }) {
     >
       <div className="container-sv h-full flex items-center justify-between gap-4">
         {/* Left: tagline */}
+        {!neutral && (
         <span className="hidden md:flex items-center gap-2 font-medium tracking-wide">
           <span className="text-[var(--sv-gold)] font-black tracking-[0.18em] uppercase text-base">
             All We Do Is Veins™
@@ -27,6 +28,7 @@ export default function TrustBar({ neutral = false }: { neutral?: boolean }) {
             </>
           )}
         </span>
+        )}
 
         {/* Center on mobile, right on desktop */}
         <div className="flex items-center gap-4 ml-auto">
