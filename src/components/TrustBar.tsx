@@ -3,7 +3,7 @@
 import { Phone, Star } from "lucide-react";
 import { LOCATIONS } from "@/lib/constants";
 
-export default function TrustBar() {
+export default function TrustBar({ neutral = false }: { neutral?: boolean }) {
   return (
     <div
       className="fixed top-0 left-0 right-0 z-[60] bg-[var(--sv-navy)] text-white text-sm"
@@ -15,6 +15,8 @@ export default function TrustBar() {
           <span className="text-[var(--sv-gold)] font-black tracking-[0.18em] uppercase text-base">
             All We Do Is Veins™
           </span>
+          {!neutral && (
+            <>
           <span className="text-white/30">·</span>
           <Star className="w-3 h-3 text-[var(--sv-gold)] fill-[var(--sv-gold)]" />
           <Star className="w-3 h-3 text-[var(--sv-gold)] fill-[var(--sv-gold)]" />
@@ -22,6 +24,8 @@ export default function TrustBar() {
           <Star className="w-3 h-3 text-[var(--sv-gold)] fill-[var(--sv-gold)]" />
           <Star className="w-3 h-3 text-[var(--sv-gold)] fill-[var(--sv-gold)]" />
           <span className="text-white/70">5-Star Rated</span>
+            </>
+          )}
         </span>
 
         {/* Center on mobile, right on desktop */}

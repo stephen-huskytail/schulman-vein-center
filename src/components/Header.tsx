@@ -54,8 +54,12 @@ const NAV_ITEMS: NavItem[] = [
   { label: "Contact", href: "/contact" },
 ];
 
-export default function Header() {
+export default function Header({ neutral = false }: { neutral?: boolean }) {
   const isManhasset = usePathname() === "/locations/manhasset";
+  // HUS-1366 neutral chrome: no "Reviews" nav item, "Free Vein Screening" shown as "Vein Screening".
+  const navItems: NavItem[] = neutral
+    ? NAV_ITEMS.filter((item) => item.label !== "Reviews").map((item) => item.children ? { ...item, children: item.children.map((c) => c.label === "Free Vein Screening" ? { ...c, label: "Vein Screening" } : c) } : item)
+    : NAV_ITEMS;
   const contactHref = isManhasset ? "/contact?location=manhasset#contact" : "/contact";
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -101,7 +105,7 @@ export default function Header() {
           </Link>
 
           <nav className="hidden xl:flex items-center gap-0.5">
-            {NAV_ITEMS.map((item) => (
+            {navItems.map((item) => (
               <div
                 key={item.label}
                 className="relative"
@@ -143,7 +147,7 @@ export default function Header() {
           <div className="hidden xl:flex items-center gap-3">
             <CallNowButton variant="compact" />
             <Link href={contactHref} className="btn-primary text-sm py-2.5 px-5">
-              Free Screening
+              {neutral ? "Schedule a Screening" : "Free Screening"}
             </Link>
           </div>
 
@@ -166,7 +170,7 @@ export default function Header() {
         <div id="mobile-site-nav" className="fixed inset-0 top-[124px] z-50 xl:hidden bg-white overflow-y-auto">
           <div className="container-sv py-6">
             <nav className="flex flex-col gap-1">
-              {NAV_ITEMS.map((item) => (
+              {navItems.map((item) => (
                 <div key={item.label}>
                   <Link
                     href={item.href === "/contact" ? contactHref : item.href}
@@ -217,7 +221,7 @@ export default function Header() {
                 className="btn-primary w-full justify-center text-center"
                 onClick={handleNavClick}
               >
-                Schedule Free Consultation
+                {neutral ? "Schedule a Screening" : "Schedule Free Consultation"}
               </Link>
             </div>
           </div>
