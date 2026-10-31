@@ -3,12 +3,17 @@ import Link from "next/link";
 import { MapPin, Phone } from "lucide-react";
 import Image from "next/image";
 import { createBreadcrumbSchema } from "@/lib/utils";
+import { DOCTORS as DOCTOR_RECORDS, TESTIMONIALS } from "@/lib/constants";
+import { PATIENT_VIDEOS } from "@/lib/patient-videos";
+import PatientVideoReviews from "@/components/PatientVideoReviews";
 import { ChevronRight, Plus } from "lucide-react";
 import { NASSAU_COUNTY_FAQS } from "@/lib/nassau-county";
+import { COMMUNITIES, COVERAGE, DEFINITIONS, DESCRIPTION, DOCTORS, DOCTORS_AVAILABILITY, EXPERIENCES_LINE, LEAD_QUESTIONS_CLOSING, OFFICE_INTRO, SUITABILITY, VARIANT, VARIANTS } from "@/lib/nassau-county-page";
 
 const canonical = "https://www.schulmanveincenter.com/vein-doctor-nassau-county";
-const title = "Vein Doctor in Nassau County, NY";
-const description = "Looking for a vein doctor in Nassau County? Learn what to ask and find our Manhasset office at 800 Community Drive. Call 516.482.4477.";
+const variant = VARIANTS[VARIANT];
+const title = variant.title;
+const description = DESCRIPTION;
 
 export const metadata: Metadata = {
   title: { absolute: title },
@@ -48,12 +53,16 @@ export default function NassauCountyPage() {
               </ol>
             </nav>
             <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-cyan-200">Nassau County · Manhasset</p>
-            <h1 className="mb-5 font-heading text-3xl font-bold leading-tight text-white md:text-5xl">Vein Doctor Serving Nassau County from Manhasset</h1>
+            <h1 className="mb-4 font-heading text-3xl font-bold leading-tight text-white md:text-5xl">{variant.h1}</h1>
+            <div className="mb-6 space-y-1 text-base leading-relaxed text-white/85 md:text-lg">
+              {variant.guide.map((line, i) => (<p key={line} className={i === 0 ? "font-semibold" : undefined}>{line}</p>))}
+            </div>
             <div className="gold-line mb-6" />
             <p className="max-w-xl text-base leading-relaxed text-white/80 md:text-lg">What to ask when choosing a vein doctor, what a screening includes, and where to find our Manhasset office.</p>
           </div>
-          <div className="mx-auto w-full max-w-[480px] overflow-hidden rounded-2xl border border-white/20 bg-white p-3 shadow-xl sm:p-5">
-            <Image src="/images/team.jpg" alt="Portraits of the two Schulman vein doctors" width={520} height={240} priority sizes="(max-width: 520px) 90vw, 480px" className="h-auto w-full object-contain" />
+          <div className="mx-auto w-full max-w-[480px] overflow-hidden rounded-2xl border border-white/20 bg-white shadow-xl">
+            {/* The source file has blue bars at both edges; scaled so the card shows the two portraits and captions only (CSS crop, no new imagery). */}
+            <Image src="/images/team.jpg" alt="Portraits of the two Schulman vein doctors" width={520} height={240} priority sizes="(max-width: 520px) 100vw, 480px" className="-ml-[6%] h-auto w-[112%] max-w-none" />
           </div>
         </div>
       </section>
@@ -63,7 +72,10 @@ export default function NassauCountyPage() {
           <div className="space-y-6 text-lg leading-relaxed text-gray-700">
             <p>If you are looking for a vein doctor in Nassau County, our <Link href="/locations/manhasset" className={textLink}>Manhasset office</Link> at 800 Community Drive, Suite 211 is where we see our Nassau County patients.</p>
             <p>A <Link href="/services/free-vein-screening" className={textLink}>vein screening</Link> with one of our doctors helps you learn what is going on with your veins before you decide on anything.</p>
-            <a href="tel:5164824477" className="btn-primary justify-center text-base"><Phone className="h-5 w-5" aria-hidden="true" />Call 516.482.4477</a>
+            <div className="flex flex-wrap gap-3">
+              <a href="tel:5164824477" className="btn-primary justify-center text-base"><Phone className="h-5 w-5" aria-hidden="true" />Call 516.482.4477</a>
+              <Link href="/services/free-vein-screening" className="btn-outline-navy justify-center text-base">Ask About Vein Screening</Link>
+            </div>
           </div>
           <aside aria-labelledby="office-summary" className="rounded-2xl border border-gray-200 bg-white p-6 shadow-card">
             <h2 id="office-summary" className="mb-5 font-heading text-2xl font-bold text-[var(--sv-navy)]">At a Glance</h2>
@@ -86,6 +98,7 @@ export default function NassauCountyPage() {
               <li><strong>Is imaging used when it is appropriate?</strong> Ask the doctor whether imaging is appropriate for your evaluation.</li>
               <li><strong>Will you know the cost and coverage before you decide?</strong> Ask how coverage and costs are handled before you commit.</li>
             </ul>
+            <p className="mt-5">{LEAD_QUESTIONS_CLOSING}</p>
           </article>
           <article className="rounded-2xl border border-gray-100 bg-white p-6 shadow-card md:p-8">
             <h2>Vein Conditions We Evaluate in Nassau County</h2>
@@ -97,7 +110,9 @@ export default function NassauCountyPage() {
               <li><Link href="/services/laser-vein-therapy" className={textLink}>Laser vein therapy (EVLT)</Link></li>
               <li><Link href="/services/vein-disorders" className={textLink}>Other vein disorders and conditions</Link></li>
             </ul>
+            {DEFINITIONS.map((d) => (<p key={d} className="mb-4">{d}</p>))}
             <p>Signs worth having checked include aching, heaviness, swelling or cramping in the legs, and visible veins on the legs, ankles or feet. Symptoms like these can have different causes, and only an exam can tell you which applies to you. Any recommendation depends on that evaluation.</p>
+            <p className="mt-5 rounded-xl bg-[var(--sv-cream,#faf7f0)] p-4 text-base">{SUITABILITY}</p>
           </article>
           <article className="rounded-2xl border border-gray-100 bg-white p-6 shadow-card md:p-8">
             <h2>What Happens at a Vein Screening</h2>
@@ -113,15 +128,43 @@ export default function NassauCountyPage() {
           <article className="rounded-2xl border border-gray-100 bg-white p-6 shadow-card md:p-8">
             <h2>Getting to Our Nassau County Vein Office</h2>
             <p>Our office is at 800 Community Drive, Suite 211, in Manhasset. For a map and directions, see our <Link href="/locations/manhasset" className={textLink}>Manhasset location page</Link>.</p>
+            <p className="mt-5">{OFFICE_INTRO}</p>
+            <h3 className="mb-2 mt-5 font-heading text-xl font-semibold text-[var(--sv-navy)]">Communities served</h3>
+            <ul className={listClass}>
+              {COMMUNITIES.map((c) => (<li key={c}>{c}</li>))}
+            </ul>
           </article>
           <article className="rounded-2xl border border-gray-100 bg-white p-6 shadow-card md:p-8">
             <h2>Insurance and Cost</h2>
             <p>Whether a treatment is considered medically necessary depends on your symptoms and your plan. If you plan to submit an insurance claim, check whether your plan requires a referral from your primary care physician.</p>
+            <p className="mt-5">{COVERAGE}</p>
           </article>
           <article className="rounded-2xl border border-gray-100 bg-white p-6 shadow-card md:p-8">
             <h2>Meet the Doctors</h2>
+            <ul className="mb-4 space-y-3 font-heading text-xl font-semibold text-[var(--sv-navy)]">
+              {DOCTORS.map(([id, name]) => (<li key={id}>{name}<span className="mt-0.5 block font-body text-base font-normal text-gray-600">{DOCTOR_RECORDS.find((d) => d.id === id)?.credentials}</span></li>))}
+            </ul>
+            <p className="mb-4">{DOCTORS_AVAILABILITY}</p>
             <p>Please call ahead if you would like to schedule with your preferred doctor. Learn more <Link href="/about#doctors" className={textLink}>about our doctors</Link>.</p>
           </article>
+        </div>
+      </section>
+
+      <section className="bg-white py-12 md:py-16" aria-labelledby="patients-say-heading">
+        <div className="container-sv">
+          <h2 id="patients-say-heading" className="section-title mb-4 text-center">What Our Patients Say</h2>
+          <p className="mx-auto mb-10 max-w-2xl text-center text-base leading-relaxed text-gray-700">{EXPERIENCES_LINE}</p>
+          <div className="grid gap-6 md:grid-cols-2">
+            {TESTIMONIALS.map((t) => (
+              <figure key={t.name} className="rounded-2xl border border-gray-100 bg-white p-6 shadow-card md:p-8">
+                <blockquote className="text-lg leading-relaxed text-gray-700">“{t.text}”</blockquote>
+                <figcaption className="mt-4 font-semibold text-[var(--sv-navy)]">— {t.name}, {t.location}</figcaption>
+              </figure>
+            ))}
+          </div>
+          <div className="mt-14">
+            <PatientVideoReviews videos={PATIENT_VIDEOS} variant="light" />
+          </div>
         </div>
       </section>
 
@@ -144,7 +187,8 @@ export default function NassauCountyPage() {
           <h2 className="mb-4 font-heading text-3xl font-bold md:text-4xl">Ready to Have Your Veins Checked?</h2>
           <p className="mb-6 text-lg text-white/90">Call our Manhasset office.</p>
           <a href="tel:5164824477" className="btn-secondary justify-center"><Phone className="h-5 w-5" aria-hidden="true" />Call 516.482.4477</a>
-          <p className="mx-auto mt-8 max-w-2xl text-sm leading-relaxed text-white/80">This page is general information, not medical advice. Evaluations and recommendations depend on your individual condition.</p>
+          <p className="mx-auto mt-8 max-w-2xl text-sm leading-relaxed text-white/80">{SUITABILITY}</p>
+          <p className="mx-auto mt-3 max-w-2xl text-sm leading-relaxed text-white/80">This page is general information, not medical advice. Evaluations and recommendations depend on your individual condition.</p>
         </div>
       </section>
     </>
