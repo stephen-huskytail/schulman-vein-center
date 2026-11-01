@@ -137,7 +137,59 @@ function getSpamReason(data: z.infer<typeof contactSchema>) {
   return score >= 3 ? "content-pattern" : null;
 }
 
+// HUS-1370: a browser-native form post (no or not-yet-loaded JavaScript) cannot pass the form timing
+// check, so it is refused safely: nothing is delivered, the body is never read, logged or echoed, and the
+// visitor gets a static page with the office phone numbers. The URL stays /api/contact (no query).
+const NATIVE_POST_REFUSAL_HTML = `<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Request not sent | Schulman Vein and Laser Center</title>
+<style>body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:#1f2937;max-width:40rem;margin:3rem auto;padding:0 1.25rem;line-height:1.6}h1{color:#0b2545;font-size:1.6rem}a{color:#0d7f9b}li{margin:.35rem 0}</style>
+</head>
+<body>
+<h1>Your request was not sent</h1>
+<p>We could not send your request from this page. Please call the office you prefer:</p>
+<ul>
+<li>Manhattan: <a href="tel:2129870500">212.987.0500</a></li>
+<li>Manhasset: <a href="tel:5164824477">516.482.4477</a></li>
+<li>Commack: <a href="tel:6315434599">631.543.4599</a></li>
+</ul>
+<p>Or return to the <a href="/contact">contact page</a> and try again with JavaScript turned on.</p>
+</body>
+</html>`;
+
+function isJsonRequest(req: Request) {
+  const contentType = (req.headers.get("content-type") || "").toLowerCase();
+  return contentType.startsWith("application/json");
+}
+
+function isNativeFormPost(req: Request) {
+  const contentType = (req.headers.get("content-type") || "").toLowerCase();
+  return (
+    contentType.startsWith("application/x-www-form-urlencoded") ||
+    contentType.startsWith("multipart/form-data") ||
+    contentType.startsWith("text/plain")
+  );
+}
+
 export async function POST(req: Request) {
+  if (!isJsonRequest(req)) {
+    if (isNativeFormPost(req)) {
+      return new Response(NATIVE_POST_REFUSAL_HTML, {
+        status: 422,
+        headers: {
+          "Content-Type": "text/html; charset=utf-8",
+          "Cache-Control": "no-store",
+          "X-Robots-Tag": "noindex, nofollow",
+        },
+      });
+    }
+    return NextResponse.json({ error: "Unsupported request." }, { status: 415 });
+  }
+
   const apiKey = process.env.SCHULMAN_RESEND;
 
   if (!apiKey) {
@@ -218,8 +270,8 @@ export async function POST(req: Request) {
   });
 
   if (!resendResponse.ok) {
-    const errorBody = await resendResponse.text();
-    console.error("Resend API error:", errorBody);
+    // HUS-1370: log the provider status only; a provider error body can repeat submitted values.
+    console.error("Resend API error", { status: resendResponse.status });
     return NextResponse.json({ error: "Unable to send your request right now. Please call us directly." }, { status: 502 });
   }
 

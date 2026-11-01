@@ -128,7 +128,12 @@ export default function LeadForm({
   }
 
   return (
+    // HUS-1370: explicit POST + same-origin action so a submit that happens without (or before)
+    // JavaScript can never turn the fields into a GET query string. The API refuses native posts
+    // safely (nothing is sent or echoed); the normal hydrated path still submits JSON via fetch.
     <form
+      method="post"
+      action="/api/contact"
       onSubmit={handleSubmit(onSubmit)}
       className={className}
     >
@@ -221,9 +226,14 @@ export default function LeadForm({
         {errors.message && <p className="form-error">{errors.message.message}</p>}
       </div>
 
+      <noscript>
+        <p className="mb-3 text-sm text-gray-700">
+          This form needs JavaScript. To request a consultation, please call Manhattan 212.987.0500, Manhasset 516.482.4477 or Commack 631.543.4599.
+        </p>
+      </noscript>
       <button
         type="submit"
-        disabled={isSubmitting}
+        disabled={isSubmitting || !formStartedAt}
         className="btn-primary w-full justify-center text-base py-3.5 disabled:opacity-70 disabled:cursor-not-allowed"
       >
         {isSubmitting ? (
