@@ -8,7 +8,8 @@ import { DOCTORS as DOCTOR_RECORDS, LOCATIONS } from "@/lib/constants";
 import PatientReviewsBlock from "@/components/PatientReviewsBlock";
 import GoogleReviewBadge from "@/components/GoogleReviewBadge";
 import ServiceAreaCard from "@/components/ServiceAreaCard";
-import { ChevronRight, Plus } from "lucide-react";
+import { Activity, CheckSquare, ChevronRight, ExternalLink, Plus, ShieldCheck, Stethoscope, Users } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 import { NASSAU_COUNTY_FAQS } from "@/lib/nassau-county";
 import { COMMUNITIES, COVERAGE, DEFINITIONS, DESCRIPTION, DOCTORS, DOCTORS_AVAILABILITY, DOCTORS_PERSONAL, GETTING_THERE, HERO_SUBTITLE, PRACTICE_FOCUS, SCREENING_LENGTH, LEAD_QUESTIONS_CLOSING, OFFICE_INTRO, SUITABILITY, VARIANT, VARIANTS } from "@/lib/nassau-county-page";
 
@@ -16,6 +17,15 @@ const HERO_PHONE = "516.482.4477";
 const canonical = "https://www.schulmanveincenter.com/vein-doctor-nassau-county";
 const variant = VARIANTS[VARIANT];
 const manhasset = LOCATIONS.find((l) => l.id === "manhasset")!;
+
+// HUS-1372: decorative icon badge above each content-card heading (no-AI image fallback).
+function IconBadge({ icon: Icon }: { icon: LucideIcon }) {
+  return (
+    <span aria-hidden="true" className="mb-3.5 inline-flex h-11 w-11 items-center justify-center rounded-xl bg-[#E6F4F6]">
+      <Icon className="h-[22px] w-[22px] text-[var(--sv-teal)]" />
+    </span>
+  );
+}
 const DAYS = [["mon", "Mon"], ["tue", "Tue"], ["wed", "Wed"], ["thu", "Thu"], ["fri", "Fri"], ["sat", "Sat"], ["sun", "Sun"]] as const;
 const title = variant.title;
 const description = DESCRIPTION;
@@ -98,6 +108,7 @@ export default function NassauCountyPage() {
         <div className="container-sv text-gray-700 [&_h2]:mb-5 [&_h2]:font-heading [&_h2]:text-2xl [&_h2]:font-bold [&_h2]:text-[var(--sv-navy)] md:[&_h2]:text-3xl [&_p]:leading-relaxed">
           <div className="columns-1 gap-8 lg:columns-2 [&>article]:mb-8 [&>article]:break-inside-avoid [&>article:last-child]:mb-0">
           <article className="rounded-2xl border border-gray-100 bg-white p-6 shadow-card md:p-8">
+            <IconBadge icon={CheckSquare} />
             <h2>What to Look For in a Vein Doctor in Nassau County</h2>
             <p className="mb-5">Searching for a vein specialist in Nassau County brings up many kinds of clinics. These questions make them easier to compare:</p>
             <ul className={listClass}>
@@ -109,6 +120,7 @@ export default function NassauCountyPage() {
             <p className="mt-5">{LEAD_QUESTIONS_CLOSING}</p>
           </article>
           <article className="rounded-2xl border border-gray-100 bg-white p-6 shadow-card md:p-8">
+            <IconBadge icon={Activity} />
             <h2>Vein Conditions We Evaluate in Nassau County</h2>
             <Image src="/images/blog/spider-veins-vs-varicose-veins-differences.svg" alt="Illustrated comparison of spider veins and varicose veins" width={1200} height={675} sizes="(max-width: 1024px) 90vw, 560px" className="mb-6 h-auto w-full rounded-xl border border-gray-100" />
             <p className="mb-5">Vein problems range from small surface veins to symptoms that change how your legs feel day to day. Learn more about:</p>
@@ -123,6 +135,7 @@ export default function NassauCountyPage() {
             <p className="mt-5 rounded-xl bg-[var(--sv-cream,#faf7f0)] p-4 text-base">{SUITABILITY}</p>
           </article>
           <article className="rounded-2xl border border-gray-100 bg-white p-6 shadow-card md:p-8">
+            <IconBadge icon={Stethoscope} />
             <h2>What Happens at a Vein Screening</h2>
             <p className="mb-5">During your visit:</p>
             <ul className={`${listClass} mb-5`}>
@@ -135,8 +148,10 @@ export default function NassauCountyPage() {
             <p className="mt-5">{SCREENING_LENGTH}</p>
           </article>
           <article className="rounded-2xl border border-gray-100 bg-white p-6 shadow-card md:p-8">
+            <IconBadge icon={MapPin} />
             <h2>Getting to Our Nassau County Vein Office</h2>
             <p>Our office is at 800 Community Drive, Suite 211, in Manhasset. For a map and directions, see our <Link href="/locations/manhasset" className={textLink}>Manhasset location page</Link>.</p>
+            <a href={manhasset.mapUrl} target="_blank" rel="noopener noreferrer" className="btn-outline-navy mt-5"><MapPin className="h-5 w-5" aria-hidden="true" />Open in Google Maps<ExternalLink className="h-4 w-4" aria-hidden="true" /></a>
             <p className="mt-5">{GETTING_THERE}</p>
             <p className="mt-5">{OFFICE_INTRO}</p>
             <h3 className="mb-2 mt-5 font-heading text-xl font-semibold text-[var(--sv-navy)]">Communities served</h3>
@@ -145,6 +160,7 @@ export default function NassauCountyPage() {
             </ul>
           </article>
           <article className="rounded-2xl border border-gray-100 bg-white p-6 shadow-card md:p-8">
+            <IconBadge icon={ShieldCheck} />
             <h2>Insurance and Cost</h2>
             <p>Whether a treatment is considered medically necessary depends on your symptoms and your plan. If you plan to submit an insurance claim, check whether your plan requires a referral from your primary care physician.</p>
             <p className="mt-5">{COVERAGE}</p>
@@ -154,6 +170,7 @@ export default function NassauCountyPage() {
           <article className="mt-8 grid items-center gap-6 rounded-2xl border border-gray-100 bg-white p-6 shadow-card md:p-8 lg:grid-cols-[380px_minmax(0,1fr)] lg:gap-12">
             <Image src="/images/team-doctors.webp" alt="Dr. Martin L. Schulman and Dr. Lee G. Schulman" width={380} height={240} sizes="(min-width: 1024px) 380px, 100vw" loading="lazy" className="h-auto w-full max-w-[380px] rounded-xl border border-gray-200" />
             <div>
+              <IconBadge icon={Users} />
               <h2>Meet the Doctors</h2>
               <ul className="mb-4 space-y-3 font-heading text-xl font-semibold text-[var(--sv-navy)]">
                 {DOCTORS.map(([id, name]) => (<li key={id}>{name}<span className="mt-0.5 block font-body text-base font-normal text-gray-600">{DOCTOR_RECORDS.find((d) => d.id === id)?.credentials}</span></li>))}
