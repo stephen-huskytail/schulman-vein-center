@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Fragment } from "react";
 import Link from "next/link";
 import { Clock, MapPin, Phone } from "lucide-react";
 import Image from "next/image";
@@ -11,6 +12,7 @@ import { ChevronRight, Plus } from "lucide-react";
 import { NASSAU_COUNTY_FAQS } from "@/lib/nassau-county";
 import { COMMUNITIES, COVERAGE, DEFINITIONS, DESCRIPTION, DOCTORS, DOCTORS_AVAILABILITY, DOCTORS_PERSONAL, GETTING_THERE, HERO_SUBTITLE, PRACTICE_FOCUS, SCREENING_LENGTH, LEAD_QUESTIONS_CLOSING, OFFICE_INTRO, SUITABILITY, VARIANT, VARIANTS } from "@/lib/nassau-county-page";
 
+const HERO_PHONE = "516.482.4477";
 const canonical = "https://www.schulmanveincenter.com/vein-doctor-nassau-county";
 const variant = VARIANTS[VARIANT];
 const manhasset = LOCATIONS.find((l) => l.id === "manhasset")!;
@@ -61,8 +63,12 @@ export default function NassauCountyPage() {
               {variant.guide.map((line, i) => (<p key={line} className={i === 0 ? "font-semibold" : undefined}>{line}</p>))}
             </div>
             <div className="gold-line mb-6" />
-            <p className="max-w-xl text-base leading-relaxed text-white/80 md:text-lg">{HERO_SUBTITLE}</p>
+            <p className="max-w-xl text-base leading-relaxed text-white/80 md:text-lg">{HERO_SUBTITLE.split(HERO_PHONE).map((part, i, arr) => (<Fragment key={i}>{part}{i < arr.length - 1 && <a href={manhasset.phoneHref} className="font-semibold text-white underline decoration-[var(--sv-gold)] underline-offset-4 hover:decoration-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--sv-gold-light)]">{HERO_PHONE}</a>}</Fragment>))}</p>
             <GoogleReviewBadge />
+            <div className="mt-6 flex flex-wrap gap-3">
+              <a href={manhasset.phoneHref} className="btn-primary justify-center text-base max-sm:w-full"><Phone className="h-5 w-5" aria-hidden="true" />Call {HERO_PHONE}</a>
+              <Link href="/contact?location=manhasset#contact" className="btn-secondary justify-center text-base max-sm:w-full">Ask about free vein screening</Link>
+            </div>
           </div>
           <aside aria-labelledby="office-summary" className="w-full max-w-[480px] rounded-2xl border border-white/20 bg-white p-6 shadow-xl lg:mx-auto lg:max-w-[400px]">
             <h2 id="office-summary" className="mb-5 font-heading text-2xl font-bold text-[var(--sv-navy)]">At a Glance</h2>

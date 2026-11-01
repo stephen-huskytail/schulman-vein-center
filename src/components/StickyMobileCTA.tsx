@@ -6,15 +6,18 @@ import { LOCATIONS } from "@/lib/constants";
 import CallNowButton from "@/components/CallNowButton";
 
 export default function StickyMobileCTA() {
-  const isManhasset = usePathname() === "/locations/manhasset";
+  const pathname = usePathname();
+  const isManhasset = pathname === "/locations/manhasset";
+  // HUS-1368: on the Nassau County landing page ONLY the first button dials Manhasset directly; the second button stays as on every other route.
+  const isNassauLanding = pathname === "/vein-doctor-nassau-county";
   const manhasset = LOCATIONS.find((location) => location.id === "manhasset")!;
   return (
     <div className="fixed bottom-0 left-0 right-0 z-40 xl:hidden bg-white border-t border-gray-200 shadow-xl">
       <div className="grid grid-cols-2">
-        {isManhasset ? (
+        {isManhasset || isNassauLanding ? (
           <a href={manhasset.phoneHref} className="flex min-h-14 flex-col items-center justify-center gap-1 py-3 bg-[var(--sv-navy)] text-white text-xs font-bold tracking-wide">
             <Phone className="w-5 h-5" />
-            Call Manhasset
+            {isNassauLanding ? "Call Now" : "Call Manhasset"}
           </a>
         ) : <CallNowButton
           variant="custom"
