@@ -16,16 +16,16 @@ export default function TrustBar() {
           <span className="text-[var(--sv-gold)] font-black tracking-[0.18em] uppercase text-base">
             All We Do Is Veins™
           </span>
-          <span className="text-white/30">·</span>
+          <span className="text-white/30 lg:hidden">·</span>
           <a
             href={GOOGLE_REVIEWS.url}
             target="_blank"
             rel="noopener"
             aria-label={`${GOOGLE_REVIEWS.label}: ${GOOGLE_REVIEWS.rating} out of 5 from ${GOOGLE_REVIEWS.count} Google reviews. Opens Google reviews in a new tab.`}
-            className="inline-flex items-center gap-1.5 whitespace-nowrap hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--sv-gold-light)]"
+            className="hidden items-center gap-1.5 whitespace-nowrap hover:text-white md:inline-flex lg:hidden focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--sv-gold-light)]"
           >
             <Star className="w-3 h-3 text-[var(--sv-gold)] fill-[var(--sv-gold)]" aria-hidden="true" />
-            <span className="text-white/70">{GOOGLE_REVIEWS.rating.toFixed(1)} on Google<span className="hidden xl:inline"> · {GOOGLE_REVIEWS.count} reviews</span></span>
+            <span className="text-white/70">{GOOGLE_REVIEWS.shortLabel}<span aria-hidden="true"> · </span>{GOOGLE_REVIEWS.rating.toFixed(1)} on Google</span>
           </a>
         </span>
 

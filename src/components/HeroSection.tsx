@@ -147,7 +147,7 @@ export default function HeroSection() {
                       <span className="text-white font-bold text-base leading-none">{GOOGLE_REVIEWS.rating.toFixed(1)}</span>
                       <StarRating rating={GOOGLE_REVIEWS.rating} sizeClass="h-4 w-4" fullClass="fill-[#FBBC05] text-[#FBBC05]" />
                     </div>
-                    <span className="text-white/60 text-xs">{GOOGLE_REVIEWS.count} Google reviews · Dr. Lee G. Schulman</span>
+                    <span className="text-white/60 text-xs">{GOOGLE_REVIEWS.count} Google reviews · {GOOGLE_REVIEWS.label}</span>
                   </div>
                 </a>
               </motion.div>
