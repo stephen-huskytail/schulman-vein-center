@@ -2,7 +2,7 @@
 // SOURCE: SEO 1's final working table (site-fixes/HUS-1368-schulman-reviews-service-area/SERVICE-AREA.md, Nov 1 2026): U.S. Census Bureau 2020 ZCTA files + Nassau County municipalities list.
 // `verified` = the ZIP was checked on USPS Cities by ZIP on 2026-11-01. The card renders ONLY rows with verified === true, so unverified rows never ship.
 // To release more rows after SEO 1's retry, flip `verified` to true for the rows PM - Stephen clears (no other code change).
-// Shipped now (8 rows): the USPS-verified rows in Content 3's SERVICE-AREA-DATA.json / FINAL-CARD-COPY.md, which include 11001 Floral Park (verified on USPS; SEO 1's 90% rule had excluded it, PM - Stephen's 8-row instruction and Content 3's data file include it).
+// 11001 Floral Park is OUT (PM - Stephen, Nov 1: ships only if USPS lists Floral Park as an accepted postal community for 11001; SEO 1's file excludes it, so SEO 1's status governs). Shipped now: the 7 other USPS-verified rows.
 export type ServiceAreaGroup = "North Shore" | "Central Nassau" | "South Shore";
 export interface ServiceAreaRow { group: ServiceAreaGroup; name: string; zip: string; verified: boolean }
 
@@ -35,7 +35,7 @@ export const SERVICE_AREA_ROWS: ServiceAreaRow[] = [
   { group: "Central Nassau", name: "Carle Place", zip: "11514", verified: false },
   { group: "Central Nassau", name: "East Meadow", zip: "11554", verified: false },
   { group: "Central Nassau", name: "Elmont", zip: "11003", verified: true },
-  { group: "Central Nassau", name: "Floral Park", zip: "11001", verified: true },
+  { group: "Central Nassau", name: "Floral Park", zip: "11001", verified: false },
   { group: "Central Nassau", name: "Franklin Square", zip: "11010", verified: true },
   { group: "Central Nassau", name: "Garden City", zip: "11530", verified: false },
   { group: "Central Nassau", name: "Hempstead", zip: "11550", verified: false },
