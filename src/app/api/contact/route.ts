@@ -108,7 +108,7 @@ function hasSuspiciousEmailLocalPart(email: string) {
   return localPart.length >= 14 && dotCount >= 4 && digitCount >= 2;
 }
 
-function getSpamReason(data: z.infer<typeof contactSchema>) {
+function getSpamReason(data: z.infer<typeof contactSchema>): "honeypot" | "timing" | "content-pattern" | null {
   if (data.website) {
     return "honeypot";
   }
@@ -137,21 +137,26 @@ function getSpamReason(data: z.infer<typeof contactSchema>) {
   return score >= 3 ? "content-pattern" : null;
 }
 
-export async function POST(req: Request) {
+type SubmissionOutcome =
+  | { kind: "not-configured" }
+  | { kind: "invalid" }
+  | { kind: "suppressed"; reason: "honeypot" | "timing" | "content-pattern" }
+  | { kind: "send-failed" }
+  | { kind: "sent" };
+
+// Shared by the JSON (hydrated) path and the native form-post path: the same validation, spam
+// checks, recipients and sender for both.
+async function processSubmission(input: unknown): Promise<SubmissionOutcome> {
   const apiKey = process.env.SCHULMAN_RESEND;
 
   if (!apiKey) {
-    return NextResponse.json(
-      { error: "Email service is not configured yet. Please try again later." },
-      { status: 500 },
-    );
+    return { kind: "not-configured" };
   }
 
-  const json = await req.json().catch(() => null);
-  const parsed = contactSchema.safeParse(json);
+  const parsed = contactSchema.safeParse(input);
 
   if (!parsed.success) {
-    return NextResponse.json({ error: "Please complete all required fields correctly." }, { status: 400 });
+    return { kind: "invalid" };
   }
 
   const data = parsed.data;
@@ -159,7 +164,7 @@ export async function POST(req: Request) {
 
   if (spamReason) {
     console.warn("Suppressed likely automated consultation request", { reason: spamReason });
-    return NextResponse.json({ ok: true });
+    return { kind: "suppressed", reason: spamReason };
   }
 
   const selectedLocation = LOCATIONS.find((loc) => loc.id === data.location);
@@ -220,8 +225,89 @@ export async function POST(req: Request) {
   if (!resendResponse.ok) {
     const errorBody = await resendResponse.text();
     console.error("Resend API error:", errorBody);
-    return NextResponse.json({ error: "Unable to send your request right now. Please call us directly." }, { status: 502 });
+    return { kind: "send-failed" };
   }
 
-  return NextResponse.json({ ok: true });
+  return { kind: "sent" };
+}
+
+// HUS-1370: native (no-JavaScript or pre-hydration) form posts. Same rules as the JSON path; the
+// answer is a 303 to a static page whose URL never contains form data. Submitted values are never
+// echoed, logged or put in a URL.
+const NATIVE_MAX_BODY_BYTES = 16 * 1024;
+
+function nativeRedirect(path: "/contact/sent" | "/contact/not-sent") {
+  // Relative, fixed same-origin Location: never built from request input.
+  return new Response(null, { status: 303, headers: { Location: path, "Cache-Control": "no-store" } });
+}
+
+function isSameOriginPost(req: Request) {
+  const origin = req.headers.get("origin");
+  if (!origin) return true; // some browsers omit Origin on same-origin form posts
+  try {
+    return new URL(origin).host === new URL(req.url).host;
+  } catch {
+    return false;
+  }
+}
+
+async function handleNativeFormPost(req: Request) {
+  const declaredLength = Number(req.headers.get("content-length") || "0");
+
+  if (!isSameOriginPost(req) || declaredLength > NATIVE_MAX_BODY_BYTES) {
+    return nativeRedirect("/contact/not-sent");
+  }
+
+  const form = await req.formData().catch(() => null);
+
+  if (!form) {
+    return nativeRedirect("/contact/not-sent");
+  }
+
+  const input: Record<string, string> = {};
+  for (const key of ["name", "phone", "email", "location", "service", "message", "website", "formStartedAt"]) {
+    const value = form.get(key);
+    if (typeof value === "string") input[key] = value;
+  }
+
+  const outcome = await processSubmission(input);
+
+  switch (outcome.kind) {
+    case "sent":
+      return nativeRedirect("/contact/sent");
+    case "suppressed":
+      // Honeypot and content-pattern keep the existing "apparent success" behaviour. A native post
+      // cannot carry the hydration-time timestamp, so a timing failure is NOT shown as success:
+      // the visitor is sent to the not-sent page with the phone numbers instead of a silent drop.
+      return nativeRedirect(outcome.reason === "timing" ? "/contact/not-sent" : "/contact/sent");
+    default:
+      return nativeRedirect("/contact/not-sent");
+  }
+}
+
+export async function POST(req: Request) {
+  const contentType = (req.headers.get("content-type") || "").toLowerCase();
+
+  if (contentType.startsWith("application/x-www-form-urlencoded") || contentType.startsWith("multipart/form-data")) {
+    return handleNativeFormPost(req);
+  }
+
+  const json = await req.json().catch(() => null);
+  const outcome = await processSubmission(json);
+
+  switch (outcome.kind) {
+    case "not-configured":
+      return NextResponse.json(
+        { error: "Email service is not configured yet. Please try again later." },
+        { status: 500 },
+      );
+    case "invalid":
+      return NextResponse.json({ error: "Please complete all required fields correctly." }, { status: 400 });
+    case "suppressed":
+      return NextResponse.json({ ok: true });
+    case "send-failed":
+      return NextResponse.json({ error: "Unable to send your request right now. Please call us directly." }, { status: 502 });
+    case "sent":
+      return NextResponse.json({ ok: true });
+  }
 }

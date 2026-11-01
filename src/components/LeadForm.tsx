@@ -129,6 +129,8 @@ export default function LeadForm({
 
   return (
     <form
+      method="post"
+      action="/api/contact/"
       onSubmit={handleSubmit(onSubmit)}
       className={className}
     >
