@@ -6,7 +6,10 @@ import { GOOGLE_REVIEWS } from "@/lib/google-reviews";
 export default function GoogleReviewBadge() {
   const { rating, count, label, url } = GOOGLE_REVIEWS;
   const fullStars = Math.floor(rating);
-  const partial = Math.round((rating - fullStars) * 100);
+  const fraction = rating - fullStars;
+  // The lucide Star glyph only spans x 2..22 of its 24-unit viewBox, so a width of fraction*100% of the box would clip off almost nothing of the glyph.
+  // Clip at the point where the glyph is really `fraction` filled: (2 + 20 * fraction) / 24 of the box (4.9 -> 83.3%).
+  const partial = Math.round(((2 + 20 * fraction) / 24) * 1000) / 10;
   return (
     <a
       href={url}
@@ -19,17 +22,17 @@ export default function GoogleReviewBadge() {
       <span aria-hidden="true" className="flex items-center gap-0.5">
         {Array.from({ length: 5 }, (_, i) => {
           if (i < fullStars) return <Star key={i} className="h-[22px] w-[22px] fill-[var(--sv-gold)] text-[var(--sv-gold)]" />;
-          if (i === fullStars && partial > 0) {
+          if (i === fullStars && fraction > 0) {
             return (
               <span key={i} className="relative inline-block h-[22px] w-[22px]">
-                <Star className="absolute inset-0 h-[22px] w-[22px] fill-white/25 text-white/25" />
+                <Star className="absolute inset-0 h-[22px] w-[22px] fill-white/35 text-white/35" />
                 <span className="absolute inset-y-0 left-0 overflow-hidden" style={{ width: `${partial}%` }}>
                   <Star className="h-[22px] w-[22px] max-w-none fill-[var(--sv-gold)] text-[var(--sv-gold)]" />
                 </span>
               </span>
             );
           }
-          return <Star key={i} className="h-[22px] w-[22px] fill-white/25 text-white/25" />;
+          return <Star key={i} className="h-[22px] w-[22px] fill-white/35 text-white/35" />;
         })}
       </span>
       <span aria-hidden="true" className="col-span-2 text-[15px] font-semibold leading-snug sm:col-span-1">

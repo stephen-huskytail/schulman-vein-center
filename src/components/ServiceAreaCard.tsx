@@ -44,6 +44,7 @@ export default function ServiceAreaCard() {
               className="group rounded-xl border border-gray-200"
             >
               <summary
+                tabIndex={desktop ? -1 : 0}
                 onClick={(e) => {
                   e.preventDefault();
                   if (!desktop) setOpen((o) => ({ ...o, [group]: !o[group] }));
