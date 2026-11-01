@@ -5,6 +5,8 @@ import Image from "next/image";
 import { createBreadcrumbSchema } from "@/lib/utils";
 import { DOCTORS as DOCTOR_RECORDS, LOCATIONS } from "@/lib/constants";
 import PatientReviewsBlock from "@/components/PatientReviewsBlock";
+import GoogleReviewBadge from "@/components/GoogleReviewBadge";
+import ServiceAreaCard from "@/components/ServiceAreaCard";
 import { ChevronRight, Plus } from "lucide-react";
 import { NASSAU_COUNTY_FAQS } from "@/lib/nassau-county";
 import { COMMUNITIES, COVERAGE, DEFINITIONS, DESCRIPTION, DOCTORS, DOCTORS_AVAILABILITY, DOCTORS_PERSONAL, GETTING_THERE, HERO_SUBTITLE, PRACTICE_FOCUS, SCREENING_LENGTH, LEAD_QUESTIONS_CLOSING, OFFICE_INTRO, SUITABILITY, VARIANT, VARIANTS } from "@/lib/nassau-county-page";
@@ -60,6 +62,7 @@ export default function NassauCountyPage() {
             </div>
             <div className="gold-line mb-6" />
             <p className="max-w-xl text-base leading-relaxed text-white/80 md:text-lg">{HERO_SUBTITLE}</p>
+            <GoogleReviewBadge />
           </div>
           <aside aria-labelledby="office-summary" className="w-full max-w-[480px] rounded-2xl border border-white/20 bg-white p-6 shadow-xl lg:mx-auto lg:max-w-[400px]">
             <h2 id="office-summary" className="mb-5 font-heading text-2xl font-bold text-[var(--sv-navy)]">At a Glance</h2>
@@ -141,6 +144,7 @@ export default function NassauCountyPage() {
             <p className="mt-5">{COVERAGE}</p>
           </article>
           </div>
+          <ServiceAreaCard />
           <article className="mt-8 grid items-center gap-6 rounded-2xl border border-gray-100 bg-white p-6 shadow-card md:p-8 lg:grid-cols-[380px_minmax(0,1fr)] lg:gap-12">
             <Image src="/images/team-doctors.webp" alt="Dr. Martin L. Schulman and Dr. Lee G. Schulman" width={380} height={240} sizes="(min-width: 1024px) 380px, 100vw" loading="lazy" className="h-auto w-full max-w-[380px] rounded-xl border border-gray-200" />
             <div>
