@@ -5,6 +5,8 @@ import { Calendar, ChevronDown, ShieldCheck, Award, Clock } from "lucide-react";
 import { TRUST_STATS } from "@/lib/constants";
 import CallNowButton from "@/components/CallNowButton";
 import LeadForm from "@/components/LeadForm";
+import StarRating from "@/components/StarRating";
+import { GOOGLE_REVIEWS } from "@/lib/google-reviews";
 
 export default function HeroSection() {
   return (
@@ -128,8 +130,11 @@ export default function HeroSection() {
                 className="mt-8"
               >
                 <a
-                  href="#testimonials"
-                  className="inline-flex items-center gap-4 bg-white/10 backdrop-blur-sm rounded-2xl px-5 py-3 border border-white/10 hover:bg-white/15 transition-all cursor-pointer max-w-xs"
+                  href={GOOGLE_REVIEWS.url}
+                  target="_blank"
+                  rel="noopener"
+                  aria-label={`Rated ${GOOGLE_REVIEWS.rating} out of 5 from ${GOOGLE_REVIEWS.count} Google reviews for ${GOOGLE_REVIEWS.label}. Opens Google reviews in a new tab.`}
+                  className="inline-flex items-center gap-4 bg-white/10 backdrop-blur-sm rounded-2xl px-5 py-3 border border-white/10 hover:bg-white/15 transition-all cursor-pointer max-w-md"
                 >
                   <svg width="28" height="28" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
                     <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/>
@@ -139,16 +144,10 @@ export default function HeroSection() {
                   </svg>
                   <div className="flex flex-col gap-0.5">
                     <div className="flex items-center gap-1.5">
-                      <span className="text-white font-bold text-base leading-none">5.0</span>
-                      <div className="flex items-center gap-0.5">
-                        {[...Array(5)].map((_, i) => (
-                          <svg key={i} className="w-4 h-4" viewBox="0 0 20 20" fill="#FBBC05">
-                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                          </svg>
-                        ))}
-                      </div>
+                      <span className="text-white font-bold text-base leading-none">{GOOGLE_REVIEWS.rating.toFixed(1)}</span>
+                      <StarRating rating={GOOGLE_REVIEWS.rating} sizeClass="h-4 w-4" fullClass="fill-[#FBBC05] text-[#FBBC05]" />
                     </div>
-                    <span className="text-white/60 text-xs">200+ Google Reviews</span>
+                    <span className="text-white/60 text-xs">{GOOGLE_REVIEWS.count} Google reviews · {GOOGLE_REVIEWS.label}</span>
                   </div>
                 </a>
               </motion.div>

@@ -5,6 +5,8 @@ export const GOOGLE_REVIEWS = {
   rating: 4.9,
   count: 107,
   label: "Dr. Lee G. Schulman, Manhasset",
+  /** Short visible label for the one-line header strip. */
+  shortLabel: "Dr. Lee, Manhasset",
   checked: "2026-11-01",
   url: "https://www.google.com/maps?cid=1729694189832035897",
 } as const;
