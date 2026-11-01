@@ -2963,13 +2963,13 @@ export const BLOG_POSTS: BlogPost[] = [
           "There are many reasons Suffolk County patients travel to our Commack office rather than seeking care elsewhere. Beyond the depth of clinical experience our physicians bring, patients consistently cite a few factors that set Schulman Vein Center apart.",
           "First, specialization. Schulman Vein Center does one thing and does it extraordinarily well. Our tagline — 'All We Do Is Veins™' — is not marketing language. It is a statement of philosophy. Every member of our clinical team is focused exclusively on venous disease. That level of specialization translates directly to better outcomes.",
           "Second, technology. We invest in the latest ultrasound imaging equipment and laser platforms to ensure our procedures are precise, effective, and comfortable. Duplex ultrasound guidance is used routinely — not just for complex cases.",
-          "Third, outcomes. Our practice has earned a 5.0-star rating across more than 200 Google Reviews from patients at all three of our locations. That level of consistent satisfaction reflects a culture of care that extends beyond the procedure itself.",
+          "Third, patient feedback. Dr. Lee G. Schulman's Google profile for our Manhasset office shows a 4.9-star rating from 107 reviews.",
         ],
         bullets: [
           "Board-certified phlebologists with 55+ years combined experience",
           "FDA-approved minimally invasive treatments — no surgery, no hospital",
           "Same-day recovery — most patients return to normal activities the next day",
-          "5.0-star rating on Google across Manhattan, Manhasset, and Commack offices",
+          "4.9-star rating on Google from 107 reviews (Dr. Lee G. Schulman, Manhasset)",
           "In-network with Medicare and most major insurance plans",
           "<a href=\"/services/free-vein-screening\">Free Vein Screening</a> available — no referral required",
         ],
@@ -3340,9 +3340,9 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     quickSummary: [
       "Schulman Vein Center's Manhasset office serves Long Island patients with the same board-certified expertise as our Manhattan location.",
-      "We treat varicose veins, spider veins, chronic venous insufficiency, and more — all with minimally invasive, FDA-approved techniques.",
+      "We treat varicose veins, spider veins, chronic venous insufficiency, and more — all with minimally invasive techniques.",
       "Same-day recovery means you can return to normal activities right after most procedures.",
-      "Our team has 55+ years of combined phlebology experience and 200+ five-star Google reviews.",
+      "Our team has 55+ years of combined phlebology experience. Dr. Lee G. Schulman's Google profile for our Manhasset office shows a 4.9-star rating from 107 reviews.",
       "A free vein screening is available to new patients — call 516.482.4477 to schedule.",
     ],
     tableOfContents: [
@@ -3768,7 +3768,7 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Why New York Patients Choose Schulman Vein Center",
         paragraphs: [
           "Schulman Vein and Laser Center was founded on a single specialty: All We Do Is Veins™. Dr. Martin Schulman and Dr. Lee G. Schulman bring more than 55 years of combined experience in phlebology — the medical specialty dedicated entirely to vein disease. This focus means that when you sit across from a Schulman physician, you are talking to someone who has spent their entire career on exactly your problem.",
-          "Our three New York locations — Manhattan, Manhasset, and Commack — are designed for the reality of busy metropolitan schedules. Duplex ultrasound is performed in-office at every location. Most procedures take under an hour and patients walk out same day. And with more than 200 Google reviews and a 5.0-star patient rating, the experience of our patients speaks louder than anything we could say ourselves.",
+          "Our three New York locations — Manhattan, Manhasset, and Commack — are designed for the reality of busy metropolitan schedules. Duplex ultrasound is performed in-office at every location. Most procedures take under an hour and patients walk out same day. And Dr. Lee G. Schulman's Google profile for our Manhasset office shows a 4.9-star rating from 107 reviews.",
           "We also offer a <a href=\"/services/free-vein-screening\">free vein screening</a> — a no-cost, no-obligation evaluation that gives you a real diagnosis, not a sales pitch. If you leave and decide to do nothing, that is completely your prerogative. Most patients tell us they just want to understand what is going on — and that is exactly what the screening is for.",
         ],
         callout: {
@@ -3924,7 +3924,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "In-office duplex ultrasound for precise vein mapping — no outside imaging center required",
           "All procedures performed in our own accredited offices — no hospital necessary",
           "Same-day recovery designed around busy New York schedules",
-          "FDA-approved techniques and a 5.0-star patient satisfaction rating across 200+ reviews",
+          "4.9-star rating on Google from 107 reviews (Dr. Lee G. Schulman, Manhasset)",
           "Free vein screening — a full evaluation with no obligation",
         ],
       },
@@ -4091,7 +4091,7 @@ export const BLOG_POSTS: BlogPost[] = [
         ],
         bullets: [
           "Board-certified phlebologists — credentialed specialists, not generalists performing vein procedures on the side",
-          "More than 200 five-star Google reviews — one of the highest-rated vein practices in the New York metro area",
+          "4.9-star rating on Google from 107 reviews (Dr. Lee G. Schulman, Manhasset)",
           "All We Do Is Veins™ — our entire clinical focus, technology investment, and team training centers on vein disease",
           "Three convenient locations — Manhattan (Midtown), Manhasset (Long Island), and Commack — serving the full NYC metro area",
           "Same-day recovery — most procedures are completed in under an hour with no general anesthesia; patients return to work and daily life the same day",
@@ -4304,7 +4304,7 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Get Expert Care for CVI in New York — Free Vein Screening Available",
         paragraphs: [
           "Chronic venous insufficiency is a progressive condition — early intervention consistently leads to better outcomes than delayed treatment. Whether your symptoms are mild or you have been managing CVI for years, a specialist evaluation at Schulman Vein Center will give you a clear picture of your venous health and a precise, personalized treatment plan.",
-          "Dr. Martin Schulman and Dr. Lee G. Schulman have spent decades dedicated exclusively to vein disease. With more than 200 five-star Google reviews and locations across the New York metro area — Manhattan, Manhasset, and Commack — Schulman Vein Center is one of the most trusted names in vein care in the region.",
+          "Dr. Martin Schulman and Dr. Lee G. Schulman have spent decades dedicated exclusively to vein disease. With locations across the New York metro area — Manhattan, Manhasset, and Commack — Schulman Vein Center is one of the most trusted names in vein care in the region.",
           "We invite you to schedule a complimentary Free Vein Screening at any of our three locations. Our specialists will review your symptoms, perform a physical examination, and determine whether duplex ultrasound is appropriate — all at no cost and no obligation. Relief from heavy, swollen, aching legs may be closer than you think.",
         ],
         callout: {

@@ -19,7 +19,7 @@ export default function ReviewsPage() {
       <PageHero
         eyebrow="Reviews"
         title="What Patients Say About Their Vein Treatment"
-        description="Our patients consistently share five-star feedback about clinical outcomes, personal attention, and same-day recovery."
+        description="Read what patients say about their experience at Schulman Vein and Laser Center."
         breadcrumbs={[
           { name: "Home", url: `${BUSINESS.siteUrl}/` },
           { name: "Reviews", url: `${BUSINESS.siteUrl}/reviews` },
