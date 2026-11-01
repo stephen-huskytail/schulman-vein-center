@@ -42,6 +42,17 @@ export const metadata: Metadata = {
 const textLink = "font-semibold text-[var(--sv-navy)] underline decoration-[var(--sv-teal)] underline-offset-4 hover:text-[var(--sv-teal)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--sv-teal)]";
 const listClass = "list-disc space-y-3 pl-6 marker:text-[var(--sv-teal)]";
 
+const BA_CAPTION = "Before (left) and after (right) · from our patient gallery · individual results vary";
+// HUS-1372: real before/after photos from the practice's own gallery (Designer 2 v3, Stephen-approved). WebP, width/height set, lazy, never displayed larger than the source.
+function BeforeAfter({ src, alt, width, height, maxClass, sizes, dark = false, className = "" }: { src: string; alt: string; width: number; height: number; maxClass: string; sizes: string; dark?: boolean; className?: string }) {
+  return (
+    <figure className={`w-full ${maxClass} ${className}`}>
+      <Image src={src} alt={alt} width={width} height={height} sizes={sizes} loading="lazy" className="h-auto w-full rounded-xl" />
+      <figcaption className={`mt-2 text-sm leading-snug ${dark ? "text-white/85" : "text-gray-700"}`}>{BA_CAPTION}</figcaption>
+    </figure>
+  );
+}
+
 export default function NassauCountyPage() {
   const faqSchema = {
     "@context": "https://schema.org",
@@ -92,15 +103,16 @@ export default function NassauCountyPage() {
       </section>
 
       <section className="section-cream !py-16">
-        <div className="container-sv">
-          <div className="mx-auto max-w-[860px] space-y-6 text-lg leading-relaxed text-gray-700 md:text-center">
+        <div className="container-sv grid items-center gap-6 lg:grid-cols-[minmax(0,1fr)_480px] lg:gap-12">
+          <div className="space-y-6 text-lg leading-relaxed text-gray-700">
             <p>If you are looking for a vein doctor in Nassau County, our <Link href="/locations/manhasset" className={textLink}>Manhasset office</Link> at 800 Community Drive, Suite 211 is where we see our Nassau County patients.</p>
             <p>A <Link href="/services/free-vein-screening" className={textLink}>vein screening</Link> with one of our doctors helps you learn what is going on with your veins before you decide on anything.</p>
-            <div className="flex flex-wrap gap-3 md:justify-center">
+            <div className="flex flex-wrap gap-3">
               <a href="tel:5164824477" className="btn-primary justify-center text-base"><Phone className="h-5 w-5" aria-hidden="true" />Call 516.482.4477</a>
               <Link href="/services/free-vein-screening" className="btn-outline-navy justify-center text-base">Ask About Vein Screening</Link>
             </div>
           </div>
+          <BeforeAfter src="/images/nassau/nassau-ba-varicose-knee.webp" alt="Before-and-after photos of a patient's knee: bulging varicose veins before treatment, smoother skin after" width={630} height={371} maxClass="max-w-[480px]" sizes="(min-width: 480px) 480px, 100vw" />
         </div>
       </section>
 
@@ -110,6 +122,7 @@ export default function NassauCountyPage() {
           <article className="rounded-2xl border border-gray-100 bg-white p-6 shadow-card md:p-8">
             <IconBadge icon={CheckSquare} />
             <h2>What to Look For in a Vein Doctor in Nassau County</h2>
+            <BeforeAfter src="/images/nassau/nassau-ba-spider-calf.webp" alt="Before-and-after photos of a patient's leg: blue spider veins on the calf and knee before treatment, fewer visible after" width={400} height={284} maxClass="max-w-[400px]" sizes="(min-width: 400px) 400px, 100vw" className="mb-6" />
             <p className="mb-5">Searching for a vein specialist in Nassau County brings up many kinds of clinics. These questions make them easier to compare:</p>
             <ul className={listClass}>
               <li><strong>Is the practice focused on veins?</strong> Vein care is all we do.</li>
@@ -137,6 +150,7 @@ export default function NassauCountyPage() {
           <article className="rounded-2xl border border-gray-100 bg-white p-6 shadow-card md:p-8">
             <IconBadge icon={Stethoscope} />
             <h2>What Happens at a Vein Screening</h2>
+            <BeforeAfter src="/images/nassau/nassau-ba-spider-knee.webp" alt="Before-and-after photos of a patient's knee: spider veins before treatment, fewer visible after" width={400} height={284} maxClass="max-w-[400px]" sizes="(min-width: 400px) 400px, 100vw" className="mb-6" />
             <p className="mb-5">During your visit:</p>
             <ul className={`${listClass} mb-5`}>
               <li>We review your medical history.</li>
@@ -202,12 +216,15 @@ export default function NassauCountyPage() {
       </section>
 
       <section className="section-navy">
-        <div className="container-narrow text-center">
-          <h2 className="mb-4 font-heading text-3xl font-bold md:text-4xl">Ready to Have Your Veins Checked?</h2>
-          <p className="mb-6 text-lg text-white/90">Call our Manhasset office.</p>
-          <a href="tel:5164824477" className="btn-secondary justify-center"><Phone className="h-5 w-5" aria-hidden="true" />Call 516.482.4477</a>
-          <p className="mx-auto mt-8 max-w-2xl text-sm leading-relaxed text-white/80">{SUITABILITY}</p>
-          <p className="mx-auto mt-3 max-w-2xl text-sm leading-relaxed text-white/80">This page is general information, not medical advice. Evaluations and recommendations depend on your individual condition.</p>
+        <div className="container-sv grid items-center gap-8 lg:grid-cols-[minmax(0,1fr)_400px] lg:gap-12">
+          <div className="mx-auto w-full max-w-4xl text-center">
+            <h2 className="mb-4 font-heading text-3xl font-bold md:text-4xl">Ready to Have Your Veins Checked?</h2>
+            <p className="mb-6 text-lg text-white/90">Call our Manhasset office.</p>
+            <a href="tel:5164824477" className="btn-secondary justify-center"><Phone className="h-5 w-5" aria-hidden="true" />Call 516.482.4477</a>
+            <p className="mx-auto mt-8 max-w-2xl text-sm leading-relaxed text-white/80">{SUITABILITY}</p>
+            <p className="mx-auto mt-3 max-w-2xl text-sm leading-relaxed text-white/80">This page is general information, not medical advice. Evaluations and recommendations depend on your individual condition.</p>
+          </div>
+          <BeforeAfter dark src="/images/nassau/nassau-ba-varicose-ankle.webp" alt="Before-and-after photos of a patient's lower leg and ankle: raised varicose veins before treatment, flatter after" width={400} height={242} maxClass="max-w-[400px]" sizes="(min-width: 400px) 400px, 100vw" className="mx-auto lg:mx-0" />
         </div>
       </section>
     </>
