@@ -49,4 +49,4 @@ export function serviceAreaByGroup(): { group: ServiceAreaGroup; items: ServiceA
 // Copy: Content 3 (SERVICE-AREA-CONTENT3.md / FINAL-CARD-COPY.md); intro = the site's published phrasing plus "in Nassau County" per PM - Stephen's ruling.
 export const SERVICE_AREA_HEADING = "Nassau County Communities We Serve";
 export const SERVICE_AREA_INTRO_BEFORE_PHONE = "Our Manhasset office serves patients across the North Shore of Long Island and nearby communities in Nassau County. Find your community and ZIP code below, or call ";
-export const SERVICE_AREA_CLOSING = "Communities and ZIP codes are listed to help you find us; they are not a limit on who we can see.";
+// The optional closing line ("…not a limit on who we can see.") is NOT shipped: unconfirmed with the practice (PM - Stephen, Nov 1). Add it later only if Stephen confirms it.

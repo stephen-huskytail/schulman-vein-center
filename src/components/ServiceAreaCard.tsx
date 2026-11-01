@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Minus, Plus } from "lucide-react";
-import { serviceAreaByGroup, SERVICE_AREA_CLOSING, SERVICE_AREA_HEADING, SERVICE_AREA_INTRO_BEFORE_PHONE } from "@/lib/service-area";
+import { serviceAreaByGroup, SERVICE_AREA_HEADING, SERVICE_AREA_INTRO_BEFORE_PHONE } from "@/lib/service-area";
 
 // HUS-1368: full-width "Nassau County Communities We Serve" card. Rows come from src/lib/service-area.ts (verified rows only; no schema).
 // Desktop (lg+): all groups open and not collapsible. Tablet/phone: each group is a disclosure, the first (North Shore) open. No-JS / SSR: everything open.
@@ -66,8 +66,7 @@ export default function ServiceAreaCard() {
           );
         })}
       </div>
-      <p className="mt-6 text-base">{SERVICE_AREA_CLOSING}</p>
-      <p className="mt-3 text-base">
+      <p className="mt-6 text-base">
         <Link href="/locations/manhasset" className={textLink}>Manhasset location</Link> · <Link href="/locations" className={textLink}>All locations</Link> · <Link href="/services/free-vein-screening" className={textLink}>Vein screening</Link>
       </p>
     </section>
