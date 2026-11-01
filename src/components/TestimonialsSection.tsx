@@ -5,6 +5,8 @@ import { Star, Quote } from "lucide-react";
 import { TESTIMONIALS } from "@/lib/constants";
 import { PATIENT_VIDEOS } from "@/lib/patient-videos";
 import PatientVideoReviews from "@/components/PatientVideoReviews";
+import StarRating from "@/components/StarRating";
+import { GOOGLE_REVIEWS } from "@/lib/google-reviews";
 
 interface TestimonialsSectionProps {
   variant?: "navy" | "light";
@@ -40,7 +42,8 @@ export default function TestimonialsSection({ variant = "navy" }: TestimonialsSe
           </h2>
           <div className="w-16 h-1 bg-[var(--sv-gold)] rounded-full mx-auto mb-5" />
           <p className={`${isLight ? "section-subtitle" : "section-subtitle-light"} font-semibold`}>
-            5-star rated across all three locations on Google, Yelp, Healthgrades, Vitals, and more.
+            Hear from our patients, and read {GOOGLE_REVIEWS.label.split(",")[0]}{"'s "}
+            <a href={GOOGLE_REVIEWS.url} target="_blank" rel="noopener" className="underline underline-offset-4">reviews on Google</a>.
           </p>
 
           {/* Star rating display */}
@@ -52,15 +55,11 @@ export default function TestimonialsSection({ variant = "navy" }: TestimonialsSe
             }`}
           >
             <span className={`${isLight ? "text-[var(--sv-navy)]" : "text-white"} text-3xl font-black leading-none`}>
-              5.0 Average Rating
+              {GOOGLE_REVIEWS.rating.toFixed(1)} on Google
             </span>
-            <div className="flex items-center justify-center gap-1">
-              {[...Array(5)].map((_, i) => (
-                <Star key={i} className="w-7 h-7 text-[var(--sv-gold)] fill-[var(--sv-gold)]" />
-              ))}
-            </div>
+            <StarRating rating={GOOGLE_REVIEWS.rating} sizeClass="h-7 w-7" className="flex items-center justify-center gap-1" emptyClass={isLight ? "fill-gray-300 text-gray-300" : "fill-white/35 text-white/35"} />
             <span className={`text-sm font-semibold ${isLight ? "text-[var(--sv-navy)]/75" : "text-white/80"}`}>
-              Verified five-star patient reviews at every location
+              {GOOGLE_REVIEWS.count} Google reviews for {GOOGLE_REVIEWS.label}
             </span>
           </div>
         </div>
@@ -120,32 +119,6 @@ export default function TestimonialsSection({ variant = "navy" }: TestimonialsSe
           ))}
         </div>
 
-        {/* Review platforms */}
-        <motion.div
-          initial={{ opacity: 0, y: 16 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.3 }}
-          className="mt-12 text-center"
-        >
-          <p className={`text-sm mb-4 ${isLight ? "text-[var(--sv-navy)]/60" : "text-white/50"}`}>
-            Rated 5 stars on all major review platforms:
-          </p>
-          <div className="flex flex-wrap items-center justify-center gap-2 md:gap-4">
-            {["Google", "Yelp", "Healthgrades", "Vitals", "Yellow Pages", "TrustPilot"].map((p) => (
-              <span
-                key={p}
-                className={`px-4 py-2 rounded-full text-xs font-semibold ${
-                  isLight
-                    ? "border border-[var(--sv-border)] text-[var(--sv-navy)]/65 bg-white"
-                    : "border border-white/20 text-white/60"
-                }`}
-              >
-                {p}
-              </span>
-            ))}
-          </div>
-        </motion.div>
       </div>
     </section>
   );
