@@ -76,7 +76,7 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
     : `${BUSINESS.siteUrl}${post.featuredImage ?? "/images/gallery/varicose-large.png"}`;
 
   return {
-    title: ["phlebologist-vs-vascular-surgeon", "spider-veins-on-face", "venous-duplex-ultrasound", "foam-sclerotherapy"].includes(post.slug)
+    title: ["phlebologist-vs-vascular-surgeon", "spider-veins-on-face", "venous-duplex-ultrasound", "foam-sclerotherapy", "superficial-thrombophlebitis"].includes(post.slug)
       ? { absolute: post.metaTitle! }
       : post.metaTitle ?? `${post.title} | Schulman Vein and Laser Center`,
     description: post.metaDescription ?? post.excerpt,
@@ -92,8 +92,8 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
       images: [
         {
           url: ogImageUrl,
-          width: post.contentHtml ? 1536 : 1200,
-          height: post.contentHtml ? 1024 : 675,
+          width: post.slug === "superficial-thrombophlebitis" ? 1600 : post.contentHtml ? 1536 : 1200,
+          height: post.slug === "superficial-thrombophlebitis" ? 900 : post.contentHtml ? 1024 : 675,
           alt: post.featuredImageAlt ?? post.title,
         },
       ],
@@ -206,8 +206,8 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               <Image
                 src={post.featuredImage}
                 alt={post.featuredImageAlt ?? post.title}
-                width={post.contentHtml ? 1536 : 1200}
-                height={post.contentHtml ? 1024 : 675}
+                width={post.slug === "superficial-thrombophlebitis" ? 1600 : post.contentHtml ? 1536 : 1200}
+                height={post.slug === "superficial-thrombophlebitis" ? 900 : post.contentHtml ? 1024 : 675}
                 className="w-full h-auto rounded-xl mb-8"
                 priority
               />
@@ -327,7 +327,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               ))}
             </div>
 
-            {post.faqSection?.length && !["spider-veins-on-face", "venous-duplex-ultrasound", "foam-sclerotherapy"].includes(post.slug) ? (
+            {post.faqSection?.length && !["spider-veins-on-face", "venous-duplex-ultrasound", "foam-sclerotherapy", "superficial-thrombophlebitis"].includes(post.slug) ? (
               <section className="mt-10 rounded-xl border border-gray-100 bg-white p-6 md:p-7">
                 <h2 className="font-heading text-2xl font-bold text-[var(--sv-navy)] mb-6 flex items-center gap-2">
                   <HelpCircle className="w-6 h-6 text-[var(--sv-teal)]" />
